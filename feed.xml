@@ -7,7 +7,15 @@
 			
 				<item>
 					<title>Hello World!</title>
-					<description>&lt;p&gt;This site will shortly be up. Hopefully.&lt;/p&gt;
+					<description>&lt;p&gt;So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I'm now finally happy, or atleast content, with how it looks. It's been a troublesome yet quite fun ride (it took me some time to learn my ways around &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and all of its' functions and bits and pieces, but now I'm all set, I think).&lt;/p&gt;
+
+&lt;h2&gt;Behind the scenes&lt;/h2&gt;
+
+&lt;p&gt;Since I don't really know what to write in this post I thought I could write about how I built it and what tools I've used during the process. After all, my tagline contains the word &quot;geekiness&quot;. Enjoy it, I guess.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ellengummesson.com/&quot; title=&quot;www.ellengummesson.com&quot;&gt;This site&lt;/a&gt; is powered by &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and hosted on &lt;a href=&quot;http://pages.github.com/&quot; title=&quot;GitHub Pages&quot;&gt;GitHub Pages&lt;/a&gt;. It was built with HTML5 and CSS3 and my own grid system, &lt;a href=&quot;/projects/begrider/README.html&quot;&gt;Begrider&lt;/a&gt;. The code was written by hand in &lt;a href=&quot;http://www.sublimetext.com/&quot; title=&quot;SublimeText 2&quot;&gt;SublimeText 2&lt;/a&gt; with the theme &lt;a href=&quot;https://github.com/buymeasoda/soda-theme/&quot; title=&quot;Soda Dark&quot;&gt;Soda Dark&lt;/a&gt;, the color scheme &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot; title=&quot;Tomorrow Theme&quot;&gt;Tomorrow Theme&lt;/a&gt; and the plugins &lt;a href=&quot;http://wbond.net/sublime_packages/alignment/&quot; title=&quot;Alignment&quot;&gt;Alignment&lt;/a&gt; and &lt;a href=&quot;http://wbond.net/sublime_packages/prefixr&quot; title=&quot;Prefixr&quot;&gt;Prefixr&lt;/a&gt;. The site uses &lt;a href=&quot;http://www.google.com/webfonts/specimen/Cabin&quot; title=&quot;Cabin&quot;&gt;Cabin&lt;/a&gt; for the headings and &lt;a href=&quot;http://www.google.com/webfonts/specimen/Vollkorn&quot; title=&quot;Vollkorn&quot;&gt;Vollkorn&lt;/a&gt; for nearly all the other types of type. They're provided by &lt;a href=&quot;http://www.google.com/webfonts&quot; title=&quot;Google Webfonts&quot;&gt;Google Webfonts&lt;/a&gt;. The blog posts (and pages) are written in &lt;a href=&quot;http://http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; with &lt;a href=&quot;http://www.markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt;. I occasionally use &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; too, just to mix things up.&lt;/p&gt;
+
+&lt;p&gt;That sums it up pretty nicely, and thus, the link bombing ends here.&lt;/p&gt;
 </description>
 					<published>August 19, 2012</published>
 					<link>http://www.ellengummesson.me/blog/2012/08/19/hello-world</link>
