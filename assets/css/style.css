@@ -451,7 +451,7 @@ ol ol {
 -----------------*/
 
 /* iPad/Tablet (Portrait) */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 	body {
 		font-size: 100%;
@@ -488,7 +488,7 @@ ol ol {
 }
 
 /* iPhone/Smartphone (Landscape) */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
 	.container {
 		width: 92.5%;
