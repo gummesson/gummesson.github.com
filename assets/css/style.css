@@ -469,7 +469,7 @@ ol ol {
 	}
 
 		.logo {
-			font-size    : 2.5em;
+			font-size    : 2.75em;
 			line-height  : 1.2;
 			margin-bottom: 0.35em;
 		}
@@ -486,8 +486,16 @@ ol ol {
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
+	body {
+		font-size: 150%;
+	}
+
 	.container {
 		width: 92.5%;
+	}
+
+	.logo {
+		font-size: 2.5em;
 	}
 
 	.copyright {
