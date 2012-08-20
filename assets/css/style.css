@@ -442,12 +442,7 @@ ol ol {
 -----------------*/
 
 /* iPad/Tablet (Portrait) */
-@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
-
-	img {
-		max-width: 100%;
-		max-height: auto;
-	}
+@media screen and (max-width: 800px) {
 
 	[class^="col-"] {
 		width     : 100%;
@@ -456,38 +451,34 @@ ol ol {
 	}
 
 	header {
-		margin-top: 1em;
+		margin-top: 0.25em;
 	}
 
-	input[type="text"],
-	input[type="email"],
-	input[type="search"],
-	textarea {
-			width: 95%;
+	img {
+		max-width: 100%;
+		max-height: auto;
 	}
+
+		.copyright {
+			margin-bottom: 1em;
+		}
 
 }
 
 /* iPhone/Smartphone (Landscape) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
 
 	body {
-		font-size: 100%;
+		font-size: 125%;
 	}
 
 	.container {
 		width: 92.5%;
 	}
 
-	.logo {
-		font-size    : 2.5em;
-		line-height  : 1.2;
-		margin-bottom: 0.35em;
-	}
-
-	.copyright {
-		margin-bottom: 0.5em;
-	}
+		.copyright {
+			margin-bottom: 0.5em;
+		}
 
 }
 
@@ -497,19 +488,4 @@ ol ol {
 	body {
 		font-size: 162.5%;
 	}
-
-	.container {
-		width: 92.5%;
-	}
-
-		.logo {
-		font-size    : 3.2em;
-		line-height  : 1.5;
-		margin-bottom: 0;
-	}
-
-	.copyright {
-		margin-bottom: 0.5em;
-	}
-
 }
