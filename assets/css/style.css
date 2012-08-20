@@ -442,7 +442,12 @@ ol ol {
 -----------------*/
 
 /* iPad/Tablet (Portrait) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+
+	img {
+		max-width: 100%;
+		max-height: auto;
+	}
 
 	[class^="col-"] {
 		width     : 100%;
@@ -451,35 +456,60 @@ ol ol {
 	}
 
 	header {
-		margin-top: 0.25em;
+		margin-top: 1em;
 	}
 
-	img {
-		max-width: 100%;
-		max-height: auto;
+	input[type="text"],
+	input[type="email"],
+	input[type="search"],
+	textarea {
+			width: 95%;
 	}
-
-		.copyright {
-			margin-bottom: 1em;
-		}
 
 }
 
 /* iPhone/Smartphone (Landscape) */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
 
 	body {
-		font-size: 125%;
+		font-size: 100%;
 	}
 
 	.container {
 		width: 92.5%;
 	}
 
-		.copyright {
-			margin-bottom: 0.5em;
-		}
+	.logo {
+		font-size    : 2.5em;
+		line-height  : 1.2;
+		margin-bottom: 0.35em;
+	}
 
+	.copyright {
+		margin-bottom: 0.5em;
+	}
 
 }
 
+/* iPhone/Smartphone (Landscape) */
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	body {
+		font-size: 162.5%;
+	}
+
+	.container {
+		width: 92.5%;
+	}
+
+		.logo {
+		font-size    : 3.2em;
+		line-height  : 1.5;
+		margin-bottom: 0;
+	}
+
+	.copyright {
+		margin-bottom: 0.5em;
+	}
+
+}
