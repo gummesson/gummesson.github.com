@@ -13,7 +13,6 @@
     + Navigation
     + Shared
       - Specific
-      - Targeted
     + Grid System
       - Grids
       - Media Queries
@@ -334,14 +333,6 @@ ol ol {
 		color: #999999;
 	}
 
-.align-left {
-	float: left;
-}
-
-.align-right {
-	float: right;
-}
-
  /*  Skills / Progress Bars */
 
 .progress-bar { 
@@ -503,12 +494,18 @@ ol ol {
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
-	html {
+	body {
 		font-size: 162.5%;
 	}
 
 	.container {
 		width: 92.5%;
+	}
+
+		.logo {
+		font-size    : 3.2em;
+		line-height  : 1.5;
+		margin-bottom: 0;
 	}
 
 	.copyright {
