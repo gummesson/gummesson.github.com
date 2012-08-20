@@ -442,7 +442,7 @@ ol ol {
 -----------------*/
 
 /* iPad/Tablet (Portrait) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
 	[class^="col-"] {
 		width     : 100%;
@@ -466,7 +466,7 @@ ol ol {
 }
 
 /* iPhone/Smartphone (Landscape) */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	body {
 		font-size: 100%;
@@ -488,3 +488,4 @@ ol ol {
 		}
 
 }
+
