@@ -451,7 +451,7 @@ ol ol {
 	}
 
 	header {
-		margin-top: 0.25em;
+		margin-top: 0.5em;
 	}
 
 	img {
@@ -469,23 +469,22 @@ ol ol {
 @media screen and (max-width: 640px) {
 
 	body {
-		font-size: 125%;
+		font-size: 100%;
 	}
 
 	.container {
 		width: 92.5%;
 	}
 
+		.logo {
+			font-size    : 2.8em;
+			line-height  : 1.2;
+			margin-bottom: 0.35em;
+
+		}
+
 		.copyright {
 			margin-bottom: 0.5em;
 		}
 
-}
-
-/* iPhone/Smartphone (Landscape) */
-@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-
-	body {
-		font-size: 162.5%;
-	}
 }
