@@ -1,5 +1,5 @@
 /*=======================
-    Table of Contents
+    TABLE OF CONTENTS
 =========================
 
     + Reset
@@ -442,7 +442,7 @@ ol ol {
 -----------------*/
 
 /* iPad/Tablet (Portrait) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	[class^="col-"] {
 		width     : 100%;
@@ -488,4 +488,3 @@ ol ol {
 		}
 
 }
-

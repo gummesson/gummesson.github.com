@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Jekyll / Ellen Gummesson</title>
+	<title>Jekyll Pagination Output / Ellen Gummesson</title>
 	<meta name="description" content="Random ramblings, overall geekiness and other musings">
 	<meta name="author" content="Ellen Gummesson">
 	<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Ellen Gummesson">
@@ -42,31 +42,18 @@
 				<div class="col-eight">
 					<div class="content">
 						<article>
-    <h1>Jekyll</h1>
-        <ul>
-        
-            
-                
-            
-                
-                    <li><span class="date">Aug 21, 2012 / </span><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" class="no-border" >Windows 7, Ruby, DevKit and Jekyll</a></li>
-                
-            
-        
-            
-                
-            
-                
-                    <li><span class="date">Aug 20, 2012 / </span><a href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" class="no-border" >WordPress to GetSimple to Jekyll</a></li>
-                
-            
-        
-            
-                
-            
-        
-        </ul>
+	<h1>Jekyll Pagination Output</h1>
+	<h2>Instructions</h2>
+<p>Copy the <code>pagination.rb</code> from the jekyll <code>lib/jekyll/generators/pagination</code> folder and place it in your <code>_plugins</code> folder where you have your site.</p>
+<p>Change the following line from this:</p>
+<pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")</code></pre>
+<p>To this (or wherever you want your pagination pages to be generated):</p>
+<pre><code>newpage.dir = File.join(page.dir, "page/#{num_page}")</code></pre>
+<p>Add <code>paginate: 10</code> (change the number to how many post you'd like to display per page) in your <code>_config.yml</code> file.</p>
+<p>For instructions on how to add pagination on your site, see the <a href="https://github.com/mojombo/jekyll/wiki/Pagination" title="Pagination in Jekyll">official Jekyll wiki</a>.</p>
+
 </article>
+
 					</div>
 				</div><!-- .col-eight -->
 				<div class="col-two last"></div><!-- .col-two .last -->

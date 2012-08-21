@@ -6,6 +6,63 @@
 			<link>http://www.ellengummesson.me</link>
 			
 				<item>
+					<title>Windows 7, Ruby, DevKit and Jekyll</title>
+					<description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
+
+&lt;h2&gt;Installing Ruby&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href=&quot;http://rubyinstaller.org/&quot; title=&quot;Ruby Installer for Windows&quot;&gt;RubyInstaller&lt;/a&gt; and download the latest version.&lt;/li&gt;
+&lt;li&gt;Run the installer.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Note:&lt;/h3&gt;
+
+&lt;p&gt;it's really important that you install it in a directory without a space in it's path as stated in the installer, eg: &lt;code&gt;C:\ProgrammingLanguages\Ruby&lt;/code&gt; and NOT &lt;code&gt;C:\Program Files\Ruby&lt;/code&gt;, for example. Trust me.&lt;/p&gt;
+
+&lt;h2&gt;Installing DevKit&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run the DevKit Installer and extract it to your desired directory.&lt;/li&gt;
+&lt;li&gt;Open up the command line and type &lt;code&gt;cd&lt;/code&gt; + the path to the directory were you installed DevKit, eg: &lt;code&gt;cd C:\ProgrammingLanguages\DevKit&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;ruby dk.rb init&lt;/code&gt; to intialize the setup.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;ruby dk.rb review&lt;/code&gt; to check if DevKit has found your Ruby directory.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;ruby dk.rb install&lt;/code&gt; to install it.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Note:&lt;/h3&gt;
+
+&lt;p&gt;I usually just search for &quot;cmd&quot; in the start menu search bar to open the command line.&lt;/p&gt;
+
+&lt;h2&gt;Installing Jekyll&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type &lt;code&gt;gem install jekyll&lt;/code&gt; in the command line.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Running Jekyll&lt;/h2&gt;
+
+&lt;p&gt;After you're done with creating your site with template and liquid tags (hit the &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot; title=&quot;Jekyll wiki&quot;&gt;wiki&lt;/a&gt; to check them out), do the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Open up the command line and type &lt;code&gt;cd&lt;/code&gt; + the path to the directory were you've saved your site, eg: &lt;code&gt;cd C:\User\MySite&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;jekyll --server&lt;/code&gt; in the cmd.&lt;/li&gt;
+&lt;li&gt;Type out &lt;code&gt;localhost:4000&lt;/code&gt; in your browser to see your site.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Note:&lt;/h3&gt;
+
+&lt;p&gt;You can use &lt;code&gt;jekyll --auto --server&lt;/code&gt; instead of &lt;code&gt;jekyll --server&lt;/code&gt; if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.&lt;/p&gt;
+</description>
+					<published>August 21, 2012</published>
+					<link>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
+				</item>
+			
+				<item>
 					<title>WordPress to GetSimple to Jekyll</title>
 					<description>&lt;p&gt;... Or: &quot;How I learned to stop worrying and love the command line&quot;.&lt;/p&gt;
 
@@ -17,7 +74,7 @@
 
 &lt;blockquote&gt;&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.&lt;/p&gt;&lt;/blockquote&gt;
 
-&lt;p&gt;In other words, Jekyll takes your template files (written in HTML and/or &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; and marked with &lt;a href=&quot;http://liquidmarkup.org/&quot; title=&quot;Liquid tags&quot;&gt;Liquid tags&lt;/a&gt; and generates them into simple, static .html files. &quot;Blogging Like a Hacker&quot; is sort of Jekyll's tagline, and I think that's a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don't see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its' functionality. For example, I use one that enables the pagination pages to be generated into different folders called &lt;code&gt;/page/2/&lt;/code&gt; and so on (rather than &lt;code&gt;/page2/&lt;/code&gt;), and another one to create folders and .html files for my tags (I'll write more about this in another post).&lt;/p&gt;
+&lt;p&gt;In other words, Jekyll takes your template files (written in HTML and/or &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; and marked with &lt;a href=&quot;http://liquidmarkup.org/&quot; title=&quot;Liquid tags&quot;&gt;Liquid tags&lt;/a&gt; and generates them into simple, static .html files. &quot;Blogging Like a Hacker&quot; is sort of Jekyll's tagline, and I think that's a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don't see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its' functionality. For example, I use one that enables the pagination pages to be generated into different folders called &lt;code&gt;/blog/page/2/&lt;/code&gt; and so on (rather than &lt;code&gt;/page2/&lt;/code&gt;), and another one to create folders and .html files for my tags (I'll write more about this in another post).&lt;/p&gt;
 
 &lt;h3&gt;Why?&lt;/h3&gt;
 
