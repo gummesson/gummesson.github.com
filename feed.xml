@@ -6,6 +6,26 @@
 			<link>http://www.ellengummesson.me</link>
 			
 				<item>
+					<title>The Hassles of Media Queries</title>
+					<description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note to self: don't be stupid. It'll save you a lot of time.&lt;/p&gt;
+
+&lt;p&gt;I also had some problems with my iPhone's Retina display, but after some digging I found a &quot;hack&quot; that made it work properly so that the media queries look the same as on a regular browser:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(-webkit-min-device-pixel-ratio: 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.&lt;/p&gt;
+</description>
+					<published>August 22, 2012</published>
+					<link>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</link>
+				</item>
+			
+				<item>
 					<title>Windows 7, Ruby, DevKit and Jekyll</title>
 					<description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
 

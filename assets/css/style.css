@@ -1,5 +1,5 @@
 /*=======================
-    TABLE OF CONTENTS
+    ellengummesson.com
 =========================
 
     + Reset
@@ -103,7 +103,7 @@ body {
 	color           : #222222;
 }
 
-::selection, -moz-::selection {
+::selection, ::-moz-selection {
 	color           :#fdfdfd;
 	background-color: #f660ab;
 }
@@ -451,7 +451,7 @@ ol ol {
 	}
 
 	header {
-		margin-top: 0.5em;
+		margin-top: 0;
 	}
 
 	img {
@@ -477,7 +477,7 @@ ol ol {
 	}
 
 	header {
-		margin-top: 0.75em;
+		margin-top: 0.65em;
 	}
 
 		.logo {
