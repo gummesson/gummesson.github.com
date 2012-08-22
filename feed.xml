@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<rss version="2.0">
-		<channel>
-			<title>Ellen Gummesson</title>
-			<description>Random ramblings, overall geekiness and other musings</description>
-			<link>http://www.ellengummesson.me</link>
-			
-				<item>
-					<title>The Hassles of Media Queries</title>
-					<description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+    <rss version="2.0">
+        <channel>
+            <title>Ellen Gummesson</title>
+            <description>Random ramblings, overall geekiness and other musings</description>
+            <link>http://www.ellengummesson.me</link>
+            
+                <item>
+                    <title>The Hassles of Media Queries</title>
+                    <description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -21,13 +21,13 @@
 
 &lt;p&gt;To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.&lt;/p&gt;
 </description>
-					<published>August 22, 2012</published>
-					<link>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</link>
-				</item>
-			
-				<item>
-					<title>Windows 7, Ruby, DevKit and Jekyll</title>
-					<description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
+                    <published>August 22, 2012</published>
+                    <link>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</link>
+                </item>
+            
+                <item>
+                    <title>Windows 7, Ruby, DevKit and Jekyll</title>
+                    <description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
 
 &lt;h2&gt;Installing Ruby&lt;/h2&gt;
 
@@ -78,13 +78,13 @@
 
 &lt;p&gt;You can use &lt;code&gt;jekyll --auto --server&lt;/code&gt; instead of &lt;code&gt;jekyll --server&lt;/code&gt; if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.&lt;/p&gt;
 </description>
-					<published>August 21, 2012</published>
-					<link>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
-				</item>
-			
-				<item>
-					<title>WordPress to GetSimple to Jekyll</title>
-					<description>&lt;p&gt;... Or: &quot;How I learned to stop worrying and love the command line&quot;.&lt;/p&gt;
+                    <published>August 21, 2012</published>
+                    <link>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
+                </item>
+            
+                <item>
+                    <title>WordPress to GetSimple to Jekyll</title>
+                    <description>&lt;p&gt;... Or: &quot;How I learned to stop worrying and love the command line&quot;.&lt;/p&gt;
 
 &lt;p&gt;I love WordPress. I think it's a really great CMS and the community is huge, to say the least. However, I feel that it's sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I'd choose it in a heartbeat. But since I don't plan to do that I wanted something smaller. I've been playing around with &lt;a href=&quot;http://www.get-simple.info/&quot; title=&quot;GetSimple CMS&quot;&gt;GetSimple&lt;/a&gt; (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn't really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn't feel quite satisfied. Then I found &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
@@ -102,13 +102,13 @@
 
 &lt;p&gt;Like I said in my previous post, it took me some time to actually get it up and running, but now I'm finally happy. It's not the most convenient solution, but it's simple enough for me. I'll probably write a couple of more post about Jekyll, so keep an eye out.&lt;/p&gt;
 </description>
-					<published>August 20, 2012</published>
-					<link>http://www.ellengummesson.me/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</link>
-				</item>
-			
-				<item>
-					<title>Hello World!</title>
-					<description>&lt;p&gt;So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I'm now finally happy, or atleast content, with how it looks. It's been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and all of its' functions and bits and pieces, but now I'm all set, I think).&lt;/p&gt;
+                    <published>August 20, 2012</published>
+                    <link>http://www.ellengummesson.me/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</link>
+                </item>
+            
+                <item>
+                    <title>Hello World!</title>
+                    <description>&lt;p&gt;So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I'm now finally happy, or atleast content, with how it looks. It's been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and all of its' functions and bits and pieces, but now I'm all set, I think).&lt;/p&gt;
 
 &lt;h2&gt;Behind the scenes&lt;/h2&gt;
 
@@ -118,9 +118,9 @@
 
 &lt;p&gt;That sums it up pretty nicely, and thus, the link bombing ends here.&lt;/p&gt;
 </description>
-					<published>August 19, 2012</published>
-					<link>http://www.ellengummesson.me/blog/2012/08/19/hello-world</link>
-				</item>
-			
-		</channel>
-	</rss>
+                    <published>August 19, 2012</published>
+                    <link>http://www.ellengummesson.me/blog/2012/08/19/hello-world</link>
+                </item>
+            
+        </channel>
+    </rss>

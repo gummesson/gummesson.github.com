@@ -2,54 +2,54 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.ellengummesson.me/blog/2012/08/19/hello-world</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</loc>
-        <lastmod>2012-08-22T14:42:12+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/404.html</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/about.html</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/archives.html</loc>
-        <lastmod>2012-08-22T14:42:12+02:00</lastmod>
+        <lastmod>2012-08-22T16:11:50+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/contact.html</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/cv.html</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/</loc>
-        <lastmod>2012-08-22T14:42:12+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/projects/begrider/</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/projects/</loc>
-        <lastmod>2012-08-22T11:55:39+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.ellengummesson.me/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-08-22T14:42:12+02:00</lastmod>
+        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
 </urlset>
