@@ -444,10 +444,6 @@ ol ol {
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
-	body {
-		font-size: 100%;
-	}
-
 	[class^="col-"] {
 		width     : 100%;
 		min-height: 0;
@@ -472,8 +468,16 @@ ol ol {
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
+	body {
+		font-size: 100%;
+	}
+
 	.container {
 		width: 92.5%;
+	}
+
+	header {
+		margin-top: 0.75em;
 	}
 
 		.logo {
