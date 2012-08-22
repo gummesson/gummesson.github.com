@@ -47,34 +47,22 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+footer, header, hgroup, menu, nav, section { display: block; }
 
-body { 
-    line-height: 1; 
-}
+body { line-height: 1; }
 
-ol { 
-    list-style: decimal inside; 
-}
+ol { list-style: decimal inside; }
 
-ul { 
-    list-style: square inside; 
-}
+ul { list-style: square inside; }
 
 a {
     text-decoration: none;
     outline        : none;
 }
 
-img, img a {
-    border: none;
-}
+img { border: none; }
 
-blockquote, q { 
-    quotes: none; 
-}
+blockquote, q { quotes: none; }
 
     blockquote:before, blockquote:after,
     q:before, q:after {
@@ -91,20 +79,19 @@ table {
    Body
 =========*/
 
-* {
-    -moz-box-sizing   : border-box; 
-    -webkit-box-sizing: border-box;
-    box-sizing        : border-box;
-}
-
 body {
-    font            : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px */
-    background-color: #fdfdfd;
-    color           : #222222;
+    font                    : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
+    -webkit-font-smoothing  : antialiased;
+    -webkit-text-size-adjust: 100%;
+    color                   : #222222;
+    background-color        : #fdfdfd;
+    -moz-box-sizing         : border-box; 
+    -webkit-box-sizing      : border-box;
+    box-sizing              : border-box;
 }
 
 ::selection, ::-moz-selection {
-    color           :#fdfdfd;
+    color           :´#fdfdfd;
     background-color: #f660ab;
 }
 
@@ -112,17 +99,11 @@ body {
    Structure
 -------------*/
 
-header {
-    margin-top: 2em;
-}
+header { margin-top: 2em; }
 
-.content {
-    margin-top: 1.5em;
-}
+.content { margin-top: 1.5em; }
 
-footer {
-    margin-top: 1em;
-}
+footer { margin-top: 1em; }
 
 /*==========
     Type
@@ -132,30 +113,18 @@ footer {
    Headings
 ------------*/
 
-h1, .alpha {
-    font-size: 2em;
-}
+h1, .alpha { font-size: 2em; }
 
-    .logo {
-        font-size: 3.2em;
-    }
+    .logo { font-size: 3.2em; }
 
-h2, .beta {
-    font-size: 1.5em;
-}
+h2, .beta { font-size: 1.5em; }
 
-h3, .gamma {
-    font-size: 1.25em;
-}
+h3, .gamma { font-size: 1.25em; }
 
-h4, .delta {
-    font-size: 1.125em;
-}
+h4, .delta { font-size: 1.125em; }
 
 h5, .epsilon, 
-h6, .zeta {
-    font-size: 1em;
-}
+h6, .zeta { font-size: 1em; }
 
 /*---------
    Links
@@ -172,9 +141,7 @@ a {
 }
 
 .no-border, 
-.no-border a {
-    border-bottom: none;
-}
+.no-border a { border-bottom: none; }
 
     a:hover, a:focus,
     .no-border a:hover,
@@ -197,9 +164,7 @@ blockquote {
     padding    : 0 1.5em;
 }
 
-    blockquote cite:before {
-        content: "\2014 \00A0";
-    }
+    blockquote cite:before { content: "\2014 \00A0"; }
 
 /*--------
    Code
@@ -244,9 +209,7 @@ code {
         margin-right: 1.5em;
     }
 
-    .nav li:last-child {
-        margin-right: 0;
-    }
+    .nav li:last-child { margin-right: 0; }
 
 /*============
     Shared
@@ -259,79 +222,53 @@ h4,
 h5, 
 h6,
 .tagline,
-.copyright,
 .nav,
 .post-meta,
 .pagination,
-.date {
+.date,
+.copyright {
     font-family: "Cabin", Helvetica, Arial, Sans-serif;
     font-weight: bold;
 }
 
 i, .italic,
-em, .em {
-    font-style: italic;
-}
+em, .em { font-style: italic; }
 
 b, .bold,
-strong, .strong {
-    font-weight: bold;
-}
+strong, .strong { font-weight: bold; }
 
 p,
 ul, ol,
 blockquote,
 pre,
-.full-margin {
-    margin-bottom: 1.5em;
-}
+.full-margin { margin-bottom: 1.5em; }
 
 .small,
-blockquote p {
-    font-size: 0.875em;
-}
+blockquote p { font-size: 0.875em; }
 
 ul, ol,
-.copyright {
-    line-height: 1.75;
-}
+.copyright { line-height: 1.75; }
 
 ul ul,
-ol ol {
-    margin-left: 1.5em;
-}
+ol ol { margin-left: 1.5em; }
 
 /*------------
    Specific 
 ------------*/
 
-.small-margin {
-    margin-bottom: 0.5em;
-}
+.small-margin { margin-bottom: 0.5em; }
 
-.no-margin {
-    margin-bottom: 0;
-}
+.no-margin { margin-bottom: 0; }
 
-.blog-post {
-    margin-bottom: 2em;
-}
+.blog-post { margin-bottom: 2em; }
 
-.blog-post:last-child {
-    margin-bottom: 0;
-}
+.blog-post:last-child { margin-bottom: 0; }
 
-.pagination {
-    margin-bottom: 1em;
-}
+.pagination { margin-bottom: 1em; }
 
-    .separator {
-        padding: 0 1.5em;
-    }
+    .separator { padding: 0 1.5em; }
 
-    .no-link {
-        color: #999999;
-    }
+    .no-link { color: #999999; }
 
  /*  Skills / Progress Bars */
 
@@ -389,53 +326,29 @@ ol ol {
             margin-right: 0;
         }
 
-        .col-eleven {
-            width: 91.2%;
-        }
+        .col-eleven { width: 91.2%; }
 
-        .col-ten {
-            width: 82.65%;
-        }
+        .col-ten { width: 82.65%; }
 
-        .col-nine {
-            width: 74.1%;
-        }
+        .col-nine { width: 74.1%; }
 
-        .col-eight {
-            width: 65.55%;
-        }
+        .col-eight { width: 65.55%; }
 
-        .col-seven {
-            width: 57%;
-        }
+        .col-seven { width: 57%; }
 
-        .col-six {
-            width: 48.45%;
-        }
+        .col-six { width: 48.45%; }
 
-        .col-five {
-            width: 39.9%;
-        }
+        .col-five { width: 39.9%; }
 
-        .col-four {
-            width: 31.35%;
-        }
+        .col-four { width: 31.35%; }
 
-        .col-three {
-            width: 22.8%;
-        }
+        .col-three { width: 22.8%; }
 
-        .col-two {
-            width: 14.25%;
-        }
+        .col-two { width: 14.25%; }
 
-        .col-one {
-            width: 5.7%;
-        }
+        .col-one {  width: 5.7%; }
 
-    .last {
-        margin-right: 0;
-    }
+    .last { margin-right: 0; }
 
 /*-----------------
    Media Queries
@@ -450,35 +363,25 @@ ol ol {
         float     : none;
     }
 
-    header {
-        margin-top: 0;
-    }
+    header {  margin-top: 0; }
 
-    img {
-        max-width : 100%;
+    img { 
+        max-width : 100%; 
         max-height: auto;
     }
 
-        .copyright {
-            margin-bottom: 1em;
-        }
+        .copyright { margin-bottom: 1em; }
 
 }
 
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    body {
-        font-size: 100%;
-    }
+    body { font-size: 100%; }
 
-    .container {
-        width: 92.5%;
-    }
+    .container { width: 92.5%; }
 
-    header {
-        margin-top: 0.65em;
-    }
+    header { margin-top: 0.65em; }
 
         .logo {
             font-size    : 2.8em;
@@ -486,8 +389,6 @@ ol ol {
             margin-bottom: 0.35em;
         }
 
-        .copyright {
-            margin-bottom: 0.5em;
-        }
+        .copyright { margin-bottom: 0.5em; }
 
 }
