@@ -1,0 +1,19 @@
+﻿/* TEAM */
+
+Everything: Ellen Gummesson
+      Site: http://ellengummesson.com/
+   Twitter: @pratnarkoman
+  Location: Sweden
+
+/* SITE */
+
+Last Update: 2012/08/22
+  Standards: HTML5 and CSS3
+ Components: jQuery
+   Software: SublimeText 2 and Jekyll
+    Hosting: GitHub Pages (http://pages.github.com/)
+
+/* THANKS */
+
+Tom Preston-Werner (http://tom.preston-werner.com/)
+            GitHub (http://www.github.com/)
