@@ -3,7 +3,7 @@
         <channel>
             <title>Ellen Gummesson</title>
             <description>Random ramblings, overall geekiness and other musings</description>
-            <link>http://www.ellengummesson.me</link>
+            <link>http://www.ellengummesson.com</link>
             
                 <item>
                     <title>The Hassles of Media Queries</title>
@@ -22,7 +22,7 @@
 &lt;p&gt;To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.&lt;/p&gt;
 </description>
                     <published>August 22, 2012</published>
-                    <link>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</link>
+                    <link>http://www.ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</link>
                 </item>
             
                 <item>
@@ -79,7 +79,7 @@
 &lt;p&gt;You can use &lt;code&gt;jekyll --auto --server&lt;/code&gt; instead of &lt;code&gt;jekyll --server&lt;/code&gt; if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.&lt;/p&gt;
 </description>
                     <published>August 21, 2012</published>
-                    <link>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
+                    <link>http://www.ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
                 </item>
             
                 <item>
@@ -103,7 +103,7 @@
 &lt;p&gt;Like I said in my previous post, it took me some time to actually get it up and running, but now I'm finally happy. It's not the most convenient solution, but it's simple enough for me. I'll probably write a couple of more post about Jekyll, so keep an eye out.&lt;/p&gt;
 </description>
                     <published>August 20, 2012</published>
-                    <link>http://www.ellengummesson.me/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</link>
+                    <link>http://www.ellengummesson.com/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</link>
                 </item>
             
                 <item>
@@ -119,7 +119,7 @@
 &lt;p&gt;That sums it up pretty nicely, and thus, the link bombing ends here.&lt;/p&gt;
 </description>
                     <published>August 19, 2012</published>
-                    <link>http://www.ellengummesson.me/blog/2012/08/19/hello-world</link>
+                    <link>http://www.ellengummesson.com/blog/2012/08/19/hello-world</link>
                 </item>
             
         </channel>

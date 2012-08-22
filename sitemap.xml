@@ -1,55 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://www.ellengummesson.me/blog/2012/08/19/hello-world</loc>
+        <loc>http://www.ellengummesson.com/blog/2012/08/19/hello-world</loc>
         <lastmod>2012-08-22T16:32:01+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</loc>
+        <loc>http://www.ellengummesson.com/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
+        <loc>http://www.ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/blog/2012/08/22/the-hassles-of-media-queries</loc>
+        <loc>http://www.ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/404.html</loc>
+        <loc>http://www.ellengummesson.com/404.html</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/about.html</loc>
+        <loc>http://www.ellengummesson.com/about.html</loc>
         <lastmod>2012-08-22T16:30:52+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/archives.html</loc>
+        <loc>http://www.ellengummesson.com/archives.html</loc>
         <lastmod>2012-08-22T16:32:01+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/contact.html</loc>
+        <loc>http://www.ellengummesson.com/contact.html</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/cv.html</loc>
+        <loc>http://www.ellengummesson.com/cv.html</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/</loc>
+        <loc>http://www.ellengummesson.com/</loc>
         <lastmod>2012-08-22T16:32:01+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/projects/begrider/</loc>
+        <loc>http://www.ellengummesson.com/projects/begrider/</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/projects/</loc>
+        <loc>http://www.ellengummesson.com/projects/</loc>
         <lastmod>2012-08-22T16:08:14+02:00</lastmod>
     </url>
     <url>
-        <loc>http://www.ellengummesson.me/projects/jekyll-pagination-output/</loc>
+        <loc>http://www.ellengummesson.com/projects/jekyll-pagination-output/</loc>
         <lastmod>2012-08-22T16:32:01+02:00</lastmod>
     </url>
 </urlset>
