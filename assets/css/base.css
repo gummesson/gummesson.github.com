@@ -24,17 +24,17 @@
 =========*/
 
 body {
-    font                    : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
-    -webkit-font-smoothing  : antialiased;
-    color                   : #222222;
-    background-color        : #fdfdfd;
-    -moz-box-sizing         : border-box; 
-    -webkit-box-sizing      : border-box;
-    box-sizing              : border-box;
+    font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
+    color                 : #222222;
+    -webkit-font-smoothing: antialiased;
+    background-color      : #fdfdfd;
+    -moz-box-sizing       : border-box; 
+    -webkit-box-sizing    : border-box;
+    box-sizing            : border-box;
 }
 
 ::selection, ::-moz-selection {
-    color           :´#fdfdfd;
+    color           : #fdfdfd;
     background-color: #f660ab;
 }
 
@@ -153,28 +153,26 @@ ol ol { margin-left: 1.5em; }
 ================*/
 
 .nav, .nav ul,
-.no-list {
+.no-list,
+.hor-list {
     list-style   : none;
     margin-bottom: 0;
 }
 
-    .nav li {
+    .nav li,
+    .hor-list li {
         display     : inline-block;
         margin-right: 1.5em;
     }
 
-    .nav li:last-child { margin-right: 0; }
+    .nav li:last-child,
+    .hor-list li:last-child { margin-right: 0; }
 
 /*============
     Shared
 ============*/
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6,
+h1, h2, h3, h4, h5, h6,
 .tagline,
 .nav,
 .post-meta,
