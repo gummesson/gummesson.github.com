@@ -303,6 +303,16 @@ ul, ol,
    Media Queries
 -----------------*/
 
+/* Smaller screens */
+@media screen and (max-width: 1024px) {
+
+    img { 
+        max-width : 100%; 
+        max-height: 100%;
+    }
+
+}
+
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -313,11 +323,6 @@ ul, ol,
     }
 
     header {  margin-top: 0; }
-
-    img { 
-        max-width : 100%; 
-        max-height: auto;
-    }
 
         .copyright { margin-bottom: 1em; }
 

@@ -11,11 +11,11 @@
 
 &lt;p&gt;It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub's built-in editor since that's a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said &quot;DETACHED HEAD&quot;. After some googling around I found a pretty simple &lt;a href=&quot;http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git,&quot; title=&quot;Stack Overflow - How do I fix checking out HEAD^ in git&quot;&gt;solution&lt;/a&gt; that thankfully solved this.&lt;/p&gt;
 
-&lt;p&gt;However, after I'd fixed that and remade all of my changes locally using my normal method I got another error message when I was trying to commit the changes, &quot;Failed to sync this branch&quot;.&lt;/p&gt;
+&lt;p&gt;However, after I'd fixed that and remade all of my changes locally using my normal method, I got another error message when I was trying to commit the changes: &quot;Failed to sync this branch&quot;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src='/assets/images/2012-08-23-failed-to-sync.png' title='Failed to sync this branch' alt='Failed to sync this branch'&gt;&lt;/p&gt;
 
-&lt;p&gt;I again did a google search but this time around I didn't come across something that could entirely fix the problem. I did found a &lt;a href=&quot;http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327&quot; title=&quot;git push in the shell&quot;&gt;temporarily fix&lt;/a&gt; though which involves using the shell, so I'm still able to update the site. Now I'm hoping that the problem will solve itself, even though it's highly unlikely.&lt;/p&gt;
+&lt;p&gt;I again did a google search but this time around I didn't come across something that could entirely fix the problem. I did found a &lt;a href=&quot;http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327&quot; title=&quot;git push in the shell&quot;&gt;temporary fix&lt;/a&gt; though which involves using the shell, so I'm still able to update the site. I don't know if I screwed something up or if it's a bug. I'm hoping that the problem will solve itself, even though it's highly unlikely.&lt;/p&gt;
 
 &lt;p&gt;Damn me and my apparent laziness.&lt;/p&gt;
 </description>
