@@ -135,15 +135,16 @@ blockquote {
    Code
 --------*/
 
+
 pre {
     white-space     : pre-wrap;
     line-height     : 1;
     background-color: #dddddd;
     border          : 1px solid #999999;
     border-radius   : 0.15em;
-    padding         : 0.25em;
+    padding         : 0.25em 0.5em;
     margin-top      : 0.25em;
-    }
+}
 
 code {
     font-family     : Consolas, Monaco, Andale Mono, monospace;
@@ -155,9 +156,14 @@ code {
 }
 
     pre > code {
-        border : none;
-        padding: 0;
+        border    : none;
+        padding   : 0;
+        background: none;
     }
+
+.highlight {
+    color: #ff60ab;
+}
 
 /*===========
     Lists
