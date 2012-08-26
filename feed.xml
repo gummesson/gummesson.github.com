@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <rss version="2.0">
-        <channel>
-            <title>Ellen Gummesson</title>
-            <description>Random ramblings, overall geekiness and other musings</description>
-            <link>http://ellengummesson.com</link>
+  <rss version="2.0">
+    <channel>
+      <title>Ellen Gummesson</title>
+        <description>Random ramblings, overall geekiness and other musings</description>
+          <link>http://ellengummesson.com</link>
             
-                <item>
-                    <title>Trying Out SASS</title>
-                    <description>&lt;p&gt;Disclaimer: the following blog post is extremely geeky and contains A LOT of code.&lt;/p&gt;
+              <item>
+                <title>My Jekyll Plugins</title>
+                <description>&lt;p&gt;Continuing with my Jekyll series, here's a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.&lt;/p&gt;
+
+&lt;h2&gt;Pagination&lt;/h2&gt;
+
+&lt;p&gt;For pagination, I just followed the guidelines from the &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Pagination&quot;&gt;official wiki&lt;/a&gt; and did some minor changes in the markup. Although it's strictly not a plugin, I had to make a small configuration in Jekyll's &lt;code&gt;pagination.rb&lt;/code&gt; file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the &lt;code&gt;pagination.rb&lt;/code&gt; from Jekyll's library directory and placed it in the _plugins folder and changed the following line from this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;newpage.dir = File.join(page.dir, &quot;page#{num_page}&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;newpage.dir = File.join(page.dir, &quot;blog/page/#{num_page}&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To my suprise, it actually worked! Like I said earlier, I guess it doesn't really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.&lt;/p&gt;
+
+&lt;h2&gt;Tags&lt;/h2&gt;
+
+&lt;p&gt;To get tags to work on this site I used &lt;a href=&quot;http://charliepark.org/tags-in-jekyll/&quot; title=&quot;Tags In Jekyll&quot;&gt;an excellent guide/plugin&lt;/a&gt; from Charlie Parker. I also changed the default folder to a different one by adding and changing &lt;code&gt;tag_dir&lt;/code&gt; in my _config.yml file (ie: &lt;code&gt;tag_dir: /blog/tag/&lt;/code&gt; instead of just &lt;code&gt;tag_dir: /tag/&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2&gt;RSS Feed&lt;/h2&gt;
+
+&lt;p&gt;I followed and used the guidelines from Snaptortoise's &lt;a href=&quot;https://github.com/snaptortoise/jekyll-rss-feeds&quot; title=&quot;Jekyll RSS Feeds Templates&quot;&gt;RSS Feeds Templates&lt;/a&gt;. However, instead of using &lt;code&gt;layout: rss-feed&lt;/code&gt; in my feed.xml file I use &lt;code&gt;layout: nil&lt;/code&gt;. Same thing, different names.&lt;/p&gt;
+
+&lt;h2&gt;Sitemap&lt;/h2&gt;
+
+&lt;p&gt;I use Mike Levin's &lt;a href=&quot;https://github.com/kinnetica/jekyll-plugins&quot; title=&quot;sitemap.xml Generator&quot;&gt;sitemap.xml Generator&lt;/a&gt; to generate a simple sitemap. It's maybe not the the most required function ever, but I like to have it.&lt;/p&gt;
+
+&lt;h2&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;For an easy image implementation I used Scott Parker's plugin &lt;a href=&quot;http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting&quot; title=&quot;ImageBlock&quot;&gt;ImageBlock&lt;/a&gt;. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it's probably not suitable if you're going to use a lot of images since it just fetches them from one folder called &lt;code&gt;images&lt;/code&gt; (or in my case, &lt;code&gt;/assets/images&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2&gt;Youtube&lt;/h2&gt;
+
+&lt;p&gt;I stumbled upon &lt;a href=&quot;http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/&quot; title=&quot;Jekyll Youtube Liquid Template Tag&quot;&gt;this gist/plugin&lt;/a&gt; by Portway Point and I decided to test it even though I probably won't use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.&lt;/p&gt;
+</description>
+                <published>August 26, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/26/my-jekyll-plugins</link>
+              </item>
+            
+              <item>
+                <title>Trying Out SASS</title>
+                <description>&lt;p&gt;Disclaimer: the following blog post is extremely geeky and contains A LOT of code.&lt;/p&gt;
 
 &lt;p&gt;Earlier today I decided to try out &lt;a href=&quot;http:/www.sass-lang.com/&quot; title=&quot;Syntactically Awesome Stylesheets&quot;&gt;Sass&lt;/a&gt; and &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass - an open-source CSS Authoring Framework&quot;&gt;Compass&lt;/a&gt; because I've seen it being mentioned almost daily for quite a while. I didn't really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it's still readable. I've tried a few plugins that enables automatic highlighting, but I haven't come across one that I really love. I also had remove nearly all of my comments in the code but I'm sure it's still understandable. If not, you can check it out on my &lt;a href=&quot;https://github.com/gummesson/sass-type-variables&quot; title=&quot;Sass Type Variables&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 
@@ -162,13 +204,13 @@ a:hover, a:focus {
 
 &lt;p&gt;It might look like a lot of work for simplifying such a small part, but the thing is that both &lt;code&gt;variables.scss&lt;/code&gt; and &lt;code&gt;screen.scss&lt;/code&gt; are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up &lt;code&gt;variables.scss&lt;/code&gt; and re-rendering it. I don't have to change anything else. I think I'll try out Sass for a while and see how it goes. There's a lot more to it than just simple variables and math, so I'm looking forward to see what I can come up with.&lt;/p&gt;
 </description>
-                    <published>August 25, 2012</published>
-                    <link>http://ellengummesson.com/blog/2012/08/25/trying-out-sass</link>
-                </item>
+                <published>August 25, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/25/trying-out-sass</link>
+              </item>
             
-                <item>
-                    <title>My Big Fat Git Failure</title>
-                    <description>&lt;p&gt;Note: this isn't critism, rather a documentation of my own stupidity.&lt;/p&gt;
+              <item>
+                <title>My Big Fat Git Failure</title>
+                <description>&lt;p&gt;Note: this isn't critism, rather a documentation of my own stupidity.&lt;/p&gt;
 
 &lt;p&gt;It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub's built-in editor since that's a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said &quot;DETACHED HEAD&quot;. After some googling around I found a pretty simple &lt;a href=&quot;http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git,&quot; title=&quot;Stack Overflow - How do I fix checking out HEAD^ in git&quot;&gt;solution&lt;/a&gt; that thankfully solved this.&lt;/p&gt;
 
@@ -180,13 +222,13 @@ a:hover, a:focus {
 
 &lt;p&gt;Damn me and my apparent laziness.&lt;/p&gt;
 </description>
-                    <published>August 23, 2012</published>
-                    <link>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</link>
-                </item>
+                <published>August 23, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</link>
+              </item>
             
-                <item>
-                    <title>The Hassles of Media Queries</title>
-                    <description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+              <item>
+                <title>The Hassles of Media Queries</title>
+                <description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -200,13 +242,13 @@ a:hover, a:focus {
 
 &lt;p&gt;To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.&lt;/p&gt;
 </description>
-                    <published>August 22, 2012</published>
-                    <link>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</link>
-                </item>
+                <published>August 22, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</link>
+              </item>
             
-                <item>
-                    <title>Windows 7, Ruby, DevKit and Jekyll</title>
-                    <description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
+              <item>
+                <title>Windows 7, Ruby, DevKit and Jekyll</title>
+                <description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
 
 &lt;h2&gt;Installing Ruby&lt;/h2&gt;
 
@@ -257,33 +299,9 @@ a:hover, a:focus {
 
 &lt;p&gt;You can use &lt;code&gt;jekyll --auto --server&lt;/code&gt; instead of &lt;code&gt;jekyll --server&lt;/code&gt; if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.&lt;/p&gt;
 </description>
-                    <published>August 21, 2012</published>
-                    <link>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
-                </item>
+                <published>August 21, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
+              </item>
             
-                <item>
-                    <title>WordPress to GetSimple to Jekyll</title>
-                    <description>&lt;p&gt;... Or: &quot;How I learned to stop worrying and love the command line&quot;.&lt;/p&gt;
-
-&lt;p&gt;I love WordPress. I think it's a really great CMS and the community is huge, to say the least. However, I feel that it's sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I'd choose it in a heartbeat. But since I don't plan to do that I wanted something smaller. I've been playing around with &lt;a href=&quot;http://www.get-simple.info/&quot; title=&quot;GetSimple CMS&quot;&gt;GetSimple&lt;/a&gt; (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn't really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn't feel quite satisfied. Then I found &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is described like this in the &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot; title=&quot;Jekyll Wiki on GitHub&quot;&gt;official wiki&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;In other words, Jekyll takes your template files (written in HTML and/or &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; and marked with &lt;a href=&quot;http://liquidmarkup.org/&quot; title=&quot;Liquid tags&quot;&gt;Liquid tags&lt;/a&gt; and generates them into simple, static .html files. &quot;Blogging Like a Hacker&quot; is sort of Jekyll's tagline, and I think that's a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don't see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its' functionality. For example, I use one that enables the pagination pages to be generated into different folders called &lt;code&gt;/blog/page/2/&lt;/code&gt; and so on (rather than &lt;code&gt;/page2/&lt;/code&gt;), and another one to create folders and .html files for my tags (I'll write more about this in another post).&lt;/p&gt;
-
-&lt;h3&gt;Why?&lt;/h3&gt;
-
-&lt;p&gt;It's incredibly lightweight. It doesn't need a database or any back end language like PHP at all, which means that you don't have to worry about the database breaking and you can host it wherever you want to. The file size of a site which consists of just static pages is ridiciously small too (this whole site takes up about 200 kb as of right now) and above all, it's highly customizable. One big thing that actually irks me about WordPress is that it's filled with many pre-named classes and functions that you can't change. Well, you could go into the source and hammer away there, but I'd rather not do that. With Jekyll I can actually change the look of the site in a matter of minutes and I can easily add a new class wherever I want if I need to. It only generates the things that I've added by myself. The only disadvantage is that I need to sit in front of my computer in order for me to use Jekyll. It doesn't really matter to me, since I've never been comfortable with writing and publish post with my phone or via email.&lt;/p&gt;
-
-&lt;p&gt;Like I said in my previous post, it took me some time to actually get it up and running, but now I'm finally happy. It's not the most convenient solution, but it's simple enough for me. I'll probably write a couple of more post about Jekyll, so keep an eye out.&lt;/p&gt;
-</description>
-                    <published>August 20, 2012</published>
-                    <link>http://ellengummesson.com/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</link>
-                </item>
-            
-        </channel>
-    </rss>
+    </channel>
+  </rss>

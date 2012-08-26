@@ -2,62 +2,66 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/19/hello-world</loc>
-        <lastmod>2012-08-22T16:32:01+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</loc>
-        <lastmod>2012-08-23T14:44:59+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/25/trying-out-sass</loc>
-        <lastmod>2012-08-25T17:24:57+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:24+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/blog/2012/08/26/my-jekyll-plugins</loc>
+        <lastmod>2012-08-26T20:16:32+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/404.html</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:05+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/about.html</loc>
-        <lastmod>2012-08-22T16:30:52+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:10+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-08-25T17:24:57+02:00</lastmod>
+        <lastmod>2012-08-26T20:16:32+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:10+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/cv.html</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:10+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-08-25T17:24:57+02:00</lastmod>
+        <lastmod>2012-08-26T20:16:32+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/begrider/</loc>
-        <lastmod>2012-08-22T16:08:14+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:10+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/</loc>
-        <lastmod>2012-08-25T12:33:08+02:00</lastmod>
+        <lastmod>2012-08-26T11:24:10+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-08-25T17:24:57+02:00</lastmod>
+        <lastmod>2012-08-26T20:16:32+02:00</lastmod>
     </url>
 </urlset>

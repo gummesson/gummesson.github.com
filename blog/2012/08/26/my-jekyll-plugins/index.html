@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>My Big Fat Git Failure / Ellen Gummesson</title>
+  <title>My Jekyll Plugins / Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -52,19 +52,43 @@
           <div class="col-eight">
             <div class="content">
               <article>
-  <h1>My Big Fat Git Failure</h1>
-    <p class="post-meta small-margin">Posted on August 23, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Git" class="no-border">Git</a>    </p>
-      <p>Note: this isn't critism, rather a documentation of my own stupidity.</p>
+  <h1>My Jekyll Plugins</h1>
+    <p class="post-meta small-margin">Posted on August 26, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Jekyll" class="no-border">Jekyll</a>    </p>
+      <p>Continuing with my Jekyll series, here's a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
 
-<p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub's built-in editor since that's a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said "DETACHED HEAD". After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this.</p>
+<h2>Pagination</h2>
 
-<p>However, after I'd fixed that and remade all of my changes locally using my normal method, I got another error message when I was trying to commit the changes: "Failed to sync this branch".</p>
+<p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it's strictly not a plugin, I had to make a small configuration in Jekyll's <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll's library directory and placed it in the _plugins folder and changed the following line from this:</p>
 
-<p><img src='/assets/images/2012-08-23-failed-to-sync.png' title='Failed to sync this branch' alt='Failed to sync this branch'></p>
+<pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")
+</code></pre>
 
-<p>I again did a google search but this time around I didn't come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I'm still able to update the site. I don't know if I screwed something up or if it's a bug. I'm hoping that the problem will solve itself, even though it's highly unlikely.</p>
+<p>To this:</p>
 
-<p>Damn me and my apparent laziness.</p>
+<pre><code>newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
+</code></pre>
+
+<p>To my suprise, it actually worked! Like I said earlier, I guess it doesn't really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
+
+<h2>Tags</h2>
+
+<p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/" title="Tags In Jekyll">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
+
+<h2>RSS Feed</h2>
+
+<p>I followed and used the guidelines from Snaptortoise's <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
+
+<h2>Sitemap</h2>
+
+<p>I use Mike Levin's <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It's maybe not the the most required function ever, but I like to have it.</p>
+
+<h2>Images</h2>
+
+<p>For an easy image implementation I used Scott Parker's plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it's probably not suitable if you're going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
+
+<h2>Youtube</h2>
+
+<p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won't use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 
 </article>
 

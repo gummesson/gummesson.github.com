@@ -24,34 +24,34 @@
 =========*/
 
 body {
-    font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
-    color                 : #222222;
-    -webkit-font-smoothing: antialiased;
-    background-color      : #fdfdfd;
-    -moz-box-sizing       : border-box; 
-    -webkit-box-sizing    : border-box;
-    box-sizing            : border-box;
+  font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
+  color                 : #222222;
+  -webkit-font-smoothing: antialiased;
+  background-color      : #fdfdfd;
+  -moz-box-sizing       : border-box; 
+  -webkit-box-sizing    : border-box;
+  box-sizing            : border-box;
 }
 
 ::selection, ::-moz-selection {
-    color           : #fdfdfd;
-    background-color: #f660ab;
+  color           : #fdfdfd;
+  background-color: #f660ab;
 }
 
 /*-------------
    Structure
 -------------*/
 
-header {
-    margin-top: 2em;
+.branding {
+  margin-top: 2em;
 }
 
 .content {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
-footer {
-    margin-top: 1em;
+.info {
+  margin-top: 1em;
 }
 
 /*==========
@@ -63,28 +63,28 @@ footer {
 ------------*/
 
 h1, .alpha {
-    font-size: 2em; 
+  font-size: 2em; 
 }
 
-    .logo {
-        font-size: 3.2em; 
-    }
+  .logo {
+    font-size: 3.2em; 
+  }
 
 h2, .beta {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3, .gamma {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 h4, .delta {
-    font-size: 1.125em;
+  font-size: 1.125em;
 }
 
 h5, .epsilon, 
 h6, .zeta {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 /*---------
@@ -92,44 +92,44 @@ h6, .zeta {
 ---------*/
 
 a {
-    color             : #222222;
-    border-bottom     : 1px dotted #999999;
-    -webkit-transition: all 200ms linear;
-    -moz-transition   : all 200ms linear;
-    -ms-transition    : all 200ms linear;
-    -o-transition     : all 200ms linear;
-    transition        : all 200ms linear;
+  color             : #222222;
+  border-bottom     : 1px dotted #999999;
+  -webkit-transition: all 200ms linear;
+  -moz-transition   : all 200ms linear;
+  -ms-transition    : all 200ms linear;
+  -o-transition     : all 200ms linear;
+  transition        : all 200ms linear;
 }
 
 .no-border, 
 .no-border a {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-    a:hover, a:focus,
-    .no-border a:hover,
-    .no-border a:focus {
-        color        : #ff60ab;
-        border-bottom: 3px solid #ff60ab;
-    }
+  a:hover, a:focus,
+  .no-border a:hover,
+  .no-border a:focus {
+    color        : #ff60ab;
+    border-bottom: 3px solid #ff60ab;
+  }
 
-    a:active {
-        position: relative;
-        top     : 1px;
-    }
+  a:active {
+    position: relative;
+    top     : 1px;
+  }
 
 /*----------
    Quotes
 ----------*/
 
 blockquote {
-    border-left: 0.25em solid #999999;
-    padding    : 0 1.5em;
+  border-left: 0.25em solid #999999;
+  padding    : 0 1.5em;
 }
 
-    blockquote cite:before {
-        content: "\2014 \00A0";
-    }
+  blockquote cite:before {
+    content: "\2014 \00A0";
+  }
 
 /*--------
    Code
@@ -137,29 +137,29 @@ blockquote {
 
 
 pre {
-    white-space     : pre-wrap;
-    line-height     : 1;
-    background-color: #dddddd;
-    border          : 1px solid #999999;
-    border-radius   : 0.15em;
-    padding         : 0.25em 0.5em;
-    margin-top      : 0.25em;
+  white-space     : pre-wrap;
+  line-height     : 1;
+  background-color: #dddddd;
+  border          : 1px solid #999999;
+  border-radius   : 0.15em;
+  padding         : 0.25em 0.5em;
+  margin-top      : 0.25em;
 }
 
 code {
-    font-family     : Consolas, Monaco, Andale Mono, monospace;
-    font-size       : 0.75em;
-    background-color: #dddddd;
-    border          : 1px solid #999999;
-    border-radius   : 0.25em;
-    padding         : 0.1em 0.2em;
+  font-family     : Consolas, Monaco, Andale Mono, monospace;
+  font-size       : 0.75em;
+  background-color: #dddddd;
+  border          : 1px solid #999999;
+  border-radius   : 0.25em;
+  padding         : 0.1em 0.2em;
 }
 
-    pre > code {
-        border    : none;
-        padding   : 0;
-        background: none;
-    }
+  pre > code {
+    border    : none;
+    padding   : 0;
+    background: none;
+}
 
 .highlight {
     color: #ff60ab;
@@ -170,16 +170,16 @@ code {
 ===========*/
 
 ol {
-    list-style: decimal inside;
+  list-style: decimal inside;
 }
 
 ul {
-    list-style: square inside;
+  list-style: square inside;
 }
 
 ul ul,
 ol ol {
-    margin-left: 1.5em;
+  margin-left: 1.5em;
 }
 
 /*================
@@ -189,20 +189,20 @@ ol ol {
 .nav, .nav ul,
 .no-list,
 .hor-list {
-    list-style   : none;
-    margin-bottom: 0;
+  list-style   : none;
+  margin-bottom: 0;
 }
 
-    .nav li,
-    .hor-list li {
-        display     : inline-block;
-        margin-right: 1.5em;
-    }
+  .nav li,
+  .hor-list li {
+    display     : inline-block;
+    margin-right: 1.5em;
+  }
 
-    .nav li:last-child,
-    .hor-list li:last-child {
-        margin-right: 0;
-    }
+  .nav li:last-child,
+  .hor-list li:last-child {
+    margin-right: 0;
+  }
 
 /*============
     Shared
@@ -215,18 +215,18 @@ h1, h2, h3, h4, h5, h6,
 .pagination,
 .date,
 .copyright {
-    font-family: "Cabin", Helvetica, Arial, Sans-serif;
-    font-weight: bold;
+  font-family: "Cabin", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
 }
 
 i, .italic,
 em, .em {
-    font-style: italic;
+  font-style: italic;
 }
 
 b, .bold,
 strong, .strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 p,
@@ -234,17 +234,17 @@ ul, ol,
 blockquote,
 pre,
 .full-margin {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .small,
 blockquote p {
-    font-size: 0.875em;
+  font-size: 0.875em;
 }
 
 ul, ol,
 .copyright {
-    line-height: 1.75;
+  line-height: 1.75;
 }
 
 /*------------
@@ -252,28 +252,28 @@ ul, ol,
 ------------*/
 
 .small-margin {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .no-margin {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .blog-post {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .blog-post:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .pagination {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-    .separator {
-        padding: 0 1.5em;
-    }
+  .separator {
+    padding: 0 1.5em;
+  }
 
     .no-link {
         color: #999999;
@@ -282,23 +282,23 @@ ul, ol,
  /*  Skills / Progress Bars */
 
 .progress-bar { 
+  float        : left;
+  display      : block;
+  width        : 100%; 
+  height       : 0.5em; 
+  background   : #999999;
+  border-radius: 0.15em;
+  margin-bottom: 1em;
+}
+
+  .tip {
     float        : left;
     display      : block;
     width        : 100%; 
     height       : 0.5em; 
-    background   : #999999;
-    border-radius: 0.15em;
-    margin-bottom: 1em;
-}
-
-    .tip {
-        float        : left;
-        display      : block;
-        width        : 100%; 
-        height       : 0.5em; 
-        background   : #222222;
-        border-radius: 0.15em 0 0 0.15em;
-    }
+    background   : #222222;
+    border-radius: 0.15em 0 0 0.15em;
+  }
 
 /*=================
     Grid System
@@ -309,74 +309,74 @@ ul, ol,
 ---------*/
 
 .container {
-    width : 95%;
-    height: 100%; 
-    margin: 0 auto;
+  width : 95%;
+  height: 100%; 
+  margin: 0 auto;
 }
 
-    .grid { 
-        max-width: 1140px;
-        margin   : 0 auto;
+  .grid { 
+    max-width: 1140px;
+    margin   : 0 auto;
+  }
+
+  .row { 
+    clear   : both;
+    overflow: hidden;
+  }
+
+    [class^="col-"] {
+      min-height  : 1em;
+      margin-right: 2.85%;
+      float       : left;
     }
 
-    .row { 
-        clear   : both;
-        overflow: hidden;
-    }
-
-        [class^="col-"] {
-            min-height  : 0.1em;
-            margin-right: 2.85%;
-            float       : left;
-        }
-
-        .col-twelve {
-            width       : 99.75%;
-            margin-right: 0;
-        }
+      .col-twelve {
+        width       : 99.99%;
+        margin-right: 0;
+      }
 
         .col-eleven {
-            width: 91.2%;
+          width: 91.42%;
         }
 
         .col-ten {
-            width: 82.65%;
+          width: 82.85%;
         }
 
         .col-nine {
-            width: 74.1%;
+          width: 74.28%;
         }
 
         .col-eight {
-            width: 65.55%;
+          width: 65.71%;
         }
 
         .col-seven {
-            width: 57%;
+          width: 57.14%;
         }
 
         .col-six {
-            width: 48.45%;
+          width: 48.57%;
         }
 
         .col-five {
-            width: 39.9%;
+          width: 40%;
         }
 
         .col-four {
-            width: 31.35%;
+          width: 31.43%;
         }
 
         .col-three {
-            width: 22.8%;
+          width: 22.86%;
         }
 
         .col-two {
-            width: 14.25%;
+          width: 14.29%;
         }
 
         .col-one {
-            width: 5.7%;
+          width: 5.72%;
         }
 
     .last {
@@ -390,55 +390,55 @@ ul, ol,
 /* Smaller screens */
 @media screen and (max-width: 1024px) {
 
-    img { 
-        max-width : 100%; 
-        max-height: 100%;
-    }
+  img { 
+    max-width : 100%; 
+    max-height: 100%;
+  }
 
 }
 
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    [class^="col-"] {
-        width     : 100%;
-        min-height: 0;
-        float     : none;
-    }
+  [class^="col-"] {
+    width     : 100%;
+    min-height: 0;
+    float     : none;
+  }
 
-    header {
-        margin-top: 0;
-    }
+  .branding {
+    margin-top: 0;
+  }
 
-        .copyright {
-            margin-bottom: 1em;
-        }
+    .copyright {
+      margin-bottom: 1em;
+    }
 
 }
 
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    body {
-        font-size: 100%;
+  body {
+    font-size: 100%;
+  }
+
+  .container {
+    width: 92.5%;
+  }
+
+  .branding {
+    margin-top: 0.65em;
+  }
+
+    .logo {
+      font-size    : 2.8em;
+      line-height  : 1.1;
+      margin-bottom: 0.35em;
+      }
+
+    .copyright {
+      margin-bottom: 0.5em;
     }
-
-    .container {
-        width: 92.5%;
-    }
-
-    header {
-        margin-top: 0.65em;
-    }
-
-        .logo {
-            font-size    : 2.8em;
-            line-height  : 1.1;
-            margin-bottom: 0.35em;
-        }
-
-        .copyright {
-            margin-bottom: 0.5em;
-        }
 
 }
