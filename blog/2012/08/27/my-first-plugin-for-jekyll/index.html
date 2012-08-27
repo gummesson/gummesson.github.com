@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Git / Ellen Gummesson</title>
+  <title>My First Plugin For Jekyll / Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -52,63 +52,57 @@
           <div class="col-eight">
             <div class="content">
               <article>
-  <h1>Git</h1>
-    <ul>
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="date">Aug 23, 2012 / </span><a href="/blog/2012/08/23/my-big-fat-git-failure" class="no-border" >My Big Fat Git Failure</a></li>
-          
-        
-      
-        
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-      
-    </ul>
+  <h1>My First Plugin For Jekyll</h1>
+    <p class="post-meta small-margin">Posted on August 27, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Jekyll" class="no-border">Jekyll</a>    </p>
+      <p>Okay, I wouldn't really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.</p>
+
+<h2>Source code</h2>
+
+<pre><code>module Jekyll
+  class Vimeo &lt; Liquid::Tag
+    @@width = 500
+    @@height = 281
+
+    def initialize(name, id, tokens)
+      super
+      @id = id
+    end
+
+    def render(context)
+      %(&lt;iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;)
+    end
+  end
+end
+
+Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+</code></pre>
+
+<h3>Liquid tag</h3>
+
+<p>Remove the space before and after the percentage signs.</p>
+
+<pre><code>{ % vimeo 12345678 % }
+</code></pre>
+
 </article>
+
+  <section class="comments">
+  <h1 class="small-margin">Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section>
+
             </div>
           </div><!-- .col-eight -->
           <div class="col-two last"></div><!-- .col-two .last -->

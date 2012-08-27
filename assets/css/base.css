@@ -137,7 +137,8 @@ blockquote {
 
 
 pre {
-  white-space     : pre-wrap;
+  word-wrap       : normal;
+  overflow        : auto; 
   line-height     : 1;
   background-color: #dddddd;
   border          : 1px solid #999999;
@@ -152,7 +153,7 @@ code {
   background-color: #dddddd;
   border          : 1px solid #999999;
   border-radius   : 0.25em;
-  padding         : 0.1em 0.2em;
+  padding         : 0.1em 0.25em;
 }
 
   pre > code {

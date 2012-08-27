@@ -6,6 +6,42 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>My First Plugin For Jekyll</title>
+                <description>&lt;p&gt;Okay, I wouldn't really call it my first real plugin, but I took the &lt;a href=&quot;http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/&quot; title=&quot;Jekyll Youtube Liquid Template Tag Gist&quot;&gt;Youtube plugin&lt;/a&gt; I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.&lt;/p&gt;
+
+&lt;h2&gt;Source code&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;module Jekyll
+  class Vimeo &amp;lt; Liquid::Tag
+    @@width = 500
+    @@height = 281
+
+    def initialize(name, id, tokens)
+      super
+      @id = id
+    end
+
+    def render(context)
+      %(&amp;lt;iframe width=&quot;#{@@width}&quot; height=&quot;#{@@height}&quot; src=&quot;http://player.vimeo.com/video/#{@id}&quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&amp;gt;&amp;lt;/iframe&amp;gt;)
+    end
+  end
+end
+
+Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Liquid tag&lt;/h3&gt;
+
+&lt;p&gt;Remove the space before and after the percentage signs.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ % vimeo 12345678 % }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <published>August 27, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/27/my-first-plugin-for-jekyll</link>
+              </item>
+            
+              <item>
                 <title>My Jekyll Plugins</title>
                 <description>&lt;p&gt;Continuing with my Jekyll series, here's a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.&lt;/p&gt;
 
@@ -91,56 +127,56 @@ $default-margin: 1.5em;
 /* Body */
 
 body {
-    font : #{$default-font-percentage}/#{$default-font-lineheight} $default-font-family;
-    color: $default-font-color;
+  font : #{$default-font-percentage}/#{$default-font-lineheight} $default-font-family;
+  color: $default-font-color;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
 }
 
 h1 {
-    font-size: $default-font-size * 2;
+  font-size: $default-font-size * 2;
 }
 
 h2 {
-      font-size: $default-font-size * 1.5;
-    line-height: $default-font-lineheight - 0.2;
+    font-size: $default-font-size * 1.5;
+  line-height: $default-font-lineheight - 0.2;
 }
 
 h3 {
-      font-size: $default-font-size * 1.25;
-    line-height: $default-font-lineheight - 0.2;
+    font-size: $default-font-size * 1.25;
+  line-height: $default-font-lineheight - 0.2;
 }
 
 h4 {
-      font-size: $default-font-size * 1.125;
-    line-height: $default-font-lineheight - 0.2;
+    font-size: $default-font-size * 1.125;
+  line-height: $default-font-lineheight - 0.2;
 }
 
 h5, h6 {
-    font-size: $default-font-size;
+  font-size: $default-font-size;
 }
 
 /* Paragraphs */
 
 p {
-    margin-bottom: $default-margin;
+  margin-bottom: $default-margin;
 }
 
 /* Links */
 
 a {
-            color: $default-link-color;
-    border-bottom: $default-link-decoration $default-link-color;
+           color: $default-link-color;
+  border-bottom: $default-link-decoration $default-link-color;
 }
 
 a:hover, a:focus {
-            color: $default-hover-color;
-    border-bottom: $default-hover-decoration $default-hover-color;
+          color: $default-hover-color;
+  border-bottom: $default-hover-decoration $default-hover-color;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -158,47 +194,47 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, Times, Serif;
-    font-weight: bold;
+  font-family: Georgia, Times, Serif;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h2 {
-      font-size: 1.5em;
-    line-height: 1.3;
+    font-size: 1.5em;
+  line-height: 1.3;
 }
 
 h3 {
-      font-size: 1.25em;
-    line-height: 1.3;
+    font-size: 1.25em;
+  line-height: 1.3;
 }
 
 h4 {
-      font-size: 1.125em;
-    line-height: 1.3;
+    font-size: 1.125em;
+  line-height: 1.3;
 }
 
 h5, h6 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 /* Paragraphs */
 p {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* Links */
 a {
-            color: #333333;
-    border-bottom: 1px solid #333333;
+          color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
 a:hover, a:focus {
-            color: #666666;
-    border-bottom: 1px solid #666666;
+          color: #666666;
+  border-bottom: 1px solid #666666;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -244,63 +280,6 @@ a:hover, a:focus {
 </description>
                 <published>August 22, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</link>
-              </item>
-            
-              <item>
-                <title>Windows 7, Ruby, DevKit and Jekyll</title>
-                <description>&lt;p&gt;To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using &lt;a href=&quot;http://www.jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).&lt;/p&gt;
-
-&lt;h2&gt;Installing Ruby&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to &lt;a href=&quot;http://rubyinstaller.org/&quot; title=&quot;Ruby Installer for Windows&quot;&gt;RubyInstaller&lt;/a&gt; and download the latest version.&lt;/li&gt;
-&lt;li&gt;Run the installer.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Note:&lt;/h3&gt;
-
-&lt;p&gt;it's really important that you install it in a directory without a space in it's path as stated in the installer, eg: &lt;code&gt;C:\ProgrammingLanguages\Ruby&lt;/code&gt; and NOT &lt;code&gt;C:\Program Files\Ruby&lt;/code&gt;, for example. Trust me.&lt;/p&gt;
-
-&lt;h2&gt;Installing DevKit&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Run the DevKit Installer and extract it to your desired directory.&lt;/li&gt;
-&lt;li&gt;Open up the command line and type &lt;code&gt;cd&lt;/code&gt; + the path to the directory were you installed DevKit, eg: &lt;code&gt;cd C:\ProgrammingLanguages\DevKit&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Type &lt;code&gt;ruby dk.rb init&lt;/code&gt; to intialize the setup.&lt;/li&gt;
-&lt;li&gt;Type &lt;code&gt;ruby dk.rb review&lt;/code&gt; to check if DevKit has found your Ruby directory.&lt;/li&gt;
-&lt;li&gt;Type &lt;code&gt;ruby dk.rb install&lt;/code&gt; to install it.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Note:&lt;/h3&gt;
-
-&lt;p&gt;I usually just search for &quot;cmd&quot; in the start menu search bar to open the command line.&lt;/p&gt;
-
-&lt;h2&gt;Installing Jekyll&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Type &lt;code&gt;gem install jekyll&lt;/code&gt; in the command line.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2&gt;Running Jekyll&lt;/h2&gt;
-
-&lt;p&gt;After you're done with creating your site with template and liquid tags (hit the &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot; title=&quot;Jekyll wiki&quot;&gt;wiki&lt;/a&gt; to check them out), do the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Open up the command line and type &lt;code&gt;cd&lt;/code&gt; + the path to the directory were you've saved your site, eg: &lt;code&gt;cd C:\User\MySite&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Type &lt;code&gt;jekyll --server&lt;/code&gt; in the cmd.&lt;/li&gt;
-&lt;li&gt;Type out &lt;code&gt;localhost:4000&lt;/code&gt; in your browser to see your site.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;Note:&lt;/h3&gt;
-
-&lt;p&gt;You can use &lt;code&gt;jekyll --auto --server&lt;/code&gt; instead of &lt;code&gt;jekyll --server&lt;/code&gt; if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.&lt;/p&gt;
-</description>
-                <published>August 21, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</link>
               </item>
             
     </channel>

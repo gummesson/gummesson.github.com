@@ -53,7 +53,7 @@
             <div class="content">
               <article>
   <h1>Begrider</h1>
-      <p>Begrider is a simple, fluid twelve column grid system with a 1140px fixed width (or technically 1137px, if you want to be pixel-precise). It works great in Chrome and Firefox and looks alright in Internet Explorer 9. It works in Opera too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible. I think I did pretty good.</p>
+      <p>Begrider is a simple, fluid twelve column grid system with a 1140px fixed width (or technically 1139px, if you want to be pixel-precise). It works great in Chrome and Firefox and looks alright in Internet Explorer 9. It works in Opera too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible. I think I did pretty good.</p>
 
 <p>I know that there's about a thousand other grid systems available on the web and most of them are probably much more elaborate than mine and have more thought-out features. Like I said, I created Begrider as a learning tool of some sort and because I wanted to have a simple system that I could use.</p>
 
@@ -76,13 +76,13 @@
 <h4>.container</h4>
 
 <pre><code>.container {
-       -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+     -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
-     width: 95%;
-    height: 100%;
-    margin: 0 auto;
+   width: 95%;
+  height: 100%;
+  margin: 0 auto;
 }
 </code></pre>
 
@@ -91,8 +91,8 @@
 <h4>.grid</h4>
 
 <pre><code>.grid {
-    max-width: 1140px;
-       margin: 0 auto;
+  max-width: 1140px;
+     margin: 0 auto;
 }
 </code></pre>
 
@@ -101,8 +101,8 @@
 <h4>.row</h4>
 
 <pre><code>.row {
-       clear: both;
-    overflow: hidden;
+     clear: both;
+  overflow: hidden;
 }
 </code></pre>
 
@@ -111,9 +111,9 @@
 <h4>[class<sup>="col-"]</sup></h4>
 
 <pre><code>[class^="col-"] {
-      min-height: 1px;
-    margin-right: 2.85%;
-           float: left;
+    min-height: 1px;
+  margin-right: 2.85%;
+         float: left;
 }
 </code></pre>
 
@@ -122,52 +122,52 @@
 <h4>.col-</h4>
 
 <pre><code>.col-twelve {
-           width: 99.75%;
-    margin-right: 0;
+         width: 99.99%;
+  margin-right: 0;
 }
 
 .col-eleven {
-    width: 91.20%;
+  width: 91.42%;
 }
 
 .col-ten {
-    width: 82.65%;
+  width: 82.85%;
 }
 
 .col-nine {
-    width: 74.1%;
+  width: 74.28%;
 }
 
 .col-eight {
-    width: 65.55%;
+  width: 65.71%;
 }
 
 .col-seven {
-    width: 57%;
+  width: 57.14%;
 }
 
 .col-six {
-    width: 48.45%;
+  width: 48.57%;
 }
 
 .col-five {
-    width: 39.90%;
+  width: 40%;
 }
 
 .col-four {
-    width: 31.35%;
+  width: 31.43%;
 }
 
 .col-three {
-    width: 22.80%;
+  width: 22.86%;
 }
 
 .col-two {
-    width: 14.25%;
+  width: 14.29%;
 }
 
 .col-one { 
-    width: 5.70%; 
+  width: 5.72%; 
 }
 </code></pre>
 
@@ -176,7 +176,7 @@
 <h4>.last</h4>
 
 <pre><code>.last {
-    margin-right: 0;
+  margin-right: 0;
 }
 </code></pre>
 
@@ -186,23 +186,23 @@
 
 <pre><code>/* iPad/Tablet (Portrait) */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    [class^="col-"] {
-             width: 100%;
-        min-height: 0;
-             float: none;
-    }
+  [class^="col-"] {
+         width: 100%;
+    min-height: 0;
+         float: none;
+  }
 
 }
 
 /* iPhone/Smartphone (Landscape) */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
-    .container {
-        width: 92.5%;
-    }
+  .container {
+    width: 92.5%;
+  }
 
 }
 </code></pre>
@@ -213,19 +213,19 @@
 
 <pre><code>&lt;div class="container"&gt;
 
-    &lt;div class="grid"&gt;
+  &lt;div class="grid"&gt;
 
-        &lt;div class="row"&gt;
+    &lt;div class="row"&gt;
 
-            &lt;div class="col-one"&gt;&lt;/div&gt;
+      &lt;div class="col-one"&gt;&lt;/div&gt;
 
-                &lt;div class="col-ten"&gt;Add content here...&lt;/div&gt;
+        &lt;div class="col-ten"&gt;Add content here...&lt;/div&gt;
 
-            &lt;div class="col-one last"&gt;&lt;/div&gt;
+      &lt;div class="col-one last"&gt;&lt;/div&gt;
 
-        &lt;/div&gt;&lt;!--.row --&gt;
+    &lt;/div&gt;&lt;!--.row --&gt;
 
-    &lt;/grid&gt;&lt;!--.grid --&gt;
+  &lt;/grid&gt;&lt;!--.grid --&gt;
 
 &lt;/div&gt;&lt;!--.container --&gt;
 </code></pre>
