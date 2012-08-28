@@ -7,7 +7,7 @@
             
               <item>
                 <title>Stumbling Upon A Good Solution</title>
-                <description>&lt;p&gt;As some of you may know, I've built my own grid system with the world's most horrible name, &lt;a href=&quot;http://localhost:4000/projects/begrider/&quot; title=&quot;Begrider is a simple, twelve column 1140px fluid grid system&quot;&gt;Begrider&lt;/a&gt;. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named &lt;code&gt;.last&lt;/code&gt;.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.&lt;/p&gt;
+                <description>&lt;p&gt;As some of you may know, I've built my own grid system with the world's most horrible name, &lt;a href=&quot;/projects/begrider/&quot; title=&quot;Begrider is a simple, twelve column 1140px fluid grid system&quot;&gt;Begrider&lt;/a&gt;. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named &lt;code&gt;.last&lt;/code&gt;.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.&lt;/p&gt;
 
 &lt;h2&gt;The solution&lt;/h2&gt;
 
