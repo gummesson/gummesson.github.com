@@ -1,261 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Begrider / Ellen Gummesson</title>
-    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
-    <meta name="author" content="Ellen Gummesson">
-    <link rel="author" href="/humans.txt" type="text/plain">
-  <link rel="canonical" href="http://ellengummesson.com/">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / RSS Feed">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / Sitemap">
-  <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic|Cabin:700" type="text/css">
-    <meta name="viewport" content="width=device-width">
-    <link rel="favicon" href="/assets/icons/favicon.png" type="img/png">
-    <link rel="icon" href="/assets/icons/apple-touch-icon.png" type="img/png">
-  <!--[if lt IE 9]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <meta charset="utf-8">
+  <title>Begrider</title>
+  <meta name="description" content="Begrider is a simple, twelve column 1140px fluid grid system">
+  <meta name="author" content="Ellen Gummesson">
+  <link href="assets/base.css" rel="stylesheet" type="text/css">
+  <link href="assets/begrider-new.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin:700|Vollkorn:400,700,400italic" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
+
   <div class="container">
+
     <div class="grid">
+
       <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <header class="branding">
-            <h1 class="logo"><a href="/" alt="Ellen Gummesson" class="no-border">Ellen Gummesson</a></h1>
-            <p class="tagline">Random ramblings, overall geekiness and other musings</p>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
+        <div class="col-twelve bg-fix margin">
+          <div class="text">
+              <h1>Begrider</h1>
+                <p>Begrider is a simple, fluid twelve column grid system with a 1140px fixed width. It works great in Chrome, Firefox and Internet Explorer 9. It works in Opera too if you don’t mind that some of the columns are a tiny bit off.</p>
+                <p>It comes in two different versions: The first one (begrider-new) uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one (begrider-old) groups the column classes together to add their shared properties and values while seperating them for their unique width property. This demo uses the new version.</p>
+                <p>Resize your browser to see the breakpoints!</p>
+          </div><!-- .text -->
+        </div><!-- .col-twelve -->
       </div><!--.row -->
 
       <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-              <nav class="nav gamma no-border">
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/about">About</a></li>
-                  <li><a href="/archives">Archives</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                </ul>
-              </nav>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
+        <div class="col-twelve bg-fix margin">
+          <div class="text">
+            <h2>One and one</h2>
+          </div><!-- .text -->
+        </div><!-- .col-twelve -->
       </div><!--.row -->
+
       <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-          <div class="col-eight">
-            <div class="content">
-              <article>
-  <h1>Begrider</h1>
-      <p>Begrider is a simple, fluid twelve column grid system with a 1140px fixed width (or technically 1139px, if you want to be pixel-precise). It works great in Chrome and Firefox and looks alright in Internet Explorer 9. It works in Opera too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible. I think I did pretty good.</p>
-
-<p>I know that there's about a thousand other grid systems available on the web and most of them are probably much more elaborate than mine and have more thought-out features. Like I said, I created Begrider as a learning tool of some sort and because I wanted to have a simple system that I could use.</p>
-
-<h2>License</h2>
-
-<p>Use it, abuse it and give me credit, if you want to.</p>
-
-<h2>Get it</h2>
-
-<p><span class="no-border"><a href="/projects/begrider/demo.html">Demo</a> / <a href="https://github.com/gummesson/begrider" title="Begrider on Github">GitHub</a></span></p>
-
-<h2>The code</h2>
-
-<p>I think that the code is pretty straight forward, but since I'm a bit of a documentation lover, I'll write about it anyway.</p>
-
-<h3>CSS</h3>
-
-<p>The CSS consists of six important bits: <code>.container</code>, <code>.grid</code>, <code>.row</code>, <code>[class<sup>="col-"]</code>,</sup> <code>.col-</code>, <code>.last</code> and the media queries.</p>
-
-<h4>.container</h4>
-
-<pre><code>.container {
-     -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-
-   width: 95%;
-  height: 100%;
-  margin: 0 auto;
-}
-</code></pre>
-
-<p>The <code>.container</code> is essentially used for wrapping the whole screen in. The <code>box-sizing: border-box;</code> property makes it easy to add padding and borders without breaking the grid and columns. The <code>width: 95%;</code> and <code>height: 100%;</code> makes the <code>.container</code> stretch across nearly the whole screen while having fluid margins on the left and right side of it (it gets useful when the browser window gets smaller). <code>margin: 0 auto;</code> is used to align the <code>.container</code> to the center of the screen.</p>
-
-<h4>.grid</h4>
-
-<pre><code>.grid {
-  max-width: 1140px;
-     margin: 0 auto;
-}
-</code></pre>
-
-<p>The <code>.grid</code> class is the main wrapper for the whole grid layout. The default <code>max-width</code> is 1140px, but you could make it narrower, or wider, if you want to since Begrider is a fluid system. <code>margin: 0 auto;</code> is used for the same purpose as described about above.</p>
-
-<h4>.row</h4>
-
-<pre><code>.row {
-     clear: both;
-  overflow: hidden;
-}
-</code></pre>
-
-<p>The <code>.row</code> class is used as a wrapper for one specific row of columns. It enables you to have multiple rows of different columns in the <code>.grid</code>. The <code>clear: both;</code> clears the floating from the <code>.col-</code> classes and the <code>overflow: hidden;</code> makes the columns "stay in place" ny hiding any overflowing content.</p>
-
-<h4>[class<sup>="col-"]</sup></h4>
-
-<pre><code>[class^="col-"] {
-    min-height: 1px;
-  margin-right: 2.85%;
-         float: left;
-}
-</code></pre>
-
-<p>The <code>[class<sup>="col-"]</code>,</sup> which is an attribute selector, is used to apply all the properties inside of it to all of the <code>.col-</code> classes.  The <code>min-height: 1px;</code> enables the <code>.col-</code> classes to actually work without having any content inside of them. The <code>margin-right: 2.85%;</code> adds a so called gutter to the right side of every <code>.col-</code> and the <code>float: left;</code> makes the columns line up to the left.</p>
-
-<h4>.col-</h4>
-
-<pre><code>.col-twelve {
-         width: 99.99%;
-  margin-right: 0;
-}
-
-.col-eleven {
-  width: 91.42%;
-}
-
-.col-ten {
-  width: 82.85%;
-}
-
-.col-nine {
-  width: 74.28%;
-}
-
-.col-eight {
-  width: 65.71%;
-}
-
-.col-seven {
-  width: 57.14%;
-}
-
-.col-six {
-  width: 48.57%;
-}
-
-.col-five {
-  width: 40%;
-}
-
-.col-four {
-  width: 31.43%;
-}
-
-.col-three {
-  width: 22.86%;
-}
-
-.col-two {
-  width: 14.29%;
-}
-
-.col-one { 
-  width: 5.72%; 
-}
-</code></pre>
-
-<p>The <code>.col-</code> classes contain the width of the columns. The widest one column is called <code>.col-twelve</code> and the narrowest <code>.col-one</code> because the former spans over twelve columns and latter spans over one.</p>
-
-<h4>.last</h4>
-
-<pre><code>.last {
-  margin-right: 0;
-}
-</code></pre>
-
-<p>The <code>.last</code> class is used to remove the <code>margin-right</code> of the last <code>.col-</code> class in a <code>.row</code>. That means that if it's not applied the <code>.row</code> will break.</p>
-
-<h4>Media Queries</h4>
-
-<pre><code>/* iPad/Tablet (Portrait) */
-
-@media only screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  [class^="col-"] {
-         width: 100%;
-    min-height: 0;
-         float: none;
-  }
-
-}
-
-/* iPhone/Smartphone (Landscape) */
-
-@media only screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  .container {
-    width: 92.5%;
-  }
-
-}
-</code></pre>
-
-<p>The media queries are used to make the grid system adapt to different screen sizes. The first one is targeted at iPads/tablets used in portrait mode. The <code>[class<sup>="col-"]</code></sup> is used to change the <code>.col-</code> classes so that they stop floating (which makes them stack on top of each other instead), remove the <code>min-height</code> so that the <code>.col-</code> classes without any content doesn't take up any unneccassary space and to stretch them out across the full width of the <code>.grid</code> instead. The second one is targeted at iPhones/smartphones when they're used in landscape mode. The width of the <code>.container</code> is change so that the <code>.grid</code> gets more room to breathe.</p>
-
-<h3>HTML</h3>
-
-<pre><code>&lt;div class="container"&gt;
-
-  &lt;div class="grid"&gt;
-
-    &lt;div class="row"&gt;
-
-      &lt;div class="col-one"&gt;&lt;/div&gt;
-
-        &lt;div class="col-ten"&gt;Add content here...&lt;/div&gt;
-
-      &lt;div class="col-one last"&gt;&lt;/div&gt;
-
-    &lt;/div&gt;&lt;!--.row --&gt;
-
-  &lt;/grid&gt;&lt;!--.grid --&gt;
-
-&lt;/div&gt;&lt;!--.container --&gt;
-</code></pre>
-
-<p>The markup is fairly simple too. Wrap a <code>.row</code> class around your <code>.col-</code> classes, then wrap the <code>.grid</code> class around your <code>.row</code> classes and at last, use the <code>.container</code> as a wrapper for your <code>.grid</code>. Like mentioned earlier, you can add as many <code>.row</code> classes as you'd like with as many different <code>.col-</code> classes you'd like to have.</p>
-
-</article>
-
-            </div>
-          </div><!-- .col-eight -->
-          <div class="col-two last"></div><!-- .col-two .last -->
+        <div class="col-one"><p>1</p></div>
       </div><!--.row -->
+
       <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <footer class="info small">
-            <nav class="nav no-border">
-              <ul>
-                <li><a href="/feed.xml">RSS</a></li>
-                <li><a href="https://twitter.com/pratnarkoman" alt="Twitter">Twitter</a></li>
-                <li><a href="https://plus.google.com/108569513108478415869">Google+</a></li>
-                <li><a href="https://github.com/gummesson" alt="GitHub">GitHub</a></li>
-              </ul>
-            </nav>
-            <p class="copyright">Copyright &#0169; <a href="/" alt="Ellen Gummesson" class="no-border">Ellen Gummesson</a> 2012</p>
-          </footer>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
+        <div class="col-two"><p>2</p></div>
       </div><!--.row -->
+
+      <div class="row">
+        <div class="col-three"><p>3</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-four"><p>4</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-five"><p>5</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-six"><p>6</p></div>
+      </div><!--.row -->  
+
+      <div class="row">
+        <div class="col-seven"><p>7</p></div>
+      </div><!--.row -->  
+
+      <div class="row">
+        <div class="col-eight"><p>8</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-nine"><p>9</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-ten"><p>10</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-eleven"><p>11</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-twelve"><p>12</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-twelve bg-fix margin">
+          <div class="text">
+            <h2>Two and two</h2>
+          </div><!-- .text -->
+        </div><!-- .col-twelve -->
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-twelve"><p>12</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-eleven"><p>11</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-ten"><p>10</p></div>
+        <div class="col-two"><p>2</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-nine"><p>9</p></div>
+        <div class="col-three"><p>3</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-eight"><p>8</p></div>
+        <div class="col-four"><p>4</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-seven"><p>7</p></div>
+        <div class="col-five"><p>5</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-six"><p>6</p></div>
+        <div class="col-six"><p>6</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-twelve bg-fix margin">
+          <div class="text">
+            <h2>Miscellaneous</h2>
+          </div><!-- .text -->
+        </div><!-- .col-twelve -->
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-two"><p>2</p></div>
+        <div class="col-two"><p>2</p></div>
+        <div class="col-two"><p>2</p></div>
+        <div class="col-two"><p>2</p></div>
+        <div class="col-two"><p>2</p></div>
+        <div class="col-two"><p>2</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-three"><p>3</p></div>
+        <div class="col-three"><p>3</p></div>
+        <div class="col-three"><p>3</p></div>
+        <div class="col-three"><p>3</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-four"><p>4</p></div>
+        <div class="col-four"><p>4</p></div>
+        <div class="col-four"><p>4</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-one"><p>1</p></div>
+        <div class="col-five"><p>5</p></div>
+        <div class="col-five"><p>5</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-six"><p>6</p></div>
+        <div class="col-six"><p>6</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-one"><p>1</p></div>
+        <div class="col-three"><p>3</p></div>
+        <div class="col-seven"><p>7</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-two"><p>2</p></div>
+        <div class="col-eight"><p>8</p></div>
+        <div class="col-two"><p>2</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-two"><p>2</p></div>
+        <div class="col-nine"><p>9</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
+      <div class="row">
+        <div class="col-one"><p>1</p></div>
+        <div class="col-ten"><p>10</p></div>
+        <div class="col-one"><p>1</p></div>
+      </div><!--.row -->
+
     </div><!--.grid -->
+
   </div><!-- .container -->
 </body>
 </html>

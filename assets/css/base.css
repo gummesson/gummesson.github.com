@@ -19,18 +19,21 @@
 
 =======================*/
 
-/*=========
-   Body
-=========*/
+/*==========
+    Body
+==========*/
+
+html {
+  -moz-box-sizing   : border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+}
 
 body {
   font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
-  color                 : #222222;
   -webkit-font-smoothing: antialiased;
+  color                 : #222222;
   background-color      : #fdfdfd;
-  -moz-box-sizing       : border-box; 
-  -webkit-box-sizing    : border-box;
-  box-sizing            : border-box;
 }
 
 ::selection, ::-moz-selection {
@@ -162,10 +165,6 @@ code {
     background: none;
 }
 
-.highlight {
-    color: #ff60ab;
-}
-
 /*===========
     Lists
 ===========*/
@@ -277,7 +276,7 @@ ul, ol,
   }
 
     .no-link {
-        color: #999999;
+      color: #999999;
     }
 
  /*  Skills / Progress Bars */
@@ -320,69 +319,80 @@ ul, ol,
     margin   : 0 auto;
   }
 
-  .row { 
+  .grid .row { 
     clear   : both;
     overflow: hidden;
   }
 
-    [class^="col-"] {
+    .row .col-twelve,
+    .row .col-eleven,
+    .row .col-ten,
+    .row .col-nine,
+    .row .col-eight,
+    .row .col-seven,
+    .row .col-six,
+    .row .col-five,
+    .row .col-four,
+    .row .col-three,
+    .row .col-two,
+    .row .col-one {
       min-height  : 1em;
       margin-right: 2.85%;
       float       : left;
     }
 
-      .col-twelve {
+    .row .last {
+        margin-right: 0;
+    }
+
+      .row .col-twelve {
         width       : 99.99%;
         margin-right: 0;
       }
 
-        .col-eleven {
+        .row .col-eleven {
           width: 91.42%;
         }
 
-        .col-ten {
+        .row .col-ten {
           width: 82.85%;
         }
 
-        .col-nine {
+        .row .col-nine {
           width: 74.28%;
         }
 
-        .col-eight {
+        .row .col-eight {
           width: 65.71%;
         }
 
-        .col-seven {
+        .row .col-seven {
           width: 57.14%;
         }
 
-        .col-six {
+        .row .col-six {
           width: 48.57%;
         }
 
-        .col-five {
+        .row .col-five {
           width: 40%;
         }
 
-        .col-four {
+        .row .col-four {
           width: 31.43%;
         }
 
-        .col-three {
+        .row .col-three {
           width: 22.86%;
         }
 
-        .col-two {
+        .row .col-two {
           width: 14.29%;
         }
 
-        .col-one {
+        .row .col-one {
           width: 5.72%;
         }
-
-    .last {
-        margin-right: 0;
-    }
 
 /*-----------------
    Media Queries
@@ -393,7 +403,7 @@ ul, ol,
 
   img { 
     max-width : 100%; 
-    max-height: 100%;
+    max-height: auto;
   }
 
 }
@@ -401,10 +411,22 @@ ul, ol,
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  [class^="col-"] {
-    width     : 100%;
-    min-height: 0;
-    float     : none;
+  .row .col-twelve,
+  .row .col-eleven,
+  .row .col-ten,
+  .row .col-nine,
+  .row .col-eight,
+  .row .col-seven,
+  .row .col-six,
+  .row .col-five,
+  .row .col-four,
+  .row .col-three,
+  .row .col-two,
+  .row .col-one {
+    width       : 100%;
+    min-height  : 0;
+    float       : none;
+    margin-right: 0;
   }
 
   .branding {

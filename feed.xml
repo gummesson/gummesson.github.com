@@ -6,6 +6,27 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Stumbling Upon A Good Solution</title>
+                <description>&lt;p&gt;As some of you may know, I've built my own grid system with the world's most horrible name, &lt;a href=&quot;http://localhost:4000/projects/begrider/&quot; title=&quot;Begrider is a simple, twelve column 1140px fluid grid system&quot;&gt;Begrider&lt;/a&gt;. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named &lt;code&gt;.last&lt;/code&gt;.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.&lt;/p&gt;
+
+&lt;h2&gt;The solution&lt;/h2&gt;
+
+&lt;p&gt;Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[class^=&quot;col-&quot;]:last-child {
+  margin-right: 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It worked! I know that I always sound suprised when something I've done works, but this really took me by suprise. Now the last &lt;code&gt;.col&lt;/code&gt; in the row gets it's gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don't (IE8 isn't too fond of the :last-child thing). I think I'm going to leave the &lt;code&gt;.last&lt;/code&gt; class in the code, just so there's an option to use it.&lt;/p&gt;
+
+&lt;p&gt;I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.&lt;/p&gt;
+</description>
+                <published>August 28, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution</link>
+              </item>
+            
+              <item>
                 <title>My First Plugin For Jekyll</title>
                 <description>&lt;p&gt;Okay, I wouldn't really call it my first real plugin, but I took the &lt;a href=&quot;http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/&quot; title=&quot;Jekyll Youtube Liquid Template Tag Gist&quot;&gt;Youtube plugin&lt;/a&gt; I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.&lt;/p&gt;
 
@@ -260,26 +281,6 @@ a:hover, a:focus {
 </description>
                 <published>August 23, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</link>
-              </item>
-            
-              <item>
-                <title>The Hassles of Media Queries</title>
-                <description>&lt;p&gt;When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note to self: don't be stupid. It'll save you a lot of time.&lt;/p&gt;
-
-&lt;p&gt;I also had some problems with my iPhone's Retina display, but after some digging I found a &quot;hack&quot; that made it work properly so that the media queries look the same as on a regular browser:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(-webkit-min-device-pixel-ratio: 2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.&lt;/p&gt;
-</description>
-                <published>August 22, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</link>
               </item>
             
     </channel>

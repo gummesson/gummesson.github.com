@@ -1,0 +1,151 @@
+/*==============
+    Begrider
+==============*/
+
+/*----------------
+    Container
+---------------*/
+
+.container {
+  /* Allows padding and borders on grids without breaking the grid and columns. */
+  -moz-box-sizing   : border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+  width : 95%; /* The width of the the .container (with fluid margins so that the grid doesn't crash into the sides when the browser gets smaller/narrower). */
+  height: 100%; /* Makes the height of the .container the full height of the browser. */
+  margin: 0 auto; /* Makes the .container align to the center of the screen. */
+}
+
+/*-----------------
+    Grid / Rows
+-----------------*/
+
+.grid { 
+  max-width: 1140px; /* Sets the width of the .grid. */
+  margin   : 0 auto; /* Aligns it to the center of the screen. */
+}
+
+  .grid .row { 
+    clear   : both; /* Clears the floating columns. */
+    overflow: hidden; /*Hides any overflowing content. */
+  }
+
+    /* Applies the float, margin-right and min-height to all of the .col- classes. */
+    .row [class^="col-"] {
+      min-height  : 1px; /* Applies a 1px height to the .col- classes so that they can work properly without any content in them. */
+      margin-right: 2.85%; /* The gutter/margin between the columns. */
+      float       : left; /* Floats them to the left. */
+    }
+
+    /* == FOR +IE9 SUPPORT == */
+    /* Removes the gutter (margin-right) on the last .col- class in the .row. */
+    .row [class^="col-"]:last-child {
+      margin-right: 0;
+    }
+
+    /* == FOR +IE8 SUPPORT == */
+    /*Apply this after the last .col- class in the same .row (+IE8). Example: <div class="col-six last"></div>. */
+    .row .last {
+      margin-right: 0; /* Removes gutter/margin-right. */
+    }
+
+/*-------------
+    Columns
+-------------*/
+
+/* Twelve columns wide */
+.row .col-twelve {
+  width       : 99.99%;
+  /* margin-right: 0; Uncommented this if you're using .last */
+}
+
+/*Eleven columns wide */
+.row .col-eleven {
+  width: 91.42%;
+}
+
+/* Ten columns wide */
+.row .col-ten {
+  width: 82.85%;
+}
+
+/*Nine columns wide */
+.row .col-nine {
+  width: 74.28%;
+}
+
+/* Eight columns wide */
+.row .col-eight {
+  width: 65.71%;
+}
+
+/* Seven columns wide */
+.row .col-seven {
+  width: 57.14%;
+}
+
+/*Six columns wide */
+.row .col-six {
+  width: 48.57%;
+}
+
+/*Five columns wide */
+.row .col-five {
+  width: 40%;
+}
+
+/* Four columns wide */
+.row .col-four {
+  width: 31.43%;
+}
+
+/* Three columns wide */
+.row .col-three {
+  width: 22.86%;
+}
+
+/* Two columns wide */
+.row .col-two {
+  width: 14.29%;
+}
+
+/* One column wide */
+.row .col-one {
+  width: 5.72%;
+}
+
+/*-------------------
+    Media Queries
+-------------------*/
+
+/* Smaller Screens */
+@media screen and (max-width: 1024px) {
+
+  /* Makes the images adjust to the screen size. */
+  img { 
+    max-width : 100%; 
+    max-height: auto;
+  }
+
+}
+
+/* iPad/Tablet (Portrait) */
+@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .row [class^="col-"] {
+    width       : 100%; /* Makes the .col- classes stretch out across the screen. */
+    min-height  : 0; /* Removes the min-height so that the .col- classes without any content doesn't take up any unneccassary space. */
+    float       : none; /* Removes the floats. */
+    margin-right: 0; /* Removes gutter/margin-right. */
+  }
+
+}
+
+/* iPhone/Smartphone (Landscape) */
+@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container {
+    width: 92.5%; /* Adjusts the width for a smaller/narrower screen. */
+  }
+
+}

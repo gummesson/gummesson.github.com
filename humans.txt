@@ -7,7 +7,7 @@ Everything: Ellen Gummesson
 
 /* SITE */
 
-Last Update: 2012/08/27
+Last Update: 2012/08/28
   Standards: HTML5 and CSS3
  Components: jQuery
    Software: SublimeText 2 and Jekyll
