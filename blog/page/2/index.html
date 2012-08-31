@@ -51,6 +51,23 @@
             <div class="content">
               
   <article class="blog-post">
+  <h1><a href="/blog/2012/08/23/my-big-fat-git-failure" alt="My Big Fat Git Failure" class="no-border">My Big Fat Git Failure</a></h1>
+  <p class="post-meta small-margin">Posted on August 23, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Git" class="no-border">Git</a>    </p>
+    <p>Note: this isn't critism, rather a documentation of my own stupidity.</p>
+
+<p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub's built-in editor since that's a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said "DETACHED HEAD". After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this.</p>
+
+<p>However, after I'd fixed that and remade all of my changes locally using my normal method, I got another error message when I was trying to commit the changes: "Failed to sync this branch".</p>
+
+<p><img src='/assets/images/2012-08-23-failed-to-sync.png' title='Failed to sync this branch' alt='Failed to sync this branch'></p>
+
+<p>I again did a google search but this time around I didn't come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I'm still able to update the site. I don't know if I screwed something up or if it's a bug. I'm hoping that the problem will solve itself, even though it's highly unlikely.</p>
+
+<p>Damn me and my apparent laziness.</p>
+
+</article>
+
+  <article class="blog-post">
   <h1><a href="/blog/2012/08/22/the-hassles-of-media-queries" alt="The Hassles of Media Queries" class="no-border">The Hassles of Media Queries</a></h1>
   <p class="post-meta small-margin">Posted on August 22, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/CSS" class="no-border">CSS</a> ,   <a href="/blog/tag/HTML" class="no-border">HTML</a>    </p>
     <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn't get them to properly work. Then it hit me that I'd forgot to add this in the <code>&lt;head&gt;</code>:</p>

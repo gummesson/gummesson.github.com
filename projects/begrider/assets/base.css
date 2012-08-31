@@ -16,46 +16,46 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin        : 0;
-	padding       : 0;
-	border        : 0;
-	font-size     : 100%;
-	font          : inherit;
-	vertical-align: baseline;
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 
 body { 
-	line-height: 1; 
+  line-height: 1; 
 }
 
 ol, ul { 
-	list-style: none; 
+  list-style: none; 
 }
 
 a {
-	text-decoration: none;
-	outline        : none;
+  text-decoration: none;
+  outline        : none;
 }
 
 blockquote, q { 
-	quotes: none; 
+  quotes: none; 
 }
 
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none;
-	}
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
 
 table {
-	border-collapse: collapse;
-	border-spacing : 0;
+  border-collapse: collapse;
+  border-spacing : 0;
 }
 
 /*--------
@@ -63,14 +63,15 @@ table {
 --------*/
 
 body {
-	font            : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px */
-	background-color: #fdfdfd;
-	color           : #222;
+  font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px */
+  -webkit-font-smoothing: antialiased;
+  background-color      : #fdfdfd;
+  color                 : #222;
 }
 
 ::selection, -moz-::selection {
-	color           :#fdfdfd;
-	background-color: #f660ab;
+  color           :#fdfdfd;
+  background-color: #f660ab;
 }
 
 /*--------
@@ -83,61 +84,70 @@ h3,
 h4, 
 h5, 
 h6 {
-	font-family: "Cabin", Helvetica, Arial, Sans-serif;
-	font-weight: bold;
+  font-family: "Cabin", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 h2 {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 h4 {
-	font-size: 1.125em;
+  font-size: 1.125em;
 }
 
 h5, h6 {
-	font-size: 1em;
+  font-size: 1em;
 }
 
-/*----------------------------------------------------------------
-   Temporary fixes for displaying the columns more efficiently.
-----------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+   Temporary quick fixes for displaying the columns more efficiently.
+----------------------------------------------------------------------*/
 
-[class^="col-"] {
-	background-color: #f660ab;
-	text-align      : center;
-	margin-bottom   : 10px;
+[class^="column-"],
+[class^="unit-"] {
+  background-color: #f660ab;
+  text-align      : center;
+  margin-bottom   : 10px;
 }
 
 .bg-fix {
-	background-color: #fdfdfd;
+  background-color: #fdfdfd;
+}
+
+.unit-bg {
+  background-color: #e550aa;
 }
 
 .text {
-	text-align: left;
+  text-align: left;
 }
 
-	.text > p {
-		margin-bottom: 1.5em;
-	}
+  .text > p {
+    margin-bottom: 1.5em;
+  }
+
+  .text > p:last-child {
+    margin-bottom: 0;
+  }
 
 .margin {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
-	.margin {
-		margin: 10px 0;
-	}
+  .margin {
+    margin: 10px 0;
+  }
 
 }

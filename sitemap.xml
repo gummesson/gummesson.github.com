@@ -37,6 +37,10 @@
         <lastmod>2012-08-28T20:28:10+02:00</lastmod>
     </url>
     <url>
+        <loc>http://ellengummesson.com/blog/2012/08/31/more-additions</loc>
+        <lastmod>2012-08-31T14:13:20+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-08-26T11:24:05+02:00</lastmod>
     </url>
@@ -46,7 +50,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-08-28T20:28:10+02:00</lastmod>
+        <lastmod>2012-08-31T14:13:20+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -58,7 +62,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-08-28T20:28:10+02:00</lastmod>
+        <lastmod>2012-08-31T14:13:20+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/</loc>
@@ -66,6 +70,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-08-28T20:28:10+02:00</lastmod>
+        <lastmod>2012-08-31T14:13:20+02:00</lastmod>
     </url>
 </urlset>

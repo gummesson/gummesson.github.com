@@ -43,8 +43,9 @@ a {
   outline        : none;
 }
 
-img {
-  border: 0;
+img{
+  border        : 0 none;
+  vertical-align: middle;
 }
 
 blockquote, q {
