@@ -6,6 +6,32 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>My Jekyll Workflow</title>
+                <description>&lt;p&gt;Now that I've had this blog for a while I thought it would be a good idea to write about how my so called workflow looks to wrap this whole Jekyll series up.&lt;/p&gt;
+
+&lt;h2&gt;1. Writing in MarkdownPad&lt;/h2&gt;
+
+&lt;p&gt;I first fire up &lt;a href=&quot;http://www.markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt; and start writing a new blog post. It's a really nifty little tool for us Mac-depraved Windows users. I use DejaVu Sans Mono (which is my choice for coding purposes too) as my default font with &lt;code&gt;#FF424242&lt;/code&gt; as the font color and &lt;code&gt;#FFF2F2F2&lt;/code&gt; as the background color.&lt;/p&gt;
+
+&lt;h2&gt;2. Running Jekyll locally&lt;/h2&gt;
+
+&lt;p&gt;After I'm done with my writing, I fire up the command line and run Jekyll to generate my site. I also skim through my blog post to make sure that I haven't accidentally made a typo or something to that effect.&lt;/p&gt;
+
+&lt;h2&gt;3. Pushing to GitHub&lt;/h2&gt;
+
+&lt;p&gt;Last but not least, I open up &lt;a href=&quot;http://windows.github.com/&quot; title=&quot;GitHub for Windows&quot;&gt;GitHub for Windows&lt;/a&gt; and push my site to GitHub. Even though it's not the most convenient thing to do it's still pretty easy and it makes the transfer so much faster with no hassles.&lt;/p&gt;
+
+&lt;h3&gt;Note:&lt;/h3&gt;
+
+&lt;p&gt;GitHub Pages (where I host my site) can actually run Jekyll and generate your site automatically but you can't use your own plugins, so that's why I'm deploying my static pages rather than just the source itself.&lt;/p&gt;
+
+&lt;p&gt;And that's it! You could argue that it sounds a lot like overkill, but it works for me. Sure, I can't upgrade something without sitting infront of my computer, but I know that I'd never update from a phone or email anyways. It really makes me think twice before I publish something too, which I like.&lt;/p&gt;
+</description>
+                <published>September  2, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/02/my-jekyll-workflow</link>
+              </item>
+            
+              <item>
                 <title>More Additions</title>
                 <description>&lt;p&gt;Being bored sometimes has it's own perks. I continued experimenting with the &lt;a href=&quot;/projects/begrider/&quot;&gt;Begider&lt;/a&gt; project and ended up adding a couple of more things to it, mainly a new set of column-like classes called &lt;code&gt;.unit-&lt;/code&gt;. A unit differ itself from a regular column by not having a gutter, and thus having more of a &quot;proportional&quot; percentage width. So, instead of just having these:&lt;/p&gt;
 
@@ -206,167 +232,6 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 </description>
                 <published>August 26, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/08/26/my-jekyll-plugins</link>
-              </item>
-            
-              <item>
-                <title>Trying Out SASS</title>
-                <description>&lt;p&gt;Disclaimer: the following blog post is extremely geeky and contains A LOT of code.&lt;/p&gt;
-
-&lt;p&gt;Earlier today I decided to try out &lt;a href=&quot;http:/www.sass-lang.com/&quot; title=&quot;Syntactically Awesome Stylesheets&quot;&gt;Sass&lt;/a&gt; and &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass - an open-source CSS Authoring Framework&quot;&gt;Compass&lt;/a&gt; because I've seen it being mentioned almost daily for quite a while. I didn't really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it's still readable. I've tried a few plugins that enables automatic highlighting, but I haven't come across one that I really love. I also had remove nearly all of my comments in the code but I'm sure it's still understandable. If not, you can check it out on my &lt;a href=&quot;https://github.com/gummesson/sass-type-variables&quot; title=&quot;Sass Type Variables&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;_variables.scss&lt;/h2&gt;
-
-&lt;p&gt;Like I said earlier, the variable part in Sass is really awesome. I created a separate file called &lt;code&gt;variables.scss&lt;/code&gt; (Sass' default file extension) where I defined them all for better control and easier editing. Adding an underscore before a file name stops your file from get rendered into a &lt;code&gt;.css&lt;/code&gt; file, which is useful since you probably don't want all of your &lt;code&gt;.scss&lt;/code&gt; files to become regular &lt;code&gt;.css&lt;/code&gt; files.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Default / Body
-    $default-font-family: Helvetica, Arial, Sans-serif;
-   $default-font-percent: 100%;
-$default-font-lineheight: 1.5;
-     $default-font-color: #333;
-      $default-font-size: 1em;
-
-// Headings
-$heading-font-family: Georgia, Times, Serif;
-$heading-font-weight: bold;
-
-// Links
-     $default-link-color: $default-font-color;
-$default-link-decoration: 1px solid;
-
-// Hover
-     $default-hover-color: #666;
-$default-hover-decoration: 1px solid; 
-
-// Margins
-$default-margin: 1.5em;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I focused on just a few selectors (body, headings and links), but this could be expanded to include a lot more.&lt;/p&gt;
-
-&lt;h2&gt;screen.scss&lt;/h2&gt;
-
-&lt;p&gt;In the &lt;code&gt;screen.scss&lt;/code&gt; is where the magic happens, so to speak. That's where I imported all of my variables that I defined in &lt;code&gt;variables.scss&lt;/code&gt; and placed them in selectors with properties.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@import &quot;_variables.scss&quot;;
-
-/* Body */
-
-body {
-  font : #{$default-font-percentage}/#{$default-font-lineheight} $default-font-family;
-  color: $default-font-color;
-}
-
-/* Headings */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-}
-
-h1 {
-  font-size: $default-font-size * 2;
-}
-
-h2 {
-    font-size: $default-font-size * 1.5;
-  line-height: $default-font-lineheight - 0.2;
-}
-
-h3 {
-    font-size: $default-font-size * 1.25;
-  line-height: $default-font-lineheight - 0.2;
-}
-
-h4 {
-    font-size: $default-font-size * 1.125;
-  line-height: $default-font-lineheight - 0.2;
-}
-
-h5, h6 {
-  font-size: $default-font-size;
-}
-
-/* Paragraphs */
-
-p {
-  margin-bottom: $default-margin;
-}
-
-/* Links */
-
-a {
-           color: $default-link-color;
-  border-bottom: $default-link-decoration $default-link-color;
-}
-
-a:hover, a:focus {
-          color: $default-hover-color;
-  border-bottom: $default-hover-decoration $default-hover-color;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I think it's really cool that you can use basic math with variables so that you can create other values by only using one variable as a base point. Just change it and all the calculations will be rendered automatically.&lt;/p&gt;
-
-&lt;h2&gt;screen.css&lt;/h2&gt;
-
-&lt;p&gt;This is the final result after Compass was done with the compiling:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/* Body */
-body {
-  font: 100%/1.5 Helvetica, Arial, Sans-serif;
-  color: #333333;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Times, Serif;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
-  line-height: 1.3;
-}
-
-h3 {
-    font-size: 1.25em;
-  line-height: 1.3;
-}
-
-h4 {
-    font-size: 1.125em;
-  line-height: 1.3;
-}
-
-h5, h6 {
-  font-size: 1em;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 1.5em;
-}
-
-/* Links */
-a {
-          color: #333333;
-  border-bottom: 1px solid #333333;
-}
-
-a:hover, a:focus {
-          color: #666666;
-  border-bottom: 1px solid #666666;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It might look like a lot of work for simplifying such a small part, but the thing is that both &lt;code&gt;variables.scss&lt;/code&gt; and &lt;code&gt;screen.scss&lt;/code&gt; are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up &lt;code&gt;variables.scss&lt;/code&gt; and re-rendering it. I don't have to change anything else. I think I'll try out Sass for a while and see how it goes. There's a lot more to it than just simple variables and math, so I'm looking forward to see what I can come up with.&lt;/p&gt;
-</description>
-                <published>August 25, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/25/trying-out-sass</link>
               </item>
             
     </channel>

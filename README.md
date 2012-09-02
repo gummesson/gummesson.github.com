@@ -1,2 +1,2 @@
 #Hello!
-This is my personal site hosted on GitHub Pages.
+This is my personal site. Powered by Jekyll and hosted on GitHub Pages.

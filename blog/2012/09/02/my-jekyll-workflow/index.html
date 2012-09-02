@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>My First Plugin For Jekyll / Ellen Gummesson</title>
+  <title>My Jekyll Workflow / Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -50,37 +50,27 @@
           <div class="col-eight">
             <div class="content">
               <article>
-  <h1>My First Plugin For Jekyll</h1>
-    <p class="post-meta small-margin">Posted on August 27, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Jekyll" class="no-border">Jekyll</a>    </p>
-      <p>Okay, I wouldn't really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.</p>
+  <h1>My Jekyll Workflow</h1>
+    <p class="post-meta small-margin">Posted on September  2, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a> ,   <a href="/blog/tag/Jekyll" class="no-border">Jekyll</a>    </p>
+      <p>Now that I've had this blog for a while I thought it would be a good idea to write about how my so called workflow looks to wrap this whole Jekyll series up.</p>
 
-<h2>Source code</h2>
+<h2>1. Writing in MarkdownPad</h2>
 
-<pre><code>module Jekyll
-  class Vimeo &lt; Liquid::Tag
-    @@width = 500
-    @@height = 281
+<p>I first fire up <a href="http://www.markdownpad.com/">MarkdownPad</a> and start writing a new blog post. It's a really nifty little tool for us Mac-depraved Windows users. I use DejaVu Sans Mono (which is my choice for coding purposes too) as my default font with <code>#FF424242</code> as the font color and <code>#FFF2F2F2</code> as the background color.</p>
 
-    def initialize(name, id, tokens)
-      super
-      @id = id
-    end
+<h2>2. Running Jekyll locally</h2>
 
-    def render(context)
-      %(&lt;iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;)
-    end
-  end
-end
+<p>After I'm done with my writing, I fire up the command line and run Jekyll to generate my site. I also skim through my blog post to make sure that I haven't accidentally made a typo or something to that effect.</p>
 
-Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
-</code></pre>
+<h2>3. Pushing to GitHub</h2>
 
-<h3>Liquid tag</h3>
+<p>Last but not least, I open up <a href="http://windows.github.com/" title="GitHub for Windows">GitHub for Windows</a> and push my site to GitHub. Even though it's not the most convenient thing to do it's still pretty easy and it makes the transfer so much faster with no hassles.</p>
 
-<p>Remove the space before and after the percentage signs.</p>
+<h3>Note:</h3>
 
-<pre><code>{ % vimeo 12345678 % }
-</code></pre>
+<p>GitHub Pages (where I host my site) can actually run Jekyll and generate your site automatically but you can't use your own plugins, so that's why I'm deploying my static pages rather than just the source itself.</p>
+
+<p>And that's it! You could argue that it sounds a lot like overkill, but it works for me. Sure, I can't upgrade something without sitting infront of my computer, but I know that I'd never update from a phone or email anyways. It really makes me think twice before I publish something too, which I like.</p>
 
 </article>
 
