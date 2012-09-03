@@ -2,9 +2,9 @@
     Begrider
 ==============*/
 
-/*---------------------------
-    Container (.container)
----------------------------*/
+/*--------------------------
+   Container (.container)
+--------------------------*/
 
 .container {
   /* Allows padding and borders on the system without breaking the grid and columns (+IE8). */
@@ -177,9 +177,9 @@
   width: 20%;
 }
 
-/*---------------------------
-    Media Queries (@media)
----------------------------*/
+/*--------------------------
+   Media Queries (@media)
+--------------------------*/
 
 /* Smaller Screens */
 @media screen and (max-width: 1024px) {
@@ -191,8 +191,10 @@
   }
 
 }
+
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
   .row [class^="column-"],
   .row [class^="unit-"] {
     float     : none; /* Removes the floats. */
@@ -203,7 +205,9 @@
   .row [class^="column-"] {
     margin-right: 0; /* Removes the margin-right/gutter. */
   }
+
 }
+
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
