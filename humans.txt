@@ -7,11 +7,12 @@ Everything: Ellen Gummesson
 
 /* SITE */
 
-Last Update: 2012/09/03
+Last Update: 2012/09/05
   Standards: HTML5 & CSS3
  Components: HTML5Shiv
-   Software: SublimeText 2 and Jekyll
-    Hosting: GitHub Pages (http://pages.github.com/)
+   Software: SublimeText 2 (http://www.sublimetext.com/)
+             Jekyll        (http://www.jekyllrb.com/)
+    Hosting: GitHub Pages  (http://pages.github.com/)
 
 /* THANKS */
 

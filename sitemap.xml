@@ -45,6 +45,10 @@
         <lastmod>2012-09-03T14:27:24+02:00</lastmod>
     </url>
     <url>
+        <loc>http://ellengummesson.com/blog/2012/09/05/a-hard-drive-failure</loc>
+        <lastmod>2012-09-05T19:14:35+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-08-26T11:24:05+02:00</lastmod>
     </url>
@@ -54,7 +58,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-09-02T16:22:05+02:00</lastmod>
+        <lastmod>2012-09-05T19:14:35+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -66,7 +70,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-09-02T16:22:05+02:00</lastmod>
+        <lastmod>2012-09-05T19:14:35+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/</loc>
@@ -74,6 +78,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-09-02T16:22:05+02:00</lastmod>
+        <lastmod>2012-09-05T19:14:35+02:00</lastmod>
     </url>
 </urlset>
