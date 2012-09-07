@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Redesigning</title>
+                <description>&lt;p&gt;Even though this site isn't even a month old I'm having serious thoughts about redesigning it. In fact, I already have a design that's about 99% finished. I'm having a hard time deciding if I really should switch or not though. One minute I'm liking the current design (atleast the basic structure of it) and the next I dislike it. One thing I really don't like with it is that the default typeface used for the body copy (&lt;a href=&quot;http://www.google.com/webfonts/specimen/Vollkorn&quot;&gt;Vollkorn&lt;/a&gt;) looks really nice as long as you don't use the bold and italic font styles on your text. The bold looks really heavy compared to the normal weight and that bugs me quite much. The italic version looks okay, but I'm not totally happy with it. The typography is a big part of this site's design (if not the only part) since I'm not a really graphical designer (I wouldn't even call myself a designer, to be honest).&lt;/p&gt;
+
+&lt;p&gt;In hindsight I probably should've spent more time on choosing the right typefaces earlier, but I was eager to launch this site so I didn't. So, I guess the conclusion of this post is that I'll likely change the typefaces, but stick to the one column layout. I'm thinking about cleaning up the code a bit too, but we'll see how that goes.&lt;/p&gt;
+</description>
+                <published>September  7, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/07/redesigning</link>
+              </item>
+            
+              <item>
                 <title>A Hard (Drive) Failure</title>
                 <description>&lt;p&gt;A couple of days ago my new hard drive that I bought a mere three weeks ago decided that it was time to make my life not so fun by giving up. For some reason it failed, and it failed hard. Luckily, I had all of my important files (like this whole site) stored on an external drive and I have a SSD where I can keep my OS and all of my programs and such, but some of my other files are forever lost. It sucks, but I'll survive. My brother (who really helped med out) fought like a champ trying to get it to work, but it was a lost cause. In the process of trying to save my new hard drive I also had to wipe my SSD too. It took quite a while to install everything again, but now it's all up and running. The &quot;failed to sync branch&quot; problem I had earlier with GitHub is also gone, which I guess you could say is good, even though I would've rather had that problem than going trough this whole ordeal.&lt;/p&gt;
 
@@ -164,42 +174,6 @@
 </description>
                 <published>August 28, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution</link>
-              </item>
-            
-              <item>
-                <title>My First Plugin For Jekyll</title>
-                <description>&lt;p&gt;Okay, I wouldn't really call it my first real plugin, but I took the &lt;a href=&quot;http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/&quot; title=&quot;Jekyll Youtube Liquid Template Tag Gist&quot;&gt;Youtube plugin&lt;/a&gt; I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.&lt;/p&gt;
-
-&lt;h2&gt;Source code&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;module Jekyll
-  class Vimeo &amp;lt; Liquid::Tag
-    @@width = 500
-    @@height = 281
-
-    def initialize(name, id, tokens)
-      super
-      @id = id
-    end
-
-    def render(context)
-      %(&amp;lt;iframe width=&quot;#{@@width}&quot; height=&quot;#{@@height}&quot; src=&quot;http://player.vimeo.com/video/#{@id}&quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&amp;gt;&amp;lt;/iframe&amp;gt;)
-    end
-  end
-end
-
-Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;Liquid tag&lt;/h3&gt;
-
-&lt;p&gt;Remove the space before and after the percentage signs.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{ % vimeo 12345678 % }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-                <published>August 27, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/27/my-first-plugin-for-jekyll</link>
               </item>
             
     </channel>

@@ -45,7 +45,7 @@ body {
    Structure
 -------------*/
 
-.branding {
+.header {
   margin-top: 2em;
 }
 
@@ -53,7 +53,7 @@ body {
   margin-top: 1.5em;
 }
 
-.info {
+.footer {
   margin-top: 1em;
 }
 
@@ -267,7 +267,7 @@ ul, ol,
 }
 
 .pagination {
-  margin-bottom: 1em;
+  margin: 1.5em 0 0.5em;
 }
 
   .separator {
