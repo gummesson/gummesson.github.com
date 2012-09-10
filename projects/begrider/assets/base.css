@@ -63,15 +63,15 @@ table {
 --------*/
 
 body {
-  font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px */
+  font                  : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px/30px */
   -webkit-font-smoothing: antialiased;
   background-color      : #fdfdfd;
   color                 : #222;
 }
 
 ::selection, -moz-::selection {
-  color           :#fdfdfd;
-  background-color: #f660ab;
+  color           : #fdfdfd;
+  background-color: #b22b22;
 }
 
 /*--------
@@ -84,8 +84,7 @@ h3,
 h4, 
 h5, 
 h6 {
-  font-family: "Cabin", Helvetica, Arial, Sans-serif;
-  font-weight: bold;
+  font-family: "Oswald", Helvetica, Arial, Sans-serif;
 }
 
 h1 {
@@ -114,7 +113,7 @@ h5, h6 {
 
 [class^="column-"],
 [class^="unit-"] {
-  background-color: #f660ab;
+  background-color: #b22b22;
   text-align      : center;
   margin-bottom   : 10px;
 }
@@ -124,18 +123,19 @@ h5, h6 {
 }
 
 .unit-bg {
-  background-color: #e550aa;
+  background-color: #d44d44;
 }
 
 .text {
   text-align: left;
 }
 
-  .text > p {
+  .text p {
     margin-bottom: 1.5em;
+    text-align   : justify;
   }
 
-  .text > p:last-child {
+  .text p:last-child {
     margin-bottom: 0;
   }
 

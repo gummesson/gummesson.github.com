@@ -63,14 +63,14 @@ table {
 --------*/
 
 body {
-  font            : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif;
+  font            : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px/30px */
   background-color: #fdfdfd;
   color           : #222;
 }
 
 ::selection, -moz-::selection {
-  color           :#fdfdfd;
-  background-color: #f660ab;
+  color           : #fdfdfd;
+  background-color: #b22b22;
 }
 
 /*-------------
@@ -86,7 +86,7 @@ header {
   padding-top: 40px;
 }
 
-nav {
+.nav {
   margin-top: 10px;
 }
 
@@ -110,7 +110,7 @@ h4,
 h5, 
 h6,
 a {
-  font-family: "Cabin", Helvetica, Arial, Sans-serif;
+  font-family: "Oswald", Helvetica, Arial, Sans-serif;
   font-weight: bold;
 }
 
@@ -142,8 +142,7 @@ a {
 
   a:hover, 
   a:focus {
-    color        : #ff60ab;
-    border-bottom: 3px solid #ff60ab;
+    border-bottom: 3px solid #b22b22;
   }
 
   a:active {

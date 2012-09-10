@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Gummesson 2.0</title>
+                <description>&lt;p&gt;I decided to make the jump and thus this site now has a spanking new design. &lt;a href=&quot;http://www.google.com/webfonts/specimen/Oswald&quot; title=&quot;Oswald&quot;&gt;Oswald&lt;/a&gt; is used for the headings and the navigation and &lt;a href=&quot;http://www.google.com/webfonts/specimen/Asap&quot; title=&quot;Asap&quot;&gt;Asap&lt;/a&gt; is used for the body copy. I quite like them together since the former has a kind of slab-serif quality to it, even though it's actually a sans-serif. The bold and italic versions of Asap aren't perfect, but they look much better than than they did before. I haven't had the chance you check out how they look in &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;Opera&lt;/em&gt;, but I hope they look good in them too. I've also increased the font size from 112.5% &lt;em&gt;(which usually equals to 18px)&lt;/em&gt; to 125% &lt;em&gt;(20px)&lt;/em&gt; just because I'm a big fan of having a bigger size for readability.&lt;/p&gt;
+</description>
+                <published>September 10, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/10/gummesson-two-point-zero</link>
+              </item>
+            
+              <item>
                 <title>Redesigning</title>
                 <description>&lt;p&gt;Even though this site isn't even a month old I'm having serious thoughts about redesigning it. In fact, I already have a design that's about 99% finished. I'm having a hard time deciding if I really should switch or not though. One minute I'm liking the current design (atleast the basic structure of it) and the next I dislike it. One thing I really don't like with it is that the default typeface used for the body copy (&lt;a href=&quot;http://www.google.com/webfonts/specimen/Vollkorn&quot;&gt;Vollkorn&lt;/a&gt;) looks really nice as long as you don't use the bold and italic font styles on your text. The bold looks really heavy compared to the normal weight and that bugs me quite much. The italic version looks okay, but I'm not totally happy with it. The typography is a big part of this site's design (if not the only part) since I'm not a really graphical designer (I wouldn't even call myself a designer, to be honest).&lt;/p&gt;
 
@@ -31,7 +39,7 @@
 
 &lt;h2&gt;1. Writing in MarkdownPad&lt;/h2&gt;
 
-&lt;p&gt;I first fire up &lt;a href=&quot;http://www.markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt; and start writing a new blog post. It's a really nifty little tool for us Mac-depraved Windows users. I use DejaVu Sans Mono (which is my choice for coding purposes too) as my default font with &lt;code&gt;#FF424242&lt;/code&gt; as the font color and &lt;code&gt;#FFF2F2F2&lt;/code&gt; as the background color.&lt;/p&gt;
+&lt;p&gt;I first fire up &lt;a href=&quot;http://www.markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt; and start writing a new blog post. It's a really nifty little tool for us Mac-depraved Windows users. I use DejaVu Sans Mono (which is my choice for coding purposes too) as my default font with &lt;code&gt;#FF434343&lt;/code&gt; as the font color and &lt;code&gt;#FFF2F2F2&lt;/code&gt; as the background color.&lt;/p&gt;
 
 &lt;h2&gt;2. Running Jekyll locally&lt;/h2&gt;
 
@@ -153,27 +161,6 @@
 </description>
                 <published>August 31, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/08/31/more-additions</link>
-              </item>
-            
-              <item>
-                <title>Stumbling Upon A Good Solution</title>
-                <description>&lt;p&gt;As some of you may know, I've built my own grid system with the world's most horrible name, &lt;a href=&quot;/projects/begrider/&quot; title=&quot;Begrider is a simple, twelve column 1140px fluid grid system&quot;&gt;Begrider&lt;/a&gt;. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named &lt;code&gt;.last&lt;/code&gt;.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.&lt;/p&gt;
-
-&lt;h2&gt;The solution&lt;/h2&gt;
-
-&lt;p&gt;Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[class^=&quot;col-&quot;]:last-child {
-  margin-right: 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It worked! I know that I always sound suprised when something I've done works, but this really took me by suprise. Now the last &lt;code&gt;.col&lt;/code&gt; in the row gets it's gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don't (IE8 isn't too fond of the :last-child thing). I think I'm going to leave the &lt;code&gt;.last&lt;/code&gt; class in the code, just so there's an option to use it.&lt;/p&gt;
-
-&lt;p&gt;I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.&lt;/p&gt;
-</description>
-                <published>August 28, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution</link>
               </item>
             
     </channel>

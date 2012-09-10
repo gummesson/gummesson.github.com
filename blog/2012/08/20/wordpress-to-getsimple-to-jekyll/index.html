@@ -11,7 +11,7 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
   <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic|Cabin:700" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="favicon" href="/assets/icons/favicon.png" type="img/png">
   <!--[if lt IE 9]>
@@ -19,22 +19,23 @@
   <![endif]-->
 </head>
 <body>
+  <div class="line"></div>
   <div class="container">
     <div class="grid">
       <div class="row">
         <div class="col-two"></div><!-- .col-two -->
         <div class="col-eight">
-          <header class="header">
-            <h1 class="logo"><a href="/" alt="Ellen Gummesson" class="no-border">Ellen Gummesson</a></h1>
-            <p class="tagline">Random ramblings, overall geekiness and other musings</p>
+          <header class="main-header">
+            <h1 class="logo">Ellen Gummesson</h1>
+          </header>
         </div><!-- .col-eight -->
         <div class="col-two last"></div><!-- .col-two .last -->
       </div><!--.row -->
       <div class="row">
         <div class="col-two"></div><!-- .col-two -->
         <div class="col-eight">
-              <nav class="nav gamma no-border">
-                <ul>
+              <nav class="main-menu">
+                <ul class="nav gamma no-border">
                   <li><a href="/">Home</a></li>
                   <li><a href="/about">About</a></li>
                   <li><a href="/archives">Archives</a></li>
@@ -48,11 +49,11 @@
       <div class="row">
         <div class="col-two"></div><!-- .col-two -->
           <div class="col-eight">
-            <div class="content">
+            <div class="main-content">
               <article>
   <h1>WordPress to GetSimple to Jekyll</h1>
-    <p class="post-meta small-margin">Posted on August 20, 2012  in  <a href="/blog/tag/Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" class="no-border">Jekyll</a></p>
-      <p>... Or: "How I learned to stop worrying and love the command line".</p>
+    <p class="post-meta small-margin">Posted on August 20, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a></p>
+    <p>... Or: "How I learned to stop worrying and love the command line".</p>
 
 <p>I love WordPress. I think it's a really great CMS and the community is huge, to say the least. However, I feel that it's sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I'd choose it in a heartbeat. But since I don't plan to do that I wanted something smaller. I've been playing around with <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn't really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn't feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
 
@@ -96,16 +97,14 @@
       <div class="row">
         <div class="col-two"></div><!-- .col-two -->
         <div class="col-eight">
-          <footer class="footer small">
-            <nav class="nav no-border">
-              <ul>
+          <footer class="main-footer small">
+              <ul class="nav no-border">
                 <li><a href="/feed.xml">RSS</a></li>
                 <li><a href="https://twitter.com/pratnarkoman" alt="Twitter">Twitter</a></li>
                 <li><a href="https://plus.google.com/108569513108478415869">Google+</a></li>
                 <li><a href="https://github.com/gummesson" alt="GitHub">GitHub</a></li>
               </ul>
-            </nav>
-            <p class="copyright">Copyright &copy; <a href="/" alt="Ellen Gummesson" class="no-border">Ellen Gummesson</a> 2012</p>
+            <p class="copyright">Copyright &copy; Ellen Gummesson 2012</p>
           </footer>
         </div><!-- .col-eight -->
         <div class="col-two last"></div><!-- .col-two .last -->

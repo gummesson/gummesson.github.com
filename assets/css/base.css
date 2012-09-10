@@ -6,7 +6,7 @@
       - Structure
     + Type
       - Headings
-      - Links
+      - Anchors
       - Quotes
       - Code
     + Lists
@@ -24,36 +24,50 @@
 ==========*/
 
 html {
-  -moz-box-sizing   : border-box; 
-  -webkit-box-sizing: border-box;
-  box-sizing        : border-box;
+  -moz-box-sizing         : border-box; 
+  -webkit-box-sizing      : border-box;
+  box-sizing              : border-box;
+  -webkit-font-smoothing  : antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust    : 100%;
 }
 
 body {
-  font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px / 27px */
-  -webkit-font-smoothing: antialiased;
-  color                 : #222222;
-  background-color      : #fdfdfd;
+  font            : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px / 30px */
+  color           : #222222;
+  background-color: #fdfdfd;
 }
 
-::selection, ::-moz-selection {
+::selection, 
+::-moz-selection,
+::-webkit-selection {
   color           : #fdfdfd;
-  background-color: #f660ab;
+  background-color: #b11b11;
+}
+
+.line {
+  background-color: #b11b11;
+  width           : 100%;
+  height          : 0.35em;
 }
 
 /*-------------
    Structure
 -------------*/
 
-.header {
-  margin-top: 2em;
+.main-header {
+  margin-top: 1.75em;
 }
 
-.content {
+.main-content {
   margin-top: 1.5em;
 }
 
-.footer {
+.main-menu {
+  margin-top: 0.25em;
+}
+
+.main-footer {
   margin-top: 1em;
 }
 
@@ -70,7 +84,7 @@ h1, .alpha {
 }
 
   .logo {
-    font-size: 3.2em; 
+    font-size: 3.5em;
   }
 
 h2, .beta {
@@ -90,18 +104,18 @@ h6, .zeta {
   font-size: 1em;
 }
 
-/*---------
-   Links
----------*/
+/*-----------
+   Anchors
+-----------*/
 
 a {
   color             : #222222;
   border-bottom     : 1px dotted #999999;
-  -webkit-transition: all 200ms linear;
-  -moz-transition   : all 200ms linear;
-  -ms-transition    : all 200ms linear;
-  -o-transition     : all 200ms linear;
-  transition        : all 200ms linear;
+  -webkit-transition: all 150ms linear;
+  -moz-transition   : all 150ms linear;
+  -ms-transition    : all 150ms linear;
+  -o-transition     : all 150ms linear;
+  transition        : all 150ms linear;
 }
 
 .no-border, 
@@ -112,8 +126,7 @@ a {
   a:hover, a:focus,
   .no-border a:hover,
   .no-border a:focus {
-    color        : #ff60ab;
-    border-bottom: 3px solid #ff60ab;
+    border-bottom: 3px solid #b11b11;
   }
 
   a:active {
@@ -126,8 +139,9 @@ a {
 ----------*/
 
 blockquote {
-  border-left: 0.25em solid #999999;
+  border-left: 0.35em solid #b11b11;
   padding    : 0 1.5em;
+  font-style : italic;
 }
 
   blockquote cite:before {
@@ -185,21 +199,21 @@ ol ol {
     Navigation
 ================*/
 
-.nav, .nav ul,
+.nav,
 .no-list,
-.hor-list {
+.hz-list {
   list-style-type: none;
   margin-bottom  : 0;
 }
 
   .nav li,
-  .hor-list li {
+  .hz-list li {
     display     : inline-block;
     margin-right: 1.5em;
   }
 
   .nav li:last-child,
-  .hor-list li:last-child {
+  .hz-list li:last-child {
     margin-right: 0;
   }
 
@@ -208,14 +222,12 @@ ol ol {
 ============*/
 
 h1, h2, h3, h4, h5, h6,
-.tagline,
 .nav,
 .post-meta,
-.pagination,
+.pagination, .pagination a,
 .date,
 .copyright {
-  font-family: "Cabin", Helvetica, Arial, Sans-serif;
-  font-weight: bold;
+  font-family: "Oswald", Helvetica, Arial, Sans-serif;
 }
 
 i, .italic,
@@ -236,7 +248,8 @@ pre,
   margin-bottom: 1.5em;
 }
 
-.small,
+
+small, .small,
 blockquote p {
   font-size: 0.875em;
 }
@@ -250,14 +263,15 @@ ul, ol,
    Specific 
 ------------*/
 
-.small-margin {
-  margin-bottom: 0.5em;
-}
-
 .no-margin {
   margin-bottom: 0;
 }
 
+.small-margin {
+  margin-bottom: 0.5em;
+}
+
+.big-margin,
 .blog-post {
   margin-bottom: 2em;
 }
@@ -266,8 +280,12 @@ ul, ol,
   margin-bottom: 0;
 }
 
+.main-content p {
+  text-align: justify;
+}
+
 .pagination {
-  margin: 1.5em 0 0.5em;
+  margin: 1em 0 0.75em;
 }
 
   .separator {
@@ -295,7 +313,7 @@ ul, ol,
     display      : block;
     width        : 100%; 
     height       : 0.5em; 
-    background   : #222222;
+    background   : #b11b11;
     border-radius: 0.15em 0 0 0.15em;
   }
 
@@ -398,17 +416,21 @@ ul, ol,
 -----------------*/
 
 /* Smaller screens */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
   img { 
-    max-width : 100%; 
-    max-height: auto;
+    max-width: 100%; 
+    height   : auto;
   }
 
 }
 
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 112.5%;
+  }
 
   .row .col-twelve,
   .row .col-eleven,
@@ -424,17 +446,22 @@ ul, ol,
   .row .col-one {
     width       : 100%;
     min-height  : 0;
-    float       : none;
     margin-right: 0;
+    float       : none;
   }
 
-  .branding {
-    margin-top: 0;
+  .main-header {
+    margin-top: 1.25em;
   }
 
-    .copyright {
-      margin-bottom: 1em;
-    }
+  .logo {
+    font-size  : 3em;
+    line-height: 1.25;
+  }
+
+  .copyright {
+    margin-bottom: 0.75em;
+  }
 
 }
 
@@ -449,18 +476,21 @@ ul, ol,
     width: 92.5%;
   }
 
-  .branding {
-    margin-top: 0.65em;
+  .logo {
+    font-size : 2.75em;
   }
 
-    .logo {
-      font-size    : 2.8em;
-      line-height  : 1.1;
-      margin-bottom: 0.35em;
-      }
+  .main-content {
+    margin-top: 1em;
+  }
 
-    .copyright {
-      margin-bottom: 0.5em;
-    }
+}
+
+@media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .main-header,
+  .main-menu {
+    margin-top: 1em;
+  }
 
 }
