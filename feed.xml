@@ -6,6 +6,53 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>External Links In The Post Title</title>
+                <description>&lt;p&gt;A couple of days ago I finally managed to add the ability to have external links in my post titles on this site. I tried and I tried, but for some reason I couldn't get it to work properly. I waited a couple of days and tried again and then boom, it worked. I don't know what I did wrong the first time, but I'm glad that it now works. Thanks to the YAML Front Matter and Liquid tags it's actually not that hard to add to your site. I don't really know if I'll use it that much, but I quite like to have that option.&lt;/p&gt;
+
+&lt;h2&gt;How to add the external links&lt;/h2&gt;
+
+&lt;p&gt;The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;external-link: http://www.example.com/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you don't want to add an external link to your title, just replace the link itself with &lt;code&gt;false&lt;/code&gt; or remove the whole thing. The markup of your post title on your front page should look like something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Instead of having the above markup, replace it with something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% if post.external-link %}
+  &amp;lt;h1&amp;gt;&amp;lt;a href=&quot;{{ post.external-link }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+{% else %}
+  &amp;lt;h1&amp;gt;&amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also added this in the markup for my post layout:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% if page.external-link %}
+  &amp;lt;h1&amp;gt;&amp;lt;a href=&quot;{{ page.external-link }}&quot;&amp;gt;{{ page.title }}&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
+{% else %}
+  &amp;lt;h1&amp;gt;{{ page.title }}&amp;lt;/h1&amp;gt;
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And you're done! I would encourage you to also add an actual permalink to your own post if you're using external links, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;Permalink&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;A side note&lt;/h3&gt;
+
+&lt;p&gt;I actually had to add another plugin so I could show the Liquid tags since Jekyll parses them automatically. You can find it in &lt;a href=&quot;https://gist.github.com/1020852&quot; title=&quot;Raw tag for Jekyll&quot;&gt;this gist&lt;/a&gt; over at GitHub.&lt;/p&gt;
+</description>
+                <published>September 11, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/11/external-links</link>
+              </item>
+            
+              <item>
                 <title>Gummesson 2.0</title>
                 <description>&lt;p&gt;I decided to make the jump and thus this site now has a spanking new design. &lt;a href=&quot;http://www.google.com/webfonts/specimen/Oswald&quot; title=&quot;Oswald&quot;&gt;Oswald&lt;/a&gt; is used for the headings and the navigation and &lt;a href=&quot;http://www.google.com/webfonts/specimen/Asap&quot; title=&quot;Asap&quot;&gt;Asap&lt;/a&gt; is used for the body copy. I quite like them together since the former has a kind of slab-serif quality to it, even though it's actually a sans-serif. The bold and italic versions of Asap aren't perfect, but they look much better than than they did before. I haven't had the chance you check out how they look in &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;Opera&lt;/em&gt;, but I hope they look good in them too. I've also increased the font size from 112.5% &lt;em&gt;(which usually equals to 18px)&lt;/em&gt; to 125% &lt;em&gt;(20px)&lt;/em&gt; just because I'm a big fan of having a bigger size for readability.&lt;/p&gt;
 </description>
@@ -57,110 +104,6 @@
 </description>
                 <published>September  2, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/02/my-jekyll-workflow</link>
-              </item>
-            
-              <item>
-                <title>More Additions</title>
-                <description>&lt;p&gt;Being bored sometimes has it's own perks. I continued experimenting with the &lt;a href=&quot;/projects/begrider/&quot;&gt;Begider&lt;/a&gt; project and ended up adding a couple of more things to it, mainly a new set of column-like classes called &lt;code&gt;.unit-&lt;/code&gt;. A unit differ itself from a regular column by not having a gutter, and thus having more of a &quot;proportional&quot; percentage width. So, instead of just having these:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.row .column-twelve {
-  width: 99.99%;
-  margin-right: 0;
-}
-
-.row .column-eleven {
-  width: 91.42%;
-}
-
-.row .column-ten {
-  width: 82.85%;
-}
-
-/* Nine columns */
-.row .column-nine {
-  width: 74.28%;
-}
-
-.row .column-eight {
-  width: 65.71%;
-}
-
-.row .column-seven {
-  width: 57.14%;
-}
-
-.row .column-six {
-  width: 48.57%;
-}
-
-.row .column-five {
-  width: 40%;
-}
-
-.row .column-four {
-  width: 31.43%;
-}
-
-.row .column-three {
-  width: 22.86%;
-}
-
-.row .column-two {
-  width: 14.29%;
-}
-
-.row .column-one {
-  width: 5.72%;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also use these:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.row .unit-full {
-  width: 100%;
-}
-
-.row .unit-four-fifths {
-  width: 80%;
-}
-
-.row .unit-three-quarters {
-  width: 75%;
-}
-
-.row .unit-two-thirds {
-  width: 66.66%;
-}
-
-.row .unit-three-fifths {
-  width: 60%;
-}
-
-.row .unit-half {
-  width: 50%;
-}
-
-.row .unit-two-fifths {
-  width: 40%;
-}
-
-.row .unit-one-third {
-  width: 33.33%;
-}
-
-.row .unit-one-quarter {
-  width: 25%;
-}
-
-.row .unit-one-fifth {
-  width: 20%;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It's useful if you don't want to have any gutters and/or want to use paddings instead instead of margins. I don't know if anyone's ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don't really know if it actually needs anything more, but I'll be sure to try stuff out.&lt;/p&gt;
-</description>
-                <published>August 31, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/08/31/more-additions</link>
               </item>
             
     </channel>
