@@ -79,8 +79,13 @@ body {
    Headings
 ------------*/
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin     : 0.125em 0;
+}
+
 h1, .alpha {
-  font-size: 2em; 
+  font-size: 2em;
 }
 
   .logo {
@@ -454,8 +459,7 @@ ul, ol,
   }
 
   .logo {
-    font-size  : 3em;
-    line-height: 1.25;
+    font-size: 3em;
   }
 
   .copyright {
@@ -487,13 +491,12 @@ ul, ol,
 
 @media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .main-header,
-  .main-menu {
+  .main-header {
     margin-top: 1em;
   }
 
-    .logo {
-      line-height: 1.25;
-    }
+  .main-menu {
+    margin-top: 0.5em;
+  }
 
 }
