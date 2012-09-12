@@ -156,7 +156,7 @@ pre {
   overflow        : auto; 
   line-height     : 1;
   background-color: #dddddd;
-  border          : 1px solid #999999;
+  border          : 1px solid #cccccc;
   border-radius   : 0.15em;
   padding         : 0.15em 0.35em 0.35em;
   margin-top      : 0.25em;
@@ -166,7 +166,7 @@ code {
   font-family     : Consolas, Monaco, Andale Mono, monospace;
   font-size       : 0.75em;
   background-color: #dddddd;
-  border          : 1px solid #999999;
+  border          : 1px solid #cccccc;
   border-radius   : 0.25em;
   padding         : 0.1em 0.25em;
 }
@@ -493,7 +493,7 @@ ul, ol,
   }
 
     .logo {
-      line-height: 1.15;
+      line-height: 1.25;
     }
 
 }
