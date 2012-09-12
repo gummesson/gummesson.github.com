@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Jekyll / Ellen Gummesson</title>
+  <title>External Links In The Post Title / Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -51,115 +51,70 @@
           <div class="col-eight">
             <div class="main-content">
               <article>
-  <h1>Jekyll</h1>
-    <ul>
-      
-        
-          
-        
-          
-            <li><span class="bold">Sep 11, 2012 / </span><a href="/blog/2012/09/11/external-links-in-the-post-title" alt="External Links In The Post Title" title="External Links In The Post Title" class="no-border" >External Links In The Post Title</a></li>
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="bold">Sep  2, 2012 / </span><a href="/blog/2012/09/02/my-jekyll-workflow" alt="My Jekyll Workflow" title="My Jekyll Workflow" class="no-border" >My Jekyll Workflow</a></li>
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="bold">Aug 27, 2012 / </span><a href="/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My First Plugin For Jekyll" title="My First Plugin For Jekyll" class="no-border" >My First Plugin For Jekyll</a></li>
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="bold">Aug 26, 2012 / </span><a href="/blog/2012/08/26/my-jekyll-plugins" alt="My Jekyll Plugins" title="My Jekyll Plugins" class="no-border" >My Jekyll Plugins</a></li>
-          
-        
-      
-        
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="bold">Aug 21, 2012 / </span><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit and Jekyll" title="Windows 7, Ruby, DevKit and Jekyll" class="no-border" >Windows 7, Ruby, DevKit and Jekyll</a></li>
-          
-        
-      
-        
-          
-        
-          
-            <li><span class="bold">Aug 20, 2012 / </span><a href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" alt="WordPress to GetSimple to Jekyll" title="WordPress to GetSimple to Jekyll" class="no-border" >WordPress to GetSimple to Jekyll</a></li>
-          
-        
-      
-        
-          
-        
-      
-    </ul>
+  
+    <h1>External Links In The Post Title</h1>
+  
+    <p class="post-meta small-margin">Posted on September 11, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a></p>
+    <p>A couple of days ago I finally managed to add the ability to have external links in my post titles on this site. I tried and I tried, but for some reason I couldn't get it to work properly. I waited a couple of days and tried again and then boom, it worked. I don't know what I did wrong the first time, but I'm glad that it now works. Thanks to the YAML Front Matter and Liquid tags it's actually not that hard to add to your site. I don't really know if I'll use it that much, but I quite like to have that option.</p>
+
+<h2>How to add the external links</h2>
+
+<p>The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:</p>
+
+<pre><code>external-link: http://www.example.com/
+</code></pre>
+
+<p>If you don't want to add an external link to your title, just replace the link itself with <code>false</code> or remove the whole thing. The markup of your post title on your front page should look like something like this:</p>
+
+<pre><code>&lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+</code></pre>
+
+<p>Instead of having the above markup, replace it with something like this:</p>
+
+<pre><code>{% if post.external-link %}
+  &lt;h1&gt;&lt;a href="{{ post.external-link }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+{% endif %}
+</code></pre>
+
+<p>I also added this in the markup for my post layout:</p>
+
+<pre><code>{% if page.external-link %}
+  &lt;h1&gt;&lt;a href="{{ page.external-link }}"&gt;{{ page.title }}&lt;/a&gt;&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
+{% endif %}
+</code></pre>
+
+<p>And you're done! I would encourage you to also add an actual permalink to your own post if you're using external links, like this for example:</p>
+
+<pre><code>&lt;p&gt;&lt;a href="{{ post.url }}"&gt;Permalink&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+
+<h3>A side note</h3>
+
+<p>I actually had to add another plugin so I could show the Liquid tags since Jekyll parses them automatically. You can find it in <a href="https://gist.github.com/1020852" title="Raw tag for Jekyll">this gist</a> over at GitHub.</p>
+
 </article>
+
+  <section class="comments">
+  <h1 class="small-margin">Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section>
+
             </div>
           </div><!-- .col-eight -->
           <div class="col-two last"></div><!-- .col-two .last -->

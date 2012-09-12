@@ -39,7 +39,7 @@
 {% endif %}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;And you're done! I would encourage you to also add an actual permalink to your own post if you're using external links, like this:&lt;/p&gt;
+&lt;p&gt;And you're done! I would encourage you to also add an actual permalink to your own post if you're using external links, like this for example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;Permalink&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -49,7 +49,7 @@
 &lt;p&gt;I actually had to add another plugin so I could show the Liquid tags since Jekyll parses them automatically. You can find it in &lt;a href=&quot;https://gist.github.com/1020852&quot; title=&quot;Raw tag for Jekyll&quot;&gt;this gist&lt;/a&gt; over at GitHub.&lt;/p&gt;
 </description>
                 <published>September 11, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/11/external-links</link>
+                <link>http://ellengummesson.com/blog/2012/09/11/external-links-in-the-post-title</link>
               </item>
             
               <item>

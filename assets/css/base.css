@@ -55,16 +55,13 @@ body {
    Structure
 -------------*/
 
-.main-header {
+.main-header,
+.main-content {
   margin-top: 1.75em;
 }
 
 .main-menu {
   margin-top: 0.25em;
-}
-
-.main-content {
-  margin-top: 1.5em;
 }
 
 .main-footer {
