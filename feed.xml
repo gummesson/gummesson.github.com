@@ -6,6 +6,18 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>ResophNotes</title>
+                <description>&lt;p&gt;One of the most frequent mention apps I've seen around the web during the last couple of months is &lt;a href=&quot;http://notational.net/&quot; title=&quot;Notational Velocity&quot;&gt;Notational Velocity&lt;/a&gt; &lt;em&gt;(or rather a popular fork of it called &lt;a href=&quot;http://brettterpstra.com/project/nvalt/&quot; title=&quot;nvALT&quot;&gt;nvALT&lt;/a&gt;)&lt;/em&gt;. In short it's a note taking app where you can both create plain text notes and store, tag and search among them. You can also synch them synch with &lt;a href=&quot;http://www.dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; &lt;em&gt;(by creating a folder and storing your notes on your account)&lt;/em&gt; and a couple of other services, which enables you to access your files from pretty much anywhere as long as you have some kind of internet connection. Sadly it's only available for &lt;em&gt;Mac&lt;/em&gt; computers so I went out on my way to see if I could find an alternative. I did and it's name is &lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt;, which was originally built as a Windows based app for &lt;a href=&quot;http://simplenoteapp.com/&quot; title=&quot;Simplenote&quot;&gt;Simplenote&lt;/a&gt; but you can also use it with &lt;em&gt;Dropbox&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/blog/2012-09-13-resophnotes.png' title='ResophNotes' alt='ResophNotes'&gt;&lt;/p&gt;
+
+&lt;p&gt;It's maybe not be pretty as it's &lt;em&gt;Apple&lt;/em&gt; counterparts, but the foundation is the same. It's nice to have all of your notes in the same place, and I really like that you're able to tag them. It means that I can place all of my blog post ideas in a tag called &quot;blog&quot; and so on. It also has a lot of options, meaning you can customize it to your liking. For example, I'm planning to hide all of the icons once I've learned all of the shortcuts properly since I like a more clean cut look. I've been only using it for a couple of days, but so far so good.&lt;/p&gt;
+</description>
+                <published>September 13, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/13/resophnotes</link>
+              </item>
+            
+              <item>
                 <title>External Links In The Post Title</title>
                 <description>&lt;p&gt;A couple of days ago I finally managed to add the ability to have external links in my post titles on this site. I tried and I tried, but for some reason I couldn't get it to work properly. I waited a couple of days and tried again and then boom, it worked. I don't know what I did wrong the first time, but I'm glad that it now works. Thanks to the YAML Front Matter and Liquid tags it's actually not that hard to add to your site. I don't really know if I'll use it that much, but I quite like to have that option.&lt;/p&gt;
 
@@ -78,32 +90,6 @@
 </description>
                 <published>September  5, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/05/a-hard-drive-failure</link>
-              </item>
-            
-              <item>
-                <title>My Jekyll Workflow</title>
-                <description>&lt;p&gt;Now that I've had this blog for a while I thought it would be a good idea to write about how my so called workflow looks to wrap this whole Jekyll series up.&lt;/p&gt;
-
-&lt;h2&gt;1. Writing in MarkdownPad&lt;/h2&gt;
-
-&lt;p&gt;I first fire up &lt;a href=&quot;http://www.markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt; and start writing a new blog post. It's a really nifty little tool for us Mac-depraved Windows users. I use DejaVu Sans Mono (which is my choice for coding purposes too) as my default font with &lt;code&gt;#FF434343&lt;/code&gt; as the font color and &lt;code&gt;#FFF2F2F2&lt;/code&gt; as the background color.&lt;/p&gt;
-
-&lt;h2&gt;2. Running Jekyll locally&lt;/h2&gt;
-
-&lt;p&gt;After I'm done with my writing, I fire up the command line and run Jekyll to generate my site. I also skim through my blog post to make sure that I haven't accidentally made a typo or something to that effect.&lt;/p&gt;
-
-&lt;h2&gt;3. Pushing to GitHub&lt;/h2&gt;
-
-&lt;p&gt;Last but not least, I open up &lt;a href=&quot;http://windows.github.com/&quot; title=&quot;GitHub for Windows&quot;&gt;GitHub for Windows&lt;/a&gt; and push my site to GitHub. Even though it's not the most convenient thing to do it's still pretty easy and it makes the transfer so much faster with no hassles.&lt;/p&gt;
-
-&lt;h3&gt;Note:&lt;/h3&gt;
-
-&lt;p&gt;GitHub Pages (where I host my site) can actually run Jekyll and generate your site automatically but you can't use your own plugins, so that's why I'm deploying my static pages rather than just the source itself.&lt;/p&gt;
-
-&lt;p&gt;And that's it! You could argue that it sounds a lot like overkill, but it works for me. Sure, I can't upgrade something without sitting infront of my computer, but I know that I'd never update from a phone or email anyways. It really makes me think twice before I publish something too, which I like.&lt;/p&gt;
-</description>
-                <published>September  2, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/02/my-jekyll-workflow</link>
               </item>
             
     </channel>
