@@ -286,7 +286,7 @@ ul, ol,
 }
 
   .main-content p a {
-    padding-bottom: 2px;
+    padding-bottom: 3px;
   }
 
 .pagination {
@@ -480,10 +480,6 @@ ul, ol,
     width: 92.5%;
   }
 
-  .logo {
-    font-size : 2.75em;
-  }
-
   .main-content {
     margin-top: 1em;
   }
@@ -495,6 +491,12 @@ ul, ol,
   .main-header {
     margin-top: 1em;
   }
+
+    .logo {
+      font-size  : 2.75em;
+      line-height: 1.2;
+      margin     : 0.165em 0;
+    }
 
   .main-menu {
     margin-top: 0.5em;

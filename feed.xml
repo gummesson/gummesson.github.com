@@ -6,6 +6,28 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>My New Writing App</title>
+                <description>&lt;p&gt;Up until now I've mostly written all of my posts and pages in a program called &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt;. Even though I really like it I sometimes feel that it's a bit too... clunky, for lack of a better word. It's great for doing shorter writings and editing files, but I haven't reall been comfortable using it as a long form writing environment. As I do with a lot of stuff I once again sat down in front of my screen to find something new and preferably awesome that I could use.&lt;/p&gt;
+
+&lt;h2&gt;FocusWriter&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;FocusWriter&lt;/em&gt; is a cross platform, distraction-free text editor &lt;em&gt;(or writing environment, as the developer himself calls it)&lt;/em&gt;. It's a pretty neat looking app with an minimalistic interface but it also has suprisingly many features. It supports both rich text and plain text formatting, but sadly there's no real &lt;em&gt;Markdown&lt;/em&gt; support, meaning that it doesn't have any syntax support. You can still write it in the editor of course though and it can actually both open and save documents with a &lt;em&gt;Markdown&lt;/em&gt; file extension, which is good. What I mostly like about is that it has a clean interface and that it hides all the menus by default.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/blog/2012-09-14-focuswriter.png' title='FocusWriter' alt='FocusWriter'&gt;&lt;/p&gt;
+
+&lt;p&gt;One thing I really hate about distraction-free/full screen editors is that I often feel too trapped when I use them. I mean, they're probably a life saver for many people but it''s not my cup of tea. If I'm stuck I want to be able to take a quick break and then jump right back in when I get the urge to write some more. Fortunately, &lt;em&gt;FocusWriter&lt;/em&gt; gives me the ability to do so. You can also make your own themes where you can change the colors, the typeface and the margins for the writing area which also comes in handy.&lt;/p&gt;
+
+&lt;p&gt;So far I've only been using it for about two or three days, but I have a feeling that it'll stick around for a much longer period.&lt;/p&gt;
+
+&lt;h3&gt;A side note&lt;/h3&gt;
+
+&lt;p&gt;To my suprise I first found an app for &lt;em&gt;Ubuntu&lt;/em&gt; &lt;em&gt;(who would've thought?)&lt;/em&gt; called &lt;a href=&quot;http://uberwriter.wolfvollprecht.de/&quot; title=&quot;UberWriter&quot;&gt;UberWriter&lt;/a&gt;. It looks &lt;strong&gt;exactly&lt;/strong&gt; like &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; &lt;em&gt;(apart from some minor color details)&lt;/em&gt;, which means that it's incredibly gorgeous. You should try it out if you get the chance.&lt;/p&gt;
+</description>
+                <published>September 14, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/14/my-new-writing-app</link>
+              </item>
+            
+              <item>
                 <title>ResophNotes</title>
                 <description>&lt;p&gt;One of the most frequent mention apps I've seen around the web during the last couple of months is &lt;a href=&quot;http://notational.net/&quot; title=&quot;Notational Velocity&quot;&gt;Notational Velocity&lt;/a&gt; &lt;em&gt;(or rather a popular fork of it called &lt;a href=&quot;http://brettterpstra.com/project/nvalt/&quot; title=&quot;nvALT&quot;&gt;nvALT&lt;/a&gt;)&lt;/em&gt;. In short it's a note taking app where you can both create plain text notes and store, tag and search among them. You can also synch them synch with &lt;a href=&quot;http://www.dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; &lt;em&gt;(by creating a folder and storing your notes on your account)&lt;/em&gt; and a couple of other services, which enables you to access your files from pretty much anywhere as long as you have some kind of internet connection. Sadly it's only available for &lt;em&gt;Mac&lt;/em&gt; computers so I went out on my way to see if I could find an alternative. I did and it's name is &lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt;, which was originally built as a Windows based app for &lt;a href=&quot;http://simplenoteapp.com/&quot; title=&quot;Simplenote&quot;&gt;Simplenote&lt;/a&gt; but you can also use it with &lt;em&gt;Dropbox&lt;/em&gt;.&lt;/p&gt;
 
@@ -80,16 +102,6 @@
 </description>
                 <published>September  7, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/07/redesigning</link>
-              </item>
-            
-              <item>
-                <title>A Hard (Drive) Failure</title>
-                <description>&lt;p&gt;A couple of days ago my new hard drive that I bought a mere three weeks ago decided that it was time to make my life not so fun by giving up. For some reason it failed, and it failed hard. Luckily, I had all of my important files (like this whole site) stored on an external drive and I have a SSD where I can keep my OS and all of my programs and such, but some of my other files are forever lost. It sucks, but I'll survive. My brother (who really helped med out) fought like a champ trying to get it to work, but it was a lost cause. In the process of trying to save my new hard drive I also had to wipe my SSD too. It took quite a while to install everything again, but now it's all up and running. The &quot;failed to sync branch&quot; problem I had earlier with GitHub is also gone, which I guess you could say is good, even though I would've rather had that problem than going trough this whole ordeal.&lt;/p&gt;
-
-&lt;p&gt;I don't really know if I'm more sad or more angry though. Sure, it's really important that you take backups of everything that you want to keep and store, but I don't think I really can blame myself entirely in this case. I mean, you don't really except a hard drive that you've barely used to break down and just fail on you so suddenly. On the other hand I do want to kick myself in the head, atleast just a little bit. Oh well. Sometimes we think that computers are these indestructible things that can do no wrong, but I guess that's not really the case. Now I'm keeping my fingers crossed that I can get it replaced without any hassles, but that shouldn't really be a problem. I hope.&lt;/p&gt;
-</description>
-                <published>September  5, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/05/a-hard-drive-failure</link>
               </item>
             
     </channel>
