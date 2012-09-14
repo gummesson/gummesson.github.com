@@ -11,7 +11,7 @@
 
 &lt;h2&gt;FocusWriter&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;FocusWriter&lt;/em&gt; is a cross platform, distraction-free text editor &lt;em&gt;(or writing environment, as the developer himself calls it)&lt;/em&gt;. It's a pretty neat looking app with an minimalistic interface but it also has suprisingly many features. It supports both rich text and plain text formatting, but sadly there's no real &lt;em&gt;Markdown&lt;/em&gt; support, meaning that it doesn't have any syntax support. You can still write it in the editor of course though and it can actually both open and save documents with a &lt;em&gt;Markdown&lt;/em&gt; file extension, which is good. What I mostly like about is that it has a clean interface and that it hides all the menus by default.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is a cross platform, distraction-free text editor &lt;em&gt;(or writing environment, as the developer himself calls it)&lt;/em&gt;. It's a pretty neat looking app with an minimalistic interface but it also has suprisingly many features. It supports both rich text and plain text formatting, but sadly there's no real &lt;em&gt;Markdown&lt;/em&gt; support, meaning that it doesn't have any syntax support. You can still write it in the editor of course though and it can actually both open and save documents with a &lt;em&gt;Markdown&lt;/em&gt; file extension, which is good. What I mostly like about is that it has a clean interface and that it hides all the menus by default.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src='/images/blog/2012-09-14-focuswriter.png' title='FocusWriter' alt='FocusWriter'&gt;&lt;/p&gt;
 
