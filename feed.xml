@@ -6,8 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Themes For FocusWriter</title>
+                <description>&lt;p&gt;By being bored and wanting to have something to do I made a couple of themes for &lt;em&gt;FocusWriter&lt;/em&gt; based on other editors like &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; and &lt;a href=&quot;http://bywordapp.com/&quot; title=&quot;Byword&quot;&gt;Byword&lt;/a&gt; and color schemes like &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;. You can check out some screenshots of them by either clicking on this post's title &lt;em&gt;(I finally get the chance to use an external link!)&lt;/em&gt; or right &lt;a href=&quot;/projects/focuswriter-themes/&quot; title=&quot;FocusWriter Themes&quot;&gt;here&lt;/a&gt;, if you'd rather want that. They're also available on &lt;a href=&quot;https://github.com/gummesson/focuswriter-themes&quot; title=&quot;FocusWriter Themes on GitHub&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <published>September 15, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/15/themes-for-focuswriter</link>
+              </item>
+            
+              <item>
                 <title>My New Writing App</title>
-                <description>&lt;p&gt;Up until now I've mostly written all of my posts and pages in a program called &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt;. Even though I really like it I sometimes feel that it's a bit too... clunky, for lack of a better word. It's great for doing shorter writings and editing files, but I haven't reall been comfortable using it as a long form writing environment. As I do with a lot of stuff I once again sat down in front of my screen to find something new and preferably awesome that I could use.&lt;/p&gt;
+                <description>&lt;p&gt;Up until now I've mostly written all of my posts and pages in a program called &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt;. Even though I really like it I sometimes feel that it's a bit too... clunky, for lack of a better word. It's great for doing shorter writings and editing files, but I haven't really been comfortable using it as a long form writing environment. As I do with a lot of stuff I once again sat down in front of my screen to find something new and preferably awesome that I could use.&lt;/p&gt;
 
 &lt;h2&gt;FocusWriter&lt;/h2&gt;
 
@@ -92,16 +100,6 @@
 </description>
                 <published>September 10, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/10/gummesson-two-point-zero</link>
-              </item>
-            
-              <item>
-                <title>Redesigning</title>
-                <description>&lt;p&gt;Even though this site isn't even a month old I'm having serious thoughts about redesigning it. In fact, I already have a design that's about 99% finished. I'm having a hard time deciding if I really should switch or not though. One minute I'm liking the current design (atleast the basic structure of it) and the next I dislike it. One thing I really don't like with it is that the default typeface used for the body copy (&lt;a href=&quot;http://www.google.com/webfonts/specimen/Vollkorn&quot;&gt;Vollkorn&lt;/a&gt;) looks really nice as long as you don't use the bold and italic font styles on your text. The bold looks really heavy compared to the normal weight and that bugs me quite much. The italic version looks okay, but I'm not totally happy with it. The typography is a big part of this site's design (if not the only part) since I'm not a really graphical designer (I wouldn't even call myself a designer, to be honest).&lt;/p&gt;
-
-&lt;p&gt;In hindsight I probably should've spent more time on choosing the right typefaces earlier, but I was eager to launch this site so I didn't. So, I guess the conclusion of this post is that I'll likely change the typefaces, but stick to the one column layout. I'm thinking about cleaning up the code a bit too, but we'll see how that goes.&lt;/p&gt;
-</description>
-                <published>September  7, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/07/redesigning</link>
               </item>
             
     </channel>

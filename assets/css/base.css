@@ -173,7 +173,7 @@ code {
   background-color: #ddd;
   border          : 1px solid #ccc;
   border-radius   : 0.25em;
-  padding         : 0.1em 0.25em;
+  padding         : 0.1em 0.25em 0.05em;
 }
 
   pre > code {
