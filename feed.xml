@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Cleaning Up</title>
+                <description>&lt;p&gt;During the last couple of days I've started to clean up among my RSS subscriptions. I'll admit that when I first started using &lt;a href=&quot;http://www.google.com/reader&quot; title=&quot;Google Reader&quot;&gt;Google Reader&lt;/a&gt; a couple of years ago I subscribed and subscribed, and then subscribed some more. I became an feed addict. I started to add every site that I came across that I enjoyed, which adds up to a lot over a longer period of time. As you can imagine, it became more and more stressful to keep up with every single feed &lt;em&gt;(admittedly I didn't do a good job of doing that, but I atleast tried)&lt;/em&gt;. So I decided that it was time to do a serious clean up. I'm finally done after plowing through countless of feeds.&lt;/p&gt;
+
+&lt;p&gt;I actually think that it's more enjoyable to read all the posts as most of them were intended, ie. on an actual blog/website. Even though &lt;em&gt;Google Reader&lt;/em&gt; is a handy tool it's not very nice too look at, atleast not when you read a very long piece. I know that you can use add-ons to make it more enjoyable, but I don't really like to have to many of those either. I do use &lt;a href=&quot;http://wwww.getpocket.com/&quot; title=&quot;Pocket&quot;&gt;Pocket&lt;/a&gt; when I want to save something that I want to read later, especially when I know that I'm going to use my &lt;em&gt;iPhone&lt;/em&gt; for some late night reading. Even though my life won't change drastically just because I hit the unsubscribe button on some feeds it feels good to have less distractions in my life. Now I actually look forward to read something, which I haven't done in a long time. That's quite nice.&lt;/p&gt;
+</description>
+                <published>September 17, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/17/cleaning-up</link>
+              </item>
+            
+              <item>
                 <title>Themes For FocusWriter</title>
                 <description>&lt;p&gt;By being bored and wanting to have something to do I made a couple of themes for &lt;em&gt;FocusWriter&lt;/em&gt; based on other editors like &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; and &lt;a href=&quot;http://bywordapp.com/&quot; title=&quot;Byword&quot;&gt;Byword&lt;/a&gt; and color schemes like &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;. You can check out some screenshots of them by either clicking on this post's title &lt;em&gt;(I finally get the chance to use an external link!)&lt;/em&gt; or right &lt;a href=&quot;/projects/focuswriter-themes/&quot; title=&quot;FocusWriter Themes&quot;&gt;here&lt;/a&gt;, if you'd rather want that. They're also available on &lt;a href=&quot;https://github.com/gummesson/focuswriter-themes&quot; title=&quot;FocusWriter Themes on GitHub&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -92,14 +102,6 @@
 </description>
                 <published>September 11, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/11/external-links-in-the-post-title</link>
-              </item>
-            
-              <item>
-                <title>Gummesson 2.0</title>
-                <description>&lt;p&gt;I decided to make the jump and thus this site now has a spanking new design. &lt;a href=&quot;http://www.google.com/webfonts/specimen/Oswald&quot; title=&quot;Oswald&quot;&gt;Oswald&lt;/a&gt; is used for the headings and the navigation and &lt;a href=&quot;http://www.google.com/webfonts/specimen/Asap&quot; title=&quot;Asap&quot;&gt;Asap&lt;/a&gt; is used for the body copy. I quite like them together since the former has a kind of slab-serif quality to it, even though it's actually a sans-serif. The bold and italic versions of Asap aren't perfect, but they look much better than than they did before. I haven't had the chance you check out how they look in &lt;em&gt;Firefox&lt;/em&gt; and &lt;em&gt;Opera&lt;/em&gt;, but I hope they look good in them too. I've also increased the font size from 112.5% &lt;em&gt;(which usually equals to 18px)&lt;/em&gt; to 125% &lt;em&gt;(20px)&lt;/em&gt; just because I'm a big fan of having a bigger size for readability.&lt;/p&gt;
-</description>
-                <published>September 10, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/10/gummesson-two-point-zero</link>
               </item>
             
     </channel>

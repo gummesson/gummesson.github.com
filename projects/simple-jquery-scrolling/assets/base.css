@@ -64,13 +64,13 @@ table {
 
 body {
   font            : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px/30px */
-  background-color: #fdfdfd;
-  color           : #222;
+  background-color: #fcfcfc;
+  color           : #333;
 }
 
 ::selection, -moz-::selection {
-  color           : #fdfdfd;
-  background-color: #b22b22;
+  color           : #333;
+  background-color: #ccc;
 }
 
 /*-------------
@@ -136,13 +136,13 @@ h6 {
 }
 
 a {
-  color         : #222222;
-  border-bottom : 1px dotted #999999;
+  color         : #333;
+  border-bottom : 1px solid #ccc;
 }
 
   a:hover, 
   a:focus {
-    border-bottom: 3px solid #b22b22;
+    border-bottom: 3px solid #ccc;
   }
 
   a:active {
