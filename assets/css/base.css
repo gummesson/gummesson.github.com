@@ -287,7 +287,8 @@ ul, ol,
   text-align: justify;
 }
 
-  .main-content p a {
+  .main-content p a,
+  .main-content li a {
     padding-bottom: 3px;
   }
 
