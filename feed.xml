@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>The Joys Of Writing</title>
+                <description>&lt;p&gt;After about a month of what I would say is fairly regularly blogging on this website I've come to the conclusion that I really love to write, even though I'm not sure that anybody is actually reading it. A couple of years ago I toyed with the idea to actually study to become a journalist, but that didn't plan out. In hindsight, it was probably for the best. I did get a small freelance job as a music writer and reviewer that lasted about a year, which I enjoyed even though I think I got a bit repetitive at the end of the run. My newfound love of writing is probably what keeps me going. I haven't set up an &lt;em&gt;Google Analytics&lt;/em&gt; account nor a &lt;em&gt;FeedBurner&lt;/em&gt; either, just because I realize that statistics doesn't really matter much to me. Sure, I would be really happy to know that someone appreciate my writing and what I have to say, but I'm mostly doing it for the sake of myself. It doesn't hurt that I'm probably getting better and better at it either.&lt;/p&gt;
+</description>
+                <published>September 20, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/20/the-joys-of-writing</link>
+              </item>
+            
+              <item>
                 <title>My Adventure With Peppermint OS</title>
                 <description>&lt;p&gt;I've always been a bit of a geek, so naturally I decided to try out a lightweight &lt;em&gt;Linux&lt;/em&gt; distro on my old computer &lt;em&gt;(mostly just for kicks)&lt;/em&gt;. I looked around on the internet and came across a couple of distros that looked good, and in the end I decided to try out &lt;a href=&quot;http://peppermintos.com/&quot; title=&quot;Peppermint OS&quot;&gt;Peppermint OS&lt;/a&gt;. The ISO file was small enough for me to burn it onto a CD rather than a DVD, plus I was confident &lt;em&gt;(well, as confident as you can be without having actually tried it)&lt;/em&gt; that my old computer could atleast handle it pretty well.&lt;/p&gt;
 
@@ -63,18 +71,6 @@
 </description>
                 <published>September 14, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/14/my-new-writing-app</link>
-              </item>
-            
-              <item>
-                <title>ResophNotes</title>
-                <description>&lt;p&gt;One of the most frequent mention apps I've seen around the web during the last couple of months is &lt;a href=&quot;http://notational.net/&quot; title=&quot;Notational Velocity&quot;&gt;Notational Velocity&lt;/a&gt; &lt;em&gt;(or rather a popular fork of it called &lt;a href=&quot;http://brettterpstra.com/project/nvalt/&quot; title=&quot;nvALT&quot;&gt;nvALT&lt;/a&gt;)&lt;/em&gt;. In short it's a note taking app where you can both create plain text notes and store, tag and search among them. You can also synch them synch with &lt;a href=&quot;http://www.dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; &lt;em&gt;(by creating a folder and storing your notes on your account)&lt;/em&gt; and a couple of other services, which enables you to access your files from pretty much anywhere as long as you have some kind of internet connection. Sadly it's only available for &lt;em&gt;Mac&lt;/em&gt; computers so I went out on my way to see if I could find an alternative. I did and it's name is &lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt;, which was originally built as a Windows based app for &lt;a href=&quot;http://simplenoteapp.com/&quot; title=&quot;Simplenote&quot;&gt;Simplenote&lt;/a&gt; but you can also use it with &lt;em&gt;Dropbox&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/blog/2012-09-13-resophnotes.png' title='ResophNotes' alt='ResophNotes'&gt;&lt;/p&gt;
-
-&lt;p&gt;It's maybe not be pretty as it's &lt;em&gt;Apple&lt;/em&gt; counterparts, but the foundation is the same. It's nice to have all of your notes in the same place, and I really like that you're able to tag them. It means that I can place all of my blog post ideas in a tag called &quot;blog&quot; and so on. It also has a lot of options, meaning you can customize it to your liking. For example, I'm planning to hide all of the icons once I've learned all of the shortcuts properly since I like a more clean cut look. I've been only using it for a couple of days, but so far so good.&lt;/p&gt;
-</description>
-                <published>September 13, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/13/resophnotes</link>
               </item>
             
     </channel>
