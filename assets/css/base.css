@@ -161,8 +161,7 @@ pre {
   overflow        : auto; 
   line-height     : 1;
   background-color: #ddd;
-  border          : 1px solid #ccc;
-  border-radius   : 0.15em;
+  border-left     : 0.35em solid #ccc;
   padding         : 0.15em 0.35em 0.35em;
   margin-top      : 0.25em;
 }
@@ -171,9 +170,8 @@ code {
   font-family     : Consolas, Monaco, Andale Mono, monospace;
   font-size       : 0.75em;
   background-color: #ddd;
-  border          : 1px solid #ccc;
   border-radius   : 0.25em;
-  padding         : 0.1em 0.25em 0.05em;
+  padding         : 0.15em 0.25em 0.1em;
 }
 
   pre > code {

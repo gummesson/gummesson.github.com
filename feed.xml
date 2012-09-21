@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>A Short Note About The New iOS</title>
+                <description>&lt;p&gt;The battery life on my &lt;em&gt;iPhone 4S&lt;/em&gt; has improved when I'm not using 3G or WiFi...but it's gotten worse when I'm actually using something that requires an internet connection to work. Granted I only upgraded to &lt;em&gt;iOS 6&lt;/em&gt; about two days ago, so maybe it'll get better with time.&lt;/p&gt;
+
+&lt;p&gt;One step forward and one step back, I guess?&lt;/p&gt;
+</description>
+                <published>September 21, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/21/a-short-note-about-the-new-ios</link>
+              </item>
+            
+              <item>
                 <title>The Joys Of Writing</title>
                 <description>&lt;p&gt;After about a month of what I would say is fairly regularly blogging on this website I've come to the conclusion that I really love to write, even though I'm not sure that anybody is actually reading it. A couple of years ago I toyed with the idea to actually study to become a journalist, but that didn't plan out. In hindsight, it was probably for the best. I did get a small freelance job as a music writer and reviewer that lasted about a year, which I enjoyed even though I think I got a bit repetitive at the end of the run. My newfound love of writing is probably what keeps me going. I haven't set up an &lt;em&gt;Google Analytics&lt;/em&gt; account nor a &lt;em&gt;FeedBurner&lt;/em&gt; either, just because I realize that statistics doesn't really matter much to me. Sure, I would be really happy to know that someone appreciate my writing and what I have to say, but I'm mostly doing it for the sake of myself. It doesn't hurt that I'm probably getting better and better at it either.&lt;/p&gt;
 </description>
@@ -49,28 +59,6 @@
 </description>
                 <published>September 15, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/15/themes-for-focuswriter</link>
-              </item>
-            
-              <item>
-                <title>My New Writing App</title>
-                <description>&lt;p&gt;Up until now I've mostly written all of my posts and pages in a program called &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt;. Even though I really like it I sometimes feel that it's a bit too... clunky, for lack of a better word. It's great for doing shorter writings and editing files, but I haven't really been comfortable using it as a long form writing environment. As I do with a lot of stuff I once again sat down in front of my screen to find something new and preferably awesome that I could use.&lt;/p&gt;
-
-&lt;h2&gt;FocusWriter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is a cross platform, distraction-free text editor &lt;em&gt;(or writing environment, as the developer himself calls it)&lt;/em&gt;. It's a pretty neat looking app with an minimalistic interface but it also has suprisingly many features. It supports both rich text and plain text formatting, but sadly there's no real &lt;em&gt;Markdown&lt;/em&gt; support, meaning that it doesn't have any syntax support. You can still write it in the editor of course though and it can actually both open and save documents with a &lt;em&gt;Markdown&lt;/em&gt; file extension, which is good. What I mostly like about is that it has a clean interface and that it hides all the menus by default.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/blog/2012-09-14-focuswriter.png' title='FocusWriter' alt='FocusWriter'&gt;&lt;/p&gt;
-
-&lt;p&gt;One thing I really hate about distraction-free/full screen editors is that I often feel too trapped when I use them. I mean, they're probably a life saver for many people but it''s not my cup of tea. If I'm stuck I want to be able to take a quick break and then jump right back in when I get the urge to write some more. Fortunately, &lt;em&gt;FocusWriter&lt;/em&gt; gives me the ability to do so. You can also make your own themes where you can change the colors, the typeface and the margins for the writing area which also comes in handy.&lt;/p&gt;
-
-&lt;p&gt;So far I've only been using it for about two or three days, but I have a feeling that it'll stick around for a much longer period.&lt;/p&gt;
-
-&lt;h3&gt;A side note&lt;/h3&gt;
-
-&lt;p&gt;To my suprise I first found an app for &lt;em&gt;Ubuntu&lt;/em&gt; &lt;em&gt;(who would've thought?)&lt;/em&gt; called &lt;a href=&quot;http://uberwriter.wolfvollprecht.de/&quot; title=&quot;UberWriter&quot;&gt;UberWriter&lt;/a&gt;. It looks &lt;strong&gt;exactly&lt;/strong&gt; like &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; &lt;em&gt;(apart from some minor color details)&lt;/em&gt;, which means that it's incredibly gorgeous. You should try it out if you get the chance.&lt;/p&gt;
-</description>
-                <published>September 14, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/14/my-new-writing-app</link>
               </item>
             
     </channel>
