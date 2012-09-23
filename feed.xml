@@ -6,6 +6,20 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>FocusWriter 1.4.0 Released</title>
+                <description>&lt;p&gt;A new version of &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter 1.4.0&quot;&gt;FocusWriter 1.4.0&lt;/a&gt; was just released yesterday. Quite a lot has changed since in the app since I was previously using 1.3.6 since it was the latest stable release. This version feels like a big step up. The biggest changes in my opinion is that you now have the option to change the line spacing in your themes and that the save dialog won't force you to either save your document as a .txt or a .rtf file, which is good news if you're writing in &lt;em&gt;Markdown&lt;/em&gt; like I do.&lt;/p&gt;
+
+&lt;p&gt;My favorite new feature is the focus mode. The focus mode lets you chose to focus on either one line, three lines or a paragraph by &quot;blurring&quot; out the rest of the text by changing it's opacity (or something to that effect), which makes it blend in with the background and thus lets you focus on the the current focused text. This feature can also be found in &lt;em&gt;iA Writer&lt;/em&gt;, which seems to be a constant inspiration for the development of &lt;em&gt;FocusWriter&lt;/em&gt; by the way (I don't see that as a bad thing though), although the former only lets you focus on one sentence at a time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/blog/2012-09-23-focuswriter-140.png' title='Focus mode in FocusWriter 1.4.0' alt='Focus mode in FocusWriter 1.4.0'&gt;&lt;/p&gt;
+
+&lt;p&gt;There's also a new function called &lt;em&gt;Scenes&lt;/em&gt;, but I doubt I'll use it that much since I personally don't need it form my kind of writing. It essentially lets you create markers for different scenes in your document separating them by using a couple of characters. The default detection for a new scene is two hashes (which coincidentally is a second level heading in &lt;em&gt;Markdown&lt;/em&gt;). I could see it being handy if I'm writing a really long blog post containing lots of headings though. &lt;em&gt;FocusWriter&lt;/em&gt; is first and foremost made for writers, so there's definitively a use for that type of thing. All in all I still think that &lt;em&gt;FocusWriter&lt;/em&gt; is the best writing app I've come across.&lt;/p&gt;
+</description>
+                <published>September 23, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/09/23/focuswriter-140-released</link>
+              </item>
+            
+              <item>
                 <title>A Short Note About The New iOS</title>
                 <description>&lt;p&gt;The battery life on my &lt;em&gt;iPhone 4S&lt;/em&gt; has improved when I'm not using 3G or WiFi...but it's gotten worse when I'm actually using something that requires an internet connection to work. Granted I only upgraded to &lt;em&gt;iOS 6&lt;/em&gt; about two days ago, so maybe it'll get better with time.&lt;/p&gt;
 
@@ -25,7 +39,7 @@
             
               <item>
                 <title>My Adventure With Peppermint OS</title>
-                <description>&lt;p&gt;I've always been a bit of a geek, so naturally I decided to try out a lightweight &lt;em&gt;Linux&lt;/em&gt; distro on my old computer &lt;em&gt;(mostly just for kicks)&lt;/em&gt;. I looked around on the internet and came across a couple of distros that looked good, and in the end I decided to try out &lt;a href=&quot;http://peppermintos.com/&quot; title=&quot;Peppermint OS&quot;&gt;Peppermint OS&lt;/a&gt;. The ISO file was small enough for me to burn it onto a CD rather than a DVD, plus I was confident &lt;em&gt;(well, as confident as you can be without having actually tried it)&lt;/em&gt; that my old computer could atleast handle it pretty well.&lt;/p&gt;
+                <description>&lt;p&gt;I've always been a bit of a geek, so naturally I decided to try out a lightweight &lt;em&gt;Linux&lt;/em&gt; distro on my old computer (mostly just for kicks). I looked around on the internet and came across a couple of distros that looked good, and in the end I decided to try out &lt;a href=&quot;http://peppermintos.com/&quot; title=&quot;Peppermint OS&quot;&gt;Peppermint OS&lt;/a&gt;. The ISO file was small enough for me to burn it onto a CD rather than a DVD, plus I was confident (well, as confident as you can be without having actually tried it) that my old computer could atleast handle it pretty well.&lt;/p&gt;
 
 &lt;h2&gt;Peppermint OS&lt;/h2&gt;
 
@@ -33,11 +47,11 @@
 
 &lt;blockquote&gt;&lt;p&gt;Peppermint was designed for enhanced mobility, efficiency and ease of use. While other operating systems are taking 10 minutes to load, you are already connected, communicating and getting things done. And, unlike other operating systems, Peppermint is ready to use out of the box.&lt;/p&gt;&lt;/blockquote&gt;
 
-&lt;p&gt;Even though my old computer is borderline ancient, it took about 10-15 minutes at the most to install the whole thing &lt;em&gt;(I did run in to some problems at first, but it think that was the computer's fault rather than the actually OS itself)&lt;/em&gt;. The initial setup went smooth too, though it took a couple of minutes before my internet connection worked. So far I haven't been tweaking that much, but I'm defintively looking forward to doing that.&lt;/p&gt;
+&lt;p&gt;Even though my old computer is borderline ancient, it took about 10-15 minutes at the most to install the whole thing (I did run in to some problems at first, but it think that was the computer's fault rather than the actually OS itself). The initial setup went smooth too, though it took a couple of minutes before my internet connection worked. So far I haven't been tweaking that much, but I'm defintively looking forward to doing that.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src='/images/blog/2012-09-18-peppermint-os.png' title='Peppermint OS Three' alt='Peppermint OS Three'&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the first time that I've install a &lt;em&gt;Linux&lt;/em&gt; distro &lt;em&gt;(I've poked around in Ubuntu a few times)&lt;/em&gt; and I must say that so far I'm impressed. The next step for me is to try to customize it a bit, especially the look of the shell. I'm quite excited to dive in to the &lt;em&gt;(hopefully)&lt;/em&gt; wonderful world of &lt;em&gt;Linux&lt;/em&gt;. I might even get stuck in it.&lt;/p&gt;
+&lt;p&gt;This is the first time that I've install a &lt;em&gt;Linux&lt;/em&gt; distro (I've poked around in Ubuntu a few times) and I must say that so far I'm impressed. The next step for me is to try to customize it a bit, especially the look of the shell. I'm quite excited to dive in to the (hopefully) wonderful world of &lt;em&gt;Linux&lt;/em&gt;. I might even get stuck in it.&lt;/p&gt;
 </description>
                 <published>September 18, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/18/my-adventure-with-peppermint-os</link>
@@ -45,20 +59,12 @@
             
               <item>
                 <title>Cleaning Up</title>
-                <description>&lt;p&gt;During the last couple of days I've started to clean up among my RSS subscriptions. I'll admit that when I first started using &lt;a href=&quot;http://www.google.com/reader&quot; title=&quot;Google Reader&quot;&gt;Google Reader&lt;/a&gt; a couple of years ago I subscribed and subscribed, and then subscribed some more. I became an feed addict. I started to add every site that I came across that I enjoyed, which adds up to a lot over a longer period of time. As you can imagine, it became more and more stressful to keep up with every single feed &lt;em&gt;(admittedly I didn't do a good job of doing that, but I atleast tried)&lt;/em&gt;. So I decided that it was time to do a serious clean up. I'm finally done after plowing through countless of feeds.&lt;/p&gt;
+                <description>&lt;p&gt;During the last couple of days I've started to clean up among my RSS subscriptions. I'll admit that when I first started using &lt;a href=&quot;http://www.google.com/reader&quot; title=&quot;Google Reader&quot;&gt;Google Reader&lt;/a&gt; a couple of years ago I subscribed and subscribed, and then subscribed some more. I became an feed addict. I started to add every site that I came across that I enjoyed, which adds up to a lot over a longer period of time. As you can imagine, it became more and more stressful to keep up with every single feed (admittedly I didn't do a good job of doing that, but I atleast tried). So I decided that it was time to do a serious clean up. I'm finally done after plowing through countless of feeds.&lt;/p&gt;
 
 &lt;p&gt;I actually think that it's more enjoyable to read all the posts as most of them were intended, ie. on an actual blog/website. Even though &lt;em&gt;Google Reader&lt;/em&gt; is a handy tool it's not very nice too look at, atleast not when you read a very long piece. I know that you can use extensions to make it more enjoyable, but I don't really like to have to many of those either. I do use &lt;a href=&quot;http://wwww.getpocket.com/&quot; title=&quot;Pocket&quot;&gt;Pocket&lt;/a&gt; when I want to save something that I want to read later, especially when I know that I'm going to use my &lt;em&gt;iPhone&lt;/em&gt; for some late night reading. Even though my life won't change drastically just because I hit the unsubscribe button on some feeds it feels good to have less distractions in my life. Now I actually look forward to read something, which I haven't done in a long time. That's quite nice.&lt;/p&gt;
 </description>
                 <published>September 17, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/17/cleaning-up</link>
-              </item>
-            
-              <item>
-                <title>Themes For FocusWriter</title>
-                <description>&lt;p&gt;By being bored and wanting to have something to do I made a couple of themes for &lt;em&gt;FocusWriter&lt;/em&gt; based on other editors like &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; and &lt;a href=&quot;http://bywordapp.com/&quot; title=&quot;Byword&quot;&gt;Byword&lt;/a&gt; and color schemes like &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;. You can check out some screenshots of them by either clicking on this post's title &lt;em&gt;(I finally get the chance to use an external link!)&lt;/em&gt; or right &lt;a href=&quot;/projects/focuswriter-themes/&quot; title=&quot;FocusWriter Themes&quot;&gt;here&lt;/a&gt;, if you'd rather want that. They're also available on &lt;a href=&quot;https://github.com/gummesson/focuswriter-themes&quot; title=&quot;FocusWriter Themes on GitHub&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-                <published>September 15, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/15/themes-for-focuswriter</link>
               </item>
             
     </channel>

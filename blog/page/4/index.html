@@ -52,6 +52,43 @@
               
   <article class="blog-post">
   
+    <h1><a href="/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My First Plugin For Jekyll" title="My First Plugin For Jekyll" class="no-border">My First Plugin For Jekyll</a></h1>
+    <p class="post-meta small-margin">Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a>  </p>
+  
+    <p>Okay, I wouldn't really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.</p>
+
+<h2>Source code</h2>
+
+<pre><code>module Jekyll
+  class Vimeo &lt; Liquid::Tag
+    @@width = 500
+    @@height = 281
+
+    def initialize(name, id, tokens)
+      super
+      @id = id
+    end
+
+    def render(context)
+      %(&lt;iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;)
+    end
+  end
+end
+
+Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+</code></pre>
+
+<h3>Liquid tag</h3>
+
+<p>Remove the space before and after the percentage signs.</p>
+
+<pre><code>{ % vimeo 12345678 % }
+</code></pre>
+
+</article>
+
+  <article class="blog-post">
+  
     <h1><a href="/blog/2012/08/26/my-jekyll-plugins" alt="My Jekyll Plugins" title="My Jekyll Plugins" class="no-border">My Jekyll Plugins</a></h1>
     <p class="post-meta small-margin">Posted on August 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a>  </p>
   
@@ -292,64 +329,6 @@ a:hover, a:focus {
 </code></pre>
 
 <p>To my defense I'm still pretty new to all of this, but still... I feel really dumb. Now they finally works and I'm totally happy, but I don't know whether or not I should be scared of the fact that I don't own an iPad... Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
-
-</article>
-
-  <article class="blog-post">
-  
-    <h1><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit and Jekyll" title="Windows 7, Ruby, DevKit and Jekyll" class="no-border">Windows 7, Ruby, DevKit and Jekyll</a></h1>
-    <p class="post-meta small-margin">Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a>  </p>
-  
-    <p>To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
-
-<h2>Installing Ruby</h2>
-
-<ul>
-<li>Go to <a href="http://rubyinstaller.org/" title="Ruby Installer for Windows">RubyInstaller</a> and download the latest version.</li>
-<li>Run the installer.</li>
-</ul>
-
-
-<h3>Note:</h3>
-
-<p>it's really important that you install it in a directory without a space in it's path as stated in the installer, eg: <code>C:\ProgrammingLanguages\Ruby</code> and NOT <code>C:\Program Files\Ruby</code>, for example. Trust me.</p>
-
-<h2>Installing DevKit</h2>
-
-<ul>
-<li>Run the DevKit Installer and extract it to your desired directory.</li>
-<li>Open up the command line and type <code>cd</code> + the path to the directory were you installed DevKit, eg: <code>cd C:\ProgrammingLanguages\DevKit</code>.</li>
-<li>Type <code>ruby dk.rb init</code> to intialize the setup.</li>
-<li>Type <code>ruby dk.rb review</code> to check if DevKit has found your Ruby directory.</li>
-<li>Type <code>ruby dk.rb install</code> to install it.</li>
-</ul>
-
-
-<h3>Note:</h3>
-
-<p>I usually just search for "cmd" in the start menu search bar to open the command line.</p>
-
-<h2>Installing Jekyll</h2>
-
-<ul>
-<li>Type <code>gem install jekyll</code> in the command line.</li>
-</ul>
-
-
-<h2>Running Jekyll</h2>
-
-<p>After you're done with creating your site with template and liquid tags (hit the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll wiki">wiki</a> to check them out), do the following:</p>
-
-<ul>
-<li>Open up the command line and type <code>cd</code> + the path to the directory were you've saved your site, eg: <code>cd C:\User\MySite</code>.</li>
-<li>Type <code>jekyll --server</code> in the cmd.</li>
-<li>Type out <code>localhost:4000</code> in your browser to see your site.</li>
-</ul>
-
-
-<h3>Note:</h3>
-
-<p>You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
 
 </article>
 
