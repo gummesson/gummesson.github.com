@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>A Tech Support Scammer Dials Ars Technica</title>
+                <description>&lt;p&gt;This made me laugh. A lot.&lt;/p&gt;
+</description>
+                <published>October  4, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/10/04/a-tech-support-scammer-dials-ars-technica</link>
+              </item>
+            
+              <item>
                 <title>Offline</title>
                 <description>&lt;p&gt;Yesterday while I was traveling a bit by train I read Paul Miller's &lt;a href=&quot;http://www.theverge.com/label/offline&quot; title=&quot;Paul Miller's offline series on The Verge&quot;&gt;offline series&lt;/a&gt; on The Verge about his year without internet. Admittedly I've previously only skimmed through a couple of the articles, but I decided to catch up on all of them since I had some time to kill during my ride. I think it's an intriguing idea yet at the same time a bit nightmarish. I mean, without an internet connection I wouldn't even have read the articles. I think that a lot of people around my age can all relate to living their lives in some form or another through the internet and I'd probably be bored to death if I couldn't use it at all. It might be sad, but it's true nonetheless. The feeling of not being able to have an immediate access to instant information about pretty much anything would be more than overwhelming. I don't know if I should feel bad about it either... Perhaps not, I guess?&lt;/p&gt;
 </description>
@@ -43,20 +51,6 @@
 </description>
                 <published>September 25, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/09/25/the-amazing-ios-6-maps</link>
-              </item>
-            
-              <item>
-                <title>FocusWriter 1.4.0 Released</title>
-                <description>&lt;p&gt;A new version of &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter 1.4.0&quot;&gt;FocusWriter 1.4.0&lt;/a&gt; was just released yesterday. Quite a lot has changed since in the app since I was previously using 1.3.6 since it was the latest stable release. This version feels like a big step up. The biggest changes in my opinion is that you now have the option to change the line spacing in your themes and that the save dialog won't force you to either save your document as a .txt or a .rtf file, which is good news if you're writing in &lt;em&gt;Markdown&lt;/em&gt; like I do.&lt;/p&gt;
-
-&lt;p&gt;My favorite new feature is the focus mode. The focus mode lets you chose to focus on either one line, three lines or a paragraph by &quot;blurring&quot; out the rest of the text by changing it's opacity (or something to that effect), which makes it blend in with the background and thus lets you focus on the the current focused text. This feature can also be found in &lt;em&gt;iA Writer&lt;/em&gt;, which seems to be a constant inspiration for the development of &lt;em&gt;FocusWriter&lt;/em&gt; by the way (I don't see that as a bad thing though), although the former only lets you focus on one sentence at a time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/blog/2012-09-23-focuswriter-140.png' title='Focus mode in FocusWriter 1.4.0' alt='Focus mode in FocusWriter 1.4.0'&gt;&lt;/p&gt;
-
-&lt;p&gt;There's also a new function called &lt;em&gt;Scenes&lt;/em&gt;, but I doubt I'll use it that much since I personally don't need it form my kind of writing. It essentially lets you create markers for different scenes in your document separating them by using a couple of characters. The default detection for a new scene is two hashes (which coincidentally is a second level heading in &lt;em&gt;Markdown&lt;/em&gt;). I could see it being handy if I'm writing a really long blog post containing lots of headings though. &lt;em&gt;FocusWriter&lt;/em&gt; is first and foremost made for writers, so there's definitively a use for that type of thing. All in all I still think that &lt;em&gt;FocusWriter&lt;/em&gt; is the best writing app I've come across.&lt;/p&gt;
-</description>
-                <published>September 23, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/23/focuswriter-140-released</link>
               </item>
             
     </channel>
