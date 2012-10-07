@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-07T16:25:46+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</loc>
@@ -115,6 +115,10 @@
         <lastmod>2012-10-04T19:53:56+02:00</lastmod>
     </url>
     <url>
+        <loc>http://ellengummesson.com/blog/2012/10/07/the-one-about-markdown</loc>
+        <lastmod>2012-10-07T20:01:26+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-09-07T13:26:21+02:00</lastmod>
     </url>
@@ -124,7 +128,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-10-04T19:53:56+02:00</lastmod>
+        <lastmod>2012-10-07T20:01:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -136,7 +140,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-10-04T19:53:56+02:00</lastmod>
+        <lastmod>2012-10-07T20:01:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -148,6 +152,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-10-04T19:53:56+02:00</lastmod>
+        <lastmod>2012-10-07T20:01:26+02:00</lastmod>
     </url>
 </urlset>
