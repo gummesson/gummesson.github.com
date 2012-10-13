@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>The Infamous Todo</title>
+                <description>&lt;p&gt;During the last couple of years I've tried a lot of todo apps and techniques. I've used pen and paper, &lt;a href=&quot;http://www.google.com/calendar/&quot; title=&quot;Google Calendar&quot;&gt;Google Calendar&lt;/a&gt;, a regular calendar, whatever default app my phone came with, using my own memory, &lt;a href=&quot;http://www.any.do/&quot; title=&quot;Any.DO&quot;&gt;Any.DO&lt;/a&gt;, &lt;a href=&quot;https://cheddarapp.com/&quot; title=&quot;Cheddar&quot;&gt;Cheddar&lt;/a&gt;, post-it notes and so on. While they've certainly done their job and some of them have been stunningly beautiful I've never felt they were quite right for me. At first I couldn't really pinpoint what I felt was wrong with them all, but after I've started to use plain text for nearly everything I do I can now say that it all boils down to two things: portability and easy editing. Since I came to realize this I've ditched all the fancy todo apps I previously used and tried out for &lt;a href=&quot;https://itunes.apple.com/se/app/todo.txt-touch/id491342186?mt=8&quot; title=&quot;todo.txt Touch&quot;&gt;todo.txt Touch&lt;/a&gt; and &lt;a href=&quot;http://benrhughes.com/todotxt.net/&quot; title=&quot;todotxt.net&quot;&gt;todotxt.net&lt;/a&gt; with the simple default &lt;a href=&quot;https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format&quot; title=&quot;The Todo.txt Format&quot;&gt;formatting&lt;/a&gt; for the official project.&lt;/p&gt;
+
+&lt;p&gt;Storing your todo list in a plain text file is, like &lt;a href=&quot;/blog/2012/10/07/the-one-about-markdown/&quot; title=&quot;The One About Markdown&quot;&gt;I've stated earlier&lt;/a&gt;, future proof as long as I have a simple text editor installed, which means that I can edit them on any practically any computer or modern device. That's something that not every todo app can do which can be frustrating since you're often restricted to primarily one device. Obviously there's cross platform todo apps too, but I've found that that they still feel too restrictive for me. A thing that's great about using a plain text todo file is that you never have to rely to heavily on someone else's database for storage, which ties in with the whole portability mentality. I do have my todo.txt on my Dropbox account but I can still access it even if I'm offline and more importantly, it's still just a plain text file. I do really like a good and innovative interface but in this case I think that the simplest approach is the best approach, atleast for me.&lt;/p&gt;
+</description>
+                <published>October 13, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/10/13/the-infamous-todo</link>
+              </item>
+            
+              <item>
                 <title>10 Internet Fads That Took The World By Storm</title>
                 <description>&lt;p&gt;A lengthy article from &lt;a href=&quot;http://www.makeuseof.com/&quot; title=&quot;MakeUseOf&quot;&gt;MakeUseOf&lt;/a&gt; that lists ten well-known internet trends and links to a couple of other articles with more details about them. It's a good read if you want to kill some time and take a look at some internet history. Or something.&lt;/p&gt;
 </description>
@@ -146,18 +156,6 @@
 </description>
                 <published>October  3, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/10/03/offline</link>
-              </item>
-            
-              <item>
-                <title>iA Writer - Now With Markdown Preview</title>
-                <description>&lt;p&gt;The iPhone/iPad version of &lt;a href=&quot;http://itunes.apple.com/se/app/ia-writer/id392502056?mt=8&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt; (which I use) got an update just in time for the release of iOS 6, and I'm really happy about the fact that it now finally has a Markdown preview mode. I was actually looking around for another app that had a function like that, but now I think I'm going to stick around with using it (even though &lt;a href=&quot;http://itunes.apple.com/us/app/drafts/id502385074?mt=8&quot; title=&quot;Drafts&quot;&gt;Drafts&lt;/a&gt; looks good too).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/blog/2012-09-30-ia-writer-preview.png' title='iA Writer - Preview Mode' alt='iA Writer - Preview Mode'&gt;&lt;/p&gt;
-
-&lt;p&gt;I'm not that keen on how the text in the preview is formatted, but it's no the end of the world because I don't really use the app to write huge text pieces on my phone or anything like that. I think I'm good as long as I'm just using for capturing quick notes with ideas for blog posts and other writing related stuff.&lt;/p&gt;
-</description>
-                <published>September 30, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/09/30/ia-writer-now-with-markdown-preview</link>
               </item>
             
     </channel>
