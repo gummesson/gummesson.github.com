@@ -120,13 +120,19 @@
     </url>
     <url>
         <loc>
-            http://ellengummesson.com/blog/2012/10/10/ten-internet-fads-that-took-the-world-by-storm
+            http://ellengummesson.com/blog/2012/10/10/ten-internet-fads-that-took-the-world-by-storm-briefly
         </loc>
-        <lastmod>2012-10-10T19:39:25+02:00</lastmod>
+        <lastmod>2012-10-14T10:31:41+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/10/13/the-infamous-todo</loc>
         <lastmod>2012-10-13T20:19:38+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://ellengummesson.com/blog/2012/10/14/an-intimate-portrait-of-innovation-risk-and-failure-through-hipstamatics-lens
+        </loc>
+        <lastmod>2012-10-14T11:36:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/404.html</loc>
@@ -134,11 +140,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/about.html</loc>
-        <lastmod>2012-09-27T16:27:18+02:00</lastmod>
+        <lastmod>2012-10-14T10:42:58+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-10-13T20:19:38+02:00</lastmod>
+        <lastmod>2012-10-14T11:36:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -150,7 +156,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-10-13T20:19:38+02:00</lastmod>
+        <lastmod>2012-10-14T11:36:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -162,6 +168,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-10-13T20:19:38+02:00</lastmod>
+        <lastmod>2012-10-14T11:36:52+02:00</lastmod>
     </url>
 </urlset>

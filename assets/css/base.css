@@ -192,10 +192,10 @@ ul {
   list-style: square inside;
 }
 
-ul ul,
-ol ol {
-  margin-left: 1.5em;
-}
+  ul ul,
+  ol ol {
+    margin-left: 1.5em;
+  }
 
 /*================
     Navigation
@@ -255,9 +255,15 @@ blockquote p {
   font-size: 0.875em;
 }
 
-ul, ol,
+ul, 
+ol,
 .copyright {
   line-height: 1.75;
+}
+
+.big-margin,
+.blog-post {
+  margin-bottom: 2.25em;
 }
 
 /*------------
@@ -270,11 +276,6 @@ ul, ol,
 
 .small-margin {
   margin-bottom: 0.5em;
-}
-
-.big-margin,
-.blog-post {
-  margin-bottom: 2em;
 }
 
 .blog-post:last-child {
@@ -291,7 +292,7 @@ ul, ol,
   }
 
 .pagination {
-  margin: 1em 0 0.75em;
+  margin-bottom: 1em;
 }
 
   .separator {
@@ -500,6 +501,10 @@ ul, ol,
 
   .main-menu {
     margin-top: 0.5em;
+  }
+
+  .blog-post {
+    margin-bottom: 2em; 
   }
 
 }
