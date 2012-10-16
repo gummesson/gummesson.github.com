@@ -7,13 +7,13 @@
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
   <link rel="canonical" href="http://ellengummesson.com/">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / RSS Feed">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / Sitemap">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / RSS Feed">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
   <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="favicon" href="/assets/icons/favicon.png" type="img/png">
+    <link rel="icon" href="/assets/icons/favicon.png" type="img/png">
   <!--[if lt IE 9]>
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -50,6 +50,64 @@
           <div class="col-eight">
             <div class="main-content">
               
+  <article class="blog-post">
+  
+    <h1><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit and Jekyll" title="Windows 7, Ruby, DevKit and Jekyll" class="no-border">Windows 7, Ruby, DevKit and Jekyll</a></h1>
+    <p class="post-meta small-margin">Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a>  </p>
+  
+    <p>To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
+
+<h2>Installing Ruby</h2>
+
+<ul>
+<li>Go to <a href="http://rubyinstaller.org/" title="Ruby Installer for Windows">RubyInstaller</a> and download the latest version.</li>
+<li>Run the installer.</li>
+</ul>
+
+
+<h3>Note:</h3>
+
+<p>it's really important that you install it in a directory without a space in it's path as stated in the installer, eg: <code>C:\ProgrammingLanguages\Ruby</code> and NOT <code>C:\Program Files\Ruby</code>, for example. Trust me.</p>
+
+<h2>Installing DevKit</h2>
+
+<ul>
+<li>Run the DevKit Installer and extract it to your desired directory.</li>
+<li>Open up the command line and type <code>cd</code> + the path to the directory were you installed DevKit, eg: <code>cd C:\ProgrammingLanguages\DevKit</code>.</li>
+<li>Type <code>ruby dk.rb init</code> to intialize the setup.</li>
+<li>Type <code>ruby dk.rb review</code> to check if DevKit has found your Ruby directory.</li>
+<li>Type <code>ruby dk.rb install</code> to install it.</li>
+</ul>
+
+
+<h3>Note:</h3>
+
+<p>I usually just search for "cmd" in the start menu search bar to open the command line.</p>
+
+<h2>Installing Jekyll</h2>
+
+<ul>
+<li>Type <code>gem install jekyll</code> in the command line.</li>
+</ul>
+
+
+<h2>Running Jekyll</h2>
+
+<p>After you're done with creating your site with template and liquid tags (hit the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll wiki">wiki</a> to check them out), do the following:</p>
+
+<ul>
+<li>Open up the command line and type <code>cd</code> + the path to the directory were you've saved your site, eg: <code>cd C:\User\MySite</code>.</li>
+<li>Type <code>jekyll --server</code> in the cmd.</li>
+<li>Type out <code>localhost:4000</code> in your browser to see your site.</li>
+</ul>
+
+
+<h3>Note:</h3>
+
+<p>You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
+
+</article>
+
   <article class="blog-post">
   
     <h1><a href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" alt="WordPress to GetSimple to Jekyll" title="WordPress to GetSimple to Jekyll" class="no-border">WordPress to GetSimple to Jekyll</a></h1>
