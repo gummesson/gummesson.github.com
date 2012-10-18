@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Changes Coming For Echofon Desktop Users</title>
+                <description>&lt;blockquote&gt;&lt;p&gt;Beginning this Fall, we will begin phasing out our Echofon desktop products (Mac, Windows, Firefox) in order to focus more on our mobile line of Echofon apps.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This is such a shame. &lt;a href=&quot;http://www.echofon.com/&quot; title=&quot;Echofon&quot;&gt;Echofon&lt;/a&gt; is probably the best one column Twitter client for Windows users (if not the only one). I guess I need to find something else then.&lt;/p&gt;
+</description>
+                <published>October 18, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/10/18/changes-coming-for-echofon-desktop-users</link>
+              </item>
+            
+              <item>
                 <title>Find And Launch It</title>
                 <description>&lt;p&gt;I hate having a clouded desktop (it never looks good in my opinion) but I like to be able to open apps and documents really fast. As soon as an idea pops into my head I want to have the opportunity to write it down (or whatever I need to do) and run with it, so to speak. I've tried a minimal approach by just using the built-in search function in Windows 7 which is located in the start menu. It works okay for finding apps and such but the indexing of documents is horrendous to say the least. You can't really add and choose what you want to include either. While looking for a worthy alternative to it I found &lt;a href=&quot;http://www.launchy.net/&quot; title=&quot;Launchy&quot;&gt;Launchy&lt;/a&gt;.&lt;/p&gt;
 
@@ -44,125 +54,6 @@ There's a lot of skins available on &lt;a href=&quot;http://browse.deviantart.co
 </description>
                 <published>October 10, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/10/10/ten-internet-fads-that-took-the-world-by-storm-briefly</link>
-              </item>
-            
-              <item>
-                <title>The One About Markdown</title>
-                <description>&lt;p&gt;When I first heard about &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; a couple of month ago it sparked my interest. I've never really felt comfortable writing in a word processor nor in a WYSIWYG editor, so using something that would make it possible to write in any text editor while maintaining a kind of form of formatting sounded like a perfect solution that would really benefit my needs. It was originally created &lt;em&gt;&quot;to be used as a format for writing for the web&quot;&lt;/em&gt;, ie. an easier way to convert plain text with a simple formatting to HTML. I won't go in to further detail one why I think it's great, but if you need more convincing or just want to read some more on this particular subject I suggest that you scroll down to the bottom of this blog post and read a couple of links I've collected about Markdown and plain text. Trust me, it's worth it!&lt;/p&gt;
-
-&lt;h2&gt;Formatting&lt;/h2&gt;
-
-&lt;p&gt;The formatting of the syntax is really, really simple to remember. I honestly don't even think about anymore it when I write since it's become like second nature to me. If you want to get a closer look of the whole syntax I suggest that you go to the &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot; title=&quot;Markdown Syntax&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Headings&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A hashtag represents a heading, where each hashtag equals to the size of the heading, ie. a first level heading becomes a &lt;code&gt;h1&lt;/code&gt; tag and so on when it's converted to HTML.&lt;/p&gt;
-
-&lt;h3&gt;Annotations&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;*Bold* 
-**Italic**
-***Bold and italic***
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; You can also use &lt;code&gt;_&lt;/code&gt; instead of &lt;code&gt;*&lt;/code&gt; too.&lt;/p&gt;
-
-&lt;h3&gt;Links&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;[Click Here](http://www.example.com/ &quot;Example.com&quot;) 
-
-[Click Here][example]
-[example]: http://www.example.com/ &quot;Example.com&quot;
-
-&amp;lt;http://www.example.com/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There's three ways to create a link. The rule of thumb is that the word you want to make clickable goes in to &lt;code&gt;[]&lt;/code&gt; while the actual URL and title tag goes in between &lt;code&gt;()&lt;/code&gt;. You can also use &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; if you just want to make an URL clickable.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; The second example is useful when you don't want to clutter your text with the URL and the title.&lt;/p&gt;
-
-&lt;h3&gt;Unordered lists&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;- One 
-- Two
-- Three
-- Four
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; You can also use &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;+&lt;/code&gt; when you're dealing with an unordered list.&lt;/p&gt;
-
-&lt;h3&gt;Ordered lists&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;1. One 
-2. Two
-3. Three
-4. Four
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; You don't actually have to numerically order your list if you're going to export it to HTML, but I don't really see the point of not doing that.&lt;/p&gt;
-
-&lt;h3&gt;Blockquotes&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; Lorem ipsum...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Side note:&lt;/em&gt; Even if your quote is longer than a single line you only really have to use a &lt;code&gt;&amp;gt;&lt;/code&gt; at the beginning of the quote.&lt;/p&gt;
-
-&lt;h3&gt;Images&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;![Alt Text](http://www.example.com/images/picture.jpg &quot;Title Text&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Adding an image is really similar to adding a link. This may be the most &quot;inconvenient&quot; feature of the syntax since you have no real control over the image's width and height, but that shouldn't be a problem if you size it the way you want it beforehand.&lt;/p&gt;
-
-&lt;h3&gt;Code&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;`.inline-code` 
-
-    .code-block {
-      color: #000;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You have to indent the code with four spaces or a tab to create a code block.&lt;/p&gt;
-
-&lt;h2&gt;Editors&lt;/h2&gt;
-
-&lt;p&gt;Basically any text editor will do since Markdown is just really plain text, but that may not be the most optimal thing (I'm a sucker for a good interface). While there's a plethora of markdown-friendly text editors for iOS and OSX there's not a lot of them for Windows. I personally use &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; (which doesn't really support Markdown) and &lt;a href=&quot;http://www.markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt; and  I've played around with &lt;a href=&quot;http://writemonkey.com/&quot; title=&quot;WriteMonkey&quot;&gt;WriteMonkey&lt;/a&gt; and &lt;a href=&quot;http://code52.org/DownmarkerWPF/&quot; title=&quot;Markpad&quot;&gt;Markpad&lt;/a&gt;. I've also stumbled across &lt;a href=&quot;http://www.mdcharm.com/&quot; title=&quot;mdCharm&quot;&gt;mdCharm&lt;/a&gt; and &lt;a href=&quot;http://www.inkcode.net/qute&quot; title=&quot;Qute&quot;&gt;Qute&lt;/a&gt; but I haven't tried them out.&lt;/p&gt;
-
-&lt;p&gt;Like I mentioned earlier, FocusWriter doesn't have support for Markdown but the beauty of the syntax is that it's pretty damn readable even without highlighting. I really like the focus mode in it too and it's cross plattform, meaning that I can use it on any OS that I want to. MarkdownPad was the first markdown editor I used so it has a special place in my heart, as lame as  that might sound. In short, I use FocusWriter for when I write longer pieces of text while I fire up MarkdownPad for shorter things and format checking. This might seem like overkill, but I like to have the opportunity to once in a while use a preview while I'm typing something out.&lt;/p&gt;
-
-&lt;p&gt;I do think that WriteMonkey looks good too, but I'm not too fond of the idea of relying exclusively on keyboard shortcuts. I would probably like mdCharm too, especially since it has a syntax highlightning and the ability to export the Markdown files straight to PDF, which is something MarkdownPad lacks. I might try to use them more extensively at some point.&lt;/p&gt;
-
-&lt;h2&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;If you're looking for a way to start intergrating plain text into your workflow, Markdown is the way to go. The formatting syntax is simple and you're never going to be tied down to one specific tool for your writing. All in all, it's easy to use and it's future proof.&lt;/p&gt;
-
-&lt;h2&gt;Future reading&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Brett Terpstra:&lt;/em&gt; &lt;a href=&quot;http://brettterpstra.com/why-markdown-a-two-minute-explanation/&quot; title=&quot;Why Markdown? A Two Minute Explanation&quot;&gt;Why Markdown? A Two Minute Explanation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Hiltmon:&lt;/em&gt; &lt;a href=&quot;http://www.hiltmon.com/blog/2012/02/20/the-markdown-mindset/&quot; title=&quot;The Markdown Mindset&quot;&gt;The Markdown Mindset&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Lifehacker:&lt;/em&gt; &lt;a href=&quot;http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes?tag=ask-lifehacker&quot; title=&quot;What Is Markdown, and Why Is It Better for My To-Do Lists and Notes?&quot;&gt;What Is Markdown, and Why Is It Better for My To-Do Lists and Notes?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;TUAW:&lt;/em&gt; &lt;a href=&quot;http://www.tuaw.com/markdown-primer&quot; title=&quot;Markdown Primer&quot;&gt;Markdown Primer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Mike Vardy:&lt;/em&gt; &lt;a href=&quot;http://vardy.me/the-journey-to-markdown/&quot; title=&quot;The Journey To Markdown&quot;&gt;The Journey To Markdown&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Adam Simpson:&lt;/em&gt; &lt;a href=&quot;http://www.adamsimpson.net/plaintext-and-markdown-a-primer&quot; title=&quot;PlainText and Markdown - A Primer&quot;&gt;PlainText and Markdown - A Primer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Michael Schechter:&lt;/em&gt; &lt;a href=&quot;http://www.bettermess.com/a-plain-text-primer/&quot; title=&quot;A Plain Text Primer&quot;&gt;A Plain Text Primer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Macworld:&lt;/em&gt; &lt;a href=&quot;http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html&quot; title=&quot;Forget fancy formatting: Why plain text is best&quot;&gt;Forget fancy formatting: Why plain text is best&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;MacSparky:&lt;/em&gt; &lt;a href=&quot;http://macsparky.com/2011/2/10/the-joy-of-text.html&quot; title=&quot;Why I Love Text Files&quot;&gt;Why I Love Text Files&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-                <published>October  7, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/10/07/the-one-about-markdown</link>
               </item>
             
     </channel>

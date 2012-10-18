@@ -139,6 +139,12 @@
         <lastmod>2012-10-16T22:05:20+02:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2012/10/18/changes-coming-for-echofon-desktop-users
+        </loc>
+        <lastmod>2012-10-18T14:38:35+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-09-07T13:26:21+02:00</lastmod>
     </url>
@@ -148,7 +154,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-10-16T22:05:20+02:00</lastmod>
+        <lastmod>2012-10-18T14:38:35+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -160,7 +166,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-10-16T22:05:20+02:00</lastmod>
+        <lastmod>2012-10-18T14:38:35+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -172,6 +178,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-10-16T22:05:20+02:00</lastmod>
+        <lastmod>2012-10-18T14:38:35+02:00</lastmod>
     </url>
 </urlset>
