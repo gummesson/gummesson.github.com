@@ -1,0 +1,197 @@
+/*============================
+    ellengummesson.com/jobb/
+==============================
+
+    + Body
+      - Selection
+    + Structure
+      - Articles
+    + Typography
+      - Paragraphs
+      - Links
+    + Media Queries
+
+============================*/
+
+/*==========
+    Body
+==========*/
+
+html {
+  -moz-box-sizing         : border-box; 
+  -webkit-box-sizing      : border-box;
+  box-sizing              : border-box;
+  -webkit-font-smoothing  : antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust    : 100%;
+}
+
+  body {
+    font            : 50%/ 1 "Tinos", Georgia, Times, Serif;
+    color           : #fafafa;
+    background-color: #111;
+    text-shadow     : 1px 1px 0 #000;
+  }
+
+/* Selection */
+
+::-webkit-selection {
+  background-color: #ff6600;
+}
+
+::-moz-selection {
+  background-color: #ff6600;
+}
+
+::selection {
+  background-color: #ff6600;
+}
+
+/*===============
+    Structure
+===============*/
+
+.container {
+  width : 95%;
+  height: 100%; 
+  margin: 0 auto;
+}
+
+/* Articles */
+
+.wrapper {
+  width: 100%;
+}
+
+  .centered {
+    vertical-align: middle;
+    text-align    : center;
+  }
+
+/*================
+    Typography
+================*/
+
+/* Paragraphs */
+
+.main-type {
+  padding-bottom: 1em;
+  font-size     : 4em;
+}
+
+  .sub-type {
+   font-size: 2em;
+  }
+
+/* Links */
+
+a {
+  color          : #fafafa;
+  text-decoration: none;
+  border-bottom  : 1px dotted #fafafa;
+  padding-bottom : 2px;
+}
+
+  a:active {
+    position: relative;
+    top     : 1px;
+  }
+
+  .border-none {
+    border-bottom: 1px solid transparent;
+  }
+
+/*===================
+    Media Queries
+===================*/
+
+@media screen and (min-height: 320px), screen and (min-height: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 50%;
+  }
+
+    .wrapper {
+      padding-top: 106px;
+      height     : 320px;
+    }
+
+}
+
+@media screen and (min-height: 480px), screen and (min-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 75%;
+  }
+
+    .wrapper {
+      padding-top: 160px;
+      height     : 480px;
+    }
+
+}
+
+@media screen and (min-height: 640px), screen and (min-height: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 100%;
+  }
+
+    .wrapper {
+      padding-top: 213px;
+      height     : 640px;
+    }
+
+}
+
+@media screen and (min-height: 768px), screen and (min-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 125%;
+  }
+
+    .wrapper {
+      padding-top: 256px;
+      height     : 768px;
+    }
+
+}
+
+@media screen and (min-height: 900px), screen and (min-height: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 150%;
+  }
+
+    .wrapper {
+      padding-top: 300px;
+      height     : 900px;
+    }
+
+}
+
+@media screen and (min-height: 1024px), screen and (min-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 162.5%;
+  }
+
+    .wrapper {
+      padding-top: 341px;
+      height     : 1024px;
+    }
+
+}
+
+@media screen and (min-height: 1080px), screen and (min-height: 1080px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 175%;
+  }
+
+    .wrapper {
+      padding-top: 360px;
+      height     : 1080px;
+    }
+
+}
