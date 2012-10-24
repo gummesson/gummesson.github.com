@@ -60,7 +60,9 @@ html {
 /* Articles */
 
 .wrapper {
-  width: 100%;
+  width      : 100%;
+  padding-top: 50px;
+  height     : 300px;
 }
 
   .centered {
@@ -107,14 +109,10 @@ a {
 
 @media screen and (min-height: 320px), screen and (min-height: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  body {
-    font-size: 50%;
+  .wrapper {
+    padding-top: 106px;
+    height     : 320px;
   }
-
-    .wrapper {
-      padding-top: 106px;
-      height     : 320px;
-    }
 
 }
 
