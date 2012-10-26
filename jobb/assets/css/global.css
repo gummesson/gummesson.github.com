@@ -6,7 +6,6 @@
       - Selection
     + Structure
       - Articles
-      - Spacers
     + Typography
       - Paragraphs
       - Links
@@ -61,25 +60,13 @@ html {
 /* Articles */
 
 .wrapper {
-  width      : 100%;
-  height     : 300px;
-  padding-top: 50px;
+  width: 100%;
 }
 
   .centered {
     vertical-align: middle;
     text-align    : center;
   }
-
-/* Spacers */
-
-.spacer-top {
-  margin-top: 1em;
-}
-
-.spacer-bottom {
-  margin-bottom: 1em;
-}
 
 /*================
     Typography
@@ -88,15 +75,12 @@ html {
 /* Paragraphs */
 
 .main-type {
-  font-size: 4em;
+  padding-bottom: 1em;
+  font-size     : 4em;
 }
 
   .sub-type {
    font-size: 2em;
-  }
-
-  .mini-type {
-    font-size: 1.5em;
   }
 
 /* Links */
@@ -123,10 +107,14 @@ a {
 
 @media screen and (min-height: 320px), screen and (min-height: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .wrapper {
-    height     : 320px;
-    padding-top: 106px;
+  body {
+    font-size: 50%;
   }
+
+    .wrapper {
+      padding-top: 106px;
+      height     : 320px;
+    }
 
 }
 
@@ -137,8 +125,8 @@ a {
   }
 
     .wrapper {
-      height     : 480px;
       padding-top: 160px;
+      height     : 480px;
     }
 
 }
@@ -150,8 +138,8 @@ a {
   }
 
     .wrapper {
-      height     : 640px;
       padding-top: 213px;
+      height     : 640px;
     }
 
 }
@@ -163,8 +151,8 @@ a {
   }
 
     .wrapper {
-      height     : 768px;
       padding-top: 256px;
+      height     : 768px;
     }
 
 }
@@ -176,8 +164,8 @@ a {
   }
 
     .wrapper {
-      height     : 900px;
       padding-top: 300px;
+      height     : 900px;
     }
 
 }
@@ -189,8 +177,8 @@ a {
   }
 
     .wrapper {
-      height     : 1024px;
       padding-top: 341px;
+      height     : 1024px;
     }
 
 }
@@ -202,8 +190,8 @@ a {
   }
 
     .wrapper {
-      height     : 1080px;
       padding-top: 360px;
+      height     : 1080px;
     }
 
 }
