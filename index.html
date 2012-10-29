@@ -25,7 +25,7 @@
         <div class="col-two"></div><!-- .col-two -->
         <div class="col-eight">
           <header class="main-header">
-            <h1 class="logo"><a href="/" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson / Random ramblings, overall geekiness and other musings">Ellen Gummesson</a></h1>
+            <h1 class="logo"><a href="/" title="Ellen Gummesson / Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson / Random ramblings, overall geekiness and other musings">EG.</a></h1>
           </header>
         </div><!-- .col-eight -->
         <div class="col-two last"></div><!-- .col-two .last -->
@@ -52,8 +52,41 @@
               
   <article class="blog-post">
   
+    <h1><a href="/blog/2012/10/29/hotstrings-and-markdown" alt="Hotstrings And Markdown" title="Hotstrings And Markdown" class="no-border">Hotstrings And Markdown</a></h1>
+    <p class="post-meta small-margin">Posted on October 29, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps" class="no-border">Apps</a>  </p>
+  
+    <p>Since yesterday I've been messing around with an small but powerful app called <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a>. I guess you can call it a poor man's <a href="http://smilesoftware.com/TextExpander/index.html" title="TextExpander">TextExpander</a>, but the fact is that it's capable of doing much more. Not only does it support text expansions for abbreviations but you can also create scripts with so called hotkeys and other things for anything and everything. When I say everything I do mean it. The learning curve is pretty steep for the more advanced functions since there's no GUI for it but for creating some simple text expansions it's as easy as scripting gets. The <a href="http://www.autohotkey.com/docs/" title="AutoHotKey Documentation">documentation</a> is really great too if you want to dive in deeper.</p>
+
+<h2>Abbreviate all the things</h2>
+
+<p>One of the strengths of an app like this is that it works great for repetitive writing tasks like phone numbers, email adresses and signatures. Instead of having to repeat essentially the same phrase several times a day you just write a simple keyword and it'll automatically transform into the right thing. Since it's as just a script it works universally across all of your apps too, which is another thing that's great. I can use the same abbreviations whether I'm surfing the web in Chrome or writing a blog post in FocusWriter or ResophNotes.</p>
+
+<p>The basic structure of a simple text expansion script/hotstring looks like this:</p>
+
+<pre><code>:oc:abbreviation::expanded text
+</code></pre>
+
+<p><strong>Side note:</strong> the <code>oc</code> in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.</p>
+
+<h3>Markdown automation</h3>
+
+<p>Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like <code>[]</code> and <code>()</code>. Instead of having to type out all of the characters when I want to create link I only have to type <code>.mdlnk</code> thanks to this simple hotstring:</p>
+
+<pre><code>:oc:.mdlnk::[]({"}{"})
+</code></pre>
+
+<p>After a simple hit on the spacebar the <code>.mdlnk</code> transforms into <code>[]("")</code> (the quotation marks, along with a couple of other characters, has to be wrapped inside curly brackets in order to show since they're used in the real syntax). Instead of having to fiddle with it I can easily paste the link in it and move on which works much better as you can imagine. I've also created similar hotstrings for many other things such as images (<code>.mdimg</code>) and referenced-styled links (<code>.mdrefi</code> and <code>.mdrefl</code>), although I rarely use those.</p>
+
+<p><strong>Another side note:</strong> since I'm new to this whole scripting thing there's no doubt at all that they could be more advanced and help even further with a more automated writing workflow but I haven't had time to learn that just yet. I could probably expand the above link script to actually add a link from the clipboard directly into it which I'm going to do once I have the time to sit down and figure it out.</p>
+
+<p>So to wrap things up, if you want to speed up your repetitive writing then AutoHotKey is definitively it. Don't let the lack of a fancy GUI scare you off. If I can make it work, you can too.</p>
+
+</article>
+
+  <article class="blog-post">
+  
     <h1><a href="http://www.squarespace.com/apps/#note" alt="Squarespace Note" title="Squarespace Note" class="no-border">Squarespace Note</a></h1>
-    <p class="post-meta small-margin">Posted on October 26, 2012  in  <a href="/blog/tag/Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apps" class="no-border">Apps</a>, <a href="/blog/tag/iOS" class="no-border">iOS</a>   (<a href="/blog/2012/10/26/squarespace-note" alt="Permalink / Squarespace Note" title="Permalink / Squarespace Note" class="no-border">&#8734;</a>)</p>
+    <p class="post-meta small-margin">Posted on October 26, 2012  in  <a href="/blog/tag/Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apps" class="no-border">Apps</a>, <a href="/blog/tag/iOS" class="no-border">iOS</a>   <a href="/blog/2012/10/26/squarespace-note" alt="Permalink / Squarespace Note" title="Permalink / Squarespace Note" class="no-border">&#8734;</a></p>
   
     <blockquote><p>​​A free minimalist iOS app that anyone can use to capture all their thoughts, ideas, and inspirations.</p></blockquote>
 
@@ -64,7 +97,7 @@
   <article class="blog-post">
   
     <h1><a href="http://www.theverge.com/2012/10/23/3544356/apples-new-imac-first-hands-on" alt="The New iMac" title="The New iMac" class="no-border">The New iMac</a></h1>
-    <p class="post-meta small-margin">Posted on October 24, 2012  in  <a href="/blog/tag/Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apple" class="no-border">Apple</a>   (<a href="/blog/2012/10/24/the-new-imac" alt="Permalink / The New iMac" title="Permalink / The New iMac" class="no-border">&#8734;</a>)</p>
+    <p class="post-meta small-margin">Posted on October 24, 2012  in  <a href="/blog/tag/Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apple" class="no-border">Apple</a>   <a href="/blog/2012/10/24/the-new-imac" alt="Permalink / The New iMac" title="Permalink / The New iMac" class="no-border">&#8734;</a></p>
   
     <p>The thinness really amazes me. How is it even possible?</p>
 
@@ -86,22 +119,11 @@
   <article class="blog-post">
   
     <h1><a href="http://www.theverge.com/2012/10/19/3527284/how-the-non-existent-sony-nexus-x-fooled-the-tech-world" alt="How The Non-Existent Sony Nexus X Fooled The Tech World" title="How The Non-Existent Sony Nexus X Fooled The Tech World" class="no-border">How The Non-Existent Sony Nexus X Fooled The Tech World</a></h1>
-    <p class="post-meta small-margin">Posted on October 20, 2012  in  <a href="/blog/tag/Web" class="no-border">Web</a>, <a href="/blog/tag/Tech" class="no-border">Tech</a>   (<a href="/blog/2012/10/20/how-the-non-existent-sony-nexus-x-fooled-the-tech-world" alt="Permalink / How The Non-Existent Sony Nexus X Fooled The Tech World" title="Permalink / How The Non-Existent Sony Nexus X Fooled The Tech World" class="no-border">&#8734;</a>)</p>
+    <p class="post-meta small-margin">Posted on October 20, 2012  in  <a href="/blog/tag/Web" class="no-border">Web</a>, <a href="/blog/tag/Tech" class="no-border">Tech</a>   <a href="/blog/2012/10/20/how-the-non-existent-sony-nexus-x-fooled-the-tech-world" alt="Permalink / How The Non-Existent Sony Nexus X Fooled The Tech World" title="Permalink / How The Non-Existent Sony Nexus X Fooled The Tech World" class="no-border">&#8734;</a></p>
   
     <blockquote><p><strong>I faked the Sony Nexus X.</strong> Truly sorry. But I did come away from the experience with a few observations. I will share these musings, along with how and why I created these fakes.</p></blockquote>
 
 <p>I must say that this is pretty damn impressive. Well played whoever you are, well played.</p>
-
-</article>
-
-  <article class="blog-post">
-  
-    <h1><a href="http://blog.echofon.com/2012/10/changes-coming-for-echofon-desktop-users.html" alt="Changes Coming For Echofon Desktop Users" title="Changes Coming For Echofon Desktop Users" class="no-border">Changes Coming For Echofon Desktop Users</a></h1>
-    <p class="post-meta small-margin">Posted on October 18, 2012  in  <a href="/blog/tag/Web" class="no-border">Web</a>, <a href="/blog/tag/Tech" class="no-border">Tech</a>, <a href="/blog/tag/Apps" class="no-border">Apps</a>   (<a href="/blog/2012/10/18/changes-coming-for-echofon-desktop-users" alt="Permalink / Changes Coming For Echofon Desktop Users" title="Permalink / Changes Coming For Echofon Desktop Users" class="no-border">&#8734;</a>)</p>
-  
-    <blockquote><p>Beginning this Fall, we will begin phasing out our Echofon desktop products (Mac, Windows, Firefox) in order to focus more on our mobile line of Echofon apps.</p></blockquote>
-
-<p>This is such a shame. <a href="http://www.echofon.com/" title="Echofon">Echofon</a> is probably the best one column Twitter client for Windows users (if not the only one). I guess I need to find something else then.</p>
 
 </article>
 

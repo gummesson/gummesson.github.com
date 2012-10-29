@@ -130,7 +130,7 @@ img a, img a:hover, img a:focus {
 
   a:hover, a:focus,
   .no-border a:hover, .no-border a:focus {
-    border-bottom: 3px solid #ccc;
+    border-bottom: 2px solid #ccc;
   }
 
   a:active {
@@ -170,8 +170,7 @@ code {
   font-family     : Consolas, Monaco, Andale Mono, monospace;
   font-size       : 0.75em;
   background-color: #ddd;
-  border-radius   : 0.25em;
-  padding         : 0.15em 0.25em 0.2em;
+  padding         : 0.10em 0.30em;
 }
 
   pre > code {
@@ -303,7 +302,7 @@ ol,
       color: #ccc;
     }
 
- /*  Skills / Progress Bars */
+/*  Skills / Progress Bars */
 
 .progress-bar { 
   float        : left;
@@ -461,10 +460,6 @@ ol,
     margin-top: 1.25em;
   }
 
-  .logo {
-    font-size: 3em;
-  }
-
   .copyright {
     margin-bottom: 0.75em;
   }
@@ -488,16 +483,12 @@ ol,
 
 }
 
+/* iPhone/Smartphone (Portrait) */
 @media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .main-header {
     margin-top: 1em;
   }
-
-    .logo {
-      line-height: 1.2;
-      margin     : 0.166em 0;
-    }
 
   .main-menu {
     margin-top: 0.5em;
