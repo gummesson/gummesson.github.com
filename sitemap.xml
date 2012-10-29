@@ -2,19 +2,19 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/19/hello-world</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T20:56:16+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/20/wordpress-to-getsimple-to-jekyll</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T21:04:30+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T21:04:37+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</loc>
-        <lastmod>2012-10-07T16:25:46+02:00</lastmod>
+        <lastmod>2012-10-29T21:04:44+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure</loc>
@@ -26,23 +26,23 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/26/my-jekyll-plugins</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T20:58:18+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/27/my-first-plugin-for-jekyll</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T21:04:09+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T21:04:21+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/31/more-additions</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T20:59:04+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/02/my-jekyll-workflow</loc>
-        <lastmod>2012-09-11T17:27:28+02:00</lastmod>
+        <lastmod>2012-10-29T20:59:30+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/05/a-hard-drive-failure</loc>
@@ -58,15 +58,15 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/11/external-links-in-the-post-title</loc>
-        <lastmod>2012-09-12T15:38:01+02:00</lastmod>
+        <lastmod>2012-10-29T21:00:06+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/13/resophnotes</loc>
-        <lastmod>2012-09-23T10:54:31+02:00</lastmod>
+        <lastmod>2012-10-29T21:07:18+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/14/my-new-writing-app</loc>
-        <lastmod>2012-09-23T10:54:58+02:00</lastmod>
+        <lastmod>2012-10-29T21:06:44+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/15/themes-for-focuswriter</loc>
@@ -78,7 +78,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/18/my-adventure-with-peppermint-os</loc>
-        <lastmod>2012-09-23T10:58:10+02:00</lastmod>
+        <lastmod>2012-10-29T21:00:50+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/20/the-joys-of-writing</loc>
@@ -90,7 +90,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/23/focuswriter-140-released</loc>
-        <lastmod>2012-09-23T15:50:12+02:00</lastmod>
+        <lastmod>2012-10-29T21:01:45+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/09/25/the-amazing-ios-6-maps</loc>
@@ -116,7 +116,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/10/07/the-one-about-markdown</loc>
-        <lastmod>2012-10-29T19:03:19+01:00</lastmod>
+        <lastmod>2012-10-29T21:02:28+01:00</lastmod>
     </url>
     <url>
         <loc>
@@ -164,7 +164,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/10/29/hotstrings-and-markdown</loc>
-        <lastmod>2012-10-29T19:01:02+01:00</lastmod>
+        <lastmod>2012-10-29T21:03:12+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/404.html</loc>
@@ -172,11 +172,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/about.html</loc>
-        <lastmod>2012-10-14T10:42:58+02:00</lastmod>
+        <lastmod>2012-10-29T21:09:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/archives.html</loc>
-        <lastmod>2012-10-29T19:03:19+01:00</lastmod>
+        <lastmod>2012-10-29T21:07:18+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/contact.html</loc>
@@ -184,11 +184,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/cv.html</loc>
-        <lastmod>2012-10-29T19:04:53+01:00</lastmod>
+        <lastmod>2012-10-29T21:10:15+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-10-29T19:03:19+01:00</lastmod>
+        <lastmod>2012-10-29T21:07:18+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -196,10 +196,10 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/</loc>
-        <lastmod>2012-09-15T12:26:09+02:00</lastmod>
+        <lastmod>2012-10-29T21:11:51+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-10-29T19:03:19+01:00</lastmod>
+        <lastmod>2012-10-29T21:07:18+01:00</lastmod>
     </url>
 </urlset>

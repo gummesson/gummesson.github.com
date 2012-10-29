@@ -9,7 +9,7 @@
                 <title>Hotstrings And Markdown</title>
                 <description>&lt;p&gt;Since yesterday I've been messing around with an small but powerful app called &lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt;. I guess you can call it a poor man's &lt;a href=&quot;http://smilesoftware.com/TextExpander/index.html&quot; title=&quot;TextExpander&quot;&gt;TextExpander&lt;/a&gt;, but the fact is that it's capable of doing much more. Not only does it support text expansions for abbreviations but you can also create scripts with so called hotkeys and other things for anything and everything. When I say everything I do mean it. The learning curve is pretty steep for the more advanced functions since there's no GUI for it but for creating some simple text expansions it's as easy as scripting gets. The &lt;a href=&quot;http://www.autohotkey.com/docs/&quot; title=&quot;AutoHotKey Documentation&quot;&gt;documentation&lt;/a&gt; is really great too if you want to dive in deeper.&lt;/p&gt;
 
-&lt;h2&gt;Abbreviate all the things&lt;/h2&gt;
+&lt;h2&gt;Abbreviate All The Things&lt;/h2&gt;
 
 &lt;p&gt;One of the strengths of an app like this is that it works great for repetitive writing tasks like phone numbers, email adresses and signatures. Instead of having to repeat essentially the same phrase several times a day you just write a simple keyword and it'll automatically transform into the right thing. Since it's as just a script it works universally across all of your apps too, which is another thing that's great. I can use the same abbreviations whether I'm surfing the web in Chrome or writing a blog post in FocusWriter or ResophNotes.&lt;/p&gt;
 
@@ -20,7 +20,7 @@
 
 &lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; the &lt;code&gt;oc&lt;/code&gt; in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.&lt;/p&gt;
 
-&lt;h3&gt;Markdown automation&lt;/h3&gt;
+&lt;h3&gt;Markdown Automation&lt;/h3&gt;
 
 &lt;p&gt;Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like &lt;code&gt;[]&lt;/code&gt; and &lt;code&gt;()&lt;/code&gt;. Instead of having to type out all of the characters when I want to create link I only have to type &lt;code&gt;.mdlnk&lt;/code&gt; thanks to this simple hotstring:&lt;/p&gt;
 

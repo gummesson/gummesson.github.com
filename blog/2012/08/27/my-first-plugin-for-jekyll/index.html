@@ -56,7 +56,7 @@
     <p class="post-meta small-margin">Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll" class="no-border">Jekyll</a></p>
     <p>Okay, I wouldn't really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That's usually the way I learn stuff anyways (even though I haven't really wrapped my head around Ruby yet) so I figured that it'd be interesting to see if I could make it work even though my modifications weren't that significant. Maybe I'll pick it up some day.</p>
 
-<h2>Source code</h2>
+<h2>Source Code</h2>
 
 <pre><code>module Jekyll
   class Vimeo &lt; Liquid::Tag
@@ -77,7 +77,7 @@ end
 Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 </code></pre>
 
-<h3>Liquid tag</h3>
+<h3>Liquid Tag</h3>
 
 <p>Remove the space before and after the percentage signs.</p>
 
