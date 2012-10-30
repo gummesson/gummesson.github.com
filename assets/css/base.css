@@ -55,7 +55,7 @@ body {
 -------------*/
 
 .main-header {
-  margin-top: 2em;
+  margin-top: 2.25em;
 }
 
 .main-content {
@@ -115,11 +115,11 @@ h6, .zeta {
 a {
   color             : #333;
   border-bottom     : 1px solid #ccc;
-  -webkit-transition: all 100ms linear;
-  -moz-transition   : all 100ms linear;
-  -ms-transition    : all 100ms linear;
-  -o-transition     : all 100ms linear;
-  transition        : all 100ms linear;
+  -webkit-transition: all 75ms linear;
+  -moz-transition   : all 75ms linear;
+  -ms-transition    : all 75ms linear;
+  -o-transition     : all 75ms linear;
+  transition        : all 75ms linear;
 }
 
 .no-border, .no-border a,
@@ -130,7 +130,7 @@ img a, img a:hover, img a:focus {
 
   a:hover, a:focus,
   .no-border a:hover, .no-border a:focus {
-    border-bottom: 2px solid #ccc;
+   color: #ccc;
   }
 
   a:active {
@@ -170,7 +170,7 @@ code {
   font-family     : Consolas, Monaco, Andale Mono, monospace;
   font-size       : 0.75em;
   background-color: #ddd;
-  padding         : 0.10em 0.30em;
+  padding         : 0.10em 0.25em;
 }
 
   pre > code {
