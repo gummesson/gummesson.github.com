@@ -35,7 +35,8 @@ html {
 body {
   font            : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px / 30px */
   color           : #333;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
+  border-top      : 0.25em solid #ccc;
 }
 
 ::-webkit-selection {
@@ -143,8 +144,8 @@ img a, img a:hover, img a:focus {
 ----------*/
 
 blockquote {
-  border-left: 0.35em solid #ccc;
-  padding    : 0 1.5em;
+  border-left: 0.25em solid #ccc;
+  padding    : 0 1em;
   font-style : italic;
 }
 
@@ -161,7 +162,7 @@ pre {
   overflow        : auto; 
   line-height     : 1;
   background-color: #ddd;
-  border-left     : 0.35em solid #ccc;
+  border-left     : 0.25em solid #ccc;
   padding         : 0.2em 0.35em 0.4em;
   margin-top      : 0.4em;
 }
@@ -487,7 +488,7 @@ ol,
 @media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .main-header {
-    margin-top: 1em;
+    margin-top: 1.25em;
   }
 
   .main-menu {
