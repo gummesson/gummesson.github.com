@@ -37,6 +37,7 @@ body {
   color           : #333;
   background-color: #fafafa;
   border-top      : 0.25em solid #ccc;
+  border-bottom   : 0.25em solid #ccc;
 }
 
 ::-webkit-selection {
@@ -492,7 +493,7 @@ ol,
   }
 
   .main-menu {
-    margin-top: 0.5em;
+    margin-top: 0.25em;
   }
 
   .blog-post {
