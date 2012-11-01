@@ -36,8 +36,6 @@ body {
   font            : 125%/1.5 "Asap", Helvetica, Arial, Sans-serif; /* 20px / 30px */
   color           : #333;
   background-color: #fafafa;
-  border-top      : 0.25em solid #ccc;
-  border-bottom   : 0.25em solid #ccc;
 }
 
 ::-webkit-selection {
@@ -225,11 +223,7 @@ ul {
 ============*/
 
 h1, h2, h3, h4, h5, h6,
-.nav,
-.post-meta,
-.pagination, .pagination a,
-.date,
-.copyright {
+.sub-font {
   font-family: "Oswald", Helvetica, Arial, Sans-serif;
 }
 
@@ -257,8 +251,7 @@ blockquote p {
 }
 
 ul, 
-ol,
-.copyright {
+ol {
   line-height: 1.75;
 }
 
@@ -275,8 +268,16 @@ ol,
   margin-bottom: 0;
 }
 
+.mini-margin {
+  margin-bottom: 0.25em;
+}
+
 .small-margin {
   margin-bottom: 0.5em;
+}
+
+.middle-margin {
+  margin-bottom: 1.25em;
 }
 
 .blog-post:last-child {
@@ -291,10 +292,6 @@ ol,
   .main-content li a {
     padding-bottom: 3px;
   }
-
-.pagination {
-  margin-bottom: 1em;
-}
 
   .separator {
     padding: 0 1.5em;
@@ -460,10 +457,6 @@ ol,
 
   .main-header {
     margin-top: 1.25em;
-  }
-
-  .copyright {
-    margin-bottom: 0.75em;
   }
 
 }
