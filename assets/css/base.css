@@ -58,13 +58,21 @@ body {
   margin-top: 2.25em;
 }
 
+.main-menu {
+  margin-top: 0.25em;
+}
+
 .main-content {
   margin-top: 1.75em;
 }
 
-.main-menu {
-  margin-top: 0.25em;
-}
+  .blog-post {
+    margin-bottom: 2.25em;
+  }
+
+  .blog-post:last-child {
+    margin-bottom: 0;
+  }
 
 .main-footer {
   margin-top: 1em;
@@ -122,20 +130,32 @@ a {
   transition        : all 75ms linear;
 }
 
-.no-border, .no-border a,
-.logo a, .logo a:hover, .logo a:focus,
-img a, img a:hover, img a:focus {
+.no-border, 
+.no-border a,
+.logo a, 
+.logo a:hover, 
+.logo a:focus,
+img a, 
+img a:hover, 
+img a:focus {
   border-bottom: 1px solid transparent;
 }
 
-  a:hover, a:focus,
-  .no-border a:hover, .no-border a:focus {
+  a:hover, 
+  a:focus,
+  .no-border a:hover, 
+  .no-border a:focus {
    color: #ccc;
   }
 
   a:active {
     position: relative;
     top     : 1px;
+  }
+
+  .main-content p a,
+  .main-content li a {
+    padding-bottom: 3px;
   }
 
 /*----------
@@ -162,7 +182,7 @@ pre {
   line-height     : 1;
   background-color: #ddd;
   border-left     : 0.25em solid #ccc;
-  padding         : 0.2em 0.35em 0.4em;
+  padding         : 0.2em 0.4em 0.4em;
   margin-top      : 0.4em;
 }
 
@@ -238,7 +258,8 @@ strong, .strong {
 }
 
 p,
-ul, ol,
+ul, 
+ol,
 blockquote,
 pre,
 .full-margin {
@@ -255,14 +276,11 @@ ol {
   line-height: 1.75;
 }
 
-.big-margin,
-.blog-post {
-  margin-bottom: 2.25em;
-}
-
 /*------------
    Specific 
 ------------*/
+
+/* Margins */
 
 .no-margin {
   margin-bottom: 0;
@@ -280,26 +298,21 @@ ol {
   margin-bottom: 1.25em;
 }
 
-.blog-post:last-child {
-  margin-bottom: 0;
-}
+/* Paragraphs */
 
 .main-content p {
   text-align: justify;
 }
 
-  .main-content p a,
-  .main-content li a {
-    padding-bottom: 3px;
-  }
+/* Pagination */
 
-  .separator {
-    padding: 0 1.5em;
-  }
+.separator {
+  padding: 0 1.5em;
+}
 
-    .no-link {
-      color: #ccc;
-    }
+.no-link {
+  color: #ccc;
+}
 
 /*  Skills / Progress Bars */
 
@@ -473,7 +486,7 @@ ol {
   }
 
   .main-content {
-    margin-top: 1em;
+    margin-top: 1.25em;
   }
 
 }
@@ -489,8 +502,12 @@ ol {
     margin-top: 0.25em;
   }
 
-  .blog-post {
-    margin-bottom: 2em; 
+  .main-content {
+    margin-top: 1em;
   }
+
+    .blog-post {
+      margin-bottom: 2em; 
+    }
 
 }

@@ -2,8 +2,16 @@
   <rss version="2.0">
     <channel>
       <title>Ellen Gummesson</title>
-        <description>Random ramblings, overall geekiness and other musings</description>
+        <description>Random Ramblings, Overall Geekiness And Other Musings</description>
           <link>http://ellengummesson.com</link>
+            
+              <item>
+                <title>Fiddling</title>
+                <description>&lt;p&gt;I find it a bit funny that since I posted my last blog post with my little ramble about redesigning I've fiddled around about ten times with different elements  on this site. Now my goal is to not do it for atleast a couple of days. That shouldn't be too hard I hope. I really do need to clean up the code though...&lt;/p&gt;
+</description>
+                <published>November  2, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/02/fiddling</link>
+              </item>
             
               <item>
                 <title>To Re-Redesign Or Not</title>
@@ -61,18 +69,6 @@
 </description>
                 <published>October 24, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/10/24/the-new-imac</link>
-              </item>
-            
-              <item>
-                <title>My New Twitter Client</title>
-                <description>&lt;p&gt;After a hectic search for a replacement for &lt;a href=&quot;http://blog.echofon.com/2012/10/changes-coming-for-echofon-desktop-users.html&quot; title=&quot;Echofon&quot;&gt;Echofon&lt;/a&gt; I think I've finally stumbled upon something that'll work for me, &lt;a href=&quot;http://hotot.org/&quot; title=&quot;Hotot&quot;&gt;Hotot&lt;/a&gt;. Like many apps I use it's both open source and cross platform though it's mainly developed for the Linux environment. Although the website states that the Windows version is &quot;very unstable&quot; I haven't had any problems with it yet. It's not as pretty and clean as Echofon but the fact that it's still decently minimal and it has a one column layout makes it worth using in my opinion. I did try out &lt;a href=&quot;http://www.sobees.com/social-media-clients/sobees-desktop-application&quot; title=&quot;Sobees&quot;&gt;Sobees&lt;/a&gt; and &lt;a href=&quot;http://www.nymphicusapp.com/windows/&quot; title=&quot;Nymphicus&quot;&gt;Nymphicus&lt;/a&gt;. For some reason Sobees wouldn't let me stay logged in and Nymphicus' interface didn't strike a chord with me.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/blog/2012-10-22-hotot.png' title='Hotot' alt='Hotot'&gt;&lt;/p&gt;
-
-&lt;p&gt;The login screen leaves a lot to be desired but I actually really like the buttons that's at the top of the default interface. It's quite reminiscent of Tapbots' &lt;a href=&quot;https://itunes.apple.com/us/app/tweetbot-for-twitter/id557168941?mt=12&quot; title=&quot;Tweetbot for Mac&quot;&gt;Tweetbot for Mac&lt;/a&gt;. I've noticed that it sometimes takes a couple of minutes for it to notify me about mentions and messages, but I think I'm just spoiled with other apps in that regard. I do hope that the development of it continues but I guess my backup plan is to use &lt;a href=&quot;http://tweetdeck.com/&quot; title=&quot;Tweetdeck&quot;&gt;Tweetdeck&lt;/a&gt; since it's the official client for Twitter. I'm not it's biggest fan though.&lt;/p&gt;
-</description>
-                <published>October 22, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/10/22/my-new-twitter-client</link>
               </item>
             
     </channel>
