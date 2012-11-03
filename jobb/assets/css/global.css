@@ -104,8 +104,7 @@ html {
 a {
   color          : #fafafa;
   text-decoration: none;
-  border-bottom  : 1px dotted #fafafa;
-  padding-bottom : 2px;
+  border-bottom  : 1px solid transparent;
 }
 
   a:active {
@@ -113,8 +112,8 @@ a {
     top     : 1px;
   }
 
-  .border-none {
-    border-bottom: 1px solid transparent;
+  .border {
+    border-bottom: 1px solid #fafafa;
   }
 
 /*===================
@@ -204,6 +203,45 @@ a {
     .wrapper {
       height     : 1080px;
       padding-top: 360px;
+    }
+
+}
+
+@media screen and (min-height: 1280px), screen and (min-height: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 187.5%;
+  }
+
+    .wrapper {
+      height     : 1280px;
+      padding-top: 427px;
+    }
+
+}
+
+@media screen and (min-height: 1366px), screen and (min-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 200%;
+  }
+
+    .wrapper {
+      height     : 1366px;
+      padding-top: 455px;
+    }
+
+}
+
+@media screen and (min-height: 1440px), screen and (min-height: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 212.5%;
+  }
+
+    .wrapper {
+      height     : 1440px;
+      padding-top: 480px;
     }
 
 }

@@ -314,6 +314,12 @@ ol {
   color: #ccc;
 }
 
+/* External Links */
+
+.external {
+  font-size: 0.75em;
+}
+
 /*  Skills / Progress Bars */
 
 .progress-bar { 
