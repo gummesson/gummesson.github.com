@@ -15,7 +15,6 @@
       - Code
     + Margins
     + Lists
-      - "Skills"
     + Navigation
       - Pagination
     + Media Queries
@@ -270,25 +269,6 @@ ul {
   list-style: none;
 }
 
-/*  Skills / Progress Bars */
-
-.progress-bar { 
-  float        : left;
-  display      : block;
-  width        : 100%; 
-  height       : 0.5em; 
-  background   : #ccc;
-  margin-bottom: 1em;
-}
-
-  .tip {
-    float     : left;
-    display   : block;
-    width     : 100%; 
-    height    : 0.5em; 
-    background: #333;
-  }
-
 /*================
     Navigation
 ================*/
@@ -359,7 +339,7 @@ ul {
 
   .post,
   .page,
-  ..pagination {
+  .pagination {
     margin-bottom: 2em;
   }
 
@@ -369,6 +349,10 @@ ul {
 
   body {
     font-size: 87.5%;
+  }
+
+  a {
+    padding-bottom: 2px;
   }
 
   .menu li {
@@ -381,6 +365,10 @@ ul {
 
   body {
     font-size: 100%;
+  }
+
+  .container {
+    width: 90%;
   }
 
 }
