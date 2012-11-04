@@ -17,6 +17,7 @@
     + Lists
     + Navigation
       - Pagination
+    + Images
     + Media Queries
 
 ======================*/
@@ -35,7 +36,7 @@ html {
 }
 
   body {
-    font            : normal 150%/ 1.5 "Tinos", Georgia, Times, Serif;
+    font            : 400 150%/ 1.5 "Tinos", Georgia, Times, Serif;
     color           : #333;
     background-color: #fafafa;
   }
@@ -143,7 +144,8 @@ small, .small {
 /* Alignments */
 
 .centered,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.self {
   text-align: center;
 }
 
@@ -297,6 +299,17 @@ ul {
   color: #ccc;
 }
 
+/*============
+    Images
+============*/
+
+img {
+  display  : block;
+  margin   : 0 auto;
+  max-width: 100%; 
+  height   : auto;
+}
+
 /*===================
     Media Queries
 ===================*/
@@ -310,11 +323,6 @@ ul {
 }
 
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  img { 
-    max-width: 100%; 
-    height   : auto;
-  }
 
   .container {
     width: 92.5%;
