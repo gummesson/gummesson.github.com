@@ -10,7 +10,7 @@
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / RSS Feed">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/global.css" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="/assets/icons/favicon.png" type="img/png">
@@ -20,68 +20,35 @@
 </head>
 <body>
   <div class="container">
-    <div class="grid">
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <header class="main-header">
-            <h1 class="logo"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">EG.</a></h1>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-              <nav class="main-menu">
-                <ul class="nav sub-font beta no-border">
-                  <li><a href="/" title="Home" alt="Home">Home</a></li>
-                  <li><a href="/about" title="About" alt="About">About</a></li>
-                  <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
-                  <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
-                </ul>
-              </nav>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-          <div class="col-eight">
-            <div class="main-content">
-              <article>
+    <header class="branding">
+      <h1 class="logo centered"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen.</a></h1>
+      <ul class="nav menu centered beta italic">
+        <li><a href="/" title="Home" alt="Home">Home</a></li>
+        <li><a href="/about" title="About" alt="About">About</a></li>
+        <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
+        <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
+      </ul>
+    </header><!-- .branding -->
+      <div class="content">
+        <article class="page">
   <h1>About</h1>
-      <p>My name is Ellen Gummesson and I love communication and the web, especially when the two of them get together. I recently graduated from Umeå University (located in the north of Sweden) where I recieved a Degree of Bachelor of Arts in Media and Communication Studies with a specialisation in Strategic Communication (which is possibly the longest name ever for a degree). I've previously worked as a writer and reviewer for the magazine Nöjesmagasinet City and I'm getting more and more into web design and front-end development (mainly HTML5, CSS3 and a little bit of jQuery). You can check out <a href="/projects/">my projects</a> if you'd like.</p>
+    <span class="justified"><p>My name is Ellen Gummesson and I love communication and the web, especially when the two of them get together. I recently graduated from Umeå University (located in the north of Sweden) where I recieved a Degree of Bachelor of Arts in Media and Communication Studies with a specialisation in Strategic Communication (which is possibly the longest name ever for a degree). I've previously worked as a writer and reviewer for the magazine Nöjesmagasinet City and I'm getting more and more into web design and front-end development (mainly HTML5, CSS3 and a little bit of jQuery). You can check out <a href="/projects/">my projects</a> if you'd like.</p>
 
-<h2>I'm Looking For A Job!</h2>
-
-<p>If you're interested in hiring me, here's my <a href="/cv">Curriculum Vitae</a>.</p>
-
-<h3>Why Are You Writing This In English?</h3>
+<h2>Why Are You Writing This In English?</h2>
 
 <p>I see it both as a fun challenge and an learning experience. English is a pretty important language and even though I think I'm pretty good at both speaking writing it there's always room for improvement.</p>
 
 <h2>Colophon</h2>
 
-<p><a href="http://ellengummesson.com/" title="ellengummesson.com">This site</a> is powered by <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. It was built with HTML5 and CSS3 and my own grid system, <a href="/projects/begrider" title="Begrider - A simple grid system for beginners">Begrider</a>. The code was written by hand in <a href="http://www.sublimetext.com/" title="SublimeText 2">SublimeText 2</a> with the theme <a href="https://github.com/buymeasoda/soda-theme/" title="Soda Dark">Soda Dark</a>, the color scheme <a href="https://github.com/chriskempson/tomorrow-theme" title="Tomorrow Theme">Tomorrow Theme</a> and the plugins <a href="http://wbond.net/sublime_packages/alignment/" title="Alignment">Alignment</a> and <a href="http://wbond.net/sublime_packages/prefixr" title="Prefixr">Prefixr</a>. The site uses <a href="http://www.google.com/webfonts/specimen/Oswald" title="Oswald">Oswald</a> for the headings and the navigation and <a href="http://www.google.com/webfonts/specimen/Asap" title="Asap">Asap</a> for nearly all the other types of type. They're provided by <a href="http://www.google.com/webfonts" title="Google Webfonts">Google Webfonts</a>. The blog posts are written in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>, scribbled down in either <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> or <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a> before finally ending up and being finished in <a href="http://gottcode.org/focuswriter/" title="FocusWriter">FocusWriter</a> or <a href="http://www.mardownpad.com/" title="MarkdownPad">MarkdownPad</a>. <a href="http://shotty.devs-on.net/en/Overview.aspx" title="Shotty">Shotty</a> is used for taking screenshots.</p>
-
+<p><a href="http://ellengummesson.com/" title="ellengummesson.com">This site</a> is powered by <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. It was built with HTML5 and CSS3 and the code was written by hand in <a href="http://www.sublimetext.com/" title="SublimeText 2">SublimeText 2</a>, with the theme <a href="https://github.com/buymeasoda/soda-theme/" title="Soda Dark">Soda Dark</a> and the color scheme <a href="https://github.com/chriskempson/tomorrow-theme" title="Tomorrow Theme">Tomorrow Theme</a>. The site makes use the rather nice looking typeface <a href="http://www.google.com/webfonts/specimen/Tinos" title="Tinos">Tinos</a> which is provided by <a href="http://www.google.com/webfonts" title="Google Webfonts">Google Webfonts</a>. The blog posts are written in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>, scribbled down in <a href="http://minimaltools.com/" title="Pop">Pop</a>, <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a> and/or <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> before finally ending up and being finished in <a href="http://gottcode.org/focuswriter/" title="FocusWriter">FocusWriter</a> or occasionally <a href="http://www.mardownpad.com/" title="MarkdownPad">MarkdownPad</a>. <a href="http://shotty.devs-on.net/en/Overview.aspx" title="Shotty">Shotty</a> is used for taking screenshots.</p>
+</span>
 </article>
 
-            </div>
-          </div><!-- .col-eight -->
-          <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <footer class="main-footer sub-font small">
-            <p class="mini-margin">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012.</p> 
-            <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA.</a></p>
-          </footer>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-    </div><!--.grid -->
-  </div><!-- .container -->
+      </div>
+    <footer class="mini centered italic">
+      <p class="margin-none">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012</p>
+      <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA</a></p>
+    </footer> <!-- .mini .centered .italic -->
+  </div> <!-- .container -->
 </body>
 </html>

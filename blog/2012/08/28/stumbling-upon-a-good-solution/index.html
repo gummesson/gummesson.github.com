@@ -10,7 +10,7 @@
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / RSS Feed">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/global.css" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="/assets/icons/favicon.png" type="img/png">
@@ -20,41 +20,22 @@
 </head>
 <body>
   <div class="container">
-    <div class="grid">
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <header class="main-header">
-            <h1 class="logo"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">EG.</a></h1>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-              <nav class="main-menu">
-                <ul class="nav sub-font beta no-border">
-                  <li><a href="/" title="Home" alt="Home">Home</a></li>
-                  <li><a href="/about" title="About" alt="About">About</a></li>
-                  <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
-                  <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
-                </ul>
-              </nav>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-          <div class="col-eight">
-            <div class="main-content">
-              <article>
+    <header class="branding">
+      <h1 class="logo centered"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen.</a></h1>
+      <ul class="nav menu centered beta italic">
+        <li><a href="/" title="Home" alt="Home">Home</a></li>
+        <li><a href="/about" title="About" alt="About">About</a></li>
+        <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
+        <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
+      </ul>
+    </header><!-- .branding -->
+      <div class="content">
+        <article class="post">
   
     <h1>Stumbling Upon A Good Solution</h1>
   
-    <p class="small-margin sub-font">Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code" class="no-border">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS" class="no-border">CSS</a></p>
-    <p>As some of you may know, I've built my own grid system with the world's most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.</p>
+    <p class="small centered italic">Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a></p>
+    <span class="justified"><p>As some of you may know, I've built my own grid system with the world's most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you'd had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I've experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs.</p>
 
 <h2>The Solution</h2>
 
@@ -68,11 +49,10 @@
 <p>It worked! I know that I always sound suprised when something I've done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it's gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don't (IE8 isn't too fond of the :last-child thing). I think I'm going to leave the <code>.last</code> class in the code, just so there's an option to use it.</p>
 
 <p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
+</span>
 
-</article>
-
-  <section class="comments">
-  <h1 class="small-margin">Comments</h1>
+  <section>
+  <h1 class="margin-small">Comments</h1>
   <div id="disqus_thread"></div>
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -88,21 +68,13 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
 </section>
 
-            </div>
-          </div><!-- .col-eight -->
-          <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <footer class="main-footer sub-font small">
-            <p class="mini-margin">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012.</p> 
-            <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA.</a></p>
-          </footer>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-    </div><!--.grid -->
-  </div><!-- .container -->
+</article>
+
+      </div>
+    <footer class="mini centered italic">
+      <p class="margin-none">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012</p>
+      <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA</a></p>
+    </footer> <!-- .mini .centered .italic -->
+  </div> <!-- .container -->
 </body>
 </html>

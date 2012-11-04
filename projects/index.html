@@ -10,7 +10,7 @@
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / RSS Feed">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/base.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/global.css" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="/assets/icons/favicon.png" type="img/png">
@@ -20,52 +20,29 @@
 </head>
 <body>
   <div class="container">
-    <div class="grid">
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <header class="main-header">
-            <h1 class="logo"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">EG.</a></h1>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-              <nav class="main-menu">
-                <ul class="nav sub-font beta no-border">
-                  <li><a href="/" title="Home" alt="Home">Home</a></li>
-                  <li><a href="/about" title="About" alt="About">About</a></li>
-                  <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
-                  <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
-                </ul>
-              </nav>
-          </header>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-          <div class="col-eight">
-            <div class="main-content">
-              <article>
+    <header class="branding">
+      <h1 class="logo centered"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen.</a></h1>
+      <ul class="nav menu centered beta italic">
+        <li><a href="/" title="Home" alt="Home">Home</a></li>
+        <li><a href="/about" title="About" alt="About">About</a></li>
+        <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
+        <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
+      </ul>
+    </header><!-- .branding -->
+      <div class="content">
+        <article class="page">
   <h1>Projects</h1>
-      <p>Here's my humble collection of projects (or rather, demos and snippets).</p>
+    <span class="justified"><p>Here's my humble collection of projects (or rather, demos and snippets).</p>
 
 <h2>Begrider</h2>
 
-<p><em>Begrider</em> is a simple, fluid twelve column and ten units grid system with a 1140px fixed width (or technically 1139px, if you want to be pixel-precise). It works great in <em>Chrome</em> and <em>Firefox</em> and looks alright in <em>Internet Explorer 9</em> <em>(although the media queries doesn’t work)</em>. It works in <em>Opera</em> too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible. I think I did pretty good.</p>
+<p><em>Begrider</em> is a simple, fluid twelve column and ten units grid system with a 1140px fixed width. It works great in Chrome and Firefox and looks alright in Internet Explorer 9. It works in Opera too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible.</p>
 
-<h3>Get It</h3>
-
-<p><a href="/projects/begrider/" title="A demo of Begrider">Demo</a> / <a href="https://github.com/gummesson/begrider/zipball/master" title="Download Begrider">Download</a> / <a href="https://github.com/gummesson/begrider" title="Begrider on Github">GitHub</a></p>
+<p><a href="https://github.com/gummesson/begrider/zipball/master" title="Download Begrider">Download</a> / <a href="https://github.com/gummesson/begrider" title="Begrider on Github">GitHub</a></p>
 
 <h2>Clean Slate For GetSimple CMS</h2>
 
 <p><em>Clean Slate</em> is a bare bones starter theme for <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple CMS</a>. It contains some minimal markup, a basic reset and a couple of <a href="https://github.com/stubbornella/oocss/wiki" title="Object Oriented CSS">OOCSS</a>-inspired classes to get you started, but that's it.</p>
-
-<h3>Get It</h3>
 
 <p><a href="https://github.com/gummesson/clean-slate-gs/zipball/master" title="Download Clean Slate for GetSimple CMS">Download</a> / <a href="https://github.com/gummesson/clean-slate-gs" title="Clean Slate on Github">GitHub</a></p>
 
@@ -73,31 +50,23 @@
 
 <p>Simple instructions on how you can change the output of the pagination pages that Jekyll generates.</p>
 
-<h3>Get It</h3>
-
-<p><a href="/projects/jekyll-pagination-output/" title="Jekyll Pagination Output">Instructions</a> / <a href="https://github.com/gummesson/jekyll-pagination-output/zipball/master" title="Download Jekyll Pagination Output">Download</a> / <a href="https://github.com/gummesson/jekyll-pagination-output" title="Jekyll Pagination Output on Github">GitHub</a></p>
+<p><a href="/projects/jekyll-pagination-output/" title="Jekyll Pagination Output">How To</a> / <a href="https://github.com/gummesson/jekyll-pagination-output/zipball/master" title="Download Jekyll Pagination Output">Download</a> / <a href="https://github.com/gummesson/jekyll-pagination-output" title="Jekyll Pagination Output on Github">GitHub</a></p>
 
 <h2>Jekyll Vimeo Plugin</h2>
 
 <p>A plugin for <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> that makes it easy to embed videos from <em>Vimeo</em> by using a simple Liquid tag. It's based of the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin/gist</a> from Portway Point.</p>
 
-<h3>Get It</h3>
-
 <p><a href="https://github.com/gummesson/jekyll-vimeo-plugin/zipball/master" title="Download Jekyll Vimeo Plugin">Download</a> / <a href="https://github.com/gummesson/jekyll-vimeo-plugin" title="Jekyll Vimeo Plugin on Github">GitHub</a></p>
 
 <h2>Simple jQuery Scrolling</h2>
 
-<p>A demo of a simple <em>jQuery</em> scrolling function.</p>
+<p>A demo with of a simple snippet for a very basic <em>jQuery</em> scrolling function.</p>
 
-<h3>Get it</h3>
-
-<p><a href="/projects/simple-jquery-scrolling/" title="A demo of a simple jQuery scrolling function">Demo</a> / <a href="https://github.com/gummesson/simple-jquery-scrolling/zipball/master" title="Download Simple jQuery Scrolling">Download</a> / <a href="https://github.com/gummesson/simple-jquery-scrolling" title="Simple jQuery Scrolling on Github">GitHub</a></p>
+<p><a href="https://github.com/gummesson/simple-jquery-scrolling/zipball/master" title="Download Simple jQuery Scrolling">Download</a> / <a href="https://github.com/gummesson/simple-jquery-scrolling" title="Simple jQuery Scrolling on Github">GitHub</a></p>
 
 <h2>Sass Type Variables</h2>
 
 <p>Sass type variables was done as a test to get started and to try out variables in <em>Sass</em>.</p>
-
-<h3>Get It</h3>
 
 <p><a href="https://github.com/gummesson/sass-type-variables/zipball/master" title="Download Sass Type Variables">Download</a> / <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables on Github">GitHub</a></p>
 
@@ -105,27 +74,15 @@
 
 <p>A couple of themes I created for the excellent free text editor <a href="http://gottcode.org/focuswriter/" title="FocusWriter">FocusWriter</a>. They're based on some popular color schemes from various other editors.</p>
 
-<h3>Get It</h3>
-
-<p><a href="/projects/focuswriter-themes/" title="FocusWriter Themes">Demo</a> / <a href="https://github.com/gummesson/focuswriter-themes/zipball/master" title="Download the FocusWriter Themes">Download</a> / <a href="https://github.com/gummesson/focuswriter-themes" title="FocusWriter Themes on GitHub">GitHub</a></p>
-
+<p><a href="/projects/focuswriter-themes/" title="FocusWriter Themes">Screenshots</a> / <a href="https://github.com/gummesson/focuswriter-themes/zipball/master" title="Download the FocusWriter Themes">Download</a> / <a href="https://github.com/gummesson/focuswriter-themes" title="FocusWriter Themes on GitHub">GitHub</a></p>
+</span>
 </article>
 
-            </div>
-          </div><!-- .col-eight -->
-          <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-      <div class="row">
-        <div class="col-two"></div><!-- .col-two -->
-        <div class="col-eight">
-          <footer class="main-footer sub-font small">
-            <p class="mini-margin">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012.</p> 
-            <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA.</a></p>
-          </footer>
-        </div><!-- .col-eight -->
-        <div class="col-two last"></div><!-- .col-two .last -->
-      </div><!--.row -->
-    </div><!--.grid -->
-  </div><!-- .container -->
+      </div>
+    <footer class="mini centered italic">
+      <p class="margin-none">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012</p>
+      <p>Licensed Under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA" title="Creative Commons BY-NC-SA">CC-BY-NC-SA</a></p>
+    </footer> <!-- .mini .centered .italic -->
+  </div> <!-- .container -->
 </body>
 </html>

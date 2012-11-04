@@ -1,0 +1,386 @@
+/*======================
+    ellengummesson.com
+========================
+
+    + Body
+      - Selection
+    + Structure
+    + Typography
+      - Headings
+      - Annotations
+      - Sizes
+      - Alignment
+      - Links
+      - Quotes
+      - Code
+    + Margins
+    + Lists
+      - "Skills"
+    + Navigation
+      - Pagination
+    + Media Queries
+
+======================*/
+
+/*==========
+    Body
+==========*/
+
+html {
+  -moz-box-sizing         : border-box; 
+  -webkit-box-sizing      : border-box;
+  box-sizing              : border-box;
+  -webkit-font-smoothing  : antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust    : 100%;
+}
+
+  body {
+    font            : normal 150%/ 1.5 "Tinos", Georgia, Times, Serif;
+    color           : #333;
+    background-color: #fafafa;
+  }
+
+/* Selection */
+
+::-webkit-selection {
+  color           : #fafafa;
+  background-color: #ccc;
+}
+
+::-moz-selection {
+  color           : #fafafa;
+  background-color: #ccc;
+}
+
+::selection {
+  color           : #fafafa;
+  background-color: #ccc;
+}
+
+/*===============
+    Structure
+===============*/
+
+.container {
+  width : 720px;
+  height: 100%; 
+  margin: 0 auto;
+}
+
+.branding,
+.content {
+  margin-top: 2em;
+}
+
+  .post,
+  .page,
+  .pagination {
+    margin-bottom: 3em;
+  }
+
+/*================
+    Typography
+================*/
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  margin     : 0.125em 0;
+  line-height: 1.3;
+}
+
+h1, .alpha {
+  font-size: 2em;
+}
+
+  .logo {
+    font-size: 3.75em;
+  }
+
+h2, .beta {
+  font-size: 1.75em;
+}
+
+h3, .gamma {
+  font-size: 1.5em;
+}
+
+h4, .delta {
+  font-size: 1.25em;
+}
+
+h5, .epsilon {
+  font-size: 1.125em;
+}
+
+h6, .zeta {
+  font-size: 1em;
+}
+
+/* Annontations */
+
+i, .italic,
+em, .em,
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+}
+
+b, .bold,
+strong, .strong {
+  font-weight: bold;
+}
+
+/* Sizes */
+
+small, .small {
+  font-size: 0.875em;
+}
+
+.mini {
+  font-size: 0.75em;
+}
+
+/* Alignments */
+
+.centered,
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/* Links */
+
+a {
+  color          : #333;
+  text-decoration: none;
+  border-bottom  : 1px solid #ccc;
+  padding-bottom : 3px;
+}
+
+a:hover,
+a:focus {
+  color: #ccc;
+}
+
+a:active {
+  position: relative;
+  top     : 1px;
+}
+
+  .border-none, .border-none a, 
+  .menu a,
+  h1 a {
+    border-bottom: 1px solid transparent;
+  }
+
+  .small a {
+    padding-bottom: 2px;
+  }
+
+  .mini a {
+    padding-bottom: 1px;
+  }
+
+/* Quotes */
+
+blockquote {
+  border-left: 0.25em solid #ccc;
+  padding    : 0 1.5em;
+  font-size  : 0.875em;
+  font-style : italic;
+}
+
+  blockquote cite:before {
+    content: "\2014 \00A0";
+  }
+
+/* Code */
+
+pre {
+  word-wrap       : normal;
+  overflow        : auto; 
+  line-height     : 1;
+  background-color: #ddd;
+  border-left     : 0.25em solid #ccc;
+  padding         : 0.2em 0.4em 0.4em;
+  margin-top      : 0.4em;
+}
+
+code {
+  font-family     : Consolas, Monaco, Andale Mono, monospace;
+  font-size       : 0.75em;
+  background-color: #ddd;
+  padding         : 0.10em 0.25em;
+}
+
+  pre > code {
+    border    : none;
+    padding   : 0;
+    background: none;
+}
+
+/*=============
+    Margins
+=============*/
+
+.margin-standard,
+p,
+ul,
+ol,
+blockquote,
+pre {
+  margin-bottom: 1.5em;
+}
+
+.margin-small {
+  margin-bottom: 0.5em;
+}
+
+.margin-mini {
+  margin-bottom: 0.25em;
+}
+
+.margin-none,
+.nav {
+  margin-bottom: 0;
+}
+
+/*===========
+    Lists
+===========*/
+
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: square inside;
+}
+
+  ul ul,
+  ol ol {
+    margin-left: 1.5em;
+  }
+
+.list-none {
+  list-style: none;
+}
+
+/*  Skills / Progress Bars */
+
+.progress-bar { 
+  float        : left;
+  display      : block;
+  width        : 100%; 
+  height       : 0.5em; 
+  background   : #ccc;
+  margin-bottom: 1em;
+}
+
+  .tip {
+    float     : left;
+    display   : block;
+    width     : 100%; 
+    height    : 0.5em; 
+    background: #333;
+  }
+
+/*================
+    Navigation
+================*/
+
+.nav li,
+.list-hz li {
+  display: inline-block;
+}
+
+  .menu li,
+  .list-hz li {
+    margin-right: 1.25em;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+/* Pagination */
+
+.separator {
+  padding: 0 2em;
+}
+
+.link-none {
+  color: #ccc;
+}
+
+/*===================
+    Media Queries
+===================*/
+
+@media screen and (max-width: 1024px), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 137.5%;
+  }
+
+}
+
+@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  img { 
+    max-width: 100%; 
+    height   : auto;
+  }
+
+  .container {
+    width: 92.5%;
+  }
+
+  body {
+    font-size: 125.5%;
+  }
+
+}
+
+@media screen and (max-width: 640px), screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 112.5%;
+  }
+
+  .branding,
+  .content {
+    margin-top: 1.5em;
+  }
+
+  .post,
+  .page,
+  ..pagination {
+    margin-bottom: 2em;
+  }
+
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 87.5%;
+  }
+
+  .menu li {
+    margin-right: 1em;
+  }
+
+}
+
+@media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 100%;
+  }
+
+}
