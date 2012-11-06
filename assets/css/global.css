@@ -131,6 +131,13 @@ strong, .strong {
   font-weight: bold;
 }
 
+hr, .hr {
+  width           : 40%;
+  height          : 0.1em;
+  background-color: #ccc;
+  border          : none;
+}
+
 /* Sizes */
 
 small, .small {
@@ -233,7 +240,8 @@ p,
 ul,
 ol,
 blockquote,
-pre {
+pre,
+hr, .hr  {
   margin-bottom: 1.5em;
 }
 
