@@ -33,58 +33,68 @@
         
   <article class="post">
   
+    <h1><a href="/blog/2012/08/22/the-hassles-of-media-queries" alt="The Hassles Of Media Queries" title="The Hassles Of Media Queries">The Hassles Of Media Queries</a></h1>
+    <p class="small centered italic">Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>  </p>
+  
+    <span class="justified"><p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn&rsquo;t get them to properly work. Then it hit me that I&rsquo;d forgot to add this in the <code>&lt;head&gt;</code>:</p>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
+</code></pre>
+
+<p>Note to self: don&rsquo;t be stupid. It&rsquo;ll save you a lot of time.</p>
+
+<p>I also had some problems with my iPhone&rsquo;s Retina display, but after some digging I found a &ldquo;hack&rdquo; that made it work properly so that the media queries look the same as on a regular browser:</p>
+
+<pre><code>(-webkit-min-device-pixel-ratio: 2)
+</code></pre>
+
+<p>To my defense I&rsquo;m still pretty new to all of this, but still&hellip; I feel really dumb. Now they finally works and I&rsquo;m totally happy, but I don&rsquo;t know whether or not I should be scared of the fact that I don&rsquo;t own an iPad&hellip; Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
+</span>
+</article>
+
+  <article class="post">
+  
     <h1><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit And Jekyll" title="Windows 7, Ruby, DevKit And Jekyll">Windows 7, Ruby, DevKit And Jekyll</a></h1>
     <p class="small centered italic">Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  </p>
   
-    <span class="justified"><p>To tell you the truth, I wasn't that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn't really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
+    <span class="justified"><p>To tell you the truth, I wasn&rsquo;t that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn&rsquo;t really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
 
-<h2>Installing Ruby</h2>
-
+<h2 id="installing-ruby">Installing Ruby</h2>
 <ul>
-<li>Go to <a href="http://rubyinstaller.org/" title="Ruby Installer for Windows">RubyInstaller</a> and download the latest version.</li>
-<li>Run the installer.</li>
+  <li>Go to <a href="http://rubyinstaller.org/" title="Ruby Installer for Windows">RubyInstaller</a> and download the latest version.</li>
+  <li>Run the installer.</li>
 </ul>
 
+<h3 id="note">Note:</h3>
+<p>it&rsquo;s really important that you install it in a directory without a space in it&rsquo;s path as stated in the installer, eg: <code>C:\ProgrammingLanguages\Ruby</code> and NOT <code>C:\Program Files\Ruby</code>, for example. Trust me.</p>
 
-<h3>Note:</h3>
-
-<p>it's really important that you install it in a directory without a space in it's path as stated in the installer, eg: <code>C:\ProgrammingLanguages\Ruby</code> and NOT <code>C:\Program Files\Ruby</code>, for example. Trust me.</p>
-
-<h2>Installing DevKit</h2>
-
+<h2 id="installing-devkit">Installing DevKit</h2>
 <ul>
-<li>Run the DevKit Installer and extract it to your desired directory.</li>
-<li>Open up the command line and type <code>cd</code> + the path to the directory were you installed DevKit, eg: <code>cd C:\ProgrammingLanguages\DevKit</code>.</li>
-<li>Type <code>ruby dk.rb init</code> to intialize the setup.</li>
-<li>Type <code>ruby dk.rb review</code> to check if DevKit has found your Ruby directory.</li>
-<li>Type <code>ruby dk.rb install</code> to install it.</li>
+  <li>Run the DevKit Installer and extract it to your desired directory.</li>
+  <li>Open up the command line and type <code>cd</code> + the path to the directory were you installed DevKit, eg: <code>cd C:\ProgrammingLanguages\DevKit</code>.</li>
+  <li>Type <code>ruby dk.rb init</code> to intialize the setup.</li>
+  <li>Type <code>ruby dk.rb review</code> to check if DevKit has found your Ruby directory.</li>
+  <li>Type <code>ruby dk.rb install</code> to install it.</li>
 </ul>
 
+<h3 id="note-1">Note:</h3>
+<p>I usually just search for &ldquo;cmd&rdquo; in the start menu search bar to open the command line.</p>
 
-<h3>Note:</h3>
-
-<p>I usually just search for "cmd" in the start menu search bar to open the command line.</p>
-
-<h2>Installing Jekyll</h2>
-
+<h2 id="installing-jekyll">Installing Jekyll</h2>
 <ul>
-<li>Type <code>gem install jekyll</code> in the command line.</li>
+  <li>Type <code>gem install jekyll</code> in the command line.</li>
 </ul>
 
-
-<h2>Running Jekyll</h2>
-
-<p>After you're done with creating your site with template and liquid tags (hit the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll wiki">wiki</a> to check them out), do the following:</p>
+<h2 id="running-jekyll">Running Jekyll</h2>
+<p>After you&rsquo;re done with creating your site with template and liquid tags (hit the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll wiki">wiki</a> to check them out), do the following:</p>
 
 <ul>
-<li>Open up the command line and type <code>cd</code> + the path to the directory were you've saved your site, eg: <code>cd C:\User\MySite</code>.</li>
-<li>Type <code>jekyll --server</code> in the cmd.</li>
-<li>Type out <code>localhost:4000</code> in your browser to see your site.</li>
+  <li>Open up the command line and type <code>cd</code> + the path to the directory were you&rsquo;ve saved your site, eg: <code>cd C:\User\MySite</code>.</li>
+  <li>Type <code>jekyll --server</code> in the cmd.</li>
+  <li>Type out <code>localhost:4000</code> in your browser to see your site.</li>
 </ul>
 
-
-<h3>Note:</h3>
-
+<h3 id="note-2">Note:</h3>
 <p>You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
 </span>
 </article>
@@ -94,23 +104,20 @@
     <h1><a href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" alt="WordPress To GetSimple To Jekyll" title="WordPress To GetSimple To Jekyll">WordPress To GetSimple To Jekyll</a></h1>
     <p class="small centered italic">Posted on August 20, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  </p>
   
-    <span class="justified"><p>... Or: "How I learned to stop worrying and love the command line".</p>
+    <span class="justified"><p>&hellip; Or: &ldquo;How I learned to stop worrying and love the command line&rdquo;.</p>
 
-<p>I love WordPress. I think it's a really great CMS and the community is huge, to say the least. However, I feel that it's sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I'd choose it in a heartbeat. But since I don't plan to do that I wanted something smaller. I've been playing around with <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn't really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn't feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
+<p>I love WordPress. I think it&rsquo;s a really great CMS and the community is huge, to say the least. However, I feel that it&rsquo;s sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I&rsquo;d choose it in a heartbeat. But since I don&rsquo;t plan to do that I wanted something smaller. I&rsquo;ve been playing around with <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn&rsquo;t really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn&rsquo;t feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
 
-<h2>Jekyll</h2>
+<h2 id="jekyll">Jekyll</h2>
+<p>Jekyll is described like this in the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll Wiki on GitHub">official wiki</a>:
+&gt; Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.</p>
 
-<p>Jekyll is described like this in the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll Wiki on GitHub">official wiki</a>:</p>
+<p>In other words, Jekyll takes your template files (written in HTML and/or <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> and marked with <a href="http://liquidmarkup.org/" title="Liquid tags">Liquid tags</a> and generates them into simple, static .html files. &ldquo;Blogging Like a Hacker&rdquo; is sort of Jekyll&rsquo;s tagline, and I think that&rsquo;s a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don&rsquo;t see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its&rsquo; functionality. For example, I use one that enables the pagination pages to be generated into different folders called <code>/blog/page/2/</code> and so on (rather than <code>/page2/</code>), and another one to create folders and .html files for my tags (I&rsquo;ll write more about this in another post).</p>
 
-<blockquote><p>Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.</p></blockquote>
+<h3 id="why">Why?</h3>
+<p>It&rsquo;s incredibly lightweight. It doesn&rsquo;t need a database or any back end language like PHP at all, which means that you don&rsquo;t have to worry about the database breaking and you can host it wherever you want to. The file size of a site which consists of just static pages is ridiciously small too (this whole site takes up about 200 kb as of right now) and above all, it&rsquo;s highly customizable. One big thing that actually irks me about WordPress is that it&rsquo;s filled with many pre-named classes and functions that you can&rsquo;t change. Well, you could go into the source and hammer away there, but I&rsquo;d rather not do that. With Jekyll I can actually change the look of the site in a matter of minutes and I can easily add a new class wherever I want if I need to. It only generates the things that I&rsquo;ve added by myself. The only disadvantage is that I need to sit in front of my computer in order for me to use Jekyll. It doesn&rsquo;t really matter to me, since I&rsquo;ve never been comfortable with writing and publish post with my phone or via email.</p>
 
-<p>In other words, Jekyll takes your template files (written in HTML and/or <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> and marked with <a href="http://liquidmarkup.org/" title="Liquid tags">Liquid tags</a> and generates them into simple, static .html files. "Blogging Like a Hacker" is sort of Jekyll's tagline, and I think that's a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don't see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its' functionality. For example, I use one that enables the pagination pages to be generated into different folders called <code>/blog/page/2/</code> and so on (rather than <code>/page2/</code>), and another one to create folders and .html files for my tags (I'll write more about this in another post).</p>
-
-<h3>Why?</h3>
-
-<p>It's incredibly lightweight. It doesn't need a database or any back end language like PHP at all, which means that you don't have to worry about the database breaking and you can host it wherever you want to. The file size of a site which consists of just static pages is ridiciously small too (this whole site takes up about 200 kb as of right now) and above all, it's highly customizable. One big thing that actually irks me about WordPress is that it's filled with many pre-named classes and functions that you can't change. Well, you could go into the source and hammer away there, but I'd rather not do that. With Jekyll I can actually change the look of the site in a matter of minutes and I can easily add a new class wherever I want if I need to. It only generates the things that I've added by myself. The only disadvantage is that I need to sit in front of my computer in order for me to use Jekyll. It doesn't really matter to me, since I've never been comfortable with writing and publish post with my phone or via email.</p>
-
-<p>Like I said in my previous post, it took me some time to actually get it up and running, but now I'm finally happy. It's not the most convenient solution, but it's simple enough for me. I'll probably write a couple of more post about Jekyll, so keep an eye out.</p>
+<p>Like I said in my previous post, it took me some time to actually get it up and running, but now I&rsquo;m finally happy. It&rsquo;s not the most convenient solution, but it&rsquo;s simple enough for me. I&rsquo;ll probably write a couple of more post about Jekyll, so keep an eye out.</p>
 </span>
 </article>
 
@@ -119,13 +126,12 @@
     <h1><a href="/blog/2012/08/19/hello-world" alt="Hello World!" title="Hello World!">Hello World!</a></h1>
     <p class="small centered italic">Posted on August 19, 2012  in  <a href="/blog/tag/General" alt="General" title="General">General</a>  </p>
   
-    <span class="justified"><p>So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I'm now finally happy, or atleast content, with how it looks. It's been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and all of its' functions and bits and pieces, but now I'm all set, I think).</p>
+    <span class="justified"><p>So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I&rsquo;m now finally happy, or atleast content, with how it looks. It&rsquo;s been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and all of its&rsquo; functions and bits and pieces, but now I&rsquo;m all set, I think).</p>
 
-<h2>Behind The Scenes</h2>
+<h2 id="behind-the-scenes">Behind The Scenes</h2>
+<p>Since I don&rsquo;t really know what to write in this post I thought I could write about how I built it and what tools I&rsquo;ve used during the process. After all, my tagline contains the word &ldquo;geekiness&rdquo;. Enjoy it, I guess.</p>
 
-<p>Since I don't really know what to write in this post I thought I could write about how I built it and what tools I've used during the process. After all, my tagline contains the word "geekiness". Enjoy it, I guess.</p>
-
-<p><a href="http://ellengummesson.com/" title="ellengummesson.com">This site</a> is powered by <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. It was built with HTML5 and CSS3 and my own grid system, <a href="/projects/begrider">Begrider</a>. The code was written by hand in <a href="http://www.sublimetext.com/" title="SublimeText 2">SublimeText 2</a> with the theme <a href="https://github.com/buymeasoda/soda-theme/" title="Soda Dark">Soda Dark</a>, the color scheme <a href="https://github.com/chriskempson/tomorrow-theme" title="Tomorrow Theme">Tomorrow Theme</a> and the plugins <a href="http://wbond.net/sublime_packages/alignment/" title="Alignment">Alignment</a> and <a href="http://wbond.net/sublime_packages/prefixr" title="Prefixr">Prefixr</a>. The site uses <a href="http://www.google.com/webfonts/specimen/Cabin" title="Cabin">Cabin</a> for the headings and <a href="http://www.google.com/webfonts/specimen/Vollkorn" title="Vollkorn">Vollkorn</a> for nearly all the other types of type. They're provided by <a href="http://www.google.com/webfonts" title="Google Webfonts">Google Webfonts</a>. The blog posts (and pages) are written in <a href="http://http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> with <a href="http://www.markdownpad.com/" title="MarkdownPad">MarkdownPad</a>. I occasionally use <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a> too, just to mix things up.</p>
+<p><a href="http://ellengummesson.com/" title="ellengummesson.com">This site</a> is powered by <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. It was built with HTML5 and CSS3 and my own grid system, <a href="/projects/begrider">Begrider</a>. The code was written by hand in <a href="http://www.sublimetext.com/" title="SublimeText 2">SublimeText 2</a> with the theme <a href="https://github.com/buymeasoda/soda-theme/" title="Soda Dark">Soda Dark</a>, the color scheme <a href="https://github.com/chriskempson/tomorrow-theme" title="Tomorrow Theme">Tomorrow Theme</a> and the plugins <a href="http://wbond.net/sublime_packages/alignment/" title="Alignment">Alignment</a> and <a href="http://wbond.net/sublime_packages/prefixr" title="Prefixr">Prefixr</a>. The site uses <a href="http://www.google.com/webfonts/specimen/Cabin" title="Cabin">Cabin</a> for the headings and <a href="http://www.google.com/webfonts/specimen/Vollkorn" title="Vollkorn">Vollkorn</a> for nearly all the other types of type. They&rsquo;re provided by <a href="http://www.google.com/webfonts" title="Google Webfonts">Google Webfonts</a>. The blog posts (and pages) are written in <a href="http://http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> with <a href="http://www.markdownpad.com/" title="MarkdownPad">MarkdownPad</a>. I occasionally use <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a> too, just to mix things up.</p>
 
 <p>That sums it up pretty nicely, and thus, the link bombing ends here.</p>
 </span>

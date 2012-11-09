@@ -6,20 +6,45 @@
           <link>http://ellengummesson.com</link>
             
               <item>
-                <title>Pop - A Minimal Approach To Digital Notetaking</title>
-                <description>&lt;p&gt;After trying Squarespace Note for a few days I decided that it wasn't really for me. Even though I feel in love with the interface I couldn't really get over the fact that I couldn't choose another folder other than the app's default to save my notes to in Dropbox. I still think it's a very competent and useful app though, but it’s just not my cup of tea. I decided to look for something else and I did find a worthy replacement: &lt;a href=&quot;http://minimaltools.com/&quot; title=&quot;Minimal Tools - Pop&quot;&gt;Pop&lt;/a&gt;.&lt;/p&gt;
+                <title>Footnotes</title>
+                <description>&lt;p&gt;Earlier today I look into some simple solution to enable support for footnotes since that&amp;rsquo;s something that regular Markdown doesn&amp;rsquo;t cover&lt;sup id=&quot;fnref:121109-1&quot;&gt;&lt;a href=&quot;#fn:121109-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. My current Markdown interpreter, &lt;a href=&quot;https://github.com/rtomayko/rdiscount&quot; title=&quot;rdiscount&quot;&gt;rdiscount&lt;/a&gt;, sadly doesn&amp;rsquo;t have any support for it but another one called &lt;a href=&quot;http://kramdown.rubyforge.org/&quot; title=&quot;kramdown&quot;&gt;kramdown&lt;/a&gt; do. I thought that maybe kramdown was going to be significantly slower&lt;sup id=&quot;fnref:121109-2&quot;&gt;&lt;a href=&quot;#fn:121109-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; but it&amp;rsquo;s actually hardly noticeable. According to the &lt;a href=&quot;http://kramdown.rubyforge.org/syntax.html&quot; title=&quot;kramdown syntax&quot;&gt;syntax&lt;/a&gt; it processes the markdown a little differently but luckily I haven&amp;rsquo;t noticed any changes, since I was worried for a while that I&amp;rsquo;d had to edit some posts. I did however had to add some thing in my CSS so that the footnotes didn&amp;rsquo;t look to out of place, but since the markup consists of some attribute selectors that didn&amp;rsquo;t turn out to be a big hassle either.&lt;/p&gt;
 
-&lt;h2&gt;Pop&lt;/h2&gt;
+&lt;p&gt;So to wrap this short post up, if you&amp;rsquo;re looking for a pretty fast markdown interpreter for Jekyll that has some additional features you should definitively try out kramdown.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:121109-1&quot;&gt;
+      &lt;p&gt;Although forks of Markdown like &lt;a href=&quot;http://michelf.ca/projects/php-markdown/extra/&quot; title=&quot;Markdown Extra&quot;&gt;Markdown Extra&lt;/a&gt; and &lt;a href=&quot;http://fletcherpenney.net/multimarkdown/&quot; title=&quot;MultiMarkdown&quot;&gt;MultiMarkdown&lt;/a&gt; do.&lt;a href=&quot;#fnref:121109-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:121109-2&quot;&gt;
+      &lt;p&gt;kramdown is built exclusively with &lt;a href=&quot;http://en.wikipedia.org/wiki/Ruby_(programming_language)&quot; title=&quot;Ruby (Programming Language)&quot;&gt;Ruby&lt;/a&gt; while rdiscount also uses &lt;a href=&quot;http://en.wikipedia.org/wiki/C_(programming_language)&quot; title=&quot;C (Programming Language)&quot;&gt;C&lt;/a&gt;, which to my understanding makes the whole process faster.&lt;a href=&quot;#fnref:121109-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November  9, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/09/footnotes</link>
+              </item>
+            
+              <item>
+                <title>Pop - A Minimal Approach To Digital Notetaking</title>
+                <description>&lt;p&gt;After trying Squarespace Note for a few days I decided that it wasn&amp;rsquo;t really for me. Even though I feel in love with the interface I couldn&amp;rsquo;t really get over the fact that I couldn&amp;rsquo;t choose another folder other than the app&amp;rsquo;s default to save my notes to in Dropbox. I still think it&amp;rsquo;s a very competent and useful app though, but it’s just not my cup of tea. I decided to look for something else and I did find a worthy replacement: &lt;a href=&quot;http://minimaltools.com/&quot; title=&quot;Minimal Tools - Pop&quot;&gt;Pop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;pop&quot;&gt;Pop&lt;/h2&gt;
 
 &lt;p&gt;The description from &lt;a href=&quot;http://minimaltools.com/&quot; title=&quot;Minimal Tools - Pop&quot;&gt;the official website&lt;/a&gt; describes the purpose of the app perfectly:&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Pop is simply a convenient place for writing things down — that piece of paper you grab to write when you have an idea. It doesn't help you do anything smarter or more organized.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Pop is simply a convenient place for writing things down — that piece of paper you grab to write when you have an idea. It doesn&amp;rsquo;t help you do anything smarter or more organized.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;This means that's there's no integration with any other service or app whatsoever. You're only able to write down what you want to keep, and then select it all and copy it to another text editor for further editing and writing. I love that. Note was really similiar to my default text editor, &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt;, while Pop certainly isn't. I can only use one blank “canvas” to write down my ideas and thoughts. There's nothing to fiddle with. That feels quite refreshing to be honest (I actually wrote the majority of this post in said app). My handwriting is incredibly messy so it's nice to have an app that can quite frankly replace my need for an actual physical notebook.&lt;/p&gt;
+&lt;p&gt;This means that&amp;rsquo;s there&amp;rsquo;s no integration with any other service or app whatsoever. You&amp;rsquo;re only able to write down what you want to keep, and then select it all and copy it to another text editor for further editing and writing. I love that. Note was really similiar to my default text editor, &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt;, while Pop certainly isn&amp;rsquo;t. I can only use one blank “canvas” to write down my ideas and thoughts. There&amp;rsquo;s nothing to fiddle with. That feels quite refreshing to be honest (I actually wrote the majority of this post in said app). My handwriting is incredibly messy so it&amp;rsquo;s nice to have an app that can quite frankly replace my need for an actual physical notebook. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src='/images/blog/2012-11-06-pop-for-ios.png' title='Pop for iOS (with a swedish keyboard)' alt='Pop for iOS (with a swedish keyboard)'&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-06-pop-for-ios.png&quot; alt=&quot;Pop for iOS (with a swedish keyboard)&quot; title=&quot;Pop for iOS (with a swedish keyboard)&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I feel confident that Pop is going to prove itself useful for me. I'm absolutely certain that I'm going to continue to use it as a springboard for ideas, blog posts and just general thoughts. Just like how it's meant to be used, in my opinion.&lt;/p&gt;
+&lt;p&gt;I feel confident that Pop is going to prove itself useful for me. I&amp;rsquo;m absolutely certain that I&amp;rsquo;m going to continue to use it as a springboard for ideas, blog posts and just general thoughts. Just like how it&amp;rsquo;s meant to be used, in my opinion.&lt;/p&gt;
 </description>
                 <published>November  6, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking</link>
@@ -27,9 +52,9 @@
             
               <item>
                 <title>Gummesson 3.0</title>
-                <description>&lt;p&gt;If you're reading this you should've noticed that the design once again has changed. I tried to made a promise to myself that I wouldn't fiddle with the site's design for a week but obviously that didn't work out. I did find a rather stunning typeface, &lt;a href=&quot;http://www.google.com/webfonts/specimen/Tinos&quot; title=&quot;Tinos&quot;&gt;Tinos&lt;/a&gt;, and I decided to run with it while the inspiration was high. I think that it looks so much cleaner now and I've finally limited my need to change things around on the site. I'm confident that this reincarnation of it will stick around much longer than the previous ones (that shouldn't be too hard since I've had two different designs since the end of August this year).&lt;/p&gt;
+                <description>&lt;p&gt;If you&amp;rsquo;re reading this you should&amp;rsquo;ve noticed that the design once again has changed. I tried to made a promise to myself that I wouldn&amp;rsquo;t fiddle with the site&amp;rsquo;s design for a week but obviously that didn&amp;rsquo;t work out. I did find a rather stunning typeface, &lt;a href=&quot;http://www.google.com/webfonts/specimen/Tinos&quot; title=&quot;Tinos&quot;&gt;Tinos&lt;/a&gt;, and I decided to run with it while the inspiration was high. I think that it looks so much cleaner now and I&amp;rsquo;ve finally limited my need to change things around on the site. I&amp;rsquo;m confident that this reincarnation of it will stick around much longer than the previous ones (that shouldn&amp;rsquo;t be too hard since I&amp;rsquo;ve had two different designs since the end of August this year).&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;I really need to find a good monthly archives plugin for Jekyll though since the post count is getting too high to work with the current solution which just lists them all, but that's a different story.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I really need to find a good monthly archives plugin for Jekyll though since the post count is getting too high to work with the current solution which just lists them all, but that&amp;rsquo;s a different story.&lt;/em&gt;&lt;/p&gt;
 </description>
                 <published>November  4, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/04/gummesson-three-point-zero</link>
@@ -37,7 +62,7 @@
             
               <item>
                 <title>Fiddling</title>
-                <description>&lt;p&gt;I find it a bit funny that since I posted my last blog post with my little ramble about redesigning I've fiddled around about ten times with different elements  on this site. Now my goal is to not do it for atleast a couple of days. That shouldn't be too hard I hope. I really do need to clean up the code though...&lt;/p&gt;
+                <description>&lt;p&gt;I find it a bit funny that since I posted my last blog post with my little ramble about redesigning I&amp;rsquo;ve fiddled around about ten times with different elements  on this site. Now my goal is to not do it for atleast a couple of days. That shouldn&amp;rsquo;t be too hard I hope. I really do need to clean up the code though&amp;hellip;&lt;/p&gt;
 </description>
                 <published>November  2, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/02/fiddling</link>
@@ -45,42 +70,10 @@
             
               <item>
                 <title>To Re-Redesign Or Not</title>
-                <description>&lt;p&gt;I've been thinking a lot lately about yet again redesigning this site. I've changed quite a few annonyances I've had since launching the new design back in September but I'm still not fully content with it. I guess that's the way it is when you constantly pick up new things from other sites and blogs that you regularly go to. I have a tendency to get extremely tired at looking at the same thing for longer periods of time too. I think that's why I've been tinkering so much with my current design. If I could I'd probably change the site every month, but that's an impossible feat since I'm not a designer at all. I rarely get by in that department. But still I feel a need to strive for something more aesthetically pleasing. Or maybe I just care too much and should just let it be. I don't know.&lt;/p&gt;
+                <description>&lt;p&gt;I&amp;rsquo;ve been thinking a lot lately about yet again redesigning this site. I&amp;rsquo;ve changed quite a few annonyances I&amp;rsquo;ve had since launching the new design back in September but I&amp;rsquo;m still not fully content with it. I guess that&amp;rsquo;s the way it is when you constantly pick up new things from other sites and blogs that you regularly go to. I have a tendency to get extremely tired at looking at the same thing for longer periods of time too. I think that&amp;rsquo;s why I&amp;rsquo;ve been tinkering so much with my current design. If I could I&amp;rsquo;d probably change the site every month, but that&amp;rsquo;s an impossible feat since I&amp;rsquo;m not a designer at all. I rarely get by in that department. But still I feel a need to strive for something more aesthetically pleasing. Or maybe I just care too much and should just let it be. I don&amp;rsquo;t know.&lt;/p&gt;
 </description>
                 <published>October 31, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/10/31/to-re-redesign-or-not</link>
-              </item>
-            
-              <item>
-                <title>Hotstrings And Markdown</title>
-                <description>&lt;p&gt;Since yesterday I've been messing around with an small but powerful app called &lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt;. I guess you can call it a poor man's &lt;a href=&quot;http://smilesoftware.com/TextExpander/index.html&quot; title=&quot;TextExpander&quot;&gt;TextExpander&lt;/a&gt;, but the fact is that it's capable of doing much more. Not only does it support text expansions for abbreviations but you can also create scripts with so called hotkeys and other things for anything and everything. When I say everything I do mean it. The learning curve is pretty steep for the more advanced functions since there's no GUI for it but for creating some simple text expansions it's as easy as scripting gets. The &lt;a href=&quot;http://www.autohotkey.com/docs/&quot; title=&quot;AutoHotKey Documentation&quot;&gt;documentation&lt;/a&gt; is really great too if you want to dive in deeper.&lt;/p&gt;
-
-&lt;h2&gt;Abbreviate All The Things&lt;/h2&gt;
-
-&lt;p&gt;One of the strengths of an app like this is that it works great for repetitive writing tasks like phone numbers, email adresses and signatures. Instead of having to repeat essentially the same phrase several times a day you just write a simple keyword and it'll automatically transform into the right thing. Since it's as just a script it works universally across all of your apps too, which is another thing that's great. I can use the same abbreviations whether I'm surfing the web in Chrome or writing a blog post in FocusWriter or ResophNotes.&lt;/p&gt;
-
-&lt;p&gt;The basic structure of a simple text expansion script/hotstring looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:oc:abbreviation::expanded text
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; the &lt;code&gt;oc&lt;/code&gt; in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.&lt;/p&gt;
-
-&lt;h3&gt;Markdown Automation&lt;/h3&gt;
-
-&lt;p&gt;Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like &lt;code&gt;[]&lt;/code&gt; and &lt;code&gt;()&lt;/code&gt;. Instead of having to type out all of the characters when I want to create link I only have to type &lt;code&gt;.mdlnk&lt;/code&gt; thanks to this simple hotstring:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:oc:.mdlnk::[]({&quot;}{&quot;})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After a simple hit on the spacebar the &lt;code&gt;.mdlnk&lt;/code&gt; transforms into &lt;code&gt;[](&quot;&quot;)&lt;/code&gt; (the quotation marks, along with a couple of other characters, has to be wrapped inside curly brackets in order to show since they're used in the real syntax). Instead of having to fiddle with it I can easily paste the link in it and move on which works much better as you can imagine. I've also created similar hotstrings for many other things such as images (&lt;code&gt;.mdimg&lt;/code&gt;) and referenced-styled links (&lt;code&gt;.mdrefi&lt;/code&gt; and &lt;code&gt;.mdrefl&lt;/code&gt;), although I rarely use those.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Another side note:&lt;/strong&gt; since I'm new to this whole scripting thing there's no doubt at all that they could be more advanced and help even further with a more automated writing workflow but I haven't had time to learn that just yet. I could probably expand the above link script to actually add a link from the clipboard directly into it which I'm going to do once I have the time to sit down and figure it out.&lt;/p&gt;
-
-&lt;p&gt;So to wrap things up, if you want to speed up your repetitive writing then AutoHotKey is definitively it. Don't let the lack of a fancy GUI scare you off. If I can make it work, you can too.&lt;/p&gt;
-</description>
-                <published>October 29, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/10/29/hotstrings-and-markdown</link>
               </item>
             
     </channel>

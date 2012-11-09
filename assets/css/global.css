@@ -11,6 +11,7 @@
       - Sizes
       - Alignment
       - Links
+      - Footnotes
       - Quotes
       - Code
     + Margins
@@ -79,6 +80,10 @@ html {
     margin-bottom: 3em;
   }
 
+  .comments {
+    margin-top: 3em;
+  }
+
 /*================
     Typography
 ================*/
@@ -133,7 +138,7 @@ strong, .strong {
 
 hr, .hr {
   width           : 40%;
-  height          : 0.1em;
+  height          : 2px;
   background-color: #ccc;
   border          : none;
 }
@@ -189,8 +194,33 @@ a:active {
     padding-bottom: 2px;
   }
 
-  .mini a {
+  .mini a,
+  .footnotes a {
     padding-bottom: 1px;
+  }
+
+/* Footnotes */
+
+sup {
+  vertical-align: super;
+  line-height   : 0;
+}
+
+.footnotes {
+  font-size: 0.75em;
+}
+
+  .footnotes li p {
+    margin-bottom: 0;
+  }
+
+a[rel="footnote"],
+a[rel="reference"] {
+  border-bottom: 1px solid transparent;
+}
+
+  a[rel="footnote"] {
+    font-size: 0.625em;
   }
 
 /* Quotes */
@@ -263,11 +293,13 @@ hr, .hr  {
 ===========*/
 
 ol {
-  list-style: decimal inside;
+  list-style : decimal;
+  margin-left: 1.25em;
 }
 
 ul {
-  list-style: square inside;
+  list-style : square;
+  margin-left: 0.9em;
 }
 
   ul ul,
@@ -282,6 +314,13 @@ ul {
 /*================
     Navigation
 ================*/
+
+.nav,
+.menu,
+.list-hz,
+.list-none {
+  margin-left: 0;
+}
 
 .nav li,
 .list-hz li {
@@ -348,16 +387,9 @@ img {
     font-size: 112.5%;
   }
 
-  .branding,
-  .content {
-    margin-top: 1.5em;
-  }
-
-  .post,
-  .page,
-  .pagination {
-    margin-bottom: 2em;
-  }
+    .footnotes li p {
+      margin-bottom: 0.25em;
+    }
 
 }
 
@@ -371,9 +403,9 @@ img {
     padding-bottom: 2px;
   }
 
-  .menu li {
-    margin-right: 1em;
-  }
+    .menu li {
+      margin-right: 1em;
+    }
 
 }
 
@@ -386,5 +418,9 @@ img {
   .container {
     width: 90%;
   }
+
+    .footnotes li p {
+      margin-bottom: 0.35em;
+    }
 
 }
