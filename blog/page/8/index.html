@@ -144,6 +144,7 @@
     <span class="justified"><p>As some of you may know, I&rsquo;ve built my own grid system with the world&rsquo;s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you&rsquo;d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I&rsquo;ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
 
 <h2 id="the-solution">The Solution</h2>
+
 <p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
 
 <pre><code>[class^="col-"]:last-child {
@@ -186,6 +187,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 </code></pre>
 
 <h3 id="liquid-tag">Liquid Tag</h3>
+
 <p>Remove the space before and after the percentage signs.</p>
 
 <pre><code>{ % vimeo 12345678 % }
@@ -201,6 +203,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
     <span class="justified"><p>Continuing with my Jekyll series, here&rsquo;s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
 
 <h2 id="pagination">Pagination</h2>
+
 <p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it&rsquo;s strictly not a plugin, I had to make a small configuration in Jekyll&rsquo;s <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll&rsquo;s library directory and placed it in the _plugins folder and changed the following line from this:</p>
 
 <pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")
@@ -214,18 +217,23 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <p>To my suprise, it actually worked! Like I said earlier, I guess it doesn&rsquo;t really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
 
 <h2 id="tags">Tags</h2>
+
 <p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/" title="Tags In Jekyll">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
 
 <h2 id="rss-feed">RSS Feed</h2>
+
 <p>I followed and used the guidelines from Snaptortoise&rsquo;s <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
 
 <h2 id="sitemap">Sitemap</h2>
+
 <p>I use Mike Levin&rsquo;s <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It&rsquo;s maybe not the the most required function ever, but I like to have it.</p>
 
 <h2 id="images">Images</h2>
+
 <p>For an easy image implementation I used Scott Parker&rsquo;s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it&rsquo;s probably not suitable if you&rsquo;re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
 
 <h2 id="youtube">Youtube</h2>
+
 <p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won&rsquo;t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 </span>
 </article>
@@ -240,6 +248,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I&rsquo;ve seen it being mentioned almost daily for quite a while. I didn&rsquo;t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it&rsquo;s still readable. I&rsquo;ve tried a few plugins that enables automatic highlighting, but I haven&rsquo;t come across one that I really love. I also had remove nearly all of my comments in the code but I&rsquo;m sure it&rsquo;s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
 
 <h2 id="variablesscss">_variables.scss</h2>
+
 <p>Like I said earlier, the variable part in Sass is really awesome. I created a separate file called <code>variables.scss</code> (Sass&rsquo; default file extension) where I defined them all for better control and easier editing. Adding an underscore before a file name stops your file from get rendered into a <code>.css</code> file, which is useful since you probably don&rsquo;t want all of your <code>.scss</code> files to become regular <code>.css</code> files.</p>
 
 <pre><code>// Default / Body
@@ -268,6 +277,7 @@ $default-margin: 1.5em;
 <p>I focused on just a few selectors (body, headings and links), but this could be expanded to include a lot more.</p>
 
 <h2 id="screenscss">screen.scss</h2>
+
 <p>In the <code>screen.scss</code> is where the magic happens, so to speak. That&rsquo;s where I imported all of my variables that I defined in <code>variables.scss</code> and placed them in selectors with properties.</p>
 
 <pre><code>@import "_variables.scss";
@@ -331,6 +341,7 @@ a:hover, a:focus {
 <p>I think it&rsquo;s really cool that you can use basic math with variables so that you can create other values by only using one variable as a base point. Just change it and all the calculations will be rendered automatically.</p>
 
 <h2 id="screencss">screen.css</h2>
+
 <p>This is the final result after Compass was done with the compiling:
     /* Body */
     body {
