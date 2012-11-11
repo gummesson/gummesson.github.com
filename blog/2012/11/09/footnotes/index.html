@@ -11,7 +11,7 @@
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / Sitemap">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
   <link rel="stylesheet" href="/assets/css/global.css" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Oswald:400|Asap:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="/assets/icons/favicon.png" type="img/png">
   <!--[if lt IE 9]>
@@ -35,7 +35,7 @@
     <h1>Footnotes</h1>
   
     <p class="small centered italic">Posted on November  9, 2012  in  <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a></p>
-    <span class="justified"><p>Earlier today I look into some simple solution to enable support for footnotes since that&rsquo;s something that regular Markdown doesn&rsquo;t cover<sup id="fnref:121109-1"><a href="#fn:121109-1" rel="footnote">1</a></sup>. My current Markdown interpreter, <a href="https://github.com/rtomayko/rdiscount" title="rdiscount">rdiscount</a>, sadly doesn&rsquo;t have any support for it but another one called <a href="http://kramdown.rubyforge.org/" title="kramdown">kramdown</a> do. I thought that maybe kramdown was going to be significantly slower<sup id="fnref:121109-2"><a href="#fn:121109-2" rel="footnote">2</a></sup> but it&rsquo;s actually hardly noticeable. According to the <a href="http://kramdown.rubyforge.org/syntax.html" title="kramdown syntax">syntax</a> it processes the markdown a little differently but luckily I haven&rsquo;t noticed any changes, since I was worried for a while that I&rsquo;d had to edit some posts. I did however had to add some thing in my CSS so that the footnotes didn&rsquo;t look to out of place, but since the markup consists of some attribute selectors that didn&rsquo;t turn out to be a big hassle either.</p>
+    <span class="justified"><p>Earlier today I look into some simple solution to enable support for footnotes since that&rsquo;s something that regular Markdown doesn&rsquo;t cover<sup id="fnref:20121109-1"><a href="#fn:20121109-1" rel="footnote">1</a></sup>. My current Markdown interpreter, <a href="https://github.com/rtomayko/rdiscount" title="rdiscount">rdiscount</a>, sadly doesn&rsquo;t have any support for it but another one called <a href="http://kramdown.rubyforge.org/" title="kramdown">kramdown</a> do. I thought that maybe kramdown was going to be significantly slower<sup id="fnref:20121109-2"><a href="#fn:20121109-2" rel="footnote">2</a></sup> but it&rsquo;s actually hardly noticeable. According to the <a href="http://kramdown.rubyforge.org/syntax.html" title="kramdown syntax">syntax</a> it processes the markdown a little differently but luckily I haven&rsquo;t noticed any changes, since I was worried for a while that I&rsquo;d had to edit some posts. I did however had to add some thing in my CSS so that the footnotes didn&rsquo;t look to out of place, but since the markup consists of some attribute selectors that didn&rsquo;t turn out to be a big hassle either.</p>
 
 <p>So to wrap this short post up, if you&rsquo;re looking for a pretty fast markdown interpreter for Jekyll that has some additional features you should definitively try out kramdown.</p>
 
@@ -43,11 +43,11 @@
 
 <div class="footnotes">
   <ol>
-    <li id="fn:121109-1">
-      <p>Although forks of Markdown like <a href="http://michelf.ca/projects/php-markdown/extra/" title="Markdown Extra">Markdown Extra</a> and <a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">MultiMarkdown</a> do.<a href="#fnref:121109-1" rel="reference">&#8617;</a></p>
+    <li id="fn:20121109-1">
+      <p>Although forks of Markdown like <a href="http://michelf.ca/projects/php-markdown/extra/" title="Markdown Extra">Markdown Extra</a> and <a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">MultiMarkdown</a> do.<a href="#fnref:20121109-1" rel="reference">&#8617;</a></p>
     </li>
-    <li id="fn:121109-2">
-      <p>kramdown is built exclusively with <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (Programming Language)">Ruby</a> while rdiscount also uses <a href="http://en.wikipedia.org/wiki/C_(programming_language)" title="C (Programming Language)">C</a>, which to my understanding makes the whole process faster.<a href="#fnref:121109-2" rel="reference">&#8617;</a></p>
+    <li id="fn:20121109-2">
+      <p>kramdown is built exclusively with <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (Programming Language)">Ruby</a> while rdiscount also uses <a href="http://en.wikipedia.org/wiki/C_(programming_language)" title="C (Programming Language)">C</a>, which to my understanding makes the whole process faster.<a href="#fnref:20121109-2" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>

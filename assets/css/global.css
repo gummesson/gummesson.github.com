@@ -165,6 +165,10 @@ h1, h2, h3, h4, h5, h6,
   text-align: justify;
 }
 
+.left {
+  text-align: left;
+}
+
 /* Links */
 
 a {
@@ -216,6 +220,7 @@ sup {
 
 a[rel="footnote"],
 a[rel="reference"] {
+  margin-left  : 0.15em;
   border-bottom: 1px solid transparent;
 }
 
