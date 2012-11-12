@@ -7,8 +7,8 @@
     + Structure
     + Typography
       - Headings
-      - Annotations
       - Sizes
+      - Annotations
       - Alignment
       - Links
       - Footnotes
@@ -123,11 +123,22 @@ h6, .zeta {
   font-size: 1em;
 }
 
-/* Annontations */
+/* Sizes */
+
+small, .small {
+  font-size: 0.875em;
+}
+
+.mini,
+.footnotes {
+  font-size: 0.75em;
+}
+
+/* Annotations */
 
 i, .italic,
 em, .em,
-h1, h2, h3, h4, h5, h6 {
+.footnotes {
   font-style: italic;
 }
 
@@ -138,26 +149,15 @@ strong, .strong {
 
 hr, .hr {
   width           : 40%;
-  height          : 2px;
+  height          : 1px;
   background-color: #ccc;
   border          : none;
-}
-
-/* Sizes */
-
-small, .small {
-  font-size: 0.875em;
-}
-
-.mini {
-  font-size: 0.75em;
 }
 
 /* Alignments */
 
 .centered,
-h1, h2, h3, h4, h5, h6,
-.self {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
@@ -208,10 +208,6 @@ a:active {
 sup {
   vertical-align: super;
   line-height   : 0;
-}
-
-.footnotes {
-  font-size: 0.75em;
 }
 
   .footnotes li p {
@@ -316,16 +312,15 @@ ul {
   list-style: none;
 }
 
-/*================
-    Navigation
-================*/
-
 .nav,
-.menu,
 .list-hz,
 .list-none {
   margin-left: 0;
 }
+
+/*================
+    Navigation
+================*/
 
 .nav li,
 .list-hz li {
@@ -404,7 +399,10 @@ img {
     font-size: 87.5%;
   }
 
-  a {
+  a,
+  .small a,
+  .mini a,
+  .footnotes a {
     padding-bottom: 2px;
   }
 
@@ -422,6 +420,10 @@ img {
 
   .container {
     width: 90%;
+  }
+
+  .menu {
+    margin-top: 0.5em;
   }
 
     .footnotes li p {
