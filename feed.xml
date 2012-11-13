@@ -6,6 +6,28 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Onword - A Distraction Free Writing App On The Web</title>
+                <description>&lt;p&gt;Just a few days ago I stumbled upon a new web based writing app by &lt;a href=&quot;http://www.daneden.me/&quot; title=&quot;Dan Eden&quot;&gt;Dan Eden&lt;/a&gt; called &lt;a href=&quot;http://onword.co/&quot; title=&quot;Onword&quot;&gt;Onword&lt;/a&gt;. It&amp;rsquo;s incredibly simple to use: you only need to sign in with your Twitter account &lt;sup id=&quot;fnref:20121113-1&quot;&gt;&lt;a href=&quot;#fn:20121113-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, create a new document and you&amp;rsquo;re good to go. I really like the interface&amp;rsquo;s straightforward, no-nonsense approach, and according to the developer it&amp;rsquo;s best used with Markdown which is another big plus for me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-13-onword-app.png&quot; alt=&quot;Onword&quot; title=&quot;Onword&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, right now there&amp;rsquo;s no way to make your documents private. Anyone can access them by guessing the random assigned numbers after the base URL.  The ability to make documents private is being developed though. I think it&amp;rsquo;s great that you can actually create public viewable documents, like when you want to share something you&amp;rsquo;ve written the doesn&amp;rsquo;t really fit on your blog for example. In all honesty I think that Onword is the finest web-based writing app I&amp;rsquo;ve come across and I&amp;rsquo;ll make sure to use it when I feel the urge and need to do so.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121113-1&quot;&gt;
+      &lt;p&gt;The app uses it to associate your documents with your account.&lt;a href=&quot;#fnref:20121113-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November 13, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/13/onword-a-distraction-free-writing-app-on-the-web</link>
+              </item>
+            
+              <item>
                 <title>Viva La Archives</title>
                 <description>&lt;p&gt;I&amp;rsquo;ve been meaning to change the &lt;a href=&quot;/archives&quot; title=&quot;Archives&quot;&gt;archives&lt;/a&gt; for a long time since having all the posts in a single list doesn&amp;rsquo;t look that great and can become quite messy after awhile. Thanks to the magic wonders of Google I found a a really neat solution: a small plugin&lt;sup id=&quot;fnref:20121111-1&quot;&gt;&lt;a href=&quot;#fn:20121111-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; that sorts your posts by month and year. It goes through all your posts and just generates a simple single &lt;code&gt;archives.html&lt;/code&gt; page which is exactly want I wanted. It amazes me that people actually takes time and just write code that&amp;rsquo;ll help someone like me tremendously. I&amp;rsquo;m extremely thankful for that.&lt;/p&gt;
 
@@ -24,7 +46,7 @@
               </item>
             
               <item>
-                <title>Markdown Hostrings (for AutoHotKey)</title>
+                <title>Markdown Hostrings (For AutoHotKey)</title>
                 <description>&lt;p&gt;Around a week ago &lt;a href=&quot;/blog/2012/10/29/hotstrings-and-markdown/&quot; title=&quot;Hostring And Markdown&quot;&gt;I wrote about AutoHotKey&lt;/a&gt; and how it could be used when it came to more general things like using abbreviations for your name or website in order to speed up your writing. I also wrote a bit about how to use it to make your markdown writing even faster. I finally sat down and played around with different ways to create more efficient scripts and came up with a couple of new things. I also figured out how to move the cursor&amp;rsquo;s position so you can start typing right away instead of having to manually move it&lt;sup id=&quot;fnref:20121110-1&quot;&gt;&lt;a href=&quot;#fn:20121110-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I put them up for download on &lt;a href=&quot;https://github.com/gummesson&quot; title=&quot;My Github page&quot;&gt;my GitHub page&lt;/a&gt; so if you&amp;rsquo;re looking for something like that go ahead and use it and feel free to adjust it to your liking.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -84,16 +106,6 @@
 </description>
                 <published>November  6, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking</link>
-              </item>
-            
-              <item>
-                <title>Gummesson 3.0</title>
-                <description>&lt;p&gt;If you&amp;rsquo;re reading this you should&amp;rsquo;ve noticed that the design once again has changed. I tried to made a promise to myself that I wouldn&amp;rsquo;t fiddle with the site&amp;rsquo;s design for a week but obviously that didn&amp;rsquo;t work out. I did find a rather stunning typeface, &lt;a href=&quot;http://www.google.com/webfonts/specimen/Tinos&quot; title=&quot;Tinos&quot;&gt;Tinos&lt;/a&gt;, and I decided to run with it while the inspiration was high. I think that it looks so much cleaner now and I&amp;rsquo;ve finally limited my need to change things around on the site. I&amp;rsquo;m confident that this reincarnation of it will stick around much longer than the previous ones (that shouldn&amp;rsquo;t be too hard since I&amp;rsquo;ve had two different designs since the end of August this year).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I really need to find a good monthly archives plugin for Jekyll though since the post count is getting too high to work with the current solution which just lists them all, but that&amp;rsquo;s a different story.&lt;/em&gt;&lt;/p&gt;
-</description>
-                <published>November  4, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/04/gummesson-three-point-zero</link>
               </item>
             
     </channel>
