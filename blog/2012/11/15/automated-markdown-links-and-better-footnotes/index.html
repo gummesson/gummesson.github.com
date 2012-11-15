@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Stumbling Upon A Good Solution / Ellen Gummesson</title>
+  <title>Automated Markdown Links And Better Footnotes / Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random Ramblings, Overall Geekiness And Other Musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -33,23 +33,61 @@
       <div class="content">
         <article class="post">
   
-    <h1>Stumbling Upon A Good Solution</h1>
+    <h1>Automated Markdown Links And Better Footnotes</h1>
   
-    <p class="small centered italic">Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a></p>
-    <span class="justified"><p>As some of you may know, I&rsquo;ve built my own grid system with the world&rsquo;s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you&rsquo;d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I&rsquo;ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
+    <p class="small centered italic">Posted on November 15, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a></p>
+    <span class="justified"><p>I&rsquo;ve finally updated <a href="https://github.com/gummesson/markdown-hotstrings" title="Markdown Hotstrings on GitHub">my Markdown Hostrings repo</a> I wrote about earlier with a couple of new things that I came up with after some tinkering. I&rsquo;ve tried them and they&rsquo;ve been really helpful for me, so I hope that somebody will also find them useful.</p>
 
-<h2 id="the-solution">The Solution</h2>
+<h2 id="automated-links">Automated Links</h2>
 
-<p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
+<p>I finally figured out how to paste an URL from the clipboard directly into a Markdown-formatted link. I&rsquo;ve looked and looked around the web but I felt that all the solutions I found were a bit to &ldquo;complicated&rdquo; for such a basic thing. I figured that a simple script for copying and pasting an URL into a simple text string surely wouldn&rsquo;t need 7-10 lines of code? For once, my instincts were right. Here&rsquo;s the hotstring in just three lines of code:</p>
 
-<pre><code>[class^="col-"]:last-child {
-  margin-right: 0;
+<pre><code>:oc:.plk::
+{ 
+url = %clipboard%
+SendInput [](%url% {"}{"}){Home}{Right}
+Return
 }
 </code></pre>
 
-<p>It worked! I know that I always sound suprised when something I&rsquo;ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it&rsquo;s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don&rsquo;t (IE8 isn&rsquo;t too fond of the :last-child thing). I think I&rsquo;m going to leave the <code>.last</code> class in the code, just so there&rsquo;s an option to use it. </p>
+<p>Which is going to output something like this when you type <code>.plk</code><sup id="fnref:20121115-1"><a href="#fn:20121115-1" rel="footnote">1</a></sup>:</p>
 
-<p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
+<pre><code>[](http://www.website.com/ "")
+</code></pre>
+
+<p>In theory the <code>url = %clipboard%</code> line is unnecessary, but I&rsquo;ve had trouble with getting the <code>%clipboard%</code> to work properly a few times So I decided to leave it in the script. I also kind of like the look of it. It&rsquo;s worth to note that the above hotstring just copies and pastes whatever&rsquo;s in your clipboard so you have to make sure that you&rsquo;ve copied the URL before you use it.</p>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>Another thing I came up with was a hotstring for creating better reference numbers for footnotes. If you&rsquo;re planning on using footnotes extensively you can&rsquo;t just write something like <code>[^1]</code> since it&rsquo;ll just add the exact number you use, ie: 1. That means that if you&rsquo;re using several of those on the same page it&rsquo;ll get messy, so I threw together a simple script that adds the date inside a footnote:</p>
+
+<pre><code>:oc:.fndi::
+{ 
+FormatTime, date,, yyyyMdd
+SendInput [{^}%date%-]{Left}
+Return
+}
+</code></pre>
+
+<p>Which outputs something like this when you type <code>.fndi</code><sup id="fnref:20121115-2"><a href="#fn:20121115-2" rel="footnote">2</a></sup>:</p>
+
+<pre><code>[^20121115-]
+</code></pre>
+
+<p>You do have to add the footnote number yourself, but that&rsquo;s not too much of a hassle. It&rsquo;ll obviously won&rsquo;t work that great if you&rsquo;re publishing several posts a day, but it could be easily modified to add hours, minutes and seconds to it and so on.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121115-1">
+      <p>The cursor will be placed inside the square brackets.<a href="#fnref:20121115-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121115-2">
+      <p>The cursor will be placed after the hyphen.<a href="#fnref:20121115-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 </span><!-- .justified -->
 
   <section class="comments">

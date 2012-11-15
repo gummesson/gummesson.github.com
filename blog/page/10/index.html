@@ -6,6 +6,7 @@
     <meta name="description" content="Ellen Gummesson - Random Ramblings, Overall Geekiness And Other Musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
+    <link rel="me" href="https://plus.google.com/u/0/108569513108478415869/">
   <link rel="canonical" href="http://ellengummesson.com/">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / RSS Feed">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings / Sitemap">
@@ -31,6 +32,54 @@
     </header><!-- .branding -->
       <div class="content">
         
+  <article class="post">
+  
+    <h1><a href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit And Jekyll" title="Windows 7, Ruby, DevKit And Jekyll">Windows 7, Ruby, DevKit And Jekyll</a></h1>
+    <p class="small centered italic">Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  </p><!-- .small -centered .italic -->
+  
+    <span class="justified"><p>To tell you the truth, I wasn&rsquo;t that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn&rsquo;t really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
+
+<h2 id="installing-ruby">Installing Ruby</h2>
+
+<ul>
+  <li>Go to <a href="http://rubyinstaller.org/" title="Ruby Installer for Windows">RubyInstaller</a> and download the latest version.</li>
+  <li>Run the installer.</li>
+</ul>
+
+<p><strong>Note:</strong> It&rsquo;s really important that you install it in a directory without a space in it&rsquo;s path as stated in the installer, eg: <code>C:\ProgrammingLanguages\Ruby</code> and NOT <code>C:\Program Files\Ruby</code>, for example. Trust me.</p>
+
+<h2 id="installing-devkit">Installing DevKit</h2>
+
+<ul>
+  <li>Run the DevKit Installer and extract it to your desired directory.</li>
+  <li>Open up the command line and type <code>cd</code> + the path to the directory were you installed DevKit, eg: <code>cd C:\ProgrammingLanguages\DevKit</code>.</li>
+  <li>Type <code>ruby dk.rb init</code> to intialize the setup.</li>
+  <li>Type <code>ruby dk.rb review</code> to check if DevKit has found your Ruby directory.</li>
+  <li>Type <code>ruby dk.rb install</code> to install it.</li>
+</ul>
+
+<p><strong>Note:</strong> I usually just search for &ldquo;cmd&rdquo; in the start menu search bar to open the command line.</p>
+
+<h2 id="installing-jekyll">Installing Jekyll</h2>
+
+<ul>
+  <li>Type <code>gem install jekyll</code> in the command line.</li>
+</ul>
+
+<h2 id="running-jekyll">Running Jekyll</h2>
+
+<p>After you&rsquo;re done with creating your site with template and liquid tags (hit the <a href="https://github.com/mojombo/jekyll/wiki" title="Jekyll wiki">wiki</a> to check them out), do the following:</p>
+
+<ul>
+  <li>Open up the command line and type <code>cd</code> + the path to the directory were you&rsquo;ve saved your site, eg: <code>cd C:\User\MySite</code>.</li>
+  <li>Type <code>jekyll --server</code> in the cmd.</li>
+  <li>Type out <code>localhost:4000</code> in your browser to see your site.</li>
+</ul>
+
+<p><strong>Note:</strong> You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
+</span><!-- .justified -->
+</article><!-- .post -->
+
   <article class="post">
   
     <h1><a href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" alt="WordPress To GetSimple To Jekyll" title="WordPress To GetSimple To Jekyll">WordPress To GetSimple To Jekyll</a></h1>

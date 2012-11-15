@@ -6,12 +6,71 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Automated Markdown Links And Better Footnotes</title>
+                <description>&lt;p&gt;I&amp;rsquo;ve finally updated &lt;a href=&quot;https://github.com/gummesson/markdown-hotstrings&quot; title=&quot;Markdown Hotstrings on GitHub&quot;&gt;my Markdown Hostrings repo&lt;/a&gt; I wrote about earlier with a couple of new things that I came up with after some tinkering. I&amp;rsquo;ve tried them and they&amp;rsquo;ve been really helpful for me, so I hope that somebody will also find them useful.&lt;/p&gt;
+
+&lt;h2 id=&quot;automated-links&quot;&gt;Automated Links&lt;/h2&gt;
+
+&lt;p&gt;I finally figured out how to paste an URL from the clipboard directly into a Markdown-formatted link. I&amp;rsquo;ve looked and looked around the web but I felt that all the solutions I found were a bit to &amp;ldquo;complicated&amp;rdquo; for such a basic thing. I figured that a simple script for copying and pasting an URL into a simple text string surely wouldn&amp;rsquo;t need 7-10 lines of code? For once, my instincts were right. Here&amp;rsquo;s the hotstring in just three lines of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:oc:.plk::
+{ 
+url = %clipboard%
+SendInput [](%url% {&quot;}{&quot;}){Home}{Right}
+Return
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which is going to output something like this when you type &lt;code&gt;.plk&lt;/code&gt;&lt;sup id=&quot;fnref:20121115-1&quot;&gt;&lt;a href=&quot;#fn:20121115-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[](http://www.website.com/ &quot;&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In theory the &lt;code&gt;url = %clipboard%&lt;/code&gt; line is unnecessary, but I&amp;rsquo;ve had trouble with getting the &lt;code&gt;%clipboard%&lt;/code&gt; to work properly a few times So I decided to leave it in the script. I also kind of like the look of it. It&amp;rsquo;s worth to note that the above hotstring just copies and pastes whatever&amp;rsquo;s in your clipboard so you have to make sure that you&amp;rsquo;ve copied the URL before you use it.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;Another thing I came up with was a hotstring for creating better reference numbers for footnotes. If you&amp;rsquo;re planning on using footnotes extensively you can&amp;rsquo;t just write something like &lt;code&gt;[^1]&lt;/code&gt; since it&amp;rsquo;ll just add the exact number you use, ie: 1. That means that if you&amp;rsquo;re using several of those on the same page it&amp;rsquo;ll get messy, so I threw together a simple script that adds the date inside a footnote:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:oc:.fndi::
+{ 
+FormatTime, date,, yyyyMdd
+SendInput [{^}%date%-]{Left}
+Return
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which outputs something like this when you type &lt;code&gt;.fndi&lt;/code&gt;&lt;sup id=&quot;fnref:20121115-2&quot;&gt;&lt;a href=&quot;#fn:20121115-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[^20121115-]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You do have to add the footnote number yourself, but that&amp;rsquo;s not too much of a hassle. It&amp;rsquo;ll obviously won&amp;rsquo;t work that great if you&amp;rsquo;re publishing several posts a day, but it could be easily modified to add hours, minutes and seconds to it and so on.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121115-1&quot;&gt;
+      &lt;p&gt;The cursor will be placed inside the square brackets.&lt;a href=&quot;#fnref:20121115-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121115-2&quot;&gt;
+      &lt;p&gt;The cursor will be placed after the hyphen.&lt;a href=&quot;#fnref:20121115-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November 15, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/15/automated-markdown-links-and-better-footnotes</link>
+              </item>
+            
+              <item>
                 <title>Onword - A Distraction Free Writing App On The Web</title>
                 <description>&lt;p&gt;Just a few days ago I stumbled upon a new web based writing app by &lt;a href=&quot;http://www.daneden.me/&quot; title=&quot;Dan Eden&quot;&gt;Dan Eden&lt;/a&gt; called &lt;a href=&quot;http://onword.co/&quot; title=&quot;Onword&quot;&gt;Onword&lt;/a&gt;. It&amp;rsquo;s incredibly simple to use: you only need to sign in with your Twitter account &lt;sup id=&quot;fnref:20121113-1&quot;&gt;&lt;a href=&quot;#fn:20121113-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, create a new document and you&amp;rsquo;re good to go. I really like the interface&amp;rsquo;s straightforward, no-nonsense approach, and according to the developer it&amp;rsquo;s best used with Markdown which is another big plus for me.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-13-onword-app.png&quot; alt=&quot;Onword&quot; title=&quot;Onword&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;However, right now there&amp;rsquo;s no way to make your documents private. Anyone can access them by guessing the random assigned numbers after the base URL.  The ability to make documents private is being developed though. I think it&amp;rsquo;s great that you can actually create public viewable documents, like when you want to share something you&amp;rsquo;ve written the doesn&amp;rsquo;t really fit on your blog for example. In all honesty I think that Onword is the finest web-based writing app I&amp;rsquo;ve come across and I&amp;rsquo;ll make sure to use it when I feel the urge and need to do so.&lt;/p&gt;
+&lt;p&gt;However, right now there&amp;rsquo;s no way to make your documents private. Anyone can access them by guessing the random assigned numbers after the base URL. The ability to make documents private is being developed though. I think it&amp;rsquo;s great that you can actually create public viewable documents, like when you want to share something you&amp;rsquo;ve written the doesn&amp;rsquo;t really fit on your blog for example. In all honesty I think that Onword is the finest web-based writing app I&amp;rsquo;ve come across and I&amp;rsquo;ll make sure to use it when I feel the urge and need to do so.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -84,28 +143,6 @@
 </description>
                 <published>November  9, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/09/footnotes</link>
-              </item>
-            
-              <item>
-                <title>Pop - A Minimal Approach To Digital Notetaking</title>
-                <description>&lt;p&gt;After trying Squarespace Note for a few days I decided that it wasn&amp;rsquo;t really for me. Even though I feel in love with the interface I couldn&amp;rsquo;t really get over the fact that I couldn&amp;rsquo;t choose another folder other than the app&amp;rsquo;s default to save my notes to in Dropbox. I still think it&amp;rsquo;s a very competent and useful app though, but it’s just not my cup of tea. I decided to look for something else and I did find a worthy replacement: &lt;a href=&quot;http://minimaltools.com/&quot; title=&quot;Minimal Tools - Pop&quot;&gt;Pop&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;pop&quot;&gt;Pop&lt;/h2&gt;
-
-&lt;p&gt;The description from &lt;a href=&quot;http://minimaltools.com/&quot; title=&quot;Minimal Tools - Pop&quot;&gt;the official website&lt;/a&gt; describes the purpose of the app perfectly:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Pop is simply a convenient place for writing things down — that piece of paper you grab to write when you have an idea. It doesn&amp;rsquo;t help you do anything smarter or more organized.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This means that&amp;rsquo;s there&amp;rsquo;s no integration with any other service or app whatsoever. You&amp;rsquo;re only able to write down what you want to keep, and then select it all and copy it to another text editor for further editing and writing. I love that. Note was really similiar to my default text editor, &lt;a href=&quot;http://www.iawriter.com/&quot; title=&quot;iA Writer&quot;&gt;iA Writer&lt;/a&gt;, while Pop certainly isn&amp;rsquo;t. I can only use one blank “canvas” to write down my ideas and thoughts. There&amp;rsquo;s nothing to fiddle with. That feels quite refreshing to be honest (I actually wrote the majority of this post in said app). My handwriting is incredibly messy so it&amp;rsquo;s nice to have an app that can quite frankly replace my need for an actual physical notebook. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-06-pop-for-ios.png&quot; alt=&quot;Pop for iOS (with a swedish keyboard)&quot; title=&quot;Pop for iOS (with a swedish keyboard)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I feel confident that Pop is going to prove itself useful for me. I&amp;rsquo;m absolutely certain that I&amp;rsquo;m going to continue to use it as a springboard for ideas, blog posts and just general thoughts. Just like how it&amp;rsquo;s meant to be used, in my opinion.&lt;/p&gt;
-</description>
-                <published>November  6, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking</link>
               </item>
             
     </channel>
