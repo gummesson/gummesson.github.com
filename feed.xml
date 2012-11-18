@@ -28,7 +28,7 @@
 &lt;pre&gt;&lt;code&gt;:oc:.plk::
 { 
 url = %clipboard%
-SendInput [](%url% {&quot;}{&quot;}){Home}{Right}
+SendInput {Enter}[](%url% {&quot; 2}){Home}{Backspace}{Right}
 Return
 }
 &lt;/code&gt;&lt;/pre&gt;
