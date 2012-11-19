@@ -125,12 +125,14 @@ h6, .zeta {
 
 /* Sizes */
 
-small, .small {
+small, .small,
+blockquote {
   font-size: 0.875em;
 }
 
 .mini,
-.footnotes {
+.footnotes,
+code {
   font-size: 0.75em;
 }
 
@@ -138,6 +140,7 @@ small, .small {
 
 i, .italic,
 em, .em,
+blockquote,
 .footnotes {
   font-style: italic;
 }
@@ -190,7 +193,9 @@ a:active {
 
   .border-none, .border-none a, 
   .menu a,
-  h1 a {
+  h1 a,
+  a[rel="footnote"],
+  a[rel="reference"] {
     border-bottom: 1px solid transparent;
   }
 
@@ -210,14 +215,9 @@ sup {
   line-height   : 0;
 }
 
-  .footnotes li p {
-    margin-bottom: 0;
-  }
-
 a[rel="footnote"],
 a[rel="reference"] {
   margin-left  : 0.15em;
-  border-bottom: 1px solid transparent;
 }
 
   a[rel="footnote"] {
@@ -227,39 +227,41 @@ a[rel="reference"] {
 /* Quotes */
 
 blockquote {
-  border-left: 0.25em solid #ccc;
-  padding    : 0 1.5em;
-  font-size  : 0.875em;
-  font-style : italic;
+  padding: 0 1.5em;
 }
 
   blockquote cite:before {
     content: "\2014 \00A0";
   }
 
+blockquote,
+pre {
+  border-left: 0.25em solid #ccc;
+}
+
 /* Code */
 
 pre {
-  word-wrap       : normal;
-  overflow        : auto; 
-  line-height     : 1;
-  background-color: #ddd;
-  border-left     : 0.25em solid #ccc;
-  padding         : 0.2em 0.4em 0.4em;
-  margin-top      : 0.4em;
+  word-wrap  : normal;
+  overflow   : auto; 
+  line-height: 1;
+  padding    : 0.2em 0.4em 0.4em;
+  margin-top : 0.4em;
 }
 
 code {
-  font-family     : Consolas, Monaco, Andale Mono, monospace;
-  font-size       : 0.75em;
+  font-family: Consolas, Monaco, Andale Mono, monospace;
+  padding    : 0.10em 0.25em;
+}
+
+pre,
+code {
   background-color: #ddd;
-  padding         : 0.10em 0.25em;
 }
 
   pre > code {
-    border    : none;
-    padding   : 0;
     background: none;
+    padding   : 0;
 }
 
 /*=============
@@ -285,7 +287,8 @@ hr, .hr  {
 }
 
 .margin-none,
-.nav {
+.nav,
+.footnotes li p {
   margin-bottom: 0;
 }
 

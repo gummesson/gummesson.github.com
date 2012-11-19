@@ -6,6 +6,33 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>The Perfect Typeface</title>
+                <description>&lt;p&gt;Although I&amp;rsquo;m a big fan of both serif and sans-serifs I&amp;rsquo;ve never really been comfortable with using them for any serious writing unless I really, eally had to. I&amp;rsquo;m a monospace lover through and through. Somehow those types of fonts feel more natural to write with for me. I&amp;rsquo;ve been using &lt;a href=&quot;http://dejavu-fonts.org/wiki/Main_Page&quot; title=&quot;DejaVu Fonts&quot;&gt;DejaVu Sans Mono&lt;/a&gt; for a long time but lately I&amp;rsquo;ve noticed that it&amp;rsquo;s not really the best typeface for me and my eyes. It&amp;rsquo;s too bold and looks quite chunky with some rough edges&lt;sup id=&quot;fnref:20121119-1&quot;&gt;&lt;a href=&quot;#fn:20121119-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It works alright for coding, but I feel like I get a bit lost when I try to read the actual words that I&amp;rsquo;d just written. I knew that it had to be some better alternatives out there.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://levien.com/type/myfonts/inconsolata.html&quot; title=&quot;Inconsolata&quot;&gt;Inconsolata&lt;/a&gt; is an excellent typeface. It doesn&amp;rsquo;t look too good when you&amp;rsquo;re using it in smaller sizes&lt;sup id=&quot;fnref:20121119-2&quot;&gt;&lt;a href=&quot;#fn:20121119-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; but I find it absolutely delightful to use with the size set at about 21px and line-height at 125% when I&amp;rsquo;m typing away in &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt;. It may look a bit too thin for some, but for it&amp;rsquo;s just what I need. I usually try sit at a comfortable distance from my screen so the thinness is not really that bad at all. I also tend to use pretty neutral colors in the grayscale range which typically works good with any kind of typeface. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-19-inconsolata.png&quot; alt=&quot;Inconsolata In FocusWriter&quot; title=&quot;Inconsolata In FocusWriter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My hunt for something better is finally over and hopefully it&amp;rsquo;ll make me be more productive when it comes to writing. I&amp;rsquo;d like that.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121119-1&quot;&gt;
+      &lt;p&gt;The font rendering on Windows is quite horrendous from time to time.&lt;a href=&quot;#fnref:20121119-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121119-2&quot;&gt;
+      &lt;p&gt;Another common Windows font rendering problem.&lt;a href=&quot;#fnref:20121119-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November 19, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/19/the-perfect-typeface</link>
+              </item>
+            
+              <item>
                 <title>in:play</title>
                 <description>&lt;p&gt;Where has this app been all my life? I&amp;rsquo;ve never been a massive fan of using the iPhone as a music player, but this might change that. It&amp;rsquo;s geniusly simple and equally gorgeous. It&amp;rsquo;s also 50% off.&lt;/p&gt;
 
@@ -114,24 +141,6 @@ Return
 </description>
                 <published>November 11, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/11/viva-la-archives</link>
-              </item>
-            
-              <item>
-                <title>Markdown Hostrings (For AutoHotKey)</title>
-                <description>&lt;p&gt;Around a week ago &lt;a href=&quot;/blog/2012/10/29/hotstrings-and-markdown/&quot; title=&quot;Hostring And Markdown&quot;&gt;I wrote about AutoHotKey&lt;/a&gt; and how it could be used when it came to more general things like using abbreviations for your name or website in order to speed up your writing. I also wrote a bit about how to use it to make your markdown writing even faster. I finally sat down and played around with different ways to create more efficient scripts and came up with a couple of new things. I also figured out how to move the cursor&amp;rsquo;s position so you can start typing right away instead of having to manually move it&lt;sup id=&quot;fnref:20121110-1&quot;&gt;&lt;a href=&quot;#fn:20121110-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I put them up for download on &lt;a href=&quot;https://github.com/gummesson&quot; title=&quot;My Github page&quot;&gt;my GitHub page&lt;/a&gt; so if you&amp;rsquo;re looking for something like that go ahead and use it and feel free to adjust it to your liking.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121110-1&quot;&gt;
-      &lt;p&gt;The cursor gets placed somewhere inside the actual Markdown snippet. It&amp;rsquo;s pretty handy.&lt;a href=&quot;#fnref:20121110-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>November 10, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/10/markdown-hotstrings-for-autohotkey</link>
               </item>
             
     </channel>
