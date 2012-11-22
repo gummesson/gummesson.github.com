@@ -22,18 +22,29 @@
 <body>
   <div class="container">
     <header class="branding">
-      <h1 class="logo centered"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen.</a></h1>
+      <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+        <img src="/assets/logo/logo.png" class="logo" />
+      </a>
       <ul class="nav menu centered beta">
-        <li><a href="/" title="Home" alt="Home">Home</a></li>
-        <li><a href="/about" title="About" alt="About">About</a></li>
-        <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
-        <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
+        <li>
+          <a href="/" title="Home" alt="Home">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="About" alt="About">About</a>
+        </li>
+        <li>
+          <a href="/archives" title="Archives" alt="Archives">Archives</a>
+        </li>
+        <li>
+          <a href="/contact" title="Contact" alt="Contact">Contact</a>
+        </li>
       </ul><!-- .nav .menu .centered .beta -->
     </header><!-- .branding -->
       <div class="content">
         <article class="page">
   <h1>Jekyll Pagination Output</h1>
-    <span class="justified"><article class="page">
+    <span class="justified">
+      <article class="page">
   <p>Copy the <code>pagination.rb</code> from the jekyll <code>lib/jekyll/generators/pagination</code> folder and place it in your <code>_plugins</code> folder where you have your site.</p>
   <p>Change the following line from this:</p>
   <pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")</code></pre>
@@ -42,14 +53,30 @@
   <p>Add <code>paginate: 10</code> (change the number to how many post you'd like to display per page) in your <code>_config.yml</code> file.</p>
   <p>For instructions on how to add pagination on your site, see the <a href="https://github.com/mojombo/jekyll/wiki/Pagination" title="Pagination in Jekyll">official Jekyll wiki</a>.</p>
 </article><!-- .page -->
-</span><!-- .justified -->
+
+    </span><!-- .justified -->
 </article><!-- .page -->
 
       </div><!-- .content -->
     <footer class="mini centered italic">
-      <p class="margin-none">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012</p>
-      <p class="margin-small">Licensed Under <a href="http://creativecommons.org/licenses/by-nc/3.0/" alt="Creative Commons BY-NC 3.0" title="Creative Commons BY-NC 3.0">CC BY-NC 3.0</a></p>
-      <p><a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a></p>
+      <p class="margin-none">
+        Copyright &copy; 
+        <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+          Ellen Gummesson
+        </a> 
+        2012
+      </p>
+      <p class="margin-small">
+        Licensed Under 
+        <a href="http://creativecommons.org/licenses/by-nc/3.0/" alt="Creative Commons BY-NC 3.0" title="Creative Commons BY-NC 3.0">
+          CC BY-NC 3.0
+        </a>
+      </p>
+      <p>
+        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
+          Subscribe
+        </a>
+      </p>
     </footer> <!-- .mini .centered .italic -->
   </div> <!-- .container -->
 </body>

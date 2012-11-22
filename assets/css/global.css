@@ -74,6 +74,10 @@ html {
   margin-top: 2em;
 }
 
+  .menu {
+    margin-top: 0.75em;
+  }
+
   .post,
   .page,
   .pagination {
@@ -98,10 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, .alpha {
   font-size: 2em;
 }
-
-  .logo {
-    font-size: 3.75em;
-  }
 
 h2, .beta {
   font-size: 1.75em;
@@ -150,7 +150,7 @@ strong, .strong {
   font-weight: bold;
 }
 
-hr, .hr {
+hr {
   width           : 40%;
   height          : 1px;
   background-color: #ccc;
@@ -166,10 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .justified {
   text-align: justify;
-}
-
-.left {
-  text-align: left;
 }
 
 /* Links */
@@ -360,6 +356,13 @@ img {
   height   : auto;
 }
 
+/* Logo */
+
+.logo {
+  width : 128px;
+  height: 128px;
+}
+
 /*===================
     Media Queries
 ===================*/
@@ -402,6 +405,11 @@ img {
     font-size: 87.5%;
   }
 
+  .logo {
+    width : 96px;
+    height: 96px;
+  }
+
   a,
   .small a,
   .mini a,
@@ -425,8 +433,9 @@ img {
     width: 90%;
   }
 
-  .menu {
-    margin-top: 0.5em;
+  .logo {
+    width : 112px;
+    height: 112px;
   }
 
     .footnotes li p {

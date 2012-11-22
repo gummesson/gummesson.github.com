@@ -22,12 +22,22 @@
 <body>
   <div class="container">
     <header class="branding">
-      <h1 class="logo centered"><a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen.</a></h1>
+      <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+        <img src="/assets/logo/logo.png" class="logo" />
+      </a>
       <ul class="nav menu centered beta">
-        <li><a href="/" title="Home" alt="Home">Home</a></li>
-        <li><a href="/about" title="About" alt="About">About</a></li>
-        <li><a href="/archives" title="Archives" alt="Archives">Archives</a></li>
-        <li><a href="/contact" title="Contact" alt="Contact">Contact</a></li>
+        <li>
+          <a href="/" title="Home" alt="Home">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="About" alt="About">About</a>
+        </li>
+        <li>
+          <a href="/archives" title="Archives" alt="Archives">Archives</a>
+        </li>
+        <li>
+          <a href="/contact" title="Contact" alt="Contact">Contact</a>
+        </li>
       </ul><!-- .nav .menu .centered .beta -->
     </header><!-- .branding -->
       <div class="content">
@@ -35,8 +45,11 @@
   
     <h1>The Hassles Of Media Queries</h1>
   
-    <p class="small centered italic">Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a></p>
-    <span class="justified"><p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn&rsquo;t get them to properly work. Then it hit me that I&rsquo;d forgot to add this in the <code>&lt;head&gt;</code>:</p>
+    <p class="small centered italic">
+      Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>
+    </p>
+    <span class="justified">
+      <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn&rsquo;t get them to properly work. Then it hit me that I&rsquo;d forgot to add this in the <code>&lt;head&gt;</code>:</p>
 
 <pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
 </code></pre>
@@ -49,10 +62,13 @@
 </code></pre>
 
 <p>To my defense I&rsquo;m still pretty new to all of this, but still&hellip; I feel really dumb. Now they finally works and I&rsquo;m totally happy, but I don&rsquo;t know whether or not I should be scared of the fact that I don&rsquo;t own an iPad&hellip; Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
-</span><!-- .justified -->
+
+    </span><!-- .justified -->
 
   <section class="comments">
-  <h1 class="margin-small">Comments</h1>
+  <h1 class="margin-small">
+    Comments
+  </h1>
   <div id="disqus_thread"></div>
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -72,9 +88,24 @@
 
       </div><!-- .content -->
     <footer class="mini centered italic">
-      <p class="margin-none">Copyright &copy; <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">Ellen Gummesson</a> 2012</p>
-      <p class="margin-small">Licensed Under <a href="http://creativecommons.org/licenses/by-nc/3.0/" alt="Creative Commons BY-NC 3.0" title="Creative Commons BY-NC 3.0">CC BY-NC 3.0</a></p>
-      <p><a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a></p>
+      <p class="margin-none">
+        Copyright &copy; 
+        <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+          Ellen Gummesson
+        </a> 
+        2012
+      </p>
+      <p class="margin-small">
+        Licensed Under 
+        <a href="http://creativecommons.org/licenses/by-nc/3.0/" alt="Creative Commons BY-NC 3.0" title="Creative Commons BY-NC 3.0">
+          CC BY-NC 3.0
+        </a>
+      </p>
+      <p>
+        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
+          Subscribe
+        </a>
+      </p>
     </footer> <!-- .mini .centered .italic -->
   </div> <!-- .container -->
 </body>
