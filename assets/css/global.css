@@ -69,7 +69,10 @@ html {
   margin: 0 auto;
 }
 
-.branding,
+.branding {
+  margin-top: 2.5em;
+}
+
 .content {
   margin-top: 2em;
 }
@@ -85,7 +88,7 @@ html {
   }
 
   .comments {
-    margin-top: 3em;
+  margin-top: 3em;
   }
 
 /*================
@@ -341,7 +344,7 @@ ul {
   padding: 0 2em;
 }
 
-.link-none {
+.gray, .gray a {
   color: #ccc;
 }
 
