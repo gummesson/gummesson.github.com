@@ -116,7 +116,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/10/07/the-one-about-markdown</loc>
-        <lastmod>2012-11-22T19:23:57+01:00</lastmod>
+        <lastmod>2012-11-23T09:56:58+01:00</lastmod>
     </url>
     <url>
         <loc>
@@ -126,7 +126,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/10/13/the-infamous-todo</loc>
-        <lastmod>2012-11-22T19:23:57+01:00</lastmod>
+        <lastmod>2012-11-23T09:57:08+01:00</lastmod>
     </url>
     <url>
         <loc>
@@ -221,6 +221,12 @@
         <lastmod>2012-11-22T19:23:57+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2012/11/23/why-and-how-i-wrote-my-academic-book-in-plain-text
+        </loc>
+        <lastmod>2012-11-23T11:08:32+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-11-12T18:54:53+01:00</lastmod>
     </url>
@@ -234,7 +240,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-11-22T18:28:27+01:00</lastmod>
+        <lastmod>2012-11-23T11:08:32+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -246,6 +252,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-11-22T18:28:27+01:00</lastmod>
+        <lastmod>2012-11-23T11:08:32+01:00</lastmod>
     </url>
 </urlset>
