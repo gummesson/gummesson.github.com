@@ -144,6 +144,8 @@ code {
 i, .italic,
 em, .em,
 blockquote,
+q,
+cite,
 .footnotes {
   font-style: italic;
 }
@@ -225,13 +227,37 @@ a[rel="reference"] {
 
 /* Quotes */
 
+q {
+  font-size  : 125%;
+  text-indent: -0.6em;
+}
+
+  q:before {
+    content: open-quote;
+  }
+
+  q:after {
+    content: close-quote;
+  }
+
+  q:before, q:after {
+    font-size  : 150%;
+    line-height: 0;
+    color      : #ccc;
+  }
+
+q,
+cite {
+  display: block;
+}
+
+  cite:before {
+    content: "\2014 \00A0";
+  }
+
 blockquote {
   padding: 0 1.5em;
 }
-
-  blockquote cite:before {
-    content: "\2014 \00A0";
-  }
 
 blockquote,
 pre {
@@ -277,7 +303,8 @@ hr, .hr  {
   margin-bottom: 1.5em;
 }
 
-.margin-small {
+.margin-small,
+q {
   margin-bottom: 0.5em;
 }
 

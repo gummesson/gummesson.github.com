@@ -10,7 +10,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll</loc>
-        <lastmod>2012-11-22T19:23:57+01:00</lastmod>
+        <lastmod>2012-11-26T10:24:37+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries</loc>
@@ -227,6 +227,10 @@
         <lastmod>2012-11-23T11:08:32+01:00</lastmod>
     </url>
     <url>
+        <loc>http://ellengummesson.com/blog/2012/11/26/the-spark-file</loc>
+        <lastmod>2012-11-26T19:45:54+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2012-11-12T18:54:53+01:00</lastmod>
     </url>
@@ -240,7 +244,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2012-11-23T11:08:32+01:00</lastmod>
+        <lastmod>2012-11-26T19:45:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/focuswriter-themes/</loc>
@@ -252,6 +256,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/projects/jekyll-pagination-output/</loc>
-        <lastmod>2012-11-23T11:08:32+01:00</lastmod>
+        <lastmod>2012-11-26T19:45:54+01:00</lastmod>
     </url>
 </urlset>
