@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Home / Ellen Gummesson</title>
+  <title>Home // Ellen Gummesson</title>
     <meta name="description" content="Ellen Gummesson - Random Ramblings, Overall Geekiness And Other Musings">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -22,7 +22,7 @@
 <body>
   <div class="container">
     <header class="branding">
-      <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+      <a href="/" title="Ellen Gummesson // Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson // Random Ramblings, Overall Geekiness And Other Musings">
         <img src="/assets/logo/logo.png" class="logo" />
       </a>
       <ul class="nav menu centered beta">
@@ -42,6 +42,23 @@
     </header><!-- .branding -->
       <div class="content">
         
+  <article class="post">
+  
+    <h1>
+      <a href="/blog/2012/09/10/gummesson-two-point-zero" alt="Gummesson 2.0" title="Gummesson 2.0">
+        Gummesson 2.0
+      </a>
+    </h1>
+    <p class="small centered italic">
+      Posted on September 10, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>  
+    </p><!-- .small -centered .italic -->
+  
+    <span class="justified">
+      <p>I decided to make the jump and thus this site now has a spanking new design. <a href="http://www.google.com/webfonts/specimen/Oswald" title="Oswald">Oswald</a> is used for the headings and the navigation and <a href="http://www.google.com/webfonts/specimen/Asap" title="Asap">Asap</a> is used for the body copy. I quite like them together since the former has a kind of slab-serif quality to it, even though it&rsquo;s actually a sans-serif. The bold and italic versions of Asap aren&rsquo;t perfect, but they look much better than than they did before. I haven&rsquo;t had the chance you check out how they look in <em>Firefox</em> and <em>Opera</em>, but I hope they look good in them too. I&rsquo;ve also increased the font size from 112.5% (which usually equals to 18px) to 125% (20px) just because I&rsquo;m a big fan of having a bigger size for readability.</p>
+
+    </span><!-- .justified -->
+</article><!-- .post -->
+
   <article class="post">
   
     <h1>
@@ -226,36 +243,6 @@
     </span><!-- .justified -->
 </article><!-- .post -->
 
-  <article class="post">
-  
-    <h1>
-      <a href="/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling Upon A Good Solution" title="Stumbling Upon A Good Solution">
-        Stumbling Upon A Good Solution
-      </a>
-    </h1>
-    <p class="small centered italic">
-      Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>  
-    </p><!-- .small -centered .italic -->
-  
-    <span class="justified">
-      <p>As some of you may know, I&rsquo;ve built my own grid system with the world&rsquo;s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you&rsquo;d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I&rsquo;ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
-
-<h2 id="the-solution">The Solution</h2>
-
-<p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
-
-<pre><code>[class^="col-"]:last-child {
-  margin-right: 0;
-}
-</code></pre>
-
-<p>It worked! I know that I always sound suprised when something I&rsquo;ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it&rsquo;s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don&rsquo;t (IE8 isn&rsquo;t too fond of the :last-child thing). I think I&rsquo;m going to leave the <code>.last</code> class in the code, just so there&rsquo;s an option to use it. </p>
-
-<p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
-
-    </span><!-- .justified -->
-</article><!-- .post -->
-
   <section class="pagination">
   <p class="small centered italic">
   
@@ -263,7 +250,7 @@
       <a href="/blog/page/8" alt="Previous" title="Previous">&larr; Previous</a>
     
       
-      <span class="separator">9 / 11</span>
+      <span class="separator">9 ... 11</span>
     
       <a href="/blog/page/10" alt="Next" title="Next">Next &rarr;</a>
       
@@ -274,7 +261,7 @@
     <footer class="mini centered italic">
       <p class="margin-none">
         Copyright &copy; 
-        <a href="/" title="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson / Random Ramblings, Overall Geekiness And Other Musings">
+        <a href="/" title="Ellen Gummesson // Random Ramblings, Overall Geekiness And Other Musings" alt="Ellen Gummesson // Random Ramblings, Overall Geekiness And Other Musings">
           Ellen Gummesson
         </a> 
         2012

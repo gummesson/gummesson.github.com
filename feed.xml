@@ -6,6 +6,48 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Small Steps Into Ruby</title>
+                <description>&lt;p&gt;I&amp;rsquo;ve always wanted to learn a real programming language. The few times in the past that I&amp;rsquo;ve tried have all been fruitless though. My brain just doesn&amp;rsquo;t work when there&amp;rsquo;s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won&amp;rsquo;t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write &lt;code&gt;background-color: red;&lt;/code&gt; and what do you know, the background suddenly is red. With those two you don&amp;rsquo;t have write a short novel just to get the command line to print a simple &lt;em&gt;&amp;ldquo;Hello World&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since this site is built with Jekyll I decided to really start learning &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; and I&amp;rsquo;m glad I did. The syntax is so simple that it amazes me. Over the last few days I&amp;rsquo;ve experimented with it a lot and even released a few simple scripts on &lt;a href=&quot;https://github.com/gummesson&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt;. One of those was inspired by a post I saw yesterday on 
+&lt;a href=&quot;http://lifehacker.com/5963597/why-you-should-be-using-an-app-launcher-and-how-to-make-it-do-anythingyou-want&quot; title=&quot;Lifehacker&quot;&gt;Lifehacker&lt;/a&gt;. The article mentions how you can use &lt;a href=&quot;http://launchy.net/&quot; title=&quot;Launchy&quot;&gt;Launchy&lt;/a&gt; to append text to a text file, but I couldn&amp;rsquo;t get the &lt;code&gt;bat&lt;/code&gt; script they recommended to properly work so I decided to just make a &lt;a href=&quot;https://github.com/gummesson/append-text&quot; title=&quot;Append Text (for Launchy on GitHub&quot;&gt;Ruby version of it&lt;/a&gt;. The script looks like this without comments:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require 'yaml'
+
+config = YAML.load_file(&quot;config.yml&quot;)
+txt_file = config[&quot;txt_file&quot;]
+
+item = ARGV.join(&quot; &quot;)
+
+File.open(txt_file, &quot;a&quot;) { |file| file.puts(item) }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Right now it consists of just five lines of code. I could&amp;rsquo;ve even made it even simpler by leaving out the use of YAML&lt;sup id=&quot;fnref:20121128-1&quot;&gt;&lt;a href=&quot;#fn:20121128-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for the text file configuration&lt;sup id=&quot;fnref:20121128-2&quot;&gt;&lt;a href=&quot;#fn:20121128-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. I really like having something like that though since you don&amp;rsquo;t have to change the actual source code if you later decide to use another text file. Now I just need to launch Launchy, type &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;TAB&lt;/code&gt; and whatever I want to append to the file and just hit &lt;code&gt;Enter&lt;/code&gt; to add something to my spark file, which is even faster than launching the actually text file with &lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt; like I mentioned in the previous blog post.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;I found the book &lt;a href=&quot;http://www.humblelittlerubybook.com/book/&quot; title=&quot;Mr. Neighborly's Humble Little Ruby Book&quot;&gt;Mr. Neighborly&amp;rsquo;s Humble Little Ruby Book&lt;/a&gt; extremely good. It explains a lot of stuff without getting too technically complex and with a perfect mix of humor. Another book I also found helpful and easy to understand was &lt;a href=&quot;http://ruby.bastardsbook.com/&quot; title=&quot;The Bastards Book of Ruby&quot;&gt;The Bastards Book of Ruby&lt;/a&gt;. I&amp;rsquo;ve also seen &lt;a href=&quot;http://ruby.learncodethehardway.org/book/&quot; title=&quot;Learn Ruby The Hard Way&quot;&gt;Learn Ruby The Hard Way&lt;/a&gt; and &lt;a href=&quot;http://pine.fm/LearnToProgram/&quot; title=&quot;Learn To Program&quot;&gt;Learn To Program&lt;/a&gt; being mentioned quite a few times but so far I haven&amp;rsquo;t had time to check them out. Another tip is that you shouldn&amp;rsquo;t underestimate the power of Google and a thriving community. &lt;a href=&quot;http://stackoverflow.com/questions/tagged/ruby&quot; title=&quot;Stack Overflow&quot;&gt;Stack Overflow&lt;/a&gt; is filled with a lot of answers for literally every single question you might have.&lt;/p&gt;
+
+&lt;p&gt;I still have a long way to go, but so far it&amp;rsquo;s been a really fun ride.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121128-1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Yaml&quot; title=&quot;YAML Ain't Markup Language&quot;&gt;YAML Ain&amp;rsquo;t Markup Language&lt;/a&gt;.&lt;a href=&quot;#fnref:20121128-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121128-2&quot;&gt;
+      &lt;p&gt;The &lt;code&gt;config.yml&lt;/code&gt; file contains a single line, &lt;code&gt;txt_file:&lt;/code&gt;, where you put the path to the text file in question. &lt;a href=&quot;#fnref:20121128-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November 28, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/11/28/small-steps-into-ruby</link>
+              </item>
+            
+              <item>
                 <title>The Spark File</title>
                 <description>&lt;p&gt;A few weeks ago I came across a post on &lt;a href=&quot;https://medium.com/&quot; title=&quot;Medium&quot;&gt;Medium&lt;/a&gt; called &lt;a href=&quot;https://medium.com/the-writers-room/8d6e7df7ae58&quot; title=&quot;The Spark File&quot;&gt;The Spark File&lt;/a&gt; written by &lt;a href=&quot;https://medium.com/@stevenbjohnson&quot; title=&quot;Steven Johnson&quot;&gt;Steven Johnson&lt;/a&gt;. I really liked the idea of having a spark file of some sort but never took the time to try it out. I usually depend on &lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt; when it comes to jotting down ideas but more often than not I&amp;rsquo;ve ended up with text files with just a headline in them, like &amp;ldquo;write about x and y&amp;rdquo;. While it definitively helps me remembering what I want to write about I feel that it&amp;rsquo;s unnecessary to have a ton of one line ideas clutter up my notes. That&amp;rsquo;s where the spark file fits perfectly. I finally understood that it&amp;rsquo;s something that&amp;rsquo;ll be a good addition to my writing workflow. Now I&amp;rsquo;ve begun to only use ResophNotes for my blog posts or other types of writing when an idea has involved to something more solid, while the spark file is just a scratchpad for things I want to write about but haven&amp;rsquo;t really figured out yet.&lt;/p&gt;
 
@@ -96,18 +138,6 @@ Return
 </description>
                 <published>November 19, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/19/the-perfect-typeface</link>
-              </item>
-            
-              <item>
-                <title>in:play</title>
-                <description>&lt;p&gt;Where has this app been all my life? I&amp;rsquo;ve never been a massive fan of using the iPhone as a music player, but this might change that. It&amp;rsquo;s geniusly simple and equally gorgeous. It&amp;rsquo;s also 50% off.&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;
-&lt;em&gt;Via: &lt;a href=&quot;http://lifehacker.com/5960804/inplay-is-a-minimalist-gestureBased-music-player-for-the-iphone&quot; title=&quot;Lifehacker&quot;&gt;Lifehacker&lt;/a&gt;&lt;/em&gt;
-&lt;/small&gt;&lt;/p&gt;
-</description>
-                <published>November 16, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/16/in-play</link>
               </item>
             
     </channel>
