@@ -6,6 +6,24 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>The Setup</title>
+                <description>&lt;p&gt;One of my favorite sites on the web is the &lt;a href=&quot;http://usesthis.com/&quot; title=&quot;The Setup&quot;&gt;The Setup&lt;/a&gt;. The tagline for it is &lt;em&gt;&amp;ldquo;What do people use to get stuff done?&amp;rdquo;&lt;/em&gt;, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use&lt;sup id=&quot;fnref:20121202-1&quot;&gt;&lt;a href=&quot;#fn:20121202-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. If you haven&amp;rsquo;t checked it out and you&amp;rsquo;re as geeky as I am I suggest that you should. There&amp;rsquo;s also a couple of &lt;a href=&quot;http://usesthis.com/community/&quot; title=&quot;The Setup's Community&quot;&gt;spin-offs&lt;/a&gt; of the whole idea, which ranges from Linux users to teachers to people with disabilities. I&amp;rsquo;ve been toying with the idea of doing something like that but haven&amp;rsquo;t had the time nor the resources to do so just yet. All in all it&amp;rsquo;s a little fantastic website that I thoroughly enjoy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121202-1&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Spoiler alert:&lt;/strong&gt; mostly Apple products, although both Linux and Windows users show up from time to time. &lt;a href=&quot;#fnref:20121202-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December  2, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/02/the-setup</link>
+              </item>
+            
+              <item>
                 <title>Small Steps Into Ruby</title>
                 <description>&lt;p&gt;I&amp;rsquo;ve always wanted to learn a real programming language. The few times in the past that I&amp;rsquo;ve tried have all been fruitless though. My brain just doesn&amp;rsquo;t work when there&amp;rsquo;s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won&amp;rsquo;t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write &lt;code&gt;background-color: red;&lt;/code&gt; and what do you know, the background suddenly is red. With those two you don&amp;rsquo;t have write a short novel just to get the command line to print a simple &lt;em&gt;&amp;ldquo;Hello World&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
 
@@ -111,33 +129,6 @@ Return
 </description>
                 <published>November 22, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/22/a-better-structure</link>
-              </item>
-            
-              <item>
-                <title>The Perfect Typeface</title>
-                <description>&lt;p&gt;Although I&amp;rsquo;m a big fan of both serif and sans-serifs I&amp;rsquo;ve never really been comfortable with using them for any serious writing unless I really, eally had to. I&amp;rsquo;m a monospace lover through and through. Somehow those types of fonts feel more natural to write with for me. I&amp;rsquo;ve been using &lt;a href=&quot;http://dejavu-fonts.org/wiki/Main_Page&quot; title=&quot;DejaVu Fonts&quot;&gt;DejaVu Sans Mono&lt;/a&gt; for a long time but lately I&amp;rsquo;ve noticed that it&amp;rsquo;s not really the best typeface for me and my eyes. It&amp;rsquo;s too bold and looks quite chunky with some rough edges&lt;sup id=&quot;fnref:20121119-1&quot;&gt;&lt;a href=&quot;#fn:20121119-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It works alright for coding, but I feel like I get a bit lost when I try to read the actual words that I&amp;rsquo;d just written. I knew that it had to be some better alternatives out there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://levien.com/type/myfonts/inconsolata.html&quot; title=&quot;Inconsolata&quot;&gt;Inconsolata&lt;/a&gt; is an excellent typeface. It doesn&amp;rsquo;t look too good when you&amp;rsquo;re using it in smaller sizes&lt;sup id=&quot;fnref:20121119-2&quot;&gt;&lt;a href=&quot;#fn:20121119-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; but I find it absolutely delightful to use with the size set at about 21px and line-height at 125% when I&amp;rsquo;m typing away in &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt;. It may look a bit too thin for some, but for it&amp;rsquo;s just what I need. I usually try sit at a comfortable distance from my screen so the thinness is not really that bad at all. I also tend to use pretty neutral colors in the grayscale range which typically works good with any kind of typeface. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-19-inconsolata.png&quot; alt=&quot;Inconsolata In FocusWriter&quot; title=&quot;Inconsolata In FocusWriter&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;My hunt for something better is finally over and hopefully it&amp;rsquo;ll make me be more productive when it comes to writing. I&amp;rsquo;d like that.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121119-1&quot;&gt;
-      &lt;p&gt;The font rendering on Windows is quite horrendous from time to time.&lt;a href=&quot;#fnref:20121119-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121119-2&quot;&gt;
-      &lt;p&gt;Another common Windows font rendering problem.&lt;a href=&quot;#fnref:20121119-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>November 19, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/19/the-perfect-typeface</link>
               </item>
             
     </channel>
