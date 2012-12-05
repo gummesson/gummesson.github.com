@@ -6,6 +6,54 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Apps For Windows</title>
+                <description>&lt;p&gt;Here&amp;rsquo;s a list of what I consider awesome apps and utilities for Windows. Even though there&amp;rsquo;s no shortage of them I sometimes find that it&amp;rsquo;s quite hard to find those gems that really stand out.&lt;/p&gt;
+
+&lt;h2 id=&quot;focuswriter&quot;&gt;FocusWriter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is probably the best minimalistic writing app I&amp;rsquo;ve come across. It&amp;rsquo;s open source, cross platform and portable too. It has a lot of features but those never get in the way since it can hide a lot of them, which is something that&amp;rsquo;s great for my writing productivity.&lt;/p&gt;
+
+&lt;h2 id=&quot;markdownpad&quot;&gt;MarkdownPad&lt;/h2&gt;
+
+&lt;p&gt;Even though I mainly do all of my writing in FocusWriter I find it a good thing to sometimes preview my formatting in another app and that&amp;rsquo;s were &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt; fits right in with it&amp;rsquo;s excellent live preview.&lt;/p&gt;
+
+&lt;h2 id=&quot;resophnotes&quot;&gt;ResophNotes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt; is the only real dedicated note taking app for Windows with the option of saving the notes in plain text that I&amp;rsquo;ve found. By enabling a global hot key you can pretty much create a note as soon as it pops into your head.&lt;/p&gt;
+
+&lt;h2 id=&quot;todotxtnet&quot;&gt;todotxt.net&lt;/h2&gt;
+
+&lt;p&gt;Since I&amp;rsquo;ve moved to almost exclusively using plain text for saving pretty much anything I do I&amp;rsquo;ve also started to use an iOS app called &lt;a href=&quot;http://todotxt.com/&quot; title=&quot;todo.txt&quot;&gt;todo.txt&lt;/a&gt;. todo.txt provides a graphical interface for a simple plain text file (called todo.txt) and &lt;a href=&quot;http://benrhughes.com/todotxt.net/&quot; title=&quot;todotxt.net&quot;&gt;todotxt.net&lt;/a&gt; is the Windows counterpart to it.&lt;/p&gt;
+
+&lt;h2 id=&quot;uv-outliner&quot;&gt;UV Outliner&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://uvoutliner.com/&quot; title=&quot;UV Outliner&quot;&gt;UV Outliner&lt;/a&gt; is probably the only good single pane outliner for Windows. It can also be used as a task manager if you enable the  checkbox function, which is pretty nice.&lt;/p&gt;
+
+&lt;h2 id=&quot;launchy&quot;&gt;Launchy&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Launchy is a free cross-platform utility designed to help you forget about your start menu, the icons on your desktop, and even your file manager. Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think that the description from &lt;a href=&quot;http://launchy.net/&quot; title=&quot;Launchy&quot;&gt;Launchy&amp;rsquo;s official website&lt;/a&gt; is sufficient enough so I&amp;rsquo;ll just leave it at that.&lt;/p&gt;
+
+&lt;h2 id=&quot;autohotkey&quot;&gt;AutoHotKey&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt; is an fantastic little app that you can add your own scripts to. Whether it&amp;rsquo;s about creating a keyboard shortcut for an app, launching a specific document or having a lot of text expansions it can do the job for you.&lt;/p&gt;
+
+&lt;h2 id=&quot;virtuawin&quot;&gt;VirtuaWin&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://virtuawin.sourceforge.net/&quot; title=&quot;VirtuaWin&quot;&gt;VirtuaWin&lt;/a&gt; is a small for enabling up to four virtual desktops on your screen. It&amp;rsquo;s not as fancy as OS X&amp;rsquo;s Spaces and Expose or another vritual desktop app called &lt;a href=&quot;http://dexpot.de/&quot; title=&quot;Dexpot&quot;&gt;Dexpot&lt;/a&gt;, but it&amp;rsquo;s extremely lightweight.&lt;/p&gt;
+
+&lt;h2 id=&quot;shotty&quot;&gt;Shotty&lt;/h2&gt;
+
+&lt;p&gt;I was looking for something better than the built in snipping tool and I found &lt;a href=&quot;http://shotty.devs-on.net/en/Overview.aspx&quot; title=&quot;Shotty&quot;&gt;Shotty&lt;/a&gt;. One of the things I like about it is that it leaves the shadows of your screenshots intact which makes them look a lot nicer. It may not be essential to everybody but since I need to take screenshots from time to time I feel that it has it&amp;rsquo;s spot in this list.&lt;/p&gt;
+</description>
+                <published>December  5, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/05/apps-for-windows</link>
+              </item>
+            
+              <item>
                 <title>The Setup</title>
                 <description>&lt;p&gt;One of my favorite sites on the web is the &lt;a href=&quot;http://usesthis.com/&quot; title=&quot;The Setup&quot;&gt;The Setup&lt;/a&gt;. The tagline for it is &lt;em&gt;&amp;ldquo;What do people use to get stuff done?&amp;rdquo;&lt;/em&gt;, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use&lt;sup id=&quot;fnref:20121202-1&quot;&gt;&lt;a href=&quot;#fn:20121202-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. If you haven&amp;rsquo;t checked it out and you&amp;rsquo;re as geeky as I am I suggest that you should. There&amp;rsquo;s also a couple of &lt;a href=&quot;http://usesthis.com/community/&quot; title=&quot;The Setup's Community&quot;&gt;spin-offs&lt;/a&gt; of the whole idea, which ranges from Linux users to teachers to people with disabilities. I&amp;rsquo;ve been toying with the idea of doing something like that but haven&amp;rsquo;t had the time nor the resources to do so just yet. All in all it&amp;rsquo;s a little fantastic website that I thoroughly enjoy.&lt;/p&gt;
 
@@ -96,39 +144,6 @@ Return
 </description>
                 <published>November 23, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/11/23/why-and-how-i-wrote-my-academic-book-in-plain-text</link>
-              </item>
-            
-              <item>
-                <title>A Better Structure</title>
-                <description>&lt;p&gt;Writing a blog post can sometimes become quite tricky. There are those times when you&amp;rsquo;re banging on your keyboard and you&amp;rsquo;ve instantly come up with something actually worth posting, other times you only write three or four incoherent sentences at the most. In that kind of situation I usually just leave it until I can figure out the direction I want to go down, but unfortunately that can be hard too. Sometimes you really do need a place to jot down all of your ideas around a particular subject in a more structured way, like using an outliner. I&amp;rsquo;ve seen quite a bit of praise for one called &lt;a href=&quot;http://www.omnigroup.com/products/omnioutliner/&quot; title=&quot;OmniOutliner&quot;&gt;OmniOutliner&lt;/a&gt; so I decided to look something similar. After som digging I came across an app called &lt;a href=&quot;http://uvoutliner.com/&quot; title=&quot;UV Outliner&quot;&gt;UV Outliner&lt;/a&gt; and as I&amp;rsquo;ve found myself using it more and more I can really say that it&amp;rsquo;s a worthy alternative.&lt;/p&gt;
-
-&lt;h2 id=&quot;uv-outliner&quot;&gt;UV Outliner&lt;/h2&gt;
-
-&lt;p&gt;UV Outliner is like many of the apps I use free of charge. It&amp;rsquo;s also incredibly lightweight. The size of the installer is just around 1.5 MB and it doesn&amp;rsquo;t get that much bigger once it&amp;rsquo;s installed on your system. The learning curve is virtually non-existent. You create nested levels by simply indenting your current line of text by pressing the &lt;code&gt;Tab&lt;/code&gt; key&lt;sup id=&quot;fnref:20121122-1&quot;&gt;&lt;a href=&quot;#fn:20121122-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. All the of the nested levels are also collapsable and expandable by pressing either &lt;code&gt;Shift + Alt + -&lt;/code&gt; &lt;code&gt;Shift + Alt + +&lt;/code&gt;. It also has support for multiple columns but I haven&amp;rsquo;t used that extensively at all. You can also add checkboxes to all of your lines of text, which makes it possible to use UV Outliner as a quite good task manager.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2012-11-22-uv-outliner.png&quot; alt=&quot;UV Outliner&quot; title=&quot;UV Outliner&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can change fonts, colors and add different backgrounds for even and odd rows of text. The font size for the different levels can also be changed. There&amp;rsquo;s unfortunately no way to save your customizations into a template so you have redo them every time in case you want to use them in all of your outline files. You have a choice to select a global font though which will get saved. UV Outliner can export your outlines into both rich text format, HTML and plain text but there&amp;rsquo;s no support for OPML&lt;sup id=&quot;fnref:20121122-2&quot;&gt;&lt;a href=&quot;#fn:20121122-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Since I&amp;rsquo;m currently only using an outliner on my computer I don&amp;rsquo;t really need to export anything but I&amp;rsquo;m glad that the plain text alternative is atleast there.&lt;/p&gt;
-
-&lt;p&gt;Since it exports to rich text format the app also support basic formatting like bold and italicized text for example, which often comes in handy. I personally use bold text as a way to tell myself that there&amp;rsquo;s another level of nested text to that specific line just because I don&amp;rsquo;t want to fiddle too much with the look of the outline. Another smart little function in the app is the ability to add so called inline notes. These notes gets placed under your text and can be useful when you want to note to something but don&amp;rsquo;t necessarily want to have it in your actual outline. They won&amp;rsquo;t get exported either.&lt;/p&gt;
-
-&lt;p&gt;To wrap things up: I think that overall it&amp;rsquo;s a nice app which comes in handy for brainstorming and organsing the work that goes in to writing blog posts among other things. I&amp;rsquo;m not sure that I&amp;rsquo;m going to use it all the time but it&amp;rsquo;s nice to have something like it when you&amp;rsquo;re stuck and you need it.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121122-1&quot;&gt;
-      &lt;p&gt;&lt;code&gt;Shift + Tab&lt;/code&gt; brings it back up a level.&lt;a href=&quot;#fnref:20121122-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121122-2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Opml&quot; title=&quot;OPML&quot;&gt;Outline Processor Markup Language&lt;/a&gt;.&lt;a href=&quot;#fnref:20121122-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>November 22, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/22/a-better-structure</link>
               </item>
             
     </channel>
