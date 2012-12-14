@@ -6,6 +6,48 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>My Adventure With Crunchbang</title>
+                <description>&lt;p&gt;Lately I&amp;rsquo;ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a &lt;em&gt;Samsung NC10&lt;/em&gt;&lt;sup id=&quot;fnref:20121214-1&quot;&gt;&lt;a href=&quot;#fn:20121214-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. It&amp;rsquo;s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It&amp;rsquo;s based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt; which means that there&amp;rsquo;s a lot of apps for it and the support is generally good. I decided to download the current testing version, &lt;a href=&quot;http://crunchbang.org/download/testing&quot; title=&quot;Crunchbang Linux 11 Waldorf&quot;&gt;Waldorf&lt;/a&gt;, since I&amp;rsquo;m just going to use the netbook mainly for browsing and writing.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;I wrote the &lt;code&gt;iso&lt;/code&gt; to a USB stick and played around with for a few minutes before I hit install. I was a bit worried that I&amp;rsquo;d completely break my computer but the installation went fine. It took about 10-15 minutes and then the system was up and running. I was also prepared for some tinkering with the settings and such but everything worked right out the box, even the brightness and volume controls. Color me impressed!&lt;/p&gt;
+
+&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;After the installation I decided to remove a couple of apps&lt;sup id=&quot;fnref:20121214-2&quot;&gt;&lt;a href=&quot;#fn:20121214-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; since I&amp;rsquo;m not going to use them anyway. With a couple of &lt;code&gt;sudo apt-get remove&lt;/code&gt;, &lt;code&gt;sudo apt-get autoremove&lt;/code&gt; and some fiddling with the &lt;a href=&quot;http://openbox.org/&quot; title=&quot;Openbox&quot;&gt;Openbox&lt;/a&gt; menu it was done in a matter of minutes. The default web browser, &lt;a href=&quot;http://www.geticeweasel.org/&quot; title=&quot;Iceweasel&quot;&gt;Iceweasel&lt;/a&gt;, wasn&amp;rsquo;t really for me so I replaced it with &lt;a href=&quot;www.google.com/chrome/&quot; title=&quot;Chrome&quot;&gt;Chrome&lt;/a&gt;. I also change the default font in system montoring tool &lt;a href=&quot;http://conky.sourceforge.net/&quot; title=&quot;Conky&quot;&gt;Conky&lt;/a&gt; to a monospaced one. I&amp;rsquo;m probably going to change a few more things, but so far I&amp;rsquo;m happy with the default experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;apps&quot;&gt;Apps&lt;/h2&gt;
+
+&lt;p&gt;While my goal is to keep the netbook as clean as possible there was one&lt;sup id=&quot;fnref:20121214-3&quot;&gt;&lt;a href=&quot;#fn:20121214-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; additional app that I just had to install: &lt;a href=&quot;http://sourceforge.net/p/retext/home/ReText/&quot; title=&quot;ReText&quot;&gt;ReText&lt;/a&gt;. It was the only real Markdown editor with syntax highlighting that I could find. My favorite distraction free editor &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is available but since I want to keep my app count at a minimum I decided to only install ReText. I&amp;rsquo;ve heard that a Debian-compatible version of &lt;a href=&quot;http://uberwriter.wolfvollprecht.de/&quot; title=&quot;UberWriter&quot;&gt;UberWriter&lt;/a&gt; is in the works so I might switch to that once it&amp;rsquo;s out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2012-12-14-crunchbang-waldorf.png&quot; alt=&quot;Crunchbang Linux (Waldorf)&quot; title=&quot;Crunchbang Linux (Waldorf)&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h2&gt;
+
+&lt;p&gt;In short I really love this distro. It&amp;rsquo;s fast, light on the resources, highly customizable but at the same just works. The battery life has gone down from around 5 hours to 4.5 hours, which isn&amp;rsquo;t that bad at all. In fact I&amp;rsquo;m really impressed by that too. I wholeheartedly recommend it to people who want to make the jump to Linux but don&amp;rsquo;t want to use something more resource-heavy, like the current main version of &lt;a href=&quot;http://www.ubuntu.com/&quot; title=&quot;Ubuntu&quot;&gt;Ubuntu&lt;/a&gt;, while still maintaining an all-around functionality for most users.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121214-1&quot;&gt;
+      &lt;p&gt;The system specification is as followed: 1.6 GHz, 1 GB RAM, 160 GB HDD with Windows XP (previously) installed.&lt;a href=&quot;#fnref:20121214-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121214-2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.abisource.com/&quot; title=&quot;Abiword&quot;&gt;Abiword&lt;/a&gt;, &lt;a href=&quot;http://projects.gnome.org/gnumeric/&quot; title=&quot;Gnumeric&quot;&gt;Gnumeric&lt;/a&gt;, &lt;a href=&quot;http://goodies.xfce.org/projects/applications/xfburn&quot; title=&quot;xfburn&quot;&gt;xfburn&lt;/a&gt; and a few others.&lt;a href=&quot;#fnref:20121214-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121214-3&quot;&gt;
+      &lt;p&gt;I also installed &lt;a href=&quot;http://dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; but that&amp;rsquo;s pretty much a given thing. &lt;a href=&quot;#fnref:20121214-3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December 14, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/14/my-adventure-with-crunchbang</link>
+              </item>
+            
+              <item>
                 <title>Robocop(y)</title>
                 <description>&lt;p&gt;While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called &lt;code&gt;robocopy&lt;/code&gt;&lt;sup id=&quot;fnref:20121211-1&quot;&gt;&lt;a href=&quot;#fn:20121211-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. One of the things I use it for is to quickly backup the source of my &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; site to a folder on my &lt;a href=&quot;http://dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; with a simple command like this:&lt;/p&gt;
 
@@ -117,48 +159,6 @@
 </description>
                 <published>December  2, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/02/the-setup</link>
-              </item>
-            
-              <item>
-                <title>Small Steps Into Ruby</title>
-                <description>&lt;p&gt;I&amp;rsquo;ve always wanted to learn a real programming language. The few times in the past that I&amp;rsquo;ve tried have all been fruitless though. My brain just doesn&amp;rsquo;t work when there&amp;rsquo;s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won&amp;rsquo;t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write &lt;code&gt;background-color: red;&lt;/code&gt; and what do you know, the background suddenly is red. With those two you don&amp;rsquo;t have write a short novel just to get the command line to print a simple &lt;em&gt;&amp;ldquo;Hello World&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since this site is built with Jekyll I decided to really start learning &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; and I&amp;rsquo;m glad I did. The syntax is so simple that it amazes me. Over the last few days I&amp;rsquo;ve experimented with it a lot and even released a few simple scripts on &lt;a href=&quot;https://github.com/gummesson&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt;. One of those was inspired by a post I saw yesterday on 
-&lt;a href=&quot;http://lifehacker.com/5963597/why-you-should-be-using-an-app-launcher-and-how-to-make-it-do-anythingyou-want&quot; title=&quot;Lifehacker&quot;&gt;Lifehacker&lt;/a&gt;. The article mentions how you can use &lt;a href=&quot;http://launchy.net/&quot; title=&quot;Launchy&quot;&gt;Launchy&lt;/a&gt; to append text to a text file, but I couldn&amp;rsquo;t get the &lt;code&gt;bat&lt;/code&gt; script they recommended to properly work so I decided to just make a &lt;a href=&quot;https://github.com/gummesson/append-text&quot; title=&quot;Append Text (for Launchy on GitHub&quot;&gt;Ruby version of it&lt;/a&gt;. The script looks like this without comments:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;require 'yaml'
-
-config = YAML.load_file(&quot;config.yml&quot;)
-txt_file = config[&quot;txt_file&quot;]
-
-item = ARGV.join(&quot; &quot;)
-
-File.open(txt_file, &quot;a&quot;) { |file| file.puts(item) }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Right now it consists of just five lines of code. I could&amp;rsquo;ve even made it even simpler by leaving out the use of YAML&lt;sup id=&quot;fnref:20121128-1&quot;&gt;&lt;a href=&quot;#fn:20121128-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for the text file configuration&lt;sup id=&quot;fnref:20121128-2&quot;&gt;&lt;a href=&quot;#fn:20121128-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. I really like having something like that though since you don&amp;rsquo;t have to change the actual source code if you later decide to use another text file. Now I just need to launch Launchy, type &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;TAB&lt;/code&gt; and whatever I want to append to the file and just hit &lt;code&gt;Enter&lt;/code&gt; to add something to my spark file, which is even faster than launching the actually text file with &lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt; like I mentioned in the previous blog post.&lt;/p&gt;
-
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-
-&lt;p&gt;I found the book &lt;a href=&quot;http://www.humblelittlerubybook.com/book/&quot; title=&quot;Mr. Neighborly's Humble Little Ruby Book&quot;&gt;Mr. Neighborly&amp;rsquo;s Humble Little Ruby Book&lt;/a&gt; extremely good. It explains a lot of stuff without getting too technically complex and with a perfect mix of humor. Another book I also found helpful and easy to understand was &lt;a href=&quot;http://ruby.bastardsbook.com/&quot; title=&quot;The Bastards Book of Ruby&quot;&gt;The Bastards Book of Ruby&lt;/a&gt;. I&amp;rsquo;ve also seen &lt;a href=&quot;http://ruby.learncodethehardway.org/book/&quot; title=&quot;Learn Ruby The Hard Way&quot;&gt;Learn Ruby The Hard Way&lt;/a&gt; and &lt;a href=&quot;http://pine.fm/LearnToProgram/&quot; title=&quot;Learn To Program&quot;&gt;Learn To Program&lt;/a&gt; being mentioned quite a few times but so far I haven&amp;rsquo;t had time to check them out. Another tip is that you shouldn&amp;rsquo;t underestimate the power of Google and a thriving community. &lt;a href=&quot;http://stackoverflow.com/questions/tagged/ruby&quot; title=&quot;Stack Overflow&quot;&gt;Stack Overflow&lt;/a&gt; is filled with a lot of answers for literally every single question you might have.&lt;/p&gt;
-
-&lt;p&gt;I still have a long way to go, but so far it&amp;rsquo;s been a really fun ride.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121128-1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Yaml&quot; title=&quot;YAML Ain't Markup Language&quot;&gt;YAML Ain&amp;rsquo;t Markup Language&lt;/a&gt;.&lt;a href=&quot;#fnref:20121128-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121128-2&quot;&gt;
-      &lt;p&gt;The &lt;code&gt;config.yml&lt;/code&gt; file contains a single line, &lt;code&gt;txt_file:&lt;/code&gt;, where you put the path to the text file in question. &lt;a href=&quot;#fnref:20121128-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>November 28, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/11/28/small-steps-into-ruby</link>
               </item>
             
     </channel>
