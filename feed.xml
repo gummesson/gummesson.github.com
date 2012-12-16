@@ -6,6 +6,31 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Configuring Crunchbang</title>
+                <description>&lt;p&gt;Since installing &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang&lt;/a&gt; two days ago I&amp;rsquo;ve spent quite some time on configuring it to my liking. While I find the default look to be quite nice I felt that I needed something with a bit more lighter colors. This is how my current system looks now:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2012-12-16-crunchbang-elementary.png&quot; alt=&quot;Crunchbang Elementary&quot; title=&quot;Crunchbang Elementary&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Openbox theme is called &lt;a href=&quot;http://grvrulz.deviantart.com/art/elementary-for-openbox-253002995&quot; title=&quot;Elementary for Openbox&quot;&gt;Elementary for Openbox&lt;/a&gt; while the GTK theme is just called &lt;a href=&quot;http://danrabbit.deviantart.com/art/elementary-gtk-theme-83104033&quot; title=&quot;Elementary GTK Theme&quot;&gt;Elementary&lt;/a&gt;. They&amp;rsquo;re both based on the visual style of another Linux distro, &lt;a href=&quot;http://elementaryos.org/&quot; title=&quot;Elementary OS&quot;&gt;Elementary OS&lt;/a&gt;&lt;sup id=&quot;fnref:20121216-1&quot;&gt;&lt;a href=&quot;#fn:20121216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I threw together the wallpaper by going to &lt;a href=&quot;http://colourlovers.com/&quot; title=&quot;Colourlovers&quot;&gt;Colourlovers&lt;/a&gt;, picking two blue-ish colors&lt;sup id=&quot;fnref:20121216-2&quot;&gt;&lt;a href=&quot;#fn:20121216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; that I liked and using them in as a gradient in &lt;a href=&quot;http://www.gimp.org/&quot; title=&quot;GIMP&quot;&gt;GIMP&lt;/a&gt; that I drag vertically in the middle of the empty picture. I then configured the default panel &lt;a href=&quot;http://code.google.com/p/tint2/&quot; title=&quot;tint2&quot;&gt;tint2&lt;/a&gt; so that it got placed vertically to the left and removed both &lt;a href=&quot;http://conky.sourceforge.net/&quot; title=&quot;Conky&quot;&gt;Conky&lt;/a&gt; and &lt;a href=&quot;http://clipit.rspwn.com/&quot; title=&quot;ClipIt&quot;&gt;ClipIt&lt;/a&gt; from the autostart script. They&amp;rsquo;re still in the system though since I might have some use for them in the future.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121216-1&quot;&gt;
+      &lt;p&gt;Which looks incredibly nice by the way.&lt;a href=&quot;#fnref:20121216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121216-2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.colourlovers.com/color/0D3561/Cold_Winters_Night&quot; title=&quot;Cold Winter's Night&quot;&gt;Cold Winter&amp;rsquo;s Night&lt;/a&gt; and &lt;a href=&quot;http://www.colourlovers.com/color/108BBB/Winter_Blue&quot; title=&quot;Winter Blue&quot;&gt;Winter Blue&lt;/a&gt;.&lt;a href=&quot;#fnref:20121216-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December 16, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/16/configuring-crunchbang</link>
+              </item>
+            
+              <item>
                 <title>My Adventure With Crunchbang</title>
                 <description>&lt;p&gt;Lately I&amp;rsquo;ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a &lt;em&gt;Samsung NC10&lt;/em&gt;&lt;sup id=&quot;fnref:20121214-1&quot;&gt;&lt;a href=&quot;#fn:20121214-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. It&amp;rsquo;s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It&amp;rsquo;s based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt; which means that there&amp;rsquo;s a lot of apps for it and the support is generally good. I decided to download the current testing version, &lt;a href=&quot;http://crunchbang.org/download/testing&quot; title=&quot;Crunchbang Linux 11 Waldorf&quot;&gt;Waldorf&lt;/a&gt;, since I&amp;rsquo;m just going to use the netbook mainly for browsing and writing.&lt;/p&gt;
 
@@ -141,24 +166,6 @@
 </description>
                 <published>December  5, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/05/apps-for-windows</link>
-              </item>
-            
-              <item>
-                <title>The Setup</title>
-                <description>&lt;p&gt;One of my favorite sites on the web is the &lt;a href=&quot;http://usesthis.com/&quot; title=&quot;The Setup&quot;&gt;The Setup&lt;/a&gt;. The tagline for it is &lt;em&gt;&amp;ldquo;What do people use to get stuff done?&amp;rdquo;&lt;/em&gt;, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use&lt;sup id=&quot;fnref:20121202-1&quot;&gt;&lt;a href=&quot;#fn:20121202-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. If you haven&amp;rsquo;t checked it out and you&amp;rsquo;re as geeky as I am I suggest that you should. There&amp;rsquo;s also a couple of &lt;a href=&quot;http://usesthis.com/community/&quot; title=&quot;The Setup's Community&quot;&gt;spin-offs&lt;/a&gt; of the whole idea, which ranges from Linux users to teachers to people with disabilities. I&amp;rsquo;ve been toying with the idea of doing something like that but haven&amp;rsquo;t had the time nor the resources to do so just yet. All in all it&amp;rsquo;s a little fantastic website that I thoroughly enjoy.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121202-1&quot;&gt;
-      &lt;p&gt;&lt;strong&gt;Spoiler alert:&lt;/strong&gt; mostly Apple products, although both Linux and Windows users show up from time to time. &lt;a href=&quot;#fnref:20121202-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December  2, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/02/the-setup</link>
               </item>
             
     </channel>
