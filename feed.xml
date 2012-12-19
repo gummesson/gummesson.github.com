@@ -6,6 +6,46 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Handy Bash Scripts</title>
+                <description>&lt;p&gt;One thing that I really miss while I&amp;rsquo;m using Crunchbang is a good note-taking app with plain text support. I haven&amp;rsquo;t found one yet so I threw together a few simple bash scripts that I can use in the terminal for easier notetaking.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function no() {
+  geany ~/Dropbox/path/to/notes/$1.txt 
+}
+
+function nos() {
+  ls -c ~/Dropbox/path/to/notes | grep --color=always $1
+}
+
+function nol() {
+  ls -c ~/Dropbox/path/to/notes
+}
+
+function not() {
+  cat ~/Dropbox/path/to/notes/$1.txt
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;no()&lt;/code&gt; function will open the note itself in the text editor &lt;a href=&quot;http://www.geany.org/&quot; title=&quot;Geany&quot;&gt;Geany&lt;/a&gt;. The &lt;code&gt;nos()&lt;/code&gt; function is used for finding notes with a particular search term in their filename. The &lt;code&gt;--color=always&lt;/code&gt; highlights the given search term. The &lt;code&gt;-c&lt;/code&gt; sort all of the notes by the last modified date. The &lt;code&gt;nol()&lt;/code&gt; function just lists all of the notes and the &lt;code&gt;not()&lt;/code&gt; function displays the content of a note directly in the terminal. Now I just need to type either &lt;code&gt;$ no filename&lt;/code&gt;, &lt;code&gt;$ nos search-term&lt;/code&gt;, &lt;code&gt;$ nol&lt;/code&gt; or &lt;code&gt;$ not filename&lt;/code&gt; to do various things to my notes. &lt;/p&gt;
+
+&lt;p&gt;I also added two scripts for appending text directly into my spark file and todo file which I then use like this: &lt;code&gt;$ add Write something about anything&lt;/code&gt; and &lt;code&gt;$ todo Something soon&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function add() {
+  echo $@ &amp;gt;&amp;gt; ~/Dropbox/path/to/notes/spark-file.txt
+}
+
+function todo() {
+  echo $@ &amp;gt;&amp;gt; ~/Dropbox/path/to/notes/todo.txt
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Even though the scripts aren&amp;rsquo;t as useful as a fully featured app they provide some sort of functionality to my writing workflow, which is nice.&lt;/p&gt;
+</description>
+                <published>December 19, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/19/handy-bash-scripts</link>
+              </item>
+            
+              <item>
                 <title>Configuring Crunchbang</title>
                 <description>&lt;p&gt;Since installing &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang&lt;/a&gt; two days ago I&amp;rsquo;ve spent quite some time on configuring it to my liking. While I find the default look to be quite nice I felt that I needed something with a bit more lighter colors. This is how my current system looks now:&lt;/p&gt;
 
@@ -118,54 +158,6 @@
 </description>
                 <published>December  9, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/09/the-struggles-of-writing</link>
-              </item>
-            
-              <item>
-                <title>Apps For Windows</title>
-                <description>&lt;p&gt;Here&amp;rsquo;s a list of what I consider awesome apps and utilities for Windows. Even though there&amp;rsquo;s no shortage of them I sometimes find that it&amp;rsquo;s quite hard to find those gems that really stand out.&lt;/p&gt;
-
-&lt;h2 id=&quot;focuswriter&quot;&gt;FocusWriter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is probably the best minimalistic writing app I&amp;rsquo;ve come across. It&amp;rsquo;s open source, cross platform and portable too. It has a lot of features but those never get in the way since it can hide a lot of them, which is something that&amp;rsquo;s great for my writing productivity.&lt;/p&gt;
-
-&lt;h2 id=&quot;markdownpad&quot;&gt;MarkdownPad&lt;/h2&gt;
-
-&lt;p&gt;Even though I mainly do all of my writing in FocusWriter I find it a good thing to sometimes preview my formatting in another app and that&amp;rsquo;s were &lt;a href=&quot;http://markdownpad.com/&quot; title=&quot;MarkdownPad&quot;&gt;MarkdownPad&lt;/a&gt; fits right in with it&amp;rsquo;s excellent live preview.&lt;/p&gt;
-
-&lt;h2 id=&quot;resophnotes&quot;&gt;ResophNotes&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt; is the only real dedicated note taking app for Windows with the option of saving the notes in plain text that I&amp;rsquo;ve found. By enabling a global hot key you can pretty much create a note as soon as it pops into your head.&lt;/p&gt;
-
-&lt;h2 id=&quot;todotxtnet&quot;&gt;todotxt.net&lt;/h2&gt;
-
-&lt;p&gt;Since I&amp;rsquo;ve moved to almost exclusively using plain text for saving pretty much anything I do I&amp;rsquo;ve also started to use an iOS app called &lt;a href=&quot;http://todotxt.com/&quot; title=&quot;todo.txt&quot;&gt;todo.txt&lt;/a&gt;. todo.txt provides a graphical interface for a simple plain text file (called todo.txt) and &lt;a href=&quot;http://benrhughes.com/todotxt.net/&quot; title=&quot;todotxt.net&quot;&gt;todotxt.net&lt;/a&gt; is the Windows counterpart to it.&lt;/p&gt;
-
-&lt;h2 id=&quot;uv-outliner&quot;&gt;UV Outliner&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://uvoutliner.com/&quot; title=&quot;UV Outliner&quot;&gt;UV Outliner&lt;/a&gt; is probably the only good single pane outliner for Windows. It can also be used as a task manager if you enable the  checkbox function, which is pretty nice.&lt;/p&gt;
-
-&lt;h2 id=&quot;launchy&quot;&gt;Launchy&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Launchy is a free cross-platform utility designed to help you forget about your start menu, the icons on your desktop, and even your file manager. Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I think that the description from &lt;a href=&quot;http://launchy.net/&quot; title=&quot;Launchy&quot;&gt;Launchy&amp;rsquo;s official website&lt;/a&gt; is sufficient enough so I&amp;rsquo;ll just leave it at that.&lt;/p&gt;
-
-&lt;h2 id=&quot;autohotkey&quot;&gt;AutoHotKey&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.autohotkey.com/&quot; title=&quot;AutoHotKey&quot;&gt;AutoHotKey&lt;/a&gt; is an fantastic little app that you can add your own scripts to. Whether it&amp;rsquo;s about creating a keyboard shortcut for an app, launching a specific document or having a lot of text expansions it can do the job for you.&lt;/p&gt;
-
-&lt;h2 id=&quot;virtuawin&quot;&gt;VirtuaWin&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://virtuawin.sourceforge.net/&quot; title=&quot;VirtuaWin&quot;&gt;VirtuaWin&lt;/a&gt; is a small for enabling up to four virtual desktops on your screen. It&amp;rsquo;s not as fancy as OS X&amp;rsquo;s Spaces and Expose or another vritual desktop app called &lt;a href=&quot;http://dexpot.de/&quot; title=&quot;Dexpot&quot;&gt;Dexpot&lt;/a&gt;, but it&amp;rsquo;s extremely lightweight.&lt;/p&gt;
-
-&lt;h2 id=&quot;shotty&quot;&gt;Shotty&lt;/h2&gt;
-
-&lt;p&gt;I was looking for something better than the built in snipping tool and I found &lt;a href=&quot;http://shotty.devs-on.net/en/Overview.aspx&quot; title=&quot;Shotty&quot;&gt;Shotty&lt;/a&gt;. One of the things I like about it is that it leaves the shadows of your screenshots intact which makes them look a lot nicer. It may not be essential to everybody but since I need to take screenshots from time to time I feel that it has it&amp;rsquo;s spot in this list.&lt;/p&gt;
-</description>
-                <published>December  5, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/05/apps-for-windows</link>
               </item>
             
     </channel>
