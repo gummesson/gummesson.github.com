@@ -54,7 +54,14 @@
     </p><!-- .small -centered .italic -->
   
     <span class="justified">
-      <p><a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. I haven&rsquo;t noticed anything different but it&rsquo;s nice to know that the development will continue nonetheless.</p>
+      <p><a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It&rsquo;s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven&rsquo;t had time to play around with it a whole lot but the nicest new feature that I&rsquo;ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. </p>
+
+<p>I previously had to use a quite ugly hack that involved copying and changing the source code itself and place it in my <code>_plugins</code> folder. Now the only thing that I had to do was to add the below line in my <code>_config.yml</code> file:</p>
+
+<pre><code>paginate_path: blog/page/:num
+</code></pre>
+
+<p>It has the same functionality as my own fiddling but it&rsquo;s a hell of a lot easier than having to change the code directly.</p>
 
     </span><!-- .justified -->
 </article><!-- .post -->

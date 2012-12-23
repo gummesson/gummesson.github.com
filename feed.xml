@@ -7,7 +7,14 @@
             
               <item>
                 <title>Jekyll 0.12.0</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. I haven&amp;rsquo;t noticed anything different but it&amp;rsquo;s nice to know that the development will continue nonetheless.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It&amp;rsquo;s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven&amp;rsquo;t had time to play around with it a whole lot but the nicest new feature that I&amp;rsquo;ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. &lt;/p&gt;
+
+&lt;p&gt;I previously had to use a quite ugly hack that involved copying and changing the source code itself and place it in my &lt;code&gt;_plugins&lt;/code&gt; folder. Now the only thing that I had to do was to add the below line in my &lt;code&gt;_config.yml&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;paginate_path: blog/page/:num
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It has the same functionality as my own fiddling but it&amp;rsquo;s a hell of a lot easier than having to change the code directly.&lt;/p&gt;
 </description>
                 <published>December 23, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0</link>
