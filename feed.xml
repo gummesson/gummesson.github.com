@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Jekyll 0.12.0</title>
+                <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. I haven&amp;rsquo;t noticed anything different but it&amp;rsquo;s nice to know that the development will continue nonetheless.&lt;/p&gt;
+</description>
+                <published>December 23, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0</link>
+              </item>
+            
+              <item>
                 <title>Handy Bash Scripts</title>
                 <description>&lt;p&gt;One thing that I really miss while I&amp;rsquo;m using Crunchbang is a good note-taking app with plain text support. I haven&amp;rsquo;t found one yet so I threw together a few simple bash scripts that I can use in the terminal for easier notetaking.&lt;/p&gt;
 
@@ -138,26 +146,6 @@ function todo() {
 </description>
                 <published>December 11, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/11/robocopy</link>
-              </item>
-            
-              <item>
-                <title>The Struggles Of Writing</title>
-                <description>&lt;p&gt;A couple of months back I wrote a blog post called &lt;em&gt;&lt;a href=&quot;/blog/2012/09/20/the-joys-of-writing/&quot; title=&quot;The Joys Of Writing&quot;&gt;&amp;ldquo;The Joys of Writing&amp;rdquo;&lt;/a&gt;&lt;/em&gt; where I expressed my love for the craft that is writing. While I still feel the same I&amp;rsquo;ve also found it quite hard from time to time, especially during the last couple of weeks. In other words, the honeymoon period of starting this website is over. I sit down, launch &lt;a href=&quot;http://resoph.com/ResophNotes/Welcome.html&quot; title=&quot;ResophNotes&quot;&gt;ResophNotes&lt;/a&gt;, look through my notes and find a topic I want to write about but absolutely nothing comes out. Not even a word. It&amp;rsquo;s a good old-fashioned writer&amp;rsquo;s block and I hate it. Even though I probably have a very low number of readers&lt;sup id=&quot;fnref:20121209-1&quot;&gt;&lt;a href=&quot;#fn:20121209-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I still like to write and I feel quite powerless when I can&amp;rsquo;t do so. In short, writing keeps me sane. &lt;/p&gt;
-
-&lt;p&gt;I realize as I type this out that this blog post has a goodbye vibe written all over it, but fortunately that&amp;rsquo;s not the case. I just need to vent out some of my frustration. I&amp;rsquo;m going to keep fighting it and I hope that I&amp;rsquo;ll come out of it sooner than later. I guess that in a sense this post is already a step in the right direction.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121209-1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;/blog/2012/09/20/the-joys-of-writing/&quot; title=&quot;The Joys Of Writing&quot;&gt;As I&amp;rsquo;ve stated before&lt;/a&gt;, I don&amp;rsquo;t use any kind of analytics on this website so I haven&amp;rsquo;t got a clue about the readership.&lt;a href=&quot;#fnref:20121209-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December  9, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/09/the-struggles-of-writing</link>
               </item>
             
     </channel>
