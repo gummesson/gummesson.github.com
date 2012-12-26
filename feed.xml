@@ -6,6 +6,42 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Jekyll Rake Boilerplate</title>
+                <description>&lt;p&gt;Even though I so far love learning &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; I&amp;rsquo;ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I&amp;rsquo;m lazy like that. After some thinking I finally came up with something and yesterday I &amp;ldquo;released&amp;rdquo; it: the &lt;a href=&quot;https://github.com/gummesson/jekyll-rake-boilerplate&quot; title=&quot;Jekyll Rake Boilerplate&quot;&gt;Jekyll Rake Boilerplate&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Using a rakefile for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; isn&amp;rsquo;t something that&amp;rsquo;s new nor unique but so far I haven&amp;rsquo;t stumbled upon a simple boilerplate. It isn&amp;rsquo;t revolutionary by any means&lt;sup id=&quot;fnref:20121226-1&quot;&gt;&lt;a href=&quot;#fn:20121226-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but it gave me the motivation that I needed and I had fun while doing it. Even though it&amp;rsquo;s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be &amp;ldquo;proud&amp;rdquo; of it, or atleast content.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-tasks&quot;&gt;The Tasks&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;Jekyll Rake Boilerplate&lt;/em&gt; consists of four tasks: &lt;code&gt;build&lt;/code&gt;, &lt;code&gt;post&lt;/code&gt;, &lt;code&gt;git&lt;/code&gt; and &lt;code&gt;remote&lt;/code&gt;&lt;sup id=&quot;fnref:20121226-2&quot;&gt;&lt;a href=&quot;#fn:20121226-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;build&lt;/code&gt; generates the site. If I want to generate it with a post limit, I can use &lt;code&gt;build[1]&lt;/code&gt; or whatever number of posts I want to generate. &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;post[&quot;Post title&quot;]&lt;/code&gt; creates a new post in the &lt;code&gt;_posts&lt;/code&gt; directory by reading the default template file, adding the title I&amp;rsquo;ve specified and generating a file name by using the current date and the title.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git[&quot;Commit message&quot;]&lt;/code&gt; adds, commits and pushes the site to the site&amp;rsquo;s remote git repository with the commit message that&amp;rsquo;s been specified.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;remote&lt;/code&gt; uses either &lt;code&gt;robocopy&lt;/code&gt; or &lt;code&gt;rsync&lt;/code&gt; to transfer the site to a remote host/server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also set the default task to &lt;code&gt;build&lt;/code&gt; so if I&amp;rsquo;m feeling lazy I only need to type &lt;code&gt;rake&lt;/code&gt;, hit &lt;code&gt;Enter&lt;/code&gt; and the site will be generated. I&amp;rsquo;ve contemplating about adding some more tasks but for now I&amp;rsquo;ll stick to what I already have. The goal is to keep it as simple and adaptable as possible so that anyone can use it without having to modify it too much unless they want to.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121226-1&quot;&gt;
+      &lt;p&gt;And the code itself is probably not that good since I&amp;rsquo;m still learning.&lt;a href=&quot;#fnref:20121226-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121226-2&quot;&gt;
+      &lt;p&gt;The settings for some of the tasks needs to be in the &lt;code&gt;_config.yml&lt;/code&gt; file in order for them to work.&lt;a href=&quot;#fnref:20121226-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December 26, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/26/jekyll-rake-boilerplate</link>
+              </item>
+            
+              <item>
                 <title>Jekyll 0.12.0</title>
                 <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It&amp;rsquo;s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven&amp;rsquo;t had time to play around with it a whole lot but the nicest new feature that I&amp;rsquo;ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. &lt;/p&gt;
 
@@ -125,34 +161,6 @@ function todo() {
 </description>
                 <published>December 14, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/14/my-adventure-with-crunchbang</link>
-              </item>
-            
-              <item>
-                <title>Robocop(y)</title>
-                <description>&lt;p&gt;While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called &lt;code&gt;robocopy&lt;/code&gt;&lt;sup id=&quot;fnref:20121211-1&quot;&gt;&lt;a href=&quot;#fn:20121211-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. One of the things I use it for is to quickly backup the source of my &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; site to a folder on my &lt;a href=&quot;http://dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; with a simple command like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;robocopy ~/Jekyll ~/Dropbox/Jekyll *.* /mir
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you can see it follows the structure of &lt;code&gt;robocopy -source -destination -file -option&lt;/code&gt;. The &lt;code&gt;*.*&lt;/code&gt; targets every single filetype and the &lt;code&gt;/mir&lt;/code&gt; means that everything, including the subfolders, will get mirrored. There&amp;rsquo;s a lot of options for it&lt;sup id=&quot;fnref:20121211-2&quot;&gt;&lt;a href=&quot;#fn:20121211-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, ranging from copying a single file once to actually scheduling it for repeated copying. It&amp;rsquo;s not really a syncing function per se, but it works and it&amp;rsquo;s blazingly fast. I&amp;rsquo;m not really bothered by the fact that I have to manually run it either since I don&amp;rsquo;t need to sync everytime something changes.&lt;/p&gt;
-
-&lt;p&gt;The biggest advantage of using Robocopy is that it&amp;rsquo;s just a lot more smoother, especially since I&amp;rsquo;ve gotten more and more comfortable using the command line for everyday tasks. I can open up the CLI from anywhere, trigger a hotstring for pasting the above snippet and just hit &lt;code&gt;Enter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121211-1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Robocopy&quot; title=&quot;Robust File Copy&quot;&gt;Robust File Copy&lt;/a&gt;.&lt;a href=&quot;#fnref:20121211-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121211-2&quot;&gt;
-      &lt;p&gt;Here&amp;rsquo;s &lt;a href=&quot;http://ss64.com/nt/robocopy.html&quot; title=&quot;SS64's Robocopy Reference&quot;&gt;an excellent summary&lt;/a&gt; from SS64. &lt;a href=&quot;#fnref:20121211-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December 11, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/11/robocopy</link>
               </item>
             
     </channel>
