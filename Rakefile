@@ -1,3 +1,6 @@
+# Requirements
+require 'rake' # For the rake tasks
+
 # rake deploy["Commit message"]
 desc "Deploy the site to it's remote git repository"
 task :deploy, :message do |t, args|

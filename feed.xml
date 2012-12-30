@@ -6,6 +6,47 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Trying Out Vim</title>
+                <description>&lt;p&gt;There&amp;rsquo;s no doubt that if you&amp;rsquo;ve ever spent some time looking through and reading various developer related things that you&amp;rsquo;ve seen people mentioning the text editor &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;. I decided to try it out the graphical version of it, gVim, and it really is a different experience. Instead of relying on trusty old keyboard shortcuts like &lt;code&gt;Ctrl+S&lt;/code&gt; you instead have to first hit &lt;code&gt;Esc&lt;/code&gt; and type &lt;code&gt;:w&lt;/code&gt;. While I&amp;rsquo;m not a hundred percent sold on it&lt;sup id=&quot;fnref:20121230-1&quot;&gt;&lt;a href=&quot;#fn:20121230-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I can defintively see the appeal, especially for people who love their keyboards. The Vim version of the color scheme &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;, which I absolutely love, looks gorgeous and what I can tell Vim probably has the best Markdown syntax highlighting I&amp;rsquo;ve ever seen. One other aspect I really like is that you can save all of your settings in a single file which you can then use across multiple systems, since Vim is cross-platform.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m still very new to using it, so if I decided to really dive in to it I&amp;rsquo;m sure I&amp;rsquo;ll write more about it during the coming weeks.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-gvim-config&quot;&gt;My (g)Vim Config&lt;/h2&gt;
+
+&lt;p&gt;I naturally wanted to add some settings to make the experience slightly better&lt;sup id=&quot;fnref:20121230-2&quot;&gt;&lt;a href=&quot;#fn:20121230-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and thanks to a lot of different people&lt;sup id=&quot;fnref:20121230-3&quot;&gt;&lt;a href=&quot;#fn:20121230-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; across the web I was able to change quite a whole lot to my liking. I also installed a plugin called &lt;a href=&quot;https://github.com/scrooloose/nerdtree&quot; title=&quot;NERDTree&quot;&gt;NERDTree&lt;/a&gt; which adds a sidebar where you can see the files in your project directory. &lt;a href=&quot;https://github.com/tpope/vim-pathogen&quot; title=&quot;Pathogen&quot;&gt;Pathogen&lt;/a&gt; is also very helpful when it comes to managing all your plugins. It&amp;rsquo;s of course available on &lt;a href=&quot;https://github.com/gummesson/dotfiles/blob/master/.vimrc&quot; title=&quot;My .vimrc on GitHub&quot;&gt;my GitHub page&lt;/a&gt; and it&amp;rsquo;s loaded with comments.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in trying Vim out, I encourage you to look at these websites and screencasts.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://usevim.com/&quot; title=&quot;Use Vim&quot;&gt;Use Vim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vim.runpaint.org/&quot; title=&quot;Vim Recipes&quot;&gt;Vim Recipes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vimcasts.org/&quot; title=&quot;Vimcasts&quot;&gt;Vimcasts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.derekwyatt.org/vim/vim-tutorial-videos/&quot; title=&quot;Derek Wyatt's Vim tutorial videos&quot;&gt;Derek Wyatt&amp;rsquo;s Vim tutorial videos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20121230-1&quot;&gt;
+      &lt;p&gt;I&amp;rsquo;ve noticed that the more I use it the more I like it so maybe it&amp;rsquo;s just a matter of time before I take the plunge and switch over to it fully.&lt;a href=&quot;#fnref:20121230-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121230-2&quot;&gt;
+      &lt;p&gt;Vim is like a blank canvas when you start. Literally. Not even the syntax highlighting is on by default. &lt;a href=&quot;#fnref:20121230-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20121230-3&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/&quot; title=&quot;Top 10 Pitfalls When Switching to Vim&quot;&gt;Jeffrey Way&amp;rsquo;s&lt;/a&gt;, &lt;a href=&quot;http://nvie.com/posts/how-i-boosted-my-vim/&quot; title=&quot;How I boosted my Vim&quot;&gt;Vincent Driessen&amp;rsquo;s&lt;/a&gt; and &lt;a href=&quot;http://stevelosh.com/blog/2010/09/coming-home-to-vim/&quot; title=&quot;Coming Home to Vim&quot;&gt;Steve Losh&amp;rsquo;s&lt;/a&gt; tips, tricks and config files where extremely helpful.&lt;a href=&quot;#fnref:20121230-3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December 30, 2012</published>
+                <link>http://ellengummesson.com/blog/2012/12/30/trying-out-vim</link>
+              </item>
+            
+              <item>
                 <title>Jekyll Rake Boilerplate</title>
                 <description>&lt;p&gt;Even though I so far love learning &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; I&amp;rsquo;ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I&amp;rsquo;m lazy like that. After some thinking I finally came up with something and yesterday I &amp;ldquo;released&amp;rdquo; it: the &lt;a href=&quot;https://github.com/gummesson/jekyll-rake-boilerplate&quot; title=&quot;Jekyll Rake Boilerplate&quot;&gt;Jekyll Rake Boilerplate&lt;/a&gt;. &lt;/p&gt;
 
@@ -119,48 +160,6 @@ function todo() {
 </description>
                 <published>December 16, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/16/configuring-crunchbang</link>
-              </item>
-            
-              <item>
-                <title>My Adventure With Crunchbang</title>
-                <description>&lt;p&gt;Lately I&amp;rsquo;ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a &lt;em&gt;Samsung NC10&lt;/em&gt;&lt;sup id=&quot;fnref:20121214-1&quot;&gt;&lt;a href=&quot;#fn:20121214-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. It&amp;rsquo;s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It&amp;rsquo;s based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt; which means that there&amp;rsquo;s a lot of apps for it and the support is generally good. I decided to download the current testing version, &lt;a href=&quot;http://crunchbang.org/download/testing&quot; title=&quot;Crunchbang Linux 11 Waldorf&quot;&gt;Waldorf&lt;/a&gt;, since I&amp;rsquo;m just going to use the netbook mainly for browsing and writing.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;I wrote the &lt;code&gt;iso&lt;/code&gt; to a USB stick and played around with for a few minutes before I hit install. I was a bit worried that I&amp;rsquo;d completely break my computer but the installation went fine. It took about 10-15 minutes and then the system was up and running. I was also prepared for some tinkering with the settings and such but everything worked right out the box, even the brightness and volume controls. Color me impressed!&lt;/p&gt;
-
-&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
-
-&lt;p&gt;After the installation I decided to remove a couple of apps&lt;sup id=&quot;fnref:20121214-2&quot;&gt;&lt;a href=&quot;#fn:20121214-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; since I&amp;rsquo;m not going to use them anyway. With a couple of &lt;code&gt;sudo apt-get remove&lt;/code&gt;, &lt;code&gt;sudo apt-get autoremove&lt;/code&gt; and some fiddling with the &lt;a href=&quot;http://openbox.org/&quot; title=&quot;Openbox&quot;&gt;Openbox&lt;/a&gt; menu it was done in a matter of minutes. The default web browser, &lt;a href=&quot;http://www.geticeweasel.org/&quot; title=&quot;Iceweasel&quot;&gt;Iceweasel&lt;/a&gt;, wasn&amp;rsquo;t really for me so I replaced it with &lt;a href=&quot;www.google.com/chrome/&quot; title=&quot;Chrome&quot;&gt;Chrome&lt;/a&gt;. I also change the default font in system montoring tool &lt;a href=&quot;http://conky.sourceforge.net/&quot; title=&quot;Conky&quot;&gt;Conky&lt;/a&gt; to a monospaced one. I&amp;rsquo;m probably going to change a few more things, but so far I&amp;rsquo;m happy with the default experience.&lt;/p&gt;
-
-&lt;h2 id=&quot;apps&quot;&gt;Apps&lt;/h2&gt;
-
-&lt;p&gt;While my goal is to keep the netbook as clean as possible there was one&lt;sup id=&quot;fnref:20121214-3&quot;&gt;&lt;a href=&quot;#fn:20121214-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; additional app that I just had to install: &lt;a href=&quot;http://sourceforge.net/p/retext/home/ReText/&quot; title=&quot;ReText&quot;&gt;ReText&lt;/a&gt;. It was the only real Markdown editor with syntax highlighting that I could find. My favorite distraction free editor &lt;a href=&quot;http://gottcode.org/focuswriter/&quot; title=&quot;FocusWriter&quot;&gt;FocusWriter&lt;/a&gt; is available but since I want to keep my app count at a minimum I decided to only install ReText. I&amp;rsquo;ve heard that a Debian-compatible version of &lt;a href=&quot;http://uberwriter.wolfvollprecht.de/&quot; title=&quot;UberWriter&quot;&gt;UberWriter&lt;/a&gt; is in the works so I might switch to that once it&amp;rsquo;s out.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2012-12-14-crunchbang-waldorf.png&quot; alt=&quot;Crunchbang Linux (Waldorf)&quot; title=&quot;Crunchbang Linux (Waldorf)&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h2&gt;
-
-&lt;p&gt;In short I really love this distro. It&amp;rsquo;s fast, light on the resources, highly customizable but at the same just works. The battery life has gone down from around 5 hours to 4.5 hours, which isn&amp;rsquo;t that bad at all. In fact I&amp;rsquo;m really impressed by that too. I wholeheartedly recommend it to people who want to make the jump to Linux but don&amp;rsquo;t want to use something more resource-heavy, like the current main version of &lt;a href=&quot;http://www.ubuntu.com/&quot; title=&quot;Ubuntu&quot;&gt;Ubuntu&lt;/a&gt;, while still maintaining an all-around functionality for most users.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121214-1&quot;&gt;
-      &lt;p&gt;The system specification is as followed: 1.6 GHz, 1 GB RAM, 160 GB HDD with Windows XP (previously) installed.&lt;a href=&quot;#fnref:20121214-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121214-2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.abisource.com/&quot; title=&quot;Abiword&quot;&gt;Abiword&lt;/a&gt;, &lt;a href=&quot;http://projects.gnome.org/gnumeric/&quot; title=&quot;Gnumeric&quot;&gt;Gnumeric&lt;/a&gt;, &lt;a href=&quot;http://goodies.xfce.org/projects/applications/xfburn&quot; title=&quot;xfburn&quot;&gt;xfburn&lt;/a&gt; and a few others.&lt;a href=&quot;#fnref:20121214-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121214-3&quot;&gt;
-      &lt;p&gt;I also installed &lt;a href=&quot;http://dropbox.com/&quot; title=&quot;Dropbox&quot;&gt;Dropbox&lt;/a&gt; but that&amp;rsquo;s pretty much a given thing. &lt;a href=&quot;#fnref:20121214-3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December 14, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/14/my-adventure-with-crunchbang</link>
               </item>
             
     </channel>
