@@ -45,6 +45,62 @@
   <article class="post">
   
     <h1>
+      <a href="blog/2012/09/11/external-links-in-the-post-title" alt="External Links In The Post Title" title="External Links In The Post Title">
+        External Links In The Post Title
+      </a>
+    </h1>
+    <p class="small centered italic">
+      Posted on September 11, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
+    </p><!-- .small -centered .italic -->
+  
+    <span class="justified">
+      <p>A couple of days ago I finally managed to add the ability to have external links in my post titles on this site. I tried and I tried, but for some reason I couldn&rsquo;t get it to work properly. I waited a couple of days and tried again and then boom, it worked. I don&rsquo;t know what I did wrong the first time, but I&rsquo;m glad that it now works. Thanks to the YAML Front Matter and Liquid tags it&rsquo;s actually not that hard to add to your site. I don&rsquo;t really know if I&rsquo;ll use it that much, but I quite like to have that option.</p>
+
+<h2 id="how-to-add-the-external-links">How To Add The External Links</h2>
+
+<p>The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:</p>
+
+<pre><code>external-link: http://www.example.com/
+</code></pre>
+
+<p>If you don&rsquo;t want to add an external link to your title, just replace the link itself with <code>false</code> or remove the whole thing. The markup of your post title on your front page should look like something like this:</p>
+
+<pre><code>&lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+</code></pre>
+
+<p>Instead of having the above markup, replace it with something like this:</p>
+
+<pre><code>{% if post.external-link %}
+  &lt;h1&gt;&lt;a href="{{ post.external-link }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+{% endif %}
+</code></pre>
+
+<p>I also added this in the markup for my post layout:</p>
+
+<pre><code>{% if page.external-link %}
+  &lt;h1&gt;&lt;a href="{{ page.external-link }}"&gt;{{ page.title }}&lt;/a&gt;&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
+{% endif %}
+</code></pre>
+
+<p>And you&rsquo;re done! I would encourage you to also add an actual permalink to your own post if you&rsquo;re using external links, like this for example:</p>
+
+<pre><code>&lt;p&gt;&lt;a href="{{ post.url }}"&gt;Permalink&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+
+<h3 id="a-side-note">A Side Note</h3>
+
+<p>I actually had to add another plugin so I could show the Liquid tags since Jekyll parses them automatically. You can find it in <a href="https://gist.github.com/1020852" title="Raw tag for Jekyll">this gist</a> over at GitHub.</p>
+
+    </span><!-- .justified -->
+</article><!-- .post -->
+
+  <article class="post">
+  
+    <h1>
       <a href="blog/2012/09/10/gummesson-two-point-zero" alt="Gummesson 2.0" title="Gummesson 2.0">
         Gummesson 2.0
       </a>
@@ -126,119 +182,6 @@
 <p><strong>Note:</strong> GitHub Pages (where I host my site) can actually run Jekyll and generate your site automatically but you can&rsquo;t use your own plugins, so that&rsquo;s why I&rsquo;m deploying my static pages rather than just the source itself.</p>
 
 <p>And that&rsquo;s it! You could argue that it sounds a lot like overkill, but it works for me. Sure, I can&rsquo;t upgrade something without sitting infront of my computer, but I know that I&rsquo;d never update from a phone or email anyways. It really makes me think twice before I publish something too, which I like.</p>
-
-    </span><!-- .justified -->
-</article><!-- .post -->
-
-  <article class="post">
-  
-    <h1>
-      <a href="blog/2012/08/31/more-additions" alt="More Additions" title="More Additions">
-        More Additions
-      </a>
-    </h1>
-    <p class="small centered italic">
-      Posted on August 31, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>  
-    </p><!-- .small -centered .italic -->
-  
-    <span class="justified">
-      <p>Being bored sometimes has it&rsquo;s own perks. I continued experimenting with the <a href="/projects/begrider/">Begrider</a> project and ended up adding a couple of more things to it, mainly a new set of column-like classes called <code>.unit-</code>. A unit differ itself from a regular column by not having a gutter, and thus having more of a &ldquo;proportional&rdquo; percentage width. So, instead of just having these:</p>
-
-<pre><code>.row .column-twelve {
-  width: 99.99%;
-  margin-right: 0;
-}
-
-.row .column-eleven {
-  width: 91.42%;
-}
-
-.row .column-ten {
-  width: 82.85%;
-}
-
-/* Nine columns */
-.row .column-nine {
-  width: 74.28%;
-}
-
-.row .column-eight {
-  width: 65.71%;
-}
-
-.row .column-seven {
-  width: 57.14%;
-}
-
-.row .column-six {
-  width: 48.57%;
-}
-
-.row .column-five {
-  width: 40%;
-}
-
-.row .column-four {
-  width: 31.43%;
-}
-
-.row .column-three {
-  width: 22.86%;
-}
-
-.row .column-two {
-  width: 14.29%;
-}
-
-.row .column-one {
-  width: 5.72%;
-}
-</code></pre>
-
-<p>You can also use these:</p>
-
-<pre><code>.row .unit-full {
-  width: 100%;
-}
-
-.row .unit-four-fifths {
-  width: 80%;
-}
-
-.row .unit-three-quarters {
-  width: 75%;
-}
-
-.row .unit-two-thirds {
-  width: 66.66%;
-}
-
-.row .unit-three-fifths {
-  width: 60%;
-}
-
-.row .unit-half {
-  width: 50%;
-}
-
-.row .unit-two-fifths {
-  width: 40%;
-}
-
-.row .unit-one-third {
-  width: 33.33%;
-}
-
-.row .unit-one-quarter {
-  width: 25%;
-}
-
-.row .unit-one-fifth {
-  width: 20%;
-}
-</code></pre>
-
-<p>It&rsquo;s useful if you don&rsquo;t want to have any gutters and/or want to use paddings instead instead of margins. I don&rsquo;t know if anyone&rsquo;s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don&rsquo;t really know if it actually needs anything more, but I&rsquo;ll be sure to try stuff out.</p>
 
     </span><!-- .justified -->
 </article><!-- .post -->

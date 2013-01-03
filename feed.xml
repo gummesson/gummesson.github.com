@@ -6,6 +6,29 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Vim: A Couple Of Days In</title>
+                <description>&lt;p&gt;It&amp;rsquo;s been nearly a week since I started with venturing into &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and so far it&amp;rsquo;s really been an adventure for sure. I&amp;rsquo;ve managed to pick up a few new tricks everyday and yesterday I had to stop myself from saving a quick note I was jotting down in another editor with &lt;code&gt;:w&lt;/code&gt;&lt;sup id=&quot;fnref:20130103-1&quot;&gt;&lt;a href=&quot;#fn:20130103-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which I guess is a good thing. I&amp;rsquo;ve also managed to scrap together a decent &lt;code&gt;.vimrc&lt;/code&gt; file with lots of settings and installed quite a few plugins as well. I feel that using Vim makes me atleast &lt;em&gt;feel&lt;/em&gt; a bit more efficient and while the learning curve is steep I do think that I&amp;rsquo;ll continue to use it. I&amp;rsquo;ve always been lazy when it comes to learning keyboard shortcuts and even though I think that you should use whatever feels most comfortable to you it&amp;rsquo;s defintively not a bad thing to be able to move around and edit things fast without having to use the mouse. &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also started a new project&lt;sup id=&quot;fnref:20130103-2&quot;&gt;&lt;a href=&quot;#fn:20130103-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and decided that I&amp;rsquo;ll only work on it in Vim just to get a good feel for it and to learn how to actually use all the basic ways to get by atleast. That&amp;rsquo;ll probably prove to be a challenge, but fun nonetheless. I have a lot to learn but I&amp;rsquo;m equally eager to do that.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130103-1&quot;&gt;
+      &lt;p&gt;The default way of saving things in Vim.&lt;a href=&quot;#fnref:20130103-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130103-2&quot;&gt;
+      &lt;p&gt;Or a thing. The word &amp;ldquo;project&amp;rdquo; sounds so serious.&lt;a href=&quot;#fnref:20130103-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>January  3, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/03/vim-a-couple-of-days-in</link>
+              </item>
+            
+              <item>
                 <title>Trying Out Vim</title>
                 <description>&lt;p&gt;There&amp;rsquo;s no doubt that if you&amp;rsquo;ve ever spent some time looking through and reading various developer related things that you&amp;rsquo;ve seen people mentioning the text editor &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;. I decided to try it out the graphical version of it, gVim, and it really is a different experience. Instead of relying on trusty old keyboard shortcuts like &lt;code&gt;Ctrl+S&lt;/code&gt; you instead have to first hit &lt;code&gt;Esc&lt;/code&gt; and type &lt;code&gt;:w&lt;/code&gt;. While I&amp;rsquo;m not a hundred percent sold on it&lt;sup id=&quot;fnref:20121230-1&quot;&gt;&lt;a href=&quot;#fn:20121230-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I can defintively see the appeal, especially for people who love their keyboards. The Vim version of the color scheme &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;, which I absolutely love, looks gorgeous and what I can tell Vim probably has the best Markdown syntax highlighting I&amp;rsquo;ve ever seen. One other aspect I really like is that you can save all of your settings in a single file which you can then use across multiple systems, since Vim is cross-platform.&lt;/p&gt;
 
@@ -135,31 +158,6 @@ function todo() {
 </description>
                 <published>December 19, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/19/handy-bash-scripts</link>
-              </item>
-            
-              <item>
-                <title>Configuring Crunchbang</title>
-                <description>&lt;p&gt;Since installing &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang&lt;/a&gt; two days ago I&amp;rsquo;ve spent quite some time on configuring it to my liking. While I find the default look to be quite nice I felt that I needed something with a bit more lighter colors. This is how my current system looks now:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2012-12-16-crunchbang-elementary.png&quot; alt=&quot;Crunchbang Elementary&quot; title=&quot;Crunchbang Elementary&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Openbox theme is called &lt;a href=&quot;http://grvrulz.deviantart.com/art/elementary-for-openbox-253002995&quot; title=&quot;Elementary for Openbox&quot;&gt;Elementary for Openbox&lt;/a&gt; while the GTK theme is just called &lt;a href=&quot;http://danrabbit.deviantart.com/art/elementary-gtk-theme-83104033&quot; title=&quot;Elementary GTK Theme&quot;&gt;Elementary&lt;/a&gt;. They&amp;rsquo;re both based on the visual style of another Linux distro, &lt;a href=&quot;http://elementaryos.org/&quot; title=&quot;Elementary OS&quot;&gt;Elementary OS&lt;/a&gt;&lt;sup id=&quot;fnref:20121216-1&quot;&gt;&lt;a href=&quot;#fn:20121216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I threw together the wallpaper by going to &lt;a href=&quot;http://colourlovers.com/&quot; title=&quot;Colourlovers&quot;&gt;Colourlovers&lt;/a&gt;, picking two blue-ish colors&lt;sup id=&quot;fnref:20121216-2&quot;&gt;&lt;a href=&quot;#fn:20121216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; that I liked and using them in as a gradient in &lt;a href=&quot;http://www.gimp.org/&quot; title=&quot;GIMP&quot;&gt;GIMP&lt;/a&gt; that I drag vertically in the middle of the empty picture. I then configured the default panel &lt;a href=&quot;http://code.google.com/p/tint2/&quot; title=&quot;tint2&quot;&gt;tint2&lt;/a&gt; so that it got placed vertically to the left and removed both &lt;a href=&quot;http://conky.sourceforge.net/&quot; title=&quot;Conky&quot;&gt;Conky&lt;/a&gt; and &lt;a href=&quot;http://clipit.rspwn.com/&quot; title=&quot;ClipIt&quot;&gt;ClipIt&lt;/a&gt; from the autostart script. They&amp;rsquo;re still in the system though since I might have some use for them in the future.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121216-1&quot;&gt;
-      &lt;p&gt;Which looks incredibly nice by the way.&lt;a href=&quot;#fnref:20121216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121216-2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.colourlovers.com/color/0D3561/Cold_Winters_Night&quot; title=&quot;Cold Winter's Night&quot;&gt;Cold Winter&amp;rsquo;s Night&lt;/a&gt; and &lt;a href=&quot;http://www.colourlovers.com/color/108BBB/Winter_Blue&quot; title=&quot;Winter Blue&quot;&gt;Winter Blue&lt;/a&gt;.&lt;a href=&quot;#fnref:20121216-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December 16, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/16/configuring-crunchbang</link>
               </item>
             
     </channel>
