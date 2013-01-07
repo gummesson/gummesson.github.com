@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Smalify: Minification On The Fly</title>
+                <description>&lt;p&gt;I found this little gem of an app earlier today and I got to say that it was just what I was looking for and needed. I&amp;rsquo;ve been meaning to minify my code for some time but I haven&amp;rsquo;t found something simple that could do that. There are some web based apps and services out there that can do it, but I like having a native solution so that it can update itself whenever there&amp;rsquo;s a new change and so on.&lt;/p&gt;
+</description>
+                <published>January  7, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/07/smalify-minification-on-the-fly</link>
+              </item>
+            
+              <item>
                 <title>Vim: A Couple Of Days In</title>
                 <description>&lt;p&gt;It&amp;rsquo;s been nearly a week since I started with venturing into &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and so far it&amp;rsquo;s really been an adventure for sure. I&amp;rsquo;ve managed to pick up a few new tricks everyday and yesterday I had to stop myself from saving a quick note I was jotting down in another editor with &lt;code&gt;:w&lt;/code&gt;&lt;sup id=&quot;fnref:20130103-1&quot;&gt;&lt;a href=&quot;#fn:20130103-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which I guess is a good thing. I&amp;rsquo;ve also managed to scrap together a decent &lt;code&gt;.vimrc&lt;/code&gt; file with lots of settings and installed quite a few plugins as well. I feel that using Vim makes me atleast &lt;em&gt;feel&lt;/em&gt; a bit more efficient and while the learning curve is steep I do think that I&amp;rsquo;ll continue to use it. I&amp;rsquo;ve always been lazy when it comes to learning keyboard shortcuts and even though I think that you should use whatever feels most comfortable to you it&amp;rsquo;s defintively not a bad thing to be able to move around and edit things fast without having to use the mouse. &lt;/p&gt;
 
@@ -118,46 +126,6 @@
 </description>
                 <published>December 23, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0</link>
-              </item>
-            
-              <item>
-                <title>Handy Bash Scripts</title>
-                <description>&lt;p&gt;One thing that I really miss while I&amp;rsquo;m using Crunchbang is a good note-taking app with plain text support. I haven&amp;rsquo;t found one yet so I threw together a few simple bash scripts that I can use in the terminal for easier notetaking.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function no() {
-  geany ~/Dropbox/path/to/notes/$1.txt 
-}
-
-function nos() {
-  ls -c ~/Dropbox/path/to/notes | grep --color=always $1
-}
-
-function nol() {
-  ls -c ~/Dropbox/path/to/notes
-}
-
-function not() {
-  cat ~/Dropbox/path/to/notes/$1.txt
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;no()&lt;/code&gt; function will open the note itself in the text editor &lt;a href=&quot;http://www.geany.org/&quot; title=&quot;Geany&quot;&gt;Geany&lt;/a&gt;. The &lt;code&gt;nos()&lt;/code&gt; function is used for finding notes with a particular search term in their filename. The &lt;code&gt;--color=always&lt;/code&gt; highlights the given search term. The &lt;code&gt;-c&lt;/code&gt; sort all of the notes by the last modified date. The &lt;code&gt;nol()&lt;/code&gt; function just lists all of the notes and the &lt;code&gt;not()&lt;/code&gt; function displays the content of a note directly in the terminal. Now I just need to type either &lt;code&gt;$ no filename&lt;/code&gt;, &lt;code&gt;$ nos search-term&lt;/code&gt;, &lt;code&gt;$ nol&lt;/code&gt; or &lt;code&gt;$ not filename&lt;/code&gt; to do various things to my notes. &lt;/p&gt;
-
-&lt;p&gt;I also added two scripts for appending text directly into my spark file and todo file which I then use like this: &lt;code&gt;$ add Write something about anything&lt;/code&gt; and &lt;code&gt;$ todo Something soon&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function add() {
-  echo $@ &amp;gt;&amp;gt; ~/Dropbox/path/to/notes/spark-file.txt
-}
-
-function todo() {
-  echo $@ &amp;gt;&amp;gt; ~/Dropbox/path/to/notes/todo.txt
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Even though the scripts aren&amp;rsquo;t as useful as a fully featured app they provide some sort of functionality to my writing workflow, which is nice.&lt;/p&gt;
-</description>
-                <published>December 19, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/19/handy-bash-scripts</link>
               </item>
             
     </channel>
