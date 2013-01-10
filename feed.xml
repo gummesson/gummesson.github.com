@@ -6,6 +6,38 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Lo And Behold, I've Launched An Web App!</title>
+                <description>&lt;p&gt;The day before yesterday I launched my first &amp;ldquo;web app&amp;rdquo;, &lt;a href=&quot;http://kramit.ellengummesson.com/&quot; title=&quot;Kramit!&quot;&gt;Kramit!&lt;/a&gt;. Like about half a million people on the internet with some kind of web development interest I created yet another &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; preview app and with the wonderful micro web framework &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;. It&amp;rsquo;s nothing unique but I&amp;rsquo;m quite proud nonetheless. I haven&amp;rsquo;t actually seen that many that uses &lt;a href=&quot;http://kramdown.rubyforge.org/&quot; title=&quot;Kramdown&quot;&gt;Kramdown&lt;/a&gt; as it&amp;rsquo;s default parser, so I guess that that aspect is somewhat pretty unique&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-minimum-than-an-mvp&quot;&gt;More Minimum Than An MVP&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Kramit!&lt;/em&gt; is at it&amp;rsquo;s core the definition of an MVP&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That&amp;rsquo;s nothing! I&amp;rsquo;m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn&amp;rsquo;t actually writing the code but rather designing it.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;so-whats-next&quot;&gt;So, What&amp;rsquo;s Next?&lt;/h2&gt;
+
+&lt;p&gt;First of all I think I&amp;rsquo;m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at &lt;a href=&quot;http://rubyonrails.org/&quot; title=&quot;Ruby on Rails&quot;&gt;Ruby on Rails&lt;/a&gt;. It&amp;rsquo;s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I like it because it has &lt;a href=&quot;http://fletcherpenney.net/multimarkdown/&quot; title=&quot;MultiMarkdown&quot;&gt;MultiMarkdown&lt;/a&gt; features like footnotes for examples (this footnote became very meta by the way).&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Minimum_viable_product&quot; title=&quot;Minimum viable product&quot;&gt;Minimum viable product&lt;/a&gt;.&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;I would called myself challenged in that department. My basic design process is &amp;ldquo;make something up, strip away all the things that I though was going to look good but didn&amp;rsquo;t, look it at it again and then remove some more&amp;rdquo;.&lt;a href=&quot;#fnref:3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>January 10, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app</link>
+              </item>
+            
+              <item>
                 <title>Smalify: Minification On The Fly</title>
                 <description>&lt;p&gt;I found this little gem of an app earlier today and I got to say that it was just what I was looking for and needed. I&amp;rsquo;ve been meaning to minify my code for some time but I haven&amp;rsquo;t found something simple that could do that. There are some web based apps and services out there that can do it, but I like having a native solution so that it can update itself whenever there&amp;rsquo;s a new change and so on.&lt;/p&gt;
 </description>
@@ -111,21 +143,6 @@
 </description>
                 <published>December 26, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/26/jekyll-rake-boilerplate</link>
-              </item>
-            
-              <item>
-                <title>Jekyll 0.12.0</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It&amp;rsquo;s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven&amp;rsquo;t had time to play around with it a whole lot but the nicest new feature that I&amp;rsquo;ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. &lt;/p&gt;
-
-&lt;p&gt;I previously had to use a quite ugly hack that involved copying and changing the source code itself and place it in my &lt;code&gt;_plugins&lt;/code&gt; folder. Now the only thing that I had to do was to add the below line in my &lt;code&gt;_config.yml&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;paginate_path: blog/page/:num
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It has the same functionality as my own fiddling but it&amp;rsquo;s a hell of a lot easier than having to change the code directly.&lt;/p&gt;
-</description>
-                <published>December 23, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0</link>
               </item>
             
     </channel>

@@ -46,6 +46,26 @@
   <article class="post">
   
     <h1>
+      <a href="blog/2012/09/05/a-hard-drive-failure" alt="A Hard (Drive) Failure" title="A Hard (Drive) Failure">
+        A Hard (Drive) Failure
+      </a>
+    </h1>
+    <p class="small centered italic">
+      Posted on September  5, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Hardware" alt="Hardware" title="Hardware">Hardware</a>  
+    </p><!-- .small -centered .italic -->
+  
+    <span class="justified">
+      <p>A couple of days ago my new hard drive that I bought a mere three weeks ago decided that it was time to make my life not so fun by giving up. For some reason it failed, and it failed hard. Luckily, I had all of my important files (like this whole site) stored on an external drive and I have a SSD where I can keep my OS and all of my programs and such, but some of my other files are forever lost. It sucks, but I&rsquo;ll survive. My brother (who really helped med out) fought like a champ trying to get it to work, but it was a lost cause. In the process of trying to save my new hard drive I also had to wipe my SSD too. It took quite a while to install everything again, but now it&rsquo;s all up and running. The &ldquo;failed to sync branch&rdquo; problem I had earlier with GitHub is also gone, which I guess you could say is good, even though I would&rsquo;ve rather had that problem than going trough this whole ordeal. </p>
+
+<p>I don&rsquo;t really know if I&rsquo;m more sad or more angry though. Sure, it&rsquo;s really important that you take backups of everything that you want to keep and store, but I don&rsquo;t think I really can blame myself entirely in this case. I mean, you don&rsquo;t really except a hard drive that you&rsquo;ve barely used to break down and just fail on you so suddenly. On the other hand I do want to kick myself in the head, atleast just a little bit. Oh well. Sometimes we think that computers are these indestructible things that can do no wrong, but I guess that&rsquo;s not really the case. Now I&rsquo;m keeping my fingers crossed that I can get it replaced without any hassles, but that shouldn&rsquo;t really be a problem. I hope.</p>
+
+    </span><!-- .justified -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="blog/2012/09/02/my-jekyll-workflow" alt="My Jekyll Workflow" title="My Jekyll Workflow">
         My Jekyll Workflow
       </a>
@@ -262,58 +282,6 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <pre><code>{% vimeo 12345678 %}
 </code></pre>
 
-
-    </span><!-- .justified -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="blog/2012/08/26/my-jekyll-plugins" alt="My Jekyll Plugins" title="My Jekyll Plugins">
-        My Jekyll Plugins
-      </a>
-    </h1>
-    <p class="small centered italic">
-      Posted on August 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
-  
-    <span class="justified">
-      <p>Continuing with my Jekyll series, here&rsquo;s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
-
-<h2 id="pagination">Pagination</h2>
-
-<p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it&rsquo;s strictly not a plugin, I had to make a small configuration in Jekyll&rsquo;s <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll&rsquo;s library directory and placed it in the _plugins folder and changed the following line from this:</p>
-
-<pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")
-</code></pre>
-
-<p>To this:</p>
-
-<pre><code>newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
-</code></pre>
-
-<p>To my suprise, it actually worked! Like I said earlier, I guess it doesn&rsquo;t really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
-
-<h2 id="tags">Tags</h2>
-
-<p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/" title="Tags In Jekyll">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
-
-<h2 id="rss-feed">RSS Feed</h2>
-
-<p>I followed and used the guidelines from Snaptortoise&rsquo;s <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
-
-<h2 id="sitemap">Sitemap</h2>
-
-<p>I use Mike Levin&rsquo;s <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It&rsquo;s maybe not the the most required function ever, but I like to have it.</p>
-
-<h2 id="images">Images</h2>
-
-<p>For an easy image implementation I used Scott Parker&rsquo;s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it&rsquo;s probably not suitable if you&rsquo;re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
-
-<h2 id="youtube">Youtube</h2>
-
-<p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won&rsquo;t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 
     </span><!-- .justified -->
 </article><!-- .post -->
