@@ -6,6 +6,28 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Launch Week</title>
+                <description>&lt;p&gt;Yesterday I finally pushed something to the master branch of a thing I started working on last week, &lt;a href=&quot;#&quot; title=&quot;Smallwork&quot;&gt;Smallwork&lt;/a&gt;. It&amp;rsquo;s a small yet full featured &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;SCSS&quot;&gt;SCSS&lt;/a&gt; framework, or starting point as I&amp;rsquo;d like to call it. The first time I tried SCSS was way back in August or September but I didn&amp;rsquo;t really &amp;ldquo;get&amp;rdquo; it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines&lt;sup id=&quot;fnref:20130112-1&quot;&gt;&lt;a href=&quot;#fn:20130112-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which kind of makes it my most ambitious work to date.&lt;/p&gt;
+
+&lt;p&gt;I also played around with &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt; again and came up with a simple journal app which uses &lt;a href=&quot;http://datamapper.org/&quot; title=&quot;Datamapper&quot;&gt;Datamapper&lt;/a&gt; and &lt;a href=&quot;http://www.sqlite.org/&quot; title=&quot;SQLite 3&quot;&gt;SQLite3&lt;/a&gt; for storing everything in a database. Like I mentioned earlier I&amp;rsquo;m quite fond of Sinatra, especially since it&amp;rsquo;s really easy to understand what do to and what&amp;rsquo;s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I&amp;rsquo;m not in fact dreaming. I&amp;rsquo;m no expert but I like where I&amp;rsquo;m going with it and I&amp;rsquo;ve barely scratched the surface.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also thinking about extending &lt;a href=&quot;http://kramit.ellengummesson.com/&quot; title=&quot;Kramit!&quot;&gt;Kramit!&lt;/a&gt; a bit, but we&amp;rsquo;ll see how that goes&amp;hellip; I guess I should try to slow myself down a bit since I&amp;rsquo;ve launched three new projects this week alone. I&amp;rsquo;m having fun though!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130112-1&quot;&gt;
+      &lt;p&gt;That&amp;rsquo;s including blank lines and comments. It&amp;rsquo;s still a pretty big number though. The compiled CSS code is 682 lines long and that&amp;rsquo;s without any additional content besides the basic structure itself.&lt;a href=&quot;#fnref:20130112-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>January 12, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/12/launch-week</link>
+              </item>
+            
+              <item>
                 <title>Lo And Behold, I've Launched An Web App!</title>
                 <description>&lt;p&gt;The day before yesterday I launched my first &amp;ldquo;web app&amp;rdquo;, &lt;a href=&quot;http://kramit.ellengummesson.com/&quot; title=&quot;Kramit!&quot;&gt;Kramit!&lt;/a&gt;. Like about half a million people on the internet with some kind of web development interest I created yet another &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; preview app and with the wonderful micro web framework &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;. It&amp;rsquo;s nothing unique but I&amp;rsquo;m quite proud nonetheless. I haven&amp;rsquo;t actually seen that many that uses &lt;a href=&quot;http://kramdown.rubyforge.org/&quot; title=&quot;Kramdown&quot;&gt;Kramdown&lt;/a&gt; as it&amp;rsquo;s default parser, so I guess that that aspect is somewhat pretty unique&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
@@ -107,42 +129,6 @@
 </description>
                 <published>December 30, 2012</published>
                 <link>http://ellengummesson.com/blog/2012/12/30/trying-out-vim</link>
-              </item>
-            
-              <item>
-                <title>Jekyll Rake Boilerplate</title>
-                <description>&lt;p&gt;Even though I so far love learning &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; I&amp;rsquo;ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I&amp;rsquo;m lazy like that. After some thinking I finally came up with something and yesterday I &amp;ldquo;released&amp;rdquo; it: the &lt;a href=&quot;https://github.com/gummesson/jekyll-rake-boilerplate&quot; title=&quot;Jekyll Rake Boilerplate&quot;&gt;Jekyll Rake Boilerplate&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Using a rakefile for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; isn&amp;rsquo;t something that&amp;rsquo;s new nor unique but so far I haven&amp;rsquo;t stumbled upon a simple boilerplate. It isn&amp;rsquo;t revolutionary by any means&lt;sup id=&quot;fnref:20121226-1&quot;&gt;&lt;a href=&quot;#fn:20121226-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but it gave me the motivation that I needed and I had fun while doing it. Even though it&amp;rsquo;s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be &amp;ldquo;proud&amp;rdquo; of it, or atleast content.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-tasks&quot;&gt;The Tasks&lt;/h2&gt;
-
-&lt;p&gt;The &lt;em&gt;Jekyll Rake Boilerplate&lt;/em&gt; consists of four tasks: &lt;code&gt;build&lt;/code&gt;, &lt;code&gt;post&lt;/code&gt;, &lt;code&gt;git&lt;/code&gt; and &lt;code&gt;remote&lt;/code&gt;&lt;sup id=&quot;fnref:20121226-2&quot;&gt;&lt;a href=&quot;#fn:20121226-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;build&lt;/code&gt; generates the site. If I want to generate it with a post limit, I can use &lt;code&gt;build[1]&lt;/code&gt; or whatever number of posts I want to generate. &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;post[&quot;Post title&quot;]&lt;/code&gt; creates a new post in the &lt;code&gt;_posts&lt;/code&gt; directory by reading the default template file, adding the title I&amp;rsquo;ve specified and generating a file name by using the current date and the title.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git[&quot;Commit message&quot;]&lt;/code&gt; adds, commits and pushes the site to the site&amp;rsquo;s remote git repository with the commit message that&amp;rsquo;s been specified.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;remote&lt;/code&gt; uses either &lt;code&gt;robocopy&lt;/code&gt; or &lt;code&gt;rsync&lt;/code&gt; to transfer the site to a remote host/server.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I also set the default task to &lt;code&gt;build&lt;/code&gt; so if I&amp;rsquo;m feeling lazy I only need to type &lt;code&gt;rake&lt;/code&gt;, hit &lt;code&gt;Enter&lt;/code&gt; and the site will be generated. I&amp;rsquo;ve contemplating about adding some more tasks but for now I&amp;rsquo;ll stick to what I already have. The goal is to keep it as simple and adaptable as possible so that anyone can use it without having to modify it too much unless they want to.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20121226-1&quot;&gt;
-      &lt;p&gt;And the code itself is probably not that good since I&amp;rsquo;m still learning.&lt;a href=&quot;#fnref:20121226-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20121226-2&quot;&gt;
-      &lt;p&gt;The settings for some of the tasks needs to be in the &lt;code&gt;_config.yml&lt;/code&gt; file in order for them to work.&lt;a href=&quot;#fnref:20121226-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>December 26, 2012</published>
-                <link>http://ellengummesson.com/blog/2012/12/26/jekyll-rake-boilerplate</link>
               </item>
             
     </channel>
