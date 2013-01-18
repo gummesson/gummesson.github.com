@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Vimium: The Hacker's Browser</title>
+                <description>&lt;p&gt;I&amp;rsquo;m probably the last person on earth to discover this neat little extension but it&amp;rsquo;s nonetheless a great thing for both navigating in &lt;a href=&quot;http://www.google.com/chrome&quot; title=&quot;Chrome&quot;&gt;Chrome&lt;/a&gt; and learning the basic &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; commands.&lt;/p&gt;
+</description>
+                <published>January 18, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/18/vimium</link>
+              </item>
+            
+              <item>
                 <title>I Created Yet Another (Pointless) App</title>
                 <description>&lt;p&gt;My experiments with the &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt; framework continues and yesterday I pushed yet another app to &lt;a href=&quot;http://www.heroku.com/&quot; title=&quot;Heroku&quot;&gt;Heroku&lt;/a&gt; called &lt;a href=&quot;http://slugize.ellengummesson.com/&quot; title=&quot;Slugize&quot;&gt;Slugize&lt;/a&gt;. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I usually don&amp;rsquo;t decide on a title until a few seconds before I &amp;ldquo;hit publish&amp;rdquo; which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out &lt;code&gt;-&lt;/code&gt; between every word in the title and change every letter to be in downcase&lt;sup id=&quot;fnref:20130115-1&quot;&gt;&lt;a href=&quot;#fn:20130115-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I guess you can call it lazyiness too. Now I only need to copy and paste the title into &lt;em&gt;Slugize&lt;/em&gt; and it&amp;rsquo;ll do it automatically for me and I also added an option to append the current day&amp;rsquo;s date to it. It&amp;rsquo;s funny how being lazy sometimes makes you more productive.&lt;/p&gt;
 
@@ -83,29 +91,6 @@
 </description>
                 <published>January  7, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/01/07/smalify-minification-on-the-fly</link>
-              </item>
-            
-              <item>
-                <title>Vim: A Couple Of Days In</title>
-                <description>&lt;p&gt;It&amp;rsquo;s been nearly a week since I started with venturing into &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and so far it&amp;rsquo;s really been an adventure for sure. I&amp;rsquo;ve managed to pick up a few new tricks everyday and yesterday I had to stop myself from saving a quick note I was jotting down in another editor with &lt;code&gt;:w&lt;/code&gt;&lt;sup id=&quot;fnref:20130103-1&quot;&gt;&lt;a href=&quot;#fn:20130103-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which I guess is a good thing. I&amp;rsquo;ve also managed to scrap together a decent &lt;code&gt;.vimrc&lt;/code&gt; file with lots of settings and installed quite a few plugins as well. I feel that using Vim makes me atleast &lt;em&gt;feel&lt;/em&gt; a bit more efficient and while the learning curve is steep I do think that I&amp;rsquo;ll continue to use it. I&amp;rsquo;ve always been lazy when it comes to learning keyboard shortcuts and even though I think that you should use whatever feels most comfortable to you it&amp;rsquo;s defintively not a bad thing to be able to move around and edit things fast without having to use the mouse. &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also started a new project&lt;sup id=&quot;fnref:20130103-2&quot;&gt;&lt;a href=&quot;#fn:20130103-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and decided that I&amp;rsquo;ll only work on it in Vim just to get a good feel for it and to learn how to actually use all the basic ways to get by atleast. That&amp;rsquo;ll probably prove to be a challenge, but fun nonetheless. I have a lot to learn but I&amp;rsquo;m equally eager to do that.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130103-1&quot;&gt;
-      &lt;p&gt;The default way of saving things in Vim.&lt;a href=&quot;#fnref:20130103-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130103-2&quot;&gt;
-      &lt;p&gt;Or a thing. The word &amp;ldquo;project&amp;rdquo; sounds so serious.&lt;a href=&quot;#fnref:20130103-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>January  3, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/03/vim-a-couple-of-days-in</link>
               </item>
             
     </channel>
