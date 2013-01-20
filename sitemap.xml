@@ -299,6 +299,12 @@
         <lastmod>2013-01-18T19:59:02+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world
+        </loc>
+        <lastmod>2013-01-20T15:45:27+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com//404.html</loc>
         <lastmod>2013-01-07T10:03:27+01:00</lastmod>
     </url>
@@ -312,7 +318,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-01-18T21:43:11+01:00</lastmod>
+        <lastmod>2013-01-20T15:45:27+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//projects.html</loc>
