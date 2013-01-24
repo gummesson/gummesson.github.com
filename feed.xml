@@ -6,6 +6,67 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Vim: Nearly Four Weeks In</title>
+                <description>&lt;p&gt;My little &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; adventure continues and a couple of days ago I uninstalled &lt;a href=&quot;http://www.sublimetext.com/&quot; title=&quot;Sublime Text 2&quot;&gt;Sublime Text 2&lt;/a&gt;. I have nothing against it and I still think it&amp;rsquo;s a fantastic editor but I feel like I don&amp;rsquo;t really need it anymore. I&amp;rsquo;m no way near being a expert but like I&amp;rsquo;ve stated before I really like using Vim and I don&amp;rsquo;t see that that changing anytime soon. I&amp;rsquo;ve also configured my Vim files &lt;a href=&quot;https://github.com/gummesson/vimfiles&quot; title=&quot;My Vim files on GitHub&quot;&gt;quite a bit&lt;/a&gt;&lt;sup id=&quot;fnref:20130124-1&quot;&gt;&lt;a href=&quot;#fn:20130124-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but I&amp;rsquo;ve tried to stay away from adding too many plugins since I don&amp;rsquo;t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule&lt;sup id=&quot;fnref:20130123-2&quot;&gt;&lt;a href=&quot;#fn:20130123-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that&amp;rsquo;s just slightly younger than me?&lt;/p&gt;
+
+&lt;h2 id=&quot;a-few-tips-and-tricks&quot;&gt;A Few Tips And Tricks&lt;/h2&gt;
+
+&lt;p&gt;I won&amp;rsquo;t go through my whole &lt;code&gt;vimrc&lt;/code&gt; file since it&amp;rsquo;s currently about 225 lines long &lt;em&gt;(and heavily commented)&lt;/em&gt; but I want to share a few handy settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Set the language to english:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if has(&quot;unix&quot;)
+  language messages C
+else
+  language messages en
+endif  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know if I&amp;rsquo;m strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the &lt;code&gt;if...else...endif&lt;/code&gt; part so that it plays nice with both of them&lt;sup id=&quot;fnref:20130124-3&quot;&gt;&lt;a href=&quot;#fn:20130124-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. It&amp;rsquo;s important to note that this needs to be at the very top of your &lt;code&gt;vimrc&lt;/code&gt; file if you want it to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use the cursorline as a mode indicator:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;au InsertEnter * set nocursorline
+au InsertLeave * set cursorline
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I wanted an easier way to quickly see which mode I was in without relying on some third party plugin. I of course have the &lt;code&gt;showmode&lt;/code&gt; setting enabled but by removing the cursorline from insert mode I don&amp;rsquo;t even have to move my eyes one bit. I don&amp;rsquo;t really need to see which line I&amp;rsquo;m on anyway when I&amp;rsquo;m actually typing something.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Autoresize all windows:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;au VimResized * :wincmd =
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resizing your windows in Vim can be a bit of a pain, especially if you want to go from using a fullscreen to something smaller or the other way around. The above setting makes it a lot less of a hassle.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ignore certain files:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set wildignore+=.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This was one of the features that I like the most about Sublime Text 2 and I&amp;rsquo;m glad that I can use it in Vim too. If I can&amp;rsquo;t edit a certain filetype I don&amp;rsquo;t want to see it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130124-1&quot;&gt;
+      &lt;p&gt;One of the most useful tweaks I&amp;rsquo;ve found for writing blog posts was from Peter Provost&amp;rsquo;s &lt;a href=&quot;http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/&quot; title=&quot;Editing Octopress/Jekyll Posts in Vim&quot;&gt;Editing Octopress/Jekyll Posts in Vim&lt;/a&gt;. The YAML front matter doesn&amp;rsquo;t look like crap anymore, yay!&lt;a href=&quot;#fnref:20130124-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130123-2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://git-scm.com/book/en/Git-Tools-Submodules&quot; title=&quot;Git submodules&quot;&gt;A repository inside another repository&lt;/a&gt;.&lt;a href=&quot;#fnref:20130123-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130124-3&quot;&gt;
+      &lt;p&gt;This works for everything by the way. I think that the default name for Mac is &lt;code&gt;macunix&lt;/code&gt;, but I&amp;rsquo;m not 100% sure. &lt;a href=&quot;#fnref:20130124-3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>January 24, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/24/vim-nearly-four-weeks-in</link>
+              </item>
+            
+              <item>
                 <title>Serve: The Ugliest Static Site Generator In The World</title>
                 <description>&lt;p&gt;I don&amp;rsquo;t know what&amp;rsquo;s been up with me lately but I do know that during the last couple of weeks I&amp;rsquo;ve &amp;ldquo;shipped&amp;rdquo; a lot of things. I mean, most of them are basic things but I&amp;rsquo;ve had fun while doing them. So yesterday I added yet another repo to &lt;a href=&quot;https://github.com/gummesson&quot; title=&quot;My GitHub account&quot;&gt;my GitHub account&lt;/a&gt;, &lt;a href=&quot;https://github.com/gummesson/serve&quot; title=&quot;Serve&quot;&gt;Serve&lt;/a&gt;. &lt;em&gt;Serve&lt;/em&gt; is a static site generator which focuses on generating small sites that only need to consist of a few pages at the most.&lt;/p&gt;
 
@@ -82,38 +143,6 @@
 </description>
                 <published>January 12, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/01/12/launch-week</link>
-              </item>
-            
-              <item>
-                <title>Lo And Behold, I've Launched An Web App!</title>
-                <description>&lt;p&gt;The day before yesterday I launched my first &amp;ldquo;web app&amp;rdquo;, &lt;a href=&quot;http://kramit.ellengummesson.com/&quot; title=&quot;Kramit!&quot;&gt;Kramit!&lt;/a&gt;. Like about half a million people on the internet with some kind of web development interest I created yet another &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; preview app and with the wonderful micro web framework &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;. It&amp;rsquo;s nothing unique but I&amp;rsquo;m quite proud nonetheless. I haven&amp;rsquo;t actually seen that many that uses &lt;a href=&quot;http://kramdown.rubyforge.org/&quot; title=&quot;Kramdown&quot;&gt;Kramdown&lt;/a&gt; as it&amp;rsquo;s default parser, so I guess that that aspect is somewhat pretty unique&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;more-minimum-than-an-mvp&quot;&gt;More Minimum Than An MVP&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Kramit!&lt;/em&gt; is at it&amp;rsquo;s core the definition of an MVP&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That&amp;rsquo;s nothing! I&amp;rsquo;m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn&amp;rsquo;t actually writing the code but rather designing it.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;so-whats-next&quot;&gt;So, What&amp;rsquo;s Next?&lt;/h2&gt;
-
-&lt;p&gt;First of all I think I&amp;rsquo;m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at &lt;a href=&quot;http://rubyonrails.org/&quot; title=&quot;Ruby on Rails&quot;&gt;Ruby on Rails&lt;/a&gt;. It&amp;rsquo;s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I like it because it has &lt;a href=&quot;http://fletcherpenney.net/multimarkdown/&quot; title=&quot;MultiMarkdown&quot;&gt;MultiMarkdown&lt;/a&gt; features like footnotes for examples (this footnote became very meta by the way).&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Minimum_viable_product&quot; title=&quot;Minimum viable product&quot;&gt;Minimum viable product&lt;/a&gt;.&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;I would called myself challenged in that department. My basic design process is &amp;ldquo;make something up, strip away all the things that I though was going to look good but didn&amp;rsquo;t, look it at it again and then remove some more&amp;rdquo;.&lt;a href=&quot;#fnref:3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>January 10, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app</link>
               </item>
             
     </channel>
