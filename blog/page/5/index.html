@@ -44,6 +44,37 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/11/26/the-spark-file" alt="The Spark File" title="The Spark File">
+        The Spark File
+      </a>
+    </h1>
+    <p class="small centered italic">
+      Posted on November 26, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>  
+    </p><!-- .small -centered .italic -->
+  
+    <span class="justified">
+      <p>A few weeks ago I came across a post on <a href="https://medium.com/" title="Medium">Medium</a> called <a href="https://medium.com/the-writers-room/8d6e7df7ae58" title="The Spark File">The Spark File</a> written by <a href="https://medium.com/@stevenbjohnson" title="Steven Johnson">Steven Johnson</a>. I really liked the idea of having a spark file of some sort but never took the time to try it out. I usually depend on <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> when it comes to jotting down ideas but more often than not I&rsquo;ve ended up with text files with just a headline in them, like &ldquo;write about x and y&rdquo;. While it definitively helps me remembering what I want to write about I feel that it&rsquo;s unnecessary to have a ton of one line ideas clutter up my notes. That&rsquo;s where the spark file fits perfectly. I finally understood that it&rsquo;s something that&rsquo;ll be a good addition to my writing workflow. Now I&rsquo;ve begun to only use ResophNotes for my blog posts or other types of writing when an idea has involved to something more solid, while the spark file is just a scratchpad for things I want to write about but haven&rsquo;t really figured out yet.</p>
+
+<h2 id="instant-sparks">Instant Sparks</h2>
+
+<p>I threw together a simple <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a> script so the spark file is just one hotkey away:</p>
+
+<pre><code>!q::
+{
+Run, Notepad.exe "~/spark-file.txt"
+Return
+}
+</code></pre>
+
+<p>This means that whenever an idea pops up I just need to press <code>Alt+Q</code> and type down whatever&rsquo;s in my head. It&rsquo;s a simple but powerful solution that&rsquo;ll serve me well I think.</p>
+
+    </span><!-- .justified -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html" alt="Why (And How) I Wrote My Academic Book In Plain Text" title="Why (And How) I Wrote My Academic Book In Plain Text">
         Why (And How) I Wrote My Academic Book In Plain Text <span class="mini gray">&rarr;</span>
       </a>
@@ -160,75 +191,6 @@
 <p><small>
 <em>Via: <a href="http://lifehacker.com/5960804/inplay-is-a-minimalist-gestureBased-music-player-for-the-iphone" title="Lifehacker">Lifehacker</a></em>
 </small></p>
-
-    </span><!-- .justified -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/15/automated-markdown-links-and-better-footnotes" alt="Automated Markdown Links And Better Footnotes" title="Automated Markdown Links And Better Footnotes">
-        Automated Markdown Links And Better Footnotes
-      </a>
-    </h1>
-    <p class="small centered italic">
-      Posted on November 15, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>  
-    </p><!-- .small -centered .italic -->
-  
-    <span class="justified">
-      <p>I&rsquo;ve finally updated <a href="https://github.com/gummesson/markdown-hotstrings" title="Markdown Hotstrings on GitHub">my Markdown Hostrings repo</a> I wrote about earlier with a couple of new things that I came up with after some tinkering. I&rsquo;ve tried them and they&rsquo;ve been really helpful for me, so I hope that somebody will also find them useful.</p>
-
-<h2 id="automated-links">Automated Links</h2>
-
-<p>I finally figured out how to paste an URL from the clipboard directly into a Markdown-formatted link. I&rsquo;ve looked and looked around the web but I felt that all the solutions I found were a bit to &ldquo;complicated&rdquo; for such a basic thing. I figured that a simple script for copying and pasting an URL into a simple text string surely wouldn&rsquo;t need 7-10 lines of code? For once, my instincts were right. Here&rsquo;s the hotstring in just three lines of code:</p>
-
-<pre><code>:oc:.plk::
-{ 
-url = %clipboard%
-SendInput {Enter}[](%url% {" 2}){Home}{Backspace}{Right}
-Return
-}
-</code></pre>
-
-<p>Which is going to output something like this when you type <code>.plk</code><sup id="fnref:20121115-1"><a href="#fn:20121115-1" rel="footnote">1</a></sup>:</p>
-
-<pre><code>[](http://www.website.com/ "")
-</code></pre>
-
-<p>In theory the <code>url = %clipboard%</code> line is unnecessary, but I&rsquo;ve had trouble with getting the <code>%clipboard%</code> to work properly a few times So I decided to leave it in the script. I also kind of like the look of it. It&rsquo;s worth to note that the above hotstring just copies and pastes whatever&rsquo;s in your clipboard so you have to make sure that you&rsquo;ve copied the URL before you use it.</p>
-
-<h2 id="footnotes">Footnotes</h2>
-
-<p>Another thing I came up with was a hotstring for creating better reference numbers for footnotes. If you&rsquo;re planning on using footnotes extensively you can&rsquo;t just write something like <code>[^1]</code> since it&rsquo;ll just add the exact number you use, ie: 1. That means that if you&rsquo;re using several of those on the same page it&rsquo;ll get messy, so I threw together a simple script that adds the date inside a footnote:</p>
-
-<pre><code>:oc:.fndi::
-{ 
-FormatTime, date,, yyyyMdd
-SendInput [{^}%date%-]{Left}
-Return
-}
-</code></pre>
-
-<p>Which outputs something like this when you type <code>.fndi</code><sup id="fnref:20121115-2"><a href="#fn:20121115-2" rel="footnote">2</a></sup>:</p>
-
-<pre><code>[^20121115-]
-</code></pre>
-
-<p>You do have to add the footnote number yourself, but that&rsquo;s not too much of a hassle. It&rsquo;ll obviously won&rsquo;t work that great if you&rsquo;re publishing several posts a day, but it could be easily modified to add hours, minutes and seconds to it and so on.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20121115-1">
-      <p>The cursor will be placed inside the square brackets.<a href="#fnref:20121115-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20121115-2">
-      <p>The cursor will be placed after the hyphen.<a href="#fnref:20121115-2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
     </span><!-- .justified -->
 </article><!-- .post -->
