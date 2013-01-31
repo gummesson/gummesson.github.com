@@ -6,6 +6,24 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Wordcount Plugin For Jekyll</title>
+                <description>&lt;p&gt;Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I&amp;rsquo;m not sure if it&amp;rsquo;s 100% true but it&amp;rsquo;s a pretty fun feature nonetheless. I&amp;rsquo;ve of course created a repository for it on &lt;a href=&quot;https://github.com/gummesson/jekyll-wordcount&quot; title=&quot;Jekyll Wordcount on GitHub&quot;&gt;GitHub&lt;/a&gt;. I&amp;rsquo;m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it&amp;rsquo;s HTML tags before actually doing the counting but it was by far the easiest way&lt;sup id=&quot;fnref:20130131-1&quot;&gt;&lt;a href=&quot;#fn:20130131-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The couting seems to be quite accurate too, which is nice.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130131-1&quot;&gt;
+      &lt;p&gt;Atleast if you&amp;rsquo;re measuring by code length since the whole plugin currently consists of just 17 lines of code.&lt;a href=&quot;#fnref:20130131-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>January 31, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll</link>
+              </item>
+            
+              <item>
                 <title>Markdown Preview For Vim</title>
                 <description>&lt;p&gt;One of the biggest advantages of using a dedicated tool for writing &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; is that they often come with some way of previewing your text file. I kind of miss that kind of function when I&amp;rsquo;m using &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; I decided to throw together a simple vimscript that uses &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot; title=&quot;Pandoc&quot;&gt;Pandoc&lt;/a&gt; to convert a Markdown file to HTML. The basic gist of it looks like this:&lt;/p&gt;
 
@@ -150,24 +168,6 @@ au InsertLeave * set cursorline
 </description>
                 <published>January 18, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/01/18/vimium</link>
-              </item>
-            
-              <item>
-                <title>I Created Yet Another (Pointless) App</title>
-                <description>&lt;p&gt;My experiments with the &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt; framework continues and yesterday I pushed yet another app to &lt;a href=&quot;http://www.heroku.com/&quot; title=&quot;Heroku&quot;&gt;Heroku&lt;/a&gt; called &lt;a href=&quot;http://slugize.ellengummesson.com/&quot; title=&quot;Slugize&quot;&gt;Slugize&lt;/a&gt;. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;. I usually don&amp;rsquo;t decide on a title until a few seconds before I &amp;ldquo;hit publish&amp;rdquo; which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out &lt;code&gt;-&lt;/code&gt; between every word in the title and change every letter to be in downcase&lt;sup id=&quot;fnref:20130115-1&quot;&gt;&lt;a href=&quot;#fn:20130115-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I guess you can call it lazyiness too. Now I only need to copy and paste the title into &lt;em&gt;Slugize&lt;/em&gt; and it&amp;rsquo;ll do it automatically for me and I also added an option to append the current day&amp;rsquo;s date to it. It&amp;rsquo;s funny how being lazy sometimes makes you more productive.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130115-1&quot;&gt;
-      &lt;p&gt;I do actually use the &lt;code&gt;rake post&lt;/code&gt; function that I created for my &lt;a href=&quot;https://github.com/gummesson/jekyll-rake-boilerplate&quot; title=&quot;Jekyll Rake Boilerplate&quot;&gt;Jekyll Rake Boilerplate&lt;/a&gt; project, but I only use it when I&amp;rsquo;m 100% sure on a post&amp;rsquo;s title and content.&lt;a href=&quot;#fnref:20130115-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>January 15, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/15/i-created-yet-another-pointless-app</link>
               </item>
             
     </channel>

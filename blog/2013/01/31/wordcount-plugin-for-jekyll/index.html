@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Fiddling: Ellen Gummesson</title>
+  <title>Wordcount Plugin For Jekyll: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/global.min.css">
       <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
@@ -43,19 +43,29 @@
   <div class="site-content">
     <article class="post">
   
-    <h1>Fiddling</h1>
+    <h1>Wordcount Plugin For Jekyll</h1>
   
     <p class="smallprint">
-      Posted on November  2, 2012  in  <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>
+      Posted on January 31, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>
     </p><!-- .smallprint -->
     <section class="post-content">
-      <p>I find it a bit funny that since I posted my last blog post with my little ramble about redesigning I&rsquo;ve fiddled around about ten times with different elements  on this site. Now my goal is to not do it for atleast a couple of days. That shouldn&rsquo;t be too hard I hope. I really do need to clean up the code though&hellip;</p>
+      <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I&rsquo;m not sure if it&rsquo;s 100% true but it&rsquo;s a pretty fun feature nonetheless. I&rsquo;ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount" title="Jekyll Wordcount on GitHub">GitHub</a>. I&rsquo;m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it&rsquo;s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" rel="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130131-1">
+      <p>Atleast if you&rsquo;re measuring by code length since the whole plugin currently consists of just 17 lines of code.<a href="#fnref:20130131-1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
     </section><!-- .post-content -->
     <section class="notes">
   <hr>
   <p class="miniprint">
-    This post contains 63 words and takes roughly 12 seconds to read. Thank you for your time!
+    This post contains 147 words and takes roughly 29 seconds to read. Thank you for your time!
   </p><!-- .miniprint -->
 </section>
 
