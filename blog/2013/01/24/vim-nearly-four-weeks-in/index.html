@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>Vim: Nearly Four Weeks In</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>My little <a href="http://www.vim.org/" title="Vim">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a>. I have nothing against it and I still think it&rsquo;s a fantastic editor but I feel like I don&rsquo;t really need it anymore. I&rsquo;m no way near being a expert but like I&rsquo;ve stated before I really like using Vim and I don&rsquo;t see that that changing anytime soon. I&rsquo;ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles" title="My Vim files on GitHub">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I&rsquo;ve tried to stay away from adding too many plugins since I don&rsquo;t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that&rsquo;s just slightly younger than me?</p>
 
 <h2 id="a-few-tips-and-tricks">A Few Tips And Tricks</h2>
@@ -103,7 +104,14 @@ au InsertLeave * set cursorline
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 517 words and takes about 103 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -124,27 +132,28 @@ au InsertLeave * set cursorline
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>A Better Structure</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on November 22, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>Writing a blog post can sometimes become quite tricky. There are those times when you&rsquo;re banging on your keyboard and you&rsquo;ve instantly come up with something actually worth posting, other times you only write three or four incoherent sentences at the most. In that kind of situation I usually just leave it until I can figure out the direction I want to go down, but unfortunately that can be hard too. Sometimes you really do need a place to jot down all of your ideas around a particular subject in a more structured way, like using an outliner. I&rsquo;ve seen quite a bit of praise for one called <a href="http://www.omnigroup.com/products/omnioutliner/" title="OmniOutliner">OmniOutliner</a> so I decided to look something similar. After som digging I came across an app called <a href="http://uvoutliner.com/" title="UV Outliner">UV Outliner</a> and as I&rsquo;ve found myself using it more and more I can really say that it&rsquo;s a worthy alternative.</p>
 
 <h2 id="uv-outliner">UV Outliner</h2>
@@ -75,7 +76,14 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 581 words and takes about 116 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -96,27 +104,28 @@
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

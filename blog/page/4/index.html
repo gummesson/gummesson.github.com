@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,10 +37,11 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    
   <article class="post">
   
     <h1>
@@ -48,11 +49,11 @@
         Robocop(y)
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 11, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Command Line" alt="Command Line" title="Command Line">Command Line</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called <code>robocopy</code><sup id="fnref:20121211-1"><a href="#fn:20121211-1" rel="footnote">1</a></sup>. One of the things I use it for is to quickly backup the source of my <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site to a folder on my <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> with a simple command like this:</p>
 
 <pre><code>robocopy ~/Jekyll ~/Dropbox/Jekyll *.* /mir
@@ -75,7 +76,7 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -86,11 +87,11 @@
         The Struggles Of Writing
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December  9, 2012  in  <a href="/blog/tag/General" alt="General" title="General">General</a>, <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>A couple of months back I wrote a blog post called <em><a href="/blog/2012/09/20/the-joys-of-writing/" title="The Joys Of Writing">&ldquo;The Joys of Writing&rdquo;</a></em> where I expressed my love for the craft that is writing. While I still feel the same I&rsquo;ve also found it quite hard from time to time, especially during the last couple of weeks. In other words, the honeymoon period of starting this website is over. I sit down, launch <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a>, look through my notes and find a topic I want to write about but absolutely nothing comes out. Not even a word. It&rsquo;s a good old-fashioned writer&rsquo;s block and I hate it. Even though I probably have a very low number of readers<sup id="fnref:20121209-1"><a href="#fn:20121209-1" rel="footnote">1</a></sup> I still like to write and I feel quite powerless when I can&rsquo;t do so. In short, writing keeps me sane. </p>
 
 <p>I realize as I type this out that this blog post has a goodbye vibe written all over it, but fortunately that&rsquo;s not the case. I just need to vent out some of my frustration. I&rsquo;m going to keep fighting it and I hope that I&rsquo;ll come out of it sooner than later. I guess that in a sense this post is already a step in the right direction.</p>
@@ -105,7 +106,7 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -116,11 +117,11 @@
         Apps For Windows
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December  5, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Here&rsquo;s a list of what I consider awesome apps and utilities for Windows. Even though there&rsquo;s no shortage of them I sometimes find that it&rsquo;s quite hard to find those gems that really stand out.</p>
 
 <h2 id="focuswriter">FocusWriter</h2>
@@ -163,7 +164,7 @@
 
 <p>I was looking for something better than the built in snipping tool and I found <a href="http://shotty.devs-on.net/en/Overview.aspx" title="Shotty">Shotty</a>. One of the things I like about it is that it leaves the shadows of your screenshots intact which makes them look a lot nicer. It may not be essential to everybody but since I need to take screenshots from time to time I feel that it has it&rsquo;s spot in this list.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -171,14 +172,14 @@
   
     <h1>
       <a href="http://usesthis.com/" alt="The Setup" title="The Setup">
-        The Setup <span class="mini gray">&rarr;</span>
+        The Setup <span class="special-link">&rarr;</span>
       </a>
     </h1>
-    <p class="small centered italic">
-    Posted on December  2, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>   <a href="http://ellengummesson.com/blog/2012/12/02/the-setup" alt="Permalink: The Setup" title="Permalink: The Setup" class="gray border-none">&#8734;</a>
-    </p><!-- .small -centered .italic -->
+    <p class="smallprint">
+    Posted on December  2, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>   <a href="http://ellengummesson.com/blog/2012/12/02/the-setup" alt="Permalink: The Setup" title="Permalink: The Setup" class="special-link border-none">&#8734;</a>
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>One of my favorite sites on the web is the <a href="http://usesthis.com/" title="The Setup">The Setup</a>. The tagline for it is <em>&ldquo;What do people use to get stuff done?&rdquo;</em>, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use<sup id="fnref:20121202-1"><a href="#fn:20121202-1" rel="footnote">1</a></sup>. If you haven&rsquo;t checked it out and you&rsquo;re as geeky as I am I suggest that you should. There&rsquo;s also a couple of <a href="http://usesthis.com/community/" title="The Setup's Community">spin-offs</a> of the whole idea, which ranges from Linux users to teachers to people with disabilities. I&rsquo;ve been toying with the idea of doing something like that but haven&rsquo;t had the time nor the resources to do so just yet. All in all it&rsquo;s a little fantastic website that I thoroughly enjoy.</p>
 
 <hr />
@@ -191,7 +192,7 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -202,11 +203,11 @@
         Small Steps Into Ruby
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on November 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>I&rsquo;ve always wanted to learn a real programming language. The few times in the past that I&rsquo;ve tried have all been fruitless though. My brain just doesn&rsquo;t work when there&rsquo;s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won&rsquo;t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write <code>background-color: red;</code> and what do you know, the background suddenly is red. With those two you don&rsquo;t have write a short novel just to get the command line to print a simple <em>&ldquo;Hello World&rdquo;</em>.</p>
 
 <p>Since this site is built with Jekyll I decided to really start learning <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> and I&rsquo;m glad I did. The syntax is so simple that it amazes me. Over the last few days I&rsquo;ve experimented with it a lot and even released a few simple scripts on <a href="https://github.com/gummesson" title="GitHub">GitHub</a>. One of those was inspired by a post I saw yesterday on 
@@ -243,12 +244,12 @@ File.open(txt_file, "a") { |file| file.puts(item) }
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
-  <section class="pagination">
-  <p class="small centered italic">
+  <nav class="pagination">
+  <p class="smallprint">
   
     
       <a href="/blog/page/3" alt="Previous" title="Previous">&larr; Previous</a>
@@ -258,31 +259,32 @@ File.open(txt_file, "a") { |file| file.puts(item) }
     
       <a href="/blog/page/5" alt="Next" title="Next">Next &rarr;</a>
       
-  </p><!-- .small .centered .italic -->
-</section><!-- .pagination -->
+  </p><!-- .smallprint -->
+</nav><!-- .pagination -->
 
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

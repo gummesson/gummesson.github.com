@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>Automated Markdown Links And Better Footnotes</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on November 15, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>I&rsquo;ve finally updated <a href="https://github.com/gummesson/markdown-hotstrings" title="Markdown Hotstrings on GitHub">my Markdown Hostrings repo</a> I wrote about earlier with a couple of new things that I came up with after some tinkering. I&rsquo;ve tried them and they&rsquo;ve been really helpful for me, so I hope that somebody will also find them useful.</p>
 
 <h2 id="automated-links">Automated Links</h2>
@@ -101,7 +102,14 @@ Return
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 381 words and takes about 76 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -122,27 +130,28 @@ Return
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

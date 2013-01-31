@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,10 +37,11 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    
   <article class="post">
   
     <h1>
@@ -48,11 +49,11 @@
         My First Plugin For Jekyll
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Okay, I wouldn&rsquo;t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That&rsquo;s usually the way I learn stuff anyways (even though I haven&rsquo;t really wrapped my head around Ruby yet) so I figured that it&rsquo;d be interesting to see if I could make it work even though my modifications weren&rsquo;t that significant. Maybe I&rsquo;ll pick it up some day.</p>
 
 <h2 id="source-code">Source Code</h2>
@@ -82,7 +83,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 </code></pre>
 
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -93,11 +94,11 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
         My Jekyll Plugins
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Continuing with my Jekyll series, here&rsquo;s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
 
 <h2 id="pagination">Pagination</h2>
@@ -134,7 +135,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 
 <p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won&rsquo;t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -145,11 +146,11 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
         Trying Out SASS
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 25, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/SASS" alt="SASS" title="SASS">SASS</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Disclaimer: the following blog post is extremely geeky and contains A LOT of code.</p>
 
 <p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I&rsquo;ve seen it being mentioned almost daily for quite a while. I didn&rsquo;t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it&rsquo;s still readable. I&rsquo;ve tried a few plugins that enables automatic highlighting, but I haven&rsquo;t come across one that I really love. I also had remove nearly all of my comments in the code but I&rsquo;m sure it&rsquo;s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
@@ -304,7 +305,7 @@ a:hover, a:focus {
 
 <p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don&rsquo;t have to change anything else. I think I&rsquo;ll try out Sass for a while and see how it goes. There&rsquo;s a lot more to it than just simple variables and math, so I&rsquo;m looking forward to see what I can come up with.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -315,11 +316,11 @@ a:hover, a:focus {
         My Big Fat Git Failure
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 23, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Git" alt="Git" title="Git">Git</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p><strong>Note:</strong> this isn&rsquo;t critism, rather a documentation of my own stupidity.</p>
 
 <p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub&rsquo;s built-in editor since that&rsquo;s a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said &ldquo;DETACHED HEAD&rdquo;. After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this. </p>
@@ -332,7 +333,7 @@ a:hover, a:focus {
 
 <p>Damn me and my apparent laziness.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -343,11 +344,11 @@ a:hover, a:focus {
         The Hassles Of Media Queries
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn&rsquo;t get them to properly work. Then it hit me that I&rsquo;d forgot to add this in the <code>&lt;head&gt;</code>:</p>
 
 <pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
@@ -362,12 +363,12 @@ a:hover, a:focus {
 
 <p>To my defense I&rsquo;m still pretty new to all of this, but still&hellip; I feel really dumb. Now they finally works and I&rsquo;m totally happy, but I don&rsquo;t know whether or not I should be scared of the fact that I don&rsquo;t own an iPad&hellip; Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
-  <section class="pagination">
-  <p class="small centered italic">
+  <nav class="pagination">
+  <p class="smallprint">
   
     
       <a href="/blog/page/13" alt="Previous" title="Previous">&larr; Previous</a>
@@ -377,31 +378,32 @@ a:hover, a:focus {
     
       <a href="/blog/page/15" alt="Next" title="Next">Next &rarr;</a>
       
-  </p><!-- .small .centered .italic -->
-</section><!-- .pagination -->
+  </p><!-- .smallprint -->
+</nav><!-- .pagination -->
 
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

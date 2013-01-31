@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>I Created Yet Another (Pointless) App</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 15, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>My experiments with the <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a> framework continues and yesterday I pushed yet another app to <a href="http://www.heroku.com/" title="Heroku">Heroku</a> called <a href="http://slugize.ellengummesson.com/" title="Slugize">Slugize</a>. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>. I usually don&rsquo;t decide on a title until a few seconds before I &ldquo;hit publish&rdquo; which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out <code>-</code> between every word in the title and change every letter to be in downcase<sup id="fnref:20130115-1"><a href="#fn:20130115-1" rel="footnote">1</a></sup>. I guess you can call it lazyiness too. Now I only need to copy and paste the title into <em>Slugize</em> and it&rsquo;ll do it automatically for me and I also added an option to append the current day&rsquo;s date to it. It&rsquo;s funny how being lazy sometimes makes you more productive.</p>
 
 <hr />
@@ -60,7 +61,14 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 184 words and takes about 36 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -81,27 +89,28 @@
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

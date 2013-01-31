@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>More Additions</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 31, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>Being bored sometimes has it&rsquo;s own perks. I continued experimenting with the <a href="/projects/begrider/">Begrider</a> project and ended up adding a couple of more things to it, mainly a new set of column-like classes called <code>.unit-</code>. A unit differ itself from a regular column by not having a gutter, and thus having more of a &ldquo;proportional&rdquo; percentage width. So, instead of just having these:</p>
 
 <pre><code>.row .column-twelve {
@@ -146,7 +147,14 @@
 
 <p>It&rsquo;s useful if you don&rsquo;t want to have any gutters and/or want to use paddings instead instead of margins. I don&rsquo;t know if anyone&rsquo;s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don&rsquo;t really know if it actually needs anything more, but I&rsquo;ll be sure to try stuff out.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 272 words and takes about 54 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -167,27 +175,28 @@
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

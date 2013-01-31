@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>Trying Out Vim</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 30, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>There&rsquo;s no doubt that if you&rsquo;ve ever spent some time looking through and reading various developer related things that you&rsquo;ve seen people mentioning the text editor <a href="http://www.vim.org/" title="Vim">Vim</a>. I decided to try it out the graphical version of it, gVim, and it really is a different experience. Instead of relying on trusty old keyboard shortcuts like <code>Ctrl+S</code> you instead have to first hit <code>Esc</code> and type <code>:w</code>. While I&rsquo;m not a hundred percent sold on it<sup id="fnref:20121230-1"><a href="#fn:20121230-1" rel="footnote">1</a></sup> I can defintively see the appeal, especially for people who love their keyboards. The Vim version of the color scheme <a href="http://ethanschoonover.com/solarized" title="Solarized">Solarized</a>, which I absolutely love, looks gorgeous and what I can tell Vim probably has the best Markdown syntax highlighting I&rsquo;ve ever seen. One other aspect I really like is that you can save all of your settings in a single file which you can then use across multiple systems, since Vim is cross-platform.</p>
 
 <p>I&rsquo;m still very new to using it, so if I decided to really dive in to it I&rsquo;m sure I&rsquo;ll write more about it during the coming weeks.</p>
@@ -83,7 +84,14 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 358 words and takes about 71 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -104,27 +112,28 @@
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

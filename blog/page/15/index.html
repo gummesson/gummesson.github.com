@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,10 +37,11 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    
   <article class="post">
   
     <h1>
@@ -48,11 +49,11 @@
         Windows 7, Ruby, DevKit And Jekyll
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>To tell you the truth, I wasn&rsquo;t that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn&rsquo;t really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
 
 <h2 id="installing-ruby">Installing Ruby</h2>
@@ -94,7 +95,7 @@
 
 <p><strong>Note:</strong> You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -105,11 +106,11 @@
         WordPress To GetSimple To Jekyll
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 20, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p><em>&hellip; Or: &ldquo;How I learned to stop worrying and love the command line&rdquo;.</em></p>
 
 <p>I love WordPress. I think it&rsquo;s a really great CMS and the community is huge, to say the least. However, I feel that it&rsquo;s sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I&rsquo;d choose it in a heartbeat. But since I don&rsquo;t plan to do that I wanted something smaller. I&rsquo;ve been playing around with <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn&rsquo;t really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn&rsquo;t feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
@@ -130,7 +131,7 @@
 
 <p>Like I said in my previous post, it took me some time to actually get it up and running, but now I&rsquo;m finally happy. It&rsquo;s not the most convenient solution, but it&rsquo;s simple enough for me. I&rsquo;ll probably write a couple of more post about Jekyll, so keep an eye out.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -141,11 +142,11 @@
         Hello World!
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on August 19, 2012  in  <a href="/blog/tag/General" alt="General" title="General">General</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I&rsquo;m now finally happy, or atleast content, with how it looks. It&rsquo;s been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and all of its&rsquo; functions and bits and pieces, but now I&rsquo;m all set, I think).</p>
 
 <h2 id="behind-the-scenes">Behind The Scenes</h2>
@@ -156,12 +157,12 @@
 
 <p>That sums it up pretty nicely, and thus, the link bombing ends here.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
-  <section class="pagination">
-  <p class="small centered italic">
+  <nav class="pagination">
+  <p class="smallprint">
   
     
       <a href="/blog/page/14" alt="Previous" title="Previous">&larr; Previous</a>
@@ -169,33 +170,34 @@
       
       <span class="separator">15 ... 15</span>
     
-      <span class="gray">Next &rarr;</span>
+      <span class="special-link">Next &rarr;</span>
     
-  </p><!-- .small .centered .italic -->
-</section><!-- .pagination -->
+  </p><!-- .smallprint -->
+</nav><!-- .pagination -->
 
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

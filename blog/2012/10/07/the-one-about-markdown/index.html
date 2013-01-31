@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,17 +37,18 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        <article class="post">
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
   
     <h1>The One About Markdown</h1>
   
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on October  7, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>
-    </p>
-    <span class="justified">
+    </p><!-- .smallprint -->
+    <section class="post-content">
       <p>When I first heard about <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> a couple of month ago it sparked my interest. I&rsquo;ve never really felt comfortable writing in a word processor nor in a WYSIWYG editor, so using something that would make it possible to write in any text editor while maintaining a kind of form of formatting sounded like a perfect solution that would really benefit my needs. It was originally created <em>&ldquo;to be used as a format for writing for the web&rdquo;</em>, ie. an easier way to convert plain text with a simple formatting to HTML. I won&rsquo;t go in to further detail one why I think it&rsquo;s great, but if you need more convincing or just want to read some more on this particular subject I suggest that you scroll down to the bottom of this blog post and read a couple of links I&rsquo;ve collected about Markdown and plain text. Trust me, it&rsquo;s worth it!</p>
 
 <h2 id="formatting">Formatting</h2>
@@ -160,7 +161,14 @@
   <li><em>MacSparky:</em> <a href="http://macsparky.com/2011/2/10/the-joy-of-text.html" title="Why I Love Text Files">Why I Love Text Files</a></li>
 </ul>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post consists of 913 words and takes about 182 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
 
   <section class="comments">
   <h1 class="margin-small">Comments</h1>
@@ -181,27 +189,28 @@
 
 </article><!-- .post -->
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,10 +37,11 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    
   <article class="post">
   
     <h1>
@@ -48,11 +49,11 @@
         Markdown Preview For Vim
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I&rsquo;m using <a href="http://www.vim.org/" title="Vim">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/" title="Pandoc">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
 
 <pre><code>function! PandocMarkdownPreview()
@@ -94,7 +95,7 @@ endfunction
 
 <p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You&rsquo;ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -105,11 +106,11 @@ endfunction
         Vim: Nearly Four Weeks In
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>My little <a href="http://www.vim.org/" title="Vim">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a>. I have nothing against it and I still think it&rsquo;s a fantastic editor but I feel like I don&rsquo;t really need it anymore. I&rsquo;m no way near being a expert but like I&rsquo;ve stated before I really like using Vim and I don&rsquo;t see that that changing anytime soon. I&rsquo;ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles" title="My Vim files on GitHub">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I&rsquo;ve tried to stay away from adding too many plugins since I don&rsquo;t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that&rsquo;s just slightly younger than me?</p>
 
 <h2 id="a-few-tips-and-tricks">A Few Tips And Tricks</h2>
@@ -165,7 +166,7 @@ au InsertLeave * set cursorline
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -176,11 +177,11 @@ au InsertLeave * set cursorline
         Serve: The Ugliest Static Site Generator In The World
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 20, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>I don&rsquo;t know what&rsquo;s been up with me lately but I do know that during the last couple of weeks I&rsquo;ve &ldquo;shipped&rdquo; a lot of things. I mean, most of them are basic things but I&rsquo;ve had fun while doing them. So yesterday I added yet another repo to <a href="https://github.com/gummesson" title="My GitHub account">my GitHub account</a>, <a href="https://github.com/gummesson/serve" title="Serve">Serve</a>. <em>Serve</em> is a static site generator which focuses on generating small sites that only need to consist of a few pages at the most.</p>
 
 <h2 id="the-process">The Process</h2>
@@ -206,7 +207,7 @@ au InsertLeave * set cursorline
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -214,17 +215,17 @@ au InsertLeave * set cursorline
   
     <h1>
       <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" alt="Vimium: The Hacker's Browser" title="Vimium: The Hacker's Browser">
-        Vimium: The Hacker's Browser <span class="mini gray">&rarr;</span>
+        Vimium: The Hacker's Browser <span class="special-link">&rarr;</span>
       </a>
     </h1>
-    <p class="small centered italic">
-    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink: Vimium: The Hacker's Browser" title="Permalink: Vimium: The Hacker's Browser" class="gray border-none">&#8734;</a>
-    </p><!-- .small -centered .italic -->
+    <p class="smallprint">
+    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink: Vimium: The Hacker's Browser" title="Permalink: Vimium: The Hacker's Browser" class="special-link border-none">&#8734;</a>
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>I&rsquo;m probably the last person on earth to discover this neat little extension but it&rsquo;s nonetheless a great thing for both navigating in <a href="http://www.google.com/chrome" title="Chrome">Chrome</a> and learning the basic <a href="http://www.vim.org/" title="Vim">Vim</a> commands.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -235,11 +236,11 @@ au InsertLeave * set cursorline
         I Created Yet Another (Pointless) App
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on January 15, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>My experiments with the <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a> framework continues and yesterday I pushed yet another app to <a href="http://www.heroku.com/" title="Heroku">Heroku</a> called <a href="http://slugize.ellengummesson.com/" title="Slugize">Slugize</a>. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>. I usually don&rsquo;t decide on a title until a few seconds before I &ldquo;hit publish&rdquo; which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out <code>-</code> between every word in the title and change every letter to be in downcase<sup id="fnref:20130115-1"><a href="#fn:20130115-1" rel="footnote">1</a></sup>. I guess you can call it lazyiness too. Now I only need to copy and paste the title into <em>Slugize</em> and it&rsquo;ll do it automatically for me and I also added an option to append the current day&rsquo;s date to it. It&rsquo;s funny how being lazy sometimes makes you more productive.</p>
 
 <hr />
@@ -252,44 +253,45 @@ au InsertLeave * set cursorline
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
-  <section class="pagination">
-  <p class="small centered italic">
+  <nav class="pagination">
+  <p class="smallprint">
   
-      <span class="gray">&larr; Previous</span>
+      <span class="special-link">&larr; Previous</span>
     
       <span class="separator">1 ... 15</span>
     
       <a href="/blog/page/2" alt="Next" title="Next">Next &rarr;</a>
       
-  </p><!-- .small .centered .italic -->
-</section><!-- .pagination -->
+  </p><!-- .smallprint -->
+</nav><!-- .pagination -->
 
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+

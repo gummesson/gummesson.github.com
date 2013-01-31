@@ -19,12 +19,12 @@
 </head>
 <body>
   <div class="container">
-    <header class="branding">
+    <header class="site-header">
       <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <img src="/assets/images/logo/logo.png" class="logo" />
+        <h1 class="mega">E.</h1>
       </a>
 
-      <ul class="nav menu centered beta">
+      <ul class="nav site-nav beta">
         <li>
           <a href="/" title="Home" alt="Home">Home</a>
         </li>
@@ -37,10 +37,11 @@
         <li>
           <a href="/contact" title="Contact" alt="Contact">Contact</a>
         </li>
-      </ul><!-- .nav .menu .centered .beta -->
-    </header><!-- .branding -->
-      <div class="content">
-        
+      </ul><!-- .nav .site-nav .beta -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    
   <article class="post">
   
     <h1>
@@ -48,11 +49,11 @@
         Jekyll Rake Boilerplate
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Even though I so far love learning <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a> I&rsquo;ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I&rsquo;m lazy like that. After some thinking I finally came up with something and yesterday I &ldquo;released&rdquo; it: the <a href="https://github.com/gummesson/jekyll-rake-boilerplate" title="Jekyll Rake Boilerplate">Jekyll Rake Boilerplate</a>. </p>
 
 <p>Using a rakefile for <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> isn&rsquo;t something that&rsquo;s new nor unique but so far I haven&rsquo;t stumbled upon a simple boilerplate. It isn&rsquo;t revolutionary by any means<sup id="fnref:20121226-1"><a href="#fn:20121226-1" rel="footnote">1</a></sup> but it gave me the motivation that I needed and I had fun while doing it. Even though it&rsquo;s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be &ldquo;proud&rdquo; of it, or atleast content.</p>
@@ -83,7 +84,7 @@
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -91,14 +92,14 @@
   
     <h1>
       <a href="http://rubygems.org/gems/jekyll" alt="Jekyll 0.12.0" title="Jekyll 0.12.0">
-        Jekyll 0.12.0 <span class="mini gray">&rarr;</span>
+        Jekyll 0.12.0 <span class="special-link">&rarr;</span>
       </a>
     </h1>
-    <p class="small centered italic">
-    Posted on December 23, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>   <a href="http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0" alt="Permalink: Jekyll 0.12.0" title="Permalink: Jekyll 0.12.0" class="gray border-none">&#8734;</a>
-    </p><!-- .small -centered .italic -->
+    <p class="smallprint">
+    Posted on December 23, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>   <a href="http://ellengummesson.com/blog/2012/12/23/jekyll-0-12-0" alt="Permalink: Jekyll 0.12.0" title="Permalink: Jekyll 0.12.0" class="special-link border-none">&#8734;</a>
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p><a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It&rsquo;s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven&rsquo;t had time to play around with it a whole lot but the nicest new feature that I&rsquo;ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. </p>
 
 <p>I previously had to use a quite ugly hack that involved copying and changing the source code itself and place it in my <code>_plugins</code> folder. Now the only thing that I had to do was to add the below line in my <code>_config.yml</code> file:</p>
@@ -108,7 +109,7 @@
 
 <p>It has the same functionality as my own fiddling but it&rsquo;s a hell of a lot easier than having to change the code directly.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -119,11 +120,11 @@
         Handy Bash Scripts
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 19, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux" title="Linux">Linux</a>, <a href="/blog/tag/Bash" alt="Bash" title="Bash">Bash</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>One thing that I really miss while I&rsquo;m using Crunchbang is a good note-taking app with plain text support. I haven&rsquo;t found one yet so I threw together a few simple bash scripts that I can use in the terminal for easier notetaking.</p>
 
 <pre><code>function no() {
@@ -158,7 +159,7 @@ function todo() {
 
 <p>Even though the scripts aren&rsquo;t as useful as a fully featured app they provide some sort of functionality to my writing workflow, which is nice.</p>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -169,11 +170,11 @@ function todo() {
         Configuring Crunchbang
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 16, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux" title="Linux">Linux</a>, <a href="/blog/tag/Crunchbang" alt="Crunchbang" title="Crunchbang">Crunchbang</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Since installing <a href="http://crunchbang.org/" title="Crunchbang Linux">Crunchbang</a> two days ago I&rsquo;ve spent quite some time on configuring it to my liking. While I find the default look to be quite nice I felt that I needed something with a bit more lighter colors. This is how my current system looks now:</p>
 
 <p><img src="/images/blog/2012-12-16-crunchbang-elementary.png" alt="Crunchbang Elementary" title="Crunchbang Elementary" /></p>
@@ -193,7 +194,7 @@ function todo() {
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
@@ -204,11 +205,11 @@ function todo() {
         My Adventure With Crunchbang
       </a>
     </h1>
-    <p class="small centered italic">
+    <p class="smallprint">
       Posted on December 14, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux" title="Linux">Linux</a>, <a href="/blog/tag/Crunchbang" alt="Crunchbang" title="Crunchbang">Crunchbang</a>  
-    </p><!-- .small -centered .italic -->
+    </p><!-- .smallprint -->
   
-    <span class="justified">
+    <section class="post-content">
       <p>Lately I&rsquo;ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a <em>Samsung NC10</em><sup id="fnref:20121214-1"><a href="#fn:20121214-1" rel="footnote">1</a></sup>. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: <a href="http://crunchbang.org/" title="Crunchbang Linux">Crunchbang Linux</a>. It&rsquo;s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It&rsquo;s based on <a href="http://www.debian.org/" title="Debian">Debian</a> which means that there&rsquo;s a lot of apps for it and the support is generally good. I decided to download the current testing version, <a href="http://crunchbang.org/download/testing" title="Crunchbang Linux 11 Waldorf">Waldorf</a>, since I&rsquo;m just going to use the netbook mainly for browsing and writing.</p>
 
 <h2 id="installation">Installation</h2>
@@ -245,12 +246,12 @@ function todo() {
   </ol>
 </div>
 
-    </span><!-- .justified -->
+    </section><!-- .post-content -->
 </article><!-- .post -->
 
 
-  <section class="pagination">
-  <p class="small centered italic">
+  <nav class="pagination">
+  <p class="smallprint">
   
     
       <a href="/blog/page/2" alt="Previous" title="Previous">&larr; Previous</a>
@@ -260,31 +261,32 @@ function todo() {
     
       <a href="/blog/page/4" alt="Next" title="Next">Next &rarr;</a>
       
-  </p><!-- .small .centered .italic -->
-</section><!-- .pagination -->
+  </p><!-- .smallprint -->
+</nav><!-- .pagination -->
 
 
-      </div><!-- .content -->
-    <footer class="mini centered italic">
-      <p class="margin-none">
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint margin-none">
         Copyright &copy; 
         <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
           Ellen Gummesson
         </a> 
         2013
-      </p>
-      <p class="margin-small">
+      </p><!-- .miniprint -->
+      <p class="miniprint margin-small">
         Licensed Under 
         <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
           CC BY-NC-SA 3.0
         </a>
-      </p>
-      <p>
+      </p><!-- .miniprint -->
+      <p class="miniprint">
         <a href="/feed.xml" title="Subscribe" alt="Subscribe">
           Subscribe
         </a>
-      </p>
-    </footer> <!-- .mini .centered .italic -->
-  </div> <!-- .container -->
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
 </body>
 </html>
+
