@@ -6,6 +6,20 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Make Netrw Behave More Like NERDTree</title>
+                <description>&lt;p&gt;This is nice read for using something more native to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;. Quite early into my editor transition I found out that it had a native file explorer called &lt;a href=&quot;http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html&quot; title=&quot;Netrw&quot;&gt;Netrw&lt;/a&gt;, but I didn&amp;rsquo;t particularly like it it&amp;rsquo;s default state so I started to use a plugin called &lt;a href=&quot;https://github.com/scrooloose/nerdtree&quot; title=&quot;NERDTree&quot;&gt;NERDTree&lt;/a&gt; instead. It&amp;rsquo;s great but it&amp;rsquo;s nice that a more native solution can solve the problem too. I&amp;rsquo;ve also started using a fuzzy finder plugin, &lt;a href=&quot;https://github.com/kien/ctrlp.vim&quot; title=&quot;CtrlP&quot;&gt;CtrlP&lt;/a&gt;, more and more lately but I still like to have a &amp;ldquo;project visualizer&amp;rdquo; of some sort and I think that Netrw will fit that quite nicely. I also added these to my &lt;code&gt;.vimrc&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let g:netrw_liststyle = 3
+let g:netrw_list_hide = &quot;.git,.sass-cache,.jpg,.png,.svg&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;liststyle&lt;/code&gt; option makes it lists all file and folders in a more tree-like structure vill the &lt;code&gt;hide&lt;/code&gt; options just hides the selected filetypes and folders.&lt;/p&gt;
+</description>
+                <published>February  4, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree</link>
+              </item>
+            
+              <item>
                 <title>Wordcount Plugin For Jekyll</title>
                 <description>&lt;p&gt;Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I&amp;rsquo;m not sure if it&amp;rsquo;s 100% true but it&amp;rsquo;s a pretty fun feature nonetheless. I&amp;rsquo;ve of course created a repository for it on &lt;a href=&quot;https://github.com/gummesson/jekyll-wordcount&quot; title=&quot;Jekyll Wordcount on GitHub&quot;&gt;GitHub&lt;/a&gt;. I&amp;rsquo;m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it&amp;rsquo;s HTML tags before actually doing the counting but it was by far the easiest way&lt;sup id=&quot;fnref:20130131-1&quot;&gt;&lt;a href=&quot;#fn:20130131-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The couting seems to be quite accurate too, which is nice.&lt;/p&gt;
 
@@ -160,14 +174,6 @@ au InsertLeave * set cursorline
 </description>
                 <published>January 20, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world</link>
-              </item>
-            
-              <item>
-                <title>Vimium: The Hacker's Browser</title>
-                <description>&lt;p&gt;I&amp;rsquo;m probably the last person on earth to discover this neat little extension but it&amp;rsquo;s nonetheless a great thing for both navigating in &lt;a href=&quot;http://www.google.com/chrome&quot; title=&quot;Chrome&quot;&gt;Chrome&lt;/a&gt; and learning the basic &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; commands.&lt;/p&gt;
-</description>
-                <published>January 18, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/18/vimium</link>
               </item>
             
     </channel>

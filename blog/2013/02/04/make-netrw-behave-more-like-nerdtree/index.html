@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Make Netrw Behave More Like NERDTree: Ellen Gummesson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/global.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
+      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <meta name="author" content="Ellen Gummesson">
+    <link rel="author" href="/humans.txt" type="text/plain">
+      <link rel="canonical" href="http://ellengummesson.com/">
+      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
+      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+        <h1 class="mega">E.</h1>
+      </a>
+
+      <ul class="nav site-nav">
+        <li>
+          <a href="/" title="Home" alt="Home">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="About" alt="About">About</a>
+        </li>
+        <li>
+          <a href="/archives" title="Archives" alt="Archives">Archives</a>
+        </li>
+        <li>
+          <a href="/contact" title="Contact" alt="Contact">Contact</a>
+        </li>
+      </ul><!-- .nav .site-nav -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
+  
+    <h1>
+      <a href="http://stackoverflow.com/questions/5006950/setting-netrw-like-nerdtree" alt="Make Netrw Behave More Like NERDTree" title="Make Netrw Behave More Like NERDTree">Make Netrw Behave More Like NERDTree <span class="special-link">&rarr;</span></a>
+    </h1>
+  
+    <p class="smallprint">
+      Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
+    </p><!-- .smallprint -->
+    <section class="post-content">
+      <p>This is nice read for using something more native to <a href="http://www.vim.org/" title="Vim">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html" title="Netrw">Netrw</a>, but I didn&rsquo;t particularly like it it&rsquo;s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree" title="NERDTree">NERDTree</a> instead. It&rsquo;s great but it&rsquo;s nice that a more native solution can solve the problem too. I&rsquo;ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim" title="CtrlP">CtrlP</a>, more and more lately but I still like to have a &ldquo;project visualizer&rdquo; of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
+
+<pre><code>let g:netrw_liststyle = 3
+let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
+</code></pre>
+
+<p>The <code>liststyle</code> option makes it lists all file and folders in a more tree-like structure vill the <code>hide</code> options just hides the selected filetypes and folders.</p>
+
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post contains 140 words and takes roughly 28 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
+
+  <section class="comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section> <!-- .comments -->
+
+
+</article><!-- .post -->
+
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint p-copy">
+        Copyright &copy; 
+        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+          Ellen Gummesson
+        </a> 
+        2013
+      </p><!-- .miniprint .p-copy -->
+      <p class="miniprint p-license">
+        Licensed Under 
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
+          CC BY-NC-SA 3.0
+        </a>
+      </p><!-- .miniprint .p-license -->
+      <p class="miniprint">
+        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
+          Subscribe
+        </a>
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
+</body>
+</html>
+
