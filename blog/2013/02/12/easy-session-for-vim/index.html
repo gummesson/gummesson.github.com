@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Easy Session For Vim: Ellen Gummesson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/global.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
+      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <meta name="author" content="Ellen Gummesson">
+    <link rel="author" href="/humans.txt" type="text/plain">
+      <link rel="canonical" href="http://ellengummesson.com/">
+      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
+      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+        <h1 class="mega">E.</h1>
+      </a>
+
+      <ul class="nav site-nav">
+        <li>
+          <a href="/" title="Home" alt="Home">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="About" alt="About">About</a>
+        </li>
+        <li>
+          <a href="/archives" title="Archives" alt="Archives">Archives</a>
+        </li>
+        <li>
+          <a href="/contact" title="Contact" alt="Contact">Contact</a>
+        </li>
+      </ul><!-- .nav .site-nav -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
+  
+    <h1>Easy Session For Vim</h1>
+  
+    <p class="smallprint">
+      Posted on February 12, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
+    </p><!-- .smallprint -->
+    <section class="post-content">
+      <p>Another week, another project and this time it&rsquo;s actually something half decent. After a few hours of work over the last couple of days I&rsquo;m finally done with my first plugin for <a href="http://www.vim.org/" title="Vim">Vim</a> and I named it <a href="https://github.com/gummesson/easy-session.vim" title="Easy Session on GitHub">Easy Session</a>. It lets you easily manage sessions with four commands: <code>:SaveSession</code>, <code>:NewSession</code>, <code>:OpenSession</code> and <code>:ListSessions</code>.</p>
+
+<p><code>:SaveSession</code> uses the current working directory as the default filename, so you have to make sure that you&rsquo;re in the project&rsquo;s root directory if you&rsquo;re saving your session for the first time. It may not be the most ultimate solution, but it&rsquo;s better than the default filename <code>Session.vim</code>. There&rsquo;s also <code>:NewSession</code> which lets you use your own custom filename. The <code>:OpenSession</code>, suprisingly, opens a session.</p>
+
+<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075" title="Netrw">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it&rsquo;s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" rel="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
+
+<p><img src="/images/blog/2013-02-12-easy-session-01.png" alt="Easy Session (Sessions List)" /></p>
+
+<p><img src="/images/blog/2013-02-12-easy-session-02.png" alt="Easy Session (Sessions List)" /></p>
+
+<p>I don&rsquo;t know if it&rsquo;s useful for anyone but me, but it was a fun challenge. There&rsquo;s a <a href="http://peterodding.com/code/vim/session/" title="Session.vim">Session.vim</a> plugin that has a lof more advanced features than mine do, but I think I&rsquo;ll stick with my own solution for now.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130212-1">
+      <p>The &ldquo;<code>0</code>&rdquo; makes the list start on the first line in the buffer. If just <code>:read</code> is used it&rsquo;ll paste the content below the first line.<a href="#fnref:20130212-1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post contains 263 words and takes roughly 52 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
+
+  <section class="comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section> <!-- .comments -->
+
+
+</article><!-- .post -->
+
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint p-copy">
+        Copyright &copy; 
+        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+          Ellen Gummesson
+        </a> 
+        2013
+      </p><!-- .miniprint .p-copy -->
+      <p class="miniprint p-license">
+        Licensed Under 
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
+          CC BY-NC-SA 3.0
+        </a>
+      </p><!-- .miniprint .p-license -->
+      <p class="miniprint">
+        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
+          Subscribe
+        </a>
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
+</body>
+</html>
+
