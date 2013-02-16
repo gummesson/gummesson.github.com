@@ -284,7 +284,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app</loc>
-        <lastmod>2013-02-01T12:26:19+01:00</lastmod>
+        <lastmod>2013-02-14T20:53:46+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/01/12/launch-week</loc>
@@ -326,7 +326,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/02/12/easy-session-for-vim</loc>
-        <lastmod>2013-02-12T21:28:16+01:00</lastmod>
+        <lastmod>2013-02-14T13:36:25+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/blog/2013/02/16/more-vim-goodness</loc>
+        <lastmod>2013-02-16T19:42:50+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -342,10 +346,10 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-02-12T21:28:16+01:00</lastmod>
+        <lastmod>2013-02-16T19:42:50+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//projects.html</loc>
-        <lastmod>2013-02-05T13:42:40+01:00</lastmod>
+        <lastmod>2013-02-16T10:01:42+01:00</lastmod>
     </url>
 </urlset>

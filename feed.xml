@@ -6,6 +6,35 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>More Vim Goodness</title>
+                <description>&lt;p&gt;I feel like I start to sound like a fantatic when it comes to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;, but the truth is that I&amp;rsquo;m having so much fun with it that it&amp;rsquo;s hard to stop and thus I&amp;rsquo;ve created two more plugins: &lt;a href=&quot;https://github.com/gummesson/voutliner.vim&quot; title=&quot;voutliner.vim&quot;&gt;Voutliner&lt;/a&gt; and &lt;a href=&quot;https://github.com/gummesson/footnotes.vim&quot; title=&quot;footnotes.vim&quot;&gt;Footnotes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;voutliner&quot;&gt;Voutliner&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Voutliner&lt;/em&gt; is a simple outlining tool&lt;sup id=&quot;fnref:20130216-1&quot;&gt;&lt;a href=&quot;#fn:20130216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I looked at both &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=3515&quot; title=&quot;VimOutliner&quot;&gt;VimOutliner&lt;/a&gt; and &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=517&quot; title=&quot;The Vim Outliner&quot;&gt;TVO&lt;/a&gt; but I felt that they were a bit too &amp;ldquo;heavy&amp;rdquo; for me. I wanted something simple that didn&amp;rsquo;t depend on too many different components. &lt;em&gt;Voutliner&lt;/em&gt; is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that&amp;rsquo;s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;I like using footnotes but I hate having to manually enter the date for each and every one of them&lt;sup id=&quot;fnref:20130216-2&quot;&gt;&lt;a href=&quot;#fn:20130216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press &lt;code&gt;F7&lt;/code&gt; and the date will get added to every footnote automatically. Like &lt;em&gt;Voutliner&lt;/em&gt; I doubt that many people will use it, but yet again it&amp;rsquo;s extremely useful for me.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130216-1&quot;&gt;
+      &lt;p&gt;And it&amp;rsquo;s a really bad name.&lt;a href=&quot;#fnref:20130216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130216-2&quot;&gt;
+      &lt;p&gt;I use &lt;code&gt;YYYYMMDD-#&lt;/code&gt; as a format so that every footnote has an unique set of numbers, which makes it even more tedious.&lt;a href=&quot;#fnref:20130216-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>February 16, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/02/16/more-vim-goodness</link>
+              </item>
+            
+              <item>
                 <title>Easy Session For Vim</title>
                 <description>&lt;p&gt;Another week, another project and this time it&amp;rsquo;s actually something half decent. After a few hours of work over the last couple of days I&amp;rsquo;m finally done with my first plugin for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and I named it &lt;a href=&quot;https://github.com/gummesson/easy-session.vim&quot; title=&quot;Easy Session on GitHub&quot;&gt;Easy Session&lt;/a&gt;. It lets you easily manage sessions with four commands: &lt;code&gt;:SaveSession&lt;/code&gt;, &lt;code&gt;:NewSession&lt;/code&gt;, &lt;code&gt;:OpenSession&lt;/code&gt; and &lt;code&gt;:ListSessions&lt;/code&gt;.&lt;/p&gt;
 
@@ -73,53 +102,6 @@ let g:netrw_list_hide = &quot;.git,.sass-cache,.jpg,.png,.svg&quot;
 </description>
                 <published>January 31, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll</link>
-              </item>
-            
-              <item>
-                <title>Markdown Preview For Vim</title>
-                <description>&lt;p&gt;One of the biggest advantages of using a dedicated tool for writing &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; is that they often come with some way of previewing your text file. I kind of miss that kind of function when I&amp;rsquo;m using &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; I decided to throw together a simple vimscript that uses &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot; title=&quot;Pandoc&quot;&gt;Pandoc&lt;/a&gt; to convert a Markdown file to HTML. The basic gist of it looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function! PandocMarkdownPreview()
-  silent exec 'cd %:p:h'
-  silent exec 'pwd'
-  silent exec '!pandoc -o preview.html %'
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It&amp;rsquo;s not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that&amp;rsquo;ll open the &lt;code&gt;preview.html&lt;/code&gt; directly in the browser:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if has(&quot;win32&quot;)
-  silent exec '!start cmd /c preview.html'
-else
-  silent exec '!xdg-open preview.html'
-endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;One thing that&amp;rsquo;s worth being mentioned is that the &lt;code&gt;!xdg-open&lt;/code&gt; part can be changed to &lt;code&gt;!open&lt;/code&gt; and then you can also use it if you&amp;rsquo;re on a Mac.&lt;/p&gt;
-
-&lt;p&gt;In the end the whole thing looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function! PandocMarkdownPreview()
-  silent exec 'cd %:p:h'
-  silent exec 'pwd'
-  silent exec '!pandoc -o preview.html %'
-  if has(&quot;win32&quot;)
-    silent exec '!start cmd /c preview.html'
-  else
-    silent exec '!xdg-open preview.html'
-  endif
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And the mapping looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;map &amp;lt;leader&amp;gt;pmd :call PandocMarkdownPreview()&amp;lt;cr&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I also threw together more refined version of the whole thing in a &lt;a href=&quot;https://gist.github.com/4649514&quot; title=&quot;Pandoc Markdown Preview on GitHub&quot;&gt;gist on Github&lt;/a&gt;. You&amp;rsquo;ll obviously need to have Pandoc install on your machine in order to get it up and running.&lt;/p&gt;
-</description>
-                <published>January 27, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/27/markdown-preview-for-vim</link>
               </item>
             
     </channel>

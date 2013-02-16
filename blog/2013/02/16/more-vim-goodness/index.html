@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Lo And Behold, I've Launched An Web App!: Ellen Gummesson</title>
+  <title>More Vim Goodness: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/global.min.css">
       <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
@@ -43,34 +43,31 @@
   <div class="site-content">
     <article class="post">
   
-    <h1>Lo And Behold, I've Launched An Web App!</h1>
+    <h1>More Vim Goodness</h1>
   
     <p class="smallprint">
-      Posted on January 10, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>
+      Posted on February 16, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
     </p><!-- .smallprint -->
     <section class="post-content">
-      <p>The day before yesterday I launched my first &ldquo;web app&rdquo;, <a href="http://kramit.ellengummesson.com/" title="Kramit!">Kramit!</a>. Like about half a million people on the internet with some kind of web development interest I created yet another <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> preview app and with the wonderful micro web framework <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a>. It&rsquo;s nothing unique but I&rsquo;m quite proud nonetheless. I haven&rsquo;t actually seen that many that uses <a href="http://kramdown.rubyforge.org/" title="Kramdown">Kramdown</a> as it&rsquo;s default parser, so I guess that that aspect is somewhat pretty unique<sup id="fnref:20130110-1"><a href="#fn:20130110-1" rel="footnote">1</a></sup>.</p>
+      <p>I feel like I start to sound like a fantatic when it comes to <a href="http://www.vim.org/" title="Vim">Vim</a>, but the truth is that I&rsquo;m having so much fun with it that it&rsquo;s hard to stop and thus I&rsquo;ve created two more plugins: <a href="https://github.com/gummesson/voutliner.vim" title="voutliner.vim">Voutliner</a> and <a href="https://github.com/gummesson/footnotes.vim" title="footnotes.vim">Footnotes</a>.</p>
 
-<h2 id="more-minimum-than-an-mvp">More Minimum Than An MVP</h2>
+<h2 id="voutliner">Voutliner</h2>
 
-<p><em>Kramit!</em> is at it&rsquo;s core the definition of an MVP<sup id="fnref:20130110-2"><a href="#fn:20130110-2" rel="footnote">2</a></sup>. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That&rsquo;s nothing! I&rsquo;m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn&rsquo;t actually writing the code but rather designing it.<sup id="fnref:20130110-3"><a href="#fn:20130110-3" rel="footnote">3</a></sup></p>
+<p><em>Voutliner</em> is a simple outlining tool<sup id="fnref:20130216-1"><a href="#fn:20130216-1" rel="footnote">1</a></sup>. I looked at both <a href="http://www.vim.org/scripts/script.php?script_id=3515" title="VimOutliner">VimOutliner</a> and <a href="http://www.vim.org/scripts/script.php?script_id=517" title="The Vim Outliner">TVO</a> but I felt that they were a bit too &ldquo;heavy&rdquo; for me. I wanted something simple that didn&rsquo;t depend on too many different components. <em>Voutliner</em> is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that&rsquo;s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.</p>
 
-<h2 id="so-whats-next">So, What&rsquo;s Next?</h2>
+<h2 id="footnotes">Footnotes</h2>
 
-<p>First of all I think I&rsquo;m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at <a href="http://rubyonrails.org/" title="Ruby on Rails">Ruby on Rails</a>. It&rsquo;s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.</p>
+<p>I like using footnotes but I hate having to manually enter the date for each and every one of them<sup id="fnref:20130216-2"><a href="#fn:20130216-2" rel="footnote">2</a></sup>. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press <code>F7</code> and the date will get added to every footnote automatically. Like <em>Voutliner</em> I doubt that many people will use it, but yet again it&rsquo;s extremely useful for me.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
-    <li id="fn:20130110-1">
-      <p>I like it because it has <a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">MultiMarkdown</a> features like footnotes for examples (this footnote became very meta by the way).<a href="#fnref:20130110-1" rel="reference">&#8617;</a></p>
+    <li id="fn:20130216-1">
+      <p>And it&rsquo;s a really bad name.<a href="#fnref:20130216-1" rel="reference">&#8617;</a></p>
     </li>
-    <li id="fn:20130110-2">
-      <p><a href="http://en.wikipedia.org/wiki/Minimum_viable_product" title="Minimum viable product">Minimum viable product</a>.<a href="#fnref:20130110-2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130110-3">
-      <p>I would called myself challenged in that department. My basic design process is &ldquo;make something up, strip away all the things that I though was going to look good but didn&rsquo;t, look it at it again and then remove some more&rdquo;.<a href="#fnref:20130110-3" rel="reference">&#8617;</a></p>
+    <li id="fn:20130216-2">
+      <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -79,7 +76,7 @@
     <section class="notes">
   <hr>
   <p class="miniprint">
-    This post contains 291 words and takes roughly 58 seconds to read. Thank you for your time!
+    This post contains 243 words and takes roughly 48 seconds to read. Thank you for your time!
   </p><!-- .miniprint -->
 </section>
 

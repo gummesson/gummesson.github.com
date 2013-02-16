@@ -45,6 +45,44 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/12/11/robocopy" alt="Robocop(y)" title="Robocop(y)">
+        Robocop(y)
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on December 11, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Command Line" alt="Command Line" title="Command Line">Command Line</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called <code>robocopy</code><sup id="fnref:20121211-1"><a href="#fn:20121211-1" rel="footnote">1</a></sup>. One of the things I use it for is to quickly backup the source of my <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site to a folder on my <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> with a simple command like this:</p>
+
+<pre><code>robocopy ~/Jekyll ~/Dropbox/Jekyll *.* /mir
+</code></pre>
+
+<p>As you can see it follows the structure of <code>robocopy -source -destination -file -option</code>. The <code>*.*</code> targets every single filetype and the <code>/mir</code> means that everything, including the subfolders, will get mirrored. There&rsquo;s a lot of options for it<sup id="fnref:20121211-2"><a href="#fn:20121211-2" rel="footnote">2</a></sup>, ranging from copying a single file once to actually scheduling it for repeated copying. It&rsquo;s not really a syncing function per se, but it works and it&rsquo;s blazingly fast. I&rsquo;m not really bothered by the fact that I have to manually run it either since I don&rsquo;t need to sync everytime something changes.</p>
+
+<p>The biggest advantage of using Robocopy is that it&rsquo;s just a lot more smoother, especially since I&rsquo;ve gotten more and more comfortable using the command line for everyday tasks. I can open up the CLI from anywhere, trigger a hotstring for pasting the above snippet and just hit <code>Enter</code>.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121211-1">
+      <p><a href="http://en.wikipedia.org/wiki/Robocopy" title="Robust File Copy">Robust File Copy</a>.<a href="#fnref:20121211-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121211-2">
+      <p>Here&rsquo;s <a href="http://ss64.com/nt/robocopy.html" title="SS64's Robocopy Reference">an excellent summary</a> from SS64. <a href="#fnref:20121211-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/12/09/the-struggles-of-writing" alt="The Struggles Of Writing" title="The Struggles Of Writing">
         The Struggles Of Writing
       </a>
@@ -205,37 +243,6 @@ File.open(txt_file, "a") { |file| file.puts(item) }
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/26/the-spark-file" alt="The Spark File" title="The Spark File">
-        The Spark File
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on November 26, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>A few weeks ago I came across a post on <a href="https://medium.com/" title="Medium">Medium</a> called <a href="https://medium.com/the-writers-room/8d6e7df7ae58" title="The Spark File">The Spark File</a> written by <a href="https://medium.com/@stevenbjohnson" title="Steven Johnson">Steven Johnson</a>. I really liked the idea of having a spark file of some sort but never took the time to try it out. I usually depend on <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> when it comes to jotting down ideas but more often than not I&rsquo;ve ended up with text files with just a headline in them, like &ldquo;write about x and y&rdquo;. While it definitively helps me remembering what I want to write about I feel that it&rsquo;s unnecessary to have a ton of one line ideas clutter up my notes. That&rsquo;s where the spark file fits perfectly. I finally understood that it&rsquo;s something that&rsquo;ll be a good addition to my writing workflow. Now I&rsquo;ve begun to only use ResophNotes for my blog posts or other types of writing when an idea has involved to something more solid, while the spark file is just a scratchpad for things I want to write about but haven&rsquo;t really figured out yet.</p>
-
-<h2 id="instant-sparks">Instant Sparks</h2>
-
-<p>I threw together a simple <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a> script so the spark file is just one hotkey away:</p>
-
-<pre><code>!q::
-{
-Run, Notepad.exe "~/spark-file.txt"
-Return
-}
-</code></pre>
-
-<p>This means that whenever an idea pops up I just need to press <code>Alt+Q</code> and type down whatever&rsquo;s in my head. It&rsquo;s a simple but powerful solution that&rsquo;ll serve me well I think.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->
