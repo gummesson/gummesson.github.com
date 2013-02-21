@@ -45,6 +45,134 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/10/07/the-one-about-markdown" alt="The One About Markdown" title="The One About Markdown">
+        The One About Markdown
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on October  7, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>When I first heard about <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> a couple of month ago it sparked my interest. I&rsquo;ve never really felt comfortable writing in a word processor nor in a WYSIWYG editor, so using something that would make it possible to write in any text editor while maintaining a kind of form of formatting sounded like a perfect solution that would really benefit my needs. It was originally created <em>&ldquo;to be used as a format for writing for the web&rdquo;</em>, ie. an easier way to convert plain text with a simple formatting to HTML. I won&rsquo;t go in to further detail one why I think it&rsquo;s great, but if you need more convincing or just want to read some more on this particular subject I suggest that you scroll down to the bottom of this blog post and read a couple of links I&rsquo;ve collected about Markdown and plain text. Trust me, it&rsquo;s worth it!</p>
+
+<h2 id="formatting">Formatting</h2>
+
+<p>The formatting of the syntax is really, really simple to remember. I honestly don&rsquo;t even think about anymore it when I write since it&rsquo;s become like second nature to me. If you want to get a closer look of the whole syntax I suggest that you go to the <a href="http://daringfireball.net/projects/markdown/syntax" title="Markdown Syntax">official documentation</a>.</p>
+
+<h3 id="headings">Headings</h3>
+
+<pre><code># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+</code></pre>
+
+<p>A hashtag represents a heading, where each hashtag equals to the size of the heading, ie. a first level heading becomes a <code>h1</code> tag and so on when it&rsquo;s converted to HTML.</p>
+
+<h3 id="annotations">Annotations</h3>
+
+<pre><code>*Bold* 
+**Italic**
+***Bold and italic***
+</code></pre>
+
+<p><strong>Side note:</strong> You can also use <code>_</code> instead of <code>*</code> too.</p>
+
+<h3 id="links">Links</h3>
+
+<pre><code>[Click Here](http://www.example.com/ "Example.com") 
+
+[Click Here][example]
+[example]: http://www.example.com/ "Example.com"
+
+&lt;http://www.example.com/&gt;
+</code></pre>
+
+<p>There&rsquo;s three ways to create a link. The rule of thumb is that the word you want to make clickable goes in to <code>[]</code> while the actual URL and title tag goes in between <code>()</code>. You can also use <code>&lt;&gt;</code> if you just want to make an URL clickable.</p>
+
+<p><strong>Side note:</strong> The second example is useful when you don&rsquo;t want to clutter your text with the URL and the title.</p>
+
+<h3 id="unordered-lists">Unordered Lists</h3>
+
+<pre><code>- One 
+- Two
+- Three
+- Four
+</code></pre>
+
+<p><strong>Side note:</strong> You can also use <code>*</code> or <code>+</code> when you&rsquo;re dealing with an unordered list.</p>
+
+<h3 id="ordered-lists">Ordered Lists</h3>
+
+<pre><code>1. One 
+2. Two
+3. Three
+4. Four
+</code></pre>
+
+<p><strong>Side note:</strong> You don&rsquo;t actually have to numerically order your list if you&rsquo;re going to export it to HTML, but I don&rsquo;t really see the point of not doing that.</p>
+
+<h3 id="blockquotes">Blockquotes</h3>
+
+<pre><code>&gt; Lorem ipsum...
+</code></pre>
+
+<p><em>Side note:</em> Even if your quote is longer than a single line you only really have to use a <code>&gt;</code> at the beginning of the quote.</p>
+
+<h3 id="images">Images</h3>
+
+<pre><code>![Alt Text](http://www.example.com/images/picture.jpg "Title Text")
+</code></pre>
+
+<p>Adding an image is really similar to adding a link. This may be the most &ldquo;inconvenient&rdquo; feature of the syntax since you have no real control over the image&rsquo;s width and height, but that shouldn&rsquo;t be a problem if you size it the way you want it beforehand.</p>
+
+<h3 id="code">Code</h3>
+
+<pre><code>`.inline-code` 
+
+    .code-block {
+      color: #000;
+    }
+</code></pre>
+
+<p>You have to indent the code with four spaces or a tab to create a code block.</p>
+
+<h2 id="editors">Editors</h2>
+
+<p>Basically any text editor will do since Markdown is just really plain text, but that may not be the most optimal thing (I&rsquo;m a sucker for a good interface). While there&rsquo;s a plethora of markdown-friendly text editors for iOS and OSX there&rsquo;s not a lot of them for Windows. I personally use <a href="http://gottcode.org/focuswriter/" title="FocusWriter">FocusWriter</a> (which doesn&rsquo;t really support Markdown) and <a href="http://www.markdownpad.com/" title="MarkdownPad">MarkdownPad</a> and  I&rsquo;ve played around with <a href="http://writemonkey.com/" title="WriteMonkey">WriteMonkey</a> and <a href="http://code52.org/DownmarkerWPF/" title="Markpad">Markpad</a>. I&rsquo;ve also stumbled across <a href="http://www.mdcharm.com/" title="mdCharm">mdCharm</a> and <a href="http://www.inkcode.net/qute" title="Qute">Qute</a> but I haven&rsquo;t tried them out.</p>
+
+<p>Like I mentioned earlier, FocusWriter doesn&rsquo;t have support for Markdown but the beauty of the syntax is that it&rsquo;s pretty damn readable even without highlighting. I really like the focus mode in it too and it&rsquo;s cross plattform, meaning that I can use it on any OS that I want to. MarkdownPad was the first markdown editor I used so it has a special place in my heart, as lame as  that might sound. In short, I use FocusWriter for when I write longer pieces of text while I fire up MarkdownPad for shorter things and format checking. This might seem like overkill, but I like to have the opportunity to once in a while use a preview while I&rsquo;m typing something out. </p>
+
+<p>I do think that WriteMonkey looks good too, but I&rsquo;m not too fond of the idea of relying exclusively on keyboard shortcuts. I would probably like mdCharm too, especially since it has a syntax highlightning and the ability to export the Markdown files straight to PDF, which is something MarkdownPad lacks. I might try to use them more extensively at some point.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>If you&rsquo;re looking for a way to start intergrating plain text into your workflow, Markdown is the way to go. The formatting syntax is simple and you&rsquo;re never going to be tied down to one specific tool for your writing. All in all, it&rsquo;s easy to use and it&rsquo;s future proof.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><em>Brett Terpstra:</em> <a href="http://brettterpstra.com/why-markdown-a-two-minute-explanation/" title="Why Markdown? A Two Minute Explanation">Why Markdown? A Two Minute Explanation</a> </li>
+  <li><em>The Hiltmon:</em> <a href="http://www.hiltmon.com/blog/2012/02/20/the-markdown-mindset/" title="The Markdown Mindset">The Markdown Mindset</a></li>
+  <li><em>Lifehacker:</em> <a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes?tag=ask-lifehacker" title="What Is Markdown, and Why Is It Better for My To-Do Lists and Notes?">What Is Markdown, and Why Is It Better for My To-Do Lists and Notes?</a></li>
+  <li><em>TUAW:</em> <a href="http://www.tuaw.com/markdown-primer" title="Markdown Primer">Markdown Primer</a></li>
+  <li><em>Mike Vardy:</em> <a href="http://vardy.me/the-journey-to-markdown/" title="The Journey To Markdown">The Journey To Markdown</a></li>
+  <li><em>Adam Simpson:</em> <a href="http://www.adamsimpson.net/plaintext-and-markdown-a-primer" title="PlainText and Markdown - A Primer">PlainText and Markdown - A Primer</a></li>
+  <li><em>Michael Schechter:</em> <a href="http://www.bettermess.com/a-plain-text-primer/" title="A Plain Text Primer">A Plain Text Primer</a></li>
+  <li><em>Macworld:</em> <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html" title="Forget fancy formatting: Why plain text is best">Forget fancy formatting: Why plain text is best</a></li>
+  <li><em>MacSparky:</em> <a href="http://macsparky.com/2011/2/10/the-joy-of-text.html" title="Why I Love Text Files">Why I Love Text Files</a></li>
+</ul>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://arstechnica.com/tech-policy/2012/10/i-am-calling-you-from-windows-a-tech-support-scammer-dials-ars-technica/" alt="A Tech Support Scammer Dials Ars Technica" title="A Tech Support Scammer Dials Ars Technica">
         A Tech Support Scammer Dials Ars Technica <span class="special-link">&rarr;</span>
       </a>
@@ -117,24 +245,6 @@
 <p>Just before I started university I got a small <em>Samsung NC10</em> netbook as a gift. Even though it was far from a beast, it was a life saver during lectures and group projects. I&rsquo;ve tried to keep it pretty clean and not having too many things on it, but I had to have a couple of heavier apps installed due to actually working on school projects on it. I also use it as my main machine when I was home during holidays. Now that I don&rsquo;t have to use it for those to primary things I decided to really clean it up and use it only for browsing and the occasional writing session. I think I had about 85% of hard drive space left when I was done, and that&rsquo;s including the OS. The boot time is actually quite minimal seeing as the computer is over three years old. I&rsquo;m actually toying with the idea to use it more now, especially since I&rsquo;m getting more more and more into writing long form posts, which I can thank the decluttering for. In that retrospect you could say that less really is more.</p>
 
 <p><em>Another side note is that every app I have installed on this computer is free, which is quite awesome really. I think that I&rsquo;ll write more on that particular subject later.</em></p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://theamazingios6maps.tumblr.com/" alt="The Amazing iOS 6 Maps" title="The Amazing iOS 6 Maps">
-        The Amazing iOS 6 Maps <span class="special-link">&rarr;</span>
-      </a>
-    </h1>
-    <p class="smallprint">
-    Posted on September 25, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/iOS" alt="iOS" title="iOS">iOS</a>   <a href="http://ellengummesson.com/blog/2012/09/25/the-amazing-ios-6-maps" alt="Permalink: The Amazing iOS 6 Maps" title="Permalink: The Amazing iOS 6 Maps" class="special-link">&#8734;</a>
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>I really doubt that anybody hasn&rsquo;t seen the above website, but it still makes me laugh like a madman. The second largest city in Sweden (Gothenburg) no longer exists and I apparently live in my neighbor&rsquo;s bushes, not in my actual house as I would expect.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->

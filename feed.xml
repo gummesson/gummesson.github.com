@@ -6,6 +6,35 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Ack On Windows</title>
+                <description>&lt;p&gt;I recently finally tried out &lt;a href=&quot;http://betterthangrep.com/&quot; title=&quot;Ack&quot;&gt;Ack&lt;/a&gt; which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I&amp;rsquo;ll ever need to do it again or if someone wants a small guide with just a few easy steps.&lt;/p&gt;
+
+&lt;p&gt;First things first, &lt;a href=&quot;http://www.perl.org/&quot; title=&quot;Perl&quot;&gt;Perl&lt;/a&gt; needs to be install on the system. If you have either &lt;a href=&quot;http://git-scm.com/&quot; title=&quot;Git&quot;&gt;Git&lt;/a&gt; or &lt;a href=&quot;http://rubyinstaller.org/add-ons/devkit/&quot; title=&quot;DevKit&quot;&gt;DevKit&lt;/a&gt; installed then you&amp;rsquo;re good to go.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download the standalone script from the &lt;a href=&quot;http://betterthangrep.com/install/&quot; title=&quot;How to install ack&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Create a &lt;code&gt;bat&lt;/code&gt; file and add the following to it: &lt;code&gt;@&quot;C:\path\to\perl.exe&quot; C:\path\to\ack.pl %*&lt;/code&gt;. Change the paths so that they point to the relevant places.&lt;/li&gt;
+  &lt;li&gt;Save the file as &lt;code&gt;ack.bat&lt;/code&gt; and place it somewhere in your system environment path, or create a new folder and add it to said path.&lt;sup id=&quot;fnref:20130221-1&quot;&gt;&lt;a href=&quot;#fn:20130221-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Last, but not least, create an alias for the &lt;code&gt;bat&lt;/code&gt; file in your &lt;code&gt;.bash_profile&lt;/code&gt; if you want to get it to work with &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can use the same steps to create a more &amp;ldquo;sophisticated&amp;rdquo; way of running any kind of script too. Let&amp;rsquo;s say you have a script called &lt;code&gt;foo.rb&lt;/code&gt;. You want to run it straight from the command line but you don&amp;rsquo;t necessary want to turn into a full fledged gem. Just change the the first path in the &lt;code&gt;bat&lt;/code&gt; file so it points to your binary &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; file and the second to your actually script and you&amp;rsquo;re all good!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130221-1&quot;&gt;
+      &lt;p&gt;Which can be modified under &amp;ldquo;System Properties&amp;rdquo; &amp;rarr; &amp;ldquo;Advanced system settings&amp;rdquo; &amp;rarr; &amp;ldquo;Advanced&amp;rdquo; &amp;rarr; &amp;ldquo;Environment Variables&amp;rdquo; &amp;rarr; &amp;ldquo;Path&amp;rdquo;.&lt;a href=&quot;#fnref:20130221-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>February 21, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/02/21/ack-on-windows</link>
+              </item>
+            
+              <item>
                 <title>More Vim Goodness</title>
                 <description>&lt;p&gt;I feel like I start to sound like a fantatic when it comes to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;, but the truth is that I&amp;rsquo;m having so much fun with it that it&amp;rsquo;s hard to stop and thus I&amp;rsquo;ve created two more plugins: &lt;a href=&quot;https://github.com/gummesson/voutliner.vim&quot; title=&quot;voutliner.vim&quot;&gt;Voutliner&lt;/a&gt; and &lt;a href=&quot;https://github.com/gummesson/footnotes.vim&quot; title=&quot;footnotes.vim&quot;&gt;Footnotes&lt;/a&gt;.&lt;/p&gt;
 
@@ -84,24 +113,6 @@ let g:netrw_list_hide = &quot;.git,.sass-cache,.jpg,.png,.svg&quot;
 </description>
                 <published>February  4, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree</link>
-              </item>
-            
-              <item>
-                <title>Wordcount Plugin For Jekyll</title>
-                <description>&lt;p&gt;Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I&amp;rsquo;m not sure if it&amp;rsquo;s 100% true but it&amp;rsquo;s a pretty fun feature nonetheless. I&amp;rsquo;ve of course created a repository for it on &lt;a href=&quot;https://github.com/gummesson/jekyll-wordcount&quot; title=&quot;Jekyll Wordcount on GitHub&quot;&gt;GitHub&lt;/a&gt;. I&amp;rsquo;m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it&amp;rsquo;s HTML tags before actually doing the counting but it was by far the easiest way&lt;sup id=&quot;fnref:20130131-1&quot;&gt;&lt;a href=&quot;#fn:20130131-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The couting seems to be quite accurate too, which is nice.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130131-1&quot;&gt;
-      &lt;p&gt;Atleast if you&amp;rsquo;re measuring by code length since the whole plugin currently consists of just 17 lines of code.&lt;a href=&quot;#fnref:20130131-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>January 31, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll</link>
               </item>
             
     </channel>
