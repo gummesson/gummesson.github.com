@@ -49,9 +49,9 @@
       Posted on December 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>
     </p><!-- .smallprint -->
     <section class="post-content">
-      <p>Even though I so far love learning <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a> I&rsquo;ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I&rsquo;m lazy like that. After some thinking I finally came up with something and yesterday I &ldquo;released&rdquo; it: the <a href="https://github.com/gummesson/jekyll-rake-boilerplate" title="Jekyll Rake Boilerplate">Jekyll Rake Boilerplate</a>. </p>
+      <p>Even though I so far love learning <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a> I’ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I’m lazy like that. After some thinking I finally came up with something and yesterday I “released” it: the <a href="https://github.com/gummesson/jekyll-rake-boilerplate" title="Jekyll Rake Boilerplate">Jekyll Rake Boilerplate</a>. </p>
 
-<p>Using a rakefile for <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> isn&rsquo;t something that&rsquo;s new nor unique but so far I haven&rsquo;t stumbled upon a simple boilerplate. It isn&rsquo;t revolutionary by any means<sup id="fnref:20121226-1"><a href="#fn:20121226-1" rel="footnote">1</a></sup> but it gave me the motivation that I needed and I had fun while doing it. Even though it&rsquo;s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be &ldquo;proud&rdquo; of it, or atleast content.</p>
+<p>Using a rakefile for <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> isn’t something that’s new nor unique but so far I haven’t stumbled upon a simple boilerplate. It isn’t revolutionary by any means<sup id="fnref:20121226-1"><a href="#fn:20121226-1" rel="footnote">1</a></sup> but it gave me the motivation that I needed and I had fun while doing it. Even though it’s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be “proud” of it, or atleast content.</p>
 
 <h2 id="the-tasks">The Tasks</h2>
 
@@ -59,19 +59,19 @@
 
 <ul>
   <li><code>build</code> generates the site. If I want to generate it with a post limit, I can use <code>build[1]</code> or whatever number of posts I want to generate. </li>
-  <li><code>post["Post title"]</code> creates a new post in the <code>_posts</code> directory by reading the default template file, adding the title I&rsquo;ve specified and generating a file name by using the current date and the title.</li>
-  <li><code>git["Commit message"]</code> adds, commits and pushes the site to the site&rsquo;s remote git repository with the commit message that&rsquo;s been specified.</li>
+  <li><code>post["Post title"]</code> creates a new post in the <code>_posts</code> directory by reading the default template file, adding the title I’ve specified and generating a file name by using the current date and the title.</li>
+  <li><code>git["Commit message"]</code> adds, commits and pushes the site to the site’s remote git repository with the commit message that’s been specified.</li>
   <li><code>remote</code> uses either <code>robocopy</code> or <code>rsync</code> to transfer the site to a remote host/server.</li>
 </ul>
 
-<p>I also set the default task to <code>build</code> so if I&rsquo;m feeling lazy I only need to type <code>rake</code>, hit <code>Enter</code> and the site will be generated. I&rsquo;ve contemplating about adding some more tasks but for now I&rsquo;ll stick to what I already have. The goal is to keep it as simple and adaptable as possible so that anyone can use it without having to modify it too much unless they want to.</p>
+<p>I also set the default task to <code>build</code> so if I’m feeling lazy I only need to type <code>rake</code>, hit <code>Enter</code> and the site will be generated. I’ve contemplating about adding some more tasks but for now I’ll stick to what I already have. The goal is to keep it as simple and adaptable as possible so that anyone can use it without having to modify it too much unless they want to.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20121226-1">
-      <p>And the code itself is probably not that good since I&rsquo;m still learning.<a href="#fnref:20121226-1" rel="reference">&#8617;</a></p>
+      <p>And the code itself is probably not that good since I’m still learning.<a href="#fnref:20121226-1" rel="reference">&#8617;</a></p>
     </li>
     <li id="fn:20121226-2">
       <p>The settings for some of the tasks needs to be in the <code>_config.yml</code> file in order for them to work.<a href="#fnref:20121226-2" rel="reference">&#8617;</a></p>

@@ -49,19 +49,19 @@
       Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>
     </p><!-- .smallprint -->
     <section class="post-content">
-      <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn&rsquo;t get them to properly work. Then it hit me that I&rsquo;d forgot to add this in the <code>&lt;head&gt;</code>:</p>
+      <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn’t get them to properly work. Then it hit me that I’d forgot to add this in the <code>&lt;head&gt;</code>:</p>
 
 <pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
 </code></pre>
 
-<p>Note to self: don&rsquo;t be stupid. It&rsquo;ll save you a lot of time.</p>
+<p>Note to self: don’t be stupid. It’ll save you a lot of time.</p>
 
-<p>I also had some problems with my iPhone&rsquo;s Retina display, but after some digging I found a &ldquo;hack&rdquo; that made it work properly so that the media queries look the same as on a regular browser:</p>
+<p>I also had some problems with my iPhone’s Retina display, but after some digging I found a “hack” that made it work properly so that the media queries look the same as on a regular browser:</p>
 
 <pre><code>(-webkit-min-device-pixel-ratio: 2)
 </code></pre>
 
-<p>To my defense I&rsquo;m still pretty new to all of this, but still&hellip; I feel really dumb. Now they finally works and I&rsquo;m totally happy, but I don&rsquo;t know whether or not I should be scared of the fact that I don&rsquo;t own an iPad&hellip; Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
+<p>To my defense I’m still pretty new to all of this, but still… I feel really dumb. Now they finally works and I’m totally happy, but I don’t know whether or not I should be scared of the fact that I don’t own an iPad… Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
 
     </section><!-- .post-content -->
     <section class="notes">

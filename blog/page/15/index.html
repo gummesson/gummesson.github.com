@@ -45,6 +45,120 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/08/31/more-additions" alt="More Additions" title="More Additions">
+        More Additions
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on August 31, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>Being bored sometimes has it’s own perks. I continued experimenting with the <a href="/projects/begrider/">Begrider</a> project and ended up adding a couple of more things to it, mainly a new set of column-like classes called <code>.unit-</code>. A unit differ itself from a regular column by not having a gutter, and thus having more of a “proportional” percentage width. So, instead of just having these:</p>
+
+<pre><code>.row .column-twelve {
+  width: 99.99%;
+  margin-right: 0;
+}
+
+.row .column-eleven {
+  width: 91.42%;
+}
+
+.row .column-ten {
+  width: 82.85%;
+}
+
+/* Nine columns */
+.row .column-nine {
+  width: 74.28%;
+}
+
+.row .column-eight {
+  width: 65.71%;
+}
+
+.row .column-seven {
+  width: 57.14%;
+}
+
+.row .column-six {
+  width: 48.57%;
+}
+
+.row .column-five {
+  width: 40%;
+}
+
+.row .column-four {
+  width: 31.43%;
+}
+
+.row .column-three {
+  width: 22.86%;
+}
+
+.row .column-two {
+  width: 14.29%;
+}
+
+.row .column-one {
+  width: 5.72%;
+}
+</code></pre>
+
+<p>You can also use these:</p>
+
+<pre><code>.row .unit-full {
+  width: 100%;
+}
+
+.row .unit-four-fifths {
+  width: 80%;
+}
+
+.row .unit-three-quarters {
+  width: 75%;
+}
+
+.row .unit-two-thirds {
+  width: 66.66%;
+}
+
+.row .unit-three-fifths {
+  width: 60%;
+}
+
+.row .unit-half {
+  width: 50%;
+}
+
+.row .unit-two-fifths {
+  width: 40%;
+}
+
+.row .unit-one-third {
+  width: 33.33%;
+}
+
+.row .unit-one-quarter {
+  width: 25%;
+}
+
+.row .unit-one-fifth {
+  width: 20%;
+}
+</code></pre>
+
+<p>It’s useful if you don’t want to have any gutters and/or want to use paddings instead instead of margins. I don’t know if anyone’s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don’t really know if it actually needs anything more, but I’ll be sure to try stuff out.</p>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling Upon A Good Solution" title="Stumbling Upon A Good Solution">
         Stumbling Upon A Good Solution
       </a>
@@ -54,7 +168,7 @@
     </p><!-- .smallprint -->
   
     <section class="post-content">
-      <p>As some of you may know, I&rsquo;ve built my own grid system with the world&rsquo;s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you&rsquo;d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I&rsquo;ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
+      <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
 
 <h2 id="the-solution">The Solution</h2>
 
@@ -65,7 +179,7 @@
 }
 </code></pre>
 
-<p>It worked! I know that I always sound suprised when something I&rsquo;ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it&rsquo;s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don&rsquo;t (IE8 isn&rsquo;t too fond of the :last-child thing). I think I&rsquo;m going to leave the <code>.last</code> class in the code, just so there&rsquo;s an option to use it. </p>
+<p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
 
 <p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
 
@@ -85,7 +199,7 @@
     </p><!-- .smallprint -->
   
     <section class="post-content">
-      <p>Okay, I wouldn&rsquo;t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That&rsquo;s usually the way I learn stuff anyways (even though I haven&rsquo;t really wrapped my head around Ruby yet) so I figured that it&rsquo;d be interesting to see if I could make it work even though my modifications weren&rsquo;t that significant. Maybe I&rsquo;ll pick it up some day.</p>
+      <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
 
 <h2 id="source-code">Source Code</h2>
 
@@ -130,11 +244,11 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
     </p><!-- .smallprint -->
   
     <section class="post-content">
-      <p>Continuing with my Jekyll series, here&rsquo;s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
+      <p>Continuing with my Jekyll series, here’s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
 
 <h2 id="pagination">Pagination</h2>
 
-<p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it&rsquo;s strictly not a plugin, I had to make a small configuration in Jekyll&rsquo;s <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll&rsquo;s library directory and placed it in the _plugins folder and changed the following line from this:</p>
+<p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it’s strictly not a plugin, I had to make a small configuration in Jekyll’s <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll’s library directory and placed it in the _plugins folder and changed the following line from this:</p>
 
 <pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")
 </code></pre>
@@ -144,7 +258,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <pre><code>newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
 </code></pre>
 
-<p>To my suprise, it actually worked! Like I said earlier, I guess it doesn&rsquo;t really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
+<p>To my suprise, it actually worked! Like I said earlier, I guess it doesn’t really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
 
 <h2 id="tags">Tags</h2>
 
@@ -152,19 +266,19 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 
 <h2 id="rss-feed">RSS Feed</h2>
 
-<p>I followed and used the guidelines from Snaptortoise&rsquo;s <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
+<p>I followed and used the guidelines from Snaptortoise’s <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
 
 <h2 id="sitemap">Sitemap</h2>
 
-<p>I use Mike Levin&rsquo;s <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It&rsquo;s maybe not the the most required function ever, but I like to have it.</p>
+<p>I use Mike Levin’s <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It’s maybe not the the most required function ever, but I like to have it.</p>
 
 <h2 id="images">Images</h2>
 
-<p>For an easy image implementation I used Scott Parker&rsquo;s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it&rsquo;s probably not suitable if you&rsquo;re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
+<p>For an easy image implementation I used Scott Parker’s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it’s probably not suitable if you’re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
 
 <h2 id="youtube">Youtube</h2>
 
-<p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won&rsquo;t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
+<p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won’t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->
@@ -184,11 +298,11 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
     <section class="post-content">
       <p>Disclaimer: the following blog post is extremely geeky and contains A LOT of code.</p>
 
-<p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I&rsquo;ve seen it being mentioned almost daily for quite a while. I didn&rsquo;t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it&rsquo;s still readable. I&rsquo;ve tried a few plugins that enables automatic highlighting, but I haven&rsquo;t come across one that I really love. I also had remove nearly all of my comments in the code but I&rsquo;m sure it&rsquo;s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
+<p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I’ve seen it being mentioned almost daily for quite a while. I didn’t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it’s still readable. I’ve tried a few plugins that enables automatic highlighting, but I haven’t come across one that I really love. I also had remove nearly all of my comments in the code but I’m sure it’s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
 
 <h2 id="variablesscss">_variables.scss</h2>
 
-<p>Like I said earlier, the variable part in Sass is really awesome. I created a separate file called <code>variables.scss</code> (Sass&rsquo; default file extension) where I defined them all for better control and easier editing. Adding an underscore before a file name stops your file from get rendered into a <code>.css</code> file, which is useful since you probably don&rsquo;t want all of your <code>.scss</code> files to become regular <code>.css</code> files.</p>
+<p>Like I said earlier, the variable part in Sass is really awesome. I created a separate file called <code>variables.scss</code> (Sass’ default file extension) where I defined them all for better control and easier editing. Adding an underscore before a file name stops your file from get rendered into a <code>.css</code> file, which is useful since you probably don’t want all of your <code>.scss</code> files to become regular <code>.css</code> files.</p>
 
 <pre><code>// Default / Body
     $default-font-family: Helvetica, Arial, Sans-serif;
@@ -217,7 +331,7 @@ $default-margin: 1.5em;
 
 <h2 id="screenscss">screen.scss</h2>
 
-<p>In the <code>screen.scss</code> is where the magic happens, so to speak. That&rsquo;s where I imported all of my variables that I defined in <code>variables.scss</code> and placed them in selectors with properties.</p>
+<p>In the <code>screen.scss</code> is where the magic happens, so to speak. That’s where I imported all of my variables that I defined in <code>variables.scss</code> and placed them in selectors with properties.</p>
 
 <pre><code>@import "_variables.scss";
 
@@ -277,7 +391,7 @@ a:hover, a:focus {
 }
 </code></pre>
 
-<p>I think it&rsquo;s really cool that you can use basic math with variables so that you can create other values by only using one variable as a base point. Just change it and all the calculations will be rendered automatically.</p>
+<p>I think it’s really cool that you can use basic math with variables so that you can create other values by only using one variable as a base point. Just change it and all the calculations will be rendered automatically.</p>
 
 <h2 id="screencss">screen.css</h2>
 
@@ -334,35 +448,7 @@ a:hover, a:focus {
 }
 </code></pre>
 
-<p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don&rsquo;t have to change anything else. I think I&rsquo;ll try out Sass for a while and see how it goes. There&rsquo;s a lot more to it than just simple variables and math, so I&rsquo;m looking forward to see what I can come up with.</p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/08/23/my-big-fat-git-failure" alt="My Big Fat Git Failure" title="My Big Fat Git Failure">
-        My Big Fat Git Failure
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on August 23, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Git" alt="Git" title="Git">Git</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p><strong>Note:</strong> this isn&rsquo;t critism, rather a documentation of my own stupidity.</p>
-
-<p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub&rsquo;s built-in editor since that&rsquo;s a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said &ldquo;DETACHED HEAD&rdquo;. After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this. </p>
-
-<p>However, after I&rsquo;d fixed that and remade all of my changes locally using my normal method, I got another error message when I was trying to commit the changes: &ldquo;Failed to sync this branch&rdquo;.</p>
-
-<p><img src="/images/blog/2012-08-23-failed-to-sync.png" alt="Failed to sync this branch" title="Failed to sync this branch" /></p>
-
-<p>I again did a google search but this time around I didn&rsquo;t come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I&rsquo;m still able to update the site. I don&rsquo;t know if I screwed something up or if it&rsquo;s a bug. I&rsquo;m hoping that the problem will solve itself, even though it&rsquo;s highly unlikely.</p>
-
-<p>Damn me and my apparent laziness.</p>
+<p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don’t have to change anything else. I think I’ll try out Sass for a while and see how it goes. There’s a lot more to it than just simple variables and math, so I’m looking forward to see what I can come up with.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->

@@ -6,10 +6,31 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
-                <title>Ack On Windows</title>
-                <description>&lt;p&gt;I recently finally tried out &lt;a href=&quot;http://betterthangrep.com/&quot; title=&quot;Ack&quot;&gt;Ack&lt;/a&gt; which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I&amp;rsquo;ll ever need to do it again or if someone wants a small guide with just a few easy steps.&lt;/p&gt;
+                <title>WEBrick And Cygwin</title>
+                <description>&lt;p&gt;There’s no secret that I’ve become a big fan of &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt; and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt;, or more specifically &lt;a href=&quot;http://rubygems.org/&quot; title=&quot;RubyGems&quot;&gt;RubyGems&lt;/a&gt; under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with &lt;a href=&quot;http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot; title=&quot;Webbrick&quot;&gt;WEBrick&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: &lt;code&gt;taskkill /F /PID {num}&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The &lt;code&gt;{num}&lt;/code&gt; is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.&lt;/p&gt;
 
-&lt;p&gt;First things first, &lt;a href=&quot;http://www.perl.org/&quot; title=&quot;Perl&quot;&gt;Perl&lt;/a&gt; needs to be install on the system. If you have either &lt;a href=&quot;http://git-scm.com/&quot; title=&quot;Git&quot;&gt;Git&lt;/a&gt; or &lt;a href=&quot;http://rubyinstaller.org/add-ons/devkit/&quot; title=&quot;DevKit&quot;&gt;DevKit&lt;/a&gt; installed then you&amp;rsquo;re good to go.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Which is the default server for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;.&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1&quot; title=&quot;How do I killa a Rails Webbrick server?&quot;&gt;The answer was found on StackOverflow&lt;/a&gt;, as expected.&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>February 28, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin</link>
+              </item>
+            
+              <item>
+                <title>Ack On Windows</title>
+                <description>&lt;p&gt;I recently finally tried out &lt;a href=&quot;http://betterthangrep.com/&quot; title=&quot;Ack&quot;&gt;Ack&lt;/a&gt; which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.&lt;/p&gt;
+
+&lt;p&gt;First things first, &lt;a href=&quot;http://www.perl.org/&quot; title=&quot;Perl&quot;&gt;Perl&lt;/a&gt; needs to be install on the system. If you have either &lt;a href=&quot;http://git-scm.com/&quot; title=&quot;Git&quot;&gt;Git&lt;/a&gt; or &lt;a href=&quot;http://rubyinstaller.org/add-ons/devkit/&quot; title=&quot;DevKit&quot;&gt;DevKit&lt;/a&gt; installed then you’re good to go.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Download the standalone script from the &lt;a href=&quot;http://betterthangrep.com/install/&quot; title=&quot;How to install ack&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
@@ -18,14 +39,14 @@
   &lt;li&gt;Last, but not least, create an alias for the &lt;code&gt;bat&lt;/code&gt; file in your &lt;code&gt;.bash_profile&lt;/code&gt; if you want to get it to work with &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;You can use the same steps to create a more &amp;ldquo;sophisticated&amp;rdquo; way of running any kind of script too. Let&amp;rsquo;s say you have a script called &lt;code&gt;foo.rb&lt;/code&gt;. You want to run it straight from the command line but you don&amp;rsquo;t necessary want to turn into a full fledged gem. Just change the the first path in the &lt;code&gt;bat&lt;/code&gt; file so it points to your binary &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; file and the second to your actually script and you&amp;rsquo;re all good!&lt;/p&gt;
+&lt;p&gt;You can use the same steps to create a more “sophisticated” way of running any kind of script too. Let’s say you have a script called &lt;code&gt;foo.rb&lt;/code&gt;. You want to run it straight from the command line but you don’t necessary want to turn into a full fledged gem. Just change the the first path in the &lt;code&gt;bat&lt;/code&gt; file so it points to your binary &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; file and the second to your actually script and you’re all good!&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130221-1&quot;&gt;
-      &lt;p&gt;Which can be modified under &amp;ldquo;System Properties&amp;rdquo; &amp;rarr; &amp;ldquo;Advanced system settings&amp;rdquo; &amp;rarr; &amp;ldquo;Advanced&amp;rdquo; &amp;rarr; &amp;ldquo;Environment Variables&amp;rdquo; &amp;rarr; &amp;ldquo;Path&amp;rdquo;.&lt;a href=&quot;#fnref:20130221-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.&lt;a href=&quot;#fnref:20130221-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -36,22 +57,22 @@
             
               <item>
                 <title>More Vim Goodness</title>
-                <description>&lt;p&gt;I feel like I start to sound like a fantatic when it comes to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;, but the truth is that I&amp;rsquo;m having so much fun with it that it&amp;rsquo;s hard to stop and thus I&amp;rsquo;ve created two more plugins: &lt;a href=&quot;https://github.com/gummesson/voutliner.vim&quot; title=&quot;voutliner.vim&quot;&gt;Voutliner&lt;/a&gt; and &lt;a href=&quot;https://github.com/gummesson/footnotes.vim&quot; title=&quot;footnotes.vim&quot;&gt;Footnotes&lt;/a&gt;.&lt;/p&gt;
+                <description>&lt;p&gt;I feel like I start to sound like a fantatic when it comes to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;, but the truth is that I’m having so much fun with it that it’s hard to stop and thus I’ve created two more plugins: &lt;a href=&quot;https://github.com/gummesson/voutliner.vim&quot; title=&quot;voutliner.vim&quot;&gt;Voutliner&lt;/a&gt; and &lt;a href=&quot;https://github.com/gummesson/footnotes.vim&quot; title=&quot;footnotes.vim&quot;&gt;Footnotes&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;voutliner&quot;&gt;Voutliner&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Voutliner&lt;/em&gt; is a simple outlining tool&lt;sup id=&quot;fnref:20130216-1&quot;&gt;&lt;a href=&quot;#fn:20130216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I looked at both &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=3515&quot; title=&quot;VimOutliner&quot;&gt;VimOutliner&lt;/a&gt; and &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=517&quot; title=&quot;The Vim Outliner&quot;&gt;TVO&lt;/a&gt; but I felt that they were a bit too &amp;ldquo;heavy&amp;rdquo; for me. I wanted something simple that didn&amp;rsquo;t depend on too many different components. &lt;em&gt;Voutliner&lt;/em&gt; is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that&amp;rsquo;s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Voutliner&lt;/em&gt; is a simple outlining tool&lt;sup id=&quot;fnref:20130216-1&quot;&gt;&lt;a href=&quot;#fn:20130216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I looked at both &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=3515&quot; title=&quot;VimOutliner&quot;&gt;VimOutliner&lt;/a&gt; and &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=517&quot; title=&quot;The Vim Outliner&quot;&gt;TVO&lt;/a&gt; but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. &lt;em&gt;Voutliner&lt;/em&gt; is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.&lt;/p&gt;
 
 &lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
 
-&lt;p&gt;I like using footnotes but I hate having to manually enter the date for each and every one of them&lt;sup id=&quot;fnref:20130216-2&quot;&gt;&lt;a href=&quot;#fn:20130216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press &lt;code&gt;F7&lt;/code&gt; and the date will get added to every footnote automatically. Like &lt;em&gt;Voutliner&lt;/em&gt; I doubt that many people will use it, but yet again it&amp;rsquo;s extremely useful for me.&lt;/p&gt;
+&lt;p&gt;I like using footnotes but I hate having to manually enter the date for each and every one of them&lt;sup id=&quot;fnref:20130216-2&quot;&gt;&lt;a href=&quot;#fn:20130216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press &lt;code&gt;F7&lt;/code&gt; and the date will get added to every footnote automatically. Like &lt;em&gt;Voutliner&lt;/em&gt; I doubt that many people will use it, but yet again it’s extremely useful for me.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130216-1&quot;&gt;
-      &lt;p&gt;And it&amp;rsquo;s a really bad name.&lt;a href=&quot;#fnref:20130216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;And it’s a really bad name.&lt;a href=&quot;#fnref:20130216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:20130216-2&quot;&gt;
       &lt;p&gt;I use &lt;code&gt;YYYYMMDD-#&lt;/code&gt; as a format so that every footnote has an unique set of numbers, which makes it even more tedious.&lt;a href=&quot;#fnref:20130216-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -65,24 +86,24 @@
             
               <item>
                 <title>Easy Session For Vim</title>
-                <description>&lt;p&gt;Another week, another project and this time it&amp;rsquo;s actually something half decent. After a few hours of work over the last couple of days I&amp;rsquo;m finally done with my first plugin for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and I named it &lt;a href=&quot;https://github.com/gummesson/easy-session.vim&quot; title=&quot;Easy Session on GitHub&quot;&gt;Easy Session&lt;/a&gt;. It lets you easily manage sessions with four commands: &lt;code&gt;:SaveSession&lt;/code&gt;, &lt;code&gt;:NewSession&lt;/code&gt;, &lt;code&gt;:OpenSession&lt;/code&gt; and &lt;code&gt;:ListSessions&lt;/code&gt;.&lt;/p&gt;
+                <description>&lt;p&gt;Another week, another project and this time it’s actually something half decent. After a few hours of work over the last couple of days I’m finally done with my first plugin for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and I named it &lt;a href=&quot;https://github.com/gummesson/easy-session.vim&quot; title=&quot;Easy Session on GitHub&quot;&gt;Easy Session&lt;/a&gt;. It lets you easily manage sessions with four commands: &lt;code&gt;:SaveSession&lt;/code&gt;, &lt;code&gt;:NewSession&lt;/code&gt;, &lt;code&gt;:OpenSession&lt;/code&gt; and &lt;code&gt;:ListSessions&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;:SaveSession&lt;/code&gt; uses the current working directory as the default filename, so you have to make sure that you&amp;rsquo;re in the project&amp;rsquo;s root directory if you&amp;rsquo;re saving your session for the first time. It may not be the most ultimate solution, but it&amp;rsquo;s better than the default filename &lt;code&gt;Session.vim&lt;/code&gt;. There&amp;rsquo;s also &lt;code&gt;:NewSession&lt;/code&gt; which lets you use your own custom filename. The &lt;code&gt;:OpenSession&lt;/code&gt;, suprisingly, opens a session.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:SaveSession&lt;/code&gt; uses the current working directory as the default filename, so you have to make sure that you’re in the project’s root directory if you’re saving your session for the first time. It may not be the most ultimate solution, but it’s better than the default filename &lt;code&gt;Session.vim&lt;/code&gt;. There’s also &lt;code&gt;:NewSession&lt;/code&gt; which lets you use your own custom filename. The &lt;code&gt;:OpenSession&lt;/code&gt;, suprisingly, opens a session.&lt;/p&gt;
 
-&lt;p&gt;An earlier version of it had an &lt;code&gt;:Sessions&lt;/code&gt; command, but it used &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=1075&quot; title=&quot;Netrw&quot;&gt;Netrw&lt;/a&gt; and was a bit too clunky so I rewrote it as &lt;code&gt;:ListSessions&lt;/code&gt;, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it&amp;rsquo;s closed. It gets the list by reading the content of the sessions directory with &lt;code&gt;:0read !ls&lt;/code&gt; or &lt;code&gt;:0read !dir /B&lt;/code&gt;&lt;sup id=&quot;fnref:20130212-1&quot;&gt;&lt;a href=&quot;#fn:20130212-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The code looks really sketchy, but the result looks quite nice:&lt;/p&gt;
+&lt;p&gt;An earlier version of it had an &lt;code&gt;:Sessions&lt;/code&gt; command, but it used &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=1075&quot; title=&quot;Netrw&quot;&gt;Netrw&lt;/a&gt; and was a bit too clunky so I rewrote it as &lt;code&gt;:ListSessions&lt;/code&gt;, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with &lt;code&gt;:0read !ls&lt;/code&gt; or &lt;code&gt;:0read !dir /B&lt;/code&gt;&lt;sup id=&quot;fnref:20130212-1&quot;&gt;&lt;a href=&quot;#fn:20130212-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The code looks really sketchy, but the result looks quite nice:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blog/2013-02-12-easy-session-01.png&quot; alt=&quot;Easy Session (Sessions List)&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blog/2013-02-12-easy-session-02.png&quot; alt=&quot;Easy Session (Sessions List)&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I don&amp;rsquo;t know if it&amp;rsquo;s useful for anyone but me, but it was a fun challenge. There&amp;rsquo;s a &lt;a href=&quot;http://peterodding.com/code/vim/session/&quot; title=&quot;Session.vim&quot;&gt;Session.vim&lt;/a&gt; plugin that has a lof more advanced features than mine do, but I think I&amp;rsquo;ll stick with my own solution for now.&lt;/p&gt;
+&lt;p&gt;I don’t know if it’s useful for anyone but me, but it was a fun challenge. There’s a &lt;a href=&quot;http://peterodding.com/code/vim/session/&quot; title=&quot;Session.vim&quot;&gt;Session.vim&lt;/a&gt; plugin that has a lof more advanced features than mine do, but I think I’ll stick with my own solution for now.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130212-1&quot;&gt;
-      &lt;p&gt;The &amp;ldquo;&lt;code&gt;0&lt;/code&gt;&amp;rdquo; makes the list start on the first line in the buffer. If just &lt;code&gt;:read&lt;/code&gt; is used it&amp;rsquo;ll paste the content below the first line.&lt;a href=&quot;#fnref:20130212-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;The “&lt;code&gt;0&lt;/code&gt;” makes the list start on the first line in the buffer. If just &lt;code&gt;:read&lt;/code&gt; is used it’ll paste the content below the first line.&lt;a href=&quot;#fnref:20130212-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -93,26 +114,12 @@
             
               <item>
                 <title>Fetch</title>
-                <description>&lt;p&gt;I&amp;rsquo;ve released yet another one of my &lt;em&gt;Mostly Useless™&lt;/em&gt; projects, &lt;a href=&quot;https://github.com/gummesson/fetch&quot; title=&quot;Fetch&quot;&gt;Fetch&lt;/a&gt;, which let&amp;rsquo;s you grab a couple of web development resources straight from the command line. Package managers seem to be something that pops up every once in a while. Among them there&amp;rsquo;s &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot; title=&quot;homebrew&quot;&gt;homebrew&lt;/a&gt;, &lt;a href=&quot;http://twitter.github.com/bower/&quot; title=&quot;Bower&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;http://yeoman.io/&quot; title=&quot;Yeoman&quot;&gt;Yeoman&lt;/a&gt; and of course the good old &lt;a href=&quot;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&quot; title=&quot;APT&quot;&gt;apt-get&lt;/a&gt;, which I use from time to time. They&amp;rsquo;re lovely tools but as I&amp;rsquo;m nothing more than a hobbyist they&amp;rsquo;re a bit overkill for me, so I took a run at creating something a lot more simpler. I wouldn&amp;rsquo;t really call it a package manager but more of a component catcher though. I&amp;rsquo;m thinking of implementing &lt;a href=&quot;http://www.json.org/&quot; title=&quot;JSON&quot;&gt;JSON&lt;/a&gt; into it instead of using &lt;a href=&quot;http://www.yaml.org/&quot; title=&quot;YAML&quot;&gt;YAML&lt;/a&gt;, but we&amp;rsquo;ll see how that goes. One thing I really need to do is to step up my game and actually start to learn more. I feel that I&amp;rsquo;ve been staying in the same spot knowledge-wise for quite some time now and it&amp;rsquo;s time to start to progress again. But I digress.&lt;/p&gt;
+                <description>&lt;p&gt;I’ve released yet another one of my &lt;em&gt;Mostly Useless™&lt;/em&gt; projects, &lt;a href=&quot;https://github.com/gummesson/fetch&quot; title=&quot;Fetch&quot;&gt;Fetch&lt;/a&gt;, which let’s you grab a couple of web development resources straight from the command line. Package managers seem to be something that pops up every once in a while. Among them there’s &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot; title=&quot;homebrew&quot;&gt;homebrew&lt;/a&gt;, &lt;a href=&quot;http://twitter.github.com/bower/&quot; title=&quot;Bower&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;http://yeoman.io/&quot; title=&quot;Yeoman&quot;&gt;Yeoman&lt;/a&gt; and of course the good old &lt;a href=&quot;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&quot; title=&quot;APT&quot;&gt;apt-get&lt;/a&gt;, which I use from time to time. They’re lovely tools but as I’m nothing more than a hobbyist they’re a bit overkill for me, so I took a run at creating something a lot more simpler. I wouldn’t really call it a package manager but more of a component catcher though. I’m thinking of implementing &lt;a href=&quot;http://www.json.org/&quot; title=&quot;JSON&quot;&gt;JSON&lt;/a&gt; into it instead of using &lt;a href=&quot;http://www.yaml.org/&quot; title=&quot;YAML&quot;&gt;YAML&lt;/a&gt;, but we’ll see how that goes. One thing I really need to do is to step up my game and actually start to learn more. I feel that I’ve been staying in the same spot knowledge-wise for quite some time now and it’s time to start to progress again. But I digress.&lt;/p&gt;
 
-&lt;p&gt;One a side note, I finally figured out why I couldn&amp;rsquo;t get my &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; projects to run under &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. I&amp;rsquo;d literally forgotten the &amp;ldquo;whole shebang&amp;rdquo;, ie: &lt;code&gt;#!/usr/bin/env ruby&lt;/code&gt;, at the start. &lt;strong&gt;Head, prepare to meet desk&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One a side note, I finally figured out why I couldn’t get my &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; projects to run under &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. I’d literally forgotten the “whole shebang”, ie: &lt;code&gt;#!/usr/bin/env ruby&lt;/code&gt;, at the start. &lt;strong&gt;Head, prepare to meet desk&lt;/strong&gt;.&lt;/p&gt;
 </description>
                 <published>February  8, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/02/08/fetch</link>
-              </item>
-            
-              <item>
-                <title>Make Netrw Behave More Like NERDTree</title>
-                <description>&lt;p&gt;This is nice read for using something more native to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;. Quite early into my editor transition I found out that it had a native file explorer called &lt;a href=&quot;http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html&quot; title=&quot;Netrw&quot;&gt;Netrw&lt;/a&gt;, but I didn&amp;rsquo;t particularly like it it&amp;rsquo;s default state so I started to use a plugin called &lt;a href=&quot;https://github.com/scrooloose/nerdtree&quot; title=&quot;NERDTree&quot;&gt;NERDTree&lt;/a&gt; instead. It&amp;rsquo;s great but it&amp;rsquo;s nice that a more native solution can solve the problem too. I&amp;rsquo;ve also started using a fuzzy finder plugin, &lt;a href=&quot;https://github.com/kien/ctrlp.vim&quot; title=&quot;CtrlP&quot;&gt;CtrlP&lt;/a&gt;, more and more lately but I still like to have a &amp;ldquo;project visualizer&amp;rdquo; of some sort and I think that Netrw will fit that quite nicely. I also added these to my &lt;code&gt;.vimrc&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let g:netrw_liststyle = 3
-let g:netrw_list_hide = &quot;.git,.sass-cache,.jpg,.png,.svg&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;liststyle&lt;/code&gt; option makes it lists all file and folders in a more tree-like structure vill the &lt;code&gt;hide&lt;/code&gt; options just hides the selected filetypes and folders.&lt;/p&gt;
-</description>
-                <published>February  4, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree</link>
               </item>
             
     </channel>
