@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>WEBrick And Cygwin: Ellen Gummesson</title>
+  <title>Fixing Jekyll's Encoding Shenanings: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/global.min.css">
       <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
@@ -43,23 +43,40 @@
   <div class="site-content">
     <article class="post">
   
-    <h1>WEBrick And Cygwin</h1>
+    <h1>Fixing Jekyll's Encoding Shenanings</h1>
   
     <p class="smallprint">
-      Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>
+      Posted on March  3, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>
     </p><!-- .smallprint -->
     <section class="post-content">
-      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a>, or more specifically <a href="http://rubygems.org/" title="RubyGems">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html" title="Webbrick">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+      <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" rel="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
+
+<pre><code>require 'rbconfig'
+
+LANG = en_EN.UTF-8
+
+if RbConfig::CONFIG["host_os"] =~ /mswin|mingw/
+  SET = "set"
+else
+  SET = "export"
+end
+
+task :build do
+  system "#{SET} LANG=#{LANG} &amp;&amp; jekyll"
+end
+</code></pre>
+
+<p>The <code>RbConfig</code> part is actually a neat trick I found a couple of weeks ago. It apparently works better than using <code>RUBY_PLATFORM</code> since it picks up the actual OS rather than the Ruby platform.<sup id="fnref:20130303-2"><a href="#fn:20130303-2" rel="footnote">2</a></sup> I’m not sure that the <code>require</code> part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: <code>alias jekyll="export LANG=en_EN.UTF-8 &amp;&amp; jekyll"</code> or something like that.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
-    <li id="fn:20130228-1">
-      <p>Which is the default server for <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> and <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a>.<a href="#fnref:20130228-1" rel="reference">&#8617;</a></p>
+    <li id="fn:20130303-1">
+      <p>I actually set my language to <code>sv_SV.UTF-8</code>, but I figured that using the english version in an example is better.<a href="#fnref:20130303-1" rel="reference">&#8617;</a></p>
     </li>
-    <li id="fn:20130228-2">
-      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1" title="How do I killa a Rails Webbrick server?">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" rel="reference">&#8617;</a></p>
+    <li id="fn:20130303-2">
+      <p>Using <code>RUBY_PLATFORM</code> when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.<a href="#fnref:20130303-2" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -68,7 +85,7 @@
     <section class="notes">
   <hr>
   <p class="miniprint">
-    This post contains 196 words and takes roughly 39 seconds to read. Thank you for your time!
+    This post contains 241 words and takes roughly 48 seconds to read. Thank you for your time!
   </p><!-- .miniprint -->
 </section>
 

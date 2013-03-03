@@ -6,18 +6,56 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
-                <title>WEBrick And Cygwin</title>
-                <description>&lt;p&gt;There’s no secret that I’ve become a big fan of &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt; and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt;, or more specifically &lt;a href=&quot;http://rubygems.org/&quot; title=&quot;RubyGems&quot;&gt;RubyGems&lt;/a&gt; under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with &lt;a href=&quot;http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot; title=&quot;Webbrick&quot;&gt;WEBrick&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: &lt;code&gt;taskkill /F /PID {num}&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The &lt;code&gt;{num}&lt;/code&gt; is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.&lt;/p&gt;
+                <title>Fixing Jekyll's Encoding Shenanings</title>
+                <description>&lt;p&gt;After installing the 0.12.1 version of &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as &lt;code&gt;UTF-8&lt;/code&gt;, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. &lt;code&gt;set LANG=en_EN.UTF-8&lt;/code&gt; for Windows or &lt;code&gt;export LANG=en_EN.UTF-8&lt;/code&gt;&lt;sup id=&quot;fnref:20130303-1&quot;&gt;&lt;a href=&quot;#fn:20130303-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for Unix. Since I’m a lazy person I of course implemented it in my &lt;code&gt;Rakefile&lt;/code&gt;, similar to this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require 'rbconfig'
+
+LANG = en_EN.UTF-8
+
+if RbConfig::CONFIG[&quot;host_os&quot;] =~ /mswin|mingw/
+  SET = &quot;set&quot;
+else
+  SET = &quot;export&quot;
+end
+
+task :build do
+  system &quot;#{SET} LANG=#{LANG} &amp;amp;&amp;amp; jekyll&quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;RbConfig&lt;/code&gt; part is actually a neat trick I found a couple of weeks ago. It apparently works better than using &lt;code&gt;RUBY_PLATFORM&lt;/code&gt; since it picks up the actual OS rather than the Ruby platform.&lt;sup id=&quot;fnref:20130303-2&quot;&gt;&lt;a href=&quot;#fn:20130303-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; I’m not sure that the &lt;code&gt;require&lt;/code&gt; part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: &lt;code&gt;alias jekyll=&quot;export LANG=en_EN.UTF-8 &amp;amp;&amp;amp; jekyll&quot;&lt;/code&gt; or something like that.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Which is the default server for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;.&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:20130303-1&quot;&gt;
+      &lt;p&gt;I actually set my language to &lt;code&gt;sv_SV.UTF-8&lt;/code&gt;, but I figured that using the english version in an example is better.&lt;a href=&quot;#fnref:20130303-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1&quot; title=&quot;How do I killa a Rails Webbrick server?&quot;&gt;The answer was found on StackOverflow&lt;/a&gt;, as expected.&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:20130303-2&quot;&gt;
+      &lt;p&gt;Using &lt;code&gt;RUBY_PLATFORM&lt;/code&gt; when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.&lt;a href=&quot;#fnref:20130303-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>March  3, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings</link>
+              </item>
+            
+              <item>
+                <title>WEBrick And Cygwin</title>
+                <description>&lt;p&gt;There’s no secret that I’ve become a big fan of &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt; and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt;, or more specifically &lt;a href=&quot;http://rubygems.org/&quot; title=&quot;RubyGems&quot;&gt;RubyGems&lt;/a&gt; under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with &lt;a href=&quot;http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot; title=&quot;Webbrick&quot;&gt;WEBrick&lt;/a&gt;&lt;sup id=&quot;fnref:20130228-1&quot;&gt;&lt;a href=&quot;#fn:20130228-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: &lt;code&gt;taskkill /F /PID {num}&lt;/code&gt;&lt;sup id=&quot;fnref:20130228-2&quot;&gt;&lt;a href=&quot;#fn:20130228-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The &lt;code&gt;{num}&lt;/code&gt; is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130228-1&quot;&gt;
+      &lt;p&gt;Which is the default server for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;.&lt;a href=&quot;#fnref:20130228-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130228-2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1&quot; title=&quot;How do I killa a Rails Webbrick server?&quot;&gt;The answer was found on StackOverflow&lt;/a&gt;, as expected.&lt;a href=&quot;#fnref:20130228-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -110,16 +148,6 @@
 </description>
                 <published>February 12, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/02/12/easy-session-for-vim</link>
-              </item>
-            
-              <item>
-                <title>Fetch</title>
-                <description>&lt;p&gt;I’ve released yet another one of my &lt;em&gt;Mostly Useless™&lt;/em&gt; projects, &lt;a href=&quot;https://github.com/gummesson/fetch&quot; title=&quot;Fetch&quot;&gt;Fetch&lt;/a&gt;, which let’s you grab a couple of web development resources straight from the command line. Package managers seem to be something that pops up every once in a while. Among them there’s &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot; title=&quot;homebrew&quot;&gt;homebrew&lt;/a&gt;, &lt;a href=&quot;http://twitter.github.com/bower/&quot; title=&quot;Bower&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;http://yeoman.io/&quot; title=&quot;Yeoman&quot;&gt;Yeoman&lt;/a&gt; and of course the good old &lt;a href=&quot;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&quot; title=&quot;APT&quot;&gt;apt-get&lt;/a&gt;, which I use from time to time. They’re lovely tools but as I’m nothing more than a hobbyist they’re a bit overkill for me, so I took a run at creating something a lot more simpler. I wouldn’t really call it a package manager but more of a component catcher though. I’m thinking of implementing &lt;a href=&quot;http://www.json.org/&quot; title=&quot;JSON&quot;&gt;JSON&lt;/a&gt; into it instead of using &lt;a href=&quot;http://www.yaml.org/&quot; title=&quot;YAML&quot;&gt;YAML&lt;/a&gt;, but we’ll see how that goes. One thing I really need to do is to step up my game and actually start to learn more. I feel that I’ve been staying in the same spot knowledge-wise for quite some time now and it’s time to start to progress again. But I digress.&lt;/p&gt;
-
-&lt;p&gt;One a side note, I finally figured out why I couldn’t get my &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; projects to run under &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;. I’d literally forgotten the “whole shebang”, ie: &lt;code&gt;#!/usr/bin/env ruby&lt;/code&gt;, at the start. &lt;strong&gt;Head, prepare to meet desk&lt;/strong&gt;.&lt;/p&gt;
-</description>
-                <published>February  8, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/08/fetch</link>
               </item>
             
     </channel>

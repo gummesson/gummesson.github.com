@@ -338,7 +338,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin</loc>
-        <lastmod>2013-02-28T14:45:43+01:00</lastmod>
+        <lastmod>2013-03-03T18:17:59+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings</loc>
+        <lastmod>2013-03-03T18:22:14+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -354,7 +358,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-02-28T14:45:43+01:00</lastmod>
+        <lastmod>2013-03-03T18:22:14+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//projects.html</loc>
