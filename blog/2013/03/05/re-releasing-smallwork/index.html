@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Re-releasing Smallwork: Ellen Gummesson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/global.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
+      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <meta name="author" content="Ellen Gummesson">
+    <link rel="author" href="/humans.txt" type="text/plain">
+      <link rel="canonical" href="http://ellengummesson.com/">
+      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
+      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+        <h1 class="mega">E.</h1>
+      </a>
+
+      <ul class="nav site-nav">
+        <li>
+          <a href="/" title="Home" alt="Home">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="About" alt="About">About</a>
+        </li>
+        <li>
+          <a href="/archives" title="Archives" alt="Archives">Archives</a>
+        </li>
+        <li>
+          <a href="/contact" title="Contact" alt="Contact">Contact</a>
+        </li>
+      </ul><!-- .nav .site-nav -->
+    </header><!-- .site-header -->
+
+  <div class="site-content">
+    <article class="post">
+  
+    <h1>Re-releasing Smallwork</h1>
+  
+    <p class="smallprint">
+      Posted on March  5, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/Sass" alt="Sass" title="Sass">Sass</a>
+    </p><!-- .smallprint -->
+    <section class="post-content">
+      <p>Back in January I wrote a small paragraph about my SCSS “framework” <a href="https://github.com/gummesson/smallwork" title="Smallwork">Smallwork</a>. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.</p>
+
+<p>I also created yet another <a href="http://www.vim.org/" title="Vim">Vim</a> plugin, this time just a simple wrapper for <a href="http://compass-style.org/" title="Compass">Compass</a>, which <em>Smallwork</em> is built with. I was getting sick of having to type either <code>:!compass compile</code> or <code>:sh</code> and then <code>compass compile</code> so I threw together a really basic function that makes it much easier. Now I only have to type <code>:CompassCompile</code>. Another nice feature is that you don’t actually have to close the command prompt<sup id="fnref:20130305-1"><a href="#fn:20130305-1" rel="footnote">1</a></sup> which means that you can use <code>:CompassWatch</code> without it interfering with Vim<sup id="fnref:20130305-2"><a href="#fn:20130305-2" rel="footnote">2</a></sup>. If all goes well I think I’ll even publish it on the official Vim scripts website too.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130305-1">
+      <p>Normally you can’t do anything until you’ve exited the command prompt and hit <code>Enter</code>, but a simple solution from the <a href="http://vim.wikia.com/wiki/Execute_external_programs_asynchronously_under_Windows" title="Execute external programs asynchronously under Windows">Vim Wiki</a> fixed that.<a href="#fnref:20130305-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20130305-2">
+      <p>Atleast on Windows. I don’t think that there’s an easy way to do that on Unix, which is unfortunate.<a href="#fnref:20130305-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+    <section class="notes">
+  <hr>
+  <p class="miniprint">
+    This post contains 259 words and takes roughly 51 seconds to read. Thank you for your time!
+  </p><!-- .miniprint -->
+</section>
+
+
+  <section class="comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section> <!-- .comments -->
+
+
+</article><!-- .post -->
+
+  </div><!-- .site-content -->
+    <footer class="site-footer">
+      <p class="miniprint p-copy">
+        Copyright &copy; 
+        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
+          Ellen Gummesson
+        </a> 
+        2013
+      </p><!-- .miniprint .p-copy -->
+      <p class="miniprint p-license">
+        Licensed Under 
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
+          CC BY-NC-SA 3.0
+        </a>
+      </p><!-- .miniprint .p-license -->
+      <p class="miniprint">
+        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
+          Subscribe
+        </a>
+      </p><!-- .miniprint -->
+    </footer><!-- .site-footer -->
+  </div><!-- .container -->
+</body>
+</html>
+
