@@ -1,56 +1,89 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Home: Ellen Gummesson</title>
+  <title>Blog: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/global.min.css">
-      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
-      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
-      <link rel="canonical" href="http://ellengummesson.com/">
-      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
-      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+    <link rel="canonical" href="http://ellengummesson.com/">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <h1 class="mega">E.</h1>
+  <body>
+    <div class="line-top"></div>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div class="column-six">
+            <header class="site-header">
+              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                <h1 class="logo">Ellen.</h1>
+              </a>
+            </header><!-- .site-header -->
+          </div><!-- .column-six -->
+
+                <div class="column-six">
+            <nav class="site-nav">
+              <a href="/" title="Home" alt="Home">Home</a>
+              <a href="/about" title="About" alt="About">About</a>
+              <a href="/archives" title="Archives" alt="Archives">Archives</a>
+              <a href="/contact" title="Contact" alt="Contact">Contact</a>
+            </nav><!-- .site-nav -->
+          </div><!-- .column-six -->
+        </div><!-- .row -->
+
+        <div class="row">
+          <div class="column-twelve">
+            <div class="site-content">
+              
+  <article class="post">
+  
+    <h1>
+      <a href="http://localhost:4000/blog/2012/11/26/the-spark-file" alt="The Spark File" title="The Spark File">
+        The Spark File
       </a>
+    </h1>
+    <p class="smallprint">
+      Posted on November 26, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>A few weeks ago I came across a post on <a href="https://medium.com/" title="Medium">Medium</a> called <a href="https://medium.com/the-writers-room/8d6e7df7ae58" title="The Spark File">The Spark File</a> written by <a href="https://medium.com/@stevenbjohnson" title="Steven Johnson">Steven Johnson</a>. I really liked the idea of having a spark file of some sort but never took the time to try it out. I usually depend on <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> when it comes to jotting down ideas but more often than not I’ve ended up with text files with just a headline in them, like “write about x and y”. While it definitively helps me remembering what I want to write about I feel that it’s unnecessary to have a ton of one line ideas clutter up my notes. That’s where the spark file fits perfectly. I finally understood that it’s something that’ll be a good addition to my writing workflow. Now I’ve begun to only use ResophNotes for my blog posts or other types of writing when an idea has involved to something more solid, while the spark file is just a scratchpad for things I want to write about but haven’t really figured out yet.</p>
 
-      <ul class="nav site-nav">
-        <li>
-          <a href="/" title="Home" alt="Home">Home</a>
-        </li>
-        <li>
-          <a href="/about" title="About" alt="About">About</a>
-        </li>
-        <li>
-          <a href="/archives" title="Archives" alt="Archives">Archives</a>
-        </li>
-        <li>
-          <a href="/contact" title="Contact" alt="Contact">Contact</a>
-        </li>
-      </ul><!-- .nav .site-nav -->
-    </header><!-- .site-header -->
+<h2 id="instant-sparks">Instant Sparks</h2>
 
-  <div class="site-content">
-    
+<p>I threw together a simple <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a> script so the spark file is just one hotkey away:</p>
+
+<pre><code>!q::
+{
+Run, Notepad.exe "~/spark-file.txt"
+Return
+}
+</code></pre>
+
+<p>This means that whenever an idea pops up I just need to press <code>Alt+Q</code> and type down whatever’s in my head. It’s a simple but powerful solution that’ll serve me well I think.</p>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
   <article class="post">
   
     <h1>
       <a href="http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html" alt="Why (And How) I Wrote My Academic Book In Plain Text" title="Why (And How) I Wrote My Academic Book In Plain Text">
-        Why (And How) I Wrote My Academic Book In Plain Text <span class="special-link">&rarr;</span>
+        Why (And How) I Wrote My Academic Book In Plain Text <span class="invisible">&rarr;</span>
       </a>
     </h1>
     <p class="smallprint">
-    Posted on November 23, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>   <a href="http://ellengummesson.com/blog/2012/11/23/why-and-how-i-wrote-my-academic-book-in-plain-text" alt="Permalink: Why (And How) I Wrote My Academic Book In Plain Text" title="Permalink: Why (And How) I Wrote My Academic Book In Plain Text" class="special-link">&#8734;</a>
+    Posted on November 23, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>   <a href="http://localhost:4000/blog/2012/11/23/why-and-how-i-wrote-my-academic-book-in-plain-text" alt="Permalink: Why (And How) I Wrote My Academic Book In Plain Text" title="Permalink: Why (And How) I Wrote My Academic Book In Plain Text" class="link-invisible">&#8734;</a>
     </p><!-- .smallprint -->
   
     <section class="post-content">
@@ -67,7 +100,7 @@
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/22/a-better-structure" alt="A Better Structure" title="A Better Structure">
+      <a href="http://localhost:4000/blog/2012/11/22/a-better-structure" alt="A Better Structure" title="A Better Structure">
         A Better Structure
       </a>
     </h1>
@@ -110,7 +143,7 @@
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/19/the-perfect-typeface" alt="The Perfect Typeface" title="The Perfect Typeface">
+      <a href="http://localhost:4000/blog/2012/11/19/the-perfect-typeface" alt="The Perfect Typeface" title="The Perfect Typeface">
         The Perfect Typeface
       </a>
     </h1>
@@ -148,11 +181,11 @@
   
     <h1>
       <a href="https://itunes.apple.com/us/app/in-play/id564522300?mt=8" alt="in:play" title="in:play">
-        in:play <span class="special-link">&rarr;</span>
+        in:play <span class="invisible">&rarr;</span>
       </a>
     </h1>
     <p class="smallprint">
-    Posted on November 16, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/iOS" alt="iOS" title="iOS">iOS</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2012/11/16/in-play" alt="Permalink: in:play" title="Permalink: in:play" class="special-link">&#8734;</a>
+    Posted on November 16, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/iOS" alt="iOS" title="iOS">iOS</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://localhost:4000/blog/2012/11/16/in-play" alt="Permalink: in:play" title="Permalink: in:play" class="link-invisible">&#8734;</a>
     </p><!-- .smallprint -->
   
     <section class="post-content">
@@ -166,112 +199,43 @@
 </article><!-- .post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/15/automated-markdown-links-and-better-footnotes" alt="Automated Markdown Links And Better Footnotes" title="Automated Markdown Links And Better Footnotes">
-        Automated Markdown Links And Better Footnotes
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on November 15, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>I’ve finally updated <a href="https://github.com/gummesson/markdown-hotstrings" title="Markdown Hotstrings on GitHub">my Markdown Hostrings repo</a> I wrote about earlier with a couple of new things that I came up with after some tinkering. I’ve tried them and they’ve been really helpful for me, so I hope that somebody will also find them useful.</p>
-
-<h2 id="automated-links">Automated Links</h2>
-
-<p>I finally figured out how to paste an URL from the clipboard directly into a Markdown-formatted link. I’ve looked and looked around the web but I felt that all the solutions I found were a bit to “complicated” for such a basic thing. I figured that a simple script for copying and pasting an URL into a simple text string surely wouldn’t need 7-10 lines of code? For once, my instincts were right. Here’s the hotstring in just three lines of code:</p>
-
-<pre><code>:oc:.plk::
-{ 
-url = %clipboard%
-SendInput {Enter}[](%url% {" 2}){Home}{Backspace}{Right}
-Return
-}
-</code></pre>
-
-<p>Which is going to output something like this when you type <code>.plk</code><sup id="fnref:20121115-1"><a href="#fn:20121115-1" rel="footnote">1</a></sup>:</p>
-
-<pre><code>[](http://www.website.com/ "")
-</code></pre>
-
-<p>In theory the <code>url = %clipboard%</code> line is unnecessary, but I’ve had trouble with getting the <code>%clipboard%</code> to work properly a few times So I decided to leave it in the script. I also kind of like the look of it. It’s worth to note that the above hotstring just copies and pastes whatever’s in your clipboard so you have to make sure that you’ve copied the URL before you use it.</p>
-
-<h2 id="footnotes">Footnotes</h2>
-
-<p>Another thing I came up with was a hotstring for creating better reference numbers for footnotes. If you’re planning on using footnotes extensively you can’t just write something like <code>[^1]</code> since it’ll just add the exact number you use, ie: 1. That means that if you’re using several of those on the same page it’ll get messy, so I threw together a simple script that adds the date inside a footnote:</p>
-
-<pre><code>:oc:.fndi::
-{ 
-FormatTime, date,, yyyyMdd
-SendInput [{^}%date%-]{Left}
-Return
-}
-</code></pre>
-
-<p>Which outputs something like this when you type <code>.fndi</code><sup id="fnref:20121115-2"><a href="#fn:20121115-2" rel="footnote">2</a></sup>:</p>
-
-<pre><code>[^20121115-]
-</code></pre>
-
-<p>You do have to add the footnote number yourself, but that’s not too much of a hassle. It’ll obviously won’t work that great if you’re publishing several posts a day, but it could be easily modified to add hours, minutes and seconds to it and so on.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20121115-1">
-      <p>The cursor will be placed inside the square brackets.<a href="#fnref:20121115-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20121115-2">
-      <p>The cursor will be placed after the hyphen.<a href="#fnref:20121115-2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
+          <div class="row">
+          <div class="column-twelve">
+            <nav class="pagination">
+              
+                
+                  <a href="/blog/page/6" alt="Previous" title="Previous">&larr; Previous</a>
+              
+              
+                <span class="pagination-separator">7 ... 17</span>
+              
+                <a href="/blog/page/8" alt="Next" title="Next">Next &rarr;</a>
+              
+            </nav><!-- .pagination -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
 
 
-  <nav class="pagination">
-  <p class="smallprint">
-  
-    
-      <a href="/blog/page/6" alt="Previous" title="Previous">&larr; Previous</a>
-    
-      
-      <span class="separator">7 ... 17</span>
-    
-      <a href="/blog/page/8" alt="Next" title="Next">Next &rarr;</a>
-      
-  </p><!-- .smallprint -->
-</nav><!-- .pagination -->
-
-
-  </div><!-- .site-content -->
-    <footer class="site-footer">
-      <p class="miniprint p-copy">
-        Copyright &copy; 
-        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-          Ellen Gummesson
-        </a> 
-        2013
-      </p><!-- .miniprint .p-copy -->
-      <p class="miniprint p-license">
-        Licensed Under 
-        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
-          CC BY-NC-SA 3.0
-        </a>
-      </p><!-- .miniprint .p-license -->
-      <p class="miniprint">
-        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
-          Subscribe
-        </a>
-      </p><!-- .miniprint -->
-    </footer><!-- .site-footer -->
-  </div><!-- .container -->
-</body>
+            </div><!-- .site-content -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+              <div class="row">
+          <div class="column-twelve">
+            <footer class="site-footer">
+              <p class="smallprint">
+                Copyright &copy;
+                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                  Ellen Gummesson
+                </a>
+                  2013.
+                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
+              </p>
+            </footer><!-- .site-footer -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+      </div><!-- .grid -->
+    </div><!-- .container -->
+    <div class="line-bottom"></div>
+  </body>
 </html>
 

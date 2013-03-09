@@ -1,21 +1,20 @@
-# Requirements
-require 'rake'  # For the rake tasks
+# Gems
+require 'rake'
 
+# Default Git message
+GITMSG = "New blog post."
+
+# rake deploy
 # rake deploy["Commit message"]
 desc "Deploy the site to it's remote git repository"
 task :deploy, :message do |t, args|
   message = args[:message]
 
   if message.nil?
-    system "git add ."
-    system "git commit -m \"New blog post.\""
-    system "git push origin master"
+    system "git add . && git commit -m \"#{GITMSG}\" && git push origin master"
     puts "The site was deployed."
-
   else
-    system "git add ."
-    system "git commit -m \"#{message}\""
-    system "git push origin master"
+    system "git add . && git commit -m \"#{message}\" && git push origin master"
     puts "The site was deployed."
   end
 end

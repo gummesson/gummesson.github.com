@@ -1,51 +1,91 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Home: Ellen Gummesson</title>
+  <title>Blog: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/global.min.css">
-      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
-      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
-      <link rel="canonical" href="http://ellengummesson.com/">
-      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
-      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+    <link rel="canonical" href="http://ellengummesson.com/">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <h1 class="mega">E.</h1>
-      </a>
+  <body>
+    <div class="line-top"></div>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div class="column-six">
+            <header class="site-header">
+              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                <h1 class="logo">Ellen.</h1>
+              </a>
+            </header><!-- .site-header -->
+          </div><!-- .column-six -->
 
-      <ul class="nav site-nav">
-        <li>
-          <a href="/" title="Home" alt="Home">Home</a>
-        </li>
-        <li>
-          <a href="/about" title="About" alt="About">About</a>
-        </li>
-        <li>
-          <a href="/archives" title="Archives" alt="Archives">Archives</a>
-        </li>
-        <li>
-          <a href="/contact" title="Contact" alt="Contact">Contact</a>
-        </li>
-      </ul><!-- .nav .site-nav -->
-    </header><!-- .site-header -->
+                <div class="column-six">
+            <nav class="site-nav">
+              <a href="/" title="Home" alt="Home">Home</a>
+              <a href="/about" title="About" alt="About">About</a>
+              <a href="/archives" title="Archives" alt="Archives">Archives</a>
+              <a href="/contact" title="Contact" alt="Contact">Contact</a>
+            </nav><!-- .site-nav -->
+          </div><!-- .column-six -->
+        </div><!-- .row -->
 
-  <div class="site-content">
-    
+        <div class="row">
+          <div class="column-twelve">
+            <div class="site-content">
+              
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2012/12/09/the-struggles-of-writing" alt="The Struggles Of Writing" title="The Struggles Of Writing">
+      <a href="http://localhost:4000/blog/2012/12/11/robocopy" alt="Robocop(y)" title="Robocop(y)">
+        Robocop(y)
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on December 11, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Command Line" alt="Command Line" title="Command Line">Command Line</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called <code>robocopy</code><sup id="fnref:20121211-1"><a href="#fn:20121211-1" rel="footnote">1</a></sup>. One of the things I use it for is to quickly backup the source of my <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site to a folder on my <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> with a simple command like this:</p>
+
+<pre><code>robocopy ~/Jekyll ~/Dropbox/Jekyll *.* /mir
+</code></pre>
+
+<p>As you can see it follows the structure of <code>robocopy -source -destination -file -option</code>. The <code>*.*</code> targets every single filetype and the <code>/mir</code> means that everything, including the subfolders, will get mirrored. There’s a lot of options for it<sup id="fnref:20121211-2"><a href="#fn:20121211-2" rel="footnote">2</a></sup>, ranging from copying a single file once to actually scheduling it for repeated copying. It’s not really a syncing function per se, but it works and it’s blazingly fast. I’m not really bothered by the fact that I have to manually run it either since I don’t need to sync everytime something changes.</p>
+
+<p>The biggest advantage of using Robocopy is that it’s just a lot more smoother, especially since I’ve gotten more and more comfortable using the command line for everyday tasks. I can open up the CLI from anywhere, trigger a hotstring for pasting the above snippet and just hit <code>Enter</code>.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121211-1">
+      <p><a href="http://en.wikipedia.org/wiki/Robocopy" title="Robust File Copy">Robust File Copy</a>.<a href="#fnref:20121211-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121211-2">
+      <p>Here’s <a href="http://ss64.com/nt/robocopy.html" title="SS64's Robocopy Reference">an excellent summary</a> from SS64. <a href="#fnref:20121211-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
+      <a href="http://localhost:4000/blog/2012/12/09/the-struggles-of-writing" alt="The Struggles Of Writing" title="The Struggles Of Writing">
         The Struggles Of Writing
       </a>
     </h1>
@@ -75,7 +115,7 @@
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2012/12/05/apps-for-windows" alt="Apps For Windows" title="Apps For Windows">
+      <a href="http://localhost:4000/blog/2012/12/05/apps-for-windows" alt="Apps For Windows" title="Apps For Windows">
         Apps For Windows
       </a>
     </h1>
@@ -134,11 +174,11 @@
   
     <h1>
       <a href="http://usesthis.com/" alt="The Setup" title="The Setup">
-        The Setup <span class="special-link">&rarr;</span>
+        The Setup <span class="invisible">&rarr;</span>
       </a>
     </h1>
     <p class="smallprint">
-    Posted on December  2, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>   <a href="http://ellengummesson.com/blog/2012/12/02/the-setup" alt="Permalink: The Setup" title="Permalink: The Setup" class="special-link">&#8734;</a>
+    Posted on December  2, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>   <a href="http://localhost:4000/blog/2012/12/02/the-setup" alt="Permalink: The Setup" title="Permalink: The Setup" class="link-invisible">&#8734;</a>
     </p><!-- .smallprint -->
   
     <section class="post-content">
@@ -161,7 +201,7 @@
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/28/small-steps-into-ruby" alt="Small Steps Into Ruby" title="Small Steps Into Ruby">
+      <a href="http://localhost:4000/blog/2012/11/28/small-steps-into-ruby" alt="Small Steps Into Ruby" title="Small Steps Into Ruby">
         Small Steps Into Ruby
       </a>
     </h1>
@@ -210,74 +250,43 @@ File.open(txt_file, "a") { |file| file.puts(item) }
 </article><!-- .post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/26/the-spark-file" alt="The Spark File" title="The Spark File">
-        The Spark File
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on November 26, 2012  in  <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>, <a href="/blog/tag/Plain Text" alt="Plain Text" title="Plain Text">Plain Text</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>A few weeks ago I came across a post on <a href="https://medium.com/" title="Medium">Medium</a> called <a href="https://medium.com/the-writers-room/8d6e7df7ae58" title="The Spark File">The Spark File</a> written by <a href="https://medium.com/@stevenbjohnson" title="Steven Johnson">Steven Johnson</a>. I really liked the idea of having a spark file of some sort but never took the time to try it out. I usually depend on <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a> when it comes to jotting down ideas but more often than not I’ve ended up with text files with just a headline in them, like “write about x and y”. While it definitively helps me remembering what I want to write about I feel that it’s unnecessary to have a ton of one line ideas clutter up my notes. That’s where the spark file fits perfectly. I finally understood that it’s something that’ll be a good addition to my writing workflow. Now I’ve begun to only use ResophNotes for my blog posts or other types of writing when an idea has involved to something more solid, while the spark file is just a scratchpad for things I want to write about but haven’t really figured out yet.</p>
-
-<h2 id="instant-sparks">Instant Sparks</h2>
-
-<p>I threw together a simple <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a> script so the spark file is just one hotkey away:</p>
-
-<pre><code>!q::
-{
-Run, Notepad.exe "~/spark-file.txt"
-Return
-}
-</code></pre>
-
-<p>This means that whenever an idea pops up I just need to press <code>Alt+Q</code> and type down whatever’s in my head. It’s a simple but powerful solution that’ll serve me well I think.</p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
+          <div class="row">
+          <div class="column-twelve">
+            <nav class="pagination">
+              
+                
+                  <a href="/blog/page/5" alt="Previous" title="Previous">&larr; Previous</a>
+              
+              
+                <span class="pagination-separator">6 ... 17</span>
+              
+                <a href="/blog/page/7" alt="Next" title="Next">Next &rarr;</a>
+              
+            </nav><!-- .pagination -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
 
 
-  <nav class="pagination">
-  <p class="smallprint">
-  
-    
-      <a href="/blog/page/5" alt="Previous" title="Previous">&larr; Previous</a>
-    
-      
-      <span class="separator">6 ... 17</span>
-    
-      <a href="/blog/page/7" alt="Next" title="Next">Next &rarr;</a>
-      
-  </p><!-- .smallprint -->
-</nav><!-- .pagination -->
-
-
-  </div><!-- .site-content -->
-    <footer class="site-footer">
-      <p class="miniprint p-copy">
-        Copyright &copy; 
-        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-          Ellen Gummesson
-        </a> 
-        2013
-      </p><!-- .miniprint .p-copy -->
-      <p class="miniprint p-license">
-        Licensed Under 
-        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
-          CC BY-NC-SA 3.0
-        </a>
-      </p><!-- .miniprint .p-license -->
-      <p class="miniprint">
-        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
-          Subscribe
-        </a>
-      </p><!-- .miniprint -->
-    </footer><!-- .site-footer -->
-  </div><!-- .container -->
-</body>
+            </div><!-- .site-content -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+              <div class="row">
+          <div class="column-twelve">
+            <footer class="site-footer">
+              <p class="smallprint">
+                Copyright &copy;
+                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                  Ellen Gummesson
+                </a>
+                  2013.
+                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
+              </p>
+            </footer><!-- .site-footer -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+      </div><!-- .grid -->
+    </div><!-- .container -->
+    <div class="line-bottom"></div>
+  </body>
 </html>
 

@@ -2,8 +2,54 @@
   <rss version="2.0">
     <channel>
       <title>Ellen Gummesson</title>
-        <description>Random ramblings, overall geekiness and other musings</description>
-          <link>http://ellengummesson.com/</link>
+        <description>Random ramblings, musings and geekiness</description>
+          <link>http://localhost:4000/</link>
+            
+              <item>
+                <title>A Brand New Blog</title>
+                <description>&lt;p&gt;I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface &lt;a href=&quot;http://www.google.com/webfonts/specimen/Roboto&quot; title=&quot;Roboto&quot;&gt;Roboto&lt;/a&gt; a few weeks ago and I like it so much that I decided to use it, which was the first step.&lt;/p&gt;
+
+&lt;h2 id=&quot;hey-what-is-that-theme&quot;&gt;Hey, What Is THAT Theme?&lt;/h2&gt;
+
+&lt;p&gt;The theme is based on &lt;a href=&quot;http://noahfrederick.com/&quot; title=&quot;Noah Fredrick&quot;&gt;Noah Frederick’s&lt;/a&gt; beautiful &lt;a href=&quot;http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/&quot; title=&quot;Peppermint terminal thehe&quot;&gt;Peppermint theme&lt;/a&gt; for the OS X’s terminal. I remember stumbling onto his &lt;a href=&quot;http://noahfrederick.com/vim-color-scheme-hemisu/&quot; title=&quot;Hemisu&quot;&gt;Hemisu colorscheme&lt;/a&gt; for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.&lt;/p&gt;
+
+&lt;h2 id=&quot;sass--compass--3&quot;&gt;Sass + Compass = &amp;lt;3&lt;/h2&gt;
+
+&lt;p&gt;I also used &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;Sass&quot;&gt;Sass&lt;/a&gt; and &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;Compass&lt;/a&gt; exclusively for the CSS writing. I’ve been wanting to use it for a long time and I even tried to convert the old design’s CSS to it, but I gave up pretty quickly. This time I didn’t and I of course used &lt;a href=&quot;https://github.com/gummesson/smallwork&quot; title=&quot;Smallwork&quot;&gt;Smallwork&lt;/a&gt; as a base which made the process a lot more easier and faster. Redesigning this site was also one of the things that made me re-write Smallwork.&lt;/p&gt;
+
+&lt;p&gt;using Compass with Jekyll is also relatively easy by the way. I first tried out a couple of plugins, but I decided to implement it in my Rake task instead. While the plugins worked great it really bugged me that I couldn’t decide when to use &lt;code&gt;compass compile&lt;/code&gt; and when to use &lt;code&gt;compass watch&lt;/code&gt;. All I had to do was to add this to my &lt;code&gt;build&lt;/code&gt; task in my &lt;code&gt;Rakefile&lt;/code&gt;, before &lt;code&gt;jekyll&lt;/code&gt; is run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;system &quot;cd assets/ &amp;amp;&amp;amp; compass compile &amp;amp;&amp;amp; cd ../&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Simple and effective!&lt;/p&gt;
+
+&lt;h2 id=&quot;funish-trivia&quot;&gt;Fun(ish) Trivia&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I started the redesign on March 1st and I’ve made a total of 28 commits&lt;sup id=&quot;fnref:20130309-1&quot;&gt;&lt;a href=&quot;#fn:20130309-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to the git repository I used for the development.&lt;/li&gt;
+  &lt;li&gt;I “skipped” support for Internet Explorer 8 in favor of using &lt;code&gt;[class^=&quot;column-&quot;]:last-child&lt;/code&gt; to remove the &lt;code&gt;margin-right&lt;/code&gt; on the grid system&lt;sup id=&quot;fnref:20130309-2&quot;&gt;&lt;a href=&quot;#fn:20130309-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;I also found a pretty cool Sass function called &lt;code&gt;darken()&lt;/code&gt;, which made it easy finding a good background color for my &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;pre&lt;/code&gt; tags and the subtle text shadow. All of the color functions for Sass are pretty cool, in fact.&lt;/li&gt;
+  &lt;li&gt;The pink line at the bottom of the site uses the &lt;a href=&quot;http://mystrd.at/modern-clean-css-sticky-footer/&quot; title=&quot;Modern Clean CSS Sticky Footer&quot;&gt;“James Dean Sticky Footer”&lt;/a&gt; approach, which is a nice little hack. I love the name too!&lt;/li&gt;
+  &lt;li&gt;I tried to change as little as possible when I did the CSS for the media queries. I pratically just changed the font size and some margins. That’s it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130309-1&quot;&gt;
+      &lt;p&gt;I’m an obsessive commiter.&lt;a href=&quot;#fnref:20130309-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130309-2&quot;&gt;
+      &lt;p&gt;I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.&lt;a href=&quot;#fnref:20130309-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>March  9, 2013</published>
+                <link>http://localhost:4000/blog/2013/03/09/a-brand-new-blog</link>
+              </item>
             
               <item>
                 <title>Re-releasing Smallwork</title>
@@ -25,7 +71,7 @@
 &lt;/div&gt;
 </description>
                 <published>March  5, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/05/re-releasing-smallwork</link>
+                <link>http://localhost:4000/blog/2013/03/05/re-releasing-smallwork</link>
               </item>
             
               <item>
@@ -63,7 +109,7 @@ end
 &lt;/div&gt;
 </description>
                 <published>March  3, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings</link>
+                <link>http://localhost:4000/blog/2013/03/03/fixing-jekylls-encoding-shenanings</link>
               </item>
             
               <item>
@@ -84,7 +130,7 @@ end
 &lt;/div&gt;
 </description>
                 <published>February 28, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin</link>
+                <link>http://localhost:4000/blog/2013/02/28/webrick-and-cygwin</link>
               </item>
             
               <item>
@@ -113,36 +159,7 @@ end
 &lt;/div&gt;
 </description>
                 <published>February 21, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/21/ack-on-windows</link>
-              </item>
-            
-              <item>
-                <title>More Vim Goodness</title>
-                <description>&lt;p&gt;I feel like I start to sound like a fantatic when it comes to &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;, but the truth is that I’m having so much fun with it that it’s hard to stop and thus I’ve created two more plugins: &lt;a href=&quot;https://github.com/gummesson/voutliner.vim&quot; title=&quot;voutliner.vim&quot;&gt;Voutliner&lt;/a&gt; and &lt;a href=&quot;https://github.com/gummesson/footnotes.vim&quot; title=&quot;footnotes.vim&quot;&gt;Footnotes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;voutliner&quot;&gt;Voutliner&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Voutliner&lt;/em&gt; is a simple outlining tool&lt;sup id=&quot;fnref:20130216-1&quot;&gt;&lt;a href=&quot;#fn:20130216-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I looked at both &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=3515&quot; title=&quot;VimOutliner&quot;&gt;VimOutliner&lt;/a&gt; and &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=517&quot; title=&quot;The Vim Outliner&quot;&gt;TVO&lt;/a&gt; but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. &lt;em&gt;Voutliner&lt;/em&gt; is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.&lt;/p&gt;
-
-&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
-
-&lt;p&gt;I like using footnotes but I hate having to manually enter the date for each and every one of them&lt;sup id=&quot;fnref:20130216-2&quot;&gt;&lt;a href=&quot;#fn:20130216-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press &lt;code&gt;F7&lt;/code&gt; and the date will get added to every footnote automatically. Like &lt;em&gt;Voutliner&lt;/em&gt; I doubt that many people will use it, but yet again it’s extremely useful for me.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130216-1&quot;&gt;
-      &lt;p&gt;And it’s a really bad name.&lt;a href=&quot;#fnref:20130216-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130216-2&quot;&gt;
-      &lt;p&gt;I use &lt;code&gt;YYYYMMDD-#&lt;/code&gt; as a format so that every footnote has an unique set of numbers, which makes it even more tedious.&lt;a href=&quot;#fnref:20130216-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>February 16, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/16/more-vim-goodness</link>
+                <link>http://localhost:4000/blog/2013/02/21/ack-on-windows</link>
               </item>
             
     </channel>

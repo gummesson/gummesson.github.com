@@ -1,51 +1,110 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Home: Ellen Gummesson</title>
+  <title>Blog: Ellen Gummesson</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/global.min.css">
-      <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet">
-      <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, overall geekiness and other musings">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
-      <link rel="canonical" href="http://ellengummesson.com/">
-      <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (RSS Feed)">
-      <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings (Sitemap)">
+    <link rel="canonical" href="http://ellengummesson.com/">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-        <h1 class="mega">E.</h1>
-      </a>
+  <body>
+    <div class="line-top"></div>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div class="column-six">
+            <header class="site-header">
+              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                <h1 class="logo">Ellen.</h1>
+              </a>
+            </header><!-- .site-header -->
+          </div><!-- .column-six -->
 
-      <ul class="nav site-nav">
-        <li>
-          <a href="/" title="Home" alt="Home">Home</a>
-        </li>
-        <li>
-          <a href="/about" title="About" alt="About">About</a>
-        </li>
-        <li>
-          <a href="/archives" title="Archives" alt="Archives">Archives</a>
-        </li>
-        <li>
-          <a href="/contact" title="Contact" alt="Contact">Contact</a>
-        </li>
-      </ul><!-- .nav .site-nav -->
-    </header><!-- .site-header -->
+                <div class="column-six">
+            <nav class="site-nav">
+              <a href="/" title="Home" alt="Home">Home</a>
+              <a href="/about" title="About" alt="About">About</a>
+              <a href="/archives" title="Archives" alt="Archives">Archives</a>
+              <a href="/contact" title="Contact" alt="Contact">Contact</a>
+            </nav><!-- .site-nav -->
+          </div><!-- .column-six -->
+        </div><!-- .row -->
 
-  <div class="site-content">
-    
+        <div class="row">
+          <div class="column-twelve">
+            <div class="site-content">
+              
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/24/vim-nearly-four-weeks-in" alt="Vim: Nearly Four Weeks In" title="Vim: Nearly Four Weeks In">
+      <a href="http://localhost:4000/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown Preview For Vim" title="Markdown Preview For Vim">
+        Markdown Preview For Vim
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/" title="Vim">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/" title="Pandoc">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+endfunction
+</code></pre>
+
+<p>It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It’s not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that’ll open the <code>preview.html</code> directly in the browser:</p>
+
+<pre><code>if has("win32")
+  silent exec '!start cmd /c preview.html'
+else
+  silent exec '!xdg-open preview.html'
+endif
+</code></pre>
+
+<p>One thing that’s worth being mentioned is that the <code>!xdg-open</code> part can be changed to <code>!open</code> and then you can also use it if you’re on a Mac.</p>
+
+<p>In the end the whole thing looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+  if has("win32")
+    silent exec '!start cmd /c preview.html'
+  else
+    silent exec '!xdg-open preview.html'
+  endif
+endfunction
+</code></pre>
+
+<p>And the mapping looks like this:</p>
+
+<pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
+</code></pre>
+
+<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
+      <a href="http://localhost:4000/blog/2013/01/24/vim-nearly-four-weeks-in" alt="Vim: Nearly Four Weeks In" title="Vim: Nearly Four Weeks In">
         Vim: Nearly Four Weeks In
       </a>
     </h1>
@@ -116,7 +175,7 @@ au InsertLeave * set cursorline
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world" alt="Serve: The Ugliest Static Site Generator In The World" title="Serve: The Ugliest Static Site Generator In The World">
+      <a href="http://localhost:4000/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world" alt="Serve: The Ugliest Static Site Generator In The World" title="Serve: The Ugliest Static Site Generator In The World">
         Serve: The Ugliest Static Site Generator In The World
       </a>
     </h1>
@@ -158,11 +217,11 @@ au InsertLeave * set cursorline
   
     <h1>
       <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" alt="Vimium: The Hacker's Browser" title="Vimium: The Hacker's Browser">
-        Vimium: The Hacker's Browser <span class="special-link">&rarr;</span>
+        Vimium: The Hacker's Browser <span class="invisible">&rarr;</span>
       </a>
     </h1>
     <p class="smallprint">
-    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink: Vimium: The Hacker's Browser" title="Permalink: Vimium: The Hacker's Browser" class="special-link">&#8734;</a>
+    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://localhost:4000/blog/2013/01/18/vimium" alt="Permalink: Vimium: The Hacker's Browser" title="Permalink: Vimium: The Hacker's Browser" class="link-invisible">&#8734;</a>
     </p><!-- .smallprint -->
   
     <section class="post-content">
@@ -175,7 +234,7 @@ au InsertLeave * set cursorline
   <article class="post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I Created Yet Another (Pointless) App" title="I Created Yet Another (Pointless) App">
+      <a href="http://localhost:4000/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I Created Yet Another (Pointless) App" title="I Created Yet Another (Pointless) App">
         I Created Yet Another (Pointless) App
       </a>
     </h1>
@@ -200,75 +259,43 @@ au InsertLeave * set cursorline
 </article><!-- .post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/12/launch-week" alt="Launch Week" title="Launch Week">
-        Launch Week
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on January 12, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>Yesterday I finally pushed something to the master branch of a thing I started working on last week, <a href="#" title="Smallwork">Smallwork</a>. It’s a small yet full featured <a href="http://sass-lang.com/" title="SCSS">SCSS</a> framework, or starting point as I’d like to call it. The first time I tried SCSS was way back in August or September but I didn’t really “get” it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines<sup id="fnref:20130112-1"><a href="#fn:20130112-1" rel="footnote">1</a></sup> which kind of makes it my most ambitious work to date.</p>
-
-<p>I also played around with <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a> again and came up with a simple journal app which uses <a href="http://datamapper.org/" title="Datamapper">Datamapper</a> and <a href="http://www.sqlite.org/" title="SQLite 3">SQLite3</a> for storing everything in a database. Like I mentioned earlier I’m quite fond of Sinatra, especially since it’s really easy to understand what do to and what’s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I’m not in fact dreaming. I’m no expert but I like where I’m going with it and I’ve barely scratched the surface.</p>
-
-<p>I’m also thinking about extending <a href="http://kramit.ellengummesson.com/" title="Kramit!">Kramit!</a> a bit, but we’ll see how that goes… I guess I should try to slow myself down a bit since I’ve launched three new projects this week alone. I’m having fun though!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130112-1">
-      <p>That’s including blank lines and comments. It’s still a pretty big number though. The compiled CSS code is 682 lines long and that’s without any additional content besides the basic structure itself.<a href="#fnref:20130112-1" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
+          <div class="row">
+          <div class="column-twelve">
+            <nav class="pagination">
+              
+                
+                  <a href="/blog/page/2" alt="Previous" title="Previous">&larr; Previous</a>
+              
+              
+                <span class="pagination-separator">3 ... 17</span>
+              
+                <a href="/blog/page/4" alt="Next" title="Next">Next &rarr;</a>
+              
+            </nav><!-- .pagination -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
 
 
-  <nav class="pagination">
-  <p class="smallprint">
-  
-    
-      <a href="/blog/page/2" alt="Previous" title="Previous">&larr; Previous</a>
-    
-      
-      <span class="separator">3 ... 17</span>
-    
-      <a href="/blog/page/4" alt="Next" title="Next">Next &rarr;</a>
-      
-  </p><!-- .smallprint -->
-</nav><!-- .pagination -->
-
-
-  </div><!-- .site-content -->
-    <footer class="site-footer">
-      <p class="miniprint p-copy">
-        Copyright &copy; 
-        <a href="/" title="Ellen Gummesson: Random ramblings, overall geekiness and other musings" alt="Ellen Gummesson: Random ramblings, overall geekiness and other musings">
-          Ellen Gummesson
-        </a> 
-        2013
-      </p><!-- .miniprint .p-copy -->
-      <p class="miniprint p-license">
-        Licensed Under 
-        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" alt="Creative Commons BY-NC-SA 3.0" title="Creative Commons BY-NC-SA 3.0">
-          CC BY-NC-SA 3.0
-        </a>
-      </p><!-- .miniprint .p-license -->
-      <p class="miniprint">
-        <a href="/feed.xml" title="Subscribe" alt="Subscribe">
-          Subscribe
-        </a>
-      </p><!-- .miniprint -->
-    </footer><!-- .site-footer -->
-  </div><!-- .container -->
-</body>
+            </div><!-- .site-content -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+              <div class="row">
+          <div class="column-twelve">
+            <footer class="site-footer">
+              <p class="smallprint">
+                Copyright &copy;
+                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                  Ellen Gummesson
+                </a>
+                  2013.
+                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
+              </p>
+            </footer><!-- .site-footer -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+      </div><!-- .grid -->
+    </div><!-- .container -->
+    <div class="line-bottom"></div>
+  </body>
 </html>
 
