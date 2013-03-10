@@ -6,10 +6,10 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
-                <title>A Brand New Blog</title>
+                <title>A brand new blog</title>
                 <description>&lt;p&gt;I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface &lt;a href=&quot;http://www.google.com/webfonts/specimen/Roboto&quot; title=&quot;Roboto&quot;&gt;Roboto&lt;/a&gt; a few weeks ago and I like it so much that I decided to use it, which was the first step.&lt;/p&gt;
 
-&lt;h2 id=&quot;hey-what-is-that-theme&quot;&gt;Hey, What Is THAT Theme?&lt;/h2&gt;
+&lt;h2 id=&quot;hey-what-is-that-theme&quot;&gt;Hey, what is THAT theme?&lt;/h2&gt;
 
 &lt;p&gt;The theme is based on &lt;a href=&quot;http://noahfrederick.com/&quot; title=&quot;Noah Fredrick&quot;&gt;Noah Frederick’s&lt;/a&gt; beautiful &lt;a href=&quot;http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/&quot; title=&quot;Peppermint terminal thehe&quot;&gt;Peppermint theme&lt;/a&gt; for the OS X’s terminal. I remember stumbling onto his &lt;a href=&quot;http://noahfrederick.com/vim-color-scheme-hemisu/&quot; title=&quot;Hemisu&quot;&gt;Hemisu colorscheme&lt;/a&gt; for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.&lt;/p&gt;
 
@@ -24,7 +24,7 @@
 
 &lt;p&gt;Simple and effective!&lt;/p&gt;
 
-&lt;h2 id=&quot;funish-trivia&quot;&gt;Fun(ish) Trivia&lt;/h2&gt;
+&lt;h2 id=&quot;funish-trivia&quot;&gt;Fun(ish) trivia&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;I started the redesign on March 1st and I’ve made a total of 28 commits&lt;sup id=&quot;fnref:20130309-1&quot;&gt;&lt;a href=&quot;#fn:20130309-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to the git repository I used for the development.&lt;/li&gt;
@@ -75,7 +75,7 @@
               </item>
             
               <item>
-                <title>Fixing Jekyll's Encoding Shenanings</title>
+                <title>Fixing Jekyll's encoding shenanings</title>
                 <description>&lt;p&gt;After installing the 0.12.1 version of &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as &lt;code&gt;UTF-8&lt;/code&gt;, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. &lt;code&gt;set LANG=en_EN.UTF-8&lt;/code&gt; for Windows or &lt;code&gt;export LANG=en_EN.UTF-8&lt;/code&gt;&lt;sup id=&quot;fnref:20130303-1&quot;&gt;&lt;a href=&quot;#fn:20130303-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for Unix. Since I’m a lazy person I of course implemented it in my &lt;code&gt;Rakefile&lt;/code&gt;, similar to this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;require 'rbconfig'
@@ -113,7 +113,7 @@ end
               </item>
             
               <item>
-                <title>WEBrick And Cygwin</title>
+                <title>WEBrick and Cygwin</title>
                 <description>&lt;p&gt;There’s no secret that I’ve become a big fan of &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt; and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt;, or more specifically &lt;a href=&quot;http://rubygems.org/&quot; title=&quot;RubyGems&quot;&gt;RubyGems&lt;/a&gt; under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with &lt;a href=&quot;http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot; title=&quot;Webbrick&quot;&gt;WEBrick&lt;/a&gt;&lt;sup id=&quot;fnref:20130228-1&quot;&gt;&lt;a href=&quot;#fn:20130228-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: &lt;code&gt;taskkill /F /PID {num}&lt;/code&gt;&lt;sup id=&quot;fnref:20130228-2&quot;&gt;&lt;a href=&quot;#fn:20130228-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The &lt;code&gt;{num}&lt;/code&gt; is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -134,7 +134,7 @@ end
               </item>
             
               <item>
-                <title>Ack On Windows</title>
+                <title>Ack on Windows</title>
                 <description>&lt;p&gt;I recently finally tried out &lt;a href=&quot;http://betterthangrep.com/&quot; title=&quot;Ack&quot;&gt;Ack&lt;/a&gt; which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.&lt;/p&gt;
 
 &lt;p&gt;First things first, &lt;a href=&quot;http://www.perl.org/&quot; title=&quot;Perl&quot;&gt;Perl&lt;/a&gt; needs to be install on the system. If you have either &lt;a href=&quot;http://git-scm.com/&quot; title=&quot;Git&quot;&gt;Git&lt;/a&gt; or &lt;a href=&quot;http://rubyinstaller.org/add-ons/devkit/&quot; title=&quot;DevKit&quot;&gt;DevKit&lt;/a&gt; installed then you’re good to go.&lt;/p&gt;
