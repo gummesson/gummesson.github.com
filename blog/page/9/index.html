@@ -47,6 +47,39 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/11/09/footnotes" alt="Footnotes" title="Footnotes">
+        Footnotes
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on November  9, 2012  in  <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>Earlier today I look into some simple solution to enable support for footnotes since that’s something that regular Markdown doesn’t cover<sup id="fnref:20121109-1"><a href="#fn:20121109-1" rel="footnote">1</a></sup>. My current Markdown interpreter, <a href="https://github.com/rtomayko/rdiscount" title="rdiscount">rdiscount</a>, sadly doesn’t have any support for it but another one called <a href="http://kramdown.rubyforge.org/" title="kramdown">kramdown</a> do. I thought that maybe kramdown was going to be significantly slower<sup id="fnref:20121109-2"><a href="#fn:20121109-2" rel="footnote">2</a></sup> but it’s actually hardly noticeable. According to the <a href="http://kramdown.rubyforge.org/syntax.html" title="kramdown syntax">syntax</a> it processes the markdown a little differently but luckily I haven’t noticed any changes, since I was worried for a while that I’d had to edit some posts. I did however had to add some thing in my CSS so that the footnotes didn’t look to out of place, but since the markup consists of some attribute selectors that didn’t turn out to be a big hassle either.</p>
+
+<p>So to wrap this short post up, if you’re looking for a pretty fast markdown interpreter for Jekyll that has some additional features you should definitively try out kramdown.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121109-1">
+      <p>Although forks of Markdown like <a href="http://michelf.ca/projects/php-markdown/extra/" title="Markdown Extra">Markdown Extra</a> and <a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">MultiMarkdown</a> do.<a href="#fnref:20121109-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121109-2">
+      <p>kramdown is built exclusively with <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (Programming Language)">Ruby</a> while rdiscount also uses <a href="http://en.wikipedia.org/wiki/C_(programming_language)" title="C (Programming Language)">C</a>, which to my understanding makes the whole process faster.<a href="#fnref:20121109-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking" alt="Pop – a minimal approach to digital notetaking" title="Pop – a minimal approach to digital notetaking">
         Pop – a minimal approach to digital notetaking
       </a>
@@ -127,48 +160,6 @@
   
     <section class="post-content">
       <p>I’ve been thinking a lot lately about yet again redesigning this site. I’ve changed quite a few annonyances I’ve had since launching the new design back in September but I’m still not fully content with it. I guess that’s the way it is when you constantly pick up new things from other sites and blogs that you regularly go to. I have a tendency to get extremely tired at looking at the same thing for longer periods of time too. I think that’s why I’ve been tinkering so much with my current design. If I could I’d probably change the site every month, but that’s an impossible feat since I’m not a designer at all. I rarely get by in that department. But still I feel a need to strive for something more aesthetically pleasing. Or maybe I just care too much and should just let it be. I don’t know.</p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/10/29/hotstrings-and-markdown" alt="Hotstrings and Markdown" title="Hotstrings and Markdown">
-        Hotstrings and Markdown
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on October 29, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>Since yesterday I’ve been messing around with an small but powerful app called <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a>. I guess you can call it a poor man’s <a href="http://smilesoftware.com/TextExpander/index.html" title="TextExpander">TextExpander</a>, but the fact is that it’s capable of doing much more. Not only does it support text expansions for abbreviations but you can also create scripts with so called hotkeys and other things for anything and everything. When I say everything I do mean it. The learning curve is pretty steep for the more advanced functions since there’s no GUI for it but for creating some simple text expansions it’s as easy as scripting gets. The <a href="http://www.autohotkey.com/docs/" title="AutoHotKey Documentation">documentation</a> is really great too if you want to dive in deeper.</p>
-
-<h2 id="abbreviate-all-the-things">Abbreviate all the things</h2>
-
-<p>One of the strengths of an app like this is that it works great for repetitive writing tasks like phone numbers, email adresses and signatures. Instead of having to repeat essentially the same phrase several times a day you just write a simple keyword and it’ll automatically transform into the right thing. Since it’s as just a script it works universally across all of your apps too, which is another thing that’s great. I can use the same abbreviations whether I’m surfing the web in Chrome or writing a blog post in FocusWriter or ResophNotes.</p>
-
-<p>The basic structure of a simple text expansion script/hotstring looks like this:</p>
-
-<pre><code>:oc:abbreviation::expanded text
-</code></pre>
-
-<p><strong>Side note:</strong> the <code>oc</code> in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.</p>
-
-<h3 id="markdown-automation">Markdown automation</h3>
-
-<p>Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like <code>[]</code> and <code>()</code>. Instead of having to type out all of the characters when I want to create link I only have to type <code>.mdlnk</code> thanks to this simple hotstring:</p>
-
-<pre><code>:oc:.mdlnk::[]({"}{"})
-</code></pre>
-
-<p>After a simple hit on the spacebar the <code>.mdlnk</code> transforms into <code>[]("")</code> (the quotation marks, along with a couple of other characters, has to be wrapped inside curly brackets in order to show since they’re used in the real syntax). Instead of having to fiddle with it I can easily paste the link in it and move on which works much better as you can imagine. I’ve also created similar hotstrings for many other things such as images (<code>.mdimg</code>) and referenced-styled links (<code>.mdrefi</code> and <code>.mdrefl</code>), although I rarely use those.</p>
-
-<p><strong>Another side note:</strong> since I’m new to this whole scripting thing there’s no doubt at all that they could be more advanced and help even further with a more automated writing workflow but I haven’t had time to learn that just yet. I could probably expand the above link script to actually add a link from the clipboard directly into it which I’m going to do once I have the time to sit down and figure it out.</p>
-
-<p>So to wrap things up, if you want to speed up your repetitive writing then AutoHotKey is definitively it. Don’t let the lack of a fancy GUI scare you off. If I can make it work, you can too.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->

@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>A modern web designer's workflow</title>
+                <description>&lt;p&gt;A really nice talk from Mr. &lt;a href=&quot;http://css-tricks.com/&quot; title=&quot;CSS-Tricks&quot;&gt;CSS-Tricks&lt;/a&gt; himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!&lt;/p&gt;
+</description>
+                <published>March 11, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/11/a-modern-web-designers-workflow</link>
+              </item>
+            
+              <item>
                 <title>A brand new blog</title>
                 <description>&lt;p&gt;I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface &lt;a href=&quot;http://www.google.com/webfonts/specimen/Roboto&quot; title=&quot;Roboto&quot;&gt;Roboto&lt;/a&gt; a few weeks ago and I like it so much that I decided to use it, which was the first step.&lt;/p&gt;
 
@@ -131,35 +139,6 @@ end
 </description>
                 <published>February 28, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin</link>
-              </item>
-            
-              <item>
-                <title>Ack on Windows</title>
-                <description>&lt;p&gt;I recently finally tried out &lt;a href=&quot;http://betterthangrep.com/&quot; title=&quot;Ack&quot;&gt;Ack&lt;/a&gt; which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.&lt;/p&gt;
-
-&lt;p&gt;First things first, &lt;a href=&quot;http://www.perl.org/&quot; title=&quot;Perl&quot;&gt;Perl&lt;/a&gt; needs to be install on the system. If you have either &lt;a href=&quot;http://git-scm.com/&quot; title=&quot;Git&quot;&gt;Git&lt;/a&gt; or &lt;a href=&quot;http://rubyinstaller.org/add-ons/devkit/&quot; title=&quot;DevKit&quot;&gt;DevKit&lt;/a&gt; installed then you’re good to go.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Download the standalone script from the &lt;a href=&quot;http://betterthangrep.com/install/&quot; title=&quot;How to install ack&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Create a &lt;code&gt;bat&lt;/code&gt; file and add the following to it: &lt;code&gt;@&quot;C:\path\to\perl.exe&quot; C:\path\to\ack.pl %*&lt;/code&gt;. Change the paths so that they point to the relevant places.&lt;/li&gt;
-  &lt;li&gt;Save the file as &lt;code&gt;ack.bat&lt;/code&gt; and place it somewhere in your system environment path, or create a new folder and add it to said path.&lt;sup id=&quot;fnref:20130221-1&quot;&gt;&lt;a href=&quot;#fn:20130221-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;Last, but not least, create an alias for the &lt;code&gt;bat&lt;/code&gt; file in your &lt;code&gt;.bash_profile&lt;/code&gt; if you want to get it to work with &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;You can use the same steps to create a more “sophisticated” way of running any kind of script too. Let’s say you have a script called &lt;code&gt;foo.rb&lt;/code&gt;. You want to run it straight from the command line but you don’t necessary want to turn into a full fledged gem. Just change the the first path in the &lt;code&gt;bat&lt;/code&gt; file so it points to your binary &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; file and the second to your actually script and you’re all good!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130221-1&quot;&gt;
-      &lt;p&gt;Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.&lt;a href=&quot;#fnref:20130221-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>February 21, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/21/ack-on-windows</link>
               </item>
             
     </channel>
