@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Powering down Google Reader</title>
+                <description>&lt;p&gt;Even though I’ve tried to trim down my subscriptions I’m still a big fan of &lt;a href=&quot;ww.google.com/reader&quot; title=&quot;Google Reader&quot;&gt;Google Reader&lt;/a&gt; and it’s a shame that they’re pulling the plug on it. I switched to &lt;a href=&quot;http://www.feedly.com/home&quot;&gt;Feedly&lt;/a&gt; earlier today and it seems to do the job fairly well. The iOS app is beautiful too but I’m not completely sold on the whole magazine-like interface. The intergration with other web services is pretty amazing though.&lt;/p&gt;
+</description>
+                <published>March 14, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/14/powering-down-google-reader</link>
+              </item>
+            
+              <item>
                 <title>A modern web designer's workflow</title>
                 <description>&lt;p&gt;A really nice talk from Mr. &lt;a href=&quot;http://css-tricks.com/&quot; title=&quot;CSS-Tricks&quot;&gt;CSS-Tricks&lt;/a&gt; himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!&lt;/p&gt;
 </description>
@@ -118,27 +126,6 @@ end
 </description>
                 <published>March  3, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings</link>
-              </item>
-            
-              <item>
-                <title>WEBrick and Cygwin</title>
-                <description>&lt;p&gt;There’s no secret that I’ve become a big fan of &lt;a href=&quot;http://www.cygwin.com/&quot; title=&quot;Cygwin&quot;&gt;Cygwin&lt;/a&gt; and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running &lt;a href=&quot;http://www.ruby-lang.org/en/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt;, or more specifically &lt;a href=&quot;http://rubygems.org/&quot; title=&quot;RubyGems&quot;&gt;RubyGems&lt;/a&gt; under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with &lt;a href=&quot;http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot; title=&quot;Webbrick&quot;&gt;WEBrick&lt;/a&gt;&lt;sup id=&quot;fnref:20130228-1&quot;&gt;&lt;a href=&quot;#fn:20130228-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: &lt;code&gt;taskkill /F /PID {num}&lt;/code&gt;&lt;sup id=&quot;fnref:20130228-2&quot;&gt;&lt;a href=&quot;#fn:20130228-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The &lt;code&gt;{num}&lt;/code&gt; is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130228-1&quot;&gt;
-      &lt;p&gt;Which is the default server for &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://www.sinatrarb.com/&quot; title=&quot;Sinatra&quot;&gt;Sinatra&lt;/a&gt;.&lt;a href=&quot;#fnref:20130228-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130228-2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1&quot; title=&quot;How do I killa a Rails Webbrick server?&quot;&gt;The answer was found on StackOverflow&lt;/a&gt;, as expected.&lt;a href=&quot;#fnref:20130228-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>February 28, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin</link>
               </item>
             
     </channel>

@@ -47,6 +47,38 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/09/18/my-adventure-with-peppermint-os" alt="My adventure with Peppermint OS" title="My adventure with Peppermint OS">
+        My adventure with Peppermint OS
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on September 18, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux" title="Linux">Linux</a>, <a href="/blog/tag/Open Source" alt="Open Source" title="Open Source">Open Source</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>I’ve always been a bit of a geek, so naturally I decided to try out a lightweight <em>Linux</em> distro on my old computer (mostly just for kicks). I looked around on the internet and came across a couple of distros that looked good, and in the end I decided to try out <a href="http://peppermintos.com/" title="Peppermint OS">Peppermint OS</a>. The ISO file was small enough for me to burn it onto a CD rather than a DVD, plus I was confident (well, as confident as you can be without having actually tried it) that my old computer could atleast handle it pretty well.</p>
+
+<h2 id="peppermint-os">Peppermint OS</h2>
+
+<p>Here’s an short introduction borrowed from the official website:</p>
+
+<blockquote>
+  <p>Peppermint was designed for enhanced mobility, efficiency and ease of use. While other operating systems are taking 10 minutes to load, you are already connected, communicating and getting things done. And, unlike other operating systems, Peppermint is ready to use out of the box.</p>
+</blockquote>
+
+<p>Even though my old computer is borderline ancient, it took about 10-15 minutes at the most to install the whole thing (I did run in to some problems at first, but it think that was the computer’s fault rather than the actually OS itself). The initial setup went smooth too, though it took a couple of minutes before my internet connection worked. So far I haven’t been tweaking that much, but I’m defintively looking forward to doing that.</p>
+
+<p><img src="/images/blog/2012-09-18-peppermint-os.png" alt="Peppermint OS Three" title="Peppermint OS Three" /></p>
+
+<p>This is the first time that I’ve install a Linux distro (I’ve poked around in Ubuntu a few times) and I must say that so far I’m impressed. The next step for me is to try to customize it a bit, especially the look of the shell. I’m quite excited to dive in to the (hopefully) wonderful world of Linux. I might even get stuck in it.</p>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/09/17/cleaning-up" alt="Cleaning up" title="Cleaning up">
         Cleaning up
       </a>
@@ -131,63 +163,6 @@
 <p><img src="/images/blog/2012-09-13-resophnotes.png" alt="ResophNotes" title="ResophNotes" /></p>
 
 <p>It’s maybe not be pretty as it’s Apple counterparts, but the foundation is the same. It’s nice to have all of your notes in the same place, and I really like that you’re able to tag them. It means that I can place all of my blog post ideas in a tag called “blog” and so on. It also has a lot of options, meaning you can customize it to your liking. For example, I’m planning to hide all of the icons once I’ve learned all of the shortcuts properly since I like a more clean cut look. I’ve been only using it for a couple of days, but so far so good.</p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/09/11/external-links-in-the-post-title" alt="External links in the post title" title="External links in the post title">
-        External links in the post title
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on September 11, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>A couple of days ago I finally managed to add the ability to have external links in my post titles on this site. I tried and I tried, but for some reason I couldn’t get it to work properly. I waited a couple of days and tried again and then boom, it worked. I don’t know what I did wrong the first time, but I’m glad that it now works. Thanks to the YAML Front Matter and Liquid tags it’s actually not that hard to add to your site. I don’t really know if I’ll use it that much, but I quite like to have that option.</p>
-
-<h2 id="how-to-add-the-external-links">How to add the external links</h2>
-
-<p>The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:</p>
-
-<pre><code>external-link: http://www.example.com/
-</code></pre>
-
-<p>If you don’t want to add an external link to your title, just replace the link itself with <code>false</code> or remove the whole thing. The markup of your post title on your front page should look like something like this:</p>
-
-<pre><code>&lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
-</code></pre>
-
-<p>Instead of having the above markup, replace it with something like this:</p>
-
-<pre><code>{% if post.external-link %}
-  &lt;h1&gt;&lt;a href="{{ post.external-link }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
-{% else %}
-  &lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
-{% endif %}
-</code></pre>
-
-<p>I also added this in the markup for my post layout:</p>
-
-<pre><code>{% if page.external-link %}
-  &lt;h1&gt;&lt;a href="{{ page.external-link }}"&gt;{{ page.title }}&lt;/a&gt;&lt;/h1&gt;
-{% else %}
-  &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
-{% endif %}
-</code></pre>
-
-<p>And you’re done! I would encourage you to also add an actual permalink to your own post if you’re using external links, like this for example:</p>
-
-<pre><code>&lt;p&gt;&lt;a href="{{ post.url }}"&gt;Permalink&lt;/a&gt;&lt;/p&gt;
-</code></pre>
-
-<h3 id="a-side-note">A side note</h3>
-
-<p>I actually had to add another plugin so I could show the Liquid tags since Jekyll parses them automatically. You can find it in <a href="https://gist.github.com/1020852" title="Raw tag for Jekyll">this gist</a> over at GitHub.</p>
 
     </section><!-- .post-content -->
 </article><!-- .post -->
