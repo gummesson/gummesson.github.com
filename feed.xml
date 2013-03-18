@@ -6,6 +6,24 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Yes we Jekyll</title>
+                <description>&lt;p&gt;A rather nice and comprehensive guide on  how to get started with Jekyll and understanding all of it’s different components. I definitively wished that something like this was around when I decided to start using it.&lt;sup id=&quot;fnref:20130318-1&quot;&gt;&lt;a href=&quot;#fn:20130318-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130318-1&quot;&gt;
+      &lt;p&gt;Although I quite enjoyed the learning experience.&lt;a href=&quot;#fnref:20130318-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>March 18, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/18/yes-we-jekyll</link>
+              </item>
+            
+              <item>
                 <title>Powering down Google Reader</title>
                 <description>&lt;p&gt;Even though I’ve tried to trim down my subscriptions I’m still a big fan of &lt;a href=&quot;ww.google.com/reader&quot; title=&quot;Google Reader&quot;&gt;Google Reader&lt;/a&gt; and it’s a shame that they’re pulling the plug on it. I switched to &lt;a href=&quot;http://www.feedly.com/home&quot;&gt;Feedly&lt;/a&gt; earlier today and it seems to do the job fairly well. The iOS app is beautiful too but I’m not completely sold on the whole magazine-like interface. The intergration with other web services is pretty amazing though.&lt;/p&gt;
 </description>
@@ -29,7 +47,7 @@
 
 &lt;p&gt;The theme is based on &lt;a href=&quot;http://noahfrederick.com/&quot; title=&quot;Noah Fredrick&quot;&gt;Noah Frederick’s&lt;/a&gt; beautiful &lt;a href=&quot;http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/&quot; title=&quot;Peppermint terminal thehe&quot;&gt;Peppermint theme&lt;/a&gt; for the OS X’s terminal. I remember stumbling onto his &lt;a href=&quot;http://noahfrederick.com/vim-color-scheme-hemisu/&quot; title=&quot;Hemisu&quot;&gt;Hemisu colorscheme&lt;/a&gt; for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.&lt;/p&gt;
 
-&lt;h2 id=&quot;sass--compass--3&quot;&gt;Sass + Compass = &amp;lt;3&lt;/h2&gt;
+&lt;h2 id=&quot;sass--compass--hearts&quot;&gt;Sass + Compass = ♥&lt;/h2&gt;
 
 &lt;p&gt;I also used &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;Sass&quot;&gt;Sass&lt;/a&gt; and &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;Compass&lt;/a&gt; exclusively for the CSS writing. I’ve been wanting to use it for a long time and I even tried to convert the old design’s CSS to it, but I gave up pretty quickly. This time I didn’t and I of course used &lt;a href=&quot;https://github.com/gummesson/smallwork&quot; title=&quot;Smallwork&quot;&gt;Smallwork&lt;/a&gt; as a base which made the process a lot more easier and faster. Redesigning this site was also one of the things that made me re-write Smallwork.&lt;/p&gt;
 
@@ -88,44 +106,6 @@
 </description>
                 <published>March  5, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/05/re-releasing-smallwork</link>
-              </item>
-            
-              <item>
-                <title>Fixing Jekyll's encoding shenanings</title>
-                <description>&lt;p&gt;After installing the 0.12.1 version of &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as &lt;code&gt;UTF-8&lt;/code&gt;, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. &lt;code&gt;set LANG=en_EN.UTF-8&lt;/code&gt; for Windows or &lt;code&gt;export LANG=en_EN.UTF-8&lt;/code&gt;&lt;sup id=&quot;fnref:20130303-1&quot;&gt;&lt;a href=&quot;#fn:20130303-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for Unix. Since I’m a lazy person I of course implemented it in my &lt;code&gt;Rakefile&lt;/code&gt;, similar to this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;require &#39;rbconfig&#39;
-
-LANG = en_EN.UTF-8
-
-if RbConfig::CONFIG[&quot;host_os&quot;] =~ /mswin|mingw/
-  SET = &quot;set&quot;
-else
-  SET = &quot;export&quot;
-end
-
-task :build do
-  system &quot;#{SET} LANG=#{LANG} &amp;amp;&amp;amp; jekyll&quot;
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;RbConfig&lt;/code&gt; part is actually a neat trick I found a couple of weeks ago. It apparently works better than using &lt;code&gt;RUBY_PLATFORM&lt;/code&gt; since it picks up the actual OS rather than the Ruby platform.&lt;sup id=&quot;fnref:20130303-2&quot;&gt;&lt;a href=&quot;#fn:20130303-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; I’m not sure that the &lt;code&gt;require&lt;/code&gt; part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: &lt;code&gt;alias jekyll=&quot;export LANG=en_EN.UTF-8 &amp;amp;&amp;amp; jekyll&quot;&lt;/code&gt; or something like that.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130303-1&quot;&gt;
-      &lt;p&gt;I actually set my language to &lt;code&gt;sv_SV.UTF-8&lt;/code&gt;, but I figured that using the english version in an example is better.&lt;a href=&quot;#fnref:20130303-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130303-2&quot;&gt;
-      &lt;p&gt;Using &lt;code&gt;RUBY_PLATFORM&lt;/code&gt; when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.&lt;a href=&quot;#fnref:20130303-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March  3, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings</link>
               </item>
             
     </channel>
