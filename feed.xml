@@ -6,6 +6,27 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Giving jQuery another go</title>
+                <description>&lt;p&gt;A few months ago I started to play around with &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. Given that I was much more new to coding then it sadly didn’t take me long before I kind of gave up. After playing around with &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; for a few months I decided to give jQuery another go and so far I think that I’ve got the basics down. Ruby and jQuery are totally different, but after learning the general basics of coding it’s been relatively easy to pick it up&lt;sup id=&quot;fnref:20130321-1&quot;&gt;&lt;a href=&quot;#fn:20130321-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I’m obviously very much a beginner though. I’ve thrown together a few simple scripts&lt;sup id=&quot;fnref:20130321-2&quot;&gt;&lt;a href=&quot;#fn:20130321-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; in a GitHub repo that I’ve appropriately named “&lt;a href=&quot;https://github.com/gummesson/yayquery&quot; title=&quot;yayQuery&quot;&gt;yayQuery&lt;/a&gt;” that might come in handy. It’s been pretty fun and who knows, some day I might get the hang of this whole front-end development thing?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130321-1&quot;&gt;
+      &lt;p&gt;Especially when the syntax is quite easy for common things, like &lt;code&gt;hide()&lt;/code&gt; and &lt;code&gt;show()&lt;/code&gt;.&lt;a href=&quot;#fnref:20130321-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130321-2&quot;&gt;
+      &lt;p&gt;I’ve currently figured out how to scroll smoothly to IDs using anchors, how to make a dropdown menu and a simple slideshow. Yay indeed.&lt;a href=&quot;#fnref:20130321-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>March 21, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/21/giving-jquery-another-go</link>
+              </item>
+            
+              <item>
                 <title>Yes we Jekyll</title>
                 <description>&lt;p&gt;A rather nice and comprehensive guide on  how to get started with Jekyll and understanding all of it’s different components. I definitively wished that something like this was around when I decided to start using it.&lt;sup id=&quot;fnref:20130318-1&quot;&gt;&lt;a href=&quot;#fn:20130318-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
@@ -83,29 +104,6 @@
 </description>
                 <published>March  9, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/09/a-brand-new-blog</link>
-              </item>
-            
-              <item>
-                <title>Re-releasing Smallwork</title>
-                <description>&lt;p&gt;Back in January I wrote a small paragraph about my SCSS “framework” &lt;a href=&quot;https://github.com/gummesson/smallwork&quot; title=&quot;Smallwork&quot;&gt;Smallwork&lt;/a&gt;. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.&lt;/p&gt;
-
-&lt;p&gt;I also created yet another &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; plugin, this time just a simple wrapper for &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;Compass&lt;/a&gt;, which &lt;em&gt;Smallwork&lt;/em&gt; is built with. I was getting sick of having to type either &lt;code&gt;:!compass compile&lt;/code&gt; or &lt;code&gt;:sh&lt;/code&gt; and then &lt;code&gt;compass compile&lt;/code&gt; so I threw together a really basic function that makes it much easier. Now I only have to type &lt;code&gt;:CompassCompile&lt;/code&gt;. Another nice feature is that you don’t actually have to close the command prompt&lt;sup id=&quot;fnref:20130305-1&quot;&gt;&lt;a href=&quot;#fn:20130305-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which means that you can use &lt;code&gt;:CompassWatch&lt;/code&gt; without it interfering with Vim&lt;sup id=&quot;fnref:20130305-2&quot;&gt;&lt;a href=&quot;#fn:20130305-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. If all goes well I think I’ll even publish it on the official Vim scripts website too.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130305-1&quot;&gt;
-      &lt;p&gt;Normally you can’t do anything until you’ve exited the command prompt and hit &lt;code&gt;Enter&lt;/code&gt;, but a simple solution from the &lt;a href=&quot;http://vim.wikia.com/wiki/Execute_external_programs_asynchronously_under_Windows&quot; title=&quot;Execute external programs asynchronously under Windows&quot;&gt;Vim Wiki&lt;/a&gt; fixed that.&lt;a href=&quot;#fnref:20130305-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130305-2&quot;&gt;
-      &lt;p&gt;Atleast on Windows. I don’t think that there’s an easy way to do that on Unix, which is unfortunate.&lt;a href=&quot;#fnref:20130305-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March  5, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/05/re-releasing-smallwork</link>
               </item>
             
     </channel>
