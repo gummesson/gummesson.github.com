@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="icon" href="/assets/images/icons/favicon.png" type="img/png">
+    <link rel="icon" href="/assets/img/icons/favicon.png" type="img/png">
     <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
     <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
@@ -52,6 +52,62 @@
           <div class="column-twelve">
             <div class="site-content">
               
+  <article class="post">
+  
+    <h1>
+      <a href="http://ellengummesson.com/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog" title="A brand new blog">
+        A brand new blog
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on March  9, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>  
+    </p><!-- .smallprint -->
+  
+    <section class="post-content">
+      <p>I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface <a href="http://www.google.com/webfonts/specimen/Roboto" title="Roboto">Roboto</a> a few weeks ago and I like it so much that I decided to use it, which was the first step.</p>
+
+<h2 id="hey-what-is-that-theme">Hey, what is THAT theme?</h2>
+
+<p>The theme is based on <a href="http://noahfrederick.com/" title="Noah Fredrick">Noah Frederick’s</a> beautiful <a href="http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/" title="Peppermint terminal thehe">Peppermint theme</a> for the OS X’s terminal. I remember stumbling onto his <a href="http://noahfrederick.com/vim-color-scheme-hemisu/" title="Hemisu">Hemisu colorscheme</a> for <a href="http://www.vim.org/" title="Vim">Vim</a> and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.</p>
+
+<h2 id="sass--compass--hearts">Sass + Compass = ♥</h2>
+
+<p>I also used <a href="http://sass-lang.com/" title="Sass">Sass</a> and <a href="http://compass-style.org/" title="Compass">Compass</a> exclusively for the CSS writing. I’ve been wanting to use it for a long time and I even tried to convert the old design’s CSS to it, but I gave up pretty quickly. This time I didn’t and I of course used <a href="https://github.com/gummesson/smallwork" title="Smallwork">Smallwork</a> as a base which made the process a lot more easier and faster. Redesigning this site was also one of the things that made me re-write Smallwork.</p>
+
+<p>using Compass with Jekyll is also relatively easy by the way. I first tried out a couple of plugins, but I decided to implement it in my Rake task instead. While the plugins worked great it really bugged me that I couldn’t decide when to use <code>compass compile</code> and when to use <code>compass watch</code>. All I had to do was to add this to my <code>build</code> task in my <code>Rakefile</code>, before <code>jekyll</code> is run:</p>
+
+<pre><code>system "cd assets/ &amp;&amp; compass compile &amp;&amp; cd ../"
+</code></pre>
+
+<p>Simple and effective!</p>
+
+<h2 id="funish-trivia">Fun(ish) trivia</h2>
+
+<ul>
+  <li>I started the redesign on March 1st and I’ve made a total of 28 commits<sup id="fnref:20130309-1"><a href="#fn:20130309-1" rel="footnote">1</a></sup> to the git repository I used for the development.</li>
+  <li>I “skipped” support for Internet Explorer 8 in favor of using <code>[class^="column-"]:last-child</code> to remove the <code>margin-right</code> on the grid system<sup id="fnref:20130309-2"><a href="#fn:20130309-2" rel="footnote">2</a></sup>.</li>
+  <li>I also found a pretty cool Sass function called <code>darken()</code>, which made it easy finding a good background color for my <code>code</code> and <code>pre</code> tags and the subtle text shadow. All of the color functions for Sass are pretty cool, in fact.</li>
+  <li>The pink line at the bottom of the site uses the <a href="http://mystrd.at/modern-clean-css-sticky-footer/" title="Modern Clean CSS Sticky Footer">“James Dean Sticky Footer”</a> approach, which is a nice little hack. I love the name too!</li>
+  <li>I tried to change as little as possible when I did the CSS for the media queries. I pratically just changed the font size and some margins. That’s it.</li>
+</ul>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130309-1">
+      <p>I’m an obsessive commiter.<a href="#fnref:20130309-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20130309-2">
+      <p>I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.<a href="#fnref:20130309-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section><!-- .post-content -->
+</article><!-- .post -->
+
+
   <article class="post">
   
     <h1>
@@ -203,45 +259,6 @@ end
 </article><!-- .post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/02/16/more-vim-goodness" alt="More Vim goodness" title="More Vim goodness">
-        More Vim goodness
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on February 16, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>I feel like I start to sound like a fantatic when it comes to <a href="http://www.vim.org/" title="Vim">Vim</a>, but the truth is that I’m having so much fun with it that it’s hard to stop and thus I’ve created two more plugins: <a href="https://github.com/gummesson/voutliner.vim" title="voutliner.vim">Voutliner</a> and <a href="https://github.com/gummesson/footnotes.vim" title="footnotes.vim">Footnotes</a>.</p>
-
-<h2 id="voutliner">Voutliner</h2>
-
-<p><em>Voutliner</em> is a simple outlining tool<sup id="fnref:20130216-1"><a href="#fn:20130216-1" rel="footnote">1</a></sup>. I looked at both <a href="http://www.vim.org/scripts/script.php?script_id=3515" title="VimOutliner">VimOutliner</a> and <a href="http://www.vim.org/scripts/script.php?script_id=517" title="The Vim Outliner">TVO</a> but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. <em>Voutliner</em> is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.</p>
-
-<h2 id="footnotes">Footnotes</h2>
-
-<p>I like using footnotes but I hate having to manually enter the date for each and every one of them<sup id="fnref:20130216-2"><a href="#fn:20130216-2" rel="footnote">2</a></sup>. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press <code>F7</code> and the date will get added to every footnote automatically. Like <em>Voutliner</em> I doubt that many people will use it, but yet again it’s extremely useful for me.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130216-1">
-      <p>And it’s a really bad name.<a href="#fnref:20130216-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130216-2">
-      <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
           <div class="row">
           <div class="column-twelve">
             <nav class="pagination">
@@ -279,6 +296,8 @@ end
       </div><!-- .grid -->
     </div><!-- .container -->
     <div class="line-bottom"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/assets/js/scroll.js"></script>
   </body>
 </html>
 

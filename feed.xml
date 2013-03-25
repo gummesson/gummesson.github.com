@@ -6,6 +6,27 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>My adventure with Manjaro Linux</title>
+                <description>&lt;p&gt;After a few months of using &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;, which is based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt;, I decided to switch to &lt;a href=&quot;http://manjaro.org/&quot; title=&quot;Manjaro Linux&quot;&gt;Manjaro Linux&lt;/a&gt; instead. Even though I really like Crunchbang I wanted to have a go at using a &lt;a href=&quot;https://www.archlinux.org/&quot; title=&quot;Arch Linux&quot;&gt;Arch Linux&lt;/a&gt; based system, mainly because of the rolling release cycle. I’ve also heard that the package manager, &lt;a href=&quot;https://wiki.archlinux.org/index.php/Pacman&quot; title=&quot;Pacman&quot;&gt;Pacman&lt;/a&gt;&lt;sup id=&quot;fnref:20130325-1&quot;&gt;&lt;a href=&quot;#fn:20130325-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is fantastic. I didn’t really want to install it from scratch though&lt;sup id=&quot;fnref:20130325-2&quot;&gt;&lt;a href=&quot;#fn:20130325-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and that’s when discovered Manjaro. I might do it at some other point, but I really like nothing having to install everything by myself. What’s even more awesome that it came with &lt;a href=&quot;http://openbox.org/&quot; title=&quot;Openbox&quot;&gt;Openbox&lt;/a&gt; edition, which I’m a big fan of. I know that Arch has a reputation of breaking constantly, but since I’m going to use it on a secondary machine it doesn’t bother me much. I might even learn something from a little breakage, although I hope I won’t encounter it too often.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130325-1&quot;&gt;
+      &lt;p&gt;Which is an amazing name, by the way.&lt;a href=&quot;#fnref:20130325-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130325-2&quot;&gt;
+      &lt;p&gt;Know your limitations. I’m sure that I wouldn’t have succeed with it.&lt;a href=&quot;#fnref:20130325-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>March 25, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/25/my-adventure-with-manjaro-linux</link>
+              </item>
+            
+              <item>
                 <title>Giving jQuery another go</title>
                 <description>&lt;p&gt;A few months ago I started to play around with &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. Given that I was much more new to coding then it sadly didn’t take me long before I kind of gave up. After playing around with &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; for a few months I decided to give jQuery another go and so far I think that I’ve got the basics down. Ruby and jQuery are totally different, but after learning the general basics of coding it’s been relatively easy to pick it up&lt;sup id=&quot;fnref:20130321-1&quot;&gt;&lt;a href=&quot;#fn:20130321-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I’m obviously very much a beginner though. I’ve thrown together a few simple scripts&lt;sup id=&quot;fnref:20130321-2&quot;&gt;&lt;a href=&quot;#fn:20130321-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; in a GitHub repo that I’ve appropriately named “&lt;a href=&quot;https://github.com/gummesson/yayquery&quot; title=&quot;yayQuery&quot;&gt;yayQuery&lt;/a&gt;” that might come in handy. It’s been pretty fun and who knows, some day I might get the hang of this whole front-end development thing?&lt;/p&gt;
 
@@ -58,52 +79,6 @@
 </description>
                 <published>March 11, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/11/a-modern-web-designers-workflow</link>
-              </item>
-            
-              <item>
-                <title>A brand new blog</title>
-                <description>&lt;p&gt;I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface &lt;a href=&quot;http://www.google.com/webfonts/specimen/Roboto&quot; title=&quot;Roboto&quot;&gt;Roboto&lt;/a&gt; a few weeks ago and I like it so much that I decided to use it, which was the first step.&lt;/p&gt;
-
-&lt;h2 id=&quot;hey-what-is-that-theme&quot;&gt;Hey, what is THAT theme?&lt;/h2&gt;
-
-&lt;p&gt;The theme is based on &lt;a href=&quot;http://noahfrederick.com/&quot; title=&quot;Noah Fredrick&quot;&gt;Noah Frederick’s&lt;/a&gt; beautiful &lt;a href=&quot;http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/&quot; title=&quot;Peppermint terminal thehe&quot;&gt;Peppermint theme&lt;/a&gt; for the OS X’s terminal. I remember stumbling onto his &lt;a href=&quot;http://noahfrederick.com/vim-color-scheme-hemisu/&quot; title=&quot;Hemisu&quot;&gt;Hemisu colorscheme&lt;/a&gt; for &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.&lt;/p&gt;
-
-&lt;h2 id=&quot;sass--compass--hearts&quot;&gt;Sass + Compass = ♥&lt;/h2&gt;
-
-&lt;p&gt;I also used &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;Sass&quot;&gt;Sass&lt;/a&gt; and &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;Compass&lt;/a&gt; exclusively for the CSS writing. I’ve been wanting to use it for a long time and I even tried to convert the old design’s CSS to it, but I gave up pretty quickly. This time I didn’t and I of course used &lt;a href=&quot;https://github.com/gummesson/smallwork&quot; title=&quot;Smallwork&quot;&gt;Smallwork&lt;/a&gt; as a base which made the process a lot more easier and faster. Redesigning this site was also one of the things that made me re-write Smallwork.&lt;/p&gt;
-
-&lt;p&gt;using Compass with Jekyll is also relatively easy by the way. I first tried out a couple of plugins, but I decided to implement it in my Rake task instead. While the plugins worked great it really bugged me that I couldn’t decide when to use &lt;code&gt;compass compile&lt;/code&gt; and when to use &lt;code&gt;compass watch&lt;/code&gt;. All I had to do was to add this to my &lt;code&gt;build&lt;/code&gt; task in my &lt;code&gt;Rakefile&lt;/code&gt;, before &lt;code&gt;jekyll&lt;/code&gt; is run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;system &quot;cd assets/ &amp;amp;&amp;amp; compass compile &amp;amp;&amp;amp; cd ../&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Simple and effective!&lt;/p&gt;
-
-&lt;h2 id=&quot;funish-trivia&quot;&gt;Fun(ish) trivia&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I started the redesign on March 1st and I’ve made a total of 28 commits&lt;sup id=&quot;fnref:20130309-1&quot;&gt;&lt;a href=&quot;#fn:20130309-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to the git repository I used for the development.&lt;/li&gt;
-  &lt;li&gt;I “skipped” support for Internet Explorer 8 in favor of using &lt;code&gt;[class^=&quot;column-&quot;]:last-child&lt;/code&gt; to remove the &lt;code&gt;margin-right&lt;/code&gt; on the grid system&lt;sup id=&quot;fnref:20130309-2&quot;&gt;&lt;a href=&quot;#fn:20130309-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-  &lt;li&gt;I also found a pretty cool Sass function called &lt;code&gt;darken()&lt;/code&gt;, which made it easy finding a good background color for my &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;pre&lt;/code&gt; tags and the subtle text shadow. All of the color functions for Sass are pretty cool, in fact.&lt;/li&gt;
-  &lt;li&gt;The pink line at the bottom of the site uses the &lt;a href=&quot;http://mystrd.at/modern-clean-css-sticky-footer/&quot; title=&quot;Modern Clean CSS Sticky Footer&quot;&gt;“James Dean Sticky Footer”&lt;/a&gt; approach, which is a nice little hack. I love the name too!&lt;/li&gt;
-  &lt;li&gt;I tried to change as little as possible when I did the CSS for the media queries. I pratically just changed the font size and some margins. That’s it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130309-1&quot;&gt;
-      &lt;p&gt;I’m an obsessive commiter.&lt;a href=&quot;#fnref:20130309-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130309-2&quot;&gt;
-      &lt;p&gt;I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.&lt;a href=&quot;#fnref:20130309-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March  9, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/09/a-brand-new-blog</link>
               </item>
             
     </channel>
