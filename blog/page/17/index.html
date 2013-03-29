@@ -55,6 +55,35 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling upon a good solution" title="Stumbling upon a good solution">
+        Stumbling upon a good solution
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>  
+    </p><!-- .smallprint -->
+  
+  <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
+
+<h2 id="the-solution">The solution</h2>
+
+<p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
+
+<pre><code>[class^="col-"]:last-child {
+  margin-right: 0;
+}
+</code></pre>
+
+<p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
+
+<p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
+<!-- content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My first plugin for Jekyll" title="My first plugin for Jekyll">
         My first plugin for Jekyll
       </a>
@@ -63,8 +92,7 @@
       Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
+  <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
 
 <h2 id="source-code">Source code</h2>
 
@@ -92,8 +120,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <pre><code>{% vimeo 12345678 %}
 </code></pre>
 
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -108,8 +135,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
       Posted on August 26, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>Continuing with my Jekyll series, here’s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
+  <p>Continuing with my Jekyll series, here’s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
 
 <h2 id="pagination">Pagination</h2>
 
@@ -144,8 +170,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 <h2 id="youtube">Youtube</h2>
 
 <p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won’t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -160,8 +185,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
       Posted on August 25, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/Sass" alt="Sass" title="Sass">Sass</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>Disclaimer: the following blog post is extremely geeky and contains A LOT of code.</p>
+  <p>Disclaimer: the following blog post is extremely geeky and contains A LOT of code.</p>
 
 <p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I’ve seen it being mentioned almost daily for quite a while. I didn’t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it’s still readable. I’ve tried a few plugins that enables automatic highlighting, but I haven’t come across one that I really love. I also had remove nearly all of my comments in the code but I’m sure it’s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
 
@@ -314,8 +338,7 @@ a:hover, a:focus {
 </code></pre>
 
 <p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don’t have to change anything else. I think I’ll try out Sass for a while and see how it goes. There’s a lot more to it than just simple variables and math, so I’m looking forward to see what I can come up with.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -330,8 +353,7 @@ a:hover, a:focus {
       Posted on August 23, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Git" alt="Git" title="Git">Git</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p><strong>Note:</strong> this isn’t critism, rather a documentation of my own stupidity.</p>
+  <p><strong>Note:</strong> this isn’t critism, rather a documentation of my own stupidity.</p>
 
 <p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub’s built-in editor since that’s a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said “DETACHED HEAD”. After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this. </p>
 
@@ -342,38 +364,7 @@ a:hover, a:focus {
 <p>I again did a google search but this time around I didn’t come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I’m still able to update the site. I don’t know if I screwed something up or if it’s a bug. I’m hoping that the problem will solve itself, even though it’s highly unlikely.</p>
 
 <p>Damn me and my apparent laziness.</p>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries" alt="The hassles of media queries" title="The hassles of media queries">
-        The hassles of media queries
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn’t get them to properly work. Then it hit me that I’d forgot to add this in the <code>&lt;head&gt;</code>:</p>
-
-<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
-</code></pre>
-
-<p>Note to self: don’t be stupid. It’ll save you a lot of time.</p>
-
-<p>I also had some problems with my iPhone’s Retina display, but after some digging I found a “hack” that made it work properly so that the media queries look the same as on a regular browser:</p>
-
-<pre><code>(-webkit-min-device-pixel-ratio: 2)
-</code></pre>
-
-<p>To my defense I’m still pretty new to all of this, but still… I feel really dumb. Now they finally works and I’m totally happy, but I don’t know whether or not I should be scared of the fact that I don’t own an iPad… Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -415,7 +406,7 @@ a:hover, a:focus {
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 

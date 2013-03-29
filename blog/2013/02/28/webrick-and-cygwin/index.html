@@ -58,7 +58,6 @@
     <p class="smallprint">
       Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>
     </p><!-- .smallprint -->
-    <section class="post-content">
       <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a>, or more specifically <a href="http://rubygems.org/" title="RubyGems">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html" title="Webbrick">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
 
 <hr />
@@ -73,8 +72,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 
   <section class="comments">
   <h1>Comments</h1>
@@ -91,7 +89,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
-</section> <!-- .comments -->
+</section><!-- .comments -->
 
 
 </article><!-- .post -->
@@ -117,7 +115,7 @@
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 

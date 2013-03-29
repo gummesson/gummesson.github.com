@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Guard is your best friend</title>
+                <description>&lt;p&gt;A really nice and short screencast from &lt;a href=&quot;http://net.tutsplus.com/&quot; title=&quot;Nettuts&quot;&gt;Nettuts&lt;/a&gt; showcasing how to use &lt;a href=&quot;https://github.com/guard/guard&quot; title=&quot;Guard&quot;&gt;Guard&lt;/a&gt; for file monitoring and task automation. I’ve hacked together a &lt;a href=&quot;https://github.com/gummesson/ellengummesson/blob/master/Rakefile&quot; title=&quot;Rakefile&quot;&gt;Rakefile&lt;/a&gt; for similar purposes, but I can definitively see the appeal of it.&lt;/p&gt;
+</description>
+                <published>March 29, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/03/29/guard-is-your-best-friend</link>
+              </item>
+            
+              <item>
                 <title>My adventure with Manjaro Linux</title>
                 <description>&lt;p&gt;After a few months of using &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;, which is based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt;, I decided to switch to &lt;a href=&quot;http://manjaro.org/&quot; title=&quot;Manjaro Linux&quot;&gt;Manjaro Linux&lt;/a&gt; instead. Even though I really like Crunchbang I wanted to have a go at using a &lt;a href=&quot;https://www.archlinux.org/&quot; title=&quot;Arch Linux&quot;&gt;Arch Linux&lt;/a&gt; based system, mainly because of the rolling release cycle. I’ve also heard that the package manager, &lt;a href=&quot;https://wiki.archlinux.org/index.php/Pacman&quot; title=&quot;Pacman&quot;&gt;Pacman&lt;/a&gt;&lt;sup id=&quot;fnref:20130325-1&quot;&gt;&lt;a href=&quot;#fn:20130325-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is fantastic. I didn’t really want to install it from scratch though&lt;sup id=&quot;fnref:20130325-2&quot;&gt;&lt;a href=&quot;#fn:20130325-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and that’s when discovered Manjaro. I might do it at some other point, but I really like nothing having to install everything by myself. What’s even more awesome that it came with &lt;a href=&quot;http://openbox.org/&quot; title=&quot;Openbox&quot;&gt;Openbox&lt;/a&gt; edition, which I’m a big fan of. I know that Arch has a reputation of breaking constantly, but since I’m going to use it on a secondary machine it doesn’t bother me much. I might even learn something from a little breakage, although I hope I won’t encounter it too often.&lt;/p&gt;
 
@@ -71,14 +79,6 @@
 </description>
                 <published>March 14, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/14/powering-down-google-reader</link>
-              </item>
-            
-              <item>
-                <title>A modern web designer's workflow</title>
-                <description>&lt;p&gt;A really nice talk from Mr. &lt;a href=&quot;http://css-tricks.com/&quot; title=&quot;CSS-Tricks&quot;&gt;CSS-Tricks&lt;/a&gt; himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!&lt;/p&gt;
-</description>
-                <published>March 11, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/11/a-modern-web-designers-workflow</link>
               </item>
             
     </channel>

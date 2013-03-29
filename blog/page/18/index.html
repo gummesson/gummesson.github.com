@@ -55,6 +55,34 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/08/22/the-hassles-of-media-queries" alt="The hassles of media queries" title="The hassles of media queries">
+        The hassles of media queries
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on August 22, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML" title="HTML">HTML</a>  
+    </p><!-- .smallprint -->
+  
+  <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn’t get them to properly work. Then it hit me that I’d forgot to add this in the <code>&lt;head&gt;</code>:</p>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
+</code></pre>
+
+<p>Note to self: don’t be stupid. It’ll save you a lot of time.</p>
+
+<p>I also had some problems with my iPhone’s Retina display, but after some digging I found a “hack” that made it work properly so that the media queries look the same as on a regular browser:</p>
+
+<pre><code>(-webkit-min-device-pixel-ratio: 2)
+</code></pre>
+
+<p>To my defense I’m still pretty new to all of this, but still… I feel really dumb. Now they finally works and I’m totally happy, but I don’t know whether or not I should be scared of the fact that I don’t own an iPad… Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
+<!-- content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit and Jekyll" title="Windows 7, Ruby, DevKit and Jekyll">
         Windows 7, Ruby, DevKit and Jekyll
       </a>
@@ -63,8 +91,7 @@
       Posted on August 21, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>To tell you the truth, I wasn’t that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn’t really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
+  <p>To tell you the truth, I wasn’t that familiar with the whole Ruby thing when I decided to start using <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>. I practically had to learn it by trial, error and finally success since I couldn’t really find a good guide on how to do it. I thought that it would be good to write it all down and share it (mostly for my own sake).</p>
 
 <h2 id="installing-ruby">Installing Ruby</h2>
 
@@ -104,8 +131,7 @@
 </ul>
 
 <p><strong>Note:</strong> You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -120,8 +146,7 @@
       Posted on August 20, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p><em>… Or: “How I learned to stop worrying and love the command line”.</em></p>
+  <p><em>… Or: “How I learned to stop worrying and love the command line”.</em></p>
 
 <p>I love WordPress. I think it’s a really great CMS and the community is huge, to say the least. However, I feel that it’s sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I’d choose it in a heartbeat. But since I don’t plan to do that I wanted something smaller. I’ve been playing around with <a href="http://www.get-simple.info/" title="GetSimple CMS">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn’t really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn’t feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
 
@@ -140,8 +165,7 @@
 <p>It’s incredibly lightweight. It doesn’t need a database or any back end language like PHP at all, which means that you don’t have to worry about the database breaking and you can host it wherever you want to. The file size of a site which consists of just static pages is ridiciously small too (this whole site takes up about 200 kb as of right now) and above all, it’s highly customizable. One big thing that actually irks me about WordPress is that it’s filled with many pre-named classes and functions that you can’t change. Well, you could go into the source and hammer away there, but I’d rather not do that. With Jekyll I can actually change the look of the site in a matter of minutes and I can easily add a new class wherever I want if I need to. It only generates the things that I’ve added by myself. The only disadvantage is that I need to sit in front of my computer in order for me to use Jekyll. It doesn’t really matter to me, since I’ve never been comfortable with writing and publish post with my phone or via email.</p>
 
 <p>Like I said in my previous post, it took me some time to actually get it up and running, but now I’m finally happy. It’s not the most convenient solution, but it’s simple enough for me. I’ll probably write a couple of more post about Jekyll, so keep an eye out.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -156,8 +180,7 @@
       Posted on August 19, 2012  in  <a href="/blog/tag/General" alt="General" title="General">General</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I’m now finally happy, or atleast content, with how it looks. It’s been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and all of its’ functions and bits and pieces, but now I’m all set, I think).</p>
+  <p>So, launch day has finally arrived. This site has been a work in progress for the last couple of weeks and I’m now finally happy, or atleast content, with how it looks. It’s been a kind of troublesome yet quite fun ride (it took me some time to learn my ways around <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and all of its’ functions and bits and pieces, but now I’m all set, I think).</p>
 
 <h2 id="behind-the-scenes">Behind the scenes</h2>
 
@@ -166,8 +189,7 @@
 <p><a href="http://ellengummesson.com/" title="ellengummesson.com">This site</a> is powered by <a href="http://www.jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. It was built with HTML5 and CSS3 and my own grid system, <a href="/projects/begrider">Begrider</a>. The code was written by hand in <a href="http://www.sublimetext.com/" title="SublimeText 2">SublimeText 2</a> with the theme <a href="https://github.com/buymeasoda/soda-theme/" title="Soda Dark">Soda Dark</a>, the color scheme <a href="https://github.com/chriskempson/tomorrow-theme" title="Tomorrow Theme">Tomorrow Theme</a> and the plugins <a href="http://wbond.net/sublime_packages/alignment/" title="Alignment">Alignment</a> and <a href="http://wbond.net/sublime_packages/prefixr" title="Prefixr">Prefixr</a>. The site uses <a href="http://www.google.com/webfonts/specimen/Cabin" title="Cabin">Cabin</a> for the headings and <a href="http://www.google.com/webfonts/specimen/Vollkorn" title="Vollkorn">Vollkorn</a> for nearly all the other types of type. They’re provided by <a href="http://www.google.com/webfonts" title="Google Webfonts">Google Webfonts</a>. The blog posts (and pages) are written in <a href="http://http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> with <a href="http://www.markdownpad.com/" title="MarkdownPad">MarkdownPad</a>. I occasionally use <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a> too, just to mix things up.</p>
 
 <p>That sums it up pretty nicely, and thus, the link bombing ends here.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -209,7 +231,7 @@
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 

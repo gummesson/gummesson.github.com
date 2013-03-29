@@ -55,6 +55,22 @@
   <article class="post">
   
     <h1>
+      <a href="http://www.youtube.com/watch?v=vsTrAfJFLXI" alt="A modern web designer's workflow" title="A modern web designer's workflow">
+        A modern web designer's workflow <span class="invisible">&rarr;</span>
+      </a>
+    </h1>
+    <p class="smallprint">
+    Posted on March 11, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>   <a href="http://ellengummesson.com/blog/2013/03/11/a-modern-web-designers-workflow" alt="Permalink: A modern web designer's workflow" title="Permalink: A modern web designer's workflow" class="invisible">&infin;</a>
+    </p><!-- .smallprint -->
+  
+  <p>A really nice talk from Mr. <a href="http://css-tricks.com/" title="CSS-Tricks">CSS-Tricks</a> himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!</p>
+<!-- content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog" title="A brand new blog">
         A brand new blog
       </a>
@@ -63,8 +79,7 @@
       Posted on March  9, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface <a href="http://www.google.com/webfonts/specimen/Roboto" title="Roboto">Roboto</a> a few weeks ago and I like it so much that I decided to use it, which was the first step.</p>
+  <p>I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface <a href="http://www.google.com/webfonts/specimen/Roboto" title="Roboto">Roboto</a> a few weeks ago and I like it so much that I decided to use it, which was the first step.</p>
 
 <h2 id="hey-what-is-that-theme">Hey, what is THAT theme?</h2>
 
@@ -103,8 +118,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -119,8 +133,7 @@
       Posted on March  5, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>, <a href="/blog/tag/Sass" alt="Sass" title="Sass">Sass</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>Back in January I wrote a small paragraph about my SCSS “framework” <a href="https://github.com/gummesson/smallwork" title="Smallwork">Smallwork</a>. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.</p>
+  <p>Back in January I wrote a small paragraph about my SCSS “framework” <a href="https://github.com/gummesson/smallwork" title="Smallwork">Smallwork</a>. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.</p>
 
 <p>I also created yet another <a href="http://www.vim.org/" title="Vim">Vim</a> plugin, this time just a simple wrapper for <a href="http://compass-style.org/" title="Compass">Compass</a>, which <em>Smallwork</em> is built with. I was getting sick of having to type either <code>:!compass compile</code> or <code>:sh</code> and then <code>compass compile</code> so I threw together a really basic function that makes it much easier. Now I only have to type <code>:CompassCompile</code>. Another nice feature is that you don’t actually have to close the command prompt<sup id="fnref:20130305-1"><a href="#fn:20130305-1" rel="footnote">1</a></sup> which means that you can use <code>:CompassWatch</code> without it interfering with Vim<sup id="fnref:20130305-2"><a href="#fn:20130305-2" rel="footnote">2</a></sup>. If all goes well I think I’ll even publish it on the official Vim scripts website too.</p>
 
@@ -136,8 +149,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -152,8 +164,7 @@
       Posted on March  3, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" rel="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
+  <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" rel="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
 
 <pre><code>require 'rbconfig'
 
@@ -184,8 +195,7 @@ end
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -200,8 +210,7 @@ end
       Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a>, or more specifically <a href="http://rubygems.org/" title="RubyGems">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html" title="Webbrick">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+  <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a>, or more specifically <a href="http://rubygems.org/" title="RubyGems">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html" title="Webbrick">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
 
 <hr />
 
@@ -215,47 +224,7 @@ end
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/02/21/ack-on-windows" alt="Ack on Windows" title="Ack on Windows">
-        Ack on Windows
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on February 21, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Tools" alt="Tools" title="Tools">Tools</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>I recently finally tried out <a href="http://betterthangrep.com/" title="Ack">Ack</a> which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.</p>
-
-<p>First things first, <a href="http://www.perl.org/" title="Perl">Perl</a> needs to be install on the system. If you have either <a href="http://git-scm.com/" title="Git">Git</a> or <a href="http://rubyinstaller.org/add-ons/devkit/" title="DevKit">DevKit</a> installed then you’re good to go.</p>
-
-<ol>
-  <li>Download the standalone script from the <a href="http://betterthangrep.com/install/" title="How to install ack">here</a>.</li>
-  <li>Create a <code>bat</code> file and add the following to it: <code>@"C:\path\to\perl.exe" C:\path\to\ack.pl %*</code>. Change the paths so that they point to the relevant places.</li>
-  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path, or create a new folder and add it to said path.<sup id="fnref:20130221-1"><a href="#fn:20130221-1" rel="footnote">1</a></sup></li>
-  <li>Last, but not least, create an alias for the <code>bat</code> file in your <code>.bash_profile</code> if you want to get it to work with <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a>.</li>
-</ol>
-
-<p>You can use the same steps to create a more “sophisticated” way of running any kind of script too. Let’s say you have a script called <code>foo.rb</code>. You want to run it straight from the command line but you don’t necessary want to turn into a full fledged gem. Just change the the first path in the <code>bat</code> file so it points to your binary <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> file and the second to your actually script and you’re all good!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130221-1">
-      <p>Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:20130221-1" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -297,7 +266,7 @@ end
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 

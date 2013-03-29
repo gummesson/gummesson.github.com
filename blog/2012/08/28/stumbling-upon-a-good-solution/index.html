@@ -58,7 +58,6 @@
     <p class="smallprint">
       Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS" title="CSS">CSS</a>
     </p><!-- .smallprint -->
-    <section class="post-content">
       <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
 
 <h2 id="the-solution">The solution</h2>
@@ -73,8 +72,7 @@
 <p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
 
 <p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 
   <section class="comments">
   <h1>Comments</h1>
@@ -91,7 +89,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
-</section> <!-- .comments -->
+</section><!-- .comments -->
 
 
 </article><!-- .post -->
@@ -117,7 +115,7 @@
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 

@@ -55,6 +55,56 @@
   <article class="post">
   
     <h1>
+      <a href="http://ellengummesson.com/blog/2012/12/14/my-adventure-with-crunchbang" alt="My adventure with Crunchbang" title="My adventure with Crunchbang">
+        My adventure with Crunchbang
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on December 14, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux" title="Linux">Linux</a>, <a href="/blog/tag/Crunchbang" alt="Crunchbang" title="Crunchbang">Crunchbang</a>  
+    </p><!-- .smallprint -->
+  
+  <p>Lately I’ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a <em>Samsung NC10</em><sup id="fnref:20121214-1"><a href="#fn:20121214-1" rel="footnote">1</a></sup>. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: <a href="http://crunchbang.org/" title="Crunchbang Linux">Crunchbang Linux</a>. It’s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It’s based on <a href="http://www.debian.org/" title="Debian">Debian</a> which means that there’s a lot of apps for it and the support is generally good. I decided to download the current testing version, <a href="http://crunchbang.org/download/testing" title="Crunchbang Linux 11 Waldorf">Waldorf</a>, since I’m just going to use the netbook mainly for browsing and writing.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>I wrote the <code>iso</code> to a USB stick and played around with for a few minutes before I hit install. I was a bit worried that I’d completely break my computer but the installation went fine. It took about 10-15 minutes and then the system was up and running. I was also prepared for some tinkering with the settings and such but everything worked right out the box, even the brightness and volume controls. Color me impressed!</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>After the installation I decided to remove a couple of apps<sup id="fnref:20121214-2"><a href="#fn:20121214-2" rel="footnote">2</a></sup> since I’m not going to use them anyway. With a couple of <code>sudo apt-get remove</code>, <code>sudo apt-get autoremove</code> and some fiddling with the <a href="http://openbox.org/" title="Openbox">Openbox</a> menu it was done in a matter of minutes. The default web browser, <a href="http://www.geticeweasel.org/" title="Iceweasel">Iceweasel</a>, wasn’t really for me so I replaced it with <a href="www.google.com/chrome/" title="Chrome">Chrome</a>. I also change the default font in system montoring tool <a href="http://conky.sourceforge.net/" title="Conky">Conky</a> to a monospaced one. I’m probably going to change a few more things, but so far I’m happy with the default experience.</p>
+
+<h2 id="apps">Apps</h2>
+
+<p>While my goal is to keep the netbook as clean as possible there was one<sup id="fnref:20121214-3"><a href="#fn:20121214-3" rel="footnote">3</a></sup> additional app that I just had to install: <a href="http://sourceforge.net/p/retext/home/ReText/" title="ReText">ReText</a>. It was the only real Markdown editor with syntax highlighting that I could find. My favorite distraction free editor <a href="http://gottcode.org/focuswriter/" title="FocusWriter">FocusWriter</a> is available but since I want to keep my app count at a minimum I decided to only install ReText. I’ve heard that a Debian-compatible version of <a href="http://uberwriter.wolfvollprecht.de/" title="UberWriter">UberWriter</a> is in the works so I might switch to that once it’s out.</p>
+
+<p><img src="/images/blog/2012-12-14-crunchbang-waldorf.png" alt="Crunchbang Linux (Waldorf)" title="Crunchbang Linux (Waldorf)" /></p>
+
+<h2 id="closing-thoughts">Closing thoughts</h2>
+
+<p>In short I really love this distro. It’s fast, light on the resources, highly customizable but at the same just works. The battery life has gone down from around 5 hours to 4.5 hours, which isn’t that bad at all. In fact I’m really impressed by that too. I wholeheartedly recommend it to people who want to make the jump to Linux but don’t want to use something more resource-heavy, like the current main version of <a href="http://www.ubuntu.com/" title="Ubuntu">Ubuntu</a>, while still maintaining an all-around functionality for most users.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121214-1">
+      <p>The system specification is as followed: 1.6 GHz, 1 GB RAM, 160 GB HDD with Windows XP (previously) installed.<a href="#fnref:20121214-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121214-2">
+      <p><a href="http://www.abisource.com/" title="Abiword">Abiword</a>, <a href="http://projects.gnome.org/gnumeric/" title="Gnumeric">Gnumeric</a>, <a href="http://goodies.xfce.org/projects/applications/xfburn" title="xfburn">xfburn</a> and a few others.<a href="#fnref:20121214-2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121214-3">
+      <p>I also installed <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> but that’s pretty much a given thing. <a href="#fnref:20121214-3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+<!-- content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2012/12/11/robocopy" alt="Robocop(y)" title="Robocop(y)">
         Robocop(y)
       </a>
@@ -63,8 +113,7 @@
       Posted on December 11, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Command Line" alt="Command Line" title="Command Line">Command Line</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called <code>robocopy</code><sup id="fnref:20121211-1"><a href="#fn:20121211-1" rel="footnote">1</a></sup>. One of the things I use it for is to quickly backup the source of my <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site to a folder on my <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> with a simple command like this:</p>
+  <p>While looking for an easier way to backup and sync a couple of folders on my system I came across an awesomely named command line function called <code>robocopy</code><sup id="fnref:20121211-1"><a href="#fn:20121211-1" rel="footnote">1</a></sup>. One of the things I use it for is to quickly backup the source of my <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site to a folder on my <a href="http://dropbox.com/" title="Dropbox">Dropbox</a> with a simple command like this:</p>
 
 <pre><code>robocopy ~/Jekyll ~/Dropbox/Jekyll *.* /mir
 </code></pre>
@@ -85,8 +134,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -101,8 +149,7 @@
       Posted on December  9, 2012  in  <a href="/blog/tag/General" alt="General" title="General">General</a>, <a href="/blog/tag/Writing" alt="Writing" title="Writing">Writing</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>A couple of months back I wrote a blog post called <em><a href="/blog/2012/09/20/the-joys-of-writing/" title="The Joys Of Writing">“The Joys of Writing”</a></em> where I expressed my love for the craft that is writing. While I still feel the same I’ve also found it quite hard from time to time, especially during the last couple of weeks. In other words, the honeymoon period of starting this website is over. I sit down, launch <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a>, look through my notes and find a topic I want to write about but absolutely nothing comes out. Not even a word. It’s a good old-fashioned writer’s block and I hate it. Even though I probably have a very low number of readers<sup id="fnref:20121209-1"><a href="#fn:20121209-1" rel="footnote">1</a></sup> I still like to write and I feel quite powerless when I can’t do so. In short, writing keeps me sane. </p>
+  <p>A couple of months back I wrote a blog post called <em><a href="/blog/2012/09/20/the-joys-of-writing/" title="The Joys Of Writing">“The Joys of Writing”</a></em> where I expressed my love for the craft that is writing. While I still feel the same I’ve also found it quite hard from time to time, especially during the last couple of weeks. In other words, the honeymoon period of starting this website is over. I sit down, launch <a href="http://resoph.com/ResophNotes/Welcome.html" title="ResophNotes">ResophNotes</a>, look through my notes and find a topic I want to write about but absolutely nothing comes out. Not even a word. It’s a good old-fashioned writer’s block and I hate it. Even though I probably have a very low number of readers<sup id="fnref:20121209-1"><a href="#fn:20121209-1" rel="footnote">1</a></sup> I still like to write and I feel quite powerless when I can’t do so. In short, writing keeps me sane. </p>
 
 <p>I realize as I type this out that this blog post has a goodbye vibe written all over it, but fortunately that’s not the case. I just need to vent out some of my frustration. I’m going to keep fighting it and I hope that I’ll come out of it sooner than later. I guess that in a sense this post is already a step in the right direction.</p>
 
@@ -115,8 +162,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -131,8 +177,7 @@
       Posted on December  5, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>Here’s a list of what I consider awesome apps and utilities for Windows. Even though there’s no shortage of them I sometimes find that it’s quite hard to find those gems that really stand out.</p>
+  <p>Here’s a list of what I consider awesome apps and utilities for Windows. Even though there’s no shortage of them I sometimes find that it’s quite hard to find those gems that really stand out.</p>
 
 <h2 id="focuswriter">FocusWriter</h2>
 
@@ -173,8 +218,7 @@
 <h2 id="shotty">Shotty</h2>
 
 <p>I was looking for something better than the built in snipping tool and I found <a href="http://shotty.devs-on.net/en/Overview.aspx" title="Shotty">Shotty</a>. One of the things I like about it is that it leaves the shadows of your screenshots intact which makes them look a lot nicer. It may not be essential to everybody but since I need to take screenshots from time to time I feel that it has it’s spot in this list.</p>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -189,8 +233,7 @@
     Posted on December  2, 2012  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>   <a href="http://ellengummesson.com/blog/2012/12/02/the-setup" alt="Permalink: The Setup" title="Permalink: The Setup" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
-    <section class="post-content">
-      <p>One of my favorite sites on the web is the <a href="http://usesthis.com/" title="The Setup">The Setup</a>. The tagline for it is <em>“What do people use to get stuff done?”</em>, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use<sup id="fnref:20121202-1"><a href="#fn:20121202-1" rel="footnote">1</a></sup>. If you haven’t checked it out and you’re as geeky as I am I suggest that you should. There’s also a couple of <a href="http://usesthis.com/community/" title="The Setup's Community">spin-offs</a> of the whole idea, which ranges from Linux users to teachers to people with disabilities. I’ve been toying with the idea of doing something like that but haven’t had the time nor the resources to do so just yet. All in all it’s a little fantastic website that I thoroughly enjoy.</p>
+  <p>One of my favorite sites on the web is the <a href="http://usesthis.com/" title="The Setup">The Setup</a>. The tagline for it is <em>“What do people use to get stuff done?”</em>, which describes the purpose of it really well. It may be the nerd in me but I find it completely fascinating to see what kind of gear and software people in all kind of job fields use<sup id="fnref:20121202-1"><a href="#fn:20121202-1" rel="footnote">1</a></sup>. If you haven’t checked it out and you’re as geeky as I am I suggest that you should. There’s also a couple of <a href="http://usesthis.com/community/" title="The Setup's Community">spin-offs</a> of the whole idea, which ranges from Linux users to teachers to people with disabilities. I’ve been toying with the idea of doing something like that but haven’t had the time nor the resources to do so just yet. All in all it’s a little fantastic website that I thoroughly enjoy.</p>
 
 <hr />
 
@@ -201,60 +244,7 @@
     </li>
   </ol>
 </div>
-
-    </section><!-- .post-content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2012/11/28/small-steps-into-ruby" alt="Small steps into Ruby" title="Small steps into Ruby">
-        Small steps into Ruby
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on November 28, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>  
-    </p><!-- .smallprint -->
-  
-    <section class="post-content">
-      <p>I’ve always wanted to learn a real programming language. The few times in the past that I’ve tried have all been fruitless though. My brain just doesn’t work when there’s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won’t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write <code>background-color: red;</code> and what do you know, the background suddenly is red. With those two you don’t have write a short novel just to get the command line to print a simple <em>“Hello World”</em>.</p>
-
-<p>Since this site is built with Jekyll I decided to really start learning <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> and I’m glad I did. The syntax is so simple that it amazes me. Over the last few days I’ve experimented with it a lot and even released a few simple scripts on <a href="https://github.com/gummesson" title="GitHub">GitHub</a>. One of those was inspired by a post I saw yesterday on 
-<a href="http://lifehacker.com/5963597/why-you-should-be-using-an-app-launcher-and-how-to-make-it-do-anythingyou-want" title="Lifehacker">Lifehacker</a>. The article mentions how you can use <a href="http://launchy.net/" title="Launchy">Launchy</a> to append text to a text file, but I couldn’t get the <code>bat</code> script they recommended to properly work so I decided to just make a <a href="https://github.com/gummesson/append-text" title="Append Text (for Launchy on GitHub">Ruby version of it</a>. The script looks like this without comments:</p>
-
-<pre><code>require 'yaml'
-
-config = YAML.load_file("config.yml")
-txt_file = config["txt_file"]
-
-item = ARGV.join(" ")
-
-File.open(txt_file, "a") { |file| file.puts(item) }
-</code></pre>
-
-<p>Right now it consists of just five lines of code. I could’ve even made it even simpler by leaving out the use of YAML<sup id="fnref:20121128-1"><a href="#fn:20121128-1" rel="footnote">1</a></sup> for the text file configuration<sup id="fnref:20121128-2"><a href="#fn:20121128-2" rel="footnote">2</a></sup>. I really like having something like that though since you don’t have to change the actual source code if you later decide to use another text file. Now I just need to launch Launchy, type <code>add</code>, <code>TAB</code> and whatever I want to append to the file and just hit <code>Enter</code> to add something to my spark file, which is even faster than launching the actually text file with <a href="http://www.autohotkey.com/" title="AutoHotKey">AutoHotKey</a> like I mentioned in the previous blog post.</p>
-
-<h2 id="resources">Resources</h2>
-
-<p>I found the book <a href="http://www.humblelittlerubybook.com/book/" title="Mr. Neighborly's Humble Little Ruby Book">Mr. Neighborly’s Humble Little Ruby Book</a> extremely good. It explains a lot of stuff without getting too technically complex and with a perfect mix of humor. Another book I also found helpful and easy to understand was <a href="http://ruby.bastardsbook.com/" title="The Bastards Book of Ruby">The Bastards Book of Ruby</a>. I’ve also seen <a href="http://ruby.learncodethehardway.org/book/" title="Learn Ruby The Hard Way">Learn Ruby The Hard Way</a> and <a href="http://pine.fm/LearnToProgram/" title="Learn To Program">Learn To Program</a> being mentioned quite a few times but so far I haven’t had time to check them out. Another tip is that you shouldn’t underestimate the power of Google and a thriving community. <a href="http://stackoverflow.com/questions/tagged/ruby" title="Stack Overflow">Stack Overflow</a> is filled with a lot of answers for literally every single question you might have.</p>
-
-<p>I still have a long way to go, but so far it’s been a really fun ride.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20121128-1">
-      <p><a href="http://en.wikipedia.org/wiki/Yaml" title="YAML Ain't Markup Language">YAML Ain’t Markup Language</a>.<a href="#fnref:20121128-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20121128-2">
-      <p>The <code>config.yml</code> file contains a single line, <code>txt_file:</code>, where you put the path to the text file in question. <a href="#fnref:20121128-2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-    </section><!-- .post-content -->
+<!-- content -->
 </article><!-- .post -->
 
 
@@ -296,7 +286,7 @@ File.open(txt_file, "a") { |file| file.puts(item) }
     </div><!-- .container -->
     <div class="line-bottom"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/global.js"></script>
   </body>
 </html>
 
