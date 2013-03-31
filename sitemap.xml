@@ -366,7 +366,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/03/21/giving-jquery-another-go</loc>
-        <lastmod>2013-03-31T11:40:11+02:00</lastmod>
+        <lastmod>2013-03-31T18:35:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/03/25/my-adventure-with-manjaro-linux</loc>
@@ -375,6 +375,10 @@
     <url>
         <loc>http://ellengummesson.com/blog/2013/03/29/guard-is-your-best-friend</loc>
         <lastmod>2013-03-31T11:40:11+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/blog/2013/03/31/an-easter-egg-for-the-blog</loc>
+        <lastmod>2013-03-31T21:04:13+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -390,6 +394,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-03-31T11:39:37+02:00</lastmod>
+        <lastmod>2013-03-31T21:04:13+02:00</lastmod>
     </url>
 </urlset>
