@@ -6,6 +6,74 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Display your Github repos with jQuery and Mustache.js</title>
+                <description>&lt;p&gt;After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn’t have to look any further than using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;’s &lt;code&gt;getJSON&lt;/code&gt; function and the Javascript implementation of the &lt;a href=&quot;http://mustache.github.com/&quot; title=&quot;Mustache&quot;&gt;Mustache templating engine&lt;/a&gt;. The end result &lt;a href=&quot;/experiments/repos&quot; title=&quot;My Github repositories&quot;&gt;looks pretty neat&lt;/a&gt;, although I think I’m going to tweak the UI a bit. I also created a repository for it &lt;a href=&quot;https://github.com/gummesson/repos.js&quot; title=&quot;repos.js on Github&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-javascript&quot;&gt;The Javascript&lt;/h2&gt;
+
+&lt;p&gt;This is the function itself: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function getGithubRepositories(username) {
+
+  &quot;use strict&quot;;
+
+  $(&quot;#repo-list&quot;).append(&quot;&amp;lt;li&amp;gt;Loading...&amp;lt;/li&amp;gt;&quot;);
+
+  var githubUsername = function(username, callback) {
+    $.getJSON(&quot;https://api.github.com/users/&quot; + username + &quot;/repos?callback=?&quot;, callback);
+  };
+
+  githubUsername(username, function(data) {
+
+    var template    = $(&quot;#github-repos&quot;).html(),
+        information = Mustache.to_html(template, data);
+
+    $(&quot;#repo-list&quot;).html(information);
+
+  });
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And you simply use it like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document).ready(function() {
+
+  &quot;use strict&quot;;
+  getGithubRepositories(&quot;gummesson&quot;);
+
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Just replace &lt;code&gt;gummesson&lt;/code&gt; with your own username and you’re good to go!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-template&quot;&gt;The template&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; If you’re planning to use &lt;a href=&quot;https://github.com/janl/mustache.js&quot; title=&quot;Mustache.js&quot;&gt;Mustache.js&lt;/a&gt; on a &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; site like I do, don’t forget to wrap the &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; template in a &lt;code&gt;raw&lt;/code&gt; block.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul id=&quot;repo-list&quot;&amp;gt;
+  &amp;lt;script id=&quot;github-repos&quot; type=&quot;text/template&quot;&amp;gt;
+    {{#data}}
+      &amp;lt;li&amp;gt;
+        &amp;lt;a href=&quot;{{html_url}}&quot; title=&quot;{{name}}&quot; alt=&quot;{{name}}&quot;&amp;gt;
+          {{name}}
+        &amp;lt;/a&amp;gt;
+        {{#language}}
+          &amp;lt;em&amp;gt;({{language}})&amp;lt;/em&amp;gt;
+        {{/language}}
+      &amp;lt;/li&amp;gt;
+    {{/data}}
+  &amp;lt;/script&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.&lt;/p&gt;
+</description>
+                <published>April  4, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js</link>
+              </item>
+            
+              <item>
                 <title>An easter egg for the blog</title>
                 <description>&lt;p&gt;Go ahead and press &lt;code&gt;J&lt;/code&gt; and &lt;code&gt;K&lt;/code&gt;. Oh look, the page scrolls just like in &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;.&lt;sup id=&quot;fnref:20130331-1&quot;&gt;&lt;a href=&quot;#fn:20130331-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; After playing around with &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt; I felt that it was appropriate to implement it as a sign of appreciation for my text editor of choice. A demo is available on &lt;a href=&quot;http://jsfiddle.net/gummesson/Jyp98/&quot; title=&quot;jQuery Vim keybindings demo&quot;&gt;my jsFiddle account&lt;/a&gt;, although I use a slightly modified version of it. As of know you can only use it to scroll up and down but I may try to add a few more keybindings later.&lt;/p&gt;
 
@@ -71,24 +139,6 @@
 </description>
                 <published>March 21, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/21/giving-jquery-another-go</link>
-              </item>
-            
-              <item>
-                <title>Yes we Jekyll</title>
-                <description>&lt;p&gt;A rather nice and comprehensive guide on  how to get started with Jekyll and understanding all of it’s different components. I definitively wished that something like this was around when I decided to start using it.&lt;sup id=&quot;fnref:20130318-1&quot;&gt;&lt;a href=&quot;#fn:20130318-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130318-1&quot;&gt;
-      &lt;p&gt;Although I quite enjoyed the learning experience.&lt;a href=&quot;#fnref:20130318-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March 18, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/18/yes-we-jekyll</link>
               </item>
             
     </channel>

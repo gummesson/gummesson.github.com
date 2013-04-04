@@ -1,0 +1,169 @@
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Display your Github repos with jQuery and Mustache.js: Ellen Gummesson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
+    <meta name="author" content="Ellen Gummesson">
+    <link rel="author" href="/humans.txt" type="text/plain">
+    <link rel="canonical" href="http://ellengummesson.com/">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+  <body class="js-vim"><!-- jQuery hook for Vim keybindings -->
+    <div class="line-top"></div>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div class="column-six">
+            <header class="site-header">
+              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                <h1 class="logo">Ellen.</h1>
+              </a>
+            </header><!-- .site-header -->
+          </div><!-- .column-six -->
+
+                <div class="column-six">
+            <ul class="site-nav">
+              <li>
+                <a href="/" title="Home" alt="Home">Home</a>
+              </li>
+              <li>
+                <a href="/about" title="About" alt="About">About</a>
+              </li>
+              <li>
+                <a href="/archives" title="Archives" alt="Archives">Archives</a>
+              </li>
+              <li>
+                <a href="/contact" title="Contact" alt="Contact">Contact</a>
+              </li>
+            </ul><!-- .site-nav -->
+          </div><!-- .column-six -->
+        </div><!-- .row -->
+
+        <div class="row">
+          <div class="column-twelve">
+            <div class="site-content">
+              <article class="post">
+  
+    <h1>Display your Github repos with jQuery and Mustache.js</h1>
+  
+    <p class="smallprint">
+      Posted on April  4, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery" title="jQuery">jQuery</a>, <a href="/blog/tag/Mustache.js" alt="Mustache.js" title="Mustache.js">Mustache.js</a>
+    </p><!-- .smallprint -->
+      <p>After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn’t have to look any further than using <a href="http://jquery.com/" title="jQuery">jQuery</a>’s <code>getJSON</code> function and the Javascript implementation of the <a href="http://mustache.github.com/" title="Mustache">Mustache templating engine</a>. The end result <a href="/experiments/repos" title="My Github repositories">looks pretty neat</a>, although I think I’m going to tweak the UI a bit. I also created a repository for it <a href="https://github.com/gummesson/repos.js" title="repos.js on Github">on Github</a>.</p>
+
+<h2 id="the-javascript">The Javascript</h2>
+
+<p>This is the function itself: </p>
+
+<pre><code>function getGithubRepositories(username) {
+
+  "use strict";
+
+  $("#repo-list").append("&lt;li&gt;Loading...&lt;/li&gt;");
+
+  var githubUsername = function(username, callback) {
+    $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
+  };
+
+  githubUsername(username, function(data) {
+
+    var template    = $("#github-repos").html(),
+        information = Mustache.to_html(template, data);
+
+    $("#repo-list").html(information);
+
+  });
+
+}
+</code></pre>
+
+<p>And you simply use it like this:</p>
+
+<pre><code>$(document).ready(function() {
+
+  "use strict";
+  getGithubRepositories("gummesson");
+
+});
+</code></pre>
+
+<p>Just replace <code>gummesson</code> with your own username and you’re good to go!</p>
+
+<h2 id="the-template">The template</h2>
+
+<p><strong>Pro-tip:</strong> If you’re planning to use <a href="https://github.com/janl/mustache.js" title="Mustache.js">Mustache.js</a> on a <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> site like I do, don’t forget to wrap the <code>&lt;script&gt;</code> template in a <code>raw</code> block.</p>
+
+<pre><code>&lt;ul id="repo-list"&gt;
+  &lt;script id="github-repos" type="text/template"&gt;
+    {{#data}}
+      &lt;li&gt;
+        &lt;a href="{{html_url}}" title="{{name}}" alt="{{name}}"&gt;
+          {{name}}
+        &lt;/a&gt;
+        {{#language}}
+          &lt;em&gt;({{language}})&lt;/em&gt;
+        {{/language}}
+      &lt;/li&gt;
+    {{/data}}
+  &lt;/script&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.</p>
+<!-- content -->
+
+  <section class="comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+</section><!-- .comments -->
+
+
+</article><!-- .post -->
+
+            </div><!-- .site-content -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+              <div class="row">
+          <div class="column-twelve">
+            <footer class="site-footer">
+              <p class="smallprint">
+                Copyright &copy;
+                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
+                  Ellen Gummesson
+                </a>
+                  2013.
+                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
+              </p>
+            </footer><!-- .site-footer -->
+          </div><!-- .column-twelve -->
+        </div><!-- .row -->
+      </div><!-- .grid -->
+    </div><!-- .container -->
+    <div class="line-bottom"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="/assets/js/global.js"></script>
+  </body>
+</html>
+
