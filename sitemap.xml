@@ -384,7 +384,7 @@
         <loc>
             http://ellengummesson.com/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js
         </loc>
-        <lastmod>2013-04-04T20:34:56+02:00</lastmod>
+        <lastmod>2013-04-06T13:34:51+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -400,7 +400,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//experiments/repos.html</loc>
-        <lastmod>2013-04-04T15:57:22+02:00</lastmod>
+        <lastmod>2013-04-06T12:21:05+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//experiments/vim.html</loc>
@@ -408,6 +408,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-04-04T20:34:56+02:00</lastmod>
+        <lastmod>2013-04-06T13:34:51+02:00</lastmod>
     </url>
 </urlset>
