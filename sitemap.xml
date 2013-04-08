@@ -384,7 +384,13 @@
         <loc>
             http://ellengummesson.com/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js
         </loc>
-        <lastmod>2013-04-06T13:34:51+02:00</lastmod>
+        <lastmod>2013-04-08T15:52:56+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/04/08/my-first-ever-pull-request-was-a-success
+        </loc>
+        <lastmod>2013-04-08T16:04:38+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -408,6 +414,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-04-06T13:34:51+02:00</lastmod>
+        <lastmod>2013-04-08T16:04:38+02:00</lastmod>
     </url>
 </urlset>

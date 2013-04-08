@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>My first ever pull request was a success</title>
+                <description>&lt;p&gt;So yesterday I sent my first pull request ever and it actually got merged. My addition was adding a link to Airbnb’s &lt;a href=&quot;https://github.com/airbnb/javascript&quot; title=&quot;Airbnb JavaScript Style Guide&quot;&gt;JavaScript Style Guide&lt;/a&gt; in a &lt;a href=&quot;https://github.com/gregstallings/styleguides&quot; title=&quot;A handy collection of style guides&quot;&gt;repository that collects a bunch of styleguides&lt;/a&gt;. It may not be the most exciting thing ever but I guess that I can now officially call myself an open source contributor, right?&lt;/p&gt;
+</description>
+                <published>April  8, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/08/my-first-ever-pull-request-was-a-success</link>
+              </item>
+            
+              <item>
                 <title>Display your Github repos with jQuery and Mustache.js</title>
                 <description>&lt;p&gt;After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn’t have to look any further than using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;’s &lt;code&gt;getJSON&lt;/code&gt; function and the Javascript implementation of the &lt;a href=&quot;http://mustache.github.com/&quot; title=&quot;Mustache&quot;&gt;Mustache templating engine&lt;/a&gt;. The end result &lt;a href=&quot;/experiments/repos&quot; title=&quot;My Github repositories&quot;&gt;looks pretty neat&lt;/a&gt;, although I think I’m going to tweak the UI a bit. I also created a repository for it &lt;a href=&quot;https://github.com/gummesson/repos.js&quot; title=&quot;repos.js on Github&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
 
@@ -17,7 +25,8 @@
 
   &quot;use strict&quot;;
 
-  $(&quot;#repo-list&quot;).append(&quot;&amp;lt;li&amp;gt;Loading...&amp;lt;/li&amp;gt;&quot;);
+  var repoList = $(&quot;#repo-list&quot;);
+  repoList.append(&quot;&amp;lt;li&amp;gt;Loading...&amp;lt;/li&amp;gt;&quot;);
 
   var githubUsername = function(username, callback) {
     $.getJSON(&quot;https://api.github.com/users/&quot; + username + &quot;/repos?callback=?&quot;, callback);
@@ -28,7 +37,7 @@
     var template    = $(&quot;#github-repos&quot;).html(),
         information = Mustache.render(template, data);
 
-    $(&quot;#repo-list&quot;).html(information);
+    repoList.html(information);
 
   });
 
@@ -118,27 +127,6 @@
 </description>
                 <published>March 25, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/25/my-adventure-with-manjaro-linux</link>
-              </item>
-            
-              <item>
-                <title>Giving jQuery another go</title>
-                <description>&lt;p&gt;A few months ago I started to play around with &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. Given that I was much more new to coding then it sadly didn’t take me long before I kind of gave up. After playing around with &lt;a href=&quot;http://www.ruby-lang.org/&quot; title=&quot;Ruby&quot;&gt;Ruby&lt;/a&gt; for a few months I decided to give jQuery another go and so far I think that I’ve got the basics down. Ruby and jQuery are totally different, but after learning the general basics of coding it’s been relatively easy to pick it up&lt;sup id=&quot;fnref:20130321-1&quot;&gt;&lt;a href=&quot;#fn:20130321-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I’m obviously very much a beginner though. I’ve thrown together a few simple scripts&lt;sup id=&quot;fnref:20130321-2&quot;&gt;&lt;a href=&quot;#fn:20130321-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; in a GitHub repo that I’ve appropriately named “&lt;a href=&quot;https://github.com/gummesson/yayquery&quot; title=&quot;yayQuery&quot;&gt;yayQuery&lt;/a&gt;” that might come in handy. It’s been pretty fun and who knows, some day I might get the hang of this whole front-end development thing?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130321-1&quot;&gt;
-      &lt;p&gt;Especially when the syntax is quite easy for common things, like &lt;code&gt;hide()&lt;/code&gt; and &lt;code&gt;show()&lt;/code&gt;.&lt;a href=&quot;#fnref:20130321-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130321-2&quot;&gt;
-      &lt;p&gt;I’ve currently figured out how to scroll smoothly to IDs using anchors, how to make a dropdown menu and a simple slideshow. Yay indeed.&lt;a href=&quot;#fnref:20130321-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March 21, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/21/giving-jquery-another-go</link>
               </item>
             
     </channel>
