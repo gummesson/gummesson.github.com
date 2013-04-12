@@ -6,6 +6,28 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>It's the little things</title>
+                <description>&lt;p&gt;A couple of days ago Chris Coyier &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/&quot; title=&quot;Can You “Over Organize” JavaScript?&quot;&gt;wrote an interesting post&lt;/a&gt; asking if you can over organize your Javascript. Since I just started to learn it “properly” I decided to challenge myself by &lt;a href=&quot;http://snippi.com/s/r5kl9vo&quot; title=&quot;css-tricks.js&quot;&gt;re-writing the code&lt;/a&gt; he had posted. He responded with &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/#comment-366077&quot; title=&quot;&amp;quot;Very nice!&amp;quot;&quot;&gt;this comment&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2013-04-12-css-tricks.png&quot; alt=&quot;A very nice comment&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m not going to lie, that made me smile&lt;sup id=&quot;fnref:20130412-1&quot;&gt;&lt;a href=&quot;#fn:20130412-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130412-1&quot;&gt;
+      &lt;p&gt;And you can officially file this post under “humble brag”.&lt;a href=&quot;#fnref:20130412-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>April 12, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/12/its-the-little-things</link>
+              </item>
+            
+              <item>
                 <title>My first ever pull request was a success</title>
                 <description>&lt;p&gt;So yesterday I sent my first pull request ever and it actually got merged. My addition was adding a link to Airbnb’s &lt;a href=&quot;https://github.com/airbnb/javascript&quot; title=&quot;Airbnb JavaScript Style Guide&quot;&gt;JavaScript Style Guide&lt;/a&gt; in a &lt;a href=&quot;https://github.com/gregstallings/styleguides&quot; title=&quot;A handy collection of style guides&quot;&gt;repository that collects a bunch of styleguides&lt;/a&gt;. It may not be the most exciting thing ever but I guess that I can now officially call myself an open source contributor, right?&lt;/p&gt;
 </description>
@@ -106,27 +128,6 @@
 </description>
                 <published>March 29, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/29/guard-is-your-best-friend</link>
-              </item>
-            
-              <item>
-                <title>My adventure with Manjaro Linux</title>
-                <description>&lt;p&gt;After a few months of using &lt;a href=&quot;http://crunchbang.org/&quot; title=&quot;Crunchbang Linux&quot;&gt;Crunchbang Linux&lt;/a&gt;, which is based on &lt;a href=&quot;http://www.debian.org/&quot; title=&quot;Debian&quot;&gt;Debian&lt;/a&gt;, I decided to switch to &lt;a href=&quot;http://manjaro.org/&quot; title=&quot;Manjaro Linux&quot;&gt;Manjaro Linux&lt;/a&gt; instead. Even though I really like Crunchbang I wanted to have a go at using a &lt;a href=&quot;https://www.archlinux.org/&quot; title=&quot;Arch Linux&quot;&gt;Arch Linux&lt;/a&gt; based system, mainly because of the rolling release cycle. I’ve also heard that the package manager, &lt;a href=&quot;https://wiki.archlinux.org/index.php/Pacman&quot; title=&quot;Pacman&quot;&gt;Pacman&lt;/a&gt;&lt;sup id=&quot;fnref:20130325-1&quot;&gt;&lt;a href=&quot;#fn:20130325-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is fantastic. I didn’t really want to install it from scratch though&lt;sup id=&quot;fnref:20130325-2&quot;&gt;&lt;a href=&quot;#fn:20130325-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and that’s when discovered Manjaro. I might do it at some other point, but I really like nothing having to install everything by myself. What’s even more awesome that it came with &lt;a href=&quot;http://openbox.org/&quot; title=&quot;Openbox&quot;&gt;Openbox&lt;/a&gt; edition, which I’m a big fan of. I know that Arch has a reputation of breaking constantly, but since I’m going to use it on a secondary machine it doesn’t bother me much. I might even learn something from a little breakage, although I hope I won’t encounter it too often.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130325-1&quot;&gt;
-      &lt;p&gt;Which is an amazing name, by the way.&lt;a href=&quot;#fnref:20130325-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130325-2&quot;&gt;
-      &lt;p&gt;Know your limitations. I’m sure that I wouldn’t have succeed with it.&lt;a href=&quot;#fnref:20130325-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March 25, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/25/my-adventure-with-manjaro-linux</link>
               </item>
             
     </channel>
