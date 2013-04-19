@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Weaning yourself of jQuery</title>
+                <description>&lt;p&gt;A great post on how to do basic DOM manipulation with plain Javascript instead of using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.&lt;/p&gt;
+</description>
+                <published>April 19, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery</link>
+              </item>
+            
+              <item>
                 <title>It's the little things</title>
                 <description>&lt;p&gt;A couple of days ago Chris Coyier &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/&quot; title=&quot;Can You “Over Organize” JavaScript?&quot;&gt;wrote an interesting post&lt;/a&gt; asking if you can over organize your Javascript. Since I just started to learn it “properly” I decided to challenge myself by &lt;a href=&quot;http://snippi.com/s/r5kl9vo&quot; title=&quot;css-tricks.js&quot;&gt;re-writing the code&lt;/a&gt; he had posted. He responded with &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/#comment-366077&quot; title=&quot;&amp;quot;Very nice!&amp;quot;&quot;&gt;this comment&lt;/a&gt;:&lt;/p&gt;
 
@@ -120,14 +128,6 @@
 </description>
                 <published>March 31, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/03/31/an-easter-egg-for-the-blog</link>
-              </item>
-            
-              <item>
-                <title>Guard is your best friend</title>
-                <description>&lt;p&gt;A really nice and short screencast from &lt;a href=&quot;http://net.tutsplus.com/&quot; title=&quot;Nettuts&quot;&gt;Nettuts&lt;/a&gt; showcasing how to use &lt;a href=&quot;https://github.com/guard/guard&quot; title=&quot;Guard&quot;&gt;Guard&lt;/a&gt; for file monitoring and task automation. I’ve hacked together a &lt;a href=&quot;https://github.com/gummesson/ellengummesson/blob/master/Rakefile&quot; title=&quot;Rakefile&quot;&gt;Rakefile&lt;/a&gt; for similar purposes, but I can definitively see the appeal of it.&lt;/p&gt;
-</description>
-                <published>March 29, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/29/guard-is-your-best-friend</link>
               </item>
             
     </channel>
