@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Scriptlr.js</title>
+                <description>&lt;p&gt;I was getting sick of adding &lt;code&gt;script&lt;/code&gt; tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.&lt;/p&gt;
+</description>
+                <published>April 22, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/22/scriptlr-js</link>
+              </item>
+            
+              <item>
                 <title>Weaning yourself of jQuery</title>
                 <description>&lt;p&gt;A great post on how to do basic DOM manipulation with plain Javascript instead of using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.&lt;/p&gt;
 </description>
@@ -110,24 +118,6 @@
 </description>
                 <published>April  4, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js</link>
-              </item>
-            
-              <item>
-                <title>An easter egg for the blog</title>
-                <description>&lt;p&gt;Go ahead and press &lt;code&gt;J&lt;/code&gt; and &lt;code&gt;K&lt;/code&gt;. Oh look, the page scrolls just like in &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt;.&lt;sup id=&quot;fnref:20130331-1&quot;&gt;&lt;a href=&quot;#fn:20130331-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; After playing around with &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt; I felt that it was appropriate to implement it as a sign of appreciation for my text editor of choice. A demo is available on &lt;a href=&quot;http://jsfiddle.net/gummesson/Jyp98/&quot; title=&quot;jQuery Vim keybindings demo&quot;&gt;my jsFiddle account&lt;/a&gt;, although I use a slightly modified version of it. As of know you can only use it to scroll up and down but I may try to add a few more keybindings later.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130331-1&quot;&gt;
-      &lt;p&gt;Or so I hope. It works perfectly fine on my end, but I haven’t tested it in that many browsers yet.&lt;a href=&quot;#fnref:20130331-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>March 31, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/03/31/an-easter-egg-for-the-blog</link>
               </item>
             
     </channel>

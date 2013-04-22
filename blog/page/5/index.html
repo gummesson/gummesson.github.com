@@ -55,6 +55,28 @@
   <article class="post">
   
     <h1>
+      <a href="http://stackoverflow.com/questions/5006950/setting-netrw-like-nerdtree" alt="Make Netrw behave more like NERDTree" title="Make Netrw behave more like NERDTree">
+        Make Netrw behave more like NERDTree <span class="invisible">&rarr;</span>
+      </a>
+    </h1>
+    <p class="smallprint">
+    Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>   <a href="http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink: Make Netrw behave more like NERDTree" title="Permalink: Make Netrw behave more like NERDTree" class="invisible">&infin;</a>
+    </p><!-- .smallprint -->
+  
+  <p>This is nice read for using something more native to <a href="http://www.vim.org/" title="Vim">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html" title="Netrw">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree" title="NERDTree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim" title="CtrlP">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
+
+<pre><code>let g:netrw_liststyle = 3
+let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
+</code></pre>
+
+<p>The <code>liststyle</code> option makes it lists all file and folders in a more tree-like structure vill the <code>hide</code> options just hides the selected filetypes and folders.</p>
+<!-- content -->
+</article><!-- .post -->
+
+
+  <article class="post">
+  
+    <h1>
       <a href="http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll" title="Wordcount plugin for Jekyll">
         Wordcount plugin for Jekyll
       </a>
@@ -237,22 +259,6 @@ au InsertLeave * set cursorline
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
-
-
-  <article class="post">
-  
-    <h1>
-      <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" alt="Vimium: the hacker's browser" title="Vimium: the hacker's browser">
-        Vimium: the hacker's browser <span class="invisible">&rarr;</span>
-      </a>
-    </h1>
-    <p class="smallprint">
-    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink: Vimium: the hacker's browser" title="Permalink: Vimium: the hacker's browser" class="invisible">&infin;</a>
-    </p><!-- .smallprint -->
-  
-  <p>I’m probably the last person on earth to discover this neat little extension but it’s nonetheless a great thing for both navigating in <a href="http://www.google.com/chrome" title="Chrome">Chrome</a> and learning the basic <a href="http://www.vim.org/" title="Vim">Vim</a> commands.</p>
 <!-- content -->
 </article><!-- .post -->
 
