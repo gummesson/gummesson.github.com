@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>SVGO</title>
+                <description>&lt;p&gt;A pretty awesome SVG optimizer, written with &lt;a href=&quot;http://nodejs.org/&quot; title=&quot;Node.js&quot;&gt;Node.js&lt;/a&gt;. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.&lt;/p&gt;
+</description>
+                <published>April 25, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/04/25/svgo</link>
+              </item>
+            
+              <item>
                 <title>Scriptlr.js</title>
                 <description>&lt;p&gt;I was getting sick of adding &lt;code&gt;script&lt;/code&gt; tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.&lt;/p&gt;
 </description>
@@ -49,75 +57,6 @@
 </description>
                 <published>April  8, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/08/my-first-ever-pull-request-was-a-success</link>
-              </item>
-            
-              <item>
-                <title>Display your Github repos with jQuery and Mustache.js</title>
-                <description>&lt;p&gt;After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn’t have to look any further than using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;’s &lt;code&gt;getJSON&lt;/code&gt; function and the Javascript implementation of the &lt;a href=&quot;http://mustache.github.com/&quot; title=&quot;Mustache&quot;&gt;Mustache templating engine&lt;/a&gt;. The end result &lt;a href=&quot;/experiments/repos&quot; title=&quot;My Github repositories&quot;&gt;looks pretty neat&lt;/a&gt;, although I think I’m going to tweak the UI a bit. I also created a repository for it &lt;a href=&quot;https://github.com/gummesson/repos.js&quot; title=&quot;repos.js on Github&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-javascript&quot;&gt;The Javascript&lt;/h2&gt;
-
-&lt;p&gt;This is the function itself: &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function getGithubRepositories(username) {
-
-  &quot;use strict&quot;;
-
-  var repoList = $(&quot;#repo-list&quot;);
-  repoList.append(&quot;&amp;lt;li&amp;gt;Loading...&amp;lt;/li&amp;gt;&quot;);
-
-  var githubUsername = function(username, callback) {
-    $.getJSON(&quot;https://api.github.com/users/&quot; + username + &quot;/repos?callback=?&quot;, callback);
-  };
-
-  githubUsername(username, function(data) {
-
-    var template    = $(&quot;#github-repos&quot;).html(),
-        information = Mustache.render(template, data);
-
-    repoList.html(information);
-
-  });
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And you simply use it like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(document).ready(function() {
-
-  &quot;use strict&quot;;
-  getGithubRepositories(&quot;gummesson&quot;);
-
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Just replace &lt;code&gt;gummesson&lt;/code&gt; with your own username and you’re good to go!&lt;/p&gt;
-
-&lt;h2 id=&quot;the-template&quot;&gt;The template&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; If you’re planning to use &lt;a href=&quot;https://github.com/janl/mustache.js&quot; title=&quot;Mustache.js&quot;&gt;Mustache.js&lt;/a&gt; on a &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; site like I do, don’t forget to wrap the &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; template in a &lt;code&gt;raw&lt;/code&gt; block.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ul id=&quot;repo-list&quot;&amp;gt;
-  &amp;lt;script id=&quot;github-repos&quot; type=&quot;text/template&quot;&amp;gt;
-    {{#data}}
-      &amp;lt;li&amp;gt;
-        &amp;lt;a href=&quot;{{html_url}}&quot; title=&quot;{{name}}&quot; alt=&quot;{{name}}&quot;&amp;gt;
-          {{name}}
-        &amp;lt;/a&amp;gt;
-        {{#language}}
-          &amp;lt;em&amp;gt;({{language}})&amp;lt;/em&amp;gt;
-        {{/language}}
-      &amp;lt;/li&amp;gt;
-    {{/data}}
-  &amp;lt;/script&amp;gt;
-&amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.&lt;/p&gt;
-</description>
-                <published>April  4, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js</link>
               </item>
             
     </channel>
