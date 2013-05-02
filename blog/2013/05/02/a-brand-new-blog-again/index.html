@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Ellen Gummesson: Random ramblings, musings and geekiness">
   <meta name="author" content="Ellen Gummesson">
-  <title>WEBrick and Cygwin – Ellen Gummesson</title>
+  <title>A brand new blog (again) – Ellen Gummesson</title>
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
@@ -46,25 +46,20 @@
         <div class="box__wrapper">
           <article class="l-post">
   
-    <h1>WEBrick and Cygwin</h1>
+    <h1>A brand new blog (again)</h1>
   
     <p class="smallprint">
-      Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby" title="Ruby">Ruby</a>
+      Posted on May  2, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>
     </p><!-- .smallprint -->
-      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/" title="Ruby">Ruby</a>, or more specifically <a href="http://rubygems.org/" title="RubyGems">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html" title="Webbrick">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+      <p>I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more <a href="http://oocss.org/" title="OOCSS">OOCSS</a> approach to the writing of the CSS and I mainly used the <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" title="MindBEMding – getting your head ’round BEM syntax">BEM</a> syntax. I don’t find it particularly pretty but it’s quite logical. </p>
 
-<hr />
+<p>Another thing I did was that instead of prefixing the classes of every major part of the site with <code>site-</code> I went for a much simpler <code>l-</code>, which stands for “layout”. I also used <code>br-</code>, “breakpoint”, for the buttons in the main navigation. They get much wider when the site’s viewed on a small screen and instead of having to write a lot of code I simply added a class to them. Very convenient! If I had more “media query”-based classes I probably would’ve used other names for them, but as of right now it works well I think.</p>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130228-1">
-      <p>Which is the default server for <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> and <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a>.<a href="#fnref:20130228-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130228-2">
-      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1" title="How do I killa a Rails Webbrick server?">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>I once again used <a href="http://www.sass-lang.com/">Sass</a>’ excellent <code>darken</code> and <code>lighten</code> functions to generate the color palette. I can’t imagine how I’d do without them, to be honest. Like I mentioned earlier I feel that I’m getting better at designing in general but I’m not designer by far.</p>
+
+<p>I finally added syntax highlighting too. For some reason I completely missed that <a href="http://softwaremaniacs.org/soft/highlight/en/" title="Highlight.js">Highlight.js</a>, the engine that I now use, actually detects the language automatically without me having to add classes and span tags by hand. All the code is suddenly much more readable! I removed the <a href="http://www.vim.org/" title="Vim">Vim</a> keybindings script for the site. It was getting on my nerves and the code looked truly awful.</p>
+
+<p>And that’s a wrap!</p>
 
 </article><!-- .l-post -->
 

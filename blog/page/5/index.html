@@ -1,61 +1,90 @@
-      <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Blog: Ellen Gummesson</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson: Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+  <title>Blog – Ellen Gummesson</title>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
-    <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
     <link rel="canonical" href="http://ellengummesson.com/">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
   <![endif]-->
 </head>
   <body>
-    <hr class="line-top">
-    <div class="container">
-      <div class="grid">
-        <div class="row">
-          <div class="column-six">
-            <header class="site-header">
-              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness" class="invisible no-hover">
-                <img src="/assets/img/logo/logo.png" alt="Ellen Gummesson" class="site-logo">
-              </a>
-            </header><!-- .site-header -->
-          </div><!-- .column-six -->
+    <div class="l-container">
+      <header class="l-header box box--odd">
+        <div class="box__wrapper">
+          <a class="invisible" href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+            <h1 class="l-logo">Ellen.</h1>
+          </a>
 
-                <div class="column-six">
-            <ul class="site-nav">
-              <li>
-                <a href="/" title="Home" alt="Home">Home</a>
-              </li>
-              <li>
-                <a href="/about" title="About" alt="About">About</a>
-              </li>
-              <li>
-                <a href="/archives" title="Archives" alt="Archives">Archives</a>
-              </li>
-              <li>
-                <a href="/contact" title="Contact" alt="Contact">Contact</a>
-              </li>
-            </ul><!-- .site-nav -->
-          </div><!-- .column-six -->
-        </div><!-- .row -->
+              <ul class="l-nav nav">
+            <li>
+              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+            </li>
+          </ul><!-- .l-nav .nav -->
+        </div><!-- .box__wrapper -->
+      </header><!-- .l-header .box .box--odd -->
 
-        <div class="row">
-          <div class="column-twelve">
-            <div class="site-content">
-              
-  <article class="post">
+      <div class="l-content box box--even">
+        <div class="box__wrapper">
+          
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/02/08/fetch" alt="Fetch" title="Fetch">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/12/easy-session-for-vim" alt="Easy Session for Vim" title="Easy Session for Vim">
+        Easy Session for Vim
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on February 12, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
+    </p><!-- .smallprint -->
+  
+  <p>Another week, another project and this time it’s actually something half decent. After a few hours of work over the last couple of days I’m finally done with my first plugin for <a href="http://www.vim.org/" title="Vim">Vim</a> and I named it <a href="https://github.com/gummesson/easy-session.vim" title="Easy Session on GitHub">Easy Session</a>. It lets you easily manage sessions with four commands: <code>:SaveSession</code>, <code>:NewSession</code>, <code>:OpenSession</code> and <code>:ListSessions</code>.</p>
+
+<p><code>:SaveSession</code> uses the current working directory as the default filename, so you have to make sure that you’re in the project’s root directory if you’re saving your session for the first time. It may not be the most ultimate solution, but it’s better than the default filename <code>Session.vim</code>. There’s also <code>:NewSession</code> which lets you use your own custom filename. The <code>:OpenSession</code>, suprisingly, opens a session.</p>
+
+<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075" title="Netrw">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" rel="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
+
+<p><img src="/images/blog/2013-02-12-easy-session-01.png" alt="Easy Session (Sessions List)" /></p>
+
+<p><img src="/images/blog/2013-02-12-easy-session-02.png" alt="Easy Session (Sessions List)" /></p>
+
+<p>I don’t know if it’s useful for anyone but me, but it was a fun challenge. There’s a <a href="http://peterodding.com/code/vim/session/" title="Session.vim">Session.vim</a> plugin that has a lof more advanced features than mine do, but I think I’ll stick with my own solution for now.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130212-1">
+      <p>The “<code>0</code>” makes the list start on the first line in the buffer. If just <code>:read</code> is used it’ll paste the content below the first line.<a href="#fnref:20130212-1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article><!-- .l-post -->
+
+
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/08/fetch" alt="Fetch" title="Fetch">
         Fetch
       </a>
     </h1>
@@ -66,19 +95,19 @@
   <p>I’ve released yet another one of my <em>Mostly Useless™</em> projects, <a href="https://github.com/gummesson/fetch" title="Fetch">Fetch</a>, which let’s you grab a couple of web development resources straight from the command line. Package managers seem to be something that pops up every once in a while. Among them there’s <a href="http://mxcl.github.com/homebrew/" title="homebrew">homebrew</a>, <a href="http://twitter.github.com/bower/" title="Bower">Bower</a>, <a href="http://yeoman.io/" title="Yeoman">Yeoman</a> and of course the good old <a href="http://en.wikipedia.org/wiki/Advanced_Packaging_Tool" title="APT">apt-get</a>, which I use from time to time. They’re lovely tools but as I’m nothing more than a hobbyist they’re a bit overkill for me, so I took a run at creating something a lot more simpler. I wouldn’t really call it a package manager but more of a component catcher though. I’m thinking of implementing <a href="http://www.json.org/" title="JSON">JSON</a> into it instead of using <a href="http://www.yaml.org/" title="YAML">YAML</a>, but we’ll see how that goes. One thing I really need to do is to step up my game and actually start to learn more. I feel that I’ve been staying in the same spot knowledge-wise for quite some time now and it’s time to start to progress again. But I digress.</p>
 
 <p>One a side note, I finally figured out why I couldn’t get my <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> projects to run under <a href="http://crunchbang.org/" title="Crunchbang Linux">Crunchbang Linux</a>. I’d literally forgotten the “whole shebang”, ie: <code>#!/usr/bin/env ruby</code>, at the start. <strong>Head, prepare to meet desk</strong>.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://stackoverflow.com/questions/5006950/setting-netrw-like-nerdtree" alt="Make Netrw behave more like NERDTree" title="Make Netrw behave more like NERDTree">
-        Make Netrw behave more like NERDTree <span class="invisible">&rarr;</span>
+      <a class="invisible" href="http://stackoverflow.com/questions/5006950/setting-netrw-like-nerdtree" alt="Make Netrw behave more like NERDTree" title="Make Netrw behave more like NERDTree">
+        Make Netrw behave more like NERDTree &rarr;
       </a>
     </h1>
     <p class="smallprint">
-    Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>   <a href="http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink: Make Netrw behave more like NERDTree" title="Permalink: Make Netrw behave more like NERDTree" class="invisible">&infin;</a>
+    Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>   <a href="http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" title="Permalink – Make Netrw behave more like NERDTree" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
   <p>This is nice read for using something more native to <a href="http://www.vim.org/" title="Vim">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html" title="Netrw">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree" title="NERDTree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim" title="CtrlP">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
@@ -88,14 +117,14 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
 </code></pre>
 
 <p>The <code>liststyle</code> option makes it lists all file and folders in a more tree-like structure vill the <code>hide</code> options just hides the selected filetypes and folders.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll" title="Wordcount plugin for Jekyll">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll" title="Wordcount plugin for Jekyll">
         Wordcount plugin for Jekyll
       </a>
     </h1>
@@ -114,14 +143,14 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim" title="Markdown preview for Vim">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim" title="Markdown preview for Vim">
         Markdown preview for Vim
       </a>
     </h1>
@@ -169,119 +198,45 @@ endfunction
 </code></pre>
 
 <p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/24/vim-nearly-four-weeks-in" alt="Vim: nearly four weeks in" title="Vim: nearly four weeks in">
-        Vim: nearly four weeks in
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
-    </p><!-- .smallprint -->
-  
-  <p>My little <a href="http://www.vim.org/" title="Vim">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles" title="My Vim files on GitHub">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
-
-<h2 id="a-few-tips-and-tricks">A few tips and tricks</h2>
-
-<p>I won’t go through my whole <code>vimrc</code> file since it’s currently about 225 lines long <em>(and heavily commented)</em> but I want to share a few handy settings.</p>
-
-<p><strong>Set the language to english:</strong></p>
-
-<pre><code>if has("unix")
-  language messages C
-else
-  language messages en
-endif  
-</code></pre>
-
-<p>I don’t know if I’m strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the <code>if...else...endif</code> part so that it plays nice with both of them<sup id="fnref:20130124-3"><a href="#fn:20130124-3" rel="footnote">3</a></sup>. It’s important to note that this needs to be at the very top of your <code>vimrc</code> file if you want it to work.</p>
-
-<p><strong>Use the cursorline as a mode indicator:</strong></p>
-
-<pre><code>au InsertEnter * set nocursorline
-au InsertLeave * set cursorline
-</code></pre>
-
-<p>I wanted an easier way to quickly see which mode I was in without relying on some third party plugin. I of course have the <code>showmode</code> setting enabled but by removing the cursorline from insert mode I don’t even have to move my eyes one bit. I don’t really need to see which line I’m on anyway when I’m actually typing something.</p>
-
-<p><strong>Autoresize all windows:</strong></p>
-
-<pre><code>au VimResized * :wincmd =
-</code></pre>
-
-<p>Resizing your windows in Vim can be a bit of a pain, especially if you want to go from using a fullscreen to something smaller or the other way around. The above setting makes it a lot less of a hassle.</p>
-
-<p><strong>Ignore certain files:</strong></p>
-
-<pre><code>set wildignore+=.git
-</code></pre>
-
-<p>This was one of the features that I like the most about Sublime Text 2 and I’m glad that I can use it in Vim too. If I can’t edit a certain filetype I don’t want to see it.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130124-1">
-      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/" title="Editing Octopress/Jekyll Posts in Vim">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130123-2">
-      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules" title="Git submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130124-3">
-      <p>This works for everything by the way. I think that the default name for Mac is <code>macunix</code>, but I’m not 100% sure. <a href="#fnref:20130124-3" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-<!-- content -->
-</article><!-- .post -->
+            <ul class="l-pagination nav">
+          
+            
+              <li>
+                <a class="button button--even" href="/blog/page/4" alt="Next" title="Next">&larr; Next</a>
+              </li>
+            
+          
+          
+            <li>
+              <a class="button button--even" href="/blog/page/6" alt="Previous" title="Previous">Previous &rarr;</a>
+            </li>
+          
+          </ul><!-- .l-pagination -->
 
 
-          <div class="row">
-          <div class="column-twelve">
-            <nav class="pagination">
-              
-                
-                  <a href="/blog/page/4" alt="Previous" title="Previous">&larr; Previous</a>
-              
-              
-                <span class="pagination-separator">5 ... 20</span>
-              
-                <a href="/blog/page/6" alt="Next" title="Next">Next &rarr;</a>
-              
-            </nav><!-- .pagination -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-
-
-            </div><!-- .site-content -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-              <div class="row">
-          <div class="column-twelve">
-            <footer class="site-footer">
-              <p class="smallprint">
-                Copyright &copy;
-                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
-                  Ellen Gummesson
-                </a>
-                  2013.
-                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
-              </p>
-            </footer><!-- .site-footer -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-      </div><!-- .grid -->
-    </div><!-- .container -->
-    <hr class="line-bottom">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        </div><!-- .box__wrapper -->
+      </div><!-- .l-content .box .box--even -->
+          <footer class="l-footer box box--odd">
+        <div class="box__wrapper">
+          <p class="compressed">
+            Copyright &copy;
+            <a href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+              Ellen Gummesson
+            </a>
+            2013.
+            <a href="/feed.xml" alt="Subscribe" title="Subscribe">Subscribe</a>.
+          </p><!-- .compressed -->
+        </div><!-- .box__wrapper -->
+      </footer><!-- .l-footer .box .box--odd -->
+    </div><!-- .l-container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script src="/assets/js/global.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <script src="/assets/js/main/global.js"></script>
   </body>
 </html>
 

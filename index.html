@@ -1,109 +1,126 @@
-      <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Blog: Ellen Gummesson</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson: Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+  <title>Blog – Ellen Gummesson</title>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
-    <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
     <link rel="canonical" href="http://ellengummesson.com/">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
   <![endif]-->
 </head>
   <body>
-    <hr class="line-top">
-    <div class="container">
-      <div class="grid">
-        <div class="row">
-          <div class="column-six">
-            <header class="site-header">
-              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness" class="invisible no-hover">
-                <img src="/assets/img/logo/logo.png" alt="Ellen Gummesson" class="site-logo">
-              </a>
-            </header><!-- .site-header -->
-          </div><!-- .column-six -->
+    <div class="l-container">
+      <header class="l-header box box--odd">
+        <div class="box__wrapper">
+          <a class="invisible" href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+            <h1 class="l-logo">Ellen.</h1>
+          </a>
 
-                <div class="column-six">
-            <ul class="site-nav">
-              <li>
-                <a href="/" title="Home" alt="Home">Home</a>
-              </li>
-              <li>
-                <a href="/about" title="About" alt="About">About</a>
-              </li>
-              <li>
-                <a href="/archives" title="Archives" alt="Archives">Archives</a>
-              </li>
-              <li>
-                <a href="/contact" title="Contact" alt="Contact">Contact</a>
-              </li>
-            </ul><!-- .site-nav -->
-          </div><!-- .column-six -->
-        </div><!-- .row -->
+              <ul class="l-nav nav">
+            <li>
+              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+            </li>
+          </ul><!-- .l-nav .nav -->
+        </div><!-- .box__wrapper -->
+      </header><!-- .l-header .box .box--odd -->
 
-        <div class="row">
-          <div class="column-twelve">
-            <div class="site-content">
-              
-  <article class="post">
+      <div class="l-content box box--even">
+        <div class="box__wrapper">
+          
+  <article class="l-post">
   
     <h1>
-      <a href="https://github.com/svg/svgo" alt="SVGO" title="SVGO">
-        SVGO <span class="invisible">&rarr;</span>
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/05/02/a-brand-new-blog-again" alt="A brand new blog (again)" title="A brand new blog (again)">
+        A brand new blog (again)
       </a>
     </h1>
     <p class="smallprint">
-    Posted on April 25, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>   <a href="http://ellengummesson.com/blog/2013/04/25/svgo" alt="Permalink: SVGO" title="Permalink: SVGO" class="invisible">&infin;</a>
+      Posted on May  2, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>  
+    </p><!-- .smallprint -->
+  
+  <p>I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more <a href="http://oocss.org/" title="OOCSS">OOCSS</a> approach to the writing of the CSS and I mainly used the <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" title="MindBEMding – getting your head ’round BEM syntax">BEM</a> syntax. I don’t find it particularly pretty but it’s quite logical. </p>
+
+<p>Another thing I did was that instead of prefixing the classes of every major part of the site with <code>site-</code> I went for a much simpler <code>l-</code>, which stands for “layout”. I also used <code>br-</code>, “breakpoint”, for the buttons in the main navigation. They get much wider when the site’s viewed on a small screen and instead of having to write a lot of code I simply added a class to them. Very convenient! If I had more “media query”-based classes I probably would’ve used other names for them, but as of right now it works well I think.</p>
+
+<p>I once again used <a href="http://www.sass-lang.com/">Sass</a>’ excellent <code>darken</code> and <code>lighten</code> functions to generate the color palette. I can’t imagine how I’d do without them, to be honest. Like I mentioned earlier I feel that I’m getting better at designing in general but I’m not designer by far.</p>
+
+<p>I finally added syntax highlighting too. For some reason I completely missed that <a href="http://softwaremaniacs.org/soft/highlight/en/" title="Highlight.js">Highlight.js</a>, the engine that I now use, actually detects the language automatically without me having to add classes and span tags by hand. All the code is suddenly much more readable! I removed the <a href="http://www.vim.org/" title="Vim">Vim</a> keybindings script for the site. It was getting on my nerves and the code looked truly awful.</p>
+
+<p>And that’s a wrap!</p>
+
+</article><!-- .l-post -->
+
+
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="https://github.com/svg/svgo" alt="SVGO" title="SVGO">
+        SVGO &rarr;
+      </a>
+    </h1>
+    <p class="smallprint">
+    Posted on April 25, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>   <a href="http://ellengummesson.com/blog/2013/04/25/svgo" alt="Permalink – SVGO" title="Permalink – SVGO" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
   <p>A pretty awesome SVG optimizer, written with <a href="http://nodejs.org/" title="Node.js">Node.js</a>. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="https://github.com/gummesson/scriptlr.js" alt="Scriptlr.js" title="Scriptlr.js">
-        Scriptlr.js <span class="invisible">&rarr;</span>
+      <a class="invisible" href="https://github.com/gummesson/scriptlr.js" alt="Scriptlr.js" title="Scriptlr.js">
+        Scriptlr.js &rarr;
       </a>
     </h1>
     <p class="smallprint">
-    Posted on April 22, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Javascript" alt="Javascript" title="Javascript">Javascript</a>   <a href="http://ellengummesson.com/blog/2013/04/22/scriptlr-js" alt="Permalink: Scriptlr.js" title="Permalink: Scriptlr.js" class="invisible">&infin;</a>
+    Posted on April 22, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Javascript" alt="Javascript" title="Javascript">Javascript</a>   <a href="http://ellengummesson.com/blog/2013/04/22/scriptlr-js" alt="Permalink – Scriptlr.js" title="Permalink – Scriptlr.js" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
   <p>I was getting sick of adding <code>script</code> tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://substack.net/weaning_yourself_off_jquery" alt="Weaning yourself of jQuery" title="Weaning yourself of jQuery">
-        Weaning yourself of jQuery <span class="invisible">&rarr;</span>
+      <a class="invisible" href="http://substack.net/weaning_yourself_off_jquery" alt="Weaning yourself of jQuery" title="Weaning yourself of jQuery">
+        Weaning yourself of jQuery &rarr;
       </a>
     </h1>
     <p class="smallprint">
-    Posted on April 19, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery" title="jQuery">jQuery</a>, <a href="/blog/tag/Javascript" alt="Javascript" title="Javascript">Javascript</a>   <a href="http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink: Weaning yourself of jQuery" title="Permalink: Weaning yourself of jQuery" class="invisible">&infin;</a>
+    Posted on April 19, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery" title="jQuery">jQuery</a>, <a href="/blog/tag/Javascript" alt="Javascript" title="Javascript">Javascript</a>   <a href="http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink – Weaning yourself of jQuery" title="Permalink – Weaning yourself of jQuery" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
   <p>A great post on how to do basic DOM manipulation with plain Javascript instead of using <a href="http://jquery.com/" title="jQuery">jQuery</a>. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/04/12/its-the-little-things" alt="It's the little things" title="It's the little things">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/04/12/its-the-little-things" alt="It's the little things" title="It's the little things">
         It's the little things
       </a>
     </h1>
@@ -126,64 +143,43 @@
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/04/08/my-first-ever-pull-request-was-a-success" alt="My first ever pull request was a success" title="My first ever pull request was a success">
-        My first ever pull request was a success
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on April  8, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Open Source" alt="Open Source" title="Open Source">Open Source</a>  
-    </p><!-- .smallprint -->
-  
-  <p>So yesterday I sent my first pull request ever and it actually got merged. My addition was adding a link to Airbnb’s <a href="https://github.com/airbnb/javascript" title="Airbnb JavaScript Style Guide">JavaScript Style Guide</a> in a <a href="https://github.com/gregstallings/styleguides" title="A handy collection of style guides">repository that collects a bunch of styleguides</a>. It may not be the most exciting thing ever but I guess that I can now officially call myself an open source contributor, right?</p>
-<!-- content -->
-</article><!-- .post -->
+            <ul class="l-pagination nav">
+          
+              <li>
+                <a class="button button--even button--disabled">&larr; Next</a>
+              </li>
+          
+          
+            <li>
+              <a class="button button--even" href="/blog/page/2" alt="Previous" title="Previous">Previous &rarr;</a>
+            </li>
+          
+          </ul><!-- .l-pagination -->
 
 
-          <div class="row">
-          <div class="column-twelve">
-            <nav class="pagination">
-              
-                <span class="invisible">&larr; Previous</span>
-              
-                <span class="pagination-separator">1 ... 20</span>
-              
-                <a href="/blog/page/2" alt="Next" title="Next">Next &rarr;</a>
-              
-            </nav><!-- .pagination -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-
-
-            </div><!-- .site-content -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-              <div class="row">
-          <div class="column-twelve">
-            <footer class="site-footer">
-              <p class="smallprint">
-                Copyright &copy;
-                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
-                  Ellen Gummesson
-                </a>
-                  2013.
-                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
-              </p>
-            </footer><!-- .site-footer -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-      </div><!-- .grid -->
-    </div><!-- .container -->
-    <hr class="line-bottom">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        </div><!-- .box__wrapper -->
+      </div><!-- .l-content .box .box--even -->
+          <footer class="l-footer box box--odd">
+        <div class="box__wrapper">
+          <p class="compressed">
+            Copyright &copy;
+            <a href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+              Ellen Gummesson
+            </a>
+            2013.
+            <a href="/feed.xml" alt="Subscribe" title="Subscribe">Subscribe</a>.
+          </p><!-- .compressed -->
+        </div><!-- .box__wrapper -->
+      </footer><!-- .l-footer .box .box--odd -->
+    </div><!-- .l-container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script src="/assets/js/global.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <script src="/assets/js/main/global.js"></script>
   </body>
 </html>
 

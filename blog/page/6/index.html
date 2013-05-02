@@ -1,61 +1,123 @@
-      <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Blog: Ellen Gummesson</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson: Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+  <title>Blog – Ellen Gummesson</title>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
-    <meta name="description" content="Ellen Gummesson - Random ramblings, musings and geekiness">
-    <meta name="author" content="Ellen Gummesson">
     <link rel="author" href="/humans.txt" type="text/plain">
     <link rel="canonical" href="http://ellengummesson.com/">
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
     <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
   <!--[if lt IE 9]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
   <![endif]-->
 </head>
   <body>
-    <hr class="line-top">
-    <div class="container">
-      <div class="grid">
-        <div class="row">
-          <div class="column-six">
-            <header class="site-header">
-              <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness" class="invisible no-hover">
-                <img src="/assets/img/logo/logo.png" alt="Ellen Gummesson" class="site-logo">
-              </a>
-            </header><!-- .site-header -->
-          </div><!-- .column-six -->
+    <div class="l-container">
+      <header class="l-header box box--odd">
+        <div class="box__wrapper">
+          <a class="invisible" href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+            <h1 class="l-logo">Ellen.</h1>
+          </a>
 
-                <div class="column-six">
-            <ul class="site-nav">
-              <li>
-                <a href="/" title="Home" alt="Home">Home</a>
-              </li>
-              <li>
-                <a href="/about" title="About" alt="About">About</a>
-              </li>
-              <li>
-                <a href="/archives" title="Archives" alt="Archives">Archives</a>
-              </li>
-              <li>
-                <a href="/contact" title="Contact" alt="Contact">Contact</a>
-              </li>
-            </ul><!-- .site-nav -->
-          </div><!-- .column-six -->
-        </div><!-- .row -->
+              <ul class="l-nav nav">
+            <li>
+              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+            </li>
+          </ul><!-- .l-nav .nav -->
+        </div><!-- .box__wrapper -->
+      </header><!-- .l-header .box .box--odd -->
 
-        <div class="row">
-          <div class="column-twelve">
-            <div class="site-content">
-              
-  <article class="post">
+      <div class="l-content box box--even">
+        <div class="box__wrapper">
+          
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world" alt="Serve: the ugliest static site generator in the world" title="Serve: the ugliest static site generator in the world">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/24/vim-nearly-four-weeks-in" alt="Vim: nearly four weeks in" title="Vim: nearly four weeks in">
+        Vim: nearly four weeks in
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
+    </p><!-- .smallprint -->
+  
+  <p>My little <a href="http://www.vim.org/" title="Vim">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles" title="My Vim files on GitHub">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
+
+<h2 id="a-few-tips-and-tricks">A few tips and tricks</h2>
+
+<p>I won’t go through my whole <code>vimrc</code> file since it’s currently about 225 lines long <em>(and heavily commented)</em> but I want to share a few handy settings.</p>
+
+<p><strong>Set the language to english:</strong></p>
+
+<pre><code>if has("unix")
+  language messages C
+else
+  language messages en
+endif  
+</code></pre>
+
+<p>I don’t know if I’m strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the <code>if...else...endif</code> part so that it plays nice with both of them<sup id="fnref:20130124-3"><a href="#fn:20130124-3" rel="footnote">3</a></sup>. It’s important to note that this needs to be at the very top of your <code>vimrc</code> file if you want it to work.</p>
+
+<p><strong>Use the cursorline as a mode indicator:</strong></p>
+
+<pre><code>au InsertEnter * set nocursorline
+au InsertLeave * set cursorline
+</code></pre>
+
+<p>I wanted an easier way to quickly see which mode I was in without relying on some third party plugin. I of course have the <code>showmode</code> setting enabled but by removing the cursorline from insert mode I don’t even have to move my eyes one bit. I don’t really need to see which line I’m on anyway when I’m actually typing something.</p>
+
+<p><strong>Autoresize all windows:</strong></p>
+
+<pre><code>au VimResized * :wincmd =
+</code></pre>
+
+<p>Resizing your windows in Vim can be a bit of a pain, especially if you want to go from using a fullscreen to something smaller or the other way around. The above setting makes it a lot less of a hassle.</p>
+
+<p><strong>Ignore certain files:</strong></p>
+
+<pre><code>set wildignore+=.git
+</code></pre>
+
+<p>This was one of the features that I like the most about Sublime Text 2 and I’m glad that I can use it in Vim too. If I can’t edit a certain filetype I don’t want to see it.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130124-1">
+      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/" title="Editing Octopress/Jekyll Posts in Vim">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20130123-2">
+      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules" title="Git submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20130124-3">
+      <p>This works for everything by the way. I think that the default name for Mac is <code>macunix</code>, but I’m not 100% sure. <a href="#fnref:20130124-3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article><!-- .l-post -->
+
+
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/20/serve-the-ugliest-static-site-generator-in-the-world" alt="Serve: the ugliest static site generator in the world" title="Serve: the ugliest static site generator in the world">
         Serve: the ugliest static site generator in the world
       </a>
     </h1>
@@ -87,30 +149,30 @@
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" alt="Vimium: the hacker's browser" title="Vimium: the hacker's browser">
-        Vimium: the hacker's browser <span class="invisible">&rarr;</span>
+      <a class="invisible" href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" alt="Vimium: the hacker's browser" title="Vimium: the hacker's browser">
+        Vimium: the hacker's browser &rarr;
       </a>
     </h1>
     <p class="smallprint">
-    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink: Vimium: the hacker's browser" title="Permalink: Vimium: the hacker's browser" class="invisible">&infin;</a>
+    Posted on January 18, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>   <a href="http://ellengummesson.com/blog/2013/01/18/vimium" alt="Permalink – Vimium: the hacker's browser" title="Permalink – Vimium: the hacker's browser" class="invisible">&infin;</a>
     </p><!-- .smallprint -->
   
   <p>I’m probably the last person on earth to discover this neat little extension but it’s nonetheless a great thing for both navigating in <a href="http://www.google.com/chrome" title="Chrome">Chrome</a> and learning the basic <a href="http://www.vim.org/" title="Vim">Vim</a> commands.</p>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I created yet another (pointless) app" title="I created yet another (pointless) app">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I created yet another (pointless) app" title="I created yet another (pointless) app">
         I created yet another (pointless) app
       </a>
     </h1>
@@ -129,14 +191,14 @@
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
+  <article class="l-post">
   
     <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/12/launch-week" alt="Launch week" title="Launch week">
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/12/launch-week" alt="Launch week" title="Launch week">
         Launch week
       </a>
     </h1>
@@ -159,90 +221,45 @@
     </li>
   </ol>
 </div>
-<!-- content -->
-</article><!-- .post -->
+
+</article><!-- .l-post -->
 
 
-  <article class="post">
-  
-    <h1>
-      <a href="http://ellengummesson.com/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app" alt="Lo and behold, I've launched an web app!" title="Lo and behold, I've launched an web app!">
-        Lo and behold, I've launched an web app!
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on January 10, 2013  in  <a href="/blog/tag/Web" alt="Web" title="Web">Web</a>, <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
-    </p><!-- .smallprint -->
-  
-  <p>The day before yesterday I launched my first “web app”, <a href="http://kramit.ellengummesson.com/" title="Kramit!">Kramit!</a>. Like about half a million people on the internet with some kind of web development interest I created yet another <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> preview app and with the wonderful micro web framework <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a>. It’s nothing unique but I’m quite proud nonetheless. I haven’t actually seen that many that uses <a href="http://kramdown.rubyforge.org/" title="Kramdown">Kramdown</a> as it’s default parser, so I guess that that aspect is somewhat pretty unique<sup id="fnref:20130110-1"><a href="#fn:20130110-1" rel="footnote">1</a></sup>.</p>
-
-<h2 id="more-minimum-than-an-mvp">More minimum than an MVP</h2>
-
-<p><em>Kramit!</em> is at it’s core the definition of an MVP<sup id="fnref:20130110-2"><a href="#fn:20130110-2" rel="footnote">2</a></sup>. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That’s nothing! I’m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn’t actually writing the code but rather designing it.<sup id="fnref:20130110-3"><a href="#fn:20130110-3" rel="footnote">3</a></sup></p>
-
-<h2 id="so-whats-next">So, what’s next?</h2>
-
-<p>First of all I think I’m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at <a href="http://rubyonrails.org/" title="Ruby on Rails">Ruby on Rails</a>. It’s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130110-1">
-      <p>I like it because it has <a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">MultiMarkdown</a> features like footnotes for examples (this footnote became very meta by the way).<a href="#fnref:20130110-1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130110-2">
-      <p><a href="http://en.wikipedia.org/wiki/Minimum_viable_product" title="Minimum viable product">Minimum viable product</a>.<a href="#fnref:20130110-2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:20130110-3">
-      <p>I would called myself challenged in that department. My basic design process is “make something up, strip away all the things that I though was going to look good but didn’t, look it at it again and then remove some more”.<a href="#fnref:20130110-3" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-<!-- content -->
-</article><!-- .post -->
+            <ul class="l-pagination nav">
+          
+            
+              <li>
+                <a class="button button--even" href="/blog/page/5" alt="Next" title="Next">&larr; Next</a>
+              </li>
+            
+          
+          
+            <li>
+              <a class="button button--even" href="/blog/page/7" alt="Previous" title="Previous">Previous &rarr;</a>
+            </li>
+          
+          </ul><!-- .l-pagination -->
 
 
-          <div class="row">
-          <div class="column-twelve">
-            <nav class="pagination">
-              
-                
-                  <a href="/blog/page/5" alt="Previous" title="Previous">&larr; Previous</a>
-              
-              
-                <span class="pagination-separator">6 ... 20</span>
-              
-                <a href="/blog/page/7" alt="Next" title="Next">Next &rarr;</a>
-              
-            </nav><!-- .pagination -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-
-
-            </div><!-- .site-content -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-              <div class="row">
-          <div class="column-twelve">
-            <footer class="site-footer">
-              <p class="smallprint">
-                Copyright &copy;
-                <a href="/" title="Ellen Gummesson: Random ramblings, musings and geekiness" alt="Ellen Gummesson: Random ramblings, musings and geekiness">
-                  Ellen Gummesson
-                </a>
-                  2013.
-                <a href="/feed.xml" title="Subscribe" alt="Subscribe">Subscribe</a>.
-              </p>
-            </footer><!-- .site-footer -->
-          </div><!-- .column-twelve -->
-        </div><!-- .row -->
-      </div><!-- .grid -->
-    </div><!-- .container -->
-    <hr class="line-bottom">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        </div><!-- .box__wrapper -->
+      </div><!-- .l-content .box .box--even -->
+          <footer class="l-footer box box--odd">
+        <div class="box__wrapper">
+          <p class="compressed">
+            Copyright &copy;
+            <a href="/" alt="Ellen Gummesson: Random ramblings, musings and geekiness" title="Ellen Gummesson: Random ramblings, musings and geekiness">
+              Ellen Gummesson
+            </a>
+            2013.
+            <a href="/feed.xml" alt="Subscribe" title="Subscribe">Subscribe</a>.
+          </p><!-- .compressed -->
+        </div><!-- .box__wrapper -->
+      </footer><!-- .l-footer .box .box--odd -->
+    </div><!-- .l-container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script src="/assets/js/global.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <script src="/assets/js/main/global.js"></script>
   </body>
 </html>
 
