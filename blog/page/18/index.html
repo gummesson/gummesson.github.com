@@ -27,16 +27,16 @@
 
               <ul class="l-nav nav">
             <li>
-              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+              <a class="button button--odd br-button--aligned" href="/" alt="Home" title="Home">Home</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+              <a class="button button--odd br-button--aligned" href="/about" alt="About" title="About">About</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+              <a class="button button--odd br-button--aligned" href="/archives" alt="Archives" title="Archives">Archives</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+              <a class="button button--odd br-button--aligned" href="/contact" alt="Contact" title="Contact">Contact</a>
             </li>
           </ul><!-- .l-nav .nav -->
         </div><!-- .box__wrapper -->
@@ -45,6 +45,24 @@
       <div class="l-content box box--even">
         <div class="box__wrapper">
           
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="http://ellengummesson.com/blog/2012/09/07/redesigning" alt="Redesigning" title="Redesigning">
+        Redesigning
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on September  7, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Design" alt="Design" title="Design">Design</a>  
+    </p><!-- .smallprint -->
+  
+  <p>Even though this site isn’t even a month old I’m having serious thoughts about redesigning it. In fact, I already have a design that’s about 99% finished. I’m having a hard time deciding if I really should switch or not though. One minute I’m liking the current design (atleast the basic structure of it) and the next I dislike it. One thing I really don’t like with it is that the default typeface used for the body copy (<a href="http://www.google.com/webfonts/specimen/Vollkorn">Vollkorn</a>) looks really nice as long as you don’t use the bold and italic font styles on your text. The bold looks really heavy compared to the normal weight and that bugs me quite much. The italic version looks okay, but I’m not totally happy with it. The typography is a big part of this site’s design (if not the only part) since I’m not a really graphical designer (I wouldn’t even call myself a designer, to be honest). </p>
+
+<p>In hindsight I probably should’ve spent more time on choosing the right typefaces earlier, but I was eager to launch this site so I didn’t. So, I guess the conclusion of this post is that I’ll likely change the typefaces, but stick to the one column layout. I’m thinking about cleaning up the code a bit too, but we’ll see how that goes.</p>
+
+</article><!-- .l-post -->
+
+
   <article class="l-post">
   
     <h1>
@@ -236,60 +254,17 @@
 </article><!-- .l-post -->
 
 
-  <article class="l-post">
-  
-    <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My first plugin for Jekyll" title="My first plugin for Jekyll">
-        My first plugin for Jekyll
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll" title="Jekyll">Jekyll</a>  
-    </p><!-- .smallprint -->
-  
-  <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
-
-<h2 id="source-code">Source code</h2>
-
-<pre><code>module Jekyll
-  class Vimeo &lt; Liquid::Tag
-    @@width = 500
-    @@height = 281
-
-    def initialize(name, id, tokens)
-      super
-      @id = id
-    end
-
-    def render(context)
-      %(&lt;iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;)
-    end
-  end
-end
-
-Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
-</code></pre>
-
-<h3 id="liquid-tag">Liquid tag</h3>
-
-<pre><code>{% vimeo 12345678 %}
-</code></pre>
-
-
-</article><!-- .l-post -->
-
-
             <ul class="l-pagination nav">
           
             
               <li>
-                <a class="button button--even" href="/blog/page/17" alt="Next" title="Next">&larr; Next</a>
+                <a class="button button--even button--wide" href="/blog/page/17" alt="Next" title="Next">&larr; Next</a>
               </li>
             
           
           
             <li>
-              <a class="button button--even" href="/blog/page/19" alt="Previous" title="Previous">Previous &rarr;</a>
+              <a class="button button--even button--wide" href="/blog/page/19" alt="Previous" title="Previous">Previous &rarr;</a>
             </li>
           
           </ul><!-- .l-pagination -->

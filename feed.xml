@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Responsive Inspector</title>
+                <description>&lt;p&gt;A pretty nice &lt;a href=&quot;https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim&quot; title=&quot;Responsive Inspector&quot;&gt;Chrome extension&lt;/a&gt; for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.&lt;/p&gt;
+</description>
+                <published>May  6, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/05/06/responsive-inspector</link>
+              </item>
+            
+              <item>
                 <title>A brand new blog (again)</title>
                 <description>&lt;p&gt;I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more &lt;a href=&quot;http://oocss.org/&quot; title=&quot;OOCSS&quot;&gt;OOCSS&lt;/a&gt; approach to the writing of the CSS and I mainly used the &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot; title=&quot;MindBEMding – getting your head ’round BEM syntax&quot;&gt;BEM&lt;/a&gt; syntax. I don’t find it particularly pretty but it’s quite logical. &lt;/p&gt;
 
@@ -43,28 +51,6 @@
 </description>
                 <published>April 19, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery</link>
-              </item>
-            
-              <item>
-                <title>It's the little things</title>
-                <description>&lt;p&gt;A couple of days ago Chris Coyier &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/&quot; title=&quot;Can You “Over Organize” JavaScript?&quot;&gt;wrote an interesting post&lt;/a&gt; asking if you can over organize your Javascript. Since I just started to learn it “properly” I decided to challenge myself by &lt;a href=&quot;http://snippi.com/s/r5kl9vo&quot; title=&quot;css-tricks.js&quot;&gt;re-writing the code&lt;/a&gt; he had posted. He responded with &lt;a href=&quot;http://css-tricks.com/can-you-over-organize-javascript/#comment-366077&quot; title=&quot;&amp;quot;Very nice!&amp;quot;&quot;&gt;this comment&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2013-04-12-css-tricks.png&quot; alt=&quot;A very nice comment&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m not going to lie, that made me smile&lt;sup id=&quot;fnref:20130412-1&quot;&gt;&lt;a href=&quot;#fn:20130412-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130412-1&quot;&gt;
-      &lt;p&gt;And you can officially file this post under “humble brag”.&lt;a href=&quot;#fnref:20130412-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>April 12, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/04/12/its-the-little-things</link>
               </item>
             
     </channel>

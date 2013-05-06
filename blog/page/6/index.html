@@ -27,16 +27,16 @@
 
               <ul class="l-nav nav">
             <li>
-              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+              <a class="button button--odd br-button--aligned" href="/" alt="Home" title="Home">Home</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+              <a class="button button--odd br-button--aligned" href="/about" alt="About" title="About">About</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+              <a class="button button--odd br-button--aligned" href="/archives" alt="Archives" title="Archives">Archives</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+              <a class="button button--odd br-button--aligned" href="/contact" alt="Contact" title="Contact">Contact</a>
             </li>
           </ul><!-- .l-nav .nav -->
         </div><!-- .box__wrapper -->
@@ -45,6 +45,61 @@
       <div class="l-content box box--even">
         <div class="box__wrapper">
           
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim" title="Markdown preview for Vim">
+        Markdown preview for Vim
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>  
+    </p><!-- .smallprint -->
+  
+  <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/" title="Vim">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/" title="Pandoc">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+endfunction
+</code></pre>
+
+<p>It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It’s not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that’ll open the <code>preview.html</code> directly in the browser:</p>
+
+<pre><code>if has("win32")
+  silent exec '!start cmd /c preview.html'
+else
+  silent exec '!xdg-open preview.html'
+endif
+</code></pre>
+
+<p>One thing that’s worth being mentioned is that the <code>!xdg-open</code> part can be changed to <code>!open</code> and then you can also use it if you’re on a Mac.</p>
+
+<p>In the end the whole thing looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+  if has("win32")
+    silent exec '!start cmd /c preview.html'
+  else
+    silent exec '!xdg-open preview.html'
+  endif
+endfunction
+</code></pre>
+
+<p>And the mapping looks like this:</p>
+
+<pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
+</code></pre>
+
+<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
+
+</article><!-- .l-post -->
+
+
   <article class="l-post">
   
     <h1>
@@ -195,47 +250,17 @@ au InsertLeave * set cursorline
 </article><!-- .l-post -->
 
 
-  <article class="l-post">
-  
-    <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/12/launch-week" alt="Launch week" title="Launch week">
-        Launch week
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on January 12, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>  
-    </p><!-- .smallprint -->
-  
-  <p>Yesterday I finally pushed something to the master branch of a thing I started working on last week, <a href="#" title="Smallwork">Smallwork</a>. It’s a small yet full featured <a href="http://sass-lang.com/" title="SCSS">SCSS</a> framework, or starting point as I’d like to call it. The first time I tried SCSS was way back in August or September but I didn’t really “get” it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines<sup id="fnref:20130112-1"><a href="#fn:20130112-1" rel="footnote">1</a></sup> which kind of makes it my most ambitious work to date.</p>
-
-<p>I also played around with <a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a> again and came up with a simple journal app which uses <a href="http://datamapper.org/" title="Datamapper">Datamapper</a> and <a href="http://www.sqlite.org/" title="SQLite 3">SQLite3</a> for storing everything in a database. Like I mentioned earlier I’m quite fond of Sinatra, especially since it’s really easy to understand what do to and what’s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I’m not in fact dreaming. I’m no expert but I like where I’m going with it and I’ve barely scratched the surface.</p>
-
-<p>I’m also thinking about extending <a href="http://kramit.ellengummesson.com/" title="Kramit!">Kramit!</a> a bit, but we’ll see how that goes… I guess I should try to slow myself down a bit since I’ve launched three new projects this week alone. I’m having fun though!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130112-1">
-      <p>That’s including blank lines and comments. It’s still a pretty big number though. The compiled CSS code is 682 lines long and that’s without any additional content besides the basic structure itself.<a href="#fnref:20130112-1" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-</article><!-- .l-post -->
-
-
             <ul class="l-pagination nav">
           
             
               <li>
-                <a class="button button--even" href="/blog/page/5" alt="Next" title="Next">&larr; Next</a>
+                <a class="button button--even button--wide" href="/blog/page/5" alt="Next" title="Next">&larr; Next</a>
               </li>
             
           
           
             <li>
-              <a class="button button--even" href="/blog/page/7" alt="Previous" title="Previous">Previous &rarr;</a>
+              <a class="button button--even button--wide" href="/blog/page/7" alt="Previous" title="Previous">Previous &rarr;</a>
             </li>
           
           </ul><!-- .l-pagination -->

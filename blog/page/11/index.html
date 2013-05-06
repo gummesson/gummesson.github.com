@@ -27,16 +27,16 @@
 
               <ul class="l-nav nav">
             <li>
-              <a class="button button--odd br-button--full" href="/" alt="Home" title="Home">Home</a>
+              <a class="button button--odd br-button--aligned" href="/" alt="Home" title="Home">Home</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/about" alt="About" title="About">About</a>
+              <a class="button button--odd br-button--aligned" href="/about" alt="About" title="About">About</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/archives" alt="Archives" title="Archives">Archives</a>
+              <a class="button button--odd br-button--aligned" href="/archives" alt="Archives" title="Archives">Archives</a>
             </li>
             <li>
-              <a class="button button--odd br-button--full" href="/contact" alt="Contact" title="Contact">Contact</a>
+              <a class="button button--odd br-button--aligned" href="/contact" alt="Contact" title="Contact">Contact</a>
             </li>
           </ul><!-- .l-nav .nav -->
         </div><!-- .box__wrapper -->
@@ -45,6 +45,73 @@
       <div class="l-content box box--even">
         <div class="box__wrapper">
           
+  <article class="l-post">
+  
+    <h1>
+      <a class="invisible" href="http://ellengummesson.com/blog/2012/11/15/automated-markdown-links-and-better-footnotes" alt="Automated Markdown links and better footnotes" title="Automated Markdown links and better footnotes">
+        Automated Markdown links and better footnotes
+      </a>
+    </h1>
+    <p class="smallprint">
+      Posted on November 15, 2012  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>  
+    </p><!-- .smallprint -->
+  
+  <p>I’ve finally updated <a href="https://github.com/gummesson/markdown-hotstrings" title="Markdown Hotstrings on GitHub">my Markdown Hostrings repo</a> I wrote about earlier with a couple of new things that I came up with after some tinkering. I’ve tried them and they’ve been really helpful for me, so I hope that somebody will also find them useful.</p>
+
+<h2 id="automated-links">Automated links</h2>
+
+<p>I finally figured out how to paste an URL from the clipboard directly into a Markdown-formatted link. I’ve looked and looked around the web but I felt that all the solutions I found were a bit to “complicated” for such a basic thing. I figured that a simple script for copying and pasting an URL into a simple text string surely wouldn’t need 7-10 lines of code? For once, my instincts were right. Here’s the hotstring in just three lines of code:</p>
+
+<pre><code>:oc:.plk::
+{ 
+url = %clipboard%
+SendInput {Enter}[](%url% {" 2}){Home}{Backspace}{Right}
+Return
+}
+</code></pre>
+
+<p>Which is going to output something like this when you type <code>.plk</code><sup id="fnref:20121115-1"><a href="#fn:20121115-1" rel="footnote">1</a></sup>:</p>
+
+<pre><code>[](http://www.website.com/ "")
+</code></pre>
+
+<p>In theory the <code>url = %clipboard%</code> line is unnecessary, but I’ve had trouble with getting the <code>%clipboard%</code> to work properly a few times So I decided to leave it in the script. I also kind of like the look of it. It’s worth to note that the above hotstring just copies and pastes whatever’s in your clipboard so you have to make sure that you’ve copied the URL before you use it.</p>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>Another thing I came up with was a hotstring for creating better reference numbers for footnotes. If you’re planning on using footnotes extensively you can’t just write something like <code>[^1]</code> since it’ll just add the exact number you use, ie: 1. That means that if you’re using several of those on the same page it’ll get messy, so I threw together a simple script that adds the date inside a footnote:</p>
+
+<pre><code>:oc:.fndi::
+{ 
+FormatTime, date,, yyyyMdd
+SendInput [{^}%date%-]{Left}
+Return
+}
+</code></pre>
+
+<p>Which outputs something like this when you type <code>.fndi</code><sup id="fnref:20121115-2"><a href="#fn:20121115-2" rel="footnote">2</a></sup>:</p>
+
+<pre><code>[^20121115-]
+</code></pre>
+
+<p>You do have to add the footnote number yourself, but that’s not too much of a hassle. It’ll obviously won’t work that great if you’re publishing several posts a day, but it could be easily modified to add hours, minutes and seconds to it and so on.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121115-1">
+      <p>The cursor will be placed inside the square brackets.<a href="#fnref:20121115-1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:20121115-2">
+      <p>The cursor will be placed after the hyphen.<a href="#fnref:20121115-2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article><!-- .l-post -->
+
+
   <article class="l-post">
   
     <h1>
@@ -158,47 +225,17 @@
 </article><!-- .l-post -->
 
 
-  <article class="l-post">
-  
-    <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking" alt="Pop – a minimal approach to digital notetaking" title="Pop – a minimal approach to digital notetaking">
-        Pop – a minimal approach to digital notetaking
-      </a>
-    </h1>
-    <p class="smallprint">
-      Posted on November  6, 2012  in  <a href="/blog/tag/Tech" alt="Tech" title="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps" title="Apps">Apps</a>, <a href="/blog/tag/iOS" alt="iOS" title="iOS">iOS</a>  
-    </p><!-- .smallprint -->
-  
-  <p>After trying Squarespace Note for a few days I decided that it wasn’t really for me. Even though I feel in love with the interface I couldn’t really get over the fact that I couldn’t choose another folder other than the app’s default to save my notes to in Dropbox. I still think it’s a very competent and useful app though, but it’s just not my cup of tea. I decided to look for something else and I did find a worthy replacement: <a href="http://minimaltools.com/" title="Minimal Tools - Pop">Pop</a>.</p>
-
-<h2 id="pop">Pop</h2>
-
-<p>The description from <a href="http://minimaltools.com/" title="Minimal Tools – Pop">the official website</a> describes the purpose of the app perfectly:</p>
-
-<blockquote>
-  <p>Pop is simply a convenient place for writing things down — that piece of paper you grab to write when you have an idea. It doesn’t help you do anything smarter or more organized.</p>
-</blockquote>
-
-<p>This means that’s there’s no integration with any other service or app whatsoever. You’re only able to write down what you want to keep, and then select it all and copy it to another text editor for further editing and writing. I love that. Note was really similiar to my default text editor, <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a>, while Pop certainly isn’t. I can only use one blank “canvas” to write down my ideas and thoughts. There’s nothing to fiddle with. That feels quite refreshing to be honest (I actually wrote the majority of this post in said app). My handwriting is incredibly messy so it’s nice to have an app that can quite frankly replace my need for an actual physical notebook. </p>
-
-<p><img src="/images/blog/2012-11-06-pop-for-ios.png" alt="Pop for iOS (with a swedish keyboard)" title="Pop for iOS (with a swedish keyboard)" /></p>
-
-<p>I feel confident that Pop is going to prove itself useful for me. I’m absolutely certain that I’m going to continue to use it as a springboard for ideas, blog posts and just general thoughts. Just like how it’s meant to be used, in my opinion.</p>
-
-</article><!-- .l-post -->
-
-
             <ul class="l-pagination nav">
           
             
               <li>
-                <a class="button button--even" href="/blog/page/10" alt="Next" title="Next">&larr; Next</a>
+                <a class="button button--even button--wide" href="/blog/page/10" alt="Next" title="Next">&larr; Next</a>
               </li>
             
           
           
             <li>
-              <a class="button button--even" href="/blog/page/12" alt="Previous" title="Previous">Previous &rarr;</a>
+              <a class="button button--even button--wide" href="/blog/page/12" alt="Previous" title="Previous">Previous &rarr;</a>
             </li>
           
           </ul><!-- .l-pagination -->
