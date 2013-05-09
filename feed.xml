@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>stereokai.vim</title>
+                <description>&lt;p&gt;Lately I’ve really started to enjoy &lt;a href=&quot;http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/&quot; title=&quot;Monokai&quot;&gt;the Monokai theme&lt;/a&gt;. There’s a couple of different versions out there for &lt;a href=&quot;http://www.vim.org&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and my favorite is &lt;a href=&quot;https://github.com/jaromero/vim-monokai-refined&quot; title=&quot;Monokai-Refined on Github&quot;&gt;Monokai-Refined&lt;/a&gt;. However, Vim’s way of handling highlighting can sometimes be quite weird so I decided to add some minor tweaks so that it looks especially good when your writing HTML, CSS and Javascript and make it available in a repository. I don’t know if it’ll replace my beloved &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot; title=&quot;Tomorrow Theme on Github&quot;&gt;Tomorrow Theme&lt;/a&gt; or &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;, but it’s definitively a close third atleast.&lt;/p&gt;
+</description>
+                <published>May  9, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/05/09/stereokai-vim</link>
+              </item>
+            
+              <item>
                 <title>Responsive Inspector</title>
                 <description>&lt;p&gt;A pretty nice &lt;a href=&quot;https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim&quot; title=&quot;Responsive Inspector&quot;&gt;Chrome extension&lt;/a&gt; for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.&lt;/p&gt;
 </description>
@@ -43,14 +51,6 @@
 </description>
                 <published>April 22, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/22/scriptlr-js</link>
-              </item>
-            
-              <item>
-                <title>Weaning yourself of jQuery</title>
-                <description>&lt;p&gt;A great post on how to do basic DOM manipulation with plain Javascript instead of using &lt;a href=&quot;http://jquery.com/&quot; title=&quot;jQuery&quot;&gt;jQuery&lt;/a&gt;. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.&lt;/p&gt;
-</description>
-                <published>April 19, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery</link>
               </item>
             
     </channel>
