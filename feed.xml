@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>CSS Architecture</title>
+                <description>&lt;p&gt;A nice and lengthy article about how to write modular and maintainable CSS. I especially like the naming conventions, mostly because they’re similar to my own. I’m vain like that.&lt;/p&gt;
+</description>
+                <published>May 14, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/05/14/css-architecture</link>
+              </item>
+            
+              <item>
                 <title>stereokai.vim</title>
                 <description>&lt;p&gt;Lately I’ve really started to enjoy &lt;a href=&quot;http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/&quot; title=&quot;Monokai&quot;&gt;the Monokai theme&lt;/a&gt;. There’s a couple of different versions out there for &lt;a href=&quot;http://www.vim.org&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and my favorite is &lt;a href=&quot;https://github.com/jaromero/vim-monokai-refined&quot; title=&quot;Monokai-Refined on Github&quot;&gt;Monokai-Refined&lt;/a&gt;. However, Vim’s way of handling highlighting can sometimes be quite weird so I decided to add some minor tweaks so that it looks especially good when your writing HTML, CSS and Javascript and make it available in a repository. I don’t know if it’ll replace my beloved &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot; title=&quot;Tomorrow Theme on Github&quot;&gt;Tomorrow Theme&lt;/a&gt; or &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;, but it’s definitively a close third atleast.&lt;/p&gt;
 </description>
@@ -43,14 +51,6 @@
 </description>
                 <published>April 25, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/25/svgo</link>
-              </item>
-            
-              <item>
-                <title>Scriptlr.js</title>
-                <description>&lt;p&gt;I was getting sick of adding &lt;code&gt;script&lt;/code&gt; tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.&lt;/p&gt;
-</description>
-                <published>April 22, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/04/22/scriptlr-js</link>
               </item>
             
     </channel>
