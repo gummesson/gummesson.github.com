@@ -15,7 +15,7 @@
             
               <item>
                 <title>stereokai.vim</title>
-                <description>&lt;p&gt;Lately I’ve really started to enjoy &lt;a href=&quot;http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/&quot; title=&quot;Monokai&quot;&gt;the Monokai theme&lt;/a&gt;. There’s a couple of different versions out there for &lt;a href=&quot;http://www.vim.org&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; and my favorite is &lt;a href=&quot;https://github.com/jaromero/vim-monokai-refined&quot; title=&quot;Monokai-Refined on Github&quot;&gt;Monokai-Refined&lt;/a&gt;. However, Vim’s way of handling highlighting can sometimes be quite weird so I decided to add some minor tweaks so that it looks especially good when your writing HTML, CSS and Javascript and make it available in a repository. I don’t know if it’ll replace my beloved &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot; title=&quot;Tomorrow Theme on Github&quot;&gt;Tomorrow Theme&lt;/a&gt; or &lt;a href=&quot;http://ethanschoonover.com/solarized&quot; title=&quot;Solarized&quot;&gt;Solarized&lt;/a&gt;, but it’s definitively a close third atleast.&lt;/p&gt;
+                <description>&lt;p&gt;Lately I’ve really started to enjoy &lt;a href=&quot;http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/&quot;&gt;the Monokai theme&lt;/a&gt;. There’s a couple of different versions out there for &lt;a href=&quot;http://www.vim.org&quot;&gt;Vim&lt;/a&gt; and my favorite is &lt;a href=&quot;https://github.com/jaromero/vim-monokai-refined&quot;&gt;Monokai-Refined&lt;/a&gt;. However, Vim’s way of handling highlighting can sometimes be quite weird so I decided to add some minor tweaks so that it looks especially good when your writing HTML, CSS and Javascript and make it available in a repository. I don’t know if it’ll replace my beloved &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot;&gt;Tomorrow Theme&lt;/a&gt; or &lt;a href=&quot;http://ethanschoonover.com/solarized&quot;&gt;Solarized&lt;/a&gt;, but it’s definitively a close third atleast.&lt;/p&gt;
 </description>
                 <published>May  9, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/09/stereokai-vim</link>
@@ -23,7 +23,7 @@
             
               <item>
                 <title>Responsive Inspector</title>
-                <description>&lt;p&gt;A pretty nice &lt;a href=&quot;https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim&quot; title=&quot;Responsive Inspector&quot;&gt;Chrome extension&lt;/a&gt; for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.&lt;/p&gt;
+                <description>&lt;p&gt;A pretty nice &lt;a href=&quot;https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim&quot;&gt;Chrome extension&lt;/a&gt; for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.&lt;/p&gt;
 </description>
                 <published>May  6, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/06/responsive-inspector</link>
@@ -31,13 +31,13 @@
             
               <item>
                 <title>A brand new blog (again)</title>
-                <description>&lt;p&gt;I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more &lt;a href=&quot;http://oocss.org/&quot; title=&quot;OOCSS&quot;&gt;OOCSS&lt;/a&gt; approach to the writing of the CSS and I mainly used the &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot; title=&quot;MindBEMding – getting your head ’round BEM syntax&quot;&gt;BEM&lt;/a&gt; syntax. I don’t find it particularly pretty but it’s quite logical. &lt;/p&gt;
+                <description>&lt;p&gt;I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more &lt;a href=&quot;http://oocss.org/&quot;&gt;OOCSS&lt;/a&gt; approach to the writing of the CSS and I mainly used the &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot;&gt;BEM&lt;/a&gt; syntax. I don’t find it particularly pretty but it’s quite logical. &lt;/p&gt;
 
 &lt;p&gt;Another thing I did was that instead of prefixing the classes of every major part of the site with &lt;code&gt;site-&lt;/code&gt; I went for a much simpler &lt;code&gt;l-&lt;/code&gt;, which stands for “layout”. I also used &lt;code&gt;br-&lt;/code&gt;, “breakpoint”, for the buttons in the main navigation. They get much wider when the site’s viewed on a small screen and instead of having to write a lot of code I simply added a class to them. Very convenient! If I had more “media query”-based classes I probably would’ve used other names for them, but as of right now it works well I think.&lt;/p&gt;
 
 &lt;p&gt;I once again used &lt;a href=&quot;http://www.sass-lang.com/&quot;&gt;Sass&lt;/a&gt;’ excellent &lt;code&gt;darken&lt;/code&gt; and &lt;code&gt;lighten&lt;/code&gt; functions to generate the color palette. I can’t imagine how I’d do without them, to be honest. Like I mentioned earlier I feel that I’m getting better at designing in general but I’m not designer by far.&lt;/p&gt;
 
-&lt;p&gt;I finally added syntax highlighting too. For some reason I completely missed that &lt;a href=&quot;http://softwaremaniacs.org/soft/highlight/en/&quot; title=&quot;Highlight.js&quot;&gt;Highlight.js&lt;/a&gt;, the engine that I now use, actually detects the language automatically without me having to add classes and span tags by hand. All the code is suddenly much more readable! I removed the &lt;a href=&quot;http://www.vim.org/&quot; title=&quot;Vim&quot;&gt;Vim&lt;/a&gt; keybindings script for the site. It was getting on my nerves and the code looked truly awful.&lt;/p&gt;
+&lt;p&gt;I finally added syntax highlighting too. For some reason I completely missed that &lt;a href=&quot;http://softwaremaniacs.org/soft/highlight/en/&quot;&gt;Highlight.js&lt;/a&gt;, the engine that I now use, actually detects the language automatically without me having to add classes and span tags by hand. All the code is suddenly much more readable! I removed the &lt;a href=&quot;http://www.vim.org/&quot;&gt;Vim&lt;/a&gt; keybindings script for the site. It was getting on my nerves and the code looked truly awful.&lt;/p&gt;
 
 &lt;p&gt;And that’s a wrap!&lt;/p&gt;
 </description>
@@ -47,7 +47,7 @@
             
               <item>
                 <title>SVGO</title>
-                <description>&lt;p&gt;A pretty awesome SVG optimizer, written with &lt;a href=&quot;http://nodejs.org/&quot; title=&quot;Node.js&quot;&gt;Node.js&lt;/a&gt;. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.&lt;/p&gt;
+                <description>&lt;p&gt;A pretty awesome SVG optimizer, written with &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.&lt;/p&gt;
 </description>
                 <published>April 25, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/04/25/svgo</link>

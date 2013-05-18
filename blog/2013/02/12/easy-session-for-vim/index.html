@@ -49,19 +49,19 @@
     <h1>Easy Session for Vim</h1>
   
     <p class="smallprint">
-      Posted on February 12, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
+      Posted on February 12, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
     </p><!-- .smallprint -->
-      <p>Another week, another project and this time it’s actually something half decent. After a few hours of work over the last couple of days I’m finally done with my first plugin for <a href="http://www.vim.org/" title="Vim">Vim</a> and I named it <a href="https://github.com/gummesson/easy-session.vim" title="Easy Session on GitHub">Easy Session</a>. It lets you easily manage sessions with four commands: <code>:SaveSession</code>, <code>:NewSession</code>, <code>:OpenSession</code> and <code>:ListSessions</code>.</p>
+      <p>Another week, another project and this time it’s actually something half decent. After a few hours of work over the last couple of days I’m finally done with my first plugin for <a href="http://www.vim.org/">Vim</a> and I named it <a href="https://github.com/gummesson/easy-session.vim">Easy Session</a>. It lets you easily manage sessions with four commands: <code>:SaveSession</code>, <code>:NewSession</code>, <code>:OpenSession</code> and <code>:ListSessions</code>.</p>
 
 <p><code>:SaveSession</code> uses the current working directory as the default filename, so you have to make sure that you’re in the project’s root directory if you’re saving your session for the first time. It may not be the most ultimate solution, but it’s better than the default filename <code>Session.vim</code>. There’s also <code>:NewSession</code> which lets you use your own custom filename. The <code>:OpenSession</code>, suprisingly, opens a session.</p>
 
-<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075" title="Netrw">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" rel="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
+<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" rel="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
 
 <p><img src="/images/blog/2013-02-12-easy-session-01.png" alt="Easy Session (Sessions List)" /></p>
 
 <p><img src="/images/blog/2013-02-12-easy-session-02.png" alt="Easy Session (Sessions List)" /></p>
 
-<p>I don’t know if it’s useful for anyone but me, but it was a fun challenge. There’s a <a href="http://peterodding.com/code/vim/session/" title="Session.vim">Session.vim</a> plugin that has a lof more advanced features than mine do, but I think I’ll stick with my own solution for now.</p>
+<p>I don’t know if it’s useful for anyone but me, but it was a fun challenge. There’s a <a href="http://peterodding.com/code/vim/session/">Session.vim</a> plugin that has a lof more advanced features than mine do, but I think I’ll stick with my own solution for now.</p>
 
 <hr />
 

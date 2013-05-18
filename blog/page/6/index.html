@@ -56,7 +56,7 @@
     Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>   <a href="http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="invisible">&num;</a>
     </p><!-- .smallprint -->
   
-  <p>This is nice read for using something more native to <a href="http://www.vim.org/" title="Vim">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html" title="Netrw">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree" title="NERDTree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim" title="CtrlP">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
+  <p>This is nice read for using something more native to <a href="http://www.vim.org/">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
 
 <pre><code>let g:netrw_liststyle = 3
 let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
@@ -78,7 +78,7 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
       Posted on January 31, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-  <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount" title="Jekyll Wordcount on GitHub">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" rel="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
+  <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" rel="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
 
 <hr />
 
@@ -104,7 +104,7 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
       Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>  
     </p><!-- .smallprint -->
   
-  <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/" title="Vim">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/" title="Pandoc">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
+  <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
 
 <pre><code>function! PandocMarkdownPreview()
   silent exec 'cd %:p:h'
@@ -143,7 +143,7 @@ endfunction
 <pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
 </code></pre>
 
-<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
+<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
 
 </article><!-- .l-post -->
 
@@ -159,7 +159,7 @@ endfunction
       Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>  
     </p><!-- .smallprint -->
   
-  <p>My little <a href="http://www.vim.org/" title="Vim">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/" title="Sublime Text 2">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles" title="My Vim files on GitHub">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
+  <p>My little <a href="http://www.vim.org/">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
 
 <h2 id="a-few-tips-and-tricks">A few tips and tricks</h2>
 
@@ -203,10 +203,10 @@ au InsertLeave * set cursorline
 <div class="footnotes">
   <ol>
     <li id="fn:20130124-1">
-      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/" title="Editing Octopress/Jekyll Posts in Vim">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" rel="reference">&#8617;</a></p>
+      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" rel="reference">&#8617;</a></p>
     </li>
     <li id="fn:20130123-2">
-      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules" title="Git submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" rel="reference">&#8617;</a></p>
+      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" rel="reference">&#8617;</a></p>
     </li>
     <li id="fn:20130124-3">
       <p>This works for everything by the way. I think that the default name for Mac is <code>macunix</code>, but I’m not 100% sure. <a href="#fnref:20130124-3" rel="reference">&#8617;</a></p>
@@ -228,13 +228,13 @@ au InsertLeave * set cursorline
       Posted on January 20, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>  
     </p><!-- .smallprint -->
   
-  <p>I don’t know what’s been up with me lately but I do know that during the last couple of weeks I’ve “shipped” a lot of things. I mean, most of them are basic things but I’ve had fun while doing them. So yesterday I added yet another repo to <a href="https://github.com/gummesson" title="My GitHub account">my GitHub account</a>, <a href="https://github.com/gummesson/serve" title="Serve">Serve</a>. <em>Serve</em> is a static site generator which focuses on generating small sites that only need to consist of a few pages at the most.</p>
+  <p>I don’t know what’s been up with me lately but I do know that during the last couple of weeks I’ve “shipped” a lot of things. I mean, most of them are basic things but I’ve had fun while doing them. So yesterday I added yet another repo to <a href="https://github.com/gummesson">my GitHub account</a>, <a href="https://github.com/gummesson/serve">Serve</a>. <em>Serve</em> is a static site generator which focuses on generating small sites that only need to consist of a few pages at the most.</p>
 
 <h2 id="the-process">The process</h2>
 
-<p>It started with an faint idea. I wanted to build something useful that could parse a couple of <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> files and convert them to static HTML files. It’s no secret that I absolutely adore <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, but I tend to roll with an idea once I get it. I first threw together a one file script that had the same basic functionality and went from there. My goal was to really learn how to use modules and classes since I’ve mostly shied away from them<sup id="fnref:20130120-1"><a href="#fn:20130120-1" rel="footnote">1</a></sup>.</p>
+<p>It started with an faint idea. I wanted to build something useful that could parse a couple of <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files and convert them to static HTML files. It’s no secret that I absolutely adore <a href="http://jekyllrb.com/">Jekyll</a>, but I tend to roll with an idea once I get it. I first threw together a one file script that had the same basic functionality and went from there. My goal was to really learn how to use modules and classes since I’ve mostly shied away from them<sup id="fnref:20130120-1"><a href="#fn:20130120-1" rel="footnote">1</a></sup>.</p>
 
-<p>I looked at a lot of different projects on <a href="https://github.com" title="GitHub">GitHub</a> but to be honest I couldn’t really comprehend everything, since I’m still pretty inexperienced when it comes to <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> and programming languages in general. I didn’t just want to give up though. I was going to finish my newly started projects goddamnit, even if it would take me months. </p>
+<p>I looked at a lot of different projects on <a href="https://github.com">GitHub</a> but to be honest I couldn’t really comprehend everything, since I’m still pretty inexperienced when it comes to <a href="http://www.ruby-lang.org/">Ruby</a> and programming languages in general. I didn’t just want to give up though. I was going to finish my newly started projects goddamnit, even if it would take me months. </p>
 
 <p>It suddenly clicked for me and I <em>finally</em> got “it”<sup id="fnref:20130120-2"><a href="#fn:20130120-2" rel="footnote">2</a></sup>, which is such an amazing feeling. It didn’t take too long for me to transform the ugly script into it’s current state. I’m not saying it’s perfect but it looks a hell of a lot nicer then it did when I started and it sort of keeps me excited to continue to learn.</p>
 

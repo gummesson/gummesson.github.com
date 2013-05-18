@@ -49,9 +49,9 @@
     <h1>Markdown preview for Vim</h1>
   
     <p class="smallprint">
-      Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code" title="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown" title="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim" title="Vim">Vim</a>
+      Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
     </p><!-- .smallprint -->
-      <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/" title="Vim">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/" title="Pandoc">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
+      <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
 
 <pre><code>function! PandocMarkdownPreview()
   silent exec 'cd %:p:h'
@@ -90,7 +90,7 @@ endfunction
 <pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
 </code></pre>
 
-<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514" title="Pandoc Markdown Preview on GitHub">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
+<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
 
 </article><!-- .l-post -->
 

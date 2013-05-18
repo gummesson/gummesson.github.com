@@ -168,7 +168,7 @@
       Posted on August 28, 2012  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a>  
     </p><!-- .smallprint -->
   
-  <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/" title="Begrider is a simple, twelve column 1140px fluid grid system">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
+  <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
 
 <h2 id="the-solution">The solution</h2>
 
@@ -197,7 +197,7 @@
       Posted on August 27, 2012  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-  <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag Gist">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
+  <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
 
 <h2 id="source-code">Source code</h2>
 
@@ -258,7 +258,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 
 <h2 id="tags">Tags</h2>
 
-<p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/" title="Tags In Jekyll">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
+<p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
 
 <h2 id="rss-feed">RSS feed</h2>
 
@@ -270,7 +270,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 
 <h2 id="images">Images</h2>
 
-<p>For an easy image implementation I used Scott Parker’s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting" title="ImageBlock">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it’s probably not suitable if you’re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
+<p>For an easy image implementation I used Scott Parker’s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it’s probably not suitable if you’re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
 
 <h2 id="youtube">Youtube</h2>
 
@@ -292,7 +292,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
   
   <p>Disclaimer: the following blog post is extremely geeky and contains A LOT of code.</p>
 
-<p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/" title="Syntactically Awesome Stylesheets">Sass</a> and <a href="http://compass-style.org/" title="Compass - an open-source CSS Authoring Framework">Compass</a> because I’ve seen it being mentioned almost daily for quite a while. I didn’t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it’s still readable. I’ve tried a few plugins that enables automatic highlighting, but I haven’t come across one that I really love. I also had remove nearly all of my comments in the code but I’m sure it’s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables" title="Sass Type Variables">GitHub</a>.</p>
+<p>Earlier today I decided to try out <a href="http:/www.sass-lang.com/">Sass</a> and <a href="http://compass-style.org/">Compass</a> because I’ve seen it being mentioned almost daily for quite a while. I didn’t really know what I wanted to code, so I just did some kind of starting point with a couple of font selectors, properties and values using mainly the variable function in Sass, which i a really handy tool I think. You have to excuse me for the lack of highlighting in the code blocks and I hope that it’s still readable. I’ve tried a few plugins that enables automatic highlighting, but I haven’t come across one that I really love. I also had remove nearly all of my comments in the code but I’m sure it’s still understandable. If not, you can check it out on my <a href="https://github.com/gummesson/sass-type-variables">GitHub</a>.</p>
 
 <h2 id="variablesscss">_variables.scss</h2>
 
