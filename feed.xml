@@ -6,6 +6,31 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>A handy function for going to the root directory of a project in Vim</title>
+                <description>&lt;p&gt;Here’s a handy function I came up with after being tired of using &lt;code&gt;:cd ../&lt;/code&gt; like a madman when I was deep down at the bottom of a project’s folder structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function! GoToRootDir()
+  if isdirectory(&quot;.git&quot;)|| filereadable(&quot;Rakefile&quot;) || filereadable(&quot;Gruntfile.js&quot;)
+    pwd
+  else
+    silent! exec 'cd ../'
+    call GoToRootDir()
+  endif
+endfunction
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It’s a not-so-fancy way of basically telling Vim to keep going up in the directory structure until it finds either a &lt;code&gt;.git&lt;/code&gt; folder or a specific file. When it finds the root it’ll also print out the path, which I added so that you can actually see that you’re in the root of the project. You can of course change &lt;code&gt;.git&lt;/code&gt;, &lt;code&gt;Rakefile&lt;/code&gt; and &lt;code&gt;Gruntfile.js&lt;/code&gt; to something completely different, as long as it’s a file that you commonly have in your projects. I also added a more convenient mapping for it in my &lt;code&gt;.vimrc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;command! -nargs=0 Root call GoToRootDir()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This step may not be necessary, but by mapping something like &lt;code&gt;:call GoToRootDir&lt;/code&gt; to just &lt;code&gt;:Root&lt;/code&gt; means that you have to type fewer keystrokes.&lt;/p&gt;
+</description>
+                <published>May 20, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/05/20/a-handy-function-for-going-to-the-root-directory-of-a-project-in-vim</link>
+              </item>
+            
+              <item>
                 <title>CSS Architecture</title>
                 <description>&lt;p&gt;A nice and lengthy article about how to write modular and maintainable CSS. I especially like the naming conventions, mostly because they’re similar to my own. I’m vain like that.&lt;/p&gt;
 </description>
@@ -43,14 +68,6 @@
 </description>
                 <published>May  2, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/02/a-brand-new-blog-again</link>
-              </item>
-            
-              <item>
-                <title>SVGO</title>
-                <description>&lt;p&gt;A pretty awesome SVG optimizer, written with &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.&lt;/p&gt;
-</description>
-                <published>April 25, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/04/25/svgo</link>
               </item>
             
     </channel>
