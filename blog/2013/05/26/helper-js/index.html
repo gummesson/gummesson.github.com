@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Ellen Gummesson: Random ramblings, musings and geekiness">
   <meta name="author" content="Ellen Gummesson">
-  <title>JavaScript – Ellen Gummesson</title>
+  <title>Helper.js – Ellen Gummesson</title>
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
@@ -44,32 +44,45 @@
 
       <div class="l-content box box--even">
         <div class="box__wrapper">
-          <article class="l-page">
-  <h1>JavaScript</h1>
-    <ul class="js-post-list">
+          <article class="l-post">
+  
+    <h1>Helper.js</h1>
+  
+    <p class="smallprint">
+      Posted on May 26, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>
+    </p><!-- .smallprint -->
+      <p>Earlier today I pushed a new project to Github called <a href="https://github.com/gummesson/helper.js">Helper.js</a>. It basically a minimal<sup id="fnref:20130526-1"><a href="#fn:20130526-1" rel="footnote">1</a></sup> JavaScript library for basic DOM manipulation tasks, which supports Internet Explorer 8 and above. It obviously ain’t as versatile as <a href="http://www.jquery.com/">jQuery</a>, but it gets the job done for simpler stuff. I’ve tried it out in some older browsers but it’s probably likely that it has some bugs and sharp edges. As always I mostly wrote it just for fun and to learn the ins and outs of working with the DOM and structuring objects and the like in JavaScript. After 380 lines of code I feel much more confident but still very much like a novice.</p>
 
-            <li>
-              May 26, 2013:
-              <a class="js-post-link" href="http://ellengummesson.com/blog/2013/05/26/helper-js" alt="Helper.js">Helper.js</a>
-            </li>
+<hr />
 
-            <li>
-              Apr 22, 2013:
-              <a class="js-post-link" href="http://ellengummesson.com/blog/2013/04/22/scriptlr-js" alt="Scriptlr.js">Scriptlr.js</a>
-            </li>
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130526-1">
+      <p>It currently weighs in at less than 700 bytes when compressed and gzipped.<a href="#fnref:20130526-1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
-            <li>
-              Apr 19, 2013:
-              <a class="js-post-link" href="http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery" alt="Weaning yourself of jQuery">Weaning yourself of jQuery</a>
-            </li>
+</article><!-- .l-post -->
 
-            <li>
-              Apr 12, 2013:
-              <a class="js-post-link" href="http://ellengummesson.com/blog/2013/04/12/its-the-little-things" alt="It's the little things">It's the little things</a>
-            </li>
+  <div class="l-comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><!-- .l-comments -->
 
-    </ul>
-</article><!-- .l-page -->
+
 
         </div><!-- .box__wrapper -->
       </div><!-- .l-content .box .box--even -->
@@ -92,3 +105,4 @@
     <script src="/assets/js/main/global.js"></script>
   </body>
 </html>
+
