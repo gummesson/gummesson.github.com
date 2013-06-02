@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>SUIT base</title>
+                <description>&lt;p&gt;This is such a simple but nice-to-have thing. I really like using &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; instead of having to completely wiping the styling of every element and I’ve to used my own mini reset with it to remove some of the default values like margins and paddings. I guess that I don’t have to do that anymore!&lt;/p&gt;
+</description>
+                <published>June  2, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/06/02/suit-base</link>
+              </item>
+            
+              <item>
                 <title>Helper.js</title>
                 <description>&lt;p&gt;Earlier today I pushed a new project to Github called &lt;a href=&quot;https://github.com/gummesson/helper.js&quot;&gt;Helper.js&lt;/a&gt;. It basically a minimal&lt;sup id=&quot;fnref:20130526-1&quot;&gt;&lt;a href=&quot;#fn:20130526-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; JavaScript library for basic DOM manipulation tasks, which supports Internet Explorer 8 and above. It obviously ain’t as versatile as &lt;a href=&quot;http://www.jquery.com/&quot;&gt;jQuery&lt;/a&gt;, but it gets the job done for simpler stuff. I’ve tried it out in some older browsers but it’s probably likely that it has some bugs and sharp edges. As always I mostly wrote it just for fun and to learn the ins and outs of working with the DOM and structuring objects and the like in JavaScript. After 380 lines of code I feel much more confident but still very much like a novice.&lt;/p&gt;
 
@@ -62,14 +70,6 @@ endfunction
 </description>
                 <published>May  9, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/09/stereokai-vim</link>
-              </item>
-            
-              <item>
-                <title>Responsive Inspector</title>
-                <description>&lt;p&gt;A pretty nice &lt;a href=&quot;https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim&quot;&gt;Chrome extension&lt;/a&gt; for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.&lt;/p&gt;
-</description>
-                <published>May  6, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/05/06/responsive-inspector</link>
               </item>
             
     </channel>
