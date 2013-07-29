@@ -57,7 +57,7 @@
 
 <p>The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:</p>
 
-<pre><code>external-link: http://www.example.com/
+<pre><code>external-url: http://www.example.com/
 </code></pre>
 
 <p>If you don’t want to add an external link to your title, just replace the link itself with <code>false</code> or remove the whole thing. The markup of your post title on your front page should look like something like this:</p>
@@ -67,8 +67,8 @@
 
 <p>Instead of having the above markup, replace it with something like this:</p>
 
-<pre><code>{% if post.external-link %}
-  &lt;h1&gt;&lt;a href="{{ post.external-link }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+<pre><code>{% if post.external-url %}
+  &lt;h1&gt;&lt;a href="{{ post.external-url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
 {% else %}
   &lt;h1&gt;&lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
 {% endif %}
@@ -76,8 +76,8 @@
 
 <p>I also added this in the markup for my post layout:</p>
 
-<pre><code>{% if page.external-link %}
-  &lt;h1&gt;&lt;a href="{{ page.external-link }}"&gt;{{ page.title }}&lt;/a&gt;&lt;/h1&gt;
+<pre><code>{% if page.external-url %}
+  &lt;h1&gt;&lt;a href="{{ page.external-url }}"&gt;{{ page.title }}&lt;/a&gt;&lt;/h1&gt;
 {% else %}
   &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
 {% endif %}
