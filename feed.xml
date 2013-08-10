@@ -6,6 +6,132 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>Installing dwm on Crunchbang Linux</title>
+                <description>&lt;p&gt;&lt;em&gt;Note: I started to write this guide a couple of days ago, before I yet again went distrohopping. I now run a minimal Debian Testing setup on my netbook but I thought it would be a good idea to post it nonetheless.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After trying both &lt;a href=&quot;http://crunchbang.org/&quot;&gt;Crunchbang Linux&lt;/a&gt;, &lt;a href=&quot;http://manjaro.org/&quot;&gt;Manjaro Linux&lt;/a&gt;, a couple of days of &lt;a href=&quot;http://peppermintos.com/&quot;&gt;Peppermint OS&lt;/a&gt; and a week long stint with &lt;a href=&quot;http://www.lubuntu.net/&quot;&gt;Lubuntu&lt;/a&gt; I went back to using Crunchbang. It was my first Linux distribution and I still think it’s fits my needs perfectly. I really like that it’s lightweight while still being a fully functional operating system.&lt;/p&gt;
+
+&lt;p&gt;While I was running Lubuntu I played around with &lt;a href=&quot;http://dwm.suckless.org/&quot;&gt;dwm&lt;/a&gt; and fell in love with it, so when I decided to reinstall Crunchbang I really wanted to use it too. The process wasn’t as straight forward as it was on Lubuntu, but after a few tries and with the help of &lt;a href=&quot;http://cortman.wordpress.com/2012/10/23/crunchbang-slim-and-wm-madness/&quot;&gt;this blog post&lt;/a&gt; I managed to get it to run flawlessly. I thought that I would be an good idea to write it all down, so with no further ado, here’s a short guide on how to install and configure &lt;code&gt;dwm&lt;/code&gt; to run on Crunchbang Linux.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;First you need to install &lt;code&gt;dwm&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install dwm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To fully customize it you need to configure it and install it from source, but since I’m happy with the way it looks I’ll just use the standard package for now. &lt;a href=&quot;http://tools.suckless.org/dmenu/&quot;&gt;dmenu&lt;/a&gt; is a great tool to have too, but the package &lt;code&gt;suckless-tools&lt;/code&gt; is actually installed by default which means that you don’t have to install it yourself.&lt;/p&gt;
+
+&lt;p&gt;These packages are by no means neccessary, but they’re quite handy to have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install unclutter
+sudo apt-get install feh
+sudo apt-get install acpi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;unclutter&lt;/code&gt; will hide your mouse cursor, &lt;code&gt;feh&lt;/code&gt; will help you set the wallpaper and &lt;code&gt;acpi&lt;/code&gt; will display your battery’s status directly on the &lt;code&gt;dwm&lt;/code&gt; status bar. You can leave out &lt;code&gt;acpi&lt;/code&gt; if you’re not using a laptop.&lt;/p&gt;
+
+&lt;h2 id=&quot;dwm&quot;&gt;dwm&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-wallpaper&quot;&gt;The wallpaper&lt;/h3&gt;
+
+&lt;p&gt;Open up the terminal and type the following (use one of the four layout alternatives):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;feh --bg-[tile|center|scale|seamless] path/to/file.ext
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a small file called &lt;code&gt;.fehbg&lt;/code&gt; in your home directory.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-startup-script&quot;&gt;The startup script&lt;/h3&gt;
+
+&lt;p&gt;Create a file called &lt;code&gt;dwm-startup&lt;/code&gt; somewhere in your PATH with the following content (and don’t forget to make it executable&lt;sup id=&quot;fnref:20130810-1&quot;&gt;&lt;a href=&quot;#fn:20130810-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env bash
+
+# Set `feh` to change the wallpaper
+source $HOME/.fehbg
+
+# Set `unclutter` to hide the cursor after a second of inactivity
+unclutter -root -idle 1 &amp;amp;
+
+# Start `dwm` with a modified status bar
+while true; do
+  xsetroot -name &quot;Db: $(dropbox status) | B: $(acpi -b | awk '{ print $4 $5 }' | sed 's/,/ \/ /g') | V: $(amixer get Master | awk '/Front Left:/{ print $5 }' | sed 's/\[\|\]//g') | $(date '+%d %b %Y') | $(date '+%H:%M')&quot;
+  sleep 10s
+done &amp;amp; exec dwm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The status bar will display an output that’ll roughly look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Db: Idle | B: 50% / 01:30:00 | V: 50% | 01 jan 2000 | 12:00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One thing that’s worth noting is that the official &lt;a href=&quot;https://www.dropbox.com/install?os=lnx#linux-install-content&quot;&gt;Dropbox CLI script&lt;/a&gt; is &lt;em&gt;NOT&lt;/em&gt; installed on Crunchbang by default, so you have to set it up by yourself.&lt;/p&gt;
+
+&lt;h2 id=&quot;x&quot;&gt;X&lt;/h2&gt;
+
+&lt;p&gt;Create a file in your home directory called &lt;code&gt;.xinitrc&lt;/code&gt; and add the following content (make it executable too):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env bash
+
+# Load .Xresources
+xrdb -merge $HOME/.Xresources
+
+# Set the default window manager
+DEFAULT=openbox-session
+
+# Start `Openbox`/`dwm`
+case $1 in
+  openbox-session)
+    exec openbox-session
+  ;;
+  dwm)
+    exec dwm-startup
+  ;;
+  *)
+    exec $DEFAULT
+  ;;
+esac
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will load your &lt;code&gt;.Xresources&lt;/code&gt; file, which contains a couple of vital settings for &lt;a href=&quot;http://www.x.org/&quot;&gt;X&lt;/a&gt;, and the window manager of your choice. It’ll fallback on using Openbox as the default.&lt;/p&gt;
+
+&lt;h2 id=&quot;slim&quot;&gt;SLiM&lt;/h2&gt;
+
+&lt;p&gt;Now it’s time to configure &lt;a href=&quot;http://slim.berlios.de/&quot;&gt;SLiM&lt;/a&gt; (the default login manager) by editing the &lt;code&gt;slim.conf&lt;/code&gt; file that’s located in &lt;code&gt;/etc&lt;/code&gt;. Uncomment the following line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;login_cmd           exec /bin/sh - ~/.xinitrc %session
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And comment out this line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;login_cmd           exec /bin/bash -login /etc/X11/Xsession %session
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This needs to be configured since &lt;code&gt;dwm&lt;/code&gt; doesn’t use a autostart file by itself. The next thing you’ll have to do is to add &lt;code&gt;dwm&lt;/code&gt; to the part that says &lt;code&gt;sessions&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sessions            openbox-session,dwm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;the-grand-finale&quot;&gt;The grand finale&lt;/h2&gt;
+
+&lt;p&gt;Now it’s time for you to reboot and press &lt;code&gt;F1&lt;/code&gt; when the login screen appears to choose which window manager to use. Make sure that you’re using &lt;code&gt;dwm&lt;/code&gt;, log in and you’re done!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130810-1&quot;&gt;
+      &lt;p&gt;To make a file executable, open up the terminal and type &lt;code&gt;chmod +x file.ext&lt;/code&gt;.&lt;a href=&quot;#fnref:20130810-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>August 10, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/10/installing-dwm-on-crunchbang-linux</link>
+              </item>
+            
+              <item>
                 <title>A poor man's Notational Velocity/ResophNotes Vim alternative</title>
                 <description>&lt;p&gt;&lt;em&gt;Long time, no see. I haven’t touched this blog in almost two months and the reason for that is that life got in the way. I’ve really missed writing so I’ll defintively try to pick it up again, I swear!&lt;/em&gt;&lt;/p&gt;
 
@@ -125,14 +251,6 @@ endfunction
 </description>
                 <published>May 20, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/20/a-handy-function-for-going-to-the-root-directory-of-a-project-in-vim</link>
-              </item>
-            
-              <item>
-                <title>CSS Architecture</title>
-                <description>&lt;p&gt;A nice and lengthy article about how to write modular and maintainable CSS. I especially like the naming conventions, mostly because they’re similar to my own. I’m vain like that.&lt;/p&gt;
-</description>
-                <published>May 14, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/05/14/css-architecture</link>
               </item>
             
     </channel>
