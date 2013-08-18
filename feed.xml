@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>hpr1197 :: What I do with bash scripts</title>
+                <description>&lt;p&gt;I recently revisited this episode from &lt;a href=&quot;http://hackerpublicradio.org/&quot;&gt;Hacker Public Radio&lt;/a&gt; that &lt;a href=&quot;http://jonathankulp.org/&quot;&gt;Jonathan Kulp&lt;/a&gt; did and it may very well be one of the coolest episodes I’ve ever heard.&lt;/p&gt;
+</description>
+                <published>August 18, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/18/hpr1197-what-i-do-with-bash-scripts</link>
+              </item>
+            
+              <item>
                 <title>Installing dwm on Crunchbang Linux</title>
                 <description>&lt;p&gt;&lt;em&gt;Note: I started to write this guide a couple of days ago, before I yet again went distrohopping. I now run a minimal Debian Testing setup on my netbook but I thought it would be a good idea to post it nonetheless.&lt;/em&gt;&lt;/p&gt;
 
@@ -226,31 +234,6 @@ command! -nargs=? Note call notes#New(&amp;lt;q-args&amp;gt;)
 </description>
                 <published>May 26, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/05/26/helper-js</link>
-              </item>
-            
-              <item>
-                <title>A handy function for going to the root directory of a project in Vim</title>
-                <description>&lt;p&gt;Here’s a handy function I came up with after being tired of using &lt;code&gt;:cd ../&lt;/code&gt; like a madman when I was deep down at the bottom of a project’s folder structure:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function! GoToRootDir()
-  if isdirectory(&quot;.git&quot;)|| filereadable(&quot;Rakefile&quot;) || filereadable(&quot;Gruntfile.js&quot;)
-    pwd
-  else
-    silent! exec 'cd ../'
-    call GoToRootDir()
-  endif
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It’s a not-so-fancy way of basically telling Vim to keep going up in the directory structure until it finds either a &lt;code&gt;.git&lt;/code&gt; folder or a specific file. When it finds the root it’ll also print out the path, which I added so that you can actually see that you’re in the root of the project. You can of course change &lt;code&gt;.git&lt;/code&gt;, &lt;code&gt;Rakefile&lt;/code&gt; and &lt;code&gt;Gruntfile.js&lt;/code&gt; to something completely different, as long as it’s a file that you commonly have in your projects. I also added a more convenient mapping for it in my &lt;code&gt;.vimrc&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;command! -nargs=0 Root call GoToRootDir()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This step may not be necessary, but by mapping something like &lt;code&gt;:call GoToRootDir&lt;/code&gt; to just &lt;code&gt;:Root&lt;/code&gt; means that you have to type fewer keystrokes.&lt;/p&gt;
-</description>
-                <published>May 20, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/05/20/a-handy-function-for-going-to-the-root-directory-of-a-project-in-vim</link>
               </item>
             
     </channel>
