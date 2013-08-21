@@ -6,6 +6,24 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>The new Jekyll Rake Boilerplate</title>
+                <description>&lt;p&gt;I finally sat down and the refactor most of the code in my most popular project but don’t worry, it’s still quite a mess&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I haven’t written any &lt;a href=&quot;http://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; code for quite some time.&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>August 21, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/21/the-new-jekyll-rake-boilerplate</link>
+              </item>
+            
+              <item>
                 <title>hpr1197 :: What I do with bash scripts</title>
                 <description>&lt;p&gt;I recently revisited this episode from &lt;a href=&quot;http://hackerpublicradio.org/&quot;&gt;Hacker Public Radio&lt;/a&gt; that &lt;a href=&quot;http://jonathankulp.org/&quot;&gt;Jonathan Kulp&lt;/a&gt; did and it may very well be one of the coolest episodes I’ve ever heard.&lt;/p&gt;
 </description>
@@ -216,24 +234,6 @@ command! -nargs=? Note call notes#New(&amp;lt;q-args&amp;gt;)
 </description>
                 <published>June  2, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/06/02/suit-base</link>
-              </item>
-            
-              <item>
-                <title>Helper.js</title>
-                <description>&lt;p&gt;Earlier today I pushed a new project to Github called &lt;a href=&quot;https://github.com/gummesson/helper.js&quot;&gt;Helper.js&lt;/a&gt;. It basically a minimal&lt;sup id=&quot;fnref:20130526-1&quot;&gt;&lt;a href=&quot;#fn:20130526-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; JavaScript library for basic DOM manipulation tasks, which supports Internet Explorer 8 and above. It obviously ain’t as versatile as &lt;a href=&quot;http://www.jquery.com/&quot;&gt;jQuery&lt;/a&gt;, but it gets the job done for simpler stuff. I’ve tried it out in some older browsers but it’s probably likely that it has some bugs and sharp edges. As always I mostly wrote it just for fun and to learn the ins and outs of working with the DOM and structuring objects and the like in JavaScript. After 380 lines of code I feel much more confident but still very much like a novice.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130526-1&quot;&gt;
-      &lt;p&gt;It currently weighs in at less than 700 bytes when compressed and gzipped.&lt;a href=&quot;#fnref:20130526-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>May 26, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/05/26/helper-js</link>
               </item>
             
     </channel>
