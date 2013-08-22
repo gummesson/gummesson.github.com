@@ -394,7 +394,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/04/12/its-the-little-things</loc>
-        <lastmod>2013-07-29T19:26:36+02:00</lastmod>
+        <lastmod>2013-08-22T20:52:46+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/04/19/weaning-yourself-off-jquery</loc>
@@ -454,7 +454,11 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/blog/2013/08/21/the-new-jekyll-rake-boilerplate</loc>
-        <lastmod>2013-08-21T18:53:10+02:00</lastmod>
+        <lastmod>2013-08-22T20:59:12+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/blog/2013/08/22/its-the-little-things-again</loc>
+        <lastmod>2013-08-22T20:58:53+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com//404.html</loc>
@@ -474,6 +478,6 @@
     </url>
     <url>
         <loc>http://ellengummesson.com//</loc>
-        <lastmod>2013-08-21T18:53:10+02:00</lastmod>
+        <lastmod>2013-08-22T20:59:12+02:00</lastmod>
     </url>
 </urlset>
