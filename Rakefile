@@ -9,7 +9,6 @@ GITMSG = "New blog post"
 desc "Deploy the site to it's remote git repository"
 task :deploy, :message do |t, args|
   message = args[:message]
-
   if message.nil? or message.empty?
     system "git add ."
     system "git commit -m \"#{GITMSG}\"."
