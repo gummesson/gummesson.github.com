@@ -6,6 +6,24 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>My Linux setup</title>
+                <description>&lt;p&gt;I’ve mentioned before how I love to read about &lt;a href=&quot;http://onethingwell.org/linux-setup&quot;&gt;other&lt;/a&gt; &lt;a href=&quot;http://jasonwryan.com/blog/2010/10/04/the-setup/&quot;&gt;people’s&lt;/a&gt; setups so I decided to throw together a quite detailed but comprehensive document of what I currently use for my Linux setup and how to actually set it up&lt;sup id=&quot;fnref:20130823-1&quot;&gt;&lt;a href=&quot;#fn:20130823-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. So far I’m happy with what I’m using but I plan to keep it up to date if I decide to add or change something.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130823-1&quot;&gt;
+      &lt;p&gt;Those notes are mainly written for me, but I figured that it might be useful for someone else too.&lt;a href=&quot;#fnref:20130823-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>August 23, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/23/my-linux-setup</link>
+              </item>
+            
+              <item>
                 <title>It's the little things (again)</title>
                 <description>&lt;p&gt;Today’s smile is brought to me by &lt;a href=&quot;https://twitter.com/ttimsmith/status/370369398315315200&quot;&gt;this&lt;/a&gt;:&lt;/p&gt;
 
@@ -177,77 +195,6 @@ esac
 </description>
                 <published>August 10, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/08/10/installing-dwm-on-crunchbang-linux</link>
-              </item>
-            
-              <item>
-                <title>A poor man's Notational Velocity/ResophNotes Vim alternative</title>
-                <description>&lt;p&gt;&lt;em&gt;Long time, no see. I haven’t touched this blog in almost two months and the reason for that is that life got in the way. I’ve really missed writing so I’ll defintively try to pick it up again, I swear!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Linux is in a lot of ways much better than Windows but for some reason there’s no good alternative for note-taking apps like &lt;a href=&quot;http://notational.net/&quot;&gt;Notational Velocity&lt;/a&gt; or &lt;a href=&quot;http://www.resoph.com/ResophNotes/Welcome.html&quot;&gt;ResophNotes&lt;/a&gt;. I’ve tried &lt;a href=&quot;https://github.com/cpbotha/nvpy&quot;&gt;NvPY&lt;/a&gt; but unfortunately it doesn’t really work that great for using plain text files with Dropbox. A couple of months back I did experiment with using Vim in conjunction with the &lt;a href=&quot;https://github.com/mileszs/ack.vim&quot;&gt;Ack plugin&lt;/a&gt;, which worked fine on Linux but rather poorly on Windows&lt;sup id=&quot;fnref:20130729-1&quot;&gt;&lt;a href=&quot;#fn:20130729-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I decided to replace Ack with Vim’s built-in &lt;code&gt;grep&lt;/code&gt; function, mainly just to keep it a cross-platform script. It’s not quite as fast as Ack but the difference isn’t huge since it’s just dealing with text files.&lt;/p&gt;
-
-&lt;p&gt;It basically consists of two command line mappings: &lt;code&gt;Note&lt;/code&gt;, which will create a new in the specified notes folder with the provided filename and the default extension, like this: &lt;code&gt;:Note This is the filename&lt;/code&gt;. &lt;code&gt;Notes&lt;/code&gt; has two functions. You can either use it to browse the notes folder or search the content of the text files in it, ie: &lt;code&gt;:Notes I'm looking for this&lt;/code&gt;. It’ll open up the quickfix list after the search is complete.&lt;/p&gt;
-
-&lt;p&gt;I actually have a folder in my Vim home directory called &lt;code&gt;tweaks&lt;/code&gt; were I’ve placed a few small changes but you could technically turn this into a real plugin too or rewrite it and put it in your &lt;code&gt;.vimrc&lt;/code&gt; file. I like having most of its’ functionality in a &lt;code&gt;autoload&lt;/code&gt; folder since it won’t load until you actually need it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;tweaks/autoload/notes.vim:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function! notes#List(pattern)
-  if strlen(a:pattern) == 0
-    silent! execute 'Sexplore '.g:notes_directory
-  else
-    silent! execute 'lcd '.g:notes_directory.' | vimgrep /'.a:pattern.'/gj *.'.g:notes_extension.' | copen'
-  endif
-endfunction
-
-function! notes#New(filename)
-  if strlen(a:filename) == 0
-    echom &quot;No filename!&quot;
-  else
-    silent! execute 'enew | lcd '.g:notes_directory.' | w '.a:filename.'.'.g:notes_extension
-  endif
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There’s really nothing fancy in the above scripts, but the combination of using &lt;code&gt;netrw&lt;/code&gt;, &lt;code&gt;vimgrep&lt;/code&gt; and the quickfix list works really well.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;tweaks/plugin/notes.vim&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if exists(&quot;g:loaded_notes_plugin&quot;) || &amp;amp;cp
-  finish
-endif
-
-let g:loaded_notes_plugin = 1
-
-if !exists(&quot;g:notes_directory&quot;)
-  if has(&quot;unix&quot;)
-    let g:notes_directory = &quot;~/Notes&quot;
-  else
-    let g:notes_directory = &quot;C:/Notes&quot;
-  endif
-endif
-
-if !exists(&quot;g:notes_extension&quot;)
-  let g:notes_extension = &quot;txt&quot;
-endif
-
-command! -nargs=? Notes call notes#List(&amp;lt;q-args&amp;gt;)
-command! -nargs=? Note call notes#New(&amp;lt;q-args&amp;gt;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can of course change the &lt;code&gt;g:notes_directory&lt;/code&gt; and &lt;code&gt;g:notes_extension&lt;/code&gt; to whatever you want. You could remove the &lt;code&gt;if has(&quot;unix&quot;)&lt;/code&gt; part if you don’t plan on using it on different systems too.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130729-1&quot;&gt;
-      &lt;p&gt;The plugin in itself works flawlessly but Ack doesn’t really work all to well on Windows.&lt;a href=&quot;#fnref:20130729-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>July 29, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/07/29/a-poor-mans-notational-velocity-resophnotes-vim-alternative</link>
               </item>
             
     </channel>
