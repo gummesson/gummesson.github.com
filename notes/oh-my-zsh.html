@@ -1,0 +1,208 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+  <title>Oh my Zsh! – Ellen Gummesson</title>
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:700|Sanchez:400,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+    <link rel="author" href="/humans.txt" type="text/plain">
+    <link rel="canonical" href="http://ellengummesson.com/">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+      <header class="l-header box box--odd">
+        <div class="box__wrapper">
+          <a class="invisible" href="/" alt="Ellen Gummesson – Random ramblings, musings and geekiness">
+            <h1 class="l-logo">Ellen.</h1>
+          </a>
+
+              <ul class="l-nav nav">
+            <li>
+              <a class="button button--odd br-button--aligned" href="/" alt="Home">Home</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--aligned" href="/about" alt="About">About</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--aligned" href="/archives" alt="Archives">Archives</a>
+            </li>
+            <li>
+              <a class="button button--odd br-button--aligned" href="/contact" alt="Contact">Contact</a>
+            </li>
+          </ul><!-- .l-nav .nav -->
+        </div><!-- .box__wrapper -->
+      </header><!-- .l-header .box .box--odd -->
+
+      <div class="l-content box box--even">
+        <div class="box__wrapper">
+          <article class="l-page">
+  <h1>Oh my Zsh!</h1>
+    <p>A handy cheatsheet for <a href="https://github.com/robbyrussell/oh-my-zsh">Oh my Zsh!</a></p>
+
+<h2 id="debian">Debian</h2>
+
+<p>Aliases and functions for common <a href="http://www.debian.org/">Debian</a> tasks.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ag</code></td>
+      <td><code>apt-get</code></td>
+    </tr>
+    <tr>
+      <td><code>acs</code></td>
+      <td><code>apt-cache search</code></td>
+    </tr>
+    <tr>
+      <td><code>apt-history OPTION</code></td>
+      <td>Prints apt history<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="git">Git</h2>
+
+<p>Aliases for common <a href="http://www.git-scm.com/">Git</a> tasks.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>g</code></td>
+      <td><code>git</code></td>
+    </tr>
+    <tr>
+      <td><code>gst</code></td>
+      <td><code>git status</code></td>
+    </tr>
+    <tr>
+      <td><code>gd</code></td>
+      <td><code>git diff</code></td>
+    </tr>
+    <tr>
+      <td><code>gl</code></td>
+      <td><code>git pull</code></td>
+    </tr>
+    <tr>
+      <td><code>gp</code></td>
+      <td><code>git push</code></td>
+    </tr>
+    <tr>
+      <td><code>gcmsg</code></td>
+      <td><code>git commit -m</code></td>
+    </tr>
+    <tr>
+      <td><code>gco</code></td>
+      <td><code>git checkout</code></td>
+    </tr>
+    <tr>
+      <td><code>gr</code></td>
+      <td><code>git remote</code></td>
+    </tr>
+    <tr>
+      <td><code>gb</code></td>
+      <td><code>git branch</code></td>
+    </tr>
+    <tr>
+      <td><code>ga</code></td>
+      <td><code>git add</code></td>
+    </tr>
+    <tr>
+      <td><code>gm</code></td>
+      <td><code>git merge</code></td>
+    </tr>
+    <tr>
+      <td><code>ggpull</code></td>
+      <td>Pull current<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup> branch</td>
+    </tr>
+    <tr>
+      <td><code>ggpush</code></td>
+      <td>Push current branch</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="rsync">Rsync</h2>
+
+<p>Aliases for common <a href="http://rsync.samba.org/">Rsync</a> tasks.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>rsync-copy</code></td>
+      <td><code>rsync -av --progress -h</code></td>
+    </tr>
+    <tr>
+      <td><code>rsync-move</code></td>
+      <td><code>rsync -av --progress -h --remove-source-files</code></td>
+    </tr>
+    <tr>
+      <td><code>rsync-update</code></td>
+      <td><code>rsync -avu --progress -h</code></td>
+    </tr>
+    <tr>
+      <td><code>rsync-synchronize</code></td>
+      <td><code>rsync -avu --delete --progress -h</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>the options are <code>ìnstall</code>, <code>upgrade</code>, <code>remove</code>, <code>rollback</code> and <code>list</code>.<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>you can see the current branch right on the command line, depending on your <code>Zsh</code> theme.<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article><!-- .l-page -->
+
+        </div><!-- .box__wrapper -->
+      </div><!-- .l-content .box .box--even -->
+          <footer class="l-footer box box--odd">
+        <div class="box__wrapper">
+          <p class="compressed">
+            Copyright &copy;
+            <a href="/" alt="Ellen Gummesson – Random ramblings, musings and geekiness">
+              Ellen Gummesson
+            </a>
+            2013.
+            <a href="/feed.xml" alt="Subscribe">Subscribe</a>.
+          </p><!-- .compressed -->
+        </div><!-- .box__wrapper -->
+      </footer><!-- .l-footer .box .box--odd -->
+    </div><!-- .l-container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <script src="/assets/js/global.js"></script>
+  </body>
+</html>
+
