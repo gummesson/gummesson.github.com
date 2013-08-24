@@ -1,8 +1,20 @@
-# Gems
+# == Dependencies ==============================================================
+
 require 'rake'
+
+# == Configuration =============================================================
 
 # Default Git message
 GITMSG = "New blog post"
+
+# == Helpers ===================================================================
+
+# Execute a system command
+def execute(command)
+  system "#{command}"
+end
+
+# == Tasks =====================================================================
 
 # rake deploy
 # rake deploy["Commit message"]
@@ -10,14 +22,14 @@ desc "Deploy the site to it's remote git repository"
 task :deploy, :message do |t, args|
   message = args[:message]
   if message.nil? or message.empty?
-    system "git add ."
-    system "git commit -m \"#{GITMSG}\"."
-    system "git push origin master"
+    execute("git add .")
+    execute("git commit -m \"#{GITMSG}\".")
+    execute("git push origin master")
     puts "The site was deployed."
   else
-    system "git add ."
-    system "git commit -m \"#{message}\"."
-    system "git push origin master"
+    execute("git add .")
+    execute("git commit -m \"#{message}\".")
+    execute("git push origin master")
     puts "The site was deployed."
   end
 end
