@@ -6,6 +6,28 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>ConsoleZ</title>
+                <description>&lt;p&gt;&lt;em&gt;THE&lt;/em&gt; ultimate console for Windows. It’s a fork of &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt; that adds a bunch of features like a fullscreen mode and splits&lt;sup id=&quot;fnref:20130827-1&quot;&gt;&lt;a href=&quot;#fn:20130827-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/blog/2013-08-27-consolez.png&quot;&gt;&lt;img src=&quot;/images/blog/2013-08-27-consolez.png&quot; alt=&quot;ConsoleZ&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The borders are a bit too big for my taste, but I rather have them than not having any splits at all.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130827-1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://tmux.sourceforge.net/&quot;&gt;Tmux&lt;/a&gt; fans rejoice!&lt;a href=&quot;#fnref:20130827-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>August 27, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/27/consolez</link>
+              </item>
+            
+              <item>
                 <title>Kapow! – a punchy PowerShell framework</title>
                 <description>&lt;p&gt;Earlier today I released a new project called &lt;a href=&quot;https://github.com/gummesson/kapow&quot;&gt;Kapow!&lt;/a&gt;. After growing more and more frustrated over how slow &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt; was&lt;sup id=&quot;fnref:20130826-1&quot;&gt;&lt;a href=&quot;#fn:20130826-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and not being able to use &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh my Zsh!&lt;/a&gt; on my Windows machine I decided to hack together something that atleast resembled some kind of framework. Right now it has quite a few aliases, scripts, tab completion and themes. I haven’t really used the PowerShell that much so the code looks a bit wonky but hey, it works! My initial thoughts about writing scripts for the the PowerShell are not bad… I think that I actually like it, which is a shock. This is how my prompt looks right now&lt;sup id=&quot;fnref:20130826-2&quot;&gt;&lt;a href=&quot;#fn:20130826-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
@@ -86,14 +108,6 @@
 </description>
                 <published>August 21, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/08/21/the-new-jekyll-rake-boilerplate</link>
-              </item>
-            
-              <item>
-                <title>hpr1197 :: What I do with bash scripts</title>
-                <description>&lt;p&gt;I recently revisited this episode from &lt;a href=&quot;http://hackerpublicradio.org/&quot;&gt;Hacker Public Radio&lt;/a&gt; that &lt;a href=&quot;http://jonathankulp.org/&quot;&gt;Jonathan Kulp&lt;/a&gt; did and it may very well be one of the coolest episodes I’ve ever heard.&lt;/p&gt;
-</description>
-                <published>August 18, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/08/18/hpr1197-what-i-do-with-bash-scripts</link>
               </item>
             
     </channel>
