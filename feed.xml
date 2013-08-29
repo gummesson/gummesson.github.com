@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com/</link>
             
               <item>
+                <title>lightline.vim – a light and configurable statusline for Vim</title>
+                <description>&lt;p&gt;A nice and lightweight alternative to &lt;a href=&quot;https://github.com/Lokaltog/powerline&quot;&gt;Powerline&lt;/a&gt;. I’ve always wanted to try it but from what I’ve read it’s quite tricky to get Powerline work on Windows. Lightline works like a charm though!&lt;/p&gt;
+</description>
+                <published>August 29, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/08/29/lightline-vim</link>
+              </item>
+            
+              <item>
                 <title>ConsoleZ</title>
                 <description>&lt;p&gt;&lt;em&gt;THE&lt;/em&gt; ultimate console for Windows. It’s a fork of &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt; that adds a bunch of features like a fullscreen mode and splits&lt;sup id=&quot;fnref:20130827-1&quot;&gt;&lt;a href=&quot;#fn:20130827-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
@@ -90,24 +98,6 @@
 </description>
                 <published>August 22, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/08/22/its-the-little-things-again</link>
-              </item>
-            
-              <item>
-                <title>The new Jekyll Rake Boilerplate</title>
-                <description>&lt;p&gt;I finally sat down and the refactor most of the code in my most popular project but don’t worry, it’s still quite a mess&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I haven’t written any &lt;a href=&quot;http://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; code for quite some time.&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>August 21, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/08/21/the-new-jekyll-rake-boilerplate</link>
               </item>
             
     </channel>
