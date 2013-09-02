@@ -48,7 +48,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/16/more-vim-goodness" alt="More Vim goodness">
+      <a class="invisible" href="/blog/2013/02/16/more-vim-goodness" alt="More Vim goodness">
         More Vim goodness
       </a>
     </h1>
@@ -60,21 +60,21 @@
 
 <h2 id="voutliner">Voutliner</h2>
 
-<p><em>Voutliner</em> is a simple outlining tool<sup id="fnref:20130216-1"><a href="#fn:20130216-1" rel="footnote">1</a></sup>. I looked at both <a href="http://www.vim.org/scripts/script.php?script_id=3515">VimOutliner</a> and <a href="http://www.vim.org/scripts/script.php?script_id=517">TVO</a> but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. <em>Voutliner</em> is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.</p>
+<p><em>Voutliner</em> is a simple outlining tool<sup id="fnref:20130216-1"><a href="#fn:20130216-1" class="footnote">1</a></sup>. I looked at both <a href="http://www.vim.org/scripts/script.php?script_id=3515">VimOutliner</a> and <a href="http://www.vim.org/scripts/script.php?script_id=517">TVO</a> but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. <em>Voutliner</em> is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.</p>
 
 <h2 id="footnotes">Footnotes</h2>
 
-<p>I like using footnotes but I hate having to manually enter the date for each and every one of them<sup id="fnref:20130216-2"><a href="#fn:20130216-2" rel="footnote">2</a></sup>. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press <code>F7</code> and the date will get added to every footnote automatically. Like <em>Voutliner</em> I doubt that many people will use it, but yet again it’s extremely useful for me.</p>
+<p>I like using footnotes but I hate having to manually enter the date for each and every one of them<sup id="fnref:20130216-2"><a href="#fn:20130216-2" class="footnote">2</a></sup>. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press <code>F7</code> and the date will get added to every footnote automatically. Like <em>Voutliner</em> I doubt that many people will use it, but yet again it’s extremely useful for me.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130216-1">
-      <p>And it’s a really bad name.<a href="#fnref:20130216-1" rel="reference">&#8617;</a></p>
+      <p>And it’s a really bad name.<a href="#fnref:20130216-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130216-2">
-      <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" rel="reference">&#8617;</a></p>
+      <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -85,7 +85,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/12/easy-session-for-vim" alt="Easy Session for Vim">
+      <a class="invisible" href="/blog/2013/02/12/easy-session-for-vim" alt="Easy Session for Vim">
         Easy Session for Vim
       </a>
     </h1>
@@ -97,7 +97,7 @@
 
 <p><code>:SaveSession</code> uses the current working directory as the default filename, so you have to make sure that you’re in the project’s root directory if you’re saving your session for the first time. It may not be the most ultimate solution, but it’s better than the default filename <code>Session.vim</code>. There’s also <code>:NewSession</code> which lets you use your own custom filename. The <code>:OpenSession</code>, suprisingly, opens a session.</p>
 
-<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" rel="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
+<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" class="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
 
 <p><img src="/images/blog/2013-02-12-easy-session-01.png" alt="Easy Session (Sessions List)" /></p>
 
@@ -110,7 +110,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:20130212-1">
-      <p>The “<code>0</code>” makes the list start on the first line in the buffer. If just <code>:read</code> is used it’ll paste the content below the first line.<a href="#fnref:20130212-1" rel="reference">&#8617;</a></p>
+      <p>The “<code>0</code>” makes the list start on the first line in the buffer. If just <code>:read</code> is used it’ll paste the content below the first line.<a href="#fnref:20130212-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -121,7 +121,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/08/fetch" alt="Fetch">
+      <a class="invisible" href="/blog/2013/02/08/fetch" alt="Fetch">
         Fetch
       </a>
     </h1>
@@ -144,7 +144,7 @@
       </a>
     </h1>
     <p class="smallprint">
-    Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>   <a href="http://ellengummesson.com/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="invisible">&num;</a>
+    Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>   <a href="/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="invisible">&num;</a>
     </p><!-- .smallprint -->
   
   <p>This is nice read for using something more native to <a href="http://www.vim.org/">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
@@ -161,7 +161,7 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll">
+      <a class="invisible" href="/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll">
         Wordcount plugin for Jekyll
       </a>
     </h1>
@@ -169,14 +169,14 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
       Posted on January 31, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-  <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" rel="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
+  <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" class="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130131-1">
-      <p>Atleast if you’re measuring by code length since the whole plugin currently consists of just 17 lines of code.<a href="#fnref:20130131-1" rel="reference">&#8617;</a></p>
+      <p>Atleast if you’re measuring by code length since the whole plugin currently consists of just 17 lines of code.<a href="#fnref:20130131-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

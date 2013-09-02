@@ -53,7 +53,7 @@
     </p><!-- .smallprint -->
       <p><em>Long time, no see. I haven’t touched this blog in almost two months and the reason for that is that life got in the way. I’ve really missed writing so I’ll defintively try to pick it up again, I swear!</em></p>
 
-<p>Linux is in a lot of ways much better than Windows but for some reason there’s no good alternative for note-taking apps like <a href="http://notational.net/">Notational Velocity</a> or <a href="http://www.resoph.com/ResophNotes/Welcome.html">ResophNotes</a>. I’ve tried <a href="https://github.com/cpbotha/nvpy">NvPY</a> but unfortunately it doesn’t really work that great for using plain text files with Dropbox. A couple of months back I did experiment with using Vim in conjunction with the <a href="https://github.com/mileszs/ack.vim">Ack plugin</a>, which worked fine on Linux but rather poorly on Windows<sup id="fnref:20130729-1"><a href="#fn:20130729-1" rel="footnote">1</a></sup>. I decided to replace Ack with Vim’s built-in <code>grep</code> function, mainly just to keep it a cross-platform script. It’s not quite as fast as Ack but the difference isn’t huge since it’s just dealing with text files.</p>
+<p>Linux is in a lot of ways much better than Windows but for some reason there’s no good alternative for note-taking apps like <a href="http://notational.net/">Notational Velocity</a> or <a href="http://www.resoph.com/ResophNotes/Welcome.html">ResophNotes</a>. I’ve tried <a href="https://github.com/cpbotha/nvpy">NvPY</a> but unfortunately it doesn’t really work that great for using plain text files with Dropbox. A couple of months back I did experiment with using Vim in conjunction with the <a href="https://github.com/mileszs/ack.vim">Ack plugin</a>, which worked fine on Linux but rather poorly on Windows<sup id="fnref:20130729-1"><a href="#fn:20130729-1" class="footnote">1</a></sup>. I decided to replace Ack with Vim’s built-in <code>grep</code> function, mainly just to keep it a cross-platform script. It’s not quite as fast as Ack but the difference isn’t huge since it’s just dealing with text files.</p>
 
 <p>It basically consists of two command line mappings: <code>Note</code>, which will create a new in the specified notes folder with the provided filename and the default extension, like this: <code>:Note This is the filename</code>. <code>Notes</code> has two functions. You can either use it to browse the notes folder or search the content of the text files in it, ie: <code>:Notes I'm looking for this</code>. It’ll open up the quickfix list after the search is complete.</p>
 
@@ -111,7 +111,7 @@ command! -nargs=? Note call notes#New(&lt;q-args&gt;)
 <div class="footnotes">
   <ol>
     <li id="fn:20130729-1">
-      <p>The plugin in itself works flawlessly but Ack doesn’t really work all to well on Windows.<a href="#fnref:20130729-1" rel="reference">&#8617;</a></p>
+      <p>The plugin in itself works flawlessly but Ack doesn’t really work all to well on Windows.<a href="#fnref:20130729-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -48,7 +48,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog">
+      <a class="invisible" href="/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog">
         A brand new blog
       </a>
     </h1>
@@ -76,8 +76,8 @@
 <h2 id="funish-trivia">Fun(ish) trivia</h2>
 
 <ul>
-  <li>I started the redesign on March 1st and I’ve made a total of 28 commits<sup id="fnref:20130309-1"><a href="#fn:20130309-1" rel="footnote">1</a></sup> to the git repository I used for the development.</li>
-  <li>I “skipped” support for Internet Explorer 8 in favor of using <code>[class^="column-"]:last-child</code> to remove the <code>margin-right</code> on the grid system<sup id="fnref:20130309-2"><a href="#fn:20130309-2" rel="footnote">2</a></sup>.</li>
+  <li>I started the redesign on March 1st and I’ve made a total of 28 commits<sup id="fnref:20130309-1"><a href="#fn:20130309-1" class="footnote">1</a></sup> to the git repository I used for the development.</li>
+  <li>I “skipped” support for Internet Explorer 8 in favor of using <code>[class^="column-"]:last-child</code> to remove the <code>margin-right</code> on the grid system<sup id="fnref:20130309-2"><a href="#fn:20130309-2" class="footnote">2</a></sup>.</li>
   <li>I also found a pretty cool Sass function called <code>darken()</code>, which made it easy finding a good background color for my <code>code</code> and <code>pre</code> tags and the subtle text shadow. All of the color functions for Sass are pretty cool, in fact.</li>
   <li>The pink line at the bottom of the site uses the <a href="http://mystrd.at/modern-clean-css-sticky-footer/">“James Dean Sticky Footer”</a> approach, which is a nice little hack. I love the name too!</li>
   <li>I tried to change as little as possible when I did the CSS for the media queries. I pratically just changed the font size and some margins. That’s it.</li>
@@ -88,10 +88,10 @@
 <div class="footnotes">
   <ol>
     <li id="fn:20130309-1">
-      <p>I’m an obsessive commiter.<a href="#fnref:20130309-1" rel="reference">&#8617;</a></p>
+      <p>I’m an obsessive commiter.<a href="#fnref:20130309-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130309-2">
-      <p>I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.<a href="#fnref:20130309-2" rel="reference">&#8617;</a></p>
+      <p>I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.<a href="#fnref:20130309-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -102,7 +102,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/03/05/re-releasing-smallwork" alt="Re-releasing Smallwork">
+      <a class="invisible" href="/blog/2013/03/05/re-releasing-smallwork" alt="Re-releasing Smallwork">
         Re-releasing Smallwork
       </a>
     </h1>
@@ -112,17 +112,17 @@
   
   <p>Back in January I wrote a small paragraph about my SCSS “framework” <a href="https://github.com/gummesson/smallwork">Smallwork</a>. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.</p>
 
-<p>I also created yet another <a href="http://www.vim.org/">Vim</a> plugin, this time just a simple wrapper for <a href="http://compass-style.org/">Compass</a>, which <em>Smallwork</em> is built with. I was getting sick of having to type either <code>:!compass compile</code> or <code>:sh</code> and then <code>compass compile</code> so I threw together a really basic function that makes it much easier. Now I only have to type <code>:CompassCompile</code>. Another nice feature is that you don’t actually have to close the command prompt<sup id="fnref:20130305-1"><a href="#fn:20130305-1" rel="footnote">1</a></sup> which means that you can use <code>:CompassWatch</code> without it interfering with Vim<sup id="fnref:20130305-2"><a href="#fn:20130305-2" rel="footnote">2</a></sup>. If all goes well I think I’ll even publish it on the official Vim scripts website too.</p>
+<p>I also created yet another <a href="http://www.vim.org/">Vim</a> plugin, this time just a simple wrapper for <a href="http://compass-style.org/">Compass</a>, which <em>Smallwork</em> is built with. I was getting sick of having to type either <code>:!compass compile</code> or <code>:sh</code> and then <code>compass compile</code> so I threw together a really basic function that makes it much easier. Now I only have to type <code>:CompassCompile</code>. Another nice feature is that you don’t actually have to close the command prompt<sup id="fnref:20130305-1"><a href="#fn:20130305-1" class="footnote">1</a></sup> which means that you can use <code>:CompassWatch</code> without it interfering with Vim<sup id="fnref:20130305-2"><a href="#fn:20130305-2" class="footnote">2</a></sup>. If all goes well I think I’ll even publish it on the official Vim scripts website too.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130305-1">
-      <p>Normally you can’t do anything until you’ve exited the command prompt and hit <code>Enter</code>, but a simple solution from the <a href="http://vim.wikia.com/wiki/Execute_external_programs_asynchronously_under_Windows">Vim Wiki</a> fixed that.<a href="#fnref:20130305-1" rel="reference">&#8617;</a></p>
+      <p>Normally you can’t do anything until you’ve exited the command prompt and hit <code>Enter</code>, but a simple solution from the <a href="http://vim.wikia.com/wiki/Execute_external_programs_asynchronously_under_Windows">Vim Wiki</a> fixed that.<a href="#fnref:20130305-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130305-2">
-      <p>Atleast on Windows. I don’t think that there’s an easy way to do that on Unix, which is unfortunate.<a href="#fnref:20130305-2" rel="reference">&#8617;</a></p>
+      <p>Atleast on Windows. I don’t think that there’s an easy way to do that on Unix, which is unfortunate.<a href="#fnref:20130305-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -133,7 +133,7 @@
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/03/03/fixing-jekylls-encoding-shenanings" alt="Fixing Jekyll's encoding shenanings">
+      <a class="invisible" href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings" alt="Fixing Jekyll's encoding shenanings">
         Fixing Jekyll's encoding shenanings
       </a>
     </h1>
@@ -141,7 +141,7 @@
       Posted on March  3, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>  
     </p><!-- .smallprint -->
   
-  <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" rel="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
+  <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" class="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
 
 <pre><code>require 'rbconfig'
 
@@ -158,17 +158,17 @@ task :build do
 end
 </code></pre>
 
-<p>The <code>RbConfig</code> part is actually a neat trick I found a couple of weeks ago. It apparently works better than using <code>RUBY_PLATFORM</code> since it picks up the actual OS rather than the Ruby platform.<sup id="fnref:20130303-2"><a href="#fn:20130303-2" rel="footnote">2</a></sup> I’m not sure that the <code>require</code> part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: <code>alias jekyll="export LANG=en_EN.UTF-8 &amp;&amp; jekyll"</code> or something like that.</p>
+<p>The <code>RbConfig</code> part is actually a neat trick I found a couple of weeks ago. It apparently works better than using <code>RUBY_PLATFORM</code> since it picks up the actual OS rather than the Ruby platform.<sup id="fnref:20130303-2"><a href="#fn:20130303-2" class="footnote">2</a></sup> I’m not sure that the <code>require</code> part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: <code>alias jekyll="export LANG=en_EN.UTF-8 &amp;&amp; jekyll"</code> or something like that.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130303-1">
-      <p>I actually set my language to <code>sv_SV.UTF-8</code>, but I figured that using the english version in an example is better.<a href="#fnref:20130303-1" rel="reference">&#8617;</a></p>
+      <p>I actually set my language to <code>sv_SV.UTF-8</code>, but I figured that using the english version in an example is better.<a href="#fnref:20130303-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130303-2">
-      <p>Using <code>RUBY_PLATFORM</code> when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.<a href="#fnref:20130303-2" rel="reference">&#8617;</a></p>
+      <p>Using <code>RUBY_PLATFORM</code> when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.<a href="#fnref:20130303-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -179,7 +179,7 @@ end
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/28/webrick-and-cygwin" alt="WEBrick and Cygwin">
+      <a class="invisible" href="/blog/2013/02/28/webrick-and-cygwin" alt="WEBrick and Cygwin">
         WEBrick and Cygwin
       </a>
     </h1>
@@ -187,17 +187,17 @@ end
       Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>  
     </p><!-- .smallprint -->
   
-  <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/">Ruby</a>, or more specifically <a href="http://rubygems.org/">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+  <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/">Ruby</a>, or more specifically <a href="http://rubygems.org/">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" class="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" class="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130228-1">
-      <p>Which is the default server for <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.sinatrarb.com/">Sinatra</a>.<a href="#fnref:20130228-1" rel="reference">&#8617;</a></p>
+      <p>Which is the default server for <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.sinatrarb.com/">Sinatra</a>.<a href="#fnref:20130228-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130228-2">
-      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" rel="reference">&#8617;</a></p>
+      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -208,7 +208,7 @@ end
   <article class="l-post">
   
     <h1>
-      <a class="invisible" href="http://ellengummesson.com/blog/2013/02/21/ack-on-windows" alt="Ack on Windows">
+      <a class="invisible" href="/blog/2013/02/21/ack-on-windows" alt="Ack on Windows">
         Ack on Windows
       </a>
     </h1>
@@ -223,7 +223,7 @@ end
 <ol>
   <li>Download the standalone script from the <a href="http://betterthangrep.com/install/">here</a>.</li>
   <li>Create a <code>bat</code> file and add the following to it: <code>@"C:\path\to\perl.exe" C:\path\to\ack.pl %*</code>. Change the paths so that they point to the relevant places.</li>
-  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path, or create a new folder and add it to said path.<sup id="fnref:20130221-1"><a href="#fn:20130221-1" rel="footnote">1</a></sup></li>
+  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path, or create a new folder and add it to said path.<sup id="fnref:20130221-1"><a href="#fn:20130221-1" class="footnote">1</a></sup></li>
   <li>Last, but not least, create an alias for the <code>bat</code> file in your <code>.bash_profile</code> if you want to get it to work with <a href="http://www.cygwin.com/">Cygwin</a>.</li>
 </ol>
 
@@ -234,7 +234,7 @@ end
 <div class="footnotes">
   <ol>
     <li id="fn:20130221-1">
-      <p>Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:20130221-1" rel="reference">&#8617;</a></p>
+      <p>Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:20130221-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

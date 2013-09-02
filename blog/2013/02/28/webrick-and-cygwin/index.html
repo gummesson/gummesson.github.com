@@ -51,17 +51,17 @@
     <p class="smallprint">
       Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>
     </p><!-- .smallprint -->
-      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/">Ruby</a>, or more specifically <a href="http://rubygems.org/">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" rel="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" rel="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/">Ruby</a>, or more specifically <a href="http://rubygems.org/">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" class="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" class="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
 
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:20130228-1">
-      <p>Which is the default server for <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.sinatrarb.com/">Sinatra</a>.<a href="#fnref:20130228-1" rel="reference">&#8617;</a></p>
+      <p>Which is the default server for <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.sinatrarb.com/">Sinatra</a>.<a href="#fnref:20130228-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130228-2">
-      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" rel="reference">&#8617;</a></p>
+      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

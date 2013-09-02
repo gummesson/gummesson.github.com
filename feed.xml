@@ -3,7 +3,7 @@
     <channel>
       <title>Ellen Gummesson</title>
         <description>Random ramblings, musings and geekiness</description>
-          <link>http://ellengummesson.com/</link>
+          <link>http://ellengummesson.com</link>
             
               <item>
                 <title>Creating a Chocolatey package</title>
@@ -74,7 +74,7 @@ Try {
             
               <item>
                 <title>ConsoleZ</title>
-                <description>&lt;p&gt;&lt;em&gt;THE&lt;/em&gt; ultimate console for Windows. It’s a fork of &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt; that adds a bunch of features like a fullscreen mode and splits&lt;sup id=&quot;fnref:20130827-1&quot;&gt;&lt;a href=&quot;#fn:20130827-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+                <description>&lt;p&gt;&lt;em&gt;THE&lt;/em&gt; ultimate console for Windows. It’s a fork of &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt; that adds a bunch of features like a fullscreen mode and splits&lt;sup id=&quot;fnref:20130827-1&quot;&gt;&lt;a href=&quot;#fn:20130827-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/blog/2013-08-27-consolez.png&quot;&gt;&lt;img src=&quot;/images/blog/2013-08-27-consolez.png&quot; alt=&quot;ConsoleZ&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -85,7 +85,7 @@ Try {
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130827-1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://tmux.sourceforge.net/&quot;&gt;Tmux&lt;/a&gt; fans rejoice!&lt;a href=&quot;#fnref:20130827-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://tmux.sourceforge.net/&quot;&gt;Tmux&lt;/a&gt; fans rejoice!&lt;a href=&quot;#fnref:20130827-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -96,7 +96,7 @@ Try {
             
               <item>
                 <title>Kapow! – a punchy PowerShell framework</title>
-                <description>&lt;p&gt;Earlier today I released a new project called &lt;a href=&quot;https://github.com/gummesson/kapow&quot;&gt;Kapow!&lt;/a&gt;. After growing more and more frustrated over how slow &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt; was&lt;sup id=&quot;fnref:20130826-1&quot;&gt;&lt;a href=&quot;#fn:20130826-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and not being able to use &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh my Zsh!&lt;/a&gt; on my Windows machine I decided to hack together something that atleast resembled some kind of framework. Right now it has quite a few aliases, scripts, tab completion and themes. I haven’t really used the PowerShell that much so the code looks a bit wonky but hey, it works! My initial thoughts about writing scripts for the the PowerShell are not bad… I think that I actually like it, which is a shock. This is how my prompt looks right now&lt;sup id=&quot;fnref:20130826-2&quot;&gt;&lt;a href=&quot;#fn:20130826-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+                <description>&lt;p&gt;Earlier today I released a new project called &lt;a href=&quot;https://github.com/gummesson/kapow&quot;&gt;Kapow!&lt;/a&gt;. After growing more and more frustrated over how slow &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt; was&lt;sup id=&quot;fnref:20130826-1&quot;&gt;&lt;a href=&quot;#fn:20130826-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and not being able to use &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh my Zsh!&lt;/a&gt; on my Windows machine I decided to hack together something that atleast resembled some kind of framework. Right now it has quite a few aliases, scripts, tab completion and themes. I haven’t really used the PowerShell that much so the code looks a bit wonky but hey, it works! My initial thoughts about writing scripts for the the PowerShell are not bad… I think that I actually like it, which is a shock. This is how my prompt looks right now&lt;sup id=&quot;fnref:20130826-2&quot;&gt;&lt;a href=&quot;#fn:20130826-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blog/2013-08-26-kapow-punchy-theme.png&quot; alt=&quot;Kapow! with the Punchy theme&quot; /&gt;&lt;/p&gt;
 
@@ -107,10 +107,10 @@ Try {
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130826-1&quot;&gt;
-      &lt;p&gt;It takes about 10 seconds to launch it. No joke.&lt;a href=&quot;#fnref:20130826-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;It takes about 10 seconds to launch it. No joke.&lt;a href=&quot;#fnref:20130826-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:20130826-2&quot;&gt;
-      &lt;p&gt;I’m also using &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt;.&lt;a href=&quot;#fnref:20130826-2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I’m also using &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt;.&lt;a href=&quot;#fnref:20130826-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -121,14 +121,14 @@ Try {
             
               <item>
                 <title>My Linux setup</title>
-                <description>&lt;p&gt;I’ve mentioned before how I love to read about &lt;a href=&quot;http://onethingwell.org/linux-setup&quot;&gt;other&lt;/a&gt; &lt;a href=&quot;http://jasonwryan.com/blog/2010/10/04/the-setup/&quot;&gt;people’s&lt;/a&gt; setups so I decided to throw together a quite detailed but comprehensive document of what I currently use for my Linux setup and how to actually set it up&lt;sup id=&quot;fnref:20130823-1&quot;&gt;&lt;a href=&quot;#fn:20130823-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. So far I’m happy with what I’m using but I plan to keep it up to date if I decide to add or change something.&lt;/p&gt;
+                <description>&lt;p&gt;I’ve mentioned before how I love to read about &lt;a href=&quot;http://onethingwell.org/linux-setup&quot;&gt;other&lt;/a&gt; &lt;a href=&quot;http://jasonwryan.com/blog/2010/10/04/the-setup/&quot;&gt;people’s&lt;/a&gt; setups so I decided to throw together a quite detailed but comprehensive document of what I currently use for my Linux setup and how to actually set it up&lt;sup id=&quot;fnref:20130823-1&quot;&gt;&lt;a href=&quot;#fn:20130823-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. So far I’m happy with what I’m using but I plan to keep it up to date if I decide to add or change something.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:20130823-1&quot;&gt;
-      &lt;p&gt;Those notes are mainly written for me, but I figured that it might be useful for someone else too.&lt;a href=&quot;#fnref:20130823-1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Those notes are mainly written for me, but I figured that it might be useful for someone else too.&lt;a href=&quot;#fnref:20130823-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

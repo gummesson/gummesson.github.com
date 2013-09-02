@@ -51,7 +51,7 @@
     <p class="smallprint">
       Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
     </p><!-- .smallprint -->
-      <p>My little <a href="http://www.vim.org/">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" rel="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" rel="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
+      <p>My little <a href="http://www.vim.org/">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" class="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" class="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
 
 <h2 id="a-few-tips-and-tricks">A few tips and tricks</h2>
 
@@ -66,7 +66,7 @@ else
 endif  
 </code></pre>
 
-<p>I don’t know if I’m strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the <code>if...else...endif</code> part so that it plays nice with both of them<sup id="fnref:20130124-3"><a href="#fn:20130124-3" rel="footnote">3</a></sup>. It’s important to note that this needs to be at the very top of your <code>vimrc</code> file if you want it to work.</p>
+<p>I don’t know if I’m strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the <code>if...else...endif</code> part so that it plays nice with both of them<sup id="fnref:20130124-3"><a href="#fn:20130124-3" class="footnote">3</a></sup>. It’s important to note that this needs to be at the very top of your <code>vimrc</code> file if you want it to work.</p>
 
 <p><strong>Use the cursorline as a mode indicator:</strong></p>
 
@@ -95,13 +95,13 @@ au InsertLeave * set cursorline
 <div class="footnotes">
   <ol>
     <li id="fn:20130124-1">
-      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" rel="reference">&#8617;</a></p>
+      <p>One of the most useful tweaks I’ve found for writing blog posts was from Peter Provost’s <a href="http://peterprovost.org/blog/2012/04/22/editing-octopress-slash-jekyll-posts-in-vim/">Editing Octopress/Jekyll Posts in Vim</a>. The YAML front matter doesn’t look like crap anymore, yay!<a href="#fnref:20130124-1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130123-2">
-      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" rel="reference">&#8617;</a></p>
+      <p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">A repository inside another repository</a>.<a href="#fnref:20130123-2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:20130124-3">
-      <p>This works for everything by the way. I think that the default name for Mac is <code>macunix</code>, but I’m not 100% sure. <a href="#fnref:20130124-3" rel="reference">&#8617;</a></p>
+      <p>This works for everything by the way. I think that the default name for Mac is <code>macunix</code>, but I’m not 100% sure. <a href="#fnref:20130124-3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
