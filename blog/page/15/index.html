@@ -1,0 +1,209 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>Blog – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/11/09/footnotes" alt="Footnotes">
+              Footnotes
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November  9, 2012  in  <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>  
+          </p>
+        
+        <p>Earlier today I look into some simple solution to enable support for footnotes since that’s something that regular Markdown doesn’t cover<sup id="fnref:20121109-1"><a href="#fn:20121109-1" class="footnote">1</a></sup>. My current Markdown interpreter, <a href="https://github.com/rtomayko/rdiscount">rdiscount</a>, sadly doesn’t have any support for it but another one called <a href="http://kramdown.rubyforge.org/">kramdown</a> do. I thought that maybe kramdown was going to be significantly slower<sup id="fnref:20121109-2"><a href="#fn:20121109-2" class="footnote">2</a></sup> but it’s actually hardly noticeable. According to the <a href="http://kramdown.rubyforge.org/syntax.html">syntax</a> it processes the markdown a little differently but luckily I haven’t noticed any changes, since I was worried for a while that I’d had to edit some posts. I did however had to add some thing in my CSS so that the footnotes didn’t look to out of place, but since the markup consists of some attribute selectors that didn’t turn out to be a big hassle either.</p>
+
+<p>So to wrap this short post up, if you’re looking for a pretty fast markdown interpreter for Jekyll that has some additional features you should definitively try out kramdown.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121109-1">
+      <p>Although forks of Markdown like <a href="http://michelf.ca/projects/php-markdown/extra/">Markdown Extra</a> and <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a> do.<a href="#fnref:20121109-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20121109-2">
+      <p>kramdown is built exclusively with <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a> while rdiscount also uses <a href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, which to my understanding makes the whole process faster.<a href="#fnref:20121109-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/11/06/pop-a-minimal-approach-to-digital-notetaking" alt="Pop – a minimal approach to digital notetaking">
+              Pop – a minimal approach to digital notetaking
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November  6, 2012  in  <a href="/blog/tag/Tech" alt="Tech">Tech</a>, <a href="/blog/tag/Apps" alt="Apps">Apps</a>, <a href="/blog/tag/iOS" alt="iOS">iOS</a>  
+          </p>
+        
+        <p>After trying Squarespace Note for a few days I decided that it wasn’t really for me. Even though I feel in love with the interface I couldn’t really get over the fact that I couldn’t choose another folder other than the app’s default to save my notes to in Dropbox. I still think it’s a very competent and useful app though, but it’s just not my cup of tea. I decided to look for something else and I did find a worthy replacement: <a href="http://minimaltools.com/" title="Minimal Tools - Pop">Pop</a>.</p>
+
+<h2 id="pop">Pop</h2>
+
+<p>The description from <a href="http://minimaltools.com/" title="Minimal Tools – Pop">the official website</a> describes the purpose of the app perfectly:</p>
+
+<blockquote>
+  <p>Pop is simply a convenient place for writing things down — that piece of paper you grab to write when you have an idea. It doesn’t help you do anything smarter or more organized.</p>
+</blockquote>
+
+<p>This means that’s there’s no integration with any other service or app whatsoever. You’re only able to write down what you want to keep, and then select it all and copy it to another text editor for further editing and writing. I love that. Note was really similiar to my default text editor, <a href="http://www.iawriter.com/" title="iA Writer">iA Writer</a>, while Pop certainly isn’t. I can only use one blank “canvas” to write down my ideas and thoughts. There’s nothing to fiddle with. That feels quite refreshing to be honest (I actually wrote the majority of this post in said app). My handwriting is incredibly messy so it’s nice to have an app that can quite frankly replace my need for an actual physical notebook. </p>
+
+<p><img src="/images/blog/2012-11-06-pop-for-ios.png" alt="Pop for iOS (with a swedish keyboard)" title="Pop for iOS (with a swedish keyboard)" /></p>
+
+<p>I feel confident that Pop is going to prove itself useful for me. I’m absolutely certain that I’m going to continue to use it as a springboard for ideas, blog posts and just general thoughts. Just like how it’s meant to be used, in my opinion.</p>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/11/04/gummesson-three-point-zero" alt="Gummesson 3.0">
+              Gummesson 3.0
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November  4, 2012  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Design" alt="Design">Design</a>  
+          </p>
+        
+        <p>If you’re reading this you should’ve noticed that the design once again has changed. I tried to made a promise to myself that I wouldn’t fiddle with the site’s design for a week but obviously that didn’t work out. I did find a rather stunning typeface, <a href="http://www.google.com/webfonts/specimen/Tinos">Tinos</a>, and I decided to run with it while the inspiration was high. I think that it looks so much cleaner now and I’ve finally limited my need to change things around on the site. I’m confident that this reincarnation of it will stick around much longer than the previous ones (that shouldn’t be too hard since I’ve had two different designs since the end of August this year).</p>
+
+<p><em>I really need to find a good monthly archives plugin for Jekyll though since the post count is getting too high to work with the current solution which just lists them all, but that’s a different story.</em></p>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/11/02/fiddling" alt="Fiddling">
+              Fiddling
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November  2, 2012  in  <a href="/blog/tag/Design" alt="Design">Design</a>  
+          </p>
+        
+        <p>I find it a bit funny that since I posted my last blog post with my little ramble about redesigning I’ve fiddled around about ten times with different elements  on this site. Now my goal is to not do it for atleast a couple of days. That shouldn’t be too hard I hope. I really do need to clean up the code though…</p>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/10/31/to-re-redesign-or-not" alt="To re-redesign or not">
+              To re-redesign or not
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on October 31, 2012  in  <a href="/blog/tag/Design" alt="Design">Design</a>, <a href="/blog/tag/Thoughts" alt="Thoughts">Thoughts</a>  
+          </p>
+        
+        <p>I’ve been thinking a lot lately about yet again redesigning this site. I’ve changed quite a few annonyances I’ve had since launching the new design back in September but I’m still not fully content with it. I guess that’s the way it is when you constantly pick up new things from other sites and blogs that you regularly go to. I have a tendency to get extremely tired at looking at the same thing for longer periods of time too. I think that’s why I’ve been tinkering so much with my current design. If I could I’d probably change the site every month, but that’s an impossible feat since I’m not a designer at all. I rarely get by in that department. But still I feel a need to strive for something more aesthetically pleasing. Or maybe I just care too much and should just let it be. I don’t know.</p>
+
+      </article>
+
+
+        <nav class="box  l-pagination">
+        <div class="box__wrapper  box__wrapper--brand">
+          <ul class="nav">
+          
+            
+            <li>
+              <a href="/blog/page/14" class="button  button--active">&larr; Next</a>
+            </li>
+            
+          
+          
+            <li>
+              <a class="button  button--active" href="/blog/page/16" alt="Previous">Previous &rarr;</a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav>
+
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+

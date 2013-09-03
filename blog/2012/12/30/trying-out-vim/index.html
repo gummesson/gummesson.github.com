@@ -1,0 +1,142 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>Trying out Vim – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          <article class="post">
+  
+    <h1 class="post__title">
+      Trying out Vim
+    </h1>
+  
+    <p class="post__meta">
+      Posted on December 30, 2012  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
+    </p>
+      <p>There’s no doubt that if you’ve ever spent some time looking through and reading various developer related things that you’ve seen people mentioning the text editor <a href="http://www.vim.org/">Vim</a>. I decided to try it out the graphical version of it, gVim, and it really is a different experience. Instead of relying on trusty old keyboard shortcuts like <code>Ctrl+S</code> you instead have to first hit <code>Esc</code> and type <code>:w</code>. While I’m not a hundred percent sold on it<sup id="fnref:20121230-1"><a href="#fn:20121230-1" class="footnote">1</a></sup> I can defintively see the appeal, especially for people who love their keyboards. The Vim version of the color scheme <a href="http://ethanschoonover.com/solarized">Solarized</a>, which I absolutely love, looks gorgeous and what I can tell Vim probably has the best Markdown syntax highlighting I’ve ever seen. One other aspect I really like is that you can save all of your settings in a single file which you can then use across multiple systems, since Vim is cross-platform.</p>
+
+<p>I’m still very new to using it, so if I decided to really dive in to it I’m sure I’ll write more about it during the coming weeks.</p>
+
+<h2 id="my-gvim-config">My (g)Vim config</h2>
+
+<p>I naturally wanted to add some settings to make the experience slightly better<sup id="fnref:20121230-2"><a href="#fn:20121230-2" class="footnote">2</a></sup> and thanks to a lot of different people<sup id="fnref:20121230-3"><a href="#fn:20121230-3" class="footnote">3</a></sup> across the web I was able to change quite a whole lot to my liking. I also installed a plugin called <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> which adds a sidebar where you can see the files in your project directory. <a href="https://github.com/tpope/vim-pathogen">Pathogen</a> is also very helpful when it comes to managing all your plugins. It’s of course available on <a href="https://github.com/gummesson/vimfiles/blob/master/.vimrc">my GitHub page</a> and it’s loaded with comments.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>If you’re interested in trying Vim out, I encourage you to look at these websites and screencasts.</p>
+
+<ul>
+  <li><a href="http://usevim.com/">Use Vim</a></li>
+  <li><a href="http://vim.runpaint.org/">Vim Recipes</a></li>
+  <li><a href="http://vimcasts.org/">Vimcasts</a></li>
+  <li><a href="http://www.derekwyatt.org/vim/vim-tutorial-videos/">Derek Wyatt’s Vim tutorial videos</a></li>
+</ul>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121230-1">
+      <p>I’ve noticed that the more I use it the more I like it so maybe it’s just a matter of time before I take the plunge and switch over to it fully.<a href="#fnref:20121230-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20121230-2">
+      <p>Vim is like a blank canvas when you start. Literally. Not even the syntax highlighting is on by default. <a href="#fnref:20121230-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20121230-3">
+      <p><a href="http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/">Jeffrey Way’s</a>, <a href="http://nvie.com/posts/how-i-boosted-my-vim/">Vincent Driessen’s</a> and <a href="http://stevelosh.com/blog/2010/09/coming-home-to-vim/">Steve Losh’s</a> tips, tricks and config files where extremely helpful.<a href="#fnref:20121230-3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+  <div class="l-comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+

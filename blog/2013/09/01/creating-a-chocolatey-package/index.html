@@ -1,0 +1,160 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>Creating a Chocolatey package – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          <article class="post">
+  
+    <h1 class="post__title">
+      Creating a Chocolatey package
+    </h1>
+  
+    <p class="post__meta">
+      Posted on September  1, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Chocolatey" alt="Chocolatey">Chocolatey</a>
+    </p>
+      <p>I recently “converted” all of my installed apps over to using Chocolatey. I won’t dwelve too deeply into how much I love it, but let’s just say it’s a lot. It’s such a relief not having to hunt for executable files. There were packages for nearly all of the apps I use but some were missing so I added a few of them. The process is pretty straightforward.</p>
+
+<p>Let’s say we have an app that’s called <code>MyAwesomeApp</code>. First we need to create a directory called <code>myawesomeapp</code> and then create a <code>nuspec</code> file in it with the following content:</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;myawesomeapp&lt;/id&gt;
+    &lt;title&gt;MyAwesomeApp&lt;/title&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+    &lt;authors&gt;The creator's name&lt;/authors&gt;
+    &lt;owners&gt;Your name&lt;/owners&gt;
+    &lt;summary&gt;An awesome app&lt;/summary&gt;
+    &lt;description&gt;An incredible awesome app that'll one day save the world!&lt;/description&gt;
+    &lt;projectUrl&gt;http://example.com/&lt;/projectUrl&gt;
+    &lt;tags&gt;awesome awesome awesome&lt;/tags&gt;
+    &lt;licenseUrl&gt;http://example.com/license.html&lt;/licenseUrl&gt;
+    &lt;requireLicenseAcceptance&gt;false&lt;/requireLicenseAcceptance&gt;
+    &lt;iconUrl&gt;http://example.com/logo.png&lt;/iconUrl&gt;
+    &lt;releaseNotes&gt;http://example.com/news/&lt;/releaseNotes&gt;
+  &lt;/metadata&gt;
+  &lt;files&gt;
+    &lt;file src="tools\*" target="tools" /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+</code></pre>
+
+<p>Then it’s time to create a <code>chocolateyInstall.ps1</code> file and save it in another directory inside the <code>myawesomeapp</code> directory called <code>tools</code>. Now, we could technically do it as simple as this:</p>
+
+<pre><code>Install-ChocolateyPackage "MyAwesomeApp" "exe" "/quiet" "http://example.com/download/installer.exe"
+</code></pre>
+
+<p>But I like adding a bit more functionality so instead we’ll use this:</p>
+
+<pre><code>$Package = "MyAwesomeApp"
+$PackageParams = @{
+  packageName = $Package;  
+  fileType = "exe";
+  silentArgs = "/quiet";
+  url = "http://example.com/download/installer.exe";
+} 
+
+Try {
+  Install-ChocolateyPackage @PackageParams
+  Write-ChocolateySuccess $Package
+} Catch {
+  Write-ChocolateyFailure $Package "$($_.Exception.Message)"
+  Throw
+}
+</code></pre>
+
+<p>This feels a bit nicer and it’s a hell of a lot easier to re-use, atleast for me. After this we need to run <code>cpack</code> in the root directory to create a <code>nupkg</code> file and then <code>cinst myawesomeapp -source %cd%</code> to test it. The last thing we need to do is to upload the generated <code>nupkg</code> file on the official <a href="http://chocolatey.org/">Chocolatey</a> website. You could do this straight from the PowerShell, but I haven’t done that yet.</p>
+
+</article>
+
+  <div class="l-comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+

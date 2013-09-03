@@ -1,0 +1,241 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>Blog – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I created yet another (pointless) app">
+              I created yet another (pointless) app
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January 15, 2013  in  <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps">Apps</a>  
+          </p>
+        
+        <p>My experiments with the <a href="http://www.sinatrarb.com/">Sinatra</a> framework continues and yesterday I pushed yet another app to <a href="http://www.heroku.com/">Heroku</a> called <a href="http://slugize.ellengummesson.com/">Slugize</a>. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like <a href="http://jekyllrb.com/">Jekyll</a>. I usually don’t decide on a title until a few seconds before I “hit publish” which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out <code>-</code> between every word in the title and change every letter to be in downcase<sup id="fnref:20130115-1"><a href="#fn:20130115-1" class="footnote">1</a></sup>. I guess you can call it lazyiness too. Now I only need to copy and paste the title into <em>Slugize</em> and it’ll do it automatically for me and I also added an option to append the current day’s date to it. It’s funny how being lazy sometimes makes you more productive.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130115-1">
+      <p>I do actually use the <code>rake post</code> function that I created for my <a href="https://github.com/gummesson/jekyll-rake-boilerplate">Jekyll Rake Boilerplate</a> project, but I only use it when I’m 100% sure on a post’s title and content.<a href="#fnref:20130115-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/12/launch-week" alt="Launch week">
+              Launch week
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January 12, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps">Apps</a>  
+          </p>
+        
+        <p>Yesterday I finally pushed something to the master branch of a thing I started working on last week, <a href="#">Smallwork</a>. It’s a small yet full featured <a href="http://sass-lang.com/">SCSS</a> framework, or starting point as I’d like to call it. The first time I tried SCSS was way back in August or September but I didn’t really “get” it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines<sup id="fnref:20130112-1"><a href="#fn:20130112-1" class="footnote">1</a></sup> which kind of makes it my most ambitious work to date.</p>
+
+<p>I also played around with <a href="http://www.sinatrarb.com/">Sinatra</a> again and came up with a simple journal app which uses <a href="http://datamapper.org/">Datamapper</a> and <a href="http://www.sqlite.org/">SQLite3</a> for storing everything in a database. Like I mentioned earlier I’m quite fond of Sinatra, especially since it’s really easy to understand what do to and what’s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I’m not in fact dreaming. I’m no expert but I like where I’m going with it and I’ve barely scratched the surface.</p>
+
+<p>I’m also thinking about extending <a href="http://kramit.ellengummesson.com/">Kramit!</a> a bit, but we’ll see how that goes… I guess I should try to slow myself down a bit since I’ve launched three new projects this week alone. I’m having fun though!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130112-1">
+      <p>That’s including blank lines and comments. It’s still a pretty big number though. The compiled CSS code is 682 lines long and that’s without any additional content besides the basic structure itself.<a href="#fnref:20130112-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app" alt="Lo and behold, I've launched an web app!">
+              Lo and behold, I've launched an web app!
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January 10, 2013  in  <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Apps" alt="Apps">Apps</a>  
+          </p>
+        
+        <p>The day before yesterday I launched my first “web app”, <a href="http://kramit.ellengummesson.com/">Kramit!</a>. Like about half a million people on the internet with some kind of web development interest I created yet another <a href="http://daringfireball.net/projects/markdown/">Markdown</a> preview app and with the wonderful micro web framework <a href="http://www.sinatrarb.com/">Sinatra</a>. It’s nothing unique but I’m quite proud nonetheless. I haven’t actually seen that many that uses <a href="http://kramdown.rubyforge.org/">Kramdown</a> as it’s default parser, so I guess that that aspect is somewhat pretty unique<sup id="fnref:20130110-1"><a href="#fn:20130110-1" class="footnote">1</a></sup>.</p>
+
+<h2 id="more-minimum-than-an-mvp">More minimum than an MVP</h2>
+
+<p><em>Kramit!</em> is at it’s core the definition of an MVP<sup id="fnref:20130110-2"><a href="#fn:20130110-2" class="footnote">2</a></sup>. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That’s nothing! I’m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn’t actually writing the code but rather designing it.<sup id="fnref:20130110-3"><a href="#fn:20130110-3" class="footnote">3</a></sup></p>
+
+<h2 id="so-whats-next">So, what’s next?</h2>
+
+<p>First of all I think I’m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at <a href="http://rubyonrails.org/">Ruby on Rails</a>. It’s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130110-1">
+      <p>I like it because it has <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a> features like footnotes for examples (this footnote became very meta by the way).<a href="#fnref:20130110-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130110-2">
+      <p><a href="http://en.wikipedia.org/wiki/Minimum_viable_product">Minimum viable product</a>.<a href="#fnref:20130110-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130110-3">
+      <p>I would called myself challenged in that department. My basic design process is “make something up, strip away all the things that I though was going to look good but didn’t, look it at it again and then remove some more”.<a href="#fnref:20130110-3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="http://smalify.net/" alt="Smalify: minification on the fly">
+              Smalify: minification on the fly &rarr;
+            </a>
+          </h1>
+          <p class="post__meta">
+          Posted on January  7, 2013  in  <a href="/blog/tag/Apps" alt="Apps">Apps</a>, <a href="/blog/tag/Code" alt="Code">Code</a>   <a href="/blog/2013/01/07/smalify-minification-on-the-fly" alt="Permalink – Smalify: minification on the fly" class="link--hidden">&num;</a>
+          </p>
+        
+        <p>I found this little gem of an app earlier today and I got to say that it was just what I was looking for and needed. I’ve been meaning to minify my code for some time but I haven’t found something simple that could do that. There are some web based apps and services out there that can do it, but I like having a native solution so that it can update itself whenever there’s a new change and so on.</p>
+
+      </article>
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/03/vim-a-couple-of-days-in" alt="Vim: a couple of days in">
+              Vim: a couple of days in
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January  3, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>  
+          </p>
+        
+        <p>It’s been nearly a week since I started with venturing into <a href="http://www.vim.org/">Vim</a> and so far it’s really been an adventure for sure. I’ve managed to pick up a few new tricks everyday and yesterday I had to stop myself from saving a quick note I was jotting down in another editor with <code>:w</code><sup id="fnref:20130103-1"><a href="#fn:20130103-1" class="footnote">1</a></sup> which I guess is a good thing. I’ve also managed to scrap together a decent <code>.vimrc</code> file with lots of settings and installed quite a few plugins as well. I feel that using Vim makes me atleast <em>feel</em> a bit more efficient and while the learning curve is steep I do think that I’ll continue to use it. I’ve always been lazy when it comes to learning keyboard shortcuts and even though I think that you should use whatever feels most comfortable to you it’s defintively not a bad thing to be able to move around and edit things fast without having to use the mouse. </p>
+
+<p>I’ve also started a new project<sup id="fnref:20130103-2"><a href="#fn:20130103-2" class="footnote">2</a></sup> and decided that I’ll only work on it in Vim just to get a good feel for it and to learn how to actually use all the basic ways to get by atleast. That’ll probably prove to be a challenge, but fun nonetheless. I have a lot to learn but I’m equally eager to do that.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130103-1">
+      <p>The default way of saving things in Vim.<a href="#fnref:20130103-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130103-2">
+      <p>Or a thing. The word “project” sounds so serious.<a href="#fnref:20130103-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article>
+
+
+        <nav class="box  l-pagination">
+        <div class="box__wrapper  box__wrapper--brand">
+          <ul class="nav">
+          
+            
+            <li>
+              <a href="/blog/page/9" class="button  button--active">&larr; Next</a>
+            </li>
+            
+          
+          
+            <li>
+              <a class="button  button--active" href="/blog/page/11" alt="Previous">Previous &rarr;</a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav>
+
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+

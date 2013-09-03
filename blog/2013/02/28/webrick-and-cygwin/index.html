@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>WEBrick and Cygwin – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          <article class="post">
+  
+    <h1 class="post__title">
+      WEBrick and Cygwin
+    </h1>
+  
+    <p class="post__meta">
+      Posted on February 28, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>
+    </p>
+      <p>There’s no secret that I’ve become a big fan of <a href="http://www.cygwin.com/">Cygwin</a> and the Unix command line since I started to use it more frequently. However, there’s really no easy way of running <a href="http://www.ruby-lang.org/en/">Ruby</a>, or more specifically <a href="http://rubygems.org/">RubyGems</a> under it unless you’ve installed it directly throught the Cygwin installer which I, unfortunately, haven’t done. I did find the alias solution which I wrote about in the previous post that makes it somewhat less of a hassle. Using it in conjunction with <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a><sup id="fnref:20130228-1"><a href="#fn:20130228-1" class="footnote">1</a></sup> is a pain though, since it for some reason won’t kill the server and thus rendering the port useless until the computer gets rebooted. After much, much digging I did found an answer to how to shut it down “properly”: <code>taskkill /F /PID {num}</code><sup id="fnref:20130228-2"><a href="#fn:20130228-2" class="footnote">2</a></sup>. The <code>{num}</code> is of course replaced with the real PID number that Webbrick outputs when it starts. It’s kind of brutal and annoying, but I think it’s good to have a backup plan in case I do want to execute Jekyll from Cygwin. I did give it an alias too, just to be sure.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130228-1">
+      <p>Which is the default server for <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.sinatrarb.com/">Sinatra</a>.<a href="#fnref:20130228-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130228-2">
+      <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+  <div class="l-comments">
+  <h1>Comments</h1>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ellengummesson'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+

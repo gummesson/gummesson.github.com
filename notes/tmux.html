@@ -1,0 +1,215 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Ellen Gummesson – Random ramblings, musings and geekiness">
+  <meta name="author" content="Ellen Gummesson">
+    <title>Tmux – Ellen Gummesson</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="http://ellengummesson.com">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (RSS Feed)">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Ellen Gummesson: Random ramblings, musings and geekiness (Sitemap)">
+  <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <![endif]-->
+</head>
+  <body>
+    <div class="l-container">
+
+        <nav class="box  l-nav">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+        <ul id="js-nav" class="nav  js-nav">
+          <li>
+            <a class="link--hidden" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/archives">
+              Archives
+            </a>
+          </li>
+          <li>
+            <a class="link--hidden" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="box  box--brand  l-header">
+      <div class="box__wrapper  box__wrapper--brand">
+        <h1 class="l-logo">
+          <a href="/" class="link--hidden">
+            Ellen.
+          </a>
+        </h1>
+        <p>
+          Random ramblings, musings and geekiness
+        </p>
+      </div>
+    </header>
+
+      <div class="box  l-main">
+        <div class="box__wrapper">
+          <article class="page">
+  <h1>Tmux</h1>
+    <p>A handy cheatsheet for <a href="http://tmux.sourceforge.net/">Tmux</a>.</p>
+
+<h2 id="sessions">Sessions</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>tmux new -s NAME</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></td>
+      <td>Start a new named session</td>
+    </tr>
+    <tr>
+      <td><code>tmux new -s NAME -d</code></td>
+      <td>Create a detached session</td>
+    </tr>
+    <tr>
+      <td><code>tmux attach -t NAME</code></td>
+      <td>Attach to a named session</td>
+    </tr>
+    <tr>
+      <td><code>tmux kill-session -t NAME</code></td>
+      <td>Kill a named session</td>
+    </tr>
+    <tr>
+      <td><code>tmux ls</code></td>
+      <td>List all sessions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="windows">Windows</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keybinding</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>c</code></td>
+      <td>Create a new window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>n</code></td>
+      <td>Move to next window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>p</code></td>
+      <td>Move to previous window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>f</code></td>
+      <td>Find a window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>,</code></td>
+      <td>Name a window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>&amp;</code></td>
+      <td>Kill a window</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>w</code></td>
+      <td>List all windows</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="panes">Panes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keybinding</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>%</code></td>
+      <td>Create a new vertical pane</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>"</code></td>
+      <td>Create a new horizontal pane</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>o</code></td>
+      <td>Go to next pane</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>x</code></td>
+      <td>Kill a pane</td>
+    </tr>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>q</code></td>
+      <td>List all panes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keybinding</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Ctrl-B</code> + <code>?</code></td>
+      <td>List all keybindings</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>replace <code>NAME</code> with an actual name.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+        </div>
+      </div>
+        <footer class="box  box--brand  l-footer">
+      <div class="box__wrapper  box__wrapper--brand">
+        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+
