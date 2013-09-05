@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Fixing Jekyll's encoding shenaningans (again)</title>
+                <description>&lt;p&gt;After a lot of of hesitation I finally upgraded &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to &lt;code&gt;1.1.2&lt;/code&gt; from using the &lt;code&gt;0.12.1&lt;/code&gt; version. Quite a lot has changed and the team is doing a great job with it. However,  my old &lt;a href=&quot;/blog/2013/03/03/fixing-jekylls-encoding-shenanings/&quot;&gt;&lt;code&gt;SET LANG&lt;/code&gt; hack&lt;/a&gt; didn’t work. I tried using &lt;a href=&quot;http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/&quot;&gt;another hack&lt;/a&gt; which involves using &lt;code&gt;chcp 65001&lt;/code&gt; instead  but that didn’t quite work either. Whenever I tried to launch the default server &lt;a href=&quot;http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot;&gt;WEBrick&lt;/a&gt; it blew up. There were errors, errors everywhere. I wasn’t going to give up so I came up with another solution.&lt;/p&gt;
+
+&lt;p&gt;I now use an external server while Jekyll just auto-generates the site. I use a small &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; web server app called &lt;a href=&quot;#&quot;&gt;nws&lt;/a&gt; which I use all the time anyway. I also use &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt; for task automation (&lt;a href=&quot;https://github.com/gummesson/ellengummesson/blob/master/Gruntfile.js&quot;&gt;here’s the source code&lt;/a&gt;). I also have a project called “&lt;a href=&quot;https://github.com/gummesson/teeny-tiny-static-server&quot;&gt;Teeny tiny static server&lt;/a&gt;” which I created some months ago. It uses &lt;a href=&quot;https://github.com/chneukirchen/rack&quot;&gt;Rack&lt;/a&gt;, &lt;a href=&quot;https://github.com/jtrupiano/rack-rewrite&quot;&gt;Rack-Rewrite&lt;/a&gt; and &lt;a href=&quot;https://github.com/macournoyer/thin&quot;&gt;Thin&lt;/a&gt; to create a fast prototype web server, which may be an alternative to using a Node.js based solution. It’s not perfect but it’s better than being stuck on an old version.&lt;/p&gt;
+</description>
+                <published>September  5, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/09/05/fixing-jekylls-encoding-shenaningans-again</link>
+              </item>
+            
+              <item>
                 <title>Another day, another redesign</title>
                 <description>&lt;p&gt;The time has come for me to yet again change the design of this website. This time I went nearly all in on using &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot;&gt;BEM&lt;/a&gt; as my CSS coding style of choice and utilizing &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; as the base for the overall element styling and vertical rhythm. I also use &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt; for all of my automation, including building and generating the actual site&lt;sup id=&quot;fnref:20130903-1&quot;&gt;&lt;a href=&quot;#fn:20130903-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I’ve replaced the jQuery code with pure JavaScript too&lt;sup id=&quot;fnref:20130903-2&quot;&gt;&lt;a href=&quot;#fn:20130903-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and I threw together a nifty mobile navigation solution which I think works quite well.&lt;/p&gt;
 
@@ -113,31 +123,6 @@ Try {
 </description>
                 <published>August 27, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/08/27/consolez</link>
-              </item>
-            
-              <item>
-                <title>Kapow! – a punchy PowerShell framework</title>
-                <description>&lt;p&gt;Earlier today I released a new project called &lt;a href=&quot;https://github.com/gummesson/kapow&quot;&gt;Kapow!&lt;/a&gt;. After growing more and more frustrated over how slow &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt; was&lt;sup id=&quot;fnref:20130826-1&quot;&gt;&lt;a href=&quot;#fn:20130826-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and not being able to use &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh my Zsh!&lt;/a&gt; on my Windows machine I decided to hack together something that atleast resembled some kind of framework. Right now it has quite a few aliases, scripts, tab completion and themes. I haven’t really used the PowerShell that much so the code looks a bit wonky but hey, it works! My initial thoughts about writing scripts for the the PowerShell are not bad… I think that I actually like it, which is a shock. This is how my prompt looks right now&lt;sup id=&quot;fnref:20130826-2&quot;&gt;&lt;a href=&quot;#fn:20130826-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2013-08-26-kapow-punchy-theme.png&quot; alt=&quot;Kapow! with the Punchy theme&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s definitively an improvement over the standard look and behaviour. I haven’t noticed any slowness at all either, but the plugin library isn’t that huge right now. I’m hoping to expanded it a bit more and I’ll be happy if anyone wants to contribute!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130826-1&quot;&gt;
-      &lt;p&gt;It takes about 10 seconds to launch it. No joke.&lt;a href=&quot;#fnref:20130826-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130826-2&quot;&gt;
-      &lt;p&gt;I’m also using &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt;.&lt;a href=&quot;#fnref:20130826-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>August 26, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/08/26/kapow-a-punchy-powershell-framework</link>
               </item>
             
     </channel>

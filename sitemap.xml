@@ -485,6 +485,12 @@
         <lastmod>2013-09-04T16:56:12+02:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/09/05/fixing-jekylls-encoding-shenaningans-again
+        </loc>
+        <lastmod>2013-09-05T13:44:49+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2013-09-03T16:33:50+02:00</lastmod>
     </url>
@@ -498,7 +504,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2013-09-04T16:56:12+02:00</lastmod>
+        <lastmod>2013-09-05T13:44:49+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/kramdown.html</loc>
