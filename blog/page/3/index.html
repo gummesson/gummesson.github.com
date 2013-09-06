@@ -23,24 +23,24 @@
     <div class="l-container">
 
         <nav class="box  l-nav">
-      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/">
               Home
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/about">
               About
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/archives">
               Archives
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/contact">
               Contact
             </a>
@@ -50,13 +50,13 @@
     </nav><!-- .l-nav -->
 
         <header class="box  box--brand  l-header">
-      <div class="box__wrapper  box__wrapper--brand">
+      <div class="box__wrapper  box__wrapper--centered">
         <h1 class="l-logo">
           <a href="/" class="link--hidden">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
-        <p>
+        <p class="print--primary">
           Random ramblings, musings and geekiness
         </p>
       </div>
@@ -286,7 +286,7 @@ command! -nargs=? Note call notes#New(&lt;q-args&gt;)
             </a>
           </h1>
           <p class="post__meta">
-            Posted on June  2, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/06/02/suit-base" alt="Permalink – SUIT base" class="post__meta--permalink">&infin;</a>
+            Posted on June  2, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/06/02/suit-base" alt="Permalink – SUIT base" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>This is such a simple but nice-to-have thing. I really like using <a href="http://necolas.github.io/normalize.css/">normalize.css</a> instead of having to completely wiping the styling of every element and I’ve to used my own mini reset with it to remove some of the default values like margins and paddings. I guess that I don’t have to do that anymore!</p>
@@ -354,7 +354,7 @@ endfunction
 
 
         <nav class="box  l-pagination">
-        <div class="box__wrapper  box__wrapper--brand">
+        <div class="box__wrapper  box__wrapper--centered">
           <ul class="nav">
           
             
@@ -376,8 +376,10 @@ endfunction
         </div>
       </div><!-- .l-main -->
         <footer class="box  box--brand  l-footer">
-      <div class="box__wrapper  box__wrapper--brand">
-        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      <div class="box__wrapper  box__wrapper--centered">
+        <p class="print--primary">
+          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+        </p>
       </div>
     </footer><!-- .l-footer-->
   </div><!-- .l-container -->

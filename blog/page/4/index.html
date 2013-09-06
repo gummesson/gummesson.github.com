@@ -23,24 +23,24 @@
     <div class="l-container">
 
         <nav class="box  l-nav">
-      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/">
               Home
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/about">
               About
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/archives">
               Archives
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/contact">
               Contact
             </a>
@@ -50,13 +50,13 @@
     </nav><!-- .l-nav -->
 
         <header class="box  box--brand  l-header">
-      <div class="box__wrapper  box__wrapper--brand">
+      <div class="box__wrapper  box__wrapper--centered">
         <h1 class="l-logo">
           <a href="/" class="link--hidden">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
-        <p>
+        <p class="print--primary">
           Random ramblings, musings and geekiness
         </p>
       </div>
@@ -73,7 +73,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on May 14, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/05/14/css-architecture" alt="Permalink – CSS Architecture" class="post__meta--permalink">&infin;</a>
+            Posted on May 14, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/05/14/css-architecture" alt="Permalink – CSS Architecture" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>A nice and lengthy article about how to write modular and maintainable CSS. I especially like the naming conventions, mostly because they’re similar to my own. I’m vain like that.</p>
@@ -89,7 +89,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on May  9, 2013 in <a href="/blog/tag/Vim" alt="Vim">Vim</a>, <a href="/blog/tag/Code" alt="Code">Code</a> <a href="/blog/2013/05/09/stereokai-vim" alt="Permalink – stereokai.vim" class="post__meta--permalink">&infin;</a>
+            Posted on May  9, 2013 in <a href="/blog/tag/Vim" alt="Vim">Vim</a>, <a href="/blog/tag/Code" alt="Code">Code</a> <a href="/blog/2013/05/09/stereokai-vim" alt="Permalink – stereokai.vim" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>Lately I’ve really started to enjoy <a href="http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/">the Monokai theme</a>. There’s a couple of different versions out there for <a href="http://www.vim.org">Vim</a> and my favorite is <a href="https://github.com/jaromero/vim-monokai-refined">Monokai-Refined</a>. However, Vim’s way of handling highlighting can sometimes be quite weird so I decided to add some minor tweaks so that it looks especially good when your writing HTML, CSS and JavaScript and make it available in a repository. I don’t know if it’ll replace my beloved <a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme</a> or <a href="http://ethanschoonover.com/solarized">Solarized</a>, but it’s definitively a close third atleast.</p>
@@ -105,7 +105,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on May  6, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Web" alt="Web">Web</a> <a href="/blog/2013/05/06/responsive-inspector" alt="Permalink – Responsive Inspector" class="post__meta--permalink">&infin;</a>
+            Posted on May  6, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Web" alt="Web">Web</a> <a href="/blog/2013/05/06/responsive-inspector" alt="Permalink – Responsive Inspector" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>A pretty nice <a href="https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim">Chrome extension</a> for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.</p>
@@ -145,7 +145,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on April 25, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Design" alt="Design">Design</a>, <a href="/blog/tag/Code" alt="Code">Code</a> <a href="/blog/2013/04/25/svgo" alt="Permalink – SVGO" class="post__meta--permalink">&infin;</a>
+            Posted on April 25, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Design" alt="Design">Design</a>, <a href="/blog/tag/Code" alt="Code">Code</a> <a href="/blog/2013/04/25/svgo" alt="Permalink – SVGO" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>A pretty awesome SVG optimizer, written with <a href="http://nodejs.org/">Node.js</a>. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.</p>
@@ -154,7 +154,7 @@
 
 
         <nav class="box  l-pagination">
-        <div class="box__wrapper  box__wrapper--brand">
+        <div class="box__wrapper  box__wrapper--centered">
           <ul class="nav">
           
             
@@ -176,8 +176,10 @@
         </div>
       </div><!-- .l-main -->
         <footer class="box  box--brand  l-footer">
-      <div class="box__wrapper  box__wrapper--brand">
-        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      <div class="box__wrapper  box__wrapper--centered">
+        <p class="print--primary">
+          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+        </p>
       </div>
     </footer><!-- .l-footer-->
   </div><!-- .l-container -->

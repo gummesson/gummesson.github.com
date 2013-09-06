@@ -23,24 +23,24 @@
     <div class="l-container">
 
         <nav class="box  l-nav">
-      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/">
               Home
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/about">
               About
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/archives">
               Archives
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/contact">
               Contact
             </a>
@@ -50,13 +50,13 @@
     </nav><!-- .l-nav -->
 
         <header class="box  box--brand  l-header">
-      <div class="box__wrapper  box__wrapper--brand">
+      <div class="box__wrapper  box__wrapper--centered">
         <h1 class="l-logo">
           <a href="/" class="link--hidden">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
-        <p>
+        <p class="print--primary">
           Random ramblings, musings and geekiness
         </p>
       </div>
@@ -73,7 +73,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on February  4, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a> <a href="/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="post__meta--permalink">&infin;</a>
+            Posted on February  4, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a> <a href="/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>This is nice read for using something more native to <a href="http://www.vim.org/">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
@@ -277,7 +277,7 @@ au InsertLeave * set cursorline
 
 
         <nav class="box  l-pagination">
-        <div class="box__wrapper  box__wrapper--brand">
+        <div class="box__wrapper  box__wrapper--centered">
           <ul class="nav">
           
             
@@ -299,8 +299,10 @@ au InsertLeave * set cursorline
         </div>
       </div><!-- .l-main -->
         <footer class="box  box--brand  l-footer">
-      <div class="box__wrapper  box__wrapper--brand">
-        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      <div class="box__wrapper  box__wrapper--centered">
+        <p class="print--primary">
+          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+        </p>
       </div>
     </footer><!-- .l-footer-->
   </div><!-- .l-container -->

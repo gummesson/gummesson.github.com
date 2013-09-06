@@ -23,24 +23,24 @@
     <div class="l-container">
 
         <nav class="box  l-nav">
-      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--brand">
+      <div id="js-mobile-nav" class="box__wrapper  box__wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/">
               Home
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/about">
               About
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/archives">
               Archives
             </a>
           </li>
-          <li>
+          <li class="print--primary">
             <a class="link--hidden" href="/contact">
               Contact
             </a>
@@ -50,13 +50,13 @@
     </nav><!-- .l-nav -->
 
         <header class="box  box--brand  l-header">
-      <div class="box__wrapper  box__wrapper--brand">
+      <div class="box__wrapper  box__wrapper--centered">
         <h1 class="l-logo">
           <a href="/" class="link--hidden">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
-        <p>
+        <p class="print--primary">
           Random ramblings, musings and geekiness
         </p>
       </div>
@@ -73,7 +73,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on April 22, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a href="/blog/2013/04/22/scriptlr-js" alt="Permalink – Scriptlr.js" class="post__meta--permalink">&infin;</a>
+            Posted on April 22, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a href="/blog/2013/04/22/scriptlr-js" alt="Permalink – Scriptlr.js" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>I was getting sick of adding <code>script</code> tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.</p>
@@ -89,7 +89,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on April 19, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a href="/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink – Weaning yourself of jQuery" class="post__meta--permalink">&infin;</a>
+            Posted on April 19, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a href="/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink – Weaning yourself of jQuery" class="post__meta--permalink link--hidden">&infin;</a>
           </p>
         
         <p>A great post on how to do basic DOM manipulation with plain JavaScript instead of using <a href="http://jquery.com/">jQuery</a>. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.</p>
@@ -221,7 +221,7 @@
 
 
         <nav class="box  l-pagination">
-        <div class="box__wrapper  box__wrapper--brand">
+        <div class="box__wrapper  box__wrapper--centered">
           <ul class="nav">
           
             
@@ -243,8 +243,10 @@
         </div>
       </div><!-- .l-main -->
         <footer class="box  box--brand  l-footer">
-      <div class="box__wrapper  box__wrapper--brand">
-        <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
+      <div class="box__wrapper  box__wrapper--centered">
+        <p class="print--primary">
+          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+        </p>
       </div>
     </footer><!-- .l-footer-->
   </div><!-- .l-container -->
