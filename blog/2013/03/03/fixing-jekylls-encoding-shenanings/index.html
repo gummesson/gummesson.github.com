@@ -71,7 +71,7 @@
     </h1>
   
     <p class="post__meta">
-      Posted on March  3, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
+      Posted on March  3, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
     </p>
       <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" class="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
 

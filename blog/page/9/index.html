@@ -73,7 +73,7 @@
             </a>
           </h1>
           <p class="post__meta">
-          Posted on February  4, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>   <a href="/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="post__meta--permalink">&infin;</a>
+            Posted on February  4, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a> <a href="/blog/2013/02/04/make-netrw-behave-more-like-nerdtree" alt="Permalink – Make Netrw behave more like NERDTree" class="post__meta--permalink">&infin;</a>
           </p>
         
         <p>This is nice read for using something more native to <a href="http://www.vim.org/">Vim</a>. Quite early into my editor transition I found out that it had a native file explorer called <a href="http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html">Netrw</a>, but I didn’t particularly like it it’s default state so I started to use a plugin called <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> instead. It’s great but it’s nice that a more native solution can solve the problem too. I’ve also started using a fuzzy finder plugin, <a href="https://github.com/kien/ctrlp.vim">CtrlP</a>, more and more lately but I still like to have a “project visualizer” of some sort and I think that Netrw will fit that quite nicely. I also added these to my <code>.vimrc</code> file:</p>
@@ -95,7 +95,7 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
             </a>
           </h1>
           <p class="post__meta">
-            Posted on January 31, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>  
+            Posted on January 31, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
           </p>
         
         <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" class="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
@@ -121,7 +121,7 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
             </a>
           </h1>
           <p class="post__meta">
-            Posted on January 27, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>  
+            Posted on January 27, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
           </p>
         
         <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
@@ -176,7 +176,7 @@ endfunction
             </a>
           </h1>
           <p class="post__meta">
-            Posted on January 24, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>  
+            Posted on January 24, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
           </p>
         
         <p>My little <a href="http://www.vim.org/">Vim</a> adventure continues and a couple of days ago I uninstalled <a href="http://www.sublimetext.com/">Sublime Text 2</a>. I have nothing against it and I still think it’s a fantastic editor but I feel like I don’t really need it anymore. I’m no way near being a expert but like I’ve stated before I really like using Vim and I don’t see that that changing anytime soon. I’ve also configured my Vim files <a href="https://github.com/gummesson/vimfiles">quite a bit</a><sup id="fnref:20130124-1"><a href="#fn:20130124-1" class="footnote">1</a></sup> but I’ve tried to stay away from adding too many plugins since I don’t want to rely on too many of them. Right now I use eight which I think is a reasonable number. I also finally re-did my git repository so that every plugin is a git submodule<sup id="fnref:20130123-2"><a href="#fn:20130123-2" class="footnote">2</a></sup> which makes updating them much, much easier. I have to say that the customization possibilities in Vim are extraordinary. Who knew that that would be the case for an editor that’s just slightly younger than me?</p>
@@ -245,7 +245,7 @@ au InsertLeave * set cursorline
             </a>
           </h1>
           <p class="post__meta">
-            Posted on January 20, 2013  in  <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>  
+            Posted on January 20, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>
           </p>
         
         <p>I don’t know what’s been up with me lately but I do know that during the last couple of weeks I’ve “shipped” a lot of things. I mean, most of them are basic things but I’ve had fun while doing them. So yesterday I added yet another repo to <a href="https://github.com/gummesson">my GitHub account</a>, <a href="https://github.com/gummesson/serve">Serve</a>. <em>Serve</em> is a static site generator which focuses on generating small sites that only need to consist of a few pages at the most.</p>
