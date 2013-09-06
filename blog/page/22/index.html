@@ -47,7 +47,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav><!-- .l-nav -->
 
         <header class="box  box--brand  l-header">
       <div class="box__wrapper  box__wrapper--brand">
@@ -55,12 +55,12 @@
           <a href="/" class="link--hidden">
             Ellen.
           </a>
-        </h1>
+        </h1><!-- .l-logo -->
         <p>
           Random ramblings, musings and geekiness
         </p>
       </div>
-    </header>
+    </header><!-- .l-header -->
 
       <div class="box  l-main">
         <div class="box__wrapper">
@@ -174,7 +174,7 @@
 
 <p>It’s useful if you don’t want to have any gutters and/or want to use paddings instead instead of margins. I don’t know if anyone’s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don’t really know if it actually needs anything more, but I’ll be sure to try stuff out.</p>
 
-      </article>
+      </article><!-- .post -->
 
 
         <article class="post">
@@ -203,7 +203,7 @@
 
 <p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
 
-      </article>
+      </article><!-- .post -->
 
 
         <article class="post">
@@ -246,7 +246,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 </code></pre>
 
 
-      </article>
+      </article><!-- .post -->
 
 
         <article class="post">
@@ -296,7 +296,7 @@ Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
 
 <p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won’t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
 
-      </article>
+      </article><!-- .post -->
 
 
         <article class="post">
@@ -464,7 +464,7 @@ a:hover, a:focus {
 
 <p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don’t have to change anything else. I think I’ll try out Sass for a while and see how it goes. There’s a lot more to it than just simple variables and math, so I’m looking forward to see what I can come up with.</p>
 
-      </article>
+      </article><!-- .post -->
 
 
         <nav class="box  l-pagination">
@@ -484,17 +484,17 @@ a:hover, a:focus {
           
           </ul>
         </div>
-      </nav>
+      </nav><!-- .l-pagination -->
 
 
         </div>
-      </div>
+      </div><!-- .l-main -->
         <footer class="box  box--brand  l-footer">
       <div class="box__wrapper  box__wrapper--brand">
         <p>Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013</p>
       </div>
-    </footer>
-  </div>
+    </footer><!-- .l-footer-->
+  </div><!-- .l-container -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
   <script src="/assets/js/app.js"></script>
 </body>
