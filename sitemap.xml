@@ -511,12 +511,16 @@
         <lastmod>2013-09-07T16:40:22+02:00</lastmod>
     </url>
     <url>
+        <loc>http://ellengummesson.com/notes/notes/github.html</loc>
+        <lastmod>2013-09-07T22:57:23+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/notes/notes/kramdown.html</loc>
         <lastmod>2013-09-06T11:35:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/oh-my-zsh.html</loc>
-        <lastmod>2013-09-06T11:35:18+02:00</lastmod>
+        <lastmod>2013-09-07T22:57:38+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/the-linux-setup.html</loc>
@@ -524,7 +528,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/tmux.html</loc>
-        <lastmod>2013-09-06T11:35:18+02:00</lastmod>
+        <lastmod>2013-09-07T22:57:51+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/urxvt-to-console.html</loc>
