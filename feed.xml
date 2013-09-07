@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Find-String</title>
+                <description>&lt;p&gt;A cool little &lt;code&gt;ack&lt;/code&gt;-like &lt;a href=&quot;http://technet.microsoft.com/en-us/library/cc731851(v=WS.10).aspx&quot;&gt;PowerShell&lt;/a&gt; module. It works flawlessly!&lt;/p&gt;
+</description>
+                <published>September  7, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/09/07/find-string</link>
+              </item>
+            
+              <item>
                 <title>Fixing Jekyll's encoding shenaningans (again)</title>
                 <description>&lt;p&gt;After a lot of of hesitation I finally upgraded &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to &lt;code&gt;1.1.2&lt;/code&gt; from using the &lt;code&gt;0.12.1&lt;/code&gt; version. Quite a lot has changed and the team is doing a great job with it. However,  my old &lt;a href=&quot;/blog/2013/03/03/fixing-jekylls-encoding-shenanings/&quot;&gt;&lt;code&gt;SET LANG&lt;/code&gt; hack&lt;/a&gt; didn’t work. I tried using &lt;a href=&quot;http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/&quot;&gt;another hack&lt;/a&gt; which involves using &lt;code&gt;chcp 65001&lt;/code&gt; instead  but that didn’t quite work either. Whenever I tried to launch the default server &lt;a href=&quot;http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html&quot;&gt;WEBrick&lt;/a&gt; it blew up. There were errors, errors everywhere. I wasn’t going to give up so I came up with another solution.&lt;/p&gt;
 
@@ -101,28 +109,6 @@ Try {
 </description>
                 <published>August 29, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/08/29/lightline-vim</link>
-              </item>
-            
-              <item>
-                <title>ConsoleZ</title>
-                <description>&lt;p&gt;&lt;em&gt;THE&lt;/em&gt; ultimate console for Windows. It’s a fork of &lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console2&lt;/a&gt; that adds a bunch of features like a fullscreen mode and splits&lt;sup id=&quot;fnref:20130827-1&quot;&gt;&lt;a href=&quot;#fn:20130827-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/blog/2013-08-27-consolez.png&quot;&gt;&lt;img src=&quot;/images/blog/2013-08-27-consolez.png&quot; alt=&quot;ConsoleZ&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The borders are a bit too big for my taste, but I rather have them than not having any splits at all.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130827-1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://tmux.sourceforge.net/&quot;&gt;Tmux&lt;/a&gt; fans rejoice!&lt;a href=&quot;#fnref:20130827-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>August 27, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/08/27/consolez</link>
               </item>
             
     </channel>
