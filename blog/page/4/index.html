@@ -68,6 +68,32 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/05/26/helper-js" alt="Helper.js">
+              Helper.js
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on May 26, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>
+          </p>
+        
+        <p>Earlier today I pushed a new project to Github called <a href="https://github.com/gummesson/helper.js">Helper.js</a>. It basically a minimal<sup id="fnref:20130526-1"><a href="#fn:20130526-1" class="footnote">1</a></sup> JavaScript library for basic DOM manipulation tasks, which supports Internet Explorer 8 and above. It obviously ain’t as versatile as <a href="http://www.jquery.com/">jQuery</a>, but it gets the job done for simpler stuff. I’ve tried it out in some older browsers but it’s probably likely that it has some bugs and sharp edges. As always I mostly wrote it just for fun and to learn the ins and outs of working with the DOM and structuring objects and the like in JavaScript. After 380 lines of code I feel much more confident but still very much like a novice.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130526-1">
+      <p>It currently weighs in at less than 700 bytes when compressed and gzipped.<a href="#fnref:20130526-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/05/20/a-handy-function-for-going-to-the-root-directory-of-a-project-in-vim" alt="A handy function for going to the root directory of a project in Vim">
               A handy function for going to the root directory of a project in Vim
             </a>
@@ -142,30 +168,6 @@ endfunction
           </p>
         
         <p>A pretty nice <a href="https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim">Chrome extension</a> for viewing the different defined media queries of a website. I sort of feel like a really nerd when I use it but the curiosity takes the best of me.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/05/02/a-brand-new-blog-again" alt="A brand new blog (again)">
-              A brand new blog (again)
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on May  2, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Design" alt="Design">Design</a>
-          </p>
-        
-        <p>I decided yet again to throw together a new design for this site. At this point it feels like it’s almost getting a monthly thing, but hopefully I’ll stick with this one for a bit longer. I do really feel that I’m getting a bit better every time I do it though, which is something. This time around I took a much more <a href="http://oocss.org/">OOCSS</a> approach to the writing of the CSS and I mainly used the <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> syntax. I don’t find it particularly pretty but it’s quite logical. </p>
-
-<p>Another thing I did was that instead of prefixing the classes of every major part of the site with <code>site-</code> I went for a much simpler <code>l-</code>, which stands for “layout”. I also used <code>br-</code>, “breakpoint”, for the buttons in the main navigation. They get much wider when the site’s viewed on a small screen and instead of having to write a lot of code I simply added a class to them. Very convenient! If I had more “media query”-based classes I probably would’ve used other names for them, but as of right now it works well I think.</p>
-
-<p>I once again used <a href="http://www.sass-lang.com/">Sass</a>’ excellent <code>darken</code> and <code>lighten</code> functions to generate the color palette. I can’t imagine how I’d do without them, to be honest. Like I mentioned earlier I feel that I’m getting better at designing in general but I’m not designer by far.</p>
-
-<p>I finally added syntax highlighting too. For some reason I completely missed that <a href="http://softwaremaniacs.org/soft/highlight/en/">Highlight.js</a>, the engine that I now use, actually detects the language automatically without me having to add classes and span tags by hand. All the code is suddenly much more readable! I removed the <a href="http://www.vim.org/">Vim</a> keybindings script for the site. It was getting on my nerves and the code looked truly awful.</p>
-
-<p>And that’s a wrap!</p>
 
       </article><!-- .post -->
 

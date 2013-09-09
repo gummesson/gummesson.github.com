@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Chocolatey's new Github page</title>
+                <description>&lt;p&gt;This is kind of an shameless promotion, but I recently decided to have a go at making a more comprehensive documentation website for &lt;a href=&quot;http://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; and it actually got merged! I’m a nowhere near being a designer but I think that it looks quite nice.&lt;/p&gt;
+</description>
+                <published>September  9, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/09/09/chocolateys-new-github-page</link>
+              </item>
+            
+              <item>
                 <title>Find-String</title>
                 <description>&lt;p&gt;A cool little &lt;code&gt;ack&lt;/code&gt;-like &lt;a href=&quot;http://technet.microsoft.com/en-us/library/cc731851(v=WS.10).aspx&quot;&gt;PowerShell&lt;/a&gt; module. It works flawlessly!&lt;/p&gt;
 </description>
@@ -101,14 +109,6 @@ Try {
 </description>
                 <published>September  1, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/09/01/creating-a-chocolatey-package</link>
-              </item>
-            
-              <item>
-                <title>lightline.vim – a light and configurable statusline for Vim</title>
-                <description>&lt;p&gt;A nice and lightweight alternative to &lt;a href=&quot;https://github.com/Lokaltog/powerline&quot;&gt;Powerline&lt;/a&gt;. I’ve always wanted to try it but from what I’ve read it’s quite tricky to get Powerline work on Windows. Lightline works like a charm though!&lt;/p&gt;
-</description>
-                <published>August 29, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/08/29/lightline-vim</link>
               </item>
             
     </channel>
