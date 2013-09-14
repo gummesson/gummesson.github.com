@@ -6,6 +6,34 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>plit: my first Node.js app</title>
+                <description>&lt;p&gt;I’ve been thinking about really learning &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; lately. JavaScript have quickly evolved to become possibly my favorite language, although &lt;a href=&quot;http://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; will always have a special place in my heart. After a quick Google search and an itch I decided to create something small and mostly useless, as always&lt;sup id=&quot;fnref:20130914-1&quot;&gt;&lt;a href=&quot;#fn:20130914-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Internet, meet &lt;a href=&quot;https://npmjs.org/package/plit&quot;&gt;plit&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;plit&quot;&gt;plit&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;plit&lt;/code&gt; is an extremely simple &lt;a href=&quot;http://placehold.it/&quot;&gt;Placehold.it&lt;/a&gt; command line tool. You specify what size you want by running &lt;code&gt;plit 300x200&lt;/code&gt; and it’ll then return the formatted URL, like this: &lt;code&gt;http://placehold.it/300x200&lt;/code&gt;. That’s it. It’s not earth shattering, but it’s something!&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing thoughts&lt;/h2&gt;
+
+&lt;p&gt;It actually felt a bit “weird”, but equally refreshing, to be able to write JavaScript that’s not running in a browser. I’m definitively looking forward to write more applications and the like.&lt;/p&gt;
+
+&lt;p&gt;As a side note I would like to praise Node.js’ and &lt;a href=&quot;https://npmjs.org/&quot;&gt;npm&lt;/a&gt;’s Windows support. Everything works well right out of the box and I didn’t have to configure anything. Now that’s simply amazing!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130914-1&quot;&gt;
+      &lt;p&gt;Jack Franklin’s &lt;a href=&quot;http://javascriptplayground.com/blog/2012/08/writing-a-command-line-node-tool/&quot;&gt;Writing a Command Line Node Tool&lt;/a&gt; was an immensely good starting point.&lt;a href=&quot;#fnref:20130914-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>September 14, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/09/14/plit-my-first-node-js-app</link>
+              </item>
+            
+              <item>
                 <title>Chocolatey's new Github page</title>
                 <description>&lt;p&gt;This is kind of an shameless promotion, but I recently decided to have a go at making a more comprehensive documentation website for &lt;a href=&quot;http://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; and it actually got merged! I’m a nowhere near being a designer but I think that it looks quite nice.&lt;/p&gt;
 </description>
@@ -50,65 +78,6 @@
 </description>
                 <published>September  3, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/09/03/another-day-another-redesign</link>
-              </item>
-            
-              <item>
-                <title>Creating a Chocolatey package</title>
-                <description>&lt;p&gt;I recently “converted” all of my installed apps over to using Chocolatey. I won’t dwelve too deeply into how much I love it, but let’s just say it’s a lot. It’s such a relief not having to hunt for executable files. There were packages for nearly all of the apps I use but some were missing so I added a few of them. The process is pretty straightforward.&lt;/p&gt;
-
-&lt;p&gt;Let’s say we have an app that’s called &lt;code&gt;MyAwesomeApp&lt;/code&gt;. First we need to create a directory called &lt;code&gt;myawesomeapp&lt;/code&gt; and then create a &lt;code&gt;nuspec&lt;/code&gt; file in it with the following content:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;
-&amp;lt;package xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;gt;
-  &amp;lt;metadata&amp;gt;
-    &amp;lt;id&amp;gt;myawesomeapp&amp;lt;/id&amp;gt;
-    &amp;lt;title&amp;gt;MyAwesomeApp&amp;lt;/title&amp;gt;
-    &amp;lt;version&amp;gt;1.0&amp;lt;/version&amp;gt;
-    &amp;lt;authors&amp;gt;The creator's name&amp;lt;/authors&amp;gt;
-    &amp;lt;owners&amp;gt;Your name&amp;lt;/owners&amp;gt;
-    &amp;lt;summary&amp;gt;An awesome app&amp;lt;/summary&amp;gt;
-    &amp;lt;description&amp;gt;An incredible awesome app that'll one day save the world!&amp;lt;/description&amp;gt;
-    &amp;lt;projectUrl&amp;gt;http://example.com/&amp;lt;/projectUrl&amp;gt;
-    &amp;lt;tags&amp;gt;awesome awesome awesome&amp;lt;/tags&amp;gt;
-    &amp;lt;licenseUrl&amp;gt;http://example.com/license.html&amp;lt;/licenseUrl&amp;gt;
-    &amp;lt;requireLicenseAcceptance&amp;gt;false&amp;lt;/requireLicenseAcceptance&amp;gt;
-    &amp;lt;iconUrl&amp;gt;http://example.com/logo.png&amp;lt;/iconUrl&amp;gt;
-    &amp;lt;releaseNotes&amp;gt;http://example.com/news/&amp;lt;/releaseNotes&amp;gt;
-  &amp;lt;/metadata&amp;gt;
-  &amp;lt;files&amp;gt;
-    &amp;lt;file src=&quot;tools\*&quot; target=&quot;tools&quot; /&amp;gt;
-  &amp;lt;/files&amp;gt;
-&amp;lt;/package&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then it’s time to create a &lt;code&gt;chocolateyInstall.ps1&lt;/code&gt; file and save it in another directory inside the &lt;code&gt;myawesomeapp&lt;/code&gt; directory called &lt;code&gt;tools&lt;/code&gt;. Now, we could technically do it as simple as this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Install-ChocolateyPackage &quot;MyAwesomeApp&quot; &quot;exe&quot; &quot;/quiet&quot; &quot;http://example.com/download/installer.exe&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But I like adding a bit more functionality so instead we’ll use this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$Package = &quot;MyAwesomeApp&quot;
-$PackageParams = @{
-  packageName = $Package;  
-  fileType = &quot;exe&quot;;
-  silentArgs = &quot;/quiet&quot;;
-  url = &quot;http://example.com/download/installer.exe&quot;;
-} 
-
-Try {
-  Install-ChocolateyPackage @PackageParams
-  Write-ChocolateySuccess $Package
-} Catch {
-  Write-ChocolateyFailure $Package &quot;$($_.Exception.Message)&quot;
-  Throw
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This feels a bit nicer and it’s a hell of a lot easier to re-use, atleast for me. After this we need to run &lt;code&gt;cpack&lt;/code&gt; in the root directory to create a &lt;code&gt;nupkg&lt;/code&gt; file and then &lt;code&gt;cinst myawesomeapp -source %cd%&lt;/code&gt; to test it. The last thing we need to do is to upload the generated &lt;code&gt;nupkg&lt;/code&gt; file on the official &lt;a href=&quot;http://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; website. You could do this straight from the PowerShell, but I haven’t done that yet.&lt;/p&gt;
-</description>
-                <published>September  1, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/09/01/creating-a-chocolatey-package</link>
               </item>
             
     </channel>
