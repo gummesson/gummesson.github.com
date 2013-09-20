@@ -6,6 +6,51 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Servera</title>
+                <description>&lt;p&gt;After a few hours of hacking spreading out during these last couple of days I’m releasing yet another &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; thing called &lt;a href=&quot;https://npmjs.org/package/servera&quot;&gt;Servera&lt;/a&gt;&lt;sup id=&quot;fnref:20130920-1&quot;&gt;&lt;a href=&quot;#fn:20130920-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It’s a small app for managing and serving all your local static sites by configuring all your projects in a single &lt;code&gt;json&lt;/code&gt; file. The idea is to map them by using this convention:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &quot;myproject&quot;: {
+    &quot;dir&quot;: &quot;/home/USERNAME/Dev/myproject&quot;,
+    &quot;port&quot;: 3000
+  },
+  &quot;anotherproject&quot;: {
+    &quot;dir&quot;: &quot;C:/Users/USERNAME/Dev/anotherproject&quot;,
+    &quot;port&quot;: 6000
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The only thing you need to do to launch the server is to run &lt;code&gt;servera myproject&lt;/code&gt; and then go to &lt;code&gt;localhost:3000&lt;/code&gt; (or whatever port you’ve specified) in your browser. You can also serve the current working directory by running &lt;code&gt;servera .&lt;/code&gt; and you can list all your projects with &lt;code&gt;servera list&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s heavily inspired by &lt;a href=&quot;https://npmjs.org/package/distra&quot;&gt;distra&lt;/a&gt;, although it’s a dumbed down version without the whole &lt;code&gt;/etc/hosts&lt;/code&gt; configuration part&lt;sup id=&quot;fnref:20130920-2&quot;&gt;&lt;a href=&quot;#fn:20130920-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. I’ve tested it on both Windows and Linux, and it should hopefully work on OS X too. &lt;/p&gt;
+
+&lt;p&gt;It’s a pretty simple thing, but I feel that it could actually be useful.&lt;/p&gt;
+
+&lt;h2 id=&quot;under-the-hood&quot;&gt;Under the hood&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Servera&lt;/code&gt; uses four additional modules: &lt;a href=&quot;https://npmjs.org/package/fs-extra&quot;&gt;fs-extra&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/package/connect&quot;&gt;connect&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/package/colors&quot;&gt;colors&lt;/a&gt; and &lt;a href=&quot;https://npmjs.org/package/commander&quot;&gt;commander&lt;/a&gt;. &lt;code&gt;fs-extra&lt;/code&gt; is used for copying the sample configuration file to your home directory while &lt;code&gt;connect&lt;/code&gt; is the main server. &lt;code&gt;colors&lt;/code&gt; is used to colorize the output in the terminal and &lt;code&gt;commander&lt;/code&gt; handles the argument parsing.&lt;/p&gt;
+
+&lt;p&gt;It’s all pretty basic stuff, but together they work really well.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20130920-1&quot;&gt;
+      &lt;p&gt;Which is the swedish word for “serve”. I’m original like that.&lt;a href=&quot;#fnref:20130920-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20130920-2&quot;&gt;
+      &lt;p&gt;I’m pretty sure that there’s no easy way of doing that on Windows without using brute force or some other vodoo.&lt;a href=&quot;#fnref:20130920-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>September 20, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/09/20/servera</link>
+              </item>
+            
+              <item>
                 <title>plit: my first Node.js app</title>
                 <description>&lt;p&gt;I’ve been thinking about really learning &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; lately. JavaScript have quickly evolved to become possibly my favorite language, although &lt;a href=&quot;http://www.ruby-lang.org/&quot;&gt;Ruby&lt;/a&gt; will always have a special place in my heart. After a quick Google search and an itch I decided to create something small and mostly useless, as always&lt;sup id=&quot;fnref:20130914-1&quot;&gt;&lt;a href=&quot;#fn:20130914-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Internet, meet &lt;a href=&quot;https://npmjs.org/package/plit&quot;&gt;plit&lt;/a&gt;!&lt;/p&gt;
 
@@ -57,27 +102,6 @@
 </description>
                 <published>September  5, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/09/05/fixing-jekylls-encoding-shenaningans-again</link>
-              </item>
-            
-              <item>
-                <title>Another day, another redesign</title>
-                <description>&lt;p&gt;The time has come for me to yet again change the design of this website. This time I went nearly all in on using &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot;&gt;BEM&lt;/a&gt; as my CSS coding style of choice and utilizing &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; as the base for the overall element styling and vertical rhythm. I also use &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt; for all of my automation, including building and generating the actual site&lt;sup id=&quot;fnref:20130903-1&quot;&gt;&lt;a href=&quot;#fn:20130903-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I’ve replaced the jQuery code with pure JavaScript too&lt;sup id=&quot;fnref:20130903-2&quot;&gt;&lt;a href=&quot;#fn:20130903-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and I threw together a nifty mobile navigation solution which I think works quite well.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20130903-1&quot;&gt;
-      &lt;p&gt;This not entirely by pure choice, since Jekyll hates my computer’s default encoding and thus is giving me all sorts of errors, but it works really well.&lt;a href=&quot;#fnref:20130903-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20130903-2&quot;&gt;
-      &lt;p&gt;I actually did that a week or two ago but I never really got around to writing about it.&lt;a href=&quot;#fnref:20130903-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>September  3, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/09/03/another-day-another-redesign</link>
               </item>
             
     </channel>

@@ -76,6 +76,22 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/09/10/gummesson-two-point-zero" alt="Gummesson 2.0">
+              Gummesson 2.0
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on September 10, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Design" alt="Design">Design</a>
+          </p>
+        
+        <p>I decided to make the jump and thus this site now has a spanking new design. <a href="http://www.google.com/webfonts/specimen/Oswald">Oswald</a> is used for the headings and the navigation and <a href="http://www.google.com/webfonts/specimen/Asap">Asap</a> is used for the body copy. I quite like them together since the former has a kind of slab-serif quality to it, even though it’s actually a sans-serif. The bold and italic versions of Asap aren’t perfect, but they look much better than than they did before. I haven’t had the chance you check out how they look in <em>Firefox</em> and <em>Opera</em>, but I hope they look good in them too. I’ve also increased the font size from 112.5% (which usually equals to 18px) to 125% (20px) just because I’m a big fan of having a bigger size for readability.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/09/07/redesigning" alt="Redesigning">
               Redesigning
             </a>
@@ -249,35 +265,6 @@
 </code></pre>
 
 <p>It’s useful if you don’t want to have any gutters and/or want to use paddings instead instead of margins. I don’t know if anyone’s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don’t really know if it actually needs anything more, but I’ll be sure to try stuff out.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling upon a good solution">
-              Stumbling upon a good solution
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on August 28, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a>
-          </p>
-        
-        <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
-
-<h2 id="the-solution">The solution</h2>
-
-<p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
-
-<pre><code>[class^="col-"]:last-child {
-  margin-right: 0;
-}
-</code></pre>
-
-<p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
-
-<p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
 
       </article><!-- .post -->
 

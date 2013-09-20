@@ -76,6 +76,35 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling upon a good solution">
+              Stumbling upon a good solution
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on August 28, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a>
+          </p>
+        
+        <p>As some of you may know, I’ve built my own grid system with the world’s most horrible name, <a href="/projects/begrider/">Begrider</a>. One thing that always bothered me with it was that at when you wanted to the row to end you’d had to add a class named <code>.last</code>.  I added this because it was a simple solution to my problem. I’ve experimented with adding negative margins, but I never got it to function properly. Yesterday I found the perfect solution for my needs. </p>
+
+<h2 id="the-solution">The solution</h2>
+
+<p>Begrider uses an attribute selector to target all of the column classes rather than adding all the properties and values to them by hand or having to declare all of the classes twice. So I did some experimenting and for some reason tried this simple trick:</p>
+
+<pre><code>[class^="col-"]:last-child {
+  margin-right: 0;
+}
+</code></pre>
+
+<p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
+
+<p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My first plugin for Jekyll">
               My first plugin for Jekyll
             </a>
@@ -356,34 +385,6 @@ a:hover, a:focus {
 <p>I again did a google search but this time around I didn’t come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I’m still able to update the site. I don’t know if I screwed something up or if it’s a bug. I’m hoping that the problem will solve itself, even though it’s highly unlikely.</p>
 
 <p>Damn me and my apparent laziness.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/08/22/the-hassles-of-media-queries" alt="The hassles of media queries">
-              The hassles of media queries
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on August 22, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML">HTML</a>
-          </p>
-        
-        <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn’t get them to properly work. Then it hit me that I’d forgot to add this in the <code>&lt;head&gt;</code>:</p>
-
-<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
-</code></pre>
-
-<p>Note to self: don’t be stupid. It’ll save you a lot of time.</p>
-
-<p>I also had some problems with my iPhone’s Retina display, but after some digging I found a “hack” that made it work properly so that the media queries look the same as on a regular browser:</p>
-
-<pre><code>(-webkit-min-device-pixel-ratio: 2)
-</code></pre>
-
-<p>To my defense I’m still pretty new to all of this, but still… I feel really dumb. Now they finally works and I’m totally happy, but I don’t know whether or not I should be scared of the fact that I don’t own an iPad… Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
 
       </article><!-- .post -->
 
