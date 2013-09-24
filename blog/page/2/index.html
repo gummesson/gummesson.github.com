@@ -26,30 +26,22 @@
       <div id="js-mobile-nav" class="wrapper  wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
           <li class="print--primary">
-          
-            <a class="link--hidden  link--current" href="/">
-          
+          <a class="link--hidden  link--current" href="/" alt="Blog">
               Home
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/about">
-          
+            <a class="link--hidden" href="/about" alt="About">
               About
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/archives">
-          
+            <a class="link--hidden" href="/archives" alt="Archives">
               Archives
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/contact">
-          
+            <a class="link--hidden" href="/contact" alt="Contact">
               Contact
             </a>
           </li>
@@ -60,7 +52,7 @@
         <header class="island  island--brand  l-header">
       <div class="wrapper  wrapper--centered">
         <h1 class="l-logo">
-          <a href="/" class="link--hidden">
+          <a class="link--hidden" href="/" alt="Home">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
@@ -73,6 +65,24 @@
       <div class="island  l-main">
         <div class="wrapper">
           
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/09/05/fixing-jekylls-encoding-shenaningans-again" alt="Fixing Jekyll's encoding shenaningans (again)">
+              Fixing Jekyll's encoding shenaningans (again)
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on September  5, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
+          </p>
+        
+        <p>After a lot of of hesitation I finally upgraded <a href="http://jekyllrb.com/">Jekyll</a> to <code>1.1.2</code> from using the <code>0.12.1</code> version. Quite a lot has changed and the team is doing a great job with it. However,  my old <a href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings/"><code>SET LANG</code> hack</a> didn’t work. I tried using <a href="http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/">another hack</a> which involves using <code>chcp 65001</code> instead  but that didn’t quite work either. Whenever I tried to launch the default server <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a> it blew up. There were errors, errors everywhere. I wasn’t going to give up so I came up with another solution.</p>
+
+<p>I now use an external server while Jekyll just auto-generates the site. I use a small <a href="http://nodejs.org/">Node.js</a> web server app called <a href="#">nws</a> which I use all the time anyway. I also use <a href="http://gruntjs.com/">Grunt</a> for task automation (<a href="https://github.com/gummesson/ellengummesson/blob/master/Gruntfile.js">here’s the source code</a>). I also have a project called “<a href="https://github.com/gummesson/teeny-tiny-static-server">Teeny tiny static server</a>” which I created some months ago. It uses <a href="https://github.com/chneukirchen/rack">Rack</a>, <a href="https://github.com/jtrupiano/rack-rewrite">Rack-Rewrite</a> and <a href="https://github.com/macournoyer/thin">Thin</a> to create a fast prototype web server, which may be an alternative to using a Node.js based solution. It’s not perfect but it’s better than being stuck on an old version.</p>
+
+      </article><!-- .post -->
+
+
         <article class="post">
         
           <h1 class="post__title">
@@ -177,7 +187,7 @@ Try {
             </a>
           </h1>
           <p class="post__meta">
-            Posted on August 29, 2013 in <a href="/blog/tag/Vim" alt="Vim">Vim</a> <a href="/blog/2013/08/29/lightline-vim" alt="Permalink – lightline.vim – a light and configurable statusline for Vim" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on August 29, 2013 in <a href="/blog/tag/Vim" alt="Vim">Vim</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/08/29/lightline-vim" alt="Permalink – lightline.vim – a light and configurable statusline for Vim">&infin;</a>
           </p>
         
         <p>A nice and lightweight alternative to <a href="https://github.com/Lokaltog/powerline">Powerline</a>. I’ve always wanted to try it but from what I’ve read it’s quite tricky to get Powerline work on Windows. Lightline works like a charm though!</p>
@@ -193,7 +203,7 @@ Try {
             </a>
           </h1>
           <p class="post__meta">
-            Posted on August 27, 2013 in <a href="/blog/tag/Apps" alt="Apps">Apps</a>, <a href="/blog/tag/PowerShell" alt="PowerShell">PowerShell</a>, <a href="/blog/tag/Console" alt="Console">Console</a> <a href="/blog/2013/08/27/consolez" alt="Permalink – ConsoleZ" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on August 27, 2013 in <a href="/blog/tag/Apps" alt="Apps">Apps</a>, <a href="/blog/tag/PowerShell" alt="PowerShell">PowerShell</a>, <a href="/blog/tag/Console" alt="Console">Console</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/08/27/consolez" alt="Permalink – ConsoleZ">&infin;</a>
           </p>
         
         <p><em>THE</em> ultimate console for Windows. It’s a fork of <a href="http://sourceforge.net/projects/console/">Console2</a> that adds a bunch of features like a fullscreen mode and splits<sup id="fnref:20130827-1"><a href="#fn:20130827-1" class="footnote">1</a></sup>:</p>
@@ -215,46 +225,13 @@ Try {
       </article><!-- .post -->
 
 
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/08/26/kapow-a-punchy-powershell-framework" alt="Kapow! – a punchy PowerShell framework">
-              Kapow! – a punchy PowerShell framework
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on August 26, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/PowerShell" alt="PowerShell">PowerShell</a>, <a href="/blog/tag/Console" alt="Console">Console</a>
-          </p>
-        
-        <p>Earlier today I released a new project called <a href="https://github.com/gummesson/kapow">Kapow!</a>. After growing more and more frustrated over how slow <a href="http://www.cygwin.com/">Cygwin</a> was<sup id="fnref:20130826-1"><a href="#fn:20130826-1" class="footnote">1</a></sup> and not being able to use <a href="https://github.com/robbyrussell/oh-my-zsh">Oh my Zsh!</a> on my Windows machine I decided to hack together something that atleast resembled some kind of framework. Right now it has quite a few aliases, scripts, tab completion and themes. I haven’t really used the PowerShell that much so the code looks a bit wonky but hey, it works! My initial thoughts about writing scripts for the the PowerShell are not bad… I think that I actually like it, which is a shock. This is how my prompt looks right now<sup id="fnref:20130826-2"><a href="#fn:20130826-2" class="footnote">2</a></sup>:</p>
-
-<p><img src="/images/blog/2013-08-26-kapow-punchy-theme.png" alt="Kapow! with the Punchy theme" /></p>
-
-<p>It’s definitively an improvement over the standard look and behaviour. I haven’t noticed any slowness at all either, but the plugin library isn’t that huge right now. I’m hoping to expanded it a bit more and I’ll be happy if anyone wants to contribute!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130826-1">
-      <p>It takes about 10 seconds to launch it. No joke.<a href="#fnref:20130826-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130826-2">
-      <p>I’m also using <a href="http://sourceforge.net/projects/console/">Console2</a>.<a href="#fnref:20130826-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
         <nav class="island  l-pagination">
         <div class="wrapper  wrapper--centered">
           <ul class="nav">
           
             
             <li>
-              <a href="/" class="button  button--active" alt="Next">&larr; Next</a>
+              <a class="button  button--active" href="/" alt="Next">&larr; Next</a>
             </li>
             
           
@@ -273,7 +250,7 @@ Try {
         <footer class="island  island--brand  l-footer">
       <div class="wrapper  wrapper--centered">
         <p class="print--primary">
-          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+          Copyright &copy; <a class="link--hidden" href="/" alt="Home">Ellen Gummesson</a> 2013
         </p>
       </div>
     </footer><!-- .l-footer-->

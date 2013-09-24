@@ -26,30 +26,22 @@
       <div id="js-mobile-nav" class="wrapper  wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
           <li class="print--primary">
-          
-            <a class="link--hidden  link--current" href="/">
-          
+          <a class="link--hidden  link--current" href="/" alt="Blog">
               Home
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/about">
-          
+            <a class="link--hidden" href="/about" alt="About">
               About
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/archives">
-          
+            <a class="link--hidden" href="/archives" alt="Archives">
               Archives
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/contact">
-          
+            <a class="link--hidden" href="/contact" alt="Contact">
               Contact
             </a>
           </li>
@@ -60,7 +52,7 @@
         <header class="island  island--brand  l-header">
       <div class="wrapper  wrapper--centered">
         <h1 class="l-logo">
-          <a href="/" class="link--hidden">
+          <a class="link--hidden" href="/" alt="Home">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
@@ -73,6 +65,140 @@
       <div class="island  l-main">
         <div class="wrapper">
           
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/08/10/installing-dwm-on-crunchbang-linux" alt="Installing dwm on Crunchbang Linux">
+              Installing dwm on Crunchbang Linux
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on August 10, 2013 in <a href="/blog/tag/Linux" alt="Linux">Linux</a>, <a href="/blog/tag/Crunchbang" alt="Crunchbang">Crunchbang</a>, <a href="/blog/tag/dwm" alt="dwm">dwm</a>
+          </p>
+        
+        <p><em>Note: I started to write this guide a couple of days ago, before I yet again went distrohopping. I now run a minimal Debian Testing setup on my netbook but I thought it would be a good idea to post it nonetheless.</em></p>
+
+<p>After trying both <a href="http://crunchbang.org/">Crunchbang Linux</a>, <a href="http://manjaro.org/">Manjaro Linux</a>, a couple of days of <a href="http://peppermintos.com/">Peppermint OS</a> and a week long stint with <a href="http://www.lubuntu.net/">Lubuntu</a> I went back to using Crunchbang. It was my first Linux distribution and I still think it’s fits my needs perfectly. I really like that it’s lightweight while still being a fully functional operating system.</p>
+
+<p>While I was running Lubuntu I played around with <a href="http://dwm.suckless.org/">dwm</a> and fell in love with it, so when I decided to reinstall Crunchbang I really wanted to use it too. The process wasn’t as straight forward as it was on Lubuntu, but after a few tries and with the help of <a href="http://cortman.wordpress.com/2012/10/23/crunchbang-slim-and-wm-madness/">this blog post</a> I managed to get it to run flawlessly. I thought that I would be an good idea to write it all down, so with no further ado, here’s a short guide on how to install and configure <code>dwm</code> to run on Crunchbang Linux.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>First you need to install <code>dwm</code>:</p>
+
+<pre><code>sudo apt-get install dwm
+</code></pre>
+
+<p>To fully customize it you need to configure it and install it from source, but since I’m happy with the way it looks I’ll just use the standard package for now. <a href="http://tools.suckless.org/dmenu/">dmenu</a> is a great tool to have too, but the package <code>suckless-tools</code> is actually installed by default which means that you don’t have to install it yourself.</p>
+
+<p>These packages are by no means neccessary, but they’re quite handy to have:</p>
+
+<pre><code>sudo apt-get install unclutter
+sudo apt-get install feh
+sudo apt-get install acpi
+</code></pre>
+
+<p><code>unclutter</code> will hide your mouse cursor, <code>feh</code> will help you set the wallpaper and <code>acpi</code> will display your battery’s status directly on the <code>dwm</code> status bar. You can leave out <code>acpi</code> if you’re not using a laptop.</p>
+
+<h2 id="dwm">dwm</h2>
+
+<h3 id="the-wallpaper">The wallpaper</h3>
+
+<p>Open up the terminal and type the following (use one of the four layout alternatives):</p>
+
+<pre><code>feh --bg-[tile|center|scale|seamless] path/to/file.ext
+</code></pre>
+
+<p>This will create a small file called <code>.fehbg</code> in your home directory.</p>
+
+<h3 id="the-startup-script">The startup script</h3>
+
+<p>Create a file called <code>dwm-startup</code> somewhere in your PATH with the following content (and don’t forget to make it executable<sup id="fnref:20130810-1"><a href="#fn:20130810-1" class="footnote">1</a></sup>):</p>
+
+<pre><code>#!/usr/bin/env bash
+
+# Set `feh` to change the wallpaper
+source $HOME/.fehbg
+
+# Set `unclutter` to hide the cursor after a second of inactivity
+unclutter -root -idle 1 &amp;
+
+# Start `dwm` with a modified status bar
+while true; do
+  xsetroot -name "Db: $(dropbox status) | B: $(acpi -b | awk '{ print $4 $5 }' | sed 's/,/ \/ /g') | V: $(amixer get Master | awk '/Front Left:/{ print $5 }' | sed 's/\[\|\]//g') | $(date '+%d %b %Y') | $(date '+%H:%M')"
+  sleep 10s
+done &amp; exec dwm
+</code></pre>
+
+<p>The status bar will display an output that’ll roughly look like this:</p>
+
+<pre><code>Db: Idle | B: 50% / 01:30:00 | V: 50% | 01 jan 2000 | 12:00
+</code></pre>
+
+<p>One thing that’s worth noting is that the official <a href="https://www.dropbox.com/install?os=lnx#linux-install-content">Dropbox CLI script</a> is <em>NOT</em> installed on Crunchbang by default, so you have to set it up by yourself.</p>
+
+<h2 id="x">X</h2>
+
+<p>Create a file in your home directory called <code>.xinitrc</code> and add the following content (make it executable too):</p>
+
+<pre><code>#!/usr/bin/env bash
+
+# Load .Xresources
+xrdb -merge $HOME/.Xresources
+
+# Set the default window manager
+DEFAULT=openbox-session
+
+# Start `Openbox`/`dwm`
+case $1 in
+  openbox-session)
+    exec openbox-session
+  ;;
+  dwm)
+    exec dwm-startup
+  ;;
+  *)
+    exec $DEFAULT
+  ;;
+esac
+</code></pre>
+
+<p>This will load your <code>.Xresources</code> file, which contains a couple of vital settings for <a href="http://www.x.org/">X</a>, and the window manager of your choice. It’ll fallback on using Openbox as the default.</p>
+
+<h2 id="slim">SLiM</h2>
+
+<p>Now it’s time to configure <a href="http://slim.berlios.de/">SLiM</a> (the default login manager) by editing the <code>slim.conf</code> file that’s located in <code>/etc</code>. Uncomment the following line:</p>
+
+<pre><code>login_cmd           exec /bin/sh - ~/.xinitrc %session
+</code></pre>
+
+<p>And comment out this line:</p>
+
+<pre><code>login_cmd           exec /bin/bash -login /etc/X11/Xsession %session
+</code></pre>
+
+<p>This needs to be configured since <code>dwm</code> doesn’t use a autostart file by itself. The next thing you’ll have to do is to add <code>dwm</code> to the part that says <code>sessions</code>:</p>
+
+<pre><code>sessions            openbox-session,dwm
+</code></pre>
+
+<h2 id="the-grand-finale">The grand finale</h2>
+
+<p>Now it’s time for you to reboot and press <code>F1</code> when the login screen appears to choose which window manager to use. Make sure that you’re using <code>dwm</code>, log in and you’re done!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130810-1">
+      <p>To make a file executable, open up the terminal and type <code>chmod +x file.ext</code>.<a href="#fnref:20130810-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
         <article class="post">
         
           <h1 class="post__title">
@@ -160,7 +286,7 @@ command! -nargs=? Note call notes#New(&lt;q-args&gt;)
             </a>
           </h1>
           <p class="post__meta">
-            Posted on June  2, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/06/02/suit-base" alt="Permalink – SUIT base" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on June  2, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/06/02/suit-base" alt="Permalink – SUIT base">&infin;</a>
           </p>
         
         <p>This is such a simple but nice-to-have thing. I really like using <a href="http://necolas.github.io/normalize.css/">normalize.css</a> instead of having to completely wiping the styling of every element and I’ve to used my own mini reset with it to remove some of the default values like margins and paddings. I guess that I don’t have to do that anymore!</p>
@@ -227,29 +353,13 @@ endfunction
       </article><!-- .post -->
 
 
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="http://engineering.appfolio.com/2012/11/16/css-architecture/" alt="CSS Architecture">
-              CSS Architecture &rarr;
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on May 14, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a> <a href="/blog/2013/05/14/css-architecture" alt="Permalink – CSS Architecture" class="post__meta--permalink  link--hidden">&infin;</a>
-          </p>
-        
-        <p>A nice and lengthy article about how to write modular and maintainable CSS. I especially like the naming conventions, mostly because they’re similar to my own. I’m vain like that.</p>
-
-      </article><!-- .post -->
-
-
         <nav class="island  l-pagination">
         <div class="wrapper  wrapper--centered">
           <ul class="nav">
           
             
             <li>
-              <a href="/blog/page/3" class="button  button--active">&larr; Next</a>
+              <a class="button  button--active" href="/blog/page/3" alt="Next">&larr; Next</a>
             </li>
             
           
@@ -268,7 +378,7 @@ endfunction
         <footer class="island  island--brand  l-footer">
       <div class="wrapper  wrapper--centered">
         <p class="print--primary">
-          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+          Copyright &copy; <a class="link--hidden" href="/" alt="Home">Ellen Gummesson</a> 2013
         </p>
       </div>
     </footer><!-- .l-footer-->

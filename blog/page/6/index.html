@@ -26,30 +26,22 @@
       <div id="js-mobile-nav" class="wrapper  wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
           <li class="print--primary">
-          
-            <a class="link--hidden  link--current" href="/">
-          
+          <a class="link--hidden  link--current" href="/" alt="Blog">
               Home
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/about">
-          
+            <a class="link--hidden" href="/about" alt="About">
               About
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/archives">
-          
+            <a class="link--hidden" href="/archives" alt="Archives">
               Archives
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/contact">
-          
+            <a class="link--hidden" href="/contact" alt="Contact">
               Contact
             </a>
           </li>
@@ -60,7 +52,7 @@
         <header class="island  island--brand  l-header">
       <div class="wrapper  wrapper--centered">
         <h1 class="l-logo">
-          <a href="/" class="link--hidden">
+          <a class="link--hidden" href="/" alt="Home">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
@@ -76,12 +68,28 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="https://github.com/gummesson/scriptlr.js" alt="Scriptlr.js">
+              Scriptlr.js &rarr;
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on April 22, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/04/22/scriptlr-js" alt="Permalink – Scriptlr.js">&infin;</a>
+          </p>
+        
+        <p>I was getting sick of adding <code>script</code> tags in my markup so I wrote a little script that could make it a bit more bearable. What it does is basically looping through an array of files, creating a new tag for each and every script and appends it to the body of the document. It’s obviously not meant to be used in production, but It’s quite handy when you want to play around.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://substack.net/weaning_yourself_off_jquery" alt="Weaning yourself of jQuery">
               Weaning yourself of jQuery &rarr;
             </a>
           </h1>
           <p class="post__meta">
-            Posted on April 19, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a href="/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink – Weaning yourself of jQuery" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on April 19, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/04/19/weaning-yourself-off-jquery" alt="Permalink – Weaning yourself of jQuery">&infin;</a>
           </p>
         
         <p>A great post on how to do basic DOM manipulation with plain JavaScript instead of using <a href="http://jquery.com/">jQuery</a>. jQuery is awesome, but maybe it’s not necessary to use it if you’re only doing super simple stuff.</p>
@@ -212,39 +220,13 @@
       </article><!-- .post -->
 
 
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/03/31/an-easter-egg-for-the-blog" alt="An easter egg for the blog">
-              An easter egg for the blog
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on March 31, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>
-          </p>
-        
-        <p>Go ahead and press <code>J</code> and <code>K</code>. Oh look, the page scrolls just like in <a href="http://www.vim.org/">Vim</a>.<sup id="fnref:20130331-1"><a href="#fn:20130331-1" class="footnote">1</a></sup> After playing around with <a href="http://jquery.com/">jQuery</a> I felt that it was appropriate to implement it as a sign of appreciation for my text editor of choice. A demo is available on <a href="http://jsfiddle.net/gummesson/Jyp98/">my jsFiddle account</a>, although I use a slightly modified version of it. As of know you can only use it to scroll up and down but I may try to add a few more keybindings later.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130331-1">
-      <p>Or so I hope. It works perfectly fine on my end, but I haven’t tested it in that many browsers yet.<a href="#fnref:20130331-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
         <nav class="island  l-pagination">
         <div class="wrapper  wrapper--centered">
           <ul class="nav">
           
             
             <li>
-              <a href="/blog/page/5" class="button  button--active">&larr; Next</a>
+              <a class="button  button--active" href="/blog/page/5" alt="Next">&larr; Next</a>
             </li>
             
           
@@ -263,7 +245,7 @@
         <footer class="island  island--brand  l-footer">
       <div class="wrapper  wrapper--centered">
         <p class="print--primary">
-          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+          Copyright &copy; <a class="link--hidden" href="/" alt="Home">Ellen Gummesson</a> 2013
         </p>
       </div>
     </footer><!-- .l-footer-->

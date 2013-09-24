@@ -26,30 +26,22 @@
       <div id="js-mobile-nav" class="wrapper  wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
           <li class="print--primary">
-          
-            <a class="link--hidden  link--current" href="/">
-          
+          <a class="link--hidden  link--current" href="/" alt="Blog">
               Home
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/about">
-          
+            <a class="link--hidden" href="/about" alt="About">
               About
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/archives">
-          
+            <a class="link--hidden" href="/archives" alt="Archives">
               Archives
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/contact">
-          
+            <a class="link--hidden" href="/contact" alt="Contact">
               Contact
             </a>
           </li>
@@ -60,7 +52,7 @@
         <header class="island  island--brand  l-header">
       <div class="wrapper  wrapper--centered">
         <h1 class="l-logo">
-          <a href="/" class="link--hidden">
+          <a class="link--hidden" href="/" alt="Home">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
@@ -76,12 +68,38 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/03/31/an-easter-egg-for-the-blog" alt="An easter egg for the blog">
+              An easter egg for the blog
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on March 31, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/jQuery" alt="jQuery">jQuery</a>
+          </p>
+        
+        <p>Go ahead and press <code>J</code> and <code>K</code>. Oh look, the page scrolls just like in <a href="http://www.vim.org/">Vim</a>.<sup id="fnref:20130331-1"><a href="#fn:20130331-1" class="footnote">1</a></sup> After playing around with <a href="http://jquery.com/">jQuery</a> I felt that it was appropriate to implement it as a sign of appreciation for my text editor of choice. A demo is available on <a href="http://jsfiddle.net/gummesson/Jyp98/">my jsFiddle account</a>, although I use a slightly modified version of it. As of know you can only use it to scroll up and down but I may try to add a few more keybindings later.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130331-1">
+      <p>Or so I hope. It works perfectly fine on my end, but I haven’t tested it in that many browsers yet.<a href="#fnref:20130331-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://www.youtube.com/watch?v=dRuiU6mjcFA" alt="Guard is your best friend">
               Guard is your best friend &rarr;
             </a>
           </h1>
           <p class="post__meta">
-            Posted on March 29, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech">Tech</a> <a href="/blog/2013/03/29/guard-is-your-best-friend" alt="Permalink – Guard is your best friend" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on March 29, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Tech" alt="Tech">Tech</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/03/29/guard-is-your-best-friend" alt="Permalink – Guard is your best friend">&infin;</a>
           </p>
         
         <p>A really nice and short screencast from <a href="http://net.tutsplus.com/">Nettuts</a> showcasing how to use <a href="https://github.com/guard/guard">Guard</a> for file monitoring and task automation. I’ve hacked together a <a href="https://github.com/gummesson/ellengummesson/blob/master/Rakefile">Rakefile</a> for similar purposes, but I can definitively see the appeal of it.</p>
@@ -155,7 +173,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on March 18, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a> <a href="/blog/2013/03/18/yes-we-jekyll" alt="Permalink – Yes we Jekyll" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on March 18, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/03/18/yes-we-jekyll" alt="Permalink – Yes we Jekyll">&infin;</a>
           </p>
         
         <p>A rather nice and comprehensive guide on  how to get started with Jekyll and understanding all of it’s different components. I definitively wished that something like this was around when I decided to start using it.<sup id="fnref:20130318-1"><a href="#fn:20130318-1" class="footnote">1</a></sup></p>
@@ -173,29 +191,13 @@
       </article><!-- .post -->
 
 
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html" alt="Powering down Google Reader">
-              Powering down Google Reader &rarr;
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on March 14, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a> <a href="/blog/2013/03/14/powering-down-google-reader" alt="Permalink – Powering down Google Reader" class="post__meta--permalink  link--hidden">&infin;</a>
-          </p>
-        
-        <p>Even though I’ve tried to trim down my subscriptions I’m still a big fan of <a href="ww.google.com/reader">Google Reader</a> and it’s a shame that they’re pulling the plug on it. I switched to <a href="http://www.feedly.com/home">Feedly</a> earlier today and it seems to do the job fairly well. The iOS app is beautiful too but I’m not completely sold on the whole magazine-like interface. The intergration with other web services is pretty amazing though.</p>
-
-      </article><!-- .post -->
-
-
         <nav class="island  l-pagination">
         <div class="wrapper  wrapper--centered">
           <ul class="nav">
           
             
             <li>
-              <a href="/blog/page/6" class="button  button--active">&larr; Next</a>
+              <a class="button  button--active" href="/blog/page/6" alt="Next">&larr; Next</a>
             </li>
             
           
@@ -214,7 +216,7 @@
         <footer class="island  island--brand  l-footer">
       <div class="wrapper  wrapper--centered">
         <p class="print--primary">
-          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+          Copyright &copy; <a class="link--hidden" href="/" alt="Home">Ellen Gummesson</a> 2013
         </p>
       </div>
     </footer><!-- .l-footer-->

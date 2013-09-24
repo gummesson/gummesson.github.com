@@ -26,30 +26,22 @@
       <div id="js-mobile-nav" class="wrapper  wrapper--centered">
         <ul id="js-nav" class="nav  js-nav">
           <li class="print--primary">
-          
-            <a class="link--hidden  link--current" href="/">
-          
+          <a class="link--hidden  link--current" href="/" alt="Blog">
               Home
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/about">
-          
+            <a class="link--hidden" href="/about" alt="About">
               About
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/archives">
-          
+            <a class="link--hidden" href="/archives" alt="Archives">
               Archives
             </a>
           </li>
           <li class="print--primary">
-          
-            <a class="link--hidden" href="/contact">
-          
+            <a class="link--hidden" href="/contact" alt="Contact">
               Contact
             </a>
           </li>
@@ -60,7 +52,7 @@
         <header class="island  island--brand  l-header">
       <div class="wrapper  wrapper--centered">
         <h1 class="l-logo">
-          <a href="/" class="link--hidden">
+          <a class="link--hidden" href="/" alt="Home">
             Ellen.
           </a>
         </h1><!-- .l-logo -->
@@ -73,6 +65,42 @@
       <div class="island  l-main">
         <div class="wrapper">
           
+        <article class="post">
+        
+          <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/09/24/a-few-quick-tips-for-working-with-npm-on-windows" alt="A few quick tips for working with `npm` on Windows">
+              A few quick tips for working with `npm` on Windows
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on September 24, 2013 in <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/Node.js" alt="Node.js">Node.js</a>, <a href="/blog/tag/npm" alt="npm">npm</a>
+          </p>
+        
+        <p>A few days ago I was having trouble with the executable file for <a href="https://github.com/gummesson/servera">Severa</a>. I couldn’t get it to run on my Linux box and after some troubleshooting I realized what the culprit was. It was saved as a <code>dos</code> file. That’s highly annoying when you’re trying to make your code cross-platform. After some digging around I found a few solutions that seems to work:</p>
+
+<ul>
+  <li>Use Unix-style line endings:
+    <ul>
+      <li><code>set fileformat=unix</code> in your <code>.vimrc</code>.</li>
+    </ul>
+  </li>
+  <li>Set the <a href="http://git-scm.com/">Git</a> configuration option <code>auto.clrf</code> to <code>input</code>:
+    <ul>
+      <li><code>git config --global core.autoclrf input</code> </li>
+    </ul>
+  </li>
+  <li>Update the Git index so that the executable file always has the right permissions:
+    <ul>
+      <li><code>git update-index --chmod=+x &lt;path/to/file&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>That’s it. This’ll hopefully make my code a little less prone to errors.</p>
+
+      </article><!-- .post -->
+
+
         <article class="post">
         
           <h1 class="post__title">
@@ -170,7 +198,7 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on September  9, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Sass" alt="Sass">Sass</a>, <a href="/blog/tag/Chocolatey" alt="Chocolatey">Chocolatey</a> <a href="/blog/2013/09/09/chocolateys-new-github-page" alt="Permalink – Chocolatey's new Github page" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on September  9, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Sass" alt="Sass">Sass</a>, <a href="/blog/tag/Chocolatey" alt="Chocolatey">Chocolatey</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/09/09/chocolateys-new-github-page" alt="Permalink – Chocolatey's new Github page">&infin;</a>
           </p>
         
         <p>This is kind of an shameless promotion, but I recently decided to have a go at making a more comprehensive documentation website for <a href="http://chocolatey.org/">Chocolatey</a> and it actually got merged! I’m a nowhere near being a designer but I think that it looks quite nice.</p>
@@ -186,28 +214,10 @@
             </a>
           </h1>
           <p class="post__meta">
-            Posted on September  7, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/PowerShell" alt="PowerShell">PowerShell</a> <a href="/blog/2013/09/07/find-string" alt="Permalink – Find-String" class="post__meta--permalink  link--hidden">&infin;</a>
+            Posted on September  7, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/PowerShell" alt="PowerShell">PowerShell</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/09/07/find-string" alt="Permalink – Find-String">&infin;</a>
           </p>
         
         <p>A cool little <code>ack</code>-like <a href="http://technet.microsoft.com/en-us/library/cc731851(v=WS.10).aspx">PowerShell</a> module. It works flawlessly!</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/09/05/fixing-jekylls-encoding-shenaningans-again" alt="Fixing Jekyll's encoding shenaningans (again)">
-              Fixing Jekyll's encoding shenaningans (again)
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on September  5, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
-          </p>
-        
-        <p>After a lot of of hesitation I finally upgraded <a href="http://jekyllrb.com/">Jekyll</a> to <code>1.1.2</code> from using the <code>0.12.1</code> version. Quite a lot has changed and the team is doing a great job with it. However,  my old <a href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings/"><code>SET LANG</code> hack</a> didn’t work. I tried using <a href="http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/">another hack</a> which involves using <code>chcp 65001</code> instead  but that didn’t quite work either. Whenever I tried to launch the default server <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a> it blew up. There were errors, errors everywhere. I wasn’t going to give up so I came up with another solution.</p>
-
-<p>I now use an external server while Jekyll just auto-generates the site. I use a small <a href="http://nodejs.org/">Node.js</a> web server app called <a href="#">nws</a> which I use all the time anyway. I also use <a href="http://gruntjs.com/">Grunt</a> for task automation (<a href="https://github.com/gummesson/ellengummesson/blob/master/Gruntfile.js">here’s the source code</a>). I also have a project called “<a href="https://github.com/gummesson/teeny-tiny-static-server">Teeny tiny static server</a>” which I created some months ago. It uses <a href="https://github.com/chneukirchen/rack">Rack</a>, <a href="https://github.com/jtrupiano/rack-rewrite">Rack-Rewrite</a> and <a href="https://github.com/macournoyer/thin">Thin</a> to create a fast prototype web server, which may be an alternative to using a Node.js based solution. It’s not perfect but it’s better than being stuck on an old version.</p>
 
       </article><!-- .post -->
 
@@ -217,7 +227,7 @@
           <ul class="nav">
           
             <li>
-              <a class="button  button--disabled">&larr; Next</a>
+              <a class="button  button--disabled" alt="">&larr; Next</a>
             </li>
           
           
@@ -235,7 +245,7 @@
         <footer class="island  island--brand  l-footer">
       <div class="wrapper  wrapper--centered">
         <p class="print--primary">
-          Copyright &copy; <a href="/" class="link--hidden">Ellen Gummesson</a> 2013
+          Copyright &copy; <a class="link--hidden" href="/" alt="Home">Ellen Gummesson</a> 2013
         </p>
       </div>
     </footer><!-- .l-footer-->
