@@ -7,7 +7,7 @@
   <meta name="author" content="Ellen Gummesson">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <title>Notes – Ellen Gummesson</title>
+    <title>Ack – Ellen Gummesson</title>
   <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
@@ -65,22 +65,31 @@
       <div class="island  l-main">
         <div class="wrapper">
           <article class="page">
-  <h1>Notes</h1>
-    <ul>
-  <li><a href="/notes/ack">ack</a></li>
-  <li><a href="/notes/github">Github</a></li>
-  <li><a href="/notes/kramdown">kramdown</a></li>
-  <li><a href="/notes/mongodb">MongoDB</a></li>
-  <li><a href="/notes/oh-my-zsh">Oh my Zsh!</a></li>
-  <li><a href="/notes/tmux">Tmux</a></li>
-  <li><a href="/notes/urxvt-to-console">urxvt to Console</a></li>
-</ul>
+  <h1>Ack</h1>
+    <h2 id="installation">Installation</h2>
 
-<h2 id="setup">Setup</h2>
+<p>A quick guide for installing <a href="http://betterthangrep.com/">ack</a>.</p>
 
-<ul>
-  <li><a href="/notes/the-linux-setup">Linux</a></li>
-</ul>
+<h3 id="windows">Windows</h3>
+
+<ol>
+  <li>Download the standalone script from the <a href="http://betterthangrep.com/install/">official website</a> and save it as <code>ack</code>.</li>
+  <li>Create a <code>bat</code> file and add the following to it: <code>@"C:\path\to\perl.exe" C:\path\to\ack %*</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path or create a new folder and add it to said path<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</li>
+</ol>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Perl is included in the standard <a href="http://git-scm.com/">Git</a> install and can be found at <code>C:\Program Files (x86)\Git\bin\perl.exe</code>.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>This can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article><!-- .page -->
 
