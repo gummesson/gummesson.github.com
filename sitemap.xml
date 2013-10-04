@@ -510,7 +510,13 @@
         <loc>
             http://ellengummesson.com/blog/2013/09/24/a-few-quick-tips-for-working-with-npm-on-windows
         </loc>
-        <lastmod>2013-09-24T16:44:28+02:00</lastmod>
+        <lastmod>2013-10-04T19:54:34+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/10/04/ferro-the-keyboard-interface-to-chrome
+        </loc>
+        <lastmod>2013-10-04T19:58:03+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/404.html</loc>
@@ -526,7 +532,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2013-09-24T16:44:28+02:00</lastmod>
+        <lastmod>2013-10-04T19:58:03+02:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/ack.html</loc>

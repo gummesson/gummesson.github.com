@@ -74,6 +74,22 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="http://smalify.net/" alt="Smalify: minification on the fly">
+              Smalify: minification on the fly &rarr;
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January  7, 2013 in <a href="/blog/tag/Apps" alt="Apps">Apps</a>, <a href="/blog/tag/Code" alt="Code">Code</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/01/07/smalify-minification-on-the-fly" alt="Permalink – Smalify: minification on the fly">&infin;</a>
+          </p>
+        
+        <p>I found this little gem of an app earlier today and I got to say that it was just what I was looking for and needed. I’ve been meaning to minify my code for some time but I haven’t found something simple that could do that. There are some web based apps and services out there that can do it, but I like having a native solution so that it can update itself whenever there’s a new change and so on.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/01/03/vim-a-couple-of-days-in" alt="Vim: a couple of days in">
               Vim: a couple of days in
             </a>
@@ -214,54 +230,6 @@
 </code></pre>
 
 <p>It has the same functionality as my own fiddling but it’s a hell of a lot easier than having to change the code directly.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/12/19/handy-bash-scripts" alt="Handy Bash scripts">
-              Handy Bash scripts
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on December 19, 2012 in <a href="/blog/tag/Tech" alt="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux">Linux</a>, <a href="/blog/tag/Bash" alt="Bash">Bash</a>
-          </p>
-        
-        <p>One thing that I really miss while I’m using Crunchbang is a good note-taking app with plain text support. I haven’t found one yet so I threw together a few simple bash scripts that I can use in the terminal for easier notetaking.</p>
-
-<pre><code>function no() {
-  geany ~/Dropbox/path/to/notes/$1.txt 
-}
-
-function nos() {
-  ls -c ~/Dropbox/path/to/notes | grep --color=always $1
-}
-
-function nol() {
-  ls -c ~/Dropbox/path/to/notes
-}
-
-function not() {
-  cat ~/Dropbox/path/to/notes/$1.txt
-}
-</code></pre>
-
-<p>The <code>no()</code> function will open the note itself in the text editor <a href="http://www.geany.org/">Geany</a>. The <code>nos()</code> function is used for finding notes with a particular search term in their filename. The <code>--color=always</code> highlights the given search term. The <code>-c</code> sort all of the notes by the last modified date. The <code>nol()</code> function just lists all of the notes and the <code>not()</code> function displays the content of a note directly in the terminal. Now I just need to type either <code>$ no filename</code>, <code>$ nos search-term</code>, <code>$ nol</code> or <code>$ not filename</code> to do various things to my notes. </p>
-
-<p>I also added two scripts for appending text directly into my spark file and todo file which I then use like this: <code>$ add Write something about anything</code> and <code>$ todo Something soon</code>.</p>
-
-<pre><code>function add() {
-  echo $@ &gt;&gt; ~/Dropbox/path/to/notes/spark-file.txt
-}
-
-function todo() {
-  echo $@ &gt;&gt; ~/Dropbox/path/to/notes/todo.txt
-}
-</code></pre>
-
-<p>Even though the scripts aren’t as useful as a fully featured app they provide some sort of functionality to my writing workflow, which is nice.</p>
 
       </article><!-- .post -->
 
