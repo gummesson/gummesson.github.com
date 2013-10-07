@@ -6,6 +6,39 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Codely</title>
+                <description>&lt;p&gt;Earlier today I released a simple project I hacked together this past weekend: &lt;a href=&quot;https://github.com/gummesson/codely&quot;&gt;Codely&lt;/a&gt;. I’ve wanted to try out &lt;a href=&quot;http://codemirror.net/&quot;&gt;CodeMirror&lt;/a&gt; for a long time but couldn’t really find a reason to use it until a couple of days ago. I love the Vim mode even though I can’t seem to get &lt;code&gt;Esc&lt;/code&gt; key to work in it… But I digress. It was fun to try out the &lt;a href=&quot;http://www.w3.org/TR/2013/WD-notifications-20130912/&quot;&gt;Notification&lt;/a&gt; API too. It’s amazing what you can do with a web browser these days.&lt;/p&gt;
+
+&lt;h2 id=&quot;keyboard-shortcuts&quot;&gt;Keyboard shortcuts&lt;/h2&gt;
+
+&lt;p&gt;Besides the normal keyboard shortcuts you would use in Vim or Emacs mode (or with &lt;a href=&quot;https://github.com/emmetio/codemirror&quot;&gt;Emmet&lt;/a&gt; plugin) I also added a few additional shortcuts:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Keys&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;F10&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Save the content&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;F11&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Toggle fullscreen mode&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I might add some kind of help dialog later on, but we’ll see.&lt;/p&gt;
+</description>
+                <published>October  7, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/10/07/codely</link>
+              </item>
+            
+              <item>
                 <title>Ferro: The keyboard interface to Chrome</title>
                 <description>&lt;blockquote&gt;
   &lt;p&gt;Ferro is a Google Chrome extension that functions similarly to application launchers like Quicksilver, Launchy, and GNOME Do, but it can do much more than just open apps. Using only your keyboard, you can quickly open pages in your history or bookmarks, open extension options pages, and save your current tabs for opening later. You can also perform many other commands, such as deleting a bookmark, disabling an extension, and pinning a tab.&lt;/p&gt;
@@ -116,14 +149,6 @@
 </description>
                 <published>September 14, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/09/14/plit-my-first-node-js-app</link>
-              </item>
-            
-              <item>
-                <title>Chocolatey's new Github page</title>
-                <description>&lt;p&gt;This is kind of an shameless promotion, but I recently decided to have a go at making a more comprehensive documentation website for &lt;a href=&quot;http://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; and it actually got merged! I’m a nowhere near being a designer but I think that it looks quite nice.&lt;/p&gt;
-</description>
-                <published>September  9, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/09/09/chocolateys-new-github-page</link>
               </item>
             
     </channel>

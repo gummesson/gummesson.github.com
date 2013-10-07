@@ -74,6 +74,56 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/08/26/my-jekyll-plugins" alt="My Jekyll plugins">
+              My Jekyll plugins
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on August 26, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
+          </p>
+        
+        <p>Continuing with my Jekyll series, here’s a list of the plugins and other hacks I use to make everything on this site run as smooth as possible.</p>
+
+<h2 id="pagination">Pagination</h2>
+
+<p>For pagination, I just followed the guidelines from the <a href="https://github.com/mojombo/jekyll/wiki/Pagination">official wiki</a> and did some minor changes in the markup. Although it’s strictly not a plugin, I had to make a small configuration in Jekyll’s <code>pagination.rb</code> file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the <code>pagination.rb</code> from Jekyll’s library directory and placed it in the _plugins folder and changed the following line from this:</p>
+
+<pre><code>newpage.dir = File.join(page.dir, "page#{num_page}")
+</code></pre>
+
+<p>To this:</p>
+
+<pre><code>newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
+</code></pre>
+
+<p>To my suprise, it actually worked! Like I said earlier, I guess it doesn’t really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.</p>
+
+<h2 id="tags">Tags</h2>
+
+<p>To get tags to work on this site I used <a href="http://charliepark.org/tags-in-jekyll/">an excellent guide/plugin</a> from Charlie Parker. I also changed the default folder to a different one by adding and changing <code>tag_dir</code> in my _config.yml file (ie: <code>tag_dir: /blog/tag/</code> instead of just <code>tag_dir: /tag/</code>).</p>
+
+<h2 id="rss-feed">RSS feed</h2>
+
+<p>I followed and used the guidelines from Snaptortoise’s <a href="https://github.com/snaptortoise/jekyll-rss-feeds" title="Jekyll RSS Feeds Templates">RSS Feeds Templates</a>. However, instead of using <code>layout: rss-feed</code> in my feed.xml file I use <code>layout: nil</code>. Same thing, different names.</p>
+
+<h2 id="sitemap">Sitemap</h2>
+
+<p>I use Mike Levin’s <a href="https://github.com/kinnetica/jekyll-plugins" title="sitemap.xml Generator">sitemap.xml Generator</a> to generate a simple sitemap. It’s maybe not the the most required function ever, but I like to have it.</p>
+
+<h2 id="images">Images</h2>
+
+<p>For an easy image implementation I used Scott Parker’s plugin <a href="http://spparker.com/posts/2011-04-26-keeping-jekyll-classy#posting">ImageBlock</a>. It makes it easier to add images to the blog post by using a liquid tag. Simple and effective. However, it’s probably not suitable if you’re going to use a lot of images since it just fetches them from one folder called <code>images</code> (or in my case, <code>/assets/images</code>).</p>
+
+<h2 id="youtube">Youtube</h2>
+
+<p>I stumbled upon <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/" title="Jekyll Youtube Liquid Template Tag">this gist/plugin</a> by Portway Point and I decided to test it even though I probably won’t use it that much. It works perfectly and like the above plugin you use it by adding a simple liquid tag.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/08/25/trying-out-sass" alt="Trying out Sass">
               Trying out Sass
             </a>
@@ -344,40 +394,6 @@ a:hover, a:focus {
 </ul>
 
 <p><strong>Note:</strong> You can use <code>jekyll --auto --server</code> instead of <code>jekyll --server</code> if you want Jekyll to generate and update your site continuosly while you write and save a new post, change the layout etc.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/08/20/wordpress-to-getsimple-to-jekyll" alt="WordPress to GetSimple to Jekyll">
-              WordPress to GetSimple to Jekyll
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on August 20, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Jekyll" alt="Jekyll">Jekyll</a>
-          </p>
-        
-        <p><em>… Or: “How I learned to stop worrying and love the command line”.</em></p>
-
-<p>I love WordPress. I think it’s a really great CMS and the community is huge, to say the least. However, I feel that it’s sometimes a bit too much. If I wanted to have a site with a lot of pages and if I was writing several blog posts a day it would been a no-brainer, and I’d choose it in a heartbeat. But since I don’t plan to do that I wanted something smaller. I’ve been playing around with <a href="http://www.get-simple.info/">GetSimple</a> (which is a small but powerful CMS that stores everything in XML files) for a while, so at first I decided to use that. However, it isn’t really a blogging plattform so I had to install a  plugin for that. It worked alright, but I still didn’t feel quite satisfied. Then I found <a href="http://www.jekyllrb.com/">Jekyll</a>.</p>
-
-<h2 id="jekyll">Jekyll</h2>
-
-<p>Jekyll is described like this in the <a href="https://github.com/mojombo/jekyll/wiki">official wiki</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.</p>
-</blockquote>
-
-<p>In other words, Jekyll takes your template files, written in HTML and <a href="http://daringfireball.net/projects/markdown/">Markdown</a> and marked up with <a href="http://liquidmarkup.org/">Liquid tags</a>, and generates them into simple, static .html files. “Blogging Like a Hacker” is sort of Jekyll’s tagline, and I think that’s a really good description of it. You have to use the command line to generate your static pages and you basically have to write your posts and pages in Markdown or Textile (I don’t see that as a bad thing at all though, I love to do it that way). You can also use plugins to extend its’ functionality. For example, I use one that enables the pagination pages to be generated into different folders called <code>/blog/page/2/</code> and so on (rather than <code>/page2/</code>), and another one to create folders and .html files for my tags (I’ll write more about this in another post).</p>
-
-<h3 id="why">Why?</h3>
-
-<p>It’s incredibly lightweight. It doesn’t need a database or any back end language like PHP at all, which means that you don’t have to worry about the database breaking and you can host it wherever you want to. The file size of a site which consists of just static pages is ridiciously small too (this whole site takes up about 200 kb as of right now) and above all, it’s highly customizable. One big thing that actually irks me about WordPress is that it’s filled with many pre-named classes and functions that you can’t change. Well, you could go into the source and hammer away there, but I’d rather not do that. With Jekyll I can actually change the look of the site in a matter of minutes and I can easily add a new class wherever I want if I need to. It only generates the things that I’ve added by myself. The only disadvantage is that I need to sit in front of my computer in order for me to use Jekyll. It doesn’t really matter to me, since I’ve never been comfortable with writing and publish post with my phone or via email.</p>
-
-<p>Like I said in my previous post, it took me some time to actually get it up and running, but now I’m finally happy. It’s not the most convenient solution, but it’s simple enough for me. I’ll probably write a couple of more post about Jekyll, so keep an eye out.</p>
 
       </article><!-- .post -->
 
