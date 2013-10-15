@@ -74,6 +74,56 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/10/15/trying-out-ghost" alt="Trying out Ghost">
+              Trying out Ghost
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on October 15, 2013 in <a href="/blog/tag/Web" alt="Web">Web</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ghost" alt="Ghost">Ghost</a>
+          </p>
+        
+        <p><a href="http://ghost.org/">Ghost</a> finally arrived yesterday and I was eager to try it out. The UI is really amazing and it seems like creating a theme for it can be done in minutes<sup id="fnref:20131015-1"><a href="#fn:20131015-1" class="footnote">1</a></sup>. I ran into some common errors so here’s a really condensed guide on how to get it up and running. This may not be the perfect thing to do if you’re actually planning on using it in production, but more so for just playing around with it.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>The default database used for Ghost is <a href="http://www.sqlite.org/">SQLite3</a>, so make sure that you have that installed. Don’t worry, <a href="http://mislav.uniqpath.com/rails/install-sqlite3/">it’s extremely easy</a>.</p>
+
+<h2 id="installing-ghost">Installing Ghost</h2>
+
+<ol>
+  <li>Clone the repository.</li>
+  <li>Run <code>git submodule update --init</code><sup id="fnref:20131015-2"><a href="#fn:20131015-2" class="footnote">2</a></sup>. This will install the default theme.</li>
+  <li>Run <code>npm install -g grunt-cli</code>. This will install <a href="http://gruntjs.com/">Grunt</a><sup id="fnref:20131015-3"><a href="#fn:20131015-3" class="footnote">3</a></sup>.</li>
+  <li>Run <code>npm install</code>. This installs all the dependencies.</li>
+  <li>Run <code>gem install bourbon</code>. This will install the Sass mixin library <a href="http://bourbon.io/">Bourbon</a>.</li>
+  <li>Run <code>grunt init</code>. This will compile the stylesheet and templates.</li>
+  <li>Go to <code>localhost:2368/ghost</code> and sign up.</li>
+</ol>
+
+<p>As you can see it’s not that hard. Now go make a theme or something!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20131015-1">
+      <p>If you have a design in mind.<a href="#fnref:20131015-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20131015-2">
+      <p>If this doesn’t work (SSH can be a quite the hassle on Windows) just clone the <a href="https://github.com/TryGhost/Casper">Casper</a> theme into the <code>content/themes</code> folder. Make sure that you rename the folder from <code>Casper</code> to <code>casper</code>.<a href="#fnref:20131015-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20131015-3">
+      <p>Which I recommend having anyway.<a href="#fnref:20131015-3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://ellengummesson.com/codely/" alt="Codely">
               Codely <span class="post__title--external">&rarr;</span>
             </a>
@@ -214,42 +264,6 @@
     </li>
     <li id="fn:20130920-2">
       <p>I’m pretty sure that there’s no easy way of doing that on Windows without using brute force or some other vodoo.<a href="#fnref:20130920-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/09/14/plit-my-first-node-js-app" alt="plit: my first Node.js app">
-              plit: my first Node.js app
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on September 14, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/Node.js" alt="Node.js">Node.js</a>
-          </p>
-        
-        <p>I’ve been thinking about really learning <a href="http://nodejs.org/">Node.js</a> lately. JavaScript have quickly evolved to become possibly my favorite language, although <a href="http://www.ruby-lang.org/">Ruby</a> will always have a special place in my heart. After a quick Google search and an itch I decided to create something small and mostly useless, as always<sup id="fnref:20130914-1"><a href="#fn:20130914-1" class="footnote">1</a></sup>. Internet, meet <a href="https://npmjs.org/package/plit">plit</a>!</p>
-
-<h2 id="plit">plit</h2>
-
-<p><code>plit</code> is an extremely simple <a href="http://placehold.it/">Placehold.it</a> command line tool. You specify what size you want by running <code>plit 300x200</code> and it’ll then return the formatted URL, like this: <code>http://placehold.it/300x200</code>. That’s it. It’s not earth shattering, but it’s something!</p>
-
-<h2 id="closing-thoughts">Closing thoughts</h2>
-
-<p>It actually felt a bit “weird”, but equally refreshing, to be able to write JavaScript that’s not running in a browser. I’m definitively looking forward to write more applications and the like.</p>
-
-<p>As a side note I would like to praise Node.js’ and <a href="https://npmjs.org/">npm</a>’s Windows support. Everything works well right out of the box and I didn’t have to configure anything. Now that’s simply amazing!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130914-1">
-      <p>Jack Franklin’s “<a href="http://javascriptplayground.com/blog/2012/08/writing-a-command-line-node-tool/">Writing a Command Line Node Tool</a>” was an immensely good starting point.<a href="#fnref:20130914-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

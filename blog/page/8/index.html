@@ -74,6 +74,35 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/03/25/my-adventure-with-manjaro-linux" alt="My adventure with Manjaro Linux">
+              My adventure with Manjaro Linux
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on March 25, 2013 in <a href="/blog/tag/Tech" alt="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux">Linux</a>, <a href="/blog/tag/Manjaro" alt="Manjaro">Manjaro</a>
+          </p>
+        
+        <p>After a few months of using <a href="http://crunchbang.org/">Crunchbang Linux</a>, which is based on <a href="http://www.debian.org/">Debian</a>, I decided to switch to <a href="http://manjaro.org/">Manjaro Linux</a> instead. Even though I really like Crunchbang I wanted to have a go at using a <a href="https://www.archlinux.org/">Arch Linux</a> based system, mainly because of the rolling release cycle. I’ve also heard that the package manager, <a href="https://wiki.archlinux.org/index.php/Pacman">Pacman</a><sup id="fnref:20130325-1"><a href="#fn:20130325-1" class="footnote">1</a></sup> is fantastic. I didn’t really want to install it from scratch though<sup id="fnref:20130325-2"><a href="#fn:20130325-2" class="footnote">2</a></sup> and that’s when discovered Manjaro. I might do it at some other point, but I really like nothing having to install everything by myself. What’s even more awesome that it came with <a href="http://openbox.org/">Openbox</a> edition, which I’m a big fan of. I know that Arch has a reputation of breaking constantly, but since I’m going to use it on a secondary machine it doesn’t bother me much. I might even learn something from a little breakage, although I hope I won’t encounter it too often.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130325-1">
+      <p>Which is an amazing name, by the way.<a href="#fnref:20130325-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130325-2">
+      <p>Know your limitations. I’m sure that I wouldn’t have succeed with it.<a href="#fnref:20130325-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/03/21/giving-jquery-another-go" alt="Giving jQuery another go">
               Giving jQuery another go
             </a>
@@ -154,60 +183,6 @@
           </p>
         
         <p>A really nice talk from Mr. <a href="http://css-tricks.com/">CSS-Tricks</a> himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog">
-              A brand new blog
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on March  9, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Design" alt="Design">Design</a>
-          </p>
-        
-        <p>I’ve yet again redesigned the layout of this site and this time it’s a hell of a lot different. I grew tired of the old look since it in all honestly looked boring and decided to give it some colors. I found the typeface <a href="http://www.google.com/webfonts/specimen/Roboto">Roboto</a> a few weeks ago and I like it so much that I decided to use it, which was the first step.</p>
-
-<h2 id="hey-what-is-that-theme">Hey, what is THAT theme?</h2>
-
-<p>The theme is based on <a href="http://noahfrederick.com/">Noah Frederick’s</a> beautiful <a href="http://noahfrederick.com/blog/2011/lion-terminal-theme-peppermint/">Peppermint theme</a> for the OS X’s terminal. I remember stumbling onto his <a href="http://noahfrederick.com/vim-color-scheme-hemisu/">Hemisu colorscheme</a> for <a href="http://www.vim.org/">Vim</a> and for some reason I also found Peppermint. I even liked it so much that I hacked together a Vim colorscheme for it that I use quite a lot.</p>
-
-<h2 id="sass--compass--hearts">Sass + Compass = ♥</h2>
-
-<p>I also used <a href="http://sass-lang.com/">Sass</a> and <a href="http://compass-style.org/">Compass</a> exclusively for the CSS writing. I’ve been wanting to use it for a long time and I even tried to convert the old design’s CSS to it, but I gave up pretty quickly. This time I didn’t and I of course used <a href="https://github.com/gummesson/smallwork">Smallwork</a> as a base which made the process a lot more easier and faster. Redesigning this site was also one of the things that made me re-write Smallwork.</p>
-
-<p>using Compass with Jekyll is also relatively easy by the way. I first tried out a couple of plugins, but I decided to implement it in my Rake task instead. While the plugins worked great it really bugged me that I couldn’t decide when to use <code>compass compile</code> and when to use <code>compass watch</code>. All I had to do was to add this to my <code>build</code> task in my <code>Rakefile</code>, before <code>jekyll</code> is run:</p>
-
-<pre><code>system "cd assets/ &amp;&amp; compass compile &amp;&amp; cd ../"
-</code></pre>
-
-<p>Simple and effective!</p>
-
-<h2 id="funish-trivia">Fun(ish) trivia</h2>
-
-<ul>
-  <li>I started the redesign on March 1st and I’ve made a total of 28 commits<sup id="fnref:20130309-1"><a href="#fn:20130309-1" class="footnote">1</a></sup> to the git repository I used for the development.</li>
-  <li>I “skipped” support for Internet Explorer 8 in favor of using <code>[class^="column-"]:last-child</code> to remove the <code>margin-right</code> on the grid system<sup id="fnref:20130309-2"><a href="#fn:20130309-2" class="footnote">2</a></sup>.</li>
-  <li>I also found a pretty cool Sass function called <code>darken()</code>, which made it easy finding a good background color for my <code>code</code> and <code>pre</code> tags and the subtle text shadow. All of the color functions for Sass are pretty cool, in fact.</li>
-  <li>The pink line at the bottom of the site uses the <a href="http://mystrd.at/modern-clean-css-sticky-footer/">“James Dean Sticky Footer”</a> approach, which is a nice little hack. I love the name too!</li>
-  <li>I tried to change as little as possible when I did the CSS for the media queries. I pratically just changed the font size and some margins. That’s it.</li>
-</ul>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130309-1">
-      <p>I’m an obsessive commiter.<a href="#fnref:20130309-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130309-2">
-      <p>I doubt that that will cause any problems. I don’t think I know anyone that actually use Internet Explorer.<a href="#fnref:20130309-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- .post -->
 

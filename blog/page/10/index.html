@@ -74,6 +74,43 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/02/16/more-vim-goodness" alt="More Vim goodness">
+              More Vim goodness
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on February 16, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
+          </p>
+        
+        <p>I feel like I start to sound like a fantatic when it comes to <a href="http://www.vim.org/">Vim</a>, but the truth is that I’m having so much fun with it that it’s hard to stop and thus I’ve created two more plugins: <a href="https://github.com/gummesson/voutliner.vim">Voutliner</a> and <a href="https://github.com/gummesson/footnotes.vim">Footnotes</a>.</p>
+
+<h2 id="voutliner">Voutliner</h2>
+
+<p><em>Voutliner</em> is a simple outlining tool<sup id="fnref:20130216-1"><a href="#fn:20130216-1" class="footnote">1</a></sup>. I looked at both <a href="http://www.vim.org/scripts/script.php?script_id=3515">VimOutliner</a> and <a href="http://www.vim.org/scripts/script.php?script_id=517">TVO</a> but I felt that they were a bit too “heavy” for me. I wanted something simple that didn’t depend on too many different components. <em>Voutliner</em> is certainly not for everyone but it works perfectly for me. It basically built around a couple of regexes based on indentation that’s been linked with the default syntax highlighting. I did try it out on a couple of different colorschemes and it seems to work on most of them, which is good.</p>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>I like using footnotes but I hate having to manually enter the date for each and every one of them<sup id="fnref:20130216-2"><a href="#fn:20130216-2" class="footnote">2</a></sup>. At first I used a simple abbreviation to try to tackle the problem but I still had to move around too much for my liking. Now I just need to press <code>F7</code> and the date will get added to every footnote automatically. Like <em>Voutliner</em> I doubt that many people will use it, but yet again it’s extremely useful for me.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130216-1">
+      <p>And it’s a really bad name.<a href="#fnref:20130216-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130216-2">
+      <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/02/12/easy-session-for-vim" alt="Easy Session for Vim">
               Easy Session for Vim
             </a>
@@ -169,61 +206,6 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
     </li>
   </ol>
 </div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim">
-              Markdown preview for Vim
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on January 27, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/Vim" alt="Vim">Vim</a>
-          </p>
-        
-        <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
-
-<pre><code>function! PandocMarkdownPreview()
-  silent exec 'cd %:p:h'
-  silent exec 'pwd'
-  silent exec '!pandoc -o preview.html %'
-endfunction
-</code></pre>
-
-<p>It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It’s not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that’ll open the <code>preview.html</code> directly in the browser:</p>
-
-<pre><code>if has("win32")
-  silent exec '!start cmd /c preview.html'
-else
-  silent exec '!xdg-open preview.html'
-endif
-</code></pre>
-
-<p>One thing that’s worth being mentioned is that the <code>!xdg-open</code> part can be changed to <code>!open</code> and then you can also use it if you’re on a Mac.</p>
-
-<p>In the end the whole thing looks like this:</p>
-
-<pre><code>function! PandocMarkdownPreview()
-  silent exec 'cd %:p:h'
-  silent exec 'pwd'
-  silent exec '!pandoc -o preview.html %'
-  if has("win32")
-    silent exec '!start cmd /c preview.html'
-  else
-    silent exec '!xdg-open preview.html'
-  endif
-endfunction
-</code></pre>
-
-<p>And the mapping looks like this:</p>
-
-<pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
-</code></pre>
-
-<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
 
       </article><!-- .post -->
 
