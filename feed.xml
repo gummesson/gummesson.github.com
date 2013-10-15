@@ -7,7 +7,9 @@
             
               <item>
                 <title>Trying out Ghost</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://ghost.org/&quot;&gt;Ghost&lt;/a&gt; finally arrived yesterday and I was eager to try it out. The UI is really amazing and it seems like creating a theme for it can be done in minutes&lt;sup id=&quot;fnref:20131015-1&quot;&gt;&lt;a href=&quot;#fn:20131015-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I ran into some common errors so here’s a really condensed guide on how to get it up and running. This may not be the perfect thing to do if you’re actually planning on using it in production, but more so for just playing around with it.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update:&lt;/strong&gt; it seems like the pre-packaged release is now working for me, which is awesome!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ghost.org/&quot;&gt;Ghost&lt;/a&gt; finally arrived yesterday and I was eager to try it out. The UI is really amazing and it seems like creating a theme for it can be done in minutes&lt;sup id=&quot;fnref:20131015-1&quot;&gt;&lt;a href=&quot;#fn:20131015-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I ran into some common errors with the pre-packaged release so here’s a really condensed guide on how to get it up and running. This may not be the perfect thing to do if you’re actually planning on using it in production, but more so for just playing around with it.&lt;/p&gt;
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
 
