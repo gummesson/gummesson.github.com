@@ -74,6 +74,34 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/08/22/the-hassles-of-media-queries" alt="The hassles of media queries">
+              The hassles of media queries
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on August 22, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/CSS" alt="CSS">CSS</a>, <a href="/blog/tag/HTML" alt="HTML">HTML</a>
+          </p>
+        
+        <p>When I first set out to create this site, I knew that I wanted to make it responsive by adding a couple of media queries in my CSS. I never knew that it could become quite a tricky feat though. I tried and I tried, but for some reason I couldn’t get them to properly work. Then it hit me that I’d forgot to add this in the <code>&lt;head&gt;</code>:</p>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width"&gt;
+</code></pre>
+
+<p>Note to self: don’t be stupid. It’ll save you a lot of time.</p>
+
+<p>I also had some problems with my iPhone’s Retina display, but after some digging I found a “hack” that made it work properly so that the media queries look the same as on a regular browser:</p>
+
+<pre><code>(-webkit-min-device-pixel-ratio: 2)
+</code></pre>
+
+<p>To my defense I’m still pretty new to all of this, but still… I feel really dumb. Now they finally works and I’m totally happy, but I don’t know whether or not I should be scared of the fact that I don’t own an iPad… Either way, the site should now atleast look okay on an iPhone. I hope. I did try it out on an old HTC Wildfire too, and it looked suprisingly good. That was a nice suprise.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/08/21/win-7-ruby-devkit-and-jekyll" alt="Windows 7, Ruby, DevKit and Jekyll">
               Windows 7, Ruby, DevKit and Jekyll
             </a>

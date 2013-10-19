@@ -74,6 +74,59 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/09/20/servera" alt="Servera">
+              Servera
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on September 20, 2013 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/Node.js" alt="Node.js">Node.js</a>
+          </p>
+        
+        <p>After a few hours of hacking spreading out during these last couple of days I’m releasing yet another <a href="http://nodejs.org/">Node.js</a> thing called <a href="https://npmjs.org/package/servera">Servera</a><sup id="fnref:20130920-1"><a href="#fn:20130920-1" class="footnote">1</a></sup>. It’s a small app for managing and serving all your local static sites by configuring all your projects in a single <code>json</code> file. The idea is to map them by using this convention:</p>
+
+<pre><code>{
+  "myproject": {
+    "dir": "/home/USERNAME/Dev/myproject",
+    "port": 3000
+  },
+  "anotherproject": {
+    "dir": "C:/Users/USERNAME/Dev/anotherproject",
+    "port": 6000
+  }
+}
+</code></pre>
+
+<p>The only thing you need to do to launch the server is to run <code>servera myproject</code> and then go to <code>localhost:3000</code> (or whatever port you’ve specified) in your browser. You can also serve the current working directory by running <code>servera .</code> and you can list all your projects with <code>servera list</code>.</p>
+
+<p>It’s heavily inspired by <a href="https://npmjs.org/package/distra">distra</a>, although it’s a dumbed down version without the whole <code>/etc/hosts</code> configuration part<sup id="fnref:20130920-2"><a href="#fn:20130920-2" class="footnote">2</a></sup>. I’ve tested it on both Windows and Linux, and it should hopefully work on OS X too. </p>
+
+<p>It’s a pretty simple thing, but I feel that it could actually be useful.</p>
+
+<h2 id="under-the-hood">Under the hood</h2>
+
+<p><code>Servera</code> uses four additional modules: <a href="https://npmjs.org/package/fs-extra">fs-extra</a>, <a href="https://npmjs.org/package/connect">connect</a>, <a href="https://npmjs.org/package/colors">colors</a> and <a href="https://npmjs.org/package/commander">commander</a>. <code>fs-extra</code> is used for copying the sample configuration file to your home directory while <code>connect</code> is the main server. <code>colors</code> is used to colorize the output in the terminal and <code>commander</code> handles the argument parsing.</p>
+
+<p>It’s all pretty basic stuff, but together they work really well.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130920-1">
+      <p>Which is the swedish word for “serve”. I’m original like that.<a href="#fnref:20130920-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130920-2">
+      <p>I’m pretty sure that there’s no easy way of doing that on Windows without using brute force or some other vodoo.<a href="#fnref:20130920-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/09/14/plit-my-first-node-js-app" alt="plit: my first Node.js app">
               plit: my first Node.js app
             </a>
@@ -153,35 +206,6 @@
         <p>After a lot of of hesitation I finally upgraded <a href="http://jekyllrb.com/">Jekyll</a> to <code>1.1.2</code> from using the <code>0.12.1</code> version. Quite a lot has changed and the team is doing a great job with it. However,  my old <a href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings/"><code>SET LANG</code> hack</a> didn’t work. I tried using <a href="http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/">another hack</a> which involves using <code>chcp 65001</code> instead  but that didn’t quite work either. Whenever I tried to launch the default server <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html">WEBrick</a> it blew up. There were errors, errors everywhere. I wasn’t going to give up so I came up with another solution.</p>
 
 <p>I now use an external server while Jekyll just auto-generates the site. I use a small <a href="http://nodejs.org/">Node.js</a> web server app called <a href="#">nws</a> which I use all the time anyway. I also use <a href="http://gruntjs.com/">Grunt</a> for task automation (<a href="https://github.com/gummesson/ellengummesson/blob/master/Gruntfile.js">here’s the source code</a>). I also have a project called “<a href="https://github.com/gummesson/teeny-tiny-static-server">Teeny tiny static server</a>” which I created some months ago. It uses <a href="https://github.com/chneukirchen/rack">Rack</a>, <a href="https://github.com/jtrupiano/rack-rewrite">Rack-Rewrite</a> and <a href="https://github.com/macournoyer/thin">Thin</a> to create a fast prototype web server, which may be an alternative to using a Node.js based solution. It’s not perfect but it’s better than being stuck on an old version.</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/09/03/another-day-another-redesign" alt="Another day, another redesign">
-              Another day, another redesign
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on September  3, 2013 in <a href="/blog/tag/Design" alt="Design">Design</a>, <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Sass" alt="Sass">Sass</a>, <a href="/blog/tag/JavaScript" alt="JavaScript">JavaScript</a>
-          </p>
-        
-        <p>The time has come for me to yet again change the design of this website. This time I went nearly all in on using <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> as my CSS coding style of choice and utilizing <a href="http://necolas.github.io/normalize.css/">normalize.css</a> as the base for the overall element styling and vertical rhythm. I also use <a href="http://gruntjs.com/">Grunt</a> for all of my automation, including building and generating the actual site<sup id="fnref:20130903-1"><a href="#fn:20130903-1" class="footnote">1</a></sup>. I’ve replaced the jQuery code with pure JavaScript too<sup id="fnref:20130903-2"><a href="#fn:20130903-2" class="footnote">2</a></sup> and I threw together a nifty mobile navigation solution which I think works quite well.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130903-1">
-      <p>This not entirely by pure choice, since Jekyll hates my computer’s default encoding and thus is giving me all sorts of errors, but it works really well.<a href="#fnref:20130903-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130903-2">
-      <p>I actually did that a week or two ago but I never really got around to writing about it.<a href="#fnref:20130903-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- .post -->
 

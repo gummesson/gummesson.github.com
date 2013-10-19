@@ -74,6 +74,56 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/12/14/my-adventure-with-crunchbang" alt="My adventure with Crunchbang">
+              My adventure with Crunchbang
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on December 14, 2012 in <a href="/blog/tag/Tech" alt="Tech">Tech</a>, <a href="/blog/tag/Linux" alt="Linux">Linux</a>, <a href="/blog/tag/Crunchbang" alt="Crunchbang">Crunchbang</a>
+          </p>
+        
+        <p>Lately I’ve been thinking about installing a Linux distro on my thrusty but ailing netbook, a <em>Samsung NC10</em><sup id="fnref:20121214-1"><a href="#fn:20121214-1" class="footnote">1</a></sup>. After some intense research via Google and countless hours of Youtube videos I found one particular distro I really liked: <a href="http://crunchbang.org/">Crunchbang Linux</a>. It’s quite a minimal distro but highly functional and it also looked quite nice to my eyes. It’s based on <a href="http://www.debian.org/">Debian</a> which means that there’s a lot of apps for it and the support is generally good. I decided to download the current testing version, <a href="http://crunchbang.org/download/testing">Waldorf</a>, since I’m just going to use the netbook mainly for browsing and writing.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>I wrote the <code>iso</code> to a USB stick and played around with for a few minutes before I hit install. I was a bit worried that I’d completely break my computer but the installation went fine. It took about 10-15 minutes and then the system was up and running. I was also prepared for some tinkering with the settings and such but everything worked right out the box, even the brightness and volume controls. Color me impressed!</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>After the installation I decided to remove a couple of apps<sup id="fnref:20121214-2"><a href="#fn:20121214-2" class="footnote">2</a></sup> since I’m not going to use them anyway. With a couple of <code>sudo apt-get remove</code>, <code>sudo apt-get autoremove</code> and some fiddling with the <a href="http://openbox.org/">Openbox</a> menu it was done in a matter of minutes. The default web browser, <a href="http://www.geticeweasel.org/">Iceweasel</a>, wasn’t really for me so I replaced it with <a href="www.google.com/chrome/">Chrome</a>. I also change the default font in system montoring tool <a href="http://conky.sourceforge.net/">Conky</a> to a monospaced one. I’m probably going to change a few more things, but so far I’m happy with the default experience.</p>
+
+<h2 id="apps">Apps</h2>
+
+<p>While my goal is to keep the netbook as clean as possible there was one<sup id="fnref:20121214-3"><a href="#fn:20121214-3" class="footnote">3</a></sup> additional app that I just had to install: <a href="http://sourceforge.net/p/retext/home/ReText/">ReText</a>. It was the only real Markdown editor with syntax highlighting that I could find. My favorite distraction free editor <a href="http://gottcode.org/focuswriter/">FocusWriter</a> is available but since I want to keep my app count at a minimum I decided to only install ReText. I’ve heard that a Debian-compatible version of <a href="http://uberwriter.wolfvollprecht.de/">UberWriter</a> is in the works so I might switch to that once it’s out.</p>
+
+<p><img src="/images/blog/2012-12-14-crunchbang-waldorf.png" alt="Crunchbang Linux (Waldorf)" /></p>
+
+<h2 id="closing-thoughts">Closing thoughts</h2>
+
+<p>In short I really love this distro. It’s fast, light on the resources, highly customizable but at the same just works. The battery life has gone down from around 5 hours to 4.5 hours, which isn’t that bad at all. In fact I’m really impressed by that too. I wholeheartedly recommend it to people who want to make the jump to Linux but don’t want to use something more resource-heavy, like the current main version of <a href="http://www.ubuntu.com/">Ubuntu</a>, while still maintaining an all-around functionality for most users.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20121214-1">
+      <p>The system specification is as followed: 1.6 GHz, 1 GB RAM, 160 GB HDD with Windows XP (previously) installed.<a href="#fnref:20121214-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20121214-2">
+      <p><a href="http://www.abisource.com/">Abiword</a>, <a href="http://projects.gnome.org/gnumeric/">Gnumeric</a>, <a href="http://goodies.xfce.org/projects/applications/xfburn">xfburn</a> and a few others.<a href="#fnref:20121214-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20121214-3">
+      <p>I also installed <a href="http://dropbox.com/">Dropbox</a> but that’s pretty much a given thing. <a href="#fnref:20121214-3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/12/11/robocopy" alt="Robocop(y)">
               Robocop(y)
             </a>
@@ -210,56 +260,6 @@
   <ol>
     <li id="fn:20121202-1">
       <p><strong>Spoiler alert:</strong> mostly Apple products, although both Linux and Windows users show up from time to time. <a href="#fnref:20121202-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/11/28/small-steps-into-ruby" alt="Small steps into Ruby">
-              Small steps into Ruby
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on November 28, 2012 in <a href="/blog/tag/Code" alt="Code">Code</a>, <a href="/blog/tag/Ruby" alt="Ruby">Ruby</a>
-          </p>
-        
-        <p>I’ve always wanted to learn a real programming language. The few times in the past that I’ve tried have all been fruitless though. My brain just doesn’t work when there’s too many complex structures going on at once. Even though I can understand the logic behind certain parts it just won’t stick, which is a shame. One of the reasons I think I like writing HTML and and especially CSS is that the syntax is very visual and easy to read. You write <code>background-color: red;</code> and what do you know, the background suddenly is red. With those two you don’t have write a short novel just to get the command line to print a simple <em>“Hello World”</em>.</p>
-
-<p>Since this site is built with Jekyll I decided to really start learning <a href="http://www.ruby-lang.org/">Ruby</a> and I’m glad I did. The syntax is so simple that it amazes me. Over the last few days I’ve experimented with it a lot and even released a few simple scripts on <a href="https://github.com/gummesson">GitHub</a>. One of those was inspired by a post I saw yesterday on 
-<a href="http://lifehacker.com/5963597/why-you-should-be-using-an-app-launcher-and-how-to-make-it-do-anythingyou-want">Lifehacker</a>. The article mentions how you can use <a href="http://launchy.net/">Launchy</a> to append text to a text file, but I couldn’t get the <code>bat</code> script they recommended to properly work so I decided to just make a <a href="https://github.com/gummesson/append-text">Ruby version of it</a>. The script looks like this without comments:</p>
-
-<pre><code>require 'yaml'
-
-config = YAML.load_file("config.yml")
-txt_file = config["txt_file"]
-
-item = ARGV.join(" ")
-
-File.open(txt_file,) { |file| file.puts(item) }
-</code></pre>
-
-<p>Right now it consists of just five lines of code. I could’ve even made it even simpler by leaving out the use of YAML<sup id="fnref:20121128-1"><a href="#fn:20121128-1" class="footnote">1</a></sup> for the text file configuration<sup id="fnref:20121128-2"><a href="#fn:20121128-2" class="footnote">2</a></sup>. I really like having something like that though since you don’t have to change the actual source code if you later decide to use another text file. Now I just need to launch Launchy, type <code>add</code>, <code>TAB</code> and whatever I want to append to the file and just hit <code>Enter</code> to add something to my spark file, which is even faster than launching the actually text file with <a href="http://www.autohotkey.com/">AutoHotKey</a> like I mentioned in the previous blog post.</p>
-
-<h2 id="resources">Resources</h2>
-
-<p>I found the book <a href="http://www.humblelittlerubybook.com/book/">Mr. Neighborly’s Humble Little Ruby Book</a> extremely good. It explains a lot of stuff without getting too technically complex and with a perfect mix of humor. Another book I also found helpful and easy to understand was <a href="http://ruby.bastardsbook.com/">The Bastards Book of Ruby</a>. I’ve also seen <a href="http://ruby.learncodethehardway.org/book/">Learn Ruby The Hard Way</a> and <a href="http://pine.fm/LearnToProgram/">Learn To Program</a> being mentioned quite a few times but so far I haven’t had time to check them out. Another tip is that you shouldn’t underestimate the power of Google and a thriving community. <a href="http://stackoverflow.com/questions/tagged/ruby">Stack Overflow</a> is filled with a lot of answers for literally every single question you might have.</p>
-
-<p>I still have a long way to go, but so far it’s been a really fun ride.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20121128-1">
-      <p><a href="http://en.wikipedia.org/wiki/Yaml">YAML Ain’t Markup Language</a>.<a href="#fnref:20121128-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20121128-2">
-      <p>The <code>config.yml</code> file contains a single line, <code>txt_file:</code>, where you put the path to the text file in question. <a href="#fnref:20121128-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
