@@ -6,6 +6,68 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Geno: a small and opinionated static site generator</title>
+                <description>&lt;p&gt;Another week, another project, and this time it’s yet another static site generator.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gummesson/geno&quot;&gt;Geno&lt;/a&gt; is a small and opinionated static site generator for easily generating a simple site for your &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt; projects based on the project’s &lt;code&gt;package.json&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&quot;opinionated&quot;&gt;Opinionated?&lt;/h2&gt;
+
+&lt;p&gt;Well, it is pretty customizable but the defaults are tailored to my needs&lt;sup id=&quot;fnref:20131026-1&quot;&gt;&lt;a href=&quot;#fn:20131026-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Like I stated in the project’s README file, I find that hand crafting a new site for each project can be quite tedious. I’m also not a designer.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;At the most basic level, Geno needs these fields in the &lt;code&gt;package.json&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &quot;name&quot;: &quot;module&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;description&quot;: &quot;An example module.&quot;,
+  &quot;license&quot;: &quot;MIT&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That’s it! You can also add a &lt;code&gt;geno.json&lt;/code&gt; file at the root of your project to enable some extra features. Check out the &lt;a href=&quot;https://github.com/gummesson/geno&quot;&gt;GitHub repository&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-anatomy-of-a-nodejs-module&quot;&gt;The anatomy of a Node.js module&lt;/h2&gt;
+
+&lt;p&gt;During the creation of it I decided to document the process behind it, Even though it wasn’t a particular big or compilicated project. I though that it could be interesting or atleast provide some kind of value for someone&lt;sup id=&quot;fnref:20131026-2&quot;&gt;&lt;a href=&quot;#fn:20131026-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-idea&quot;&gt;The idea&lt;/h3&gt;
+
+&lt;p&gt;The initial idea was that I simply wanted to create a project site for &lt;a href=&quot;https://github.com/gummesson/partially&quot;&gt;Partially&lt;/a&gt;. After some tinkering it hit me that it would be pretty cool to use the &lt;code&gt;package.json&lt;/code&gt; file as a base for a website and off I went. In the end it’s a pretty simple idea: read the configuration file(s), add the data to the template and spit out the compiled site.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-build&quot;&gt;The build&lt;/h3&gt;
+
+&lt;p&gt;I actually started with the design first&lt;sup id=&quot;fnref:20131026-3&quot;&gt;&lt;a href=&quot;#fn:20131026-3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, since I’d already begun to work on it. I then went on to pick a templating engine. There’s a plethora of them available and I played around with both &lt;a href=&quot;https://github.com/olado/doT&quot;&gt;doT.js&lt;/a&gt; and &lt;a href=&quot;https://github.com/visionmedia/ejs&quot;&gt;EJS&lt;/a&gt; before I settled on &lt;a href=&quot;https://github.com/jlongster/nunjucks&quot;&gt;Nunjucks&lt;/a&gt;. It’s fairly lightweight, fast and has the perfect logic for making the kind of template that I wanted. I also needed some extra file system functions and &lt;a href=&quot;https://github.com/jprichardson/node-fs-extra&quot;&gt;fs-extra&lt;/a&gt; came to the rescue. It makes copying files and creating folder paths a breeze.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-features&quot;&gt;The features&lt;/h3&gt;
+
+&lt;p&gt;Although I wanted to keep it as simple as possible I realized that it would be nice to have some extra features, so I decided to add the option to use the &lt;code&gt;geno.json&lt;/code&gt; file. This meant that I can add some additional information to a project’s site without too much of a hassle.&lt;/p&gt;
+
+&lt;p&gt;If you want you can take a look at &lt;a href=&quot;http://ellengummesson.com/geno/&quot;&gt;Geno’s own project site&lt;/a&gt; to see how it turned out. All in all I’m pretty happy with it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20131026-1&quot;&gt;
+      &lt;p&gt;And my laziness.&lt;a href=&quot;#fnref:20131026-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20131026-2&quot;&gt;
+      &lt;p&gt;I hope…&lt;a href=&quot;#fnref:20131026-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:20131026-3&quot;&gt;
+      &lt;p&gt;I call it “Sass-driven development”. I’m not very good at it.&lt;a href=&quot;#fnref:20131026-3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>October 26, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/10/26/geno-a-small-and-opinionated-static-site-generator</link>
+              </item>
+            
+              <item>
                 <title>Partially: use partials in your markup</title>
                 <description>&lt;p&gt;I’ve always been jealous of the plethora of build tools available on OS X, in particular &lt;a href=&quot;http://hammerformac.com/&quot;&gt;Hammer for Mac&lt;/a&gt; and it’s excellent &lt;code&gt;@include&lt;/code&gt; feature. Rather than buying a new computer I decided to instead create yet another &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; project and build it myself. I named it &lt;a href=&quot;https://github.com/gummesson/partially&quot;&gt;Partially&lt;/a&gt;&lt;sup id=&quot;fnref:20131019-1&quot;&gt;&lt;a href=&quot;#fn:20131019-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It enables you to do this:&lt;/p&gt;
 
@@ -117,34 +179,6 @@
 </description>
                 <published>October  4, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/10/04/ferro-the-keyboard-interface-to-chrome</link>
-              </item>
-            
-              <item>
-                <title>A few quick tips for working with npm on Windows</title>
-                <description>&lt;p&gt;A few days ago I was having trouble with the executable file for &lt;a href=&quot;https://github.com/gummesson/servera&quot;&gt;Severa&lt;/a&gt;. I couldn’t get it to run on my Linux box and after some troubleshooting I realized what the culprit was. It was saved as a &lt;code&gt;dos&lt;/code&gt; file. That’s highly annoying when you’re trying to make your code cross-platform. After some digging around I found a few solutions that seems to work:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use Unix-style line endings:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code&gt;set fileformat=unix&lt;/code&gt; in your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Set the &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt; configuration option &lt;code&gt;auto.clrf&lt;/code&gt; to &lt;code&gt;input&lt;/code&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code&gt;git config --global core.autoclrf input&lt;/code&gt; &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Update the Git index so that the executable file always has the right permissions:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code&gt;git update-index --chmod=+x &amp;lt;path/to/file&amp;gt;&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That’s it. This’ll hopefully make my code a little less prone to errors.&lt;/p&gt;
-</description>
-                <published>September 24, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/09/24/a-few-quick-tips-for-working-with-npm-on-windows</link>
               </item>
             
     </channel>
