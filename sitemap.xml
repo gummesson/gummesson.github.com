@@ -537,6 +537,12 @@
         <lastmod>2013-10-26T15:29:16+02:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/11/01/chunks-a-super-duper-teeny-tiny-functional-library-for-javascript
+        </loc>
+        <lastmod>2013-11-01T16:11:41+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2013-09-21T14:33:08+02:00</lastmod>
     </url>
@@ -550,7 +556,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2013-10-26T15:32:40+02:00</lastmod>
+        <lastmod>2013-11-01T16:11:41+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/ack.html</loc>

@@ -74,6 +74,22 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="http://hackerpublicradio.org/eps.php?id=1197" alt="hpr1197 :: What I do with bash scripts">
+              hpr1197 :: What I do with bash scripts <span class="post__title--external">&rarr;</span>
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on August 18, 2013 in <a href="/blog/tag/podcast" alt="Podcast">Podcast</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/bash" alt="Bash">Bash</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/08/18/hpr1197-what-i-do-with-bash-scripts" alt="Permalink – hpr1197 :: What I do with bash scripts">&infin;</a>
+          </p>
+        
+        <p>I recently revisited this episode from <a href="http://hackerpublicradio.org/">Hacker Public Radio</a> that <a href="http://jonathankulp.org/">Jonathan Kulp</a> did and it may very well be one of the coolest episodes I’ve ever heard.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/08/10/installing-dwm-on-crunchbang-linux" alt="Installing dwm on Crunchbang Linux">
               Installing dwm on Crunchbang Linux
             </a>
@@ -322,39 +338,6 @@ command! -nargs=? Note call notes#New(&lt;q-args&gt;)
     </li>
   </ol>
 </div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/05/20/a-handy-function-for-going-to-the-root-directory-of-a-project-in-vim" alt="A handy function for going to the root directory of a project in Vim">
-              A handy function for going to the root directory of a project in Vim
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on May 20, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a>
-          </p>
-        
-        <p>Here’s a handy function I came up with after being tired of using <code>:cd ../</code> like a madman when I was deep down at the bottom of a project’s folder structure:</p>
-
-<pre><code>function! GoToRootDir()
-  if isdirectory(".git")|| filereadable("Rakefile") || filereadable("Gruntfile.js")
-    pwd
-  else
-    silent! exec 'cd ../'
-    call GoToRootDir()
-  endif
-endfunction
-</code></pre>
-
-<p>It’s a not-so-fancy way of basically telling Vim to keep going up in the directory structure until it finds either a <code>.git</code> folder or a specific file. When it finds the root it’ll also print out the path, which I added so that you can actually see that you’re in the root of the project. You can of course change <code>.git</code>, <code>Rakefile</code> and <code>Gruntfile.js</code> to something completely different, as long as it’s a file that you commonly have in your projects. I also added a more convenient mapping for it in my <code>.vimrc</code>:</p>
-
-<pre><code>command! -nargs=0 Root call GoToRootDir()
-</code></pre>
-
-<p>This step may not be necessary, but by mapping something like <code>:call GoToRootDir</code> to just <code>:Root</code> means that you have to type fewer keystrokes.</p>
 
       </article><!-- .post -->
 

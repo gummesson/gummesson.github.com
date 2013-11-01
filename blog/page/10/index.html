@@ -74,6 +74,52 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings" alt="Fixing Jekyll's encoding shenanings">
+              Fixing Jekyll's encoding shenanings
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on March  3, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a>
+          </p>
+        
+        <p>After installing the 0.12.1 version of <a href="http://jekyllrb.com/">Jekyll</a> I started to get an annoying error that the encoding was wrong. I’m really picky about saving all my files as <code>UTF-8</code>, so I couldn’t for the life of me figuring out why it all of a sudden threw that kind of error. I even reinstalled 0.12.0 and sure enough, that version worked without a problem. The solution is to set the default language and encoding before running Jekyll, ie. <code>set LANG=en_EN.UTF-8</code> for Windows or <code>export LANG=en_EN.UTF-8</code><sup id="fnref:20130303-1"><a href="#fn:20130303-1" class="footnote">1</a></sup> for Unix. Since I’m a lazy person I of course implemented it in my <code>Rakefile</code>, similar to this:</p>
+
+<pre><code>require 'rbconfig'
+
+LANG = en_EN.UTF-8
+
+if RbConfig::CONFIG["host_os"] =~ /mswin|mingw/
+  SET = "set"
+else
+  SET = "export"
+end
+
+task :build do
+  system "#{SET} LANG=#{LANG} &amp;&amp; jekyll"
+end
+</code></pre>
+
+<p>The <code>RbConfig</code> part is actually a neat trick I found a couple of weeks ago. It apparently works better than using <code>RUBY_PLATFORM</code> since it picks up the actual OS rather than the Ruby platform.<sup id="fnref:20130303-2"><a href="#fn:20130303-2" class="footnote">2</a></sup> I’m not sure that the <code>require</code> part is really necessary but it doesn’t hurt either. You can of course just create an alias too if you’re only using Unix, ie: <code>alias jekyll="export LANG=en_EN.UTF-8 &amp;&amp; jekyll"</code> or something like that.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130303-1">
+      <p>I actually set my language to <code>sv_SV.UTF-8</code>, but I figured that using the english version in an example is better.<a href="#fnref:20130303-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130303-2">
+      <p>Using <code>RUBY_PLATFORM</code> when you’re working with other Ruby implementations such as JRuby doesn’t quite work, if I understand it correctly.<a href="#fnref:20130303-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/02/28/webrick-and-cygwin" alt="WEBrick and Cygwin">
               WEBrick and Cygwin
             </a>
@@ -206,24 +252,6 @@
     </li>
   </ol>
 </div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/02/08/fetch" alt="Fetch">
-              Fetch
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on February  8, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ruby" alt="Ruby">Ruby</a>
-          </p>
-        
-        <p>I’ve released yet another one of my <em>Mostly Useless™</em> projects, <a href="https://github.com/gummesson/fetch">Fetch</a>, which let’s you grab a couple of web development resources straight from the command line. Package managers seem to be something that pops up every once in a while. Among them there’s <a href="http://mxcl.github.com/homebrew/">homebrew</a>, <a href="http://twitter.github.com/bower/">Bower</a>, <a href="http://yeoman.io/">Yeoman</a> and of course the good old <a href="http://en.wikipedia.org/wiki/Advanced_Packaging_Tool">apt-get</a>, which I use from time to time. They’re lovely tools but as I’m nothing more than a hobbyist they’re a bit overkill for me, so I took a run at creating something a lot more simpler. I wouldn’t really call it a package manager but more of a component catcher though. I’m thinking of implementing <a href="http://www.json.org/">JSON</a> into it instead of using <a href="http://www.yaml.org/">YAML</a>, but we’ll see how that goes. One thing I really need to do is to step up my game and actually start to learn more. I feel that I’ve been staying in the same spot knowledge-wise for quite some time now and it’s time to start to progress again. But I digress.</p>
-
-<p>One a side note, I finally figured out why I couldn’t get my <a href="http://www.ruby-lang.org/">Ruby</a> projects to run under <a href="http://crunchbang.org/">Crunchbang Linux</a>. I’d literally forgotten the “whole shebang”, ie: <code>#!/usr/bin/env ruby</code>, at the start. <strong>Head, prepare to meet desk</strong>.</p>
 
       </article><!-- .post -->
 

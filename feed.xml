@@ -6,6 +6,18 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Chunks: a super duper, teeny tiny functional library for JavaScript</title>
+                <description>&lt;p&gt;Lately I’ve been getting into a more functional approach to programming and I decided to write a simple library for JavaScript, which I named “&lt;a href=&quot;https://github.com/gummesson/chunks&quot;&gt;Chunks&lt;/a&gt;”. I know that there’s a plethora of them available, but it’s always fun to learn by doing. It currently consists of 18 functions that I consider the most commonly used and helpful ones. I might add a couple of more someday but my main goal is to keep it lightweight. As of right now it’s around 2 kb minified and about 0.42 kb minified and gzipped.&lt;/p&gt;
+
+&lt;p&gt;Oh, and here’s a fun aside: the library’s currently 345 lines long (with many comments) while the tests take up a total of 504 lines (with barely any comments).&lt;/p&gt;
+
+&lt;p&gt;Happy (functional) programming!&lt;/p&gt;
+</description>
+                <published>November  1, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/11/01/chunks-a-super-duper-teeny-tiny-functional-library-for-javascript</link>
+              </item>
+            
+              <item>
                 <title>Geno: a small and opinionated static site generator</title>
                 <description>&lt;p&gt;Another week, another project, and this time it’s yet another static site generator.&lt;/p&gt;
 
@@ -167,18 +179,6 @@
 </description>
                 <published>October  7, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/10/07/codely</link>
-              </item>
-            
-              <item>
-                <title>Ferro – The keyboard interface to Chrome</title>
-                <description>&lt;blockquote&gt;
-  &lt;p&gt;Ferro is a Google Chrome extension that functions similarly to application launchers like Quicksilver, Launchy, and GNOME Do, but it can do much more than just open apps. Using only your keyboard, you can quickly open pages in your history or bookmarks, open extension options pages, and save your current tabs for opening later. You can also perform many other commands, such as deleting a bookmark, disabling an extension, and pinning a tab.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Pretty cool!&lt;/p&gt;
-</description>
-                <published>October  4, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/10/04/ferro-the-keyboard-interface-to-chrome</link>
               </item>
             
     </channel>
