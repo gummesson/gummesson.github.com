@@ -74,6 +74,46 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app" alt="Lo and behold, I've launched an web app!">
+              Lo and behold, I've launched an web app!
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on January 10, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a>
+          </p>
+        
+        <p>The day before yesterday I launched my first “web app”, <a href="http://kramit.ellengummesson.com/">Kramit!</a>. Like about half a million people on the internet with some kind of web development interest I created yet another <a href="http://daringfireball.net/projects/markdown/">Markdown</a> preview app and with the wonderful micro web framework <a href="http://www.sinatrarb.com/">Sinatra</a>. It’s nothing unique but I’m quite proud nonetheless. I haven’t actually seen that many that uses <a href="http://kramdown.rubyforge.org/">Kramdown</a> as it’s default parser, so I guess that that aspect is somewhat pretty unique<sup id="fnref:20130110-1"><a href="#fn:20130110-1" class="footnote">1</a></sup>.</p>
+
+<h2 id="more-minimum-than-an-mvp">More minimum than an MVP</h2>
+
+<p><em>Kramit!</em> is at it’s core the definition of an MVP<sup id="fnref:20130110-2"><a href="#fn:20130110-2" class="footnote">2</a></sup>. The whole thing consists of just 33 lines of Sinatra code, 61 lines of HTML for the views (ie. the layout) and 243 lines of CSS for both the app itself and the preview. A total of 337 lines. That’s nothing! I’m quite amazed that Sinatra makes me able to do so much with barely any code at all. It literally took me just a few hours to go from idea to launch and the hard part wasn’t actually writing the code but rather designing it.<sup id="fnref:20130110-3"><a href="#fn:20130110-3" class="footnote">3</a></sup></p>
+
+<h2 id="so-whats-next">So, what’s next?</h2>
+
+<p>First of all I think I’m continue to play around with Sinatra and the Ruby language itself a bit more and then maybe look at <a href="http://rubyonrails.org/">Ruby on Rails</a>. It’s much more advanced and kind of plays on a whole other field than Sinatra, but it would be fun to learn.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130110-1">
+      <p>I like it because it has <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a> features like footnotes for examples (this footnote became very meta by the way).<a href="#fnref:20130110-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130110-2">
+      <p><a href="http://en.wikipedia.org/wiki/Minimum_viable_product">Minimum viable product</a>.<a href="#fnref:20130110-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130110-3">
+      <p>I would called myself challenged in that department. My basic design process is “make something up, strip away all the things that I though was going to look good but didn’t, look it at it again and then remove some more”.<a href="#fnref:20130110-3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://smalify.net/" alt="Smalify – minification on the fly">
               Smalify – minification on the fly <span class="post__title--external">&rarr;</span>
             </a>
@@ -207,29 +247,6 @@
     </li>
   </ol>
 </div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="http://rubygems.org/gems/jekyll" alt="Jekyll 0.12.0">
-              Jekyll 0.12.0 <span class="post__title--external">&rarr;</span>
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on December 23, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a> <a class="post__meta--permalink  link--hidden" href="/blog/2012/12/23/jekyll-0-12-0" alt="Permalink – Jekyll 0.12.0">&infin;</a>
-          </p>
-        
-        <p><a href="http://jekyllrb.com/">Jekyll</a>, which this website is built with, just got a new release with a ton of minor enhancements and bug fixes after nearly a year of silence. It’s nice to know that the development will continue since I think that Jekyll is pretty awesome. I haven’t had time to play around with it a whole lot but the nicest new feature that I’ve stumble upon up until this point is in my opinion the ability to specify the path to your pagination pages. </p>
-
-<p>I previously had to use a quite ugly hack that involved copying and changing the source code itself and place it in my <code>_plugins</code> folder. Now the only thing that I had to do was to add the below line in my <code>_config.yml</code> file:</p>
-
-<pre><code>paginate_path: blog/page/:num
-</code></pre>
-
-<p>It has the same functionality as my own fiddling but it’s a hell of a lot easier than having to change the code directly.</p>
 
       </article><!-- .post -->
 

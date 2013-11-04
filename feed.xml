@@ -6,6 +6,26 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>js.lua: a fun little experiment</title>
+                <description>&lt;p&gt;I recently had a few hours to kill and I decided to try out a new language, &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;. In short, it’s a fun little language&lt;sup id=&quot;fnref:20131104-1&quot;&gt;&lt;a href=&quot;#fn:20131104-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and it’s kind of a cross between JavaScript and Ruby, which I really like. I threw together a little library with JavaScript-like array functions which I named &lt;a href=&quot;https://github.com/gummesson/js.lua&quot;&gt;js.lua&lt;/a&gt;. A really bad name, but I couldn’t really think of anything else.&lt;/p&gt;
+
+&lt;p&gt;Setting everything up was a bit of a pain since I wanted to use &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt; and the &lt;a href=&quot;http://olivinelabs.com/busted/&quot;&gt;Busted&lt;/a&gt; module for testing. &lt;a href=&quot;http://www.thijsschreijer.nl/blog/?p=772&quot;&gt;This guide&lt;/a&gt; was the &lt;em&gt;only&lt;/em&gt; one I could find and thankfully it worked. Working with JavaScript and &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; has sure made me spoiled since everything’s just a simple Google search away!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20131104-1&quot;&gt;
+      &lt;p&gt;Literally. The source code’s only around 20 000 lines long. See &lt;a href=&quot;http://www.lua.org/about.html&quot;&gt;“Lua is small”&lt;/a&gt;.&lt;a href=&quot;#fnref:20131104-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>November  4, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/11/04/js-lua-a-fun-experiment</link>
+              </item>
+            
+              <item>
                 <title>Chunks: a super duper, teeny tiny functional library for JavaScript</title>
                 <description>&lt;p&gt;Lately I’ve been getting into a more functional approach to programming and I decided to write a simple library for JavaScript, which I named “&lt;a href=&quot;https://github.com/gummesson/chunks&quot;&gt;Chunks&lt;/a&gt;”. I know that there’s a plethora of them available, but it’s always fun to learn by doing. It currently consists of 18 functions that I consider the most commonly used and helpful ones. I might add a couple of more someday but my main goal is to keep it lightweight. As of right now it’s around 2 kb minified and about 0.42 kb minified and gzipped.&lt;/p&gt;
 
@@ -146,39 +166,6 @@
 </description>
                 <published>October 15, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/10/15/trying-out-ghost</link>
-              </item>
-            
-              <item>
-                <title>Codely</title>
-                <description>&lt;p&gt;Earlier today I released a simple project I hacked together this past weekend: &lt;a href=&quot;https://github.com/gummesson/codely&quot;&gt;Codely&lt;/a&gt;. I’ve wanted to try out &lt;a href=&quot;http://codemirror.net/&quot;&gt;CodeMirror&lt;/a&gt; for a long time but couldn’t really find a reason to use it until a couple of days ago. I love the Vim mode even though I can’t seem to get &lt;code&gt;Esc&lt;/code&gt; key to work in it… But I digress. It was fun to try out the &lt;a href=&quot;http://www.w3.org/TR/2013/WD-notifications-20130912/&quot;&gt;Notification&lt;/a&gt; API too. It’s amazing what you can do with a web browser these days.&lt;/p&gt;
-
-&lt;h2 id=&quot;keyboard-shortcuts&quot;&gt;Keyboard shortcuts&lt;/h2&gt;
-
-&lt;p&gt;Besides the normal keyboard shortcuts you would use in Vim or Emacs mode (or with &lt;a href=&quot;https://github.com/emmetio/codemirror&quot;&gt;Emmet&lt;/a&gt; plugin) I also added a few additional shortcuts:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Keys&lt;/th&gt;
-      &lt;th&gt;Action&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;F10&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Save the content&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;F11&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Toggle fullscreen mode&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;I might add some kind of help dialog later on, but we’ll see.&lt;/p&gt;
-</description>
-                <published>October  7, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/10/07/codely</link>
               </item>
             
     </channel>
