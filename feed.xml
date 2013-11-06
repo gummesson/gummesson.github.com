@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>file.lua: the experiment continues</title>
+                <description>&lt;p&gt;I’m hanging on to my experiment with &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt; and a few minutes ago I open sourced yet another small library with yet another unimaginative name: &lt;a href=&quot;https://github.com/gummesson/file.lua&quot;&gt;file.lua&lt;/a&gt;. It basically just a few helper functions for dealing with files. I’m still finding it to be a fun language, which feels pretty nice! I’m still on the fence about whether or not I should release my projects on &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt;, since they feel pretty insignificant compared to some on the projects on there. We’ll see, I guess.&lt;/p&gt;
+</description>
+                <published>November  6, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/11/06/file-lua-the-experiment-continues</link>
+              </item>
+            
+              <item>
                 <title>js.lua: a fun little experiment</title>
                 <description>&lt;p&gt;I recently had a few hours to kill and I decided to try out a new language, &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;. In short, it’s a fun little language&lt;sup id=&quot;fnref:20131104-1&quot;&gt;&lt;a href=&quot;#fn:20131104-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and it’s kind of a cross between JavaScript and Ruby, which I really like. I threw together a little library with JavaScript-like array functions which I named &lt;a href=&quot;https://github.com/gummesson/js.lua&quot;&gt;js.lua&lt;/a&gt;. A really bad name, but I couldn’t really think of anything else.&lt;/p&gt;
 
@@ -122,50 +130,6 @@
 </description>
                 <published>October 19, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/10/19/partially-use-partials-in-your-markup</link>
-              </item>
-            
-              <item>
-                <title>Trying out Ghost</title>
-                <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update:&lt;/strong&gt; it seems like the pre-packaged release is now working for me, which is awesome!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://ghost.org/&quot;&gt;Ghost&lt;/a&gt; finally arrived yesterday and I was eager to try it out. The UI is really amazing and it seems like creating a theme for it can be done in minutes&lt;sup id=&quot;fnref:20131015-1&quot;&gt;&lt;a href=&quot;#fn:20131015-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I ran into some common errors with the pre-packaged release so here’s a really condensed guide on how to get it up and running. This may not be the perfect thing to do if you’re actually planning on using it in production, but more so for just playing around with it.&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-
-&lt;p&gt;The default database used for Ghost is &lt;a href=&quot;http://www.sqlite.org/&quot;&gt;SQLite3&lt;/a&gt;, so make sure that you have that installed. Don’t worry, &lt;a href=&quot;http://mislav.uniqpath.com/rails/install-sqlite3/&quot;&gt;it’s extremely easy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;installing-ghost&quot;&gt;Installing Ghost&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Clone the repository.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;git submodule update --init&lt;/code&gt;&lt;sup id=&quot;fnref:20131015-2&quot;&gt;&lt;a href=&quot;#fn:20131015-2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. This will install the default theme.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;npm install -g grunt-cli&lt;/code&gt;. This will install &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;&lt;sup id=&quot;fnref:20131015-3&quot;&gt;&lt;a href=&quot;#fn:20131015-3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;npm install&lt;/code&gt;. This installs all the dependencies.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;gem install bourbon&lt;/code&gt;. This will install the Sass mixin library &lt;a href=&quot;http://bourbon.io/&quot;&gt;Bourbon&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;grunt init&lt;/code&gt;. This will compile the stylesheet and templates.&lt;/li&gt;
-  &lt;li&gt;Go to &lt;code&gt;localhost:2368/ghost&lt;/code&gt; and sign up.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As you can see it’s not that hard. Now go make a theme or something!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20131015-1&quot;&gt;
-      &lt;p&gt;If you have a design in mind.&lt;a href=&quot;#fnref:20131015-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20131015-2&quot;&gt;
-      &lt;p&gt;If this doesn’t work (SSH can be a quite the hassle on Windows) just clone the &lt;a href=&quot;https://github.com/TryGhost/Casper&quot;&gt;Casper&lt;/a&gt; theme into the &lt;code&gt;content/themes&lt;/code&gt; folder. Make sure that you rename the folder from &lt;code&gt;Casper&lt;/code&gt; to &lt;code&gt;casper&lt;/code&gt;.&lt;a href=&quot;#fnref:20131015-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:20131015-3&quot;&gt;
-      &lt;p&gt;Which I recommend having anyway.&lt;a href=&quot;#fnref:20131015-3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>October 15, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/10/15/trying-out-ghost</link>
               </item>
             
     </channel>

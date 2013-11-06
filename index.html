@@ -74,6 +74,22 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/11/06/file-lua-the-experiment-continues" alt="file.lua: the experiment continues">
+              file.lua: the experiment continues
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November  6, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a>
+          </p>
+        
+        <p>I’m hanging on to my experiment with <a href="http://www.lua.org/">Lua</a> and a few minutes ago I open sourced yet another small library with yet another unimaginative name: <a href="https://github.com/gummesson/file.lua">file.lua</a>. It basically just a few helper functions for dealing with files. I’m still finding it to be a fun language, which feels pretty nice! I’m still on the fence about whether or not I should release my projects on <a href="http://luarocks.org/">LuaRocks</a>, since they feel pretty insignificant compared to some on the projects on there. We’ll see, I guess.</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/11/04/js-lua-a-fun-experiment" alt="js.lua: a fun little experiment">
               js.lua: a fun little experiment
             </a>
@@ -215,58 +231,6 @@
   <ol>
     <li id="fn:20131019-1">
       <p>Of course!<a href="#fnref:20131019-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/10/15/trying-out-ghost" alt="Trying out Ghost">
-              Trying out Ghost
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on October 15, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ghost" alt="Ghost">Ghost</a>
-          </p>
-        
-        <p><em><strong>Update:</strong> it seems like the pre-packaged release is now working for me, which is awesome!</em></p>
-
-<p><a href="http://ghost.org/">Ghost</a> finally arrived yesterday and I was eager to try it out. The UI is really amazing and it seems like creating a theme for it can be done in minutes<sup id="fnref:20131015-1"><a href="#fn:20131015-1" class="footnote">1</a></sup>. I ran into some common errors with the pre-packaged release so here’s a really condensed guide on how to get it up and running. This may not be the perfect thing to do if you’re actually planning on using it in production, but more so for just playing around with it.</p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>The default database used for Ghost is <a href="http://www.sqlite.org/">SQLite3</a>, so make sure that you have that installed. Don’t worry, <a href="http://mislav.uniqpath.com/rails/install-sqlite3/">it’s extremely easy</a>.</p>
-
-<h2 id="installing-ghost">Installing Ghost</h2>
-
-<ol>
-  <li>Clone the repository.</li>
-  <li>Run <code>git submodule update --init</code><sup id="fnref:20131015-2"><a href="#fn:20131015-2" class="footnote">2</a></sup>. This will install the default theme.</li>
-  <li>Run <code>npm install -g grunt-cli</code>. This will install <a href="http://gruntjs.com/">Grunt</a><sup id="fnref:20131015-3"><a href="#fn:20131015-3" class="footnote">3</a></sup>.</li>
-  <li>Run <code>npm install</code>. This installs all the dependencies.</li>
-  <li>Run <code>gem install bourbon</code>. This will install the Sass mixin library <a href="http://bourbon.io/">Bourbon</a>.</li>
-  <li>Run <code>grunt init</code>. This will compile the stylesheet and templates.</li>
-  <li>Go to <code>localhost:2368/ghost</code> and sign up.</li>
-</ol>
-
-<p>As you can see it’s not that hard. Now go make a theme or something!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20131015-1">
-      <p>If you have a design in mind.<a href="#fnref:20131015-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20131015-2">
-      <p>If this doesn’t work (SSH can be a quite the hassle on Windows) just clone the <a href="https://github.com/TryGhost/Casper">Casper</a> theme into the <code>content/themes</code> folder. Make sure that you rename the folder from <code>Casper</code> to <code>casper</code>.<a href="#fnref:20131015-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20131015-3">
-      <p>Which I recommend having anyway.<a href="#fnref:20131015-3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
