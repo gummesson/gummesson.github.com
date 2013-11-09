@@ -74,6 +74,22 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="http://www.youtube.com/watch?v=vsTrAfJFLXI" alt="A modern web designer's workflow">
+              A modern web designer's workflow <span class="post__title--external">&rarr;</span>
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on March 11, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/web" alt="Web">Web</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/03/11/a-modern-web-designers-workflow" alt="Permalink – A modern web designer's workflow">&infin;</a>
+          </p>
+        
+        <p>A really nice talk from Mr. <a href="http://css-tricks.com/">CSS-Tricks</a> himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/03/09/a-brand-new-blog" alt="A brand new blog">
               A brand new blog
             </a>
@@ -224,43 +240,6 @@ end
     </li>
     <li id="fn:20130228-2">
       <p><a href="http://stackoverflow.com/questions/14244288/how-do-i-kill-a-rails-webrick-server?rq=1">The answer was found on StackOverflow</a>, as expected.<a href="#fnref:20130228-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/02/21/ack-on-windows" alt="Ack on Windows">
-              Ack on Windows
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on February 21, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/tools" alt="Tools">Tools</a>
-          </p>
-        
-        <p>I recently finally tried out <a href="http://betterthangrep.com/">Ack</a> which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.</p>
-
-<p>First things first, <a href="http://www.perl.org/">Perl</a> needs to be install on the system. If you have either <a href="http://git-scm.com/">Git</a> or <a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a> installed then you’re good to go.</p>
-
-<ol>
-  <li>Download the standalone script from the <a href="http://betterthangrep.com/install/">here</a>.</li>
-  <li>Create a <code>bat</code> file and add the following to it: <code>@"C:\path\to\perl.exe" C:\path\to\ack.pl %*</code>. Change the paths so that they point to the relevant places.</li>
-  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path, or create a new folder and add it to said path.<sup id="fnref:20130221-1"><a href="#fn:20130221-1" class="footnote">1</a></sup></li>
-  <li>Last, but not least, create an alias for the <code>bat</code> file in your <code>.bash_profile</code> if you want to get it to work with <a href="http://www.cygwin.com/">Cygwin</a>.</li>
-</ol>
-
-<p>You can use the same steps to create a more “sophisticated” way of running any kind of script too. Let’s say you have a script called <code>foo.rb</code>. You want to run it straight from the command line but you don’t necessary want to turn into a full fledged gem. Just change the the first path in the <code>bat</code> file so it points to your binary <a href="http://www.ruby-lang.org/">Ruby</a> file and the second to your actually script and you’re all good!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130221-1">
-      <p>Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:20130221-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

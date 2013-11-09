@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>chunks.lua: same, but different</title>
+                <description>&lt;p&gt;Since Lua’s standard library is &lt;a href=&quot;http://www.lua.org/manual/5.1/#functions&quot;&gt;relatively small&lt;/a&gt; compared to a lot of languages I decided to port my &lt;a href=&quot;https://github.com/gummesson/chunks&quot;&gt;Chunks&lt;/a&gt; library over to it, so let me present: &lt;a href=&quot;https://github.com/gummesson/chunks.lua&quot;&gt;Chunks for Lua&lt;/a&gt;. It was actually quite fun to solve the same “problems” in a different language, even though Lua isn’t that much of a change from JavaScript.&lt;/p&gt;
+</description>
+                <published>November  9, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/11/09/chunks-lua-same-but-different</link>
+              </item>
+            
+              <item>
                 <title>file.lua: the experiment continues</title>
                 <description>&lt;p&gt;I’m hanging on to my experiment with &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt; and a few minutes ago I open sourced yet another small library with yet another unimaginative name: &lt;a href=&quot;https://github.com/gummesson/file.lua&quot;&gt;file.lua&lt;/a&gt;. It basically just a few helper functions for dealing with files. I’m still finding it to be a fun language, which feels pretty nice! I’m still on the fence about whether or not I should release my projects on &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt;, since they feel pretty insignificant compared to some on the projects on there. We’ll see, I guess.&lt;/p&gt;
 </description>
@@ -105,31 +113,6 @@
 </description>
                 <published>October 26, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/10/26/geno-a-small-and-opinionated-static-site-generator</link>
-              </item>
-            
-              <item>
-                <title>Partially: use partials in your markup</title>
-                <description>&lt;p&gt;I’ve always been jealous of the plethora of build tools available on OS X, in particular &lt;a href=&quot;http://hammerformac.com/&quot;&gt;Hammer for Mac&lt;/a&gt; and it’s excellent &lt;code&gt;@include&lt;/code&gt; feature. Rather than buying a new computer I decided to instead create yet another &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; project and build it myself. I named it &lt;a href=&quot;https://github.com/gummesson/partially&quot;&gt;Partially&lt;/a&gt;&lt;sup id=&quot;fnref:20131019-1&quot;&gt;&lt;a href=&quot;#fn:20131019-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It enables you to do this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;!-- @include partial.ext --&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It’ll then include the partial in question in the file. It should be able to handle any markup language, although I’ve some far only tried HTML, &lt;a href=&quot;http://haml.info/&quot;&gt;Haml&lt;/a&gt;, &lt;a href=&quot;http://jade-lang.com/&quot;&gt;Jade&lt;/a&gt; and &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This was also the first real project that I decide to go all in on and write actual tests for. It suprised me that once I got into it it was actually quite fun! I have no idea if I did it the “right” way, but I atleast tried to. Pull requests are always welcome. In fact, they’re even encouraged!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20131019-1&quot;&gt;
-      &lt;p&gt;Of course!&lt;a href=&quot;#fnref:20131019-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>October 19, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/10/19/partially-use-partials-in-your-markup</link>
               </item>
             
     </channel>
