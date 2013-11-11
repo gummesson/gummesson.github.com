@@ -7,7 +7,7 @@
   <meta name="author" content="Ellen Gummesson">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <title>Notes – Ellen Gummesson</title>
+    <title>LuaRocks – Ellen Gummesson</title>
   <link href="//fonts.googleapis.com/css?family=Lato:400italic,400,700" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -71,23 +71,33 @@
       <div class="island  l-main">
         <div class="wrapper">
           <article class="page">
-  <h1>Notes</h1>
-    <ul>
-  <li><a href="/notes/ack">ack</a></li>
-  <li><a href="/notes/github">Github</a></li>
-  <li><a href="/notes/kramdown">kramdown</a></li>
-  <li><a href="/notes/luarocks">LuaRocks</a></li>
-  <li><a href="/notes/mongodb">MongoDB</a></li>
-  <li><a href="/notes/oh-my-zsh">Oh my Zsh!</a></li>
-  <li><a href="/notes/tmux">Tmux</a></li>
-  <li><a href="/notes/urxvt-to-console">urxvt to Console</a></li>
-</ul>
+  <h1>LuaRocks</h1>
+    <p>A small guide for getting <a href="http://luarocks.org/">LuaRocks</a> up and running on Windows.</p>
 
-<h2 id="setup">Setup</h2>
+<h2 id="mingw">MinGW</h2>
 
-<ul>
-  <li><a href="/notes/the-linux-setup">Linux</a></li>
-</ul>
+<ol>
+  <li>Download the installer.</li>
+  <li>Choose the <code>mingw32-base</code> package and the <code>mingw32-gcc-g++</code> package.</li>
+  <li>Add <code>C:\MinGW\bin</code> to your PATH.</li>
+</ol>
+
+<h2 id="luarocks">LuaRocks</h2>
+
+<ol>
+  <li>Download the installer and extract it.</li>
+  <li>Run <code>install.bat /P C:\LuaRocks /MW</code>.</li>
+  <li>Add <code>C:\LuaRocks\2.1</code> and <code>C:\LuaRocks\bin</code> to your PATH.</li>
+  <li>Create a new environment variable called <code>LUA_PATH</code> with the following value: <code>.\?.lua;.\?\init.lua;C:\LuaRocks\share\lua\5.1\?.lua;C:\LuaRocks\share\lua\5.1\?\init.lua</code></li>
+  <li>Create a new environment variable called <code>LUA_CPATH</code> with the following value: <code>.\?.dll;C:\LuaRocks\lib\lua\5.1\?.dll</code>.</li>
+</ol>
+
+<h3 id="packages">Packages</h3>
+
+<p>Some packages can’t be built on Windows with MinGW. The easiest way to get them to work is to go to LuaRocks’ <a href="http://luarocks.org/repositories/rocks/">main repository</a>, download the package’s <code>win32-x86.rock</code> file and install it manually, like this:</p>
+
+<pre><code>luarocks install package-version-win32-x86.rock
+</code></pre>
 
 </article><!-- .page -->
 

@@ -586,11 +586,15 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/</loc>
-        <lastmod>2013-09-27T13:58:50+02:00</lastmod>
+        <lastmod>2013-11-11T19:31:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/kramdown.html</loc>
         <lastmod>2013-10-03T18:51:49+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellengummesson.com/notes/notes/luarocks.html</loc>
+        <lastmod>2013-11-11T19:34:45+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/mongodb.html</loc>
