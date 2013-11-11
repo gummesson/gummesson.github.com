@@ -555,6 +555,12 @@
         <lastmod>2013-11-09T10:31:39+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ellengummesson.com/blog/2013/11/11/should-lua-bringing-bdd-style-assertions-to-lua
+        </loc>
+        <lastmod>2013-11-11T16:16:56+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://ellengummesson.com/404.html</loc>
         <lastmod>2013-09-21T14:33:08+02:00</lastmod>
     </url>
@@ -568,7 +574,7 @@
     </url>
     <url>
         <loc>http://ellengummesson.com/</loc>
-        <lastmod>2013-11-09T10:31:39+01:00</lastmod>
+        <lastmod>2013-11-11T16:16:56+01:00</lastmod>
     </url>
     <url>
         <loc>http://ellengummesson.com/notes/notes/ack.html</loc>

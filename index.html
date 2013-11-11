@@ -74,6 +74,40 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/11/11/should-lua-bringing-bdd-style-assertions-to-lua" alt="should.lua: bringing BDD-style assertions to Lua">
+              should.lua: bringing BDD-style assertions to Lua
+            </a>
+          </h1>
+          <p class="post__meta">
+            Posted on November 11, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a>
+          </p>
+        
+        <p>After having released three smaller libraries for Lua I embarked on a pretty ambitious journey: to create a BDD-style assertion library, which I then named <a href="https://github.com/gummesson/should.lua">should.lua</a>. <a href="http://olivinelabs.com/busted/">Busted</a> has been my testing framework of choice and I’m a big fan of it, but I don’t really like using <code>assert</code> when I use <code>describe</code> and <code>it</code> in my tests. Now I can write my tests like this:</p>
+
+<pre><code>describe('A test', function()
+  it('should do something', function()
+    should.Equal(true, true)
+  end)
+end)
+</code></pre>
+
+<p><code>expect</code> is also available:</p>
+
+<pre><code>describe('A test', function()
+  it('should do something', function()
+    expect(true):toEqual(true)
+  end)
+end)
+</code></pre>
+
+<p><code>expect</code> is actually just a thin “wrapper” for the <code>should</code> library, which I hacked together using the recommended way for creating <a href="http://www.lua.org/pil/16.1.html">classes</a> in Lua. It was a challenge, but a pretty fun one. However, it’s far from finished so pull requests are always welcome!</p>
+
+      </article><!-- .post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/11/09/chunks-lua-same-but-different" alt="chunks.lua: same, but different">
               chunks.lua: same, but different
             </a>
@@ -147,76 +181,6 @@
 <p>Oh, and here’s a fun aside: the library’s currently 343 lines long (with many comments) while the tests take up a total of 504 lines (with barely any comments).</p>
 
 <p>Happy (functional) programming!</p>
-
-      </article><!-- .post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/10/26/geno-a-small-and-opinionated-static-site-generator" alt="Geno: a small and opinionated static site generator">
-              Geno: a small and opinionated static site generator
-            </a>
-          </h1>
-          <p class="post__meta">
-            Posted on October 26, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a>
-          </p>
-        
-        <p>Another week, another project, and this time it’s yet another static site generator.</p>
-
-<p><a href="https://github.com/gummesson/geno">Geno</a> is a small and opinionated static site generator for easily generating a simple site for your <a href="https://npmjs.org/">NPM</a> projects based on the project’s <code>package.json</code> file.</p>
-
-<h2 id="opinionated">Opinionated?</h2>
-
-<p>Well, it is pretty customizable but the defaults are tailored to my needs<sup id="fnref:20131026-1"><a href="#fn:20131026-1" class="footnote">1</a></sup>. Like I stated in the project’s README file, I find that hand crafting a new site for each project can be quite tedious. I’m also not a designer.</p>
-
-<h2 id="configuration">Configuration</h2>
-
-<p>At the most basic level, Geno needs these fields in the <code>package.json</code> file:</p>
-
-<pre><code>{
-  "name": "module",
-  "version": "0.1.0",
-  "description": "An example module.",
-  "license": "MIT"
-}
-</code></pre>
-
-<p>That’s it! You can also add a <code>geno.json</code> file at the root of your project to enable some extra features. Check out the <a href="https://github.com/gummesson/geno">GitHub repository</a> for more information.</p>
-
-<h2 id="the-anatomy-of-a-nodejs-module">The anatomy of a Node.js module</h2>
-
-<p>During the creation of it I decided to document the process behind it, Even though it wasn’t a particular big or compilicated project. I though that it could be interesting or atleast provide some kind of value for someone<sup id="fnref:20131026-2"><a href="#fn:20131026-2" class="footnote">2</a></sup>.</p>
-
-<h3 id="the-idea">The idea</h3>
-
-<p>The initial idea was that I simply wanted to create a project site for <a href="https://github.com/gummesson/partially">Partially</a>. After some tinkering it hit me that it would be pretty cool to use the <code>package.json</code> file as a base for a website and off I went. In the end it’s a pretty simple idea: read the configuration file(s), add the data to the template and spit out the compiled site.</p>
-
-<h3 id="the-build">The build</h3>
-
-<p>I actually started with the design first<sup id="fnref:20131026-3"><a href="#fn:20131026-3" class="footnote">3</a></sup>, since I’d already begun to work on it. I then went on to pick a templating engine. There’s a plethora of them available and I played around with both <a href="https://github.com/olado/doT">doT.js</a> and <a href="https://github.com/visionmedia/ejs">EJS</a> before I settled on <a href="https://github.com/jlongster/nunjucks">Nunjucks</a>. It’s fairly lightweight, fast and has the perfect logic for making the kind of template that I wanted. I also needed some extra file system functions and <a href="https://github.com/jprichardson/node-fs-extra">fs-extra</a> came to the rescue. It makes copying files and creating folder paths a breeze.</p>
-
-<h3 id="the-features">The features</h3>
-
-<p>Although I wanted to keep it as simple as possible I realized that it would be nice to have some extra features, so I decided to add the option to use the <code>geno.json</code> file. This meant that I can add some additional information to a project’s site without too much of a hassle.</p>
-
-<p>If you want you can take a look at <a href="http://ellengummesson.com/geno/">Geno’s own project site</a> to see how it turned out. All in all I’m pretty happy with it.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20131026-1">
-      <p>And my laziness.<a href="#fnref:20131026-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20131026-2">
-      <p>I hope…<a href="#fnref:20131026-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20131026-3">
-      <p>I call it “Sass-driven development”. I’m not very good at it.<a href="#fnref:20131026-3" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- .post -->
 
