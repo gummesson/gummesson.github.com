@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows</title>
+                <description>&lt;p&gt;An extensive list filled with goodies. I especially enjoyed discovering &lt;a href=&quot;https://github.com/bmatzelle/gow&quot;&gt;Gow&lt;/a&gt;, which is a lightweight alternative to &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt;. The Bash “implementation” works like a charm and is suprisingly fast!&lt;/p&gt;
+</description>
+                <published>December 22, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/12/22/scott-hanselmans-2014-ultimate-developer-and-power-users-tool-list-for-windows</link>
+              </item>
+            
+              <item>
                 <title>should.lua: bringing BDD-style assertions to Lua</title>
                 <description>&lt;p&gt;After having released three smaller libraries for Lua I embarked on a pretty ambitious journey: to create a BDD-style assertion library, which I then named &lt;a href=&quot;https://github.com/gummesson/should.lua&quot;&gt;should.lua&lt;/a&gt;. &lt;a href=&quot;http://olivinelabs.com/busted/&quot;&gt;Busted&lt;/a&gt; has been my testing framework of choice and I’m a big fan of it, but I don’t really like using &lt;code&gt;assert&lt;/code&gt; when I use &lt;code&gt;describe&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt; in my tests. Now I can write my tests like this:&lt;/p&gt;
 
@@ -65,18 +73,6 @@ end)
 </description>
                 <published>November  4, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/11/04/js-lua-a-fun-experiment</link>
-              </item>
-            
-              <item>
-                <title>Chunks: a super duper, teeny tiny functional library for JavaScript</title>
-                <description>&lt;p&gt;Lately I’ve been getting into a more functional approach to programming and I decided to write a simple library for JavaScript, which I named “&lt;a href=&quot;https://github.com/gummesson/chunks&quot;&gt;Chunks&lt;/a&gt;”. I know that there’s a plethora of them available, but it’s always fun to learn by doing. It currently consists of 18 functions that I consider the most commonly used and helpful ones. I might add a couple of more someday but my main goal is to keep it lightweight. As of right now it’s around 2 kb minified and about 0.42 kb minified and gzipped.&lt;/p&gt;
-
-&lt;p&gt;Oh, and here’s a fun aside: the library’s currently 343 lines long (with many comments) while the tests take up a total of 504 lines (with barely any comments).&lt;/p&gt;
-
-&lt;p&gt;Happy (functional) programming!&lt;/p&gt;
-</description>
-                <published>November  1, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/11/01/chunks-a-super-duper-teeny-tiny-functional-library-for-javascript</link>
               </item>
             
     </channel>

@@ -61,6 +61,18 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="https://github.com/svg/svgo" alt="SVGO">SVGO <span class="post__title--external">&rarr;</span></a>
+          </h1>
+          <p class="post__meta">Posted on April 25, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/design" alt="Design">Design</a>, <a href="/blog/tag/code" alt="Code">Code</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/04/25/svgo" alt="Permalink – SVGO">&infin;</a></p>
+        
+        <p>A pretty awesome SVG optimizer, written with <a href="http://nodejs.org/">Node.js</a>. I tried it on a small logo file out of curiosity  and it went down from about 3 kb to 0.5 kb, which is impressive.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="https://github.com/gummesson/scriptlr.js" alt="Scriptlr.js">Scriptlr.js <span class="post__title--external">&rarr;</span></a>
           </h1>
           <p class="post__meta">Posted on April 22, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/04/22/scriptlr-js" alt="Permalink – Scriptlr.js">&infin;</a></p>
@@ -116,79 +128,6 @@
           <p class="post__meta">Posted on April  8, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/open-source" alt="Open Source">Open Source</a></p>
         
         <p>So yesterday I sent my first pull request ever and it actually got merged. My addition was adding a link to Airbnb’s <a href="https://github.com/airbnb/javascript">JavaScript Style Guide</a> in a <a href="https://github.com/gregstallings/styleguides">repository that collects a bunch of styleguides</a>. It may not be the most exciting thing ever but I guess that I can now officially call myself an open source contributor, right?</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/04/04/display-your-github-repos-with-jquery-and-mustache-js" alt="Display your Github repos with jQuery and Mustache.js">Display your Github repos with jQuery and Mustache.js</a>
-          </h1>
-          <p class="post__meta">Posted on April  4, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/jquery" alt="jQuery">jQuery</a></p>
-        
-        <p>After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn’t have to look any further than using <a href="http://jquery.com/">jQuery</a>’s <code>getJSON</code> function and the JavaScript implementation of the <a href="http://mustache.github.com/">Mustache templating engine</a>. The end result <a href="/experiments/repos">looks pretty neat</a>, although I think I’m going to tweak the UI a bit. I also created a repository for it <a href="https://github.com/gummesson/repos.js">on Github</a>.</p>
-
-<h2 id="the-javascript">The JavaScript</h2>
-
-<p>This is the function itself: </p>
-
-<pre><code>function getGithubRepositories(username) {
-
-  "use strict";
-
-  var repoList = $("#repo-list");
-  repoList.append("&lt;li&gt;Loading...&lt;/li&gt;");
-
-  var githubUsername = function(username, callback) {
-    $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
-  };
-
-  githubUsername(username, function(data) {
-
-    var template    = $("#github-repos").html(),
-        information = Mustache.render(template, data);
-
-    repoList.html(information);
-
-  });
-
-}
-</code></pre>
-
-<p>And you simply use it like this:</p>
-
-<pre><code>$(document).ready(function() {
-
-  "use strict";
-  getGithubRepositories("gummesson");
-
-});
-</code></pre>
-
-<p>Just replace <code>gummesson</code> with your own username and you’re good to go!</p>
-
-<h2 id="the-template">The template</h2>
-
-<p><strong>Pro-tip:</strong> If you’re planning to use <a href="https://github.com/janl/mustache.js">Mustache.js</a> on a <a href="http://jekyllrb.com/">Jekyll</a> site like I do, don’t forget to wrap the <code>&lt;script&gt;</code> template in a <code>raw</code> block.</p>
-
-<pre><code>&lt;ul id="repo-list"&gt;
-  &lt;script id="github-repos" type="text/template"&gt;
-    {{#data}}
-      &lt;li&gt;
-        &lt;a href="{{html_url}}" title="{{name}}" alt="{{name}}"&gt;
-          {{name}}
-        &lt;/a&gt;
-        {{#language}}
-          &lt;em&gt;({{language}})&lt;/em&gt;
-        {{/language}}
-      &lt;/li&gt;
-    {{/data}}
-  &lt;/script&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.</p>
 
       </article><!-- /post -->
 
