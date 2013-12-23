@@ -61,6 +61,33 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/03/05/re-releasing-smallwork" alt="Re-releasing Smallwork">Re-releasing Smallwork</a>
+          </h1>
+          <p class="post__meta">Posted on March  5, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/css" alt="CSS">CSS</a>, <a href="/blog/tag/sass" alt="Sass">Sass</a></p>
+        
+        <p>Back in January I wrote a small paragraph about my SCSS “framework” <a href="https://github.com/gummesson/smallwork">Smallwork</a>. When I released it I was really happy about it, but I soon realized that I’d been perhaps a bit too trigger happy with it. This weekend I decided on a whim to nuke it and start over and yesterday I re-released it. It’s pratically re-written from the ground up and it’s even smaller in size than it was before. I cleaned up the code like a maid and threw out quite a bit of extra “baggage” that I was probably never going to use anyway. Now I feel like it actually could be useful to someone else too, which is really nice.</p>
+
+<p>I also created yet another <a href="http://www.vim.org/">Vim</a> plugin, this time just a simple wrapper for <a href="http://compass-style.org/">Compass</a>, which <em>Smallwork</em> is built with. I was getting sick of having to type either <code>:!compass compile</code> or <code>:sh</code> and then <code>compass compile</code> so I threw together a really basic function that makes it much easier. Now I only have to type <code>:CompassCompile</code>. Another nice feature is that you don’t actually have to close the command prompt<sup id="fnref:20130305-1"><a href="#fn:20130305-1" class="footnote">1</a></sup> which means that you can use <code>:CompassWatch</code> without it interfering with Vim<sup id="fnref:20130305-2"><a href="#fn:20130305-2" class="footnote">2</a></sup>. If all goes well I think I’ll even publish it on the official Vim scripts website too.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130305-1">
+      <p>Normally you can’t do anything until you’ve exited the command prompt and hit <code>Enter</code>, but a simple solution from the <a href="http://vim.wikia.com/wiki/Execute_external_programs_asynchronously_under_Windows">Vim Wiki</a> fixed that.<a href="#fnref:20130305-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130305-2">
+      <p>Atleast on Windows. I don’t think that there’s an easy way to do that on Unix, which is unfortunate.<a href="#fnref:20130305-2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/03/03/fixing-jekylls-encoding-shenanings" alt="Fixing Jekyll's encoding shenanings">Fixing Jekyll's encoding shenanings</a>
           </h1>
           <p class="post__meta">Posted on March  3, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a></p>
@@ -184,38 +211,6 @@ end
     </li>
     <li id="fn:20130216-2">
       <p>I use <code>YYYYMMDD-#</code> as a format so that every footnote has an unique set of numbers, which makes it even more tedious.<a href="#fnref:20130216-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/02/12/easy-session-for-vim" alt="Easy Session for Vim">Easy Session for Vim</a>
-          </h1>
-          <p class="post__meta">Posted on February 12, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
-        
-        <p>Another week, another project and this time it’s actually something half decent. After a few hours of work over the last couple of days I’m finally done with my first plugin for <a href="http://www.vim.org/">Vim</a> and I named it <a href="https://github.com/gummesson/easy-session.vim">Easy Session</a>. It lets you easily manage sessions with four commands: <code>:SaveSession</code>, <code>:NewSession</code>, <code>:OpenSession</code> and <code>:ListSessions</code>.</p>
-
-<p><code>:SaveSession</code> uses the current working directory as the default filename, so you have to make sure that you’re in the project’s root directory if you’re saving your session for the first time. It may not be the most ultimate solution, but it’s better than the default filename <code>Session.vim</code>. There’s also <code>:NewSession</code> which lets you use your own custom filename. The <code>:OpenSession</code>, suprisingly, opens a session.</p>
-
-<p>An earlier version of it had an <code>:Sessions</code> command, but it used <a href="http://www.vim.org/scripts/script.php?script_id=1075">Netrw</a> and was a bit too clunky so I rewrote it as <code>:ListSessions</code>, which is quite a fun hack. It launches a new window with a temporary buffer that gets deleted as soon as it’s closed. It gets the list by reading the content of the sessions directory with <code>:0read !ls</code> or <code>:0read !dir /B</code><sup id="fnref:20130212-1"><a href="#fn:20130212-1" class="footnote">1</a></sup>. The code looks really sketchy, but the result looks quite nice:</p>
-
-<p><img src="/images/blog/2013-02-12-easy-session-01.png" alt="Easy Session (Sessions List)" /></p>
-
-<p><img src="/images/blog/2013-02-12-easy-session-02.png" alt="Easy Session (Sessions List)" /></p>
-
-<p>I don’t know if it’s useful for anyone but me, but it was a fun challenge. There’s a <a href="http://peterodding.com/code/vim/session/">Session.vim</a> plugin that has a lof more advanced features than mine do, but I think I’ll stick with my own solution for now.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130212-1">
-      <p>The “<code>0</code>” makes the list start on the first line in the buffer. If just <code>:read</code> is used it’ll paste the content below the first line.<a href="#fnref:20130212-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

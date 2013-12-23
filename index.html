@@ -61,6 +61,45 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/12/23/cliche-js" alt="Cliche.js">Cliche.js</a>
+          </h1>
+          <p class="post__meta">Posted on December 23, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a></p>
+        
+        <p>For the first time in a couple of weeks I’m releasing a new thing: <a href="https://github.com/gummesson/cliche.js">Cliche.js</a>. It’s a small library for mapping JavaScript click events. Instead of having to use <code>document.querySelector</code> and <code>target.addEventListener</code> over and over again<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> you can do this:</p>
+
+<pre><code>var someFunction = function() {
+  // ...  
+};
+
+var anotherFunction = function(event) {
+  var target = event.target;
+  // ...  
+};
+
+Cliche({
+  '#some-selector'    : someFunction,
+  '#another-selector' : anotherFunction
+});
+</code></pre>
+
+<p>I think it looks pretty neat. For simplicity it currently only supports IE9+, but you can easily use a couple of polyfills to get it to work in other browsers.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Although if you’re mapping a lot of events you probably should be using <code>event.target</code> with a few selected event listeners instead.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx" alt="Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows">Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows <span class="post__title--external">&rarr;</span></a>
           </h1>
           <p class="post__meta">Posted on December 22, 2013 in <a href="/blog/tag/apps" alt="Apps">Apps</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/12/22/scott-hanselmans-2014-ultimate-developer-and-power-users-tool-list-for-windows" alt="Permalink – Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows">&infin;</a></p>
@@ -120,30 +159,6 @@ end)
           <p class="post__meta">Posted on November  6, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a></p>
         
         <p>I’m hanging on to my experiment with <a href="http://www.lua.org/">Lua</a> and a few minutes ago I open sourced yet another small library with yet another unimaginative name: <a href="https://github.com/gummesson/file.lua">file.lua</a>. It basically just a few helper functions for dealing with files. I’m still finding it to be a fun language, which feels pretty nice! I’m still on the fence about whether or not I should release my projects on <a href="http://luarocks.org/">LuaRocks</a>, since they feel pretty insignificant compared to some on the projects on there. We’ll see, I guess.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/11/04/js-lua-a-fun-experiment" alt="js.lua: a fun little experiment">js.lua: a fun little experiment</a>
-          </h1>
-          <p class="post__meta">Posted on November  4, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a></p>
-        
-        <p>I recently had a few hours to kill and I decided to try out a new language, <a href="http://www.lua.org/">Lua</a>. In short, it’s a fun little language<sup id="fnref:20131104-1"><a href="#fn:20131104-1" class="footnote">1</a></sup> and it’s kind of a cross between JavaScript and Ruby, which I really like. I threw together a little library with JavaScript-like array functions which I named <a href="https://github.com/gummesson/js.lua">js.lua</a>. A really bad name, but I couldn’t really think of anything else.</p>
-
-<p>Setting everything up was a bit of a pain since I wanted to use <a href="http://luarocks.org/">LuaRocks</a> and the <a href="http://olivinelabs.com/busted/">Busted</a> module for testing. <a href="http://www.thijsschreijer.nl/blog/?p=772">This guide</a> was the <em>only</em> one I could find and thankfully it worked. Working with JavaScript and <a href="http://nodejs.org/">Node.js</a> has sure made me spoiled since everything’s just a simple Google search away!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20131104-1">
-      <p>Literally. The source code’s only around 20 000 lines long. See <a href="http://www.lua.org/about.html">“Lua is small”</a>.<a href="#fnref:20131104-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- /post -->
 

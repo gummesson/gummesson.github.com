@@ -61,6 +61,30 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/11/04/js-lua-a-fun-experiment" alt="js.lua: a fun little experiment">js.lua: a fun little experiment</a>
+          </h1>
+          <p class="post__meta">Posted on November  4, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a></p>
+        
+        <p>I recently had a few hours to kill and I decided to try out a new language, <a href="http://www.lua.org/">Lua</a>. In short, it’s a fun little language<sup id="fnref:20131104-1"><a href="#fn:20131104-1" class="footnote">1</a></sup> and it’s kind of a cross between JavaScript and Ruby, which I really like. I threw together a little library with JavaScript-like array functions which I named <a href="https://github.com/gummesson/js.lua">js.lua</a>. A really bad name, but I couldn’t really think of anything else.</p>
+
+<p>Setting everything up was a bit of a pain since I wanted to use <a href="http://luarocks.org/">LuaRocks</a> and the <a href="http://olivinelabs.com/busted/">Busted</a> module for testing. <a href="http://www.thijsschreijer.nl/blog/?p=772">This guide</a> was the <em>only</em> one I could find and thankfully it worked. Working with JavaScript and <a href="http://nodejs.org/">Node.js</a> has sure made me spoiled since everything’s just a simple Google search away!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20131104-1">
+      <p>Literally. The source code’s only around 20 000 lines long. See <a href="http://www.lua.org/about.html">“Lua is small”</a>.<a href="#fnref:20131104-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/11/01/chunks-a-super-duper-teeny-tiny-functional-library-for-javascript" alt="Chunks: a super duper, teeny tiny functional library for JavaScript">Chunks: a super duper, teeny tiny functional library for JavaScript</a>
           </h1>
           <p class="post__meta">Posted on November  1, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a></p>
@@ -213,43 +237,6 @@
     </li>
   </ol>
 </div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="http://ellengummesson.com/codely/" alt="Codely">Codely <span class="post__title--external">&rarr;</span></a>
-          </h1>
-          <p class="post__meta">Posted on October  7, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/10/07/codely" alt="Permalink – Codely">&infin;</a></p>
-        
-        <p>Earlier today I released a simple project I hacked together this past weekend: <a href="https://github.com/gummesson/codely">Codely</a>. I’ve wanted to try out <a href="http://codemirror.net/">CodeMirror</a> for a long time but couldn’t really find a reason to use it until a couple of days ago. I love the Vim mode even though I can’t seem to get <code>Esc</code> key to work in it… But I digress. It was fun to try out the <a href="http://www.w3.org/TR/2013/WD-notifications-20130912/">Notification</a> API too. It’s amazing what you can do with a web browser these days.</p>
-
-<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
-
-<p>Besides the normal keyboard shortcuts you would use in Vim or Emacs mode (or with <a href="https://github.com/emmetio/codemirror">Emmet</a> plugin) I also added a few additional shortcuts:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Keys</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>F10</code></td>
-      <td>Save the content</td>
-    </tr>
-    <tr>
-      <td><code>F11</code></td>
-      <td>Toggle fullscreen mode</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>I might add some kind of help dialog later on, but we’ll see.</p>
 
       </article><!-- /post -->
 

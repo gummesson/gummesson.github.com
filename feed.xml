@@ -6,6 +6,41 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Cliche.js</title>
+                <description>&lt;p&gt;For the first time in a couple of weeks I’m releasing a new thing: &lt;a href=&quot;https://github.com/gummesson/cliche.js&quot;&gt;Cliche.js&lt;/a&gt;. It’s a small library for mapping JavaScript click events. Instead of having to use &lt;code&gt;document.querySelector&lt;/code&gt; and &lt;code&gt;target.addEventListener&lt;/code&gt; over and over again&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you can do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var someFunction = function() {
+  // ...  
+};
+
+var anotherFunction = function(event) {
+  var target = event.target;
+  // ...  
+};
+
+Cliche({
+  '#some-selector'    : someFunction,
+  '#another-selector' : anotherFunction
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I think it looks pretty neat. For simplicity it currently only supports IE9+, but you can easily use a couple of polyfills to get it to work in other browsers.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Although if you’re mapping a lot of events you probably should be using &lt;code&gt;event.target&lt;/code&gt; with a few selected event listeners instead.&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+                <published>December 23, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/12/23/cliche-js</link>
+              </item>
+            
+              <item>
                 <title>Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows</title>
                 <description>&lt;p&gt;An extensive list filled with goodies. I especially enjoyed discovering &lt;a href=&quot;https://github.com/bmatzelle/gow&quot;&gt;Gow&lt;/a&gt;, which is a lightweight alternative to &lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt;. The Bash “implementation” works like a charm and is suprisingly fast!&lt;/p&gt;
 </description>
@@ -53,26 +88,6 @@ end)
 </description>
                 <published>November  6, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/11/06/file-lua-the-experiment-continues</link>
-              </item>
-            
-              <item>
-                <title>js.lua: a fun little experiment</title>
-                <description>&lt;p&gt;I recently had a few hours to kill and I decided to try out a new language, &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;. In short, it’s a fun little language&lt;sup id=&quot;fnref:20131104-1&quot;&gt;&lt;a href=&quot;#fn:20131104-1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and it’s kind of a cross between JavaScript and Ruby, which I really like. I threw together a little library with JavaScript-like array functions which I named &lt;a href=&quot;https://github.com/gummesson/js.lua&quot;&gt;js.lua&lt;/a&gt;. A really bad name, but I couldn’t really think of anything else.&lt;/p&gt;
-
-&lt;p&gt;Setting everything up was a bit of a pain since I wanted to use &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt; and the &lt;a href=&quot;http://olivinelabs.com/busted/&quot;&gt;Busted&lt;/a&gt; module for testing. &lt;a href=&quot;http://www.thijsschreijer.nl/blog/?p=772&quot;&gt;This guide&lt;/a&gt; was the &lt;em&gt;only&lt;/em&gt; one I could find and thankfully it worked. Working with JavaScript and &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; has sure made me spoiled since everything’s just a simple Google search away!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20131104-1&quot;&gt;
-      &lt;p&gt;Literally. The source code’s only around 20 000 lines long. See &lt;a href=&quot;http://www.lua.org/about.html&quot;&gt;“Lua is small”&lt;/a&gt;.&lt;a href=&quot;#fnref:20131104-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <published>November  4, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/11/04/js-lua-a-fun-experiment</link>
               </item>
             
     </channel>
