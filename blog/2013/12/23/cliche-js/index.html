@@ -66,11 +66,11 @@
     </p>
       <p>For the first time in a couple of weeks I’m releasing a new thing: <a href="https://github.com/gummesson/cliche.js">Cliche.js</a>. It’s a small library for mapping JavaScript click events. Instead of having to use <code>document.querySelector</code> and <code>target.addEventListener</code> over and over again<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> you can do this:</p>
 
-<pre><code>var someFunction = function() {
+<pre><code>var someFunction = function(selector) {
   // ...  
 };
 
-var anotherFunction = function(event) {
+var anotherFunction = function(selector, event) {
   var target = event.target;
   // ...  
 };
