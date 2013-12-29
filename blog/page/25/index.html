@@ -61,6 +61,20 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/09/07/redesigning" alt="Redesigning">Redesigning</a>
+          </h1>
+          <p class="post__meta">Posted on September  7, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/design" alt="Design">Design</a></p>
+        
+        <p>Even though this site isn’t even a month old I’m having serious thoughts about redesigning it. In fact, I already have a design that’s about 99% finished. I’m having a hard time deciding if I really should switch or not though. One minute I’m liking the current design (atleast the basic structure of it) and the next I dislike it. One thing I really don’t like with it is that the default typeface used for the body copy (<a href="http://www.google.com/webfonts/specimen/Vollkorn">Vollkorn</a> looks really nice as long as you don’t use the bold and italic font styles on your text. The bold looks really heavy compared to the normal weight and that bugs me quite much. The italic version looks okay, but I’m not totally happy with it. The typography is a big part of this site’s design (if not the only part) since I’m not a really graphical designer (I wouldn’t even call myself a designer, to be honest). </p>
+
+<p>In hindsight I probably should’ve spent more time on choosing the right typefaces earlier, but I was eager to launch this site so I didn’t. So, I guess the conclusion of this post is that I’ll likely change the typefaces, but stick to the one column layout. I’m thinking about cleaning up the code a bit too, but we’ll see how that goes.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/09/05/a-hard-drive-failure" alt="A hard (drive) failure">A hard (drive) failure</a>
           </h1>
           <p class="post__meta">Posted on September  5, 2012 in <a href="/blog/tag/tech" alt="Tech">Tech</a>, <a href="/blog/tag/hardware" alt="Hardware">Hardware</a></p>
@@ -229,45 +243,6 @@
 <p>It worked! I know that I always sound suprised when something I’ve done works, but this really took me by suprise. Now the last <code>.col</code> in the row gets it’s gutter/margin removed without adding another class to it. I ran it through Chrome, Firefox, Opera and Internet Explorer 9 and it works in all of them. However, it should be noted that while IE9 supports it, IE8 don’t (IE8 isn’t too fond of the :last-child thing). I think I’m going to leave the <code>.last</code> class in the code, just so there’s an option to use it. </p>
 
 <p>I also re-did some parts in Begrider and split it up to two different versions: one called begrider-new and another called begrider-old. The new version uses attribute selectors to apply properties and values on all of column classes and to remove the gutter from the last column in the row. The second one groups the column classes together to add their shared properties and values while seperating them for their unique width property.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/08/27/my-first-plugin-for-jekyll" alt="My first plugin for Jekyll">My first plugin for Jekyll</a>
-          </h1>
-          <p class="post__meta">Posted on August 27, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a></p>
-        
-        <p>Okay, I wouldn’t really call it my first real plugin, but I took the <a href="http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/">Youtube plugin</a> I use and modified it so you can embed videos from Vimeo with a simple Liquid tag. That’s usually the way I learn stuff anyways (even though I haven’t really wrapped my head around Ruby yet) so I figured that it’d be interesting to see if I could make it work even though my modifications weren’t that significant. Maybe I’ll pick it up some day.</p>
-
-<h2 id="source-code">Source code</h2>
-
-<pre><code>module Jekyll
-  class Vimeo &lt; Liquid::Tag
-    @@width = 500
-    @@height = 281
-
-    def initialize(name, id, tokens)
-      super
-      @id = id
-    end
-
-    def render(context)
-      %(&lt;iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;)
-    end
-  end
-end
-
-Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
-</code></pre>
-
-<h3 id="liquid-tag">Liquid tag</h3>
-
-<pre><code>{% vimeo 12345678 %}
-</code></pre>
-
 
       </article><!-- /post -->
 

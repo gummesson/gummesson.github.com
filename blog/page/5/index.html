@@ -61,6 +61,69 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/09/01/creating-a-chocolatey-package" alt="Creating a Chocolatey package">Creating a Chocolatey package</a>
+          </h1>
+          <p class="post__meta">Posted on September  1, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/chocolatey" alt="Chocolatey">Chocolatey</a></p>
+        
+        <p>I recently “converted” all of my installed apps over to using Chocolatey. I won’t dwelve too deeply into how much I love it, but let’s just say it’s a lot. It’s such a relief not having to hunt for executable files. There were packages for nearly all of the apps I use but some were missing so I added a few of them. The process is pretty straightforward.</p>
+
+<p>Let’s say we have an app that’s called <code>MyAwesomeApp</code>. First we need to create a directory called <code>myawesomeapp</code> and then create a <code>nuspec</code> file in it with the following content:</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;metadata&gt;
+    &lt;id&gt;myawesomeapp&lt;/id&gt;
+    &lt;title&gt;MyAwesomeApp&lt;/title&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+    &lt;authors&gt;The creator's name&lt;/authors&gt;
+    &lt;owners&gt;Your name&lt;/owners&gt;
+    &lt;summary&gt;An awesome app&lt;/summary&gt;
+    &lt;description&gt;An incredible awesome app that'll one day save the world!&lt;/description&gt;
+    &lt;projectUrl&gt;http://example.com/&lt;/projectUrl&gt;
+    &lt;tags&gt;awesome awesome awesome&lt;/tags&gt;
+    &lt;licenseUrl&gt;http://example.com/license.html&lt;/licenseUrl&gt;
+    &lt;requireLicenseAcceptance&gt;false&lt;/requireLicenseAcceptance&gt;
+    &lt;iconUrl&gt;http://example.com/logo.png&lt;/iconUrl&gt;
+    &lt;releaseNotes&gt;http://example.com/news/&lt;/releaseNotes&gt;
+  &lt;/metadata&gt;
+  &lt;files&gt;
+    &lt;file src="tools\*" target="tools" /&gt;
+  &lt;/files&gt;
+&lt;/package&gt;
+</code></pre>
+
+<p>Then it’s time to create a <code>chocolateyInstall.ps1</code> file and save it in another directory inside the <code>myawesomeapp</code> directory called <code>tools</code>. Now, we could technically do it as simple as this:</p>
+
+<pre><code>Install-ChocolateyPackage "MyAwesomeApp" "exe" "/quiet" "http://example.com/download/installer.exe"
+</code></pre>
+
+<p>But I like adding a bit more functionality so instead we’ll use this:</p>
+
+<pre><code>$Package = "MyAwesomeApp"
+$PackageParams = @{
+  packageName = $Package;  
+  fileType = "exe";
+  silentArgs = "/quiet";
+  url = "http://example.com/download/installer.exe";
+} 
+
+Try {
+  Install-ChocolateyPackage @PackageParams
+  Write-ChocolateySuccess $Package
+} Catch {
+  Write-ChocolateyFailure $Package "$($_.Exception.Message)"
+  Throw
+}
+</code></pre>
+
+<p>This feels a bit nicer and it’s a hell of a lot easier to re-use, atleast for me. After this we need to run <code>cpack</code> in the root directory to create a <code>nupkg</code> file and then <code>cinst myawesomeapp -source %cd%</code> to test it. The last thing we need to do is to upload the generated <code>nupkg</code> file on the official <a href="http://chocolatey.org/">Chocolatey</a> website. You could do this straight from the PowerShell, but I haven’t done that yet.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="https://github.com/itchyny/lightline.vim" alt="lightline.vim – a light and configurable statusline for Vim">lightline.vim – a light and configurable statusline for Vim <span class="post__title--external">&rarr;</span></a>
           </h1>
           <p class="post__meta">Posted on August 29, 2013 in <a href="/blog/tag/vim" alt="Vim">Vim</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/08/29/lightline-vim" alt="Permalink – lightline.vim – a light and configurable statusline for Vim">&infin;</a></p>
@@ -140,32 +203,6 @@
   <ol>
     <li id="fn:20130823-1">
       <p>Those notes are mainly written for me, but I figured that it might be useful for someone else too.<a href="#fnref:20130823-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/08/22/its-the-little-things-again" alt="It's the little things (again)">It's the little things (again)</a>
-          </h1>
-          <p class="post__meta">Posted on August 22, 2013 in <a href="/blog/tag/general" alt="General">General</a>, <a href="/blog/tag/code" alt="Code">Code</a></p>
-        
-        <p>Today’s smile is brought to me by <a href="https://twitter.com/ttimsmith/status/370369398315315200">this</a>:</p>
-
-<p><img src="/images/blog/2013-08-22-twitter.png" alt="Tim Smith sharing &quot;Jekyll Rake Boilerplate&quot; on Twitter" /></p>
-
-<p>I must sound like a total ass<sup id="fnref:20130822-1"><a href="#fn:20130822-1" class="footnote">1</a></sup> but the truth is that I just get so happy when someone finds the stuff I make actually useful!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130822-1">
-      <p>I’m a swede, so I’m naturally affected by the <a href="http://en.wikipedia.org/wiki/Jante_law">Law of Jante</a>.<a href="#fnref:20130822-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -6,6 +6,14 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>Swapping Pathogen for Vundle</title>
+                <description>&lt;p&gt;After reading the above post yesterday I finally took the plunge and switched to &lt;a href=&quot;https://github.com/gmarik/vundle&quot;&gt;Vundle&lt;/a&gt; from &lt;a href=&quot;https://github.com/tpope/vim-pathogen&quot;&gt;Pathogen&lt;/a&gt;. I already love it. Removing Git submodules is still a bit of a pain though so I used &lt;a href=&quot;https://gist.github.com/sharplet/6289697&quot;&gt;this script by Adam Sharp&lt;/a&gt;, which made it a lot easier. Now I’m off to trying out about a million different plugins!&lt;/p&gt;
+</description>
+                <published>December 29, 2013</published>
+                <link>http://ellengummesson.com/blog/2013/12/29/swapping-pathogen-for-vundle</link>
+              </item>
+            
+              <item>
                 <title>Cliche.js</title>
                 <description>&lt;p&gt;For the first time in a couple of weeks I’m releasing a new thing: &lt;a href=&quot;https://github.com/gummesson/cliche.js&quot;&gt;Cliche.js&lt;/a&gt;. It’s a small library for mapping JavaScript click events. Instead of having to use &lt;code&gt;document.querySelector&lt;/code&gt; and &lt;code&gt;target.addEventListener&lt;/code&gt; over and over again&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; you can do this:&lt;/p&gt;
 
@@ -80,14 +88,6 @@ end)
 </description>
                 <published>November  9, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/11/09/chunks-lua-same-but-different</link>
-              </item>
-            
-              <item>
-                <title>file.lua: the experiment continues</title>
-                <description>&lt;p&gt;I’m hanging on to my experiment with &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt; and a few minutes ago I open sourced yet another small library with yet another unimaginative name: &lt;a href=&quot;https://github.com/gummesson/file.lua&quot;&gt;file.lua&lt;/a&gt;. It basically just a few helper functions for dealing with files. I’m still finding it to be a fun language, which feels pretty nice! I’m still on the fence about whether or not I should release my projects on &lt;a href=&quot;http://luarocks.org/&quot;&gt;LuaRocks&lt;/a&gt;, since they feel pretty insignificant compared to some on the projects on there. We’ll see, I guess.&lt;/p&gt;
-</description>
-                <published>November  6, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/11/06/file-lua-the-experiment-continues</link>
               </item>
             
     </channel>

@@ -61,6 +61,57 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim">Markdown preview for Vim</a>
+          </h1>
+          <p class="post__meta">Posted on January 27, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
+        
+        <p>One of the biggest advantages of using a dedicated tool for writing <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is that they often come with some way of previewing your text file. I kind of miss that kind of function when I’m using <a href="http://www.vim.org/">Vim</a> I decided to throw together a simple vimscript that uses <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to convert a Markdown file to HTML. The basic gist of it looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+endfunction
+</code></pre>
+
+<p>It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It’s not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that’ll open the <code>preview.html</code> directly in the browser:</p>
+
+<pre><code>if has("win32")
+  silent exec '!start cmd /c preview.html'
+else
+  silent exec '!xdg-open preview.html'
+endif
+</code></pre>
+
+<p>One thing that’s worth being mentioned is that the <code>!xdg-open</code> part can be changed to <code>!open</code> and then you can also use it if you’re on a Mac.</p>
+
+<p>In the end the whole thing looks like this:</p>
+
+<pre><code>function! PandocMarkdownPreview()
+  silent exec 'cd %:p:h'
+  silent exec 'pwd'
+  silent exec '!pandoc -o preview.html %'
+  if has("win32")
+    silent exec '!start cmd /c preview.html'
+  else
+    silent exec '!xdg-open preview.html'
+  endif
+endfunction
+</code></pre>
+
+<p>And the mapping looks like this:</p>
+
+<pre><code>map &lt;leader&gt;pmd :call PandocMarkdownPreview()&lt;cr&gt;
+</code></pre>
+
+<p>I also threw together more refined version of the whole thing in a <a href="https://gist.github.com/4649514">gist on Github</a>. You’ll obviously need to have Pandoc install on your machine in order to get it up and running.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/01/24/vim-nearly-four-weeks-in" alt="Vim: nearly four weeks in">Vim: nearly four weeks in</a>
           </h1>
           <p class="post__meta">Posted on January 24, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
@@ -185,32 +236,6 @@ au InsertLeave * set cursorline
   <ol>
     <li id="fn:20130115-1">
       <p>I do actually use the <code>rake post</code> function that I created for my <a href="https://github.com/gummesson/jekyll-rake-boilerplate">Jekyll Rake Boilerplate</a> project, but I only use it when I’m 100% sure on a post’s title and content.<a href="#fnref:20130115-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/01/12/launch-week" alt="Launch week">Launch week</a>
-          </h1>
-          <p class="post__meta">Posted on January 12, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a></p>
-        
-        <p>Yesterday I finally pushed something to the master branch of a thing I started working on last week, <a href="#">Smallwork</a>. It’s a small yet full featured <a href="http://sass-lang.com/">SCSS</a> framework, or starting point as I’d like to call it. The first time I tried SCSS was way back in August or September but I didn’t really “get” it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines<sup id="fnref:20130112-1"><a href="#fn:20130112-1" class="footnote">1</a></sup> which kind of makes it my most ambitious work to date.</p>
-
-<p>I also played around with <a href="http://www.sinatrarb.com/">Sinatra</a> again and came up with a simple journal app which uses <a href="http://datamapper.org/">Datamapper</a> and <a href="http://www.sqlite.org/">SQLite3</a> for storing everything in a database. Like I mentioned earlier I’m quite fond of Sinatra, especially since it’s really easy to understand what do to and what’s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I’m not in fact dreaming. I’m no expert but I like where I’m going with it and I’ve barely scratched the surface.</p>
-
-<p>I’m also thinking about extending <a href="http://kramit.ellengummesson.com/">Kramit!</a> a bit, but we’ll see how that goes… I guess I should try to slow myself down a bit since I’ve launched three new projects this week alone. I’m having fun though!</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130112-1">
-      <p>That’s including blank lines and comments. It’s still a pretty big number though. The compiled CSS code is 682 lines long and that’s without any additional content besides the basic structure itself.<a href="#fnref:20130112-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

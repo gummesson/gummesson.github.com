@@ -61,6 +61,32 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/12/launch-week" alt="Launch week">Launch week</a>
+          </h1>
+          <p class="post__meta">Posted on January 12, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a></p>
+        
+        <p>Yesterday I finally pushed something to the master branch of a thing I started working on last week, <a href="#">Smallwork</a>. It’s a small yet full featured <a href="http://sass-lang.com/">SCSS</a> framework, or starting point as I’d like to call it. The first time I tried SCSS was way back in August or September but I didn’t really “get” it until I started learning Ruby. The code length measures in at a total of 1156 numbers of lines<sup id="fnref:20130112-1"><a href="#fn:20130112-1" class="footnote">1</a></sup> which kind of makes it my most ambitious work to date.</p>
+
+<p>I also played around with <a href="http://www.sinatrarb.com/">Sinatra</a> again and came up with a simple journal app which uses <a href="http://datamapper.org/">Datamapper</a> and <a href="http://www.sqlite.org/">SQLite3</a> for storing everything in a database. Like I mentioned earlier I’m quite fond of Sinatra, especially since it’s really easy to understand what do to and what’s going on. The code is so self-explanatory that I sometimes have to pinch myself to see that I’m not in fact dreaming. I’m no expert but I like where I’m going with it and I’ve barely scratched the surface.</p>
+
+<p>I’m also thinking about extending <a href="http://kramit.ellengummesson.com/">Kramit!</a> a bit, but we’ll see how that goes… I guess I should try to slow myself down a bit since I’ve launched three new projects this week alone. I’m having fun though!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130112-1">
+      <p>That’s including blank lines and comments. It’s still a pretty big number though. The compiled CSS code is 682 lines long and that’s without any additional content besides the basic structure itself.<a href="#fnref:20130112-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/01/10/lo-and-behold-ive-launched-an-web-app" alt="Lo and behold, I've launched an web app!">Lo and behold, I've launched an web app!</a>
           </h1>
           <p class="post__meta">Posted on January 10, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a></p>
@@ -171,46 +197,6 @@
     </li>
     <li id="fn:20121230-3">
       <p><a href="http://net.tutsplus.com/articles/general/top-10-pitfalls-when-switching-to-vim/">Jeffrey Way’s</a>, <a href="http://nvie.com/posts/how-i-boosted-my-vim/">Vincent Driessen’s</a> and <a href="http://stevelosh.com/blog/2010/09/coming-home-to-vim/">Steve Losh’s</a> tips, tricks and config files where extremely helpful.<a href="#fnref:20121230-3" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/12/26/jekyll-rake-boilerplate" alt="Jekyll Rake Boilerplate">Jekyll Rake Boilerplate</a>
-          </h1>
-          <p class="post__meta">Posted on December 26, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a></p>
-        
-        <p>Even though I so far love learning <a href="http://www.ruby-lang.org/en/">Ruby</a> I’ve had hard time to find a project to work on. All the things that I wanted to code have already been done which makes my motivation crumble. I know that I can code something that already been done and it would probaly be a good experience, but I’m lazy like that. After some thinking I finally came up with something and yesterday I “released” it: the <a href="https://github.com/gummesson/jekyll-rake-boilerplate">Jekyll Rake Boilerplate</a>. </p>
-
-<p>Using a rakefile for <a href="http://jekyllrb.com/">Jekyll</a> isn’t something that’s new nor unique but so far I haven’t stumbled upon a simple boilerplate. It isn’t revolutionary by any means<sup id="fnref:20121226-1"><a href="#fn:20121226-1" class="footnote">1</a></sup> but it gave me the motivation that I needed and I had fun while doing it. Even though it’s a small file I actually both tested and experimented with it quite extensively. It may sound silly but I wanted to be “proud” of it, or atleast content.</p>
-
-<h2 id="the-tasks">The Tasks</h2>
-
-<p>The <em>Jekyll Rake Boilerplate</em> consists of four tasks: <code>build</code>, <code>post</code>, <code>git</code> and <code>remote</code><sup id="fnref:20121226-2"><a href="#fn:20121226-2" class="footnote">2</a></sup>.</p>
-
-<ul>
-  <li><code>build</code> generates the site. If I want to generate it with a post limit, I can use <code>build[1]</code> or whatever number of posts I want to generate. </li>
-  <li><code>post["Post title"]</code> creates a new post in the <code>_posts</code> directory by reading the default template file, adding the title I’ve specified and generating a file name by using the current date and the title.</li>
-  <li><code>git["Commit message"]</code> adds, commits and pushes the site to the site’s remote git repository with the commit message that’s been specified.</li>
-  <li><code>remote</code> uses either <code>robocopy</code> or <code>rsync</code> to transfer the site to a remote host/server.</li>
-</ul>
-
-<p>I also set the default task to <code>build</code> so if I’m feeling lazy I only need to type <code>rake</code>, hit <code>Enter</code> and the site will be generated. I’ve contemplating about adding some more tasks but for now I’ll stick to what I already have. The goal is to keep it as simple and adaptable as possible so that anyone can use it without having to modify it too much unless they want to.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20121226-1">
-      <p>And the code itself is probably not that good since I’m still learning.<a href="#fnref:20121226-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20121226-2">
-      <p>The settings for some of the tasks needs to be in the <code>_config.yml</code> file in order for them to work.<a href="#fnref:20121226-2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
