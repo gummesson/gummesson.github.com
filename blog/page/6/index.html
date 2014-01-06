@@ -61,6 +61,28 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/notes/the-linux-setup" alt="My Linux setup">My Linux setup <span class="post__title--external">&rarr;</span></a>
+          </h1>
+          <p class="post__meta">Posted on August 23, 2013 in <a href="/blog/tag/linux" alt="Linux">Linux</a>, <a href="/blog/tag/hardware" alt="Hardware">Hardware</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/08/23/my-linux-setup" alt="Permalink – My Linux setup">&infin;</a></p>
+        
+        <p>I’ve mentioned before how I love to read about <a href="http://onethingwell.org/linux-setup">other</a> <a href="http://jasonwryan.com/blog/2010/10/04/the-setup/">people’s</a> setups so I decided to throw together a quite detailed but comprehensive document of what I currently use for my Linux setup and how to actually set it up<sup id="fnref:20130823-1"><a href="#fn:20130823-1" class="footnote">1</a></sup>. So far I’m happy with what I’m using but I plan to keep it up to date if I decide to add or change something.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130823-1">
+      <p>Those notes are mainly written for me, but I figured that it might be useful for someone else too.<a href="#fnref:20130823-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/08/22/its-the-little-things-again" alt="It's the little things (again)">It's the little things (again)</a>
           </h1>
           <p class="post__meta">Posted on August 22, 2013 in <a href="/blog/tag/general" alt="General">General</a>, <a href="/blog/tag/code" alt="Code">Code</a></p>
@@ -241,81 +263,6 @@ esac
   <ol>
     <li id="fn:20130810-1">
       <p>To make a file executable, open up the terminal and type <code>chmod +x file.ext</code>.<a href="#fnref:20130810-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/07/29/a-poor-mans-notational-velocity-resophnotes-vim-alternative" alt="A poor man's Notational Velocity/ResophNotes Vim alternative">A poor man's Notational Velocity/ResophNotes Vim alternative</a>
-          </h1>
-          <p class="post__meta">Posted on July 29, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
-        
-        <p><em>Long time, no see. I haven’t touched this blog in almost two months and the reason for that is that life got in the way. I’ve really missed writing so I’ll defintively try to pick it up again, I swear!</em></p>
-
-<p>Linux is in a lot of ways much better than Windows but for some reason there’s no good alternative for note-taking apps like <a href="http://notational.net/">Notational Velocity</a> or <a href="http://www.resoph.com/ResophNotes/Welcome.html">ResophNotes</a>. I’ve tried <a href="https://github.com/cpbotha/nvpy">NvPY</a> but unfortunately it doesn’t really work that great for using plain text files with Dropbox. A couple of months back I did experiment with using Vim in conjunction with the <a href="https://github.com/mileszs/ack.vim">Ack plugin</a>, which worked fine on Linux but rather poorly on Windows<sup id="fnref:20130729-1"><a href="#fn:20130729-1" class="footnote">1</a></sup>. I decided to replace Ack with Vim’s built-in <code>grep</code> function, mainly just to keep it a cross-platform script. It’s not quite as fast as Ack but the difference isn’t huge since it’s just dealing with text files.</p>
-
-<p>It basically consists of two command line mappings: <code>Note</code>, which will create a new in the specified notes folder with the provided filename and the default extension, like this: <code>:Note This is the filename</code>. <code>Notes</code> has two functions. You can either use it to browse the notes folder or search the content of the text files in it, ie: <code>:Notes I'm looking for this</code>. It’ll open up the quickfix list after the search is complete.</p>
-
-<p>I actually have a folder in my Vim home directory called <code>tweaks</code> were I’ve placed a few small changes but you could technically turn this into a real plugin too or rewrite it and put it in your <code>.vimrc</code> file. I like having most of its’ functionality in a <code>autoload</code> folder since it won’t load until you actually need it.</p>
-
-<p><strong>tweaks/autoload/notes.vim:</strong></p>
-
-<pre><code>function! notes#List(pattern)
-  if strlen(a:pattern) == 0
-    silent! execute 'Sexplore '.g:notes_directory
-  else
-    silent! execute 'lcd '.g:notes_directory.' | vimgrep /'.a:pattern.'/gj *.'.g:notes_extension.' | copen'
-  endif
-endfunction
-
-function! notes#New(filename)
-  if strlen(a:filename) == 0
-    echom "No filename!"
-  else
-    silent! execute 'enew | lcd '.g:notes_directory.' | w '.a:filename.'.'.g:notes_extension
-  endif
-endfunction
-</code></pre>
-
-<p>There’s really nothing fancy in the above scripts, but the combination of using <code>netrw</code>, <code>vimgrep</code> and the quickfix list works really well.</p>
-
-<p><strong>tweaks/plugin/notes.vim</strong>:</p>
-
-<pre><code>if exists("g:loaded_notes_plugin") || &amp;cp
-  finish
-endif
-
-let g:loaded_notes_plugin = 1
-
-if !exists("g:notes_directory")
-  if has("unix")
-    let g:notes_directory = "~/Notes"
-  else
-    let g:notes_directory = "C:/Notes"
-  endif
-endif
-
-if !exists("g:notes_extension")
-  let g:notes_extension = "txt"
-endif
-
-command! -nargs=? Notes call notes#List(&lt;q-args&gt;)
-command! -nargs=? Note call notes#New(&lt;q-args&gt;)
-</code></pre>
-
-<p>You can of course change the <code>g:notes_directory</code> and <code>g:notes_extension</code> to whatever you want. You could remove the <code>if has("unix")</code> part if you don’t plan on using it on different systems too.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130729-1">
-      <p>The plugin in itself works flawlessly but Ack doesn’t really work all to well on Windows.<a href="#fnref:20130729-1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

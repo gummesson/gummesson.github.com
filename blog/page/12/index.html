@@ -61,6 +61,39 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/02/21/ack-on-windows" alt="Ack on Windows">Ack on Windows</a>
+          </h1>
+          <p class="post__meta">Posted on February 21, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/tools" alt="Tools">Tools</a></p>
+        
+        <p>I recently finally tried out <a href="http://betterthangrep.com/">Ack</a> which I must say is a pretty awesome tool. The installation was fairly straight forward but I though that I would write it down here in case I’ll ever need to do it again or if someone wants a small guide with just a few easy steps.</p>
+
+<p>First things first, <a href="http://www.perl.org/">Perl</a> needs to be install on the system. If you have either <a href="http://git-scm.com/">Git</a> or <a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a> installed then you’re good to go.</p>
+
+<ol>
+  <li>Download the standalone script from the <a href="http://betterthangrep.com/install/">here</a>.</li>
+  <li>Create a <code>bat</code> file and add the following to it: <code>@"C:\path\to\perl.exe" C:\path\to\ack.pl %*</code>. Change the paths so that they point to the relevant places.</li>
+  <li>Save the file as <code>ack.bat</code> and place it somewhere in your system environment path, or create a new folder and add it to said path.<sup id="fnref:20130221-1"><a href="#fn:20130221-1" class="footnote">1</a></sup></li>
+  <li>Last, but not least, create an alias for the <code>bat</code> file in your <code>.bash_profile</code> if you want to get it to work with <a href="http://www.cygwin.com/">Cygwin</a>.</li>
+</ol>
+
+<p>You can use the same steps to create a more “sophisticated” way of running any kind of script too. Let’s say you have a script called <code>foo.rb</code>. You want to run it straight from the command line but you don’t necessary want to turn into a full fledged gem. Just change the the first path in the <code>bat</code> file so it points to your binary <a href="http://www.ruby-lang.org/">Ruby</a> file and the second to your actually script and you’re all good!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130221-1">
+      <p>Which can be modified under “System Properties” → “Advanced system settings” → “Advanced” → “Environment Variables” → “Path”.<a href="#fnref:20130221-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/02/16/more-vim-goodness" alt="More Vim goodness">More Vim goodness</a>
           </h1>
           <p class="post__meta">Posted on February 16, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
@@ -151,28 +184,6 @@ let g:netrw_list_hide = ".git,.sass-cache,.jpg,.png,.svg"
 </code></pre>
 
 <p>The <code>liststyle</code> option makes it lists all file and folders in a more tree-like structure vill the <code>hide</code> options just hides the selected filetypes and folders.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll">Wordcount plugin for Jekyll</a>
-          </h1>
-          <p class="post__meta">Posted on January 31, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a></p>
-        
-        <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" class="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130131-1">
-      <p>Atleast if you’re measuring by code length since the whole plugin currently consists of just 17 lines of code.<a href="#fnref:20130131-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- /post -->
 

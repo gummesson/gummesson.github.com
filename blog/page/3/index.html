@@ -61,6 +61,35 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/10/19/partially-use-partials-in-your-markup" alt="Partially: use partials in your markup">Partially: use partials in your markup</a>
+          </h1>
+          <p class="post__meta">Posted on October 19, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a></p>
+        
+        <p>I’ve always been jealous of the plethora of build tools available on OS X, in particular <a href="http://hammerformac.com/">Hammer for Mac</a> and it’s excellent <code>@include</code> feature. Rather than buying a new computer I decided to instead create yet another <a href="http://nodejs.org/">Node.js</a> project and build it myself. I named it <a href="https://github.com/gummesson/partially">Partially</a><sup id="fnref:20131019-1"><a href="#fn:20131019-1" class="footnote">1</a></sup>. It enables you to do this:</p>
+
+<pre><code>&lt;!-- @include partial.ext --&gt;
+</code></pre>
+
+<p>It’ll then include the partial in question in the file. It should be able to handle any markup language, although I’ve some far only tried HTML, <a href="http://haml.info/">Haml</a>, <a href="http://jade-lang.com/">Jade</a> and <a href="http://daringfireball.net/projects/markdown/">Markdown</a>.</p>
+
+<p>This was also the first real project that I decide to go all in on and write actual tests for. It suprised me that once I got into it it was actually quite fun! I have no idea if I did it the “right” way, but I atleast tried to. Pull requests are always welcome. In fact, they’re even encouraged!</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20131019-1">
+      <p>Of course!<a href="#fnref:20131019-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/10/15/trying-out-ghost" alt="Trying out Ghost">Trying out Ghost</a>
           </h1>
           <p class="post__meta">Posted on October 15, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ghost" alt="Ghost">Ghost</a></p>
@@ -187,55 +216,6 @@
 </ul>
 
 <p>That’s it. This’ll hopefully make my code a little less prone to errors.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/09/20/servera" alt="Servera">Servera</a>
-          </h1>
-          <p class="post__meta">Posted on September 20, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a></p>
-        
-        <p>After a few hours of hacking spreading out during these last couple of days I’m releasing yet another <a href="http://nodejs.org/">Node.js</a> thing called <a href="https://npmjs.org/package/servera">Servera</a><sup id="fnref:20130920-1"><a href="#fn:20130920-1" class="footnote">1</a></sup>. It’s a small app for managing and serving all your local static sites by configuring all your projects in a single <code>json</code> file. The idea is to map them by using this convention:</p>
-
-<pre><code>{
-  "myproject": {
-    "dir": "/home/USERNAME/Dev/myproject",
-    "port": 3000
-  },
-  "anotherproject": {
-    "dir": "C:/Users/USERNAME/Dev/anotherproject",
-    "port": 6000
-  }
-}
-</code></pre>
-
-<p>The only thing you need to do to launch the server is to run <code>servera myproject</code> and then go to <code>localhost:3000</code> (or whatever port you’ve specified) in your browser. You can also serve the current working directory by running <code>servera .</code> and you can list all your projects with <code>servera list</code>.</p>
-
-<p>It’s heavily inspired by <a href="https://npmjs.org/package/distra">distra</a>, although it’s a dumbed down version without the whole <code>/etc/hosts</code> configuration part<sup id="fnref:20130920-2"><a href="#fn:20130920-2" class="footnote">2</a></sup>. I’ve tested it on both Windows and Linux, and it should hopefully work on OS X too. </p>
-
-<p>It’s a pretty simple thing, but I feel that it could actually be useful.</p>
-
-<h2 id="under-the-hood">Under the hood</h2>
-
-<p><code>Servera</code> uses four additional modules: <a href="https://npmjs.org/package/fs-extra">fs-extra</a>, <a href="https://npmjs.org/package/connect">connect</a>, <a href="https://npmjs.org/package/colors">colors</a> and <a href="https://npmjs.org/package/commander">commander</a>. <code>fs-extra</code> is used for copying the sample configuration file to your home directory while <code>connect</code> is the main server. <code>colors</code> is used to colorize the output in the terminal and <code>commander</code> handles the argument parsing.</p>
-
-<p>It’s all pretty basic stuff, but together they work really well.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130920-1">
-      <p>Which is the swedish word for “serve”. I’m original like that.<a href="#fnref:20130920-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130920-2">
-      <p>I’m pretty sure that there’s no easy way of doing that on Windows without using brute force or some other vodoo.<a href="#fnref:20130920-2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- /post -->
 

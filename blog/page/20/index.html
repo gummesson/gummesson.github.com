@@ -61,6 +61,42 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/10/29/hotstrings-and-markdown" alt="Hotstrings and Markdown">Hotstrings and Markdown</a>
+          </h1>
+          <p class="post__meta">Posted on October 29, 2012 in <a href="/blog/tag/tech" alt="Tech">Tech</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a>, <a href="/blog/tag/markdown" alt="Markdown">Markdown</a></p>
+        
+        <p>Since yesterday I’ve been messing around with an small but powerful app called <a href="http://www.autohotkey.com/">AutoHotKey</a>. I guess you can call it a poor man’s <a href="http://smilesoftware.com/TextExpander/index.html">TextExpander</a>, but the fact is that it’s capable of doing much more. Not only does it support text expansions for abbreviations but you can also create scripts with so called hotkeys and other things for anything and everything. When I say everything I do mean it. The learning curve is pretty steep for the more advanced functions since there’s no GUI for it but for creating some simple text expansions it’s as easy as scripting gets. The <a href="http://www.autohotkey.com/docs/">documentation</a> is really great too if you want to dive in deeper.</p>
+
+<h2 id="abbreviate-all-the-things">Abbreviate all the things</h2>
+
+<p>One of the strengths of an app like this is that it works great for repetitive writing tasks like phone numbers, email adresses and signatures. Instead of having to repeat essentially the same phrase several times a day you just write a simple keyword and it’ll automatically transform into the right thing. Since it’s as just a script it works universally across all of your apps too, which is another thing that’s great. I can use the same abbreviations whether I’m surfing the web in Chrome or writing a blog post in FocusWriter or ResophNotes.</p>
+
+<p>The basic structure of a simple text expansion script/hotstring looks like this:</p>
+
+<pre><code>:oc:abbreviation::expanded text
+</code></pre>
+
+<p><strong>Side note:</strong> the <code>oc</code> in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.</p>
+
+<h3 id="markdown-automation">Markdown automation</h3>
+
+<p>Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like <code>[]</code> and <code>()</code>. Instead of having to type out all of the characters when I want to create link I only have to type <code>.mdlnk</code> thanks to this simple hotstring:</p>
+
+<pre><code>:oc:.mdlnk::[]({"}{"})
+</code></pre>
+
+<p>After a simple hit on the spacebar the <code>.mdlnk</code> transforms into <code>[]("")</code> (the quotation marks, along with a couple of other characters, has to be wrapped inside curly brackets in order to show since they’re used in the real syntax). Instead of having to fiddle with it I can easily paste the link in it and move on which works much better as you can imagine. I’ve also created similar hotstrings for many other things such as images (<code>.mdimg</code>) and referenced-styled links (<code>.mdrefi</code> and <code>.mdrefl</code>), although I rarely use those.</p>
+
+<p><strong>Another side note:</strong> since I’m new to this whole scripting thing there’s no doubt at all that they could be more advanced and help even further with a more automated writing workflow but I haven’t had time to learn that just yet. I could probably expand the above link script to actually add a link from the clipboard directly into it which I’m going to do once I have the time to sit down and figure it out.</p>
+
+<p>So to wrap things up, if you want to speed up your repetitive writing then AutoHotKey is definitively it. Don’t let the lack of a fancy GUI scare you off. If I can make it work, you can too.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="http://www.squarespace.com/apps/#note" alt="Squarespace Note">Squarespace Note <span class="post__title--external">&rarr;</span></a>
           </h1>
           <p class="post__meta">Posted on October 26, 2012 in <a href="/blog/tag/tech" alt="Tech">Tech</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a>, <a href="/blog/tag/ios" alt="iOS">iOS</a> <a class="post__meta--permalink  link--hidden" href="/blog/2012/10/26/squarespace-note" alt="Permalink – Squarespace Note">&infin;</a></p>
@@ -114,22 +150,6 @@
 </blockquote>
 
 <p>I must say that this is pretty damn impressive. Well played whoever you are, well played.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="http://blog.echofon.com/2012/10/changes-coming-for-echofon-desktop-users.html" alt="Changes coming for Echofon desktop users">Changes coming for Echofon desktop users <span class="post__title--external">&rarr;</span></a>
-          </h1>
-          <p class="post__meta">Posted on October 18, 2012 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/tech" alt="Tech">Tech</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a> <a class="post__meta--permalink  link--hidden" href="/blog/2012/10/18/changes-coming-for-echofon-desktop-users" alt="Permalink – Changes coming for Echofon desktop users">&infin;</a></p>
-        
-        <blockquote>
-  <p>Beginning this Fall, we will begin phasing out our Echofon desktop products (Mac, Windows, Firefox) in order to focus more on our mobile line of Echofon apps.</p>
-</blockquote>
-
-<p>This is such a shame. <a href="http://www.echofon.com/">Echofon</a> is probably the best one column Twitter client for Windows users (if not the only one). I guess I need to find something else then.</p>
 
       </article><!-- /post -->
 

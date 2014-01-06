@@ -61,6 +61,28 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2013/01/31/wordcount-plugin-for-jekyll" alt="Wordcount plugin for Jekyll">Wordcount plugin for Jekyll</a>
+          </h1>
+          <p class="post__meta">Posted on January 31, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/ruby" alt="Ruby">Ruby</a>, <a href="/blog/tag/jekyll" alt="Jekyll">Jekyll</a></p>
+        
+        <p>Today I decided to hack together a small plugin for Jekyll that can count all the words in a blog post and also roughly calculate how many seconds it takes to read it. This is based on some quick googling where I found out that the average person reads 300 words per minute, so I’m not sure if it’s 100% true but it’s a pretty fun feature nonetheless. I’ve of course created a repository for it on <a href="https://github.com/gummesson/jekyll-wordcount">GitHub</a>. I’m not entirely sure that the implementation I use is the best since it needs to read the content and strip it of it’s HTML tags before actually doing the counting but it was by far the easiest way<sup id="fnref:20130131-1"><a href="#fn:20130131-1" class="footnote">1</a></sup>. The couting seems to be quite accurate too, which is nice.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130131-1">
+      <p>Atleast if you’re measuring by code length since the whole plugin currently consists of just 17 lines of code.<a href="#fnref:20130131-1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2013/01/27/markdown-preview-for-vim" alt="Markdown preview for Vim">Markdown preview for Vim</a>
           </h1>
           <p class="post__meta">Posted on January 27, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/markdown" alt="Markdown">Markdown</a>, <a href="/blog/tag/vim" alt="Vim">Vim</a></p>
@@ -217,28 +239,6 @@ au InsertLeave * set cursorline
           <p class="post__meta">Posted on January 18, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/01/18/vimium-the-hackers-browser" alt="Permalink – Vimium – the hacker's browser">&infin;</a></p>
         
         <p>I’m probably the last person on earth to discover this neat little extension but it’s nonetheless a great thing for both navigating in <a href="http://www.google.com/chrome">Chrome</a> and learning the basic <a href="http://www.vim.org/">Vim</a> commands.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/01/15/i-created-yet-another-pointless-app" alt="I created yet another (pointless) app">I created yet another (pointless) app</a>
-          </h1>
-          <p class="post__meta">Posted on January 15, 2013 in <a href="/blog/tag/web" alt="Web">Web</a>, <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/apps" alt="Apps">Apps</a></p>
-        
-        <p>My experiments with the <a href="http://www.sinatrarb.com/">Sinatra</a> framework continues and yesterday I pushed yet another app to <a href="http://www.heroku.com/">Heroku</a> called <a href="http://slugize.ellengummesson.com/">Slugize</a>. It only has one small purpose: creating a slug out of a blog title, which can be pretty handy when you use a static site generator like <a href="http://jekyllrb.com/">Jekyll</a>. I usually don’t decide on a title until a few seconds before I “hit publish” which means that fixing the slug is usually the last thing I do. I find it extremely annoying that I have to manually type out <code>-</code> between every word in the title and change every letter to be in downcase<sup id="fnref:20130115-1"><a href="#fn:20130115-1" class="footnote">1</a></sup>. I guess you can call it lazyiness too. Now I only need to copy and paste the title into <em>Slugize</em> and it’ll do it automatically for me and I also added an option to append the current day’s date to it. It’s funny how being lazy sometimes makes you more productive.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130115-1">
-      <p>I do actually use the <code>rake post</code> function that I created for my <a href="https://github.com/gummesson/jekyll-rake-boilerplate">Jekyll Rake Boilerplate</a> project, but I only use it when I’m 100% sure on a post’s title and content.<a href="#fnref:20130115-1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
       </article><!-- /post -->
 
