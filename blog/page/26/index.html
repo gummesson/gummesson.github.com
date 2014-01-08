@@ -61,6 +61,114 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2012/08/31/more-additions" alt="More additions">More additions</a>
+          </h1>
+          <p class="post__meta">Posted on August 31, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/css" alt="CSS">CSS</a></p>
+        
+        <p>Being bored sometimes has it’s own perks. I continued experimenting with the <a href="/projects/begrider/">Begrider</a> project and ended up adding a couple of more things to it, mainly a new set of column-like classes called <code>.unit-</code>. A unit differ itself from a regular column by not having a gutter, and thus having more of a “proportional” percentage width. So, instead of just having these:</p>
+
+<pre><code>.row .column-twelve {
+  width: 99.99%;
+  margin-right: 0;
+}
+
+.row .column-eleven {
+  width: 91.42%;
+}
+
+.row .column-ten {
+  width: 82.85%;
+}
+
+/* Nine columns */
+.row .column-nine {
+  width: 74.28%;
+}
+
+.row .column-eight {
+  width: 65.71%;
+}
+
+.row .column-seven {
+  width: 57.14%;
+}
+
+.row .column-six {
+  width: 48.57%;
+}
+
+.row .column-five {
+  width: 40%;
+}
+
+.row .column-four {
+  width: 31.43%;
+}
+
+.row .column-three {
+  width: 22.86%;
+}
+
+.row .column-two {
+  width: 14.29%;
+}
+
+.row .column-one {
+  width: 5.72%;
+}
+</code></pre>
+
+<p>You can also use these:</p>
+
+<pre><code>.row .unit-full {
+  width: 100%;
+}
+
+.row .unit-four-fifths {
+  width: 80%;
+}
+
+.row .unit-three-quarters {
+  width: 75%;
+}
+
+.row .unit-two-thirds {
+  width: 66.66%;
+}
+
+.row .unit-three-fifths {
+  width: 60%;
+}
+
+.row .unit-half {
+  width: 50%;
+}
+
+.row .unit-two-fifths {
+  width: 40%;
+}
+
+.row .unit-one-third {
+  width: 33.33%;
+}
+
+.row .unit-one-quarter {
+  width: 25%;
+}
+
+.row .unit-one-fifth {
+  width: 20%;
+}
+</code></pre>
+
+<p>It’s useful if you don’t want to have any gutters and/or want to use paddings instead instead of margins. I don’t know if anyone’s ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don’t really know if it actually needs anything more, but I’ll be sure to try stuff out.</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2012/08/28/stumbling-upon-a-good-solution" alt="Stumbling upon a good solution">Stumbling upon a good solution</a>
           </h1>
           <p class="post__meta">Posted on August 28, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/css" alt="CSS">CSS</a></p>
@@ -328,28 +436,6 @@ a:hover, a:focus {
 </code></pre>
 
 <p>It might look like a lot of work for simplifying such a small part, but the thing is that both <code>variables.scss</code> and <code>screen.scss</code> are highly customizable and reusable too. If I wanted to change a font-family or make the font-percentage bigger I could do that by just opening up <code>variables.scss</code> and re-rendering it. I don’t have to change anything else. I think I’ll try out Sass for a while and see how it goes. There’s a lot more to it than just simple variables and math, so I’m looking forward to see what I can come up with.</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2012/08/23/my-big-fat-git-failure" alt="My big fat git failure">My big fat git failure</a>
-          </h1>
-          <p class="post__meta">Posted on August 23, 2012 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/git" alt="Git">Git</a></p>
-        
-        <p><strong>Note:</strong> this isn’t critism, rather a documentation of my own stupidity.</p>
-
-<p>It all started a couple of hours ago. I needed to change something fast on this blog so instead of using my normal method (ie: using Jekyll to generate all the files and then push them to GitHub) I decided to use GitHub’s built-in editor since that’s a much faster way. Big mistake. After a while, when I decided to commit another change using the actual desktop client I got an error message which said “DETACHED HEAD”. After some googling around I found a pretty simple <a href="http://stackoverflow.com/questions/1705731/how-do-i-fix-checking-out-head-in-git," title="Stack Overflow - How do I fix checking out HEAD^ in git">solution</a> that thankfully solved this. </p>
-
-<p>However, after I’d fixed that and remade all of my changes locally using my normal method, I got another error message when I was trying to commit the changes: “Failed to sync this branch”.</p>
-
-<p><img src="/images/blog/2012-08-23-failed-to-sync.png" alt="Failed to sync this branch" title="Failed to sync this branch" /></p>
-
-<p>I again did a google search but this time around I didn’t come across something that could entirely fix the problem. I did found a <a href="http://haacked.com/archive/2012/05/21/introducing-github-for-windows.aspx#87327" title="git push in the shell">temporary fix</a> though which involves using the shell, so I’m still able to update the site. I don’t know if I screwed something up or if it’s a bug. I’m hoping that the problem will solve itself, even though it’s highly unlikely.</p>
-
-<p>Damn me and my apparent laziness.</p>
 
       </article><!-- /post -->
 

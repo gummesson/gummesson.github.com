@@ -61,6 +61,20 @@
         <article class="post">
         
           <h1 class="post__title">
+            <a class="link--hidden" href="/blog/2014/01/08/gulp-pandoc" alt="gulp-pandoc">gulp-pandoc</a>
+          </h1>
+          <p class="post__meta">Posted on January  8, 2014 in <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a>, <a href="/blog/tag/gulp" alt="gulp">gulp</a></p>
+        
+        <p>I just released my first plugin for <a href="https://npmjs.org/package/gulp">gulp</a> called <a href="https://npmjs.org/package/gulp-pandoc">gulp-pandoc</a>. It’s basically just a thin wrapper around a Node.js module called <a href="https://npmjs.org/package/pdc">pdc</a>, which in turn is a small wrapper around the excellent markup converter tool <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>. You should check it out if you like Pandoc as much as I do!</p>
+
+<p><a href="https://travis-ci.org/">Travis CI</a> seems to really hate me at the moment and even though my test suite runs fine locally it throws an huge error at me whenever I push my code up to GitHub. I’m not sure what to do about that…</p>
+
+      </article><!-- /post -->
+
+
+        <article class="post">
+        
+          <h1 class="post__title">
             <a class="link--hidden" href="/blog/2014/01/06/getting-started-with-gulp" alt="Getting started with gulp">Getting started with gulp</a>
           </h1>
           <p class="post__meta">Posted on January  6, 2014 in <a href="/blog/tag/javascript" alt="JavaScript">JavaScript</a>, <a href="/blog/tag/node.js" alt="Node.js">Node.js</a>, <a href="/blog/tag/gulp" alt="gulp">gulp</a></p>
@@ -292,36 +306,6 @@ Cliche({
           <p class="post__meta">Posted on December 22, 2013 in <a href="/blog/tag/apps" alt="Apps">Apps</a> <a class="post__meta--permalink  link--hidden" href="/blog/2013/12/22/scott-hanselmans-2014-ultimate-developer-and-power-users-tool-list-for-windows" alt="Permalink – Scott Hanselman's 2014 Ultimate Developer and Power Users Tool List for Windows">&infin;</a></p>
         
         <p>An extensive list filled with goodies. I especially enjoyed discovering <a href="https://github.com/bmatzelle/gow">Gow</a>, which is a lightweight alternative to <a href="http://www.cygwin.com/">Cygwin</a>. The Bash “implementation” works like a charm and is suprisingly fast!</p>
-
-      </article><!-- /post -->
-
-
-        <article class="post">
-        
-          <h1 class="post__title">
-            <a class="link--hidden" href="/blog/2013/11/11/should-lua-bringing-bdd-style-assertions-to-lua" alt="should.lua: bringing BDD-style assertions to Lua">should.lua: bringing BDD-style assertions to Lua</a>
-          </h1>
-          <p class="post__meta">Posted on November 11, 2013 in <a href="/blog/tag/code" alt="Code">Code</a>, <a href="/blog/tag/lua" alt="Lua">Lua</a></p>
-        
-        <p>After having released three smaller libraries for Lua I embarked on a pretty ambitious journey: to create a BDD-style assertion library, which I then named <a href="https://github.com/gummesson/should.lua">should.lua</a>. <a href="http://olivinelabs.com/busted/">Busted</a> has been my testing framework of choice and I’m a big fan of it, but I don’t really like using <code>assert</code> when I use <code>describe</code> and <code>it</code> in my tests. Now I can write my tests like this:</p>
-
-<pre><code>describe('A test', function()
-  it('should do something', function()
-    should.Equal(true, true)
-  end)
-end)
-</code></pre>
-
-<p><code>expect</code> is also available:</p>
-
-<pre><code>describe('A test', function()
-  it('should do something', function()
-    expect(true):toEqual(true)
-  end)
-end)
-</code></pre>
-
-<p><code>expect</code> is actually just a thin “wrapper” for the <code>should</code> library, which I hacked together using the recommended way for creating <a href="http://www.lua.org/pil/16.1.html">classes</a> in Lua. It was a challenge, but a pretty fun one. However, it’s far from finished so pull requests are always welcome!</p>
 
       </article><!-- /post -->
 

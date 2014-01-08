@@ -6,6 +6,16 @@
           <link>http://ellengummesson.com</link>
             
               <item>
+                <title>gulp-pandoc</title>
+                <description>&lt;p&gt;I just released my first plugin for &lt;a href=&quot;https://npmjs.org/package/gulp&quot;&gt;gulp&lt;/a&gt; called &lt;a href=&quot;https://npmjs.org/package/gulp-pandoc&quot;&gt;gulp-pandoc&lt;/a&gt;. It’s basically just a thin wrapper around a Node.js module called &lt;a href=&quot;https://npmjs.org/package/pdc&quot;&gt;pdc&lt;/a&gt;, which in turn is a small wrapper around the excellent markup converter tool &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;Pandoc&lt;/a&gt;. You should check it out if you like Pandoc as much as I do!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; seems to really hate me at the moment and even though my test suite runs fine locally it throws an huge error at me whenever I push my code up to GitHub. I’m not sure what to do about that…&lt;/p&gt;
+</description>
+                <published>January  8, 2014</published>
+                <link>http://ellengummesson.com/blog/2014/01/08/gulp-pandoc</link>
+              </item>
+            
+              <item>
                 <title>Getting started with gulp</title>
                 <description>&lt;p&gt;During the last couple of weeks there’s been a lot of buzz around &lt;a href=&quot;http://gulpjs.com/&quot;&gt;gulp&lt;/a&gt;, which is a build system similar to &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt; but with a different approach. gulp’s main feature is that it’s using &lt;a href=&quot;http://nodejs.org/api/stream.html&quot;&gt;streams&lt;/a&gt; for all of the processing. This generally means better flow control and thus no need for creating temporary files and folders when you’re running different tasks.&lt;/p&gt;
 
@@ -225,32 +235,6 @@ Cliche({
 </description>
                 <published>December 22, 2013</published>
                 <link>http://ellengummesson.com/blog/2013/12/22/scott-hanselmans-2014-ultimate-developer-and-power-users-tool-list-for-windows</link>
-              </item>
-            
-              <item>
-                <title>should.lua: bringing BDD-style assertions to Lua</title>
-                <description>&lt;p&gt;After having released three smaller libraries for Lua I embarked on a pretty ambitious journey: to create a BDD-style assertion library, which I then named &lt;a href=&quot;https://github.com/gummesson/should.lua&quot;&gt;should.lua&lt;/a&gt;. &lt;a href=&quot;http://olivinelabs.com/busted/&quot;&gt;Busted&lt;/a&gt; has been my testing framework of choice and I’m a big fan of it, but I don’t really like using &lt;code&gt;assert&lt;/code&gt; when I use &lt;code&gt;describe&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt; in my tests. Now I can write my tests like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;describe('A test', function()
-  it('should do something', function()
-    should.Equal(true, true)
-  end)
-end)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;expect&lt;/code&gt; is also available:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;describe('A test', function()
-  it('should do something', function()
-    expect(true):toEqual(true)
-  end)
-end)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;expect&lt;/code&gt; is actually just a thin “wrapper” for the &lt;code&gt;should&lt;/code&gt; library, which I hacked together using the recommended way for creating &lt;a href=&quot;http://www.lua.org/pil/16.1.html&quot;&gt;classes&lt;/a&gt; in Lua. It was a challenge, but a pretty fun one. However, it’s far from finished so pull requests are always welcome!&lt;/p&gt;
-</description>
-                <published>November 11, 2013</published>
-                <link>http://ellengummesson.com/blog/2013/11/11/should-lua-bringing-bdd-style-assertions-to-lua</link>
               </item>
             
     </channel>
