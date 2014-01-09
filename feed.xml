@@ -8,8 +8,6 @@
               <item>
                 <title>gulp-pandoc</title>
                 <description>&lt;p&gt;I just released my first plugin for &lt;a href=&quot;https://npmjs.org/package/gulp&quot;&gt;gulp&lt;/a&gt; called &lt;a href=&quot;https://npmjs.org/package/gulp-pandoc&quot;&gt;gulp-pandoc&lt;/a&gt;. It’s basically just a thin wrapper around a Node.js module called &lt;a href=&quot;https://npmjs.org/package/pdc&quot;&gt;pdc&lt;/a&gt;, which in turn is a small wrapper around the excellent markup converter tool &lt;a href=&quot;http://johnmacfarlane.net/pandoc/&quot;&gt;Pandoc&lt;/a&gt;. You should check it out if you like Pandoc as much as I do!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; seems to really hate me at the moment and even though my test suite runs fine locally it throws an huge error at me whenever I push my code up to GitHub. I’m not sure what to do about that…&lt;/p&gt;
 </description>
                 <published>January  8, 2014</published>
                 <link>http://ellengummesson.com/blog/2014/01/08/gulp-pandoc</link>
