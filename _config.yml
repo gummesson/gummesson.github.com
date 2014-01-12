@@ -1,0 +1,7 @@
+﻿encoding: utf-8
+markdown: kramdown
+name: Ellen Gummesson
+description: Random ramblings, geekiness and other musings
+url: http://ellengummesson.com
+permalink: blog/:year/:month/:day/:title
+exclude: ["README.md", "Gemfile", "package.json", "gulpfile.js", "node_modules"]

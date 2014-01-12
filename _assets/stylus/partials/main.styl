@@ -1,0 +1,28 @@
+//
+// # Main
+//
+
+*
+  &,
+  &:before,
+  &:after
+    box-sizing: border-box
+
+::selection
+  background-color: light-font-color
+  color: base-background-color
+
+html
+  position: relative
+  min-height: 100%
+  background-color: base-background-color
+  font: base-font-weight 1em/base-line-height base-font-family
+  color: base-font-color
+  @media breakpoint-lap
+    font-size: 1.125em
+  @media breakpoint-desk
+    font-size: 1.25em
+
+body
+  margin: 0 0 pixels(sticky-footer)
+  margin: 0 0 sticky-footer

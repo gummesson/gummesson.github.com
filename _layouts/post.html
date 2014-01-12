@@ -1,0 +1,18 @@
+---
+layout: "default"
+highlight: true
+---
+
+<article class="post">
+  {% if page.external-url %}
+    <h1 class="cramp"><a class="shh" href="{{ page.external-url }}">{{ page.title }} <span class="hook">&rarr;</span></a></h1>
+    <p class="fineprint">Posted on {{ page.date | date: "%B %e, %Y" }} <a class="shh" href="{{ page.url }}">&infin;</a></p>
+  {% else %}
+    <h1 class="cramp">{{ page.title }}</h1>
+    <p class="fineprint">Posted on {{ page.date | date: "%B %e, %Y" }}</p>
+  {% endif %}
+  {{ content }}
+</article><!-- /post -->
+{% if page.comments %}
+  {% include comments.html %}
+{% endif %}

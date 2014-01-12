@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <title>{{ page.title }} // {{ site.name }}</title>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="author" href="/humans.txt" type="text/plain">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ site.name }} // {{ site.description }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="landmark banner">
+      <div class="wrapper">
+          <h1 class="site-logo">
+            <a class="shh" href="/">Ellen</a>
+          </h1>
+          <p class="smallprint cramp">{{ site.description }}</p>
+      </div><!-- /wrapper -->
+    </div><!-- /landmark -->
+  </header><!-- /site-header -->
+  <div class="site-content">
+    <div class="island">
+      <div class="wrapper">
+        {{ content }}
+      </div><!-- /wrapper -->
+    </div><!-- /island -->
+  </div><!-- /site-content -->
+  <footer class="site-footer">
+    <div class="island banner">
+      <div class="wrapper">
+        <p class="smallprint cramp">
+          Copyright &copy; <a class="shh" href="/about/">{{ site.name }}</a> {{ site.time | date: "%Y" }}
+        </p>
+      </div><!-- /wrapper -->
+    </div><!-- /island -->
+  </footer><!-- /site-footer -->
+  {% if page.highlight %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {% endif %}
+</body>
+</html>

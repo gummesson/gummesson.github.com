@@ -1,0 +1,11 @@
+//
+// ## `font-sizer`
+//
+
+// ### inuit.css (http://inuitcss.com/)
+
+font-sizer(size, line-height = true)
+  font-size: pixels(size)
+  font-size: size
+  if line-height
+    line-height: unit(ceil(size / base-line-height) * (base-line-height / size), '')

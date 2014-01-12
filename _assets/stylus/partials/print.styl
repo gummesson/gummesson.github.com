@@ -1,0 +1,54 @@
+//
+// ## Print
+//
+
+.milli,
+$milli
+  font-sizer(base-font-size * 0.875)
+
+.micro
+  font-sizer(base-font-size * 0.75)
+
+.smallprint
+  @extend $milli
+  font-weight: 600
+
+.fineprint,
+$fineprint
+  @extend $milli
+  font-style: italic
+
+.banner
+  text-align: center
+
+.hook
+  color: light-font-color
+
+// ### Pigeon (https://github.com/rowanmanning/pigeon)
+
+.shh,
+$shh
+  border-bottom: 1px solid transparent
+
+.cramp,
+$cramp
+  margin-bottom: 0
+
+.space
+  margin-bottom: pixels(base-spacing-unit)
+  margin-bottom: base-spacing-unit
+
+.space-more
+  margin-bottom: pixels(base-spacing-unit * 2)
+  margin-bottom: base-spacing-unit * 2
+
+// ### Footnotes
+
+.footnote,
+.reversefootnote
+  @extend $shh
+
+.footnotes
+  @extend $fineprint
+  > ol li p
+    @extend $cramp
