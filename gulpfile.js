@@ -29,8 +29,17 @@ gulp.task('img', function() {
     .pipe(gulp.dest('assets/img/'));
 });
 
+gulp.task('js', function() {
+  return gulp
+    .src([
+      'bower_components/html5shiv/dist/html5shiv.js',
+      'bower_components/highlightjs/highlight.pack.js'
+    ])
+    .pipe(gulp.dest('assets/js/'));
+});
+
 gulp.task('copy', function() {
-  gulp.run('font', 'img');
+  gulp.run('font', 'img', 'js');
 });
 
 gulp.task('serve', function() {

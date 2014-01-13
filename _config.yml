@@ -4,4 +4,4 @@ name: Ellen Gummesson
 description: Random ramblings, geekiness and other musings
 url: http://ellengummesson.com
 permalink: blog/:year/:month/:day/:title
-exclude: ["README.md", "Gemfile", "package.json", "gulpfile.js", "node_modules"]
+exclude: ["README.md", "Gemfile", "package.json", "bower.json", "gulpfile.js", "node_modules", "bower_components"]

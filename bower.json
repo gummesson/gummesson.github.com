@@ -1,0 +1,8 @@
+{
+  "name": "ellengummesson.com",
+  "private": true,
+  "dependencies": {
+    "html5shiv": "~3.7.0",
+    "highlightjs": "~7.5.0"
+  }
+}
