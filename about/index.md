@@ -15,7 +15,7 @@ My name is Ellen Gummesson, I have a degree in strategic communication and I &he
 
 ## Colophon
 
-This site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com/). It was built with HTML5 and [Stylus](http://learnboost.github.io/stylus/). The code was written by hand in [Vim](http://www.vim.org/). It uses the rather nice looking typeface [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans), which is provided by [Google Fonts](http://www.google.com/fonts).
+This site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com/). It was built with HTML5 and [Stylus](http://learnboost.github.io/stylus/). The code was written by hand in [Vim](http://www.vim.org/). It uses the rather nice looking typeface [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans), which is provided by [Google Fonts](http://www.google.com/fonts). [Entypo](http://www.entypo.com/) is used for the icons.
 
 The blog posts are written in [Markdown](http://daringfireball.net/projects/markdown/), scribbled down in [Pop](http://minimaltools.com/), [iA Writer](http://www.iawriter.com/) or [ResophNotes](http://resoph.com/ResophNotes/Welcome.html) before finally ending up and being finished in [FocusWriter](http://gottcode.org/focuswriter/) or [Vim](http://www.vim.org/). [Shotty](http://shotty.devs-on.net/en/Overview.aspx) is used for taking the screenshots.
 
