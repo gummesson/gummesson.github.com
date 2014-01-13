@@ -6,40 +6,40 @@ var prefixer = require('gulp-autoprefixer');
 var minify   = require('gulp-minify-css');
 var exec     = require('gulp-exec');
 
-/* Configuration */
-
-var config = {
-  stylus: {
-    all: '_assets/stylus/**/*.styl',
-    src: '_assets/stylus/style.styl',
-    dest: 'assets/css/'
-  },
-  prefixer: {
-    browsers: 'last 2 versions'
-  },
-  exec: {
-    serve: 'jekyll serve --watch'
-  }
-};
-
 /* Tasks */
 
 gulp.task('css', function() {
   return gulp
-    .src(config.stylus.src)
+    .src('_assets/stylus/style.styl')
     .pipe(stylus())
-    .pipe(prefixer(config.prefixer.browsers))
+    .pipe(prefixer('last 2 versions'))
     .pipe(minify())
-    .pipe(gulp.dest(config.stylus.dest));
+    .pipe(gulp.dest('assets/css/'));
+});
+
+gulp.task('font', function() {
+  return gulp
+    .src('_assets/font/**/*')
+    .pipe(gulp.dest('assets/font/'));
+});
+
+gulp.task('img', function() {
+  return gulp
+    .src('_assets/img/**/*')
+    .pipe(gulp.dest('assets/img/'));
+});
+
+gulp.task('copy', function() {
+  gulp.run('font', 'img');
 });
 
 gulp.task('serve', function() {
   gulp.src('./')
-    .pipe(exec(config.exec.serve));
+    .pipe(exec('jekyll serve --watch'));
 });
 
-gulp.task('default', ['css', 'serve'], function() {
-  gulp.watch(config.stylus.all, function() {
+gulp.task('default', ['css', 'copy', 'serve'], function() {
+  gulp.watch('_assets/stylus/**/*.styl', function() {
     gulp.run('css');
   });
 });
