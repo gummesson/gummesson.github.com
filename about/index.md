@@ -3,6 +3,8 @@ title: "About"
 layout: "page"
 ---
 
+# Hi!
+
 My name is Ellen Gummesson, I have a degree in strategic communication and I &hearts; HTML, CSS ([Sass](http://sass-lang.com/) or [Stylus](http://learnboost.github.io/stylus/)), JavaScript, [Node.js](http://nodejs.org/) and open source.
 
 ## Elsewhere
