@@ -8,19 +8,13 @@ layout: "page"
   <p>My name is Ellen and I &hearts; the web.</p>
 </div><!-- /banner -->
 <ul class="secret-list cramp">
+  {% for button in site.data.buttons %}
   <li class="space">
-    <a class="button button--full button--brand" href="/blog/">Blog</a>
+    {% if button.name == "Blog" %}
+    <a class="button button--full button--brand" href="{{ button.url }}">{{ button.name }}</a>
+    {% else %}
+    <a class="button button--full button--{{ button.name | downcase | replace:'+','-plus' }}" href="{{ button.url }}">{{ button.name }}</a>
+    {% endif %}
   </li>
-  <li class="space">
-    <a class="button button--full button--twitter" href="https://twitter.com/pratnarkoman">Twitter</a>
-  </li>
-  <li class="space">
-    <a class="button button--full button--instagram" href="http://instagram.com/pratnarkoman/">Instagram</a>
-  </li>
-  <li class="space">
-    <a class="button button--full button--google-plus" href="https://plus.google.com/108569513108478415869">Google+</a>
-  </li>
-  <li class="space">
-    <a class="button button--full button--github" href="https://github.com/gummesson">GitHub</a>
-  </li>
+  {% endfor %}
 </ul><!-- /secret-list -->

@@ -1,0 +1,14 @@
+- name: "Blog"
+  url: "/blog/"
+
+- name: "Twitter"
+  url: "https://twitter.com/pratnarkoman"
+
+- name: "Instagram"
+  url: "http://instagram.com/pratnarkoman/"
+
+- name: "Google+"
+  url: "https://plus.google.com/108569513108478415869"
+
+- name: "Github"
+  url: "https://github.com/gummesson"
