@@ -22,8 +22,8 @@
   <nav class="site-nav">
     <div class="island">
       <ul class="nav banner cramp">
-        {% assign tail = site.data.navigation | last %}
-        {% for link in site.data.navigation %}
+      {% assign tail = site.data.navigation | last %}
+      {% for link in site.data.navigation %}
         {% if link == tail %}
         <li>
         {% else %}
@@ -31,7 +31,7 @@
         {% endif %}
           <a class="shh" href="{{ link.url }}"><i class="{{ link.icon }}"></i></a>
         </li>
-        {% endfor %}
+      {% endfor %}
       </ul><!-- /nav -->
     </div><!-- /island -->
   </nav><!-- /site-nav -->
