@@ -1,0 +1,11 @@
+dns:
+  - "//fonts.googleapis.com"
+  - "//themes.googleusercontent.com"
+  - "//cdnjs.cloudflare.com"
+  - "//a.disquscdn.com"
+
+stylesheets:
+  - "//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic"
+  - "/assets/css/style.css"
+
+icon: "/assets/img/favicon.ico"
