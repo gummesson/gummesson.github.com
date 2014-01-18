@@ -1,0 +1,8 @@
+- url: "/"
+  icon: "icon-home"
+
+- url: "/blog/"
+  icon: "icon-pencil"
+
+- url: "/feed.xml"
+  icon: "icon-rss"

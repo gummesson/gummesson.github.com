@@ -22,15 +22,16 @@
   <nav class="site-nav">
     <div class="island">
       <ul class="nav banner cramp">
-        <li class="breathe">
-          <a class="shh" href="/"><i class="icon-home"></i></a>
-        </li>
-        <li class="breathe">
-          <a class="shh" href="/blog/"><i class="icon-pencil"></i></a>
-        </li>
+        {% assign tail = site.data.navigation | last %}
+        {% for link in site.data.navigation %}
+        {% if link == tail %}
         <li>
-          <a class="shh" href="/feed.xml"><i class="icon-rss"></i></a>
+        {% else %}
+        <li class="breathe">
+        {% endif %}
+          <a class="shh" href="{{ link.url }}"><i class="{{ link.icon }}"></i></a>
         </li>
+        {% endfor %}
       </ul><!-- /nav -->
     </div><!-- /island -->
   </nav><!-- /site-nav -->
