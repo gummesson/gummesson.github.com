@@ -6,6 +6,9 @@ description: "Random ramblings, geekiness and other musings"
 url: "http://ellengummesson.com"
 permalink: "blog/:year/:month/:day/:title"
 
+author: "/humans.txt"
+feed: "/feed.xml"
+
 exclude: 
   - "README.md"
   - "Gemfile"
