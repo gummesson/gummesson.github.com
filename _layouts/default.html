@@ -13,7 +13,9 @@
   {% for url in site.data.assets.stylesheets %}
   <link rel="stylesheet" href="{{ url }}">
   {% endfor %}
-  <link rel="shortcut icon" href="{{ site.data.assets.icon }}">
+  {% for url in site.data.assets.icons %}
+  <link rel="shortcut icon" href="{{ url }}">
+  {% endfor %}
   <link rel="canonical" href="{{ site.url }}">
   <link rel="author" href="{{ site.author }}" type="text/plain">
   <link rel="alternate" href="{{ site.feed }}" type="application/rss+xml">

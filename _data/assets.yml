@@ -8,4 +8,5 @@ stylesheets:
   - "//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic"
   - "/assets/css/style.css"
 
-icon: "/assets/img/favicon.ico"
+icons:
+  - "/assets/img/favicon.ico"
