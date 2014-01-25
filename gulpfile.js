@@ -38,4 +38,5 @@ gulp.task('watch', function() {
   gulp.watch('_assets/stylus/**/*.styl', ['css']);
 });
 
-gulp.task('default', ['css', 'font', 'img', 'serve', 'watch']);
+gulp.task('assets', ['css', 'font', 'img']);
+gulp.task('default', ['assets', 'serve', 'watch']);
