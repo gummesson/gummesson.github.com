@@ -29,17 +29,13 @@ gulp.task('img', function() {
     .pipe(gulp.dest('assets/img/'));
 });
 
-gulp.task('copy', function() {
-  gulp.run('font', 'img');
-});
-
 gulp.task('serve', function() {
   gulp.src('./')
     .pipe(exec('jekyll serve --watch'));
 });
 
-gulp.task('default', ['css', 'copy', 'serve'], function() {
-  gulp.watch('_assets/stylus/**/*.styl', function() {
-    gulp.run('css');
-  });
+gulp.task('watch', function() {
+  gulp.watch('_assets/stylus/**/*.styl', ['css']);
 });
+
+gulp.task('default', ['css', 'font', 'img', 'serve', 'watch']);
