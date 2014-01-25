@@ -10,7 +10,7 @@ var exec     = require('gulp-exec');
 
 gulp.task('css', function() {
   return gulp
-    .src('_assets/stylus/style.styl')
+    .src('_assets/styl/style.styl')
     .pipe(stylus())
     .pipe(prefixer('last 2 versions'))
     .pipe(minify())
@@ -35,7 +35,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('_assets/stylus/**/*.styl', ['css']);
+  gulp.watch('_assets/styl/**/*.styl', ['css']);
 });
 
 gulp.task('assets', ['css', 'font', 'img']);
