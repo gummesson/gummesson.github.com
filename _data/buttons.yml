@@ -1,14 +1,14 @@
-- name: "Blog"
+- title: "Blog"
   url: "/blog/"
 
-- name: "Twitter"
+- title: "Twitter"
   url: "https://twitter.com/pratnarkoman"
 
-- name: "Instagram"
+- title: "Instagram"
   url: "http://instagram.com/pratnarkoman/"
 
-- name: "Google+"
+- title: "Google+"
   url: "https://plus.google.com/108569513108478415869"
 
-- name: "Github"
+- title: "Github"
   url: "https://github.com/gummesson"

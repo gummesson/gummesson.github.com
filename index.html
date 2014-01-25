@@ -10,10 +10,10 @@ layout: "page"
 <ul class="secret-list cramp">
   {% for button in site.data.buttons %}
   <li class="space">
-    {% if button.name == "Blog" %}
-    <a class="button button--full button--brand" href="{{ button.url }}">{{ button.name }}</a>
+    {% if button.title == "Blog" %}
+    <a class="button button--full button--brand" href="{{ button.url }}">{{ button.title }}</a>
     {% else %}
-    <a class="button button--full button--{{ button.name | downcase | replace:'+','-plus' }}" href="{{ button.url }}">{{ button.name }}</a>
+    <a class="button button--full button--{{ button.title | downcase | replace:'+','-plus' }}" href="{{ button.url }}">{{ button.title }}</a>
     {% endif %}
   </li>
   {% endfor %}
