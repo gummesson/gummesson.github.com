@@ -4,13 +4,13 @@ pygments: true
 
 name: "Ellen Gummesson"
 description: "Random ramblings, geekiness and other musings"
-url: "http://ellengummesson.com"
 permalink: "blog/:year/:month/:day/:title"
 
+url: "http://ellengummesson.com"
 author: "/humans.txt"
 feed: "/feed.xml"
 
-exclude: 
+exclude:
   - "README.md"
   - "Gemfile"
   - "package.json"
