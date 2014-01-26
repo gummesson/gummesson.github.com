@@ -14,7 +14,7 @@ The formatting of the syntax is really, really simple to remember. I honestly do
 
 ### Headings
 
-{% highlight markdown %}
+{% highlight text %}
 # Heading 1
 ## Heading 2
 ### Heading 3
@@ -27,7 +27,7 @@ A hashtag represents a heading, where each hashtag equals to the size of the hea
 
 ### Annotations
 
-{% highlight markdown %}
+{% highlight text %}
 *Bold* 
 **Italic**
 ***Bold and italic***
@@ -37,7 +37,7 @@ A hashtag represents a heading, where each hashtag equals to the size of the hea
 
 ### Links
 
-{% highlight markdown %}
+{% highlight text %}
 [Click Here](http://www.example.com/ "Example.com") 
 
 [Click Here][example]
@@ -52,7 +52,7 @@ There's three ways to create a link. The rule of thumb is that the word you want
 
 ### Unordered lists
 
-{% highlight markdown %}
+{% highlight text %}
 - One 
 - Two
 - Three
@@ -63,7 +63,7 @@ There's three ways to create a link. The rule of thumb is that the word you want
 
 ### Ordered lists
 
-{% highlight markdown %}
+{% highlight text %}
 1. One 
 2. Two
 3. Three
@@ -74,7 +74,7 @@ There's three ways to create a link. The rule of thumb is that the word you want
 
 ### Blockquotes
 
-{% highlight markdown %}
+{% highlight text %}
 > Lorem ipsum...
 {% endhighlight %}
 
@@ -82,7 +82,7 @@ There's three ways to create a link. The rule of thumb is that the word you want
 
 ### Images
 
-{% highlight markdown %}
+{% highlight text %}
 ![Alt Text](http://www.example.com/images/picture.jpg "Title Text")
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ Adding an image is really similar to adding a link. This may be the most "inconv
 
 ### Code
 
-{% highlight markdown %}
+{% highlight text %}
 `.inline-code` 
 
     .code-block {

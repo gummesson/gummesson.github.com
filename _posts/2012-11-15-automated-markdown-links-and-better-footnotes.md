@@ -23,7 +23,7 @@ I finally figured out how to paste an URL from the clipboard directly into a Mar
 
 Which is going to output something like this when you type `.plk`[^20121115-1]:
 
-{% highlight markdown %}
+{% highlight text %}
 [](http://www.website.com/ "")
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ Another thing I came up with was a hotstring for creating better reference numbe
 
 Which outputs something like this when you type `.fndi`[^20121115-2]:
 
-{% highlight markdown %}
+{% highlight text %}
 [^20121115-]
 {% endhighlight %}
 

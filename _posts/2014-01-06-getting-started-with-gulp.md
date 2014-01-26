@@ -58,19 +58,19 @@ gulp.watch('src/*.js', function() {
 
 To use `gulp` we first need to install it globally:
 
-{% highlight shell %}
+{% highlight text %}
 npm install gulp -g
 {% endhighlight %}
 
 We'll then add it as a dependency in our project's `package.json` file:
 
-{% highlight shell %}
+{% highlight text %}
 npm install gulp --save-dev
 {% endhighlight %}
 
 Since we're going to lint and test our code we'll also install `gulp-jshint` and `gulp-mocha`:
 
-{% highlight shell %}
+{% highlight text %}
 npm install gulp-jshint --save-dev
 npm install gulp-mocha --save-dev
 {% endhighlight %}
@@ -162,7 +162,7 @@ gulp.task('default', ['lint', 'test'], function() {
 
 Now, open up a terminal and run `gulp`. The output should look similar to this:
 
-{% highlight shell %}
+{% highlight text %}
 [gulp] Using file <PATH>/gulpfile.js
 [gulp] Working directory changed to <PATH>
 [gulp] Running 'lint'...
