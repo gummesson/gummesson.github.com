@@ -12,47 +12,49 @@ A couple of days ago I finally managed to add the ability to have external links
 
 The following markup is a simplified version of what I use. You should modify it to your liking and preferably add alt and title tags to your links. First, add this in the front matter portion of your post:
 
-    external-url: http://www.example.com/
+{% highlight yaml %}
+external-url: http://www.example.com/
+{% endhighlight %}
 
 If you don't want to add an external link to your title, just replace the link itself with `false` or remove the whole thing. The markup of your post title on your front page should look like something like this:
 
+{% highlight html %}
 {% raw %}
-
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 {% endraw %}
+{% endhighlight %}
 
 Instead of having the above markup, replace it with something like this:
 
+{% highlight html %}
 {% raw %}
-
-	{% if post.external-url %}
-	  <h1><a href="{{ post.external-url }}">{{ post.title }}</a></h1>
-	{% else %}
-	  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	{% endif %}
-
+{% if post.external-url %}
+  <h1><a href="{{ post.external-url }}">{{ post.title }}</a></h1>
+{% else %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+{% endif %}
 {% endraw %}
+{% endhighlight %}
 
 I also added this in the markup for my post layout:
 
+{% highlight html %}
 {% raw %}
-
-    {% if page.external-url %}
-      <h1><a href="{{ page.external-url }}">{{ page.title }}</a></h1>
-    {% else %}
-      <h1>{{ page.title }}</h1>
-    {% endif %}
-
+{% if page.external-url %}
+  <h1><a href="{{ page.external-url }}">{{ page.title }}</a></h1>
+{% else %}
+  <h1>{{ page.title }}</h1>
+{% endif %}
 {% endraw %}
+{% endhighlight %}
 
 And you're done! I would encourage you to also add an actual permalink to your own post if you're using external links, like this for example:
 
+{% highlight html %}
 {% raw %}
-
-    <p><a href="{{ post.url }}">Permalink</a></p>
-
+<p><a href="{{ post.url }}">Permalink</a></p>
 {% endraw %}
+{% endhighlight %}
 
 ### A side note
 

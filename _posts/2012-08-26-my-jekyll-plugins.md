@@ -12,11 +12,15 @@ Continuing with my Jekyll series, here's a list of the plugins and other hacks I
 
 For pagination, I just followed the guidelines from the [official wiki](https://github.com/mojombo/jekyll/wiki/Pagination) and did some minor changes in the markup. Although it's strictly not a plugin, I had to make a small configuration in Jekyll's `pagination.rb` file since I wanted to generate my pagination pages in to a different folder than the default one. I copied the `pagination.rb` from Jekyll's library directory and placed it in the _plugins folder and changed the following line from this:
 
-	newpage.dir = File.join(page.dir, "page#{num_page}")
+{% highlight ruby %}
+newpage.dir = File.join(page.dir, "page#{num_page}")
+{% endhighlight %}
 
 To this:
 
-	newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
+{% highlight ruby %}
+newpage.dir = File.join(page.dir, "blog/page/#{num_page}")
+{% endhighlight %}
 
 To my suprise, it actually worked! Like I said earlier, I guess it doesn't really count as a plugin, but I thought it would be good to mention it so that someone else can use the same approach if they want to.
 

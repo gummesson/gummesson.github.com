@@ -14,30 +14,38 @@ I won't go through my whole `vimrc` file since it's currently about 225 lines lo
 
 **Set the language to english:**
 
-	if has("unix")
-	  language messages C
-	else
-	  language messages en
-	endif  
+{% highlight vim %}
+if has("unix")
+  language messages C
+else
+  language messages en
+endif  
+{% endhighlight %}
 
 I don't know if I'm strange but I tend to stick with using english as my default language in nearly every app I install. I find it to be much easier googling for help. Since I both use Linux and Windows I had to add the `if...else...endif` part so that it plays nice with both of them[^20130124-3]. It's important to note that this needs to be at the very top of your `vimrc` file if you want it to work.
 
 **Use the cursorline as a mode indicator:**
 
-	au InsertEnter * set nocursorline
-	au InsertLeave * set cursorline
+{% highlight vim %}
+au InsertEnter * set nocursorline
+au InsertLeave * set cursorline
+{% endhighlight %}
 
 I wanted an easier way to quickly see which mode I was in without relying on some third party plugin. I of course have the `showmode` setting enabled but by removing the cursorline from insert mode I don't even have to move my eyes one bit. I don't really need to see which line I'm on anyway when I'm actually typing something.
 
 **Autoresize all windows:**
 
-	au VimResized * :wincmd =
+{% highlight vim %}
+au VimResized * :wincmd =
+{% endhighlight %}
 
 Resizing your windows in Vim can be a bit of a pain, especially if you want to go from using a fullscreen to something smaller or the other way around. The above setting makes it a lot less of a hassle.
 
 **Ignore certain files:**
 
-	set wildignore+=.git
+{% highlight vim %}
+set wildignore+=.git
+{% endhighlight %}
 
 This was one of the features that I like the most about Sublime Text 2 and I'm glad that I can use it in Vim too. If I can't edit a certain filetype I don't want to see it.
 

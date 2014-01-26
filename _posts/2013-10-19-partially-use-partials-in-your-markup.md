@@ -8,7 +8,9 @@ external-url: false
 
 I've always been jealous of the plethora of build tools available on OS X, in particular [Hammer for Mac](http://hammerformac.com/) and it's excellent `@include` feature. Rather than buying a new computer I decided to instead create yet another [Node.js](http://nodejs.org/) project and build it myself. I named it [Partially](https://github.com/gummesson/partially)[^20131019-1]. It enables you to do this:
 
-    <!-- @include partial.ext -->
+{% highlight html %}
+<!-- @include partial.ext -->
+{% endhighlight %}
 
 It'll then include the partial in question in the file. It should be able to handle any markup language, although I've some far only tried HTML, [Haml](http://haml.info/), [Jade](http://jade-lang.com/) and [Markdown](http://daringfireball.net/projects/markdown/).
 

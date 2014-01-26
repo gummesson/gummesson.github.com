@@ -14,7 +14,9 @@ One of the strengths of an app like this is that it works great for repetitive w
 
 The basic structure of a simple text expansion script/hotstring looks like this:
 
-	:oc:abbreviation::expanded text
+{% highlight autohotkey %}
+:oc:abbreviation::expanded text
+{% endhighlight %}
 
 **Side note:** the `oc` in the script tells the app to not add a blank space after the expansion and that the script is in fact case-sensitive. Just remove them if you want neither of those things to happen.
 
@@ -22,7 +24,9 @@ The basic structure of a simple text expansion script/hotstring looks like this:
 
 Since I use Markdown almost exclusively while writing these days I of course had to create a couple abbreviations for a more smooth writing experience. Even though the Markdown syntax is really easy it can sometimes slow you down when you have the insert certain characters like `[]` and `()`. Instead of having to type out all of the characters when I want to create link I only have to type `.mdlnk` thanks to this simple hotstring:
 
-	:oc:.mdlnk::[]({"}{"})
+{% highlight autohotkey %}
+:oc:.mdlnk::[]({"}{"})
+{% endhighlight %}
 
 After a simple hit on the spacebar the `.mdlnk` transforms into `[]("")` (the quotation marks, along with a couple of other characters, has to be wrapped inside curly brackets in order to show since they're used in the real syntax). Instead of having to fiddle with it I can easily paste the link in it and move on which works much better as you can imagine. I've also created similar hotstrings for many other things such as images (`.mdimg`) and referenced-styled links (`.mdrefi` and `.mdrefl`), although I rarely use those.
 

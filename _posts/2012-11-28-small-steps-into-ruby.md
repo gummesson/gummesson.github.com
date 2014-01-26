@@ -11,14 +11,16 @@ I've always wanted to learn a real programming language. The few times in the pa
 Since this site is built with Jekyll I decided to really start learning [Ruby](http://www.ruby-lang.org/) and I'm glad I did. The syntax is so simple that it amazes me. Over the last few days I've experimented with it a lot and even released a few simple scripts on [GitHub](https://github.com/gummesson). One of those was inspired by a post I saw yesterday on 
 [Lifehacker](http://lifehacker.com/5963597/why-you-should-be-using-an-app-launcher-and-how-to-make-it-do-anythingyou-want). The article mentions how you can use [Launchy](http://launchy.net/) to append text to a text file, but I couldn't get the `bat` script they recommended to properly work so I decided to just make a [Ruby version of it](https://github.com/gummesson/append-text). The script looks like this without comments:
 
-	require 'yaml'
+{% highlight ruby %}
+require "yaml"
 
-	config = YAML.load_file("config.yml")
-	txt_file = config["txt_file"]
+config = YAML.load_file("config.yml")
+txt_file = config["txt_file"]
 
-	item = ARGV.join(" ")
+item = ARGV.join(" ")
 
-	File.open(txt_file,) { |file| file.puts(item) }
+File.open(txt_file,) { |file| file.puts(item) }
+{% endhighlight %}
 
 Right now it consists of just five lines of code. I could've even made it even simpler by leaving out the use of YAML[^20121128-1] for the text file configuration[^20121128-2]. I really like having something like that though since you don't have to change the actual source code if you later decide to use another text file. Now I just need to launch Launchy, type `add`, `TAB` and whatever I want to append to the file and just hit `Enter` to add something to my spark file, which is even faster than launching the actually text file with [AutoHotKey](http://www.autohotkey.com/) like I mentioned in the previous blog post.
 

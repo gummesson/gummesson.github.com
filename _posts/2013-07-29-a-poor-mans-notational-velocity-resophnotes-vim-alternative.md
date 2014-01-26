@@ -16,46 +16,50 @@ I actually have a folder in my Vim home directory called `tweaks` were I've plac
 
 **tweaks/autoload/notes.vim:**
 
-    function! notes#List(pattern)
-      if strlen(a:pattern) == 0
-        silent! execute 'Sexplore '.g:notes_directory
-      else
-        silent! execute 'lcd '.g:notes_directory.' | vimgrep /'.a:pattern.'/gj *.'.g:notes_extension.' | copen'
-      endif
-    endfunction
+{% highlight vim %}
+function! notes#List(pattern)
+  if strlen(a:pattern) == 0
+    silent! execute 'Sexplore '.g:notes_directory
+  else
+    silent! execute 'lcd '.g:notes_directory.' | vimgrep /'.a:pattern.'/gj *.'.g:notes_extension.' | copen'
+  endif
+endfunction
 
-    function! notes#New(filename)
-      if strlen(a:filename) == 0
-        echom "No filename!"
-      else
-        silent! execute 'enew | lcd '.g:notes_directory.' | w '.a:filename.'.'.g:notes_extension
-      endif
-    endfunction
+function! notes#New(filename)
+  if strlen(a:filename) == 0
+    echom "No filename!"
+  else
+    silent! execute 'enew | lcd '.g:notes_directory.' | w '.a:filename.'.'.g:notes_extension
+  endif
+endfunction
+{% endhighlight %}
 
 There's really nothing fancy in the above scripts, but the combination of using `netrw`, `vimgrep` and the quickfix list works really well.
 
 **tweaks/plugin/notes.vim**:
 
-    if exists("g:loaded_notes_plugin") || &cp
-      finish
-    endif
+{% highlight vim %}
+if exists("g:loaded_notes_plugin") || &cp
+  finish
+endif
 
-    let g:loaded_notes_plugin = 1
+let g:loaded_notes_plugin = 1
 
-    if !exists("g:notes_directory")
-      if has("unix")
-        let g:notes_directory = "~/Notes"
-      else
-        let g:notes_directory = "C:/Notes"
-      endif
-    endif
+if !exists("g:notes_directory")
+  if has("unix")
+    let g:notes_directory = "~/Notes"
+  else
+    let g:notes_directory = "C:/Notes"
+  endif
+endif
 
-    if !exists("g:notes_extension")
-      let g:notes_extension = "txt"
-    endif
+if !exists("g:notes_extension")
+  let g:notes_extension = "txt"
+endif
 
-    command! -nargs=? Notes call notes#List(<q-args>)
-    command! -nargs=? Note call notes#New(<q-args>)
+command! -nargs=? Notes call notes#List(<q-args>)
+command! -nargs=? Note call notes#New(<q-args>)
+{% endhighlight %}
 
 You can of course change the `g:notes_directory` and `g:notes_extension` to whatever you want. You could remove the `if has("unix")` part if you don't plan on using it on different systems too.
 

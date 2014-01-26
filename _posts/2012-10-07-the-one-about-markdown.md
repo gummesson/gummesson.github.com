@@ -14,31 +14,37 @@ The formatting of the syntax is really, really simple to remember. I honestly do
 
 ### Headings
 
-    # Heading 1
-    ## Heading 2
-    ### Heading 3
-    #### Heading 4
-    ##### Heading 5
-    ###### Heading 6
+{% highlight markdown %}
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+{% endhighlight %}
 
 A hashtag represents a heading, where each hashtag equals to the size of the heading, ie. a first level heading becomes a `h1` tag and so on when it's converted to HTML.
 
 ### Annotations
 
-    *Bold* 
-    **Italic**
-    ***Bold and italic***
+{% highlight markdown %}
+*Bold* 
+**Italic**
+***Bold and italic***
+{% endhighlight %}
 
 **Side note:** You can also use `_` instead of `*` too.
 
 ### Links
 
-    [Click Here](http://www.example.com/ "Example.com") 
+{% highlight markdown %}
+[Click Here](http://www.example.com/ "Example.com") 
 
-    [Click Here][example]
-    [example]: http://www.example.com/ "Example.com"
+[Click Here][example]
+[example]: http://www.example.com/ "Example.com"
 
-    <http://www.example.com/>
+<http://www.example.com/>
+{% endhighlight %}
 
 There's three ways to create a link. The rule of thumb is that the word you want to make clickable goes in to `[]` while the actual URL and title tag goes in between `()`. You can also use `<>` if you just want to make an URL clickable.
 
@@ -46,41 +52,51 @@ There's three ways to create a link. The rule of thumb is that the word you want
 
 ### Unordered lists
 
-    - One 
-    - Two
-    - Three
-    - Four
+{% highlight markdown %}
+- One 
+- Two
+- Three
+- Four
+{% endhighlight %}
 
 **Side note:** You can also use `*` or `+` when you're dealing with an unordered list.
 
 ### Ordered lists
 
-    1. One 
-    2. Two
-    3. Three
-    4. Four
+{% highlight markdown %}
+1. One 
+2. Two
+3. Three
+4. Four
+{% endhighlight %}
 
 **Side note:** You don't actually have to numerically order your list if you're going to export it to HTML, but I don't really see the point of not doing that.
 
 ### Blockquotes
 
-    > Lorem ipsum...
+{% highlight markdown %}
+> Lorem ipsum...
+{% endhighlight %}
 
 *Side note:* Even if your quote is longer than a single line you only really have to use a `>` at the beginning of the quote.
 
 ### Images
 
-    ![Alt Text](http://www.example.com/images/picture.jpg "Title Text")
+{% highlight markdown %}
+![Alt Text](http://www.example.com/images/picture.jpg "Title Text")
+{% endhighlight %}
 
 Adding an image is really similar to adding a link. This may be the most "inconvenient" feature of the syntax since you have no real control over the image's width and height, but that shouldn't be a problem if you size it the way you want it beforehand.
 
 ### Code
 
-    `.inline-code` 
+{% highlight markdown %}
+`.inline-code` 
 
-        .code-block {
-          color: #000;
-        }
+    .code-block {
+      color: #000;
+    }
+{% endhighlight %}
 
 You have to indent the code with four spaces or a tab to create a code block.
 

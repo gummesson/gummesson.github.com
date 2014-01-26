@@ -12,10 +12,12 @@ A few weeks ago I came across a post on [Medium](https://medium.com/) called [Th
 
 I threw together a simple [AutoHotKey](http://www.autohotkey.com/) script so the spark file is just one hotkey away:
 
-	!q::
-	{
-	Run, Notepad.exe "~/spark-file.txt"
-	Return
-	}
+{% highlight autohotkey %}
+!q::
+{
+  Run, Notepad.exe "~/spark-file.txt"
+  Return
+}
+{% endhighlight %}
 
 This means that whenever an idea pops up I just need to press `Alt+Q` and type down whatever's in my head. It's a simple but powerful solution that'll serve me well I think.

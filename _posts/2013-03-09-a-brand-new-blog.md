@@ -18,7 +18,9 @@ I also used [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org
 
 using Compass with Jekyll is also relatively easy by the way. I first tried out a couple of plugins, but I decided to implement it in my Rake task instead. While the plugins worked great it really bugged me that I couldn't decide when to use `compass compile` and when to use `compass watch`. All I had to do was to add this to my `build` task in my `Rakefile`, before `jekyll` is run:
 
-	system "cd assets/ && compass compile && cd ../"
+{% highlight ruby %}
+system "cd assets/ && compass compile && cd ../"
+{% endhighlight %}
 
 Simple and effective!
 

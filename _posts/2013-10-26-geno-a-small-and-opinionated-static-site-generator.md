@@ -18,12 +18,14 @@ Well, it is pretty customizable but the defaults are tailored to my needs[^20131
 
 At the most basic level, Geno needs these fields in the `package.json` file:
 
-    {
-      "name": "module",
-      "version": "0.1.0",
-      "description": "An example module.",
-      "license": "MIT"
-    }
+{% highlight json %}
+{
+  "name": "module",
+  "version": "0.1.0",
+  "description": "An example module.",
+  "license": "MIT"
+}
+{% endhighlight %}
 
 That's it! You can also add a `geno.json` file at the root of your project to enable some extra features. Check out the [GitHub repository](https://github.com/gummesson/geno) for more information.
 

@@ -12,36 +12,40 @@ After failing to keep a simple Markdown document with up-to-date information of 
 
 This is the function itself: 
 
-    function getGithubRepositories(username) {
+{% highlight javascript %}
+function getGithubRepositories(username) {
 
-      "use strict";
+  "use strict";
 
-      var repoList = $("#repo-list");
-      repoList.append("<li>Loading...</li>");
+  var repoList = $("#repo-list");
+  repoList.append("<li>Loading...</li>");
 
-      var githubUsername = function(username, callback) {
-        $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
-      };
+  var githubUsername = function(username, callback) {
+    $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
+  };
 
-      githubUsername(username, function(data) {
+  githubUsername(username, function(data) {
 
-        var template    = $("#github-repos").html(),
-            information = Mustache.render(template, data);
+    var template    = $("#github-repos").html(),
+        information = Mustache.render(template, data);
 
-        repoList.html(information);
+    repoList.html(information);
 
-      });
+  });
 
-    }
+}
+{% endhighlight %}
 
 And you simply use it like this:
 
-    $(document).ready(function() {
+{% highlight javascript %}
+$(document).ready(function() {
 
-      "use strict";
-      getGithubRepositories("gummesson");
+  "use strict";
+  getGithubRepositories("gummesson");
 
-    });
+});
+{% endhighlight %}
 
 Just replace `gummesson` with your own username and you're good to go!
 
@@ -49,21 +53,23 @@ Just replace `gummesson` with your own username and you're good to go!
 
 **Pro-tip:** If you're planning to use [Mustache.js](https://github.com/janl/mustache.js) on a [Jekyll](http://jekyllrb.com/) site like I do, don't forget to wrap the `<script>` template in a `raw` block.
 
+{% highlight html %}
 {% raw %}
-    <ul id="repo-list">
-      <script id="github-repos" type="text/template">
-        {{#data}}
-          <li>
-            <a href="{{html_url}}" title="{{name}}" alt="{{name}}">
-              {{name}}
-            </a>
-            {{#language}}
-              <em>({{language}})</em>
-            {{/language}}
-          </li>
-        {{/data}}
-      </script>
-    </ul>
+<ul id="repo-list">
+  <script id="github-repos" type="text/template">
+    {{#data}}
+      <li>
+        <a href="{{html_url}}" title="{{name}}" alt="{{name}}">
+          {{name}}
+        </a>
+        {{#language}}
+          <em>({{language}})</em>
+        {{/language}}
+      </li>
+    {{/data}}
+  </script>
+</ul>
 {% endraw %}
+{% endhighlight %}
 
 I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.

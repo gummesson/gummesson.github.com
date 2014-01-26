@@ -10,28 +10,30 @@ Okay, I wouldn't really call it my first real plugin, but I took the [Youtube pl
 
 ## Source code
 
-    module Jekyll
-      class Vimeo < Liquid::Tag
-        @@width = 500
-        @@height = 281
+{% highlight ruby %}
+module Jekyll
+  class Vimeo < Liquid::Tag
+    @@width = 500
+    @@height = 281
 
-        def initialize(name, id, tokens)
-          super
-          @id = id
-        end
-
-        def render(context)
-          %(<iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>)
-        end
-      end
+    def initialize(name, id, tokens)
+      super
+      @id = id
     end
 
-    Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+    def render(context)
+      %(<iframe width="#{@@width}" height="#{@@height}" src="http://player.vimeo.com/video/#{@id}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>)
+    end
+  end
+end
+
+Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+{% endhighlight %}
 
 ### Liquid tag
 
+{% highlight ruby %}
 {% raw %}
-
     {% vimeo 12345678 %}
-
 {% endraw %}
+{% endhighlight %}
