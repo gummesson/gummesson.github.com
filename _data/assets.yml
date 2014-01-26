@@ -5,7 +5,7 @@ dns:
   - "//a.disquscdn.com"
 
 stylesheets:
-  - "//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic"
+  - "//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic"
   - "/assets/css/style.css"
 
 icons:
