@@ -1,6 +1,6 @@
-﻿encoding: utf-8
-pygments: true
+encoding: utf-8
 markdown: kramdown
+pygments: true
 name: "Ellen Gummesson"
 description: "Random ramblings, geekiness and other musings"
 permalink: "blog/:year/:month/:day/:title"
