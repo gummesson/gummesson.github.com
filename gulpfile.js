@@ -31,7 +31,7 @@ gulp.task('img', function() {
 
 gulp.task('serve', function() {
   gulp.src('./')
-    .pipe(exec('jekyll serve --watch --config _config.yml,_local.yml'));
+    .pipe(exec('jekyll serve --watch'));
 });
 
 gulp.task('watch', function() {
