@@ -10,11 +10,11 @@ Everything: Ellen Gummesson
 Last update: 2013/01/26
   Standards: HTML5 & CSS3
  Components: normalize.css (http://necolas.github.io/normalize.css/)
-             highlight.js  (http://softwaremaniacs.org/soft/highlight/en/)
-             html5shiv     (https://code.google.com/p/html5shiv/)
              Entypo        (http://www.entypo.com/)
+             html5shiv     (https://code.google.com/p/html5shiv/)
    Software: Vim           (http://www.vim.org/)
              Jekyll        (http://www.jekyllrb.com/)
              kramdown      (http://kramdown.rubyforge.org/)
+             Pygments      (http://pygments.org/)
              gulp          (http://gulpjs.com/)
     Hosting: GitHub Pages  (http://pages.github.com/)
