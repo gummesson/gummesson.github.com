@@ -3,7 +3,7 @@ title: "WordPress to GetSimple to Jekyll"
 tags: ["Code", "Jekyll"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 *... Or: "How I learned to stop worrying and love the command line".*

@@ -3,7 +3,7 @@ title: "Partially: use partials in your markup"
 tags: ["Code", "JavaScript", "Node.js"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 I've always been jealous of the plethora of build tools available on OS X, in particular [Hammer for Mac](http://hammerformac.com/) and it's excellent `@include` feature. Rather than buying a new computer I decided to instead create yet another [Node.js](http://nodejs.org/) project and build it myself. I named it [Partially](https://github.com/gummesson/partially)[^20131019-1]. It enables you to do this:

@@ -3,7 +3,7 @@ title: "It's the little things (again)"
 tags: ["General", "Code"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 Today's smile is brought to me by [this](https://twitter.com/ttimsmith/status/370369398315315200):

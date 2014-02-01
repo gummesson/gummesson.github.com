@@ -3,7 +3,7 @@ title: "Trying out Ghost"
 tags: ["Web", "Code", "Ghost"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 ***Update:** it seems like the pre-packaged release is now working for me, which is awesome!*

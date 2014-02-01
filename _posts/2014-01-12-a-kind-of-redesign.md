@@ -3,7 +3,7 @@ title: "A kind of redesign"
 tags: ["Code", "Design"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 After finally updating to the latest versions of [Ruby](http://www.ruby-lang.org/en/) and [Jekyll](http://jekyllrb.com/)[^20140112-1] I decided it was time for changing a few things on this site. I added a proper landing page to make the site feel more like and actually site rather than just a blog.

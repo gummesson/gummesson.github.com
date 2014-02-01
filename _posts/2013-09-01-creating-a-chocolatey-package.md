@@ -3,7 +3,7 @@ title: "Creating a Chocolatey package"
 tags: ["Code", "Chocolatey"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 I recently "converted" all of my installed apps over to using Chocolatey. I won't dwelve too deeply into how much I love it, but let's just say it's a lot. It's such a relief not having to hunt for executable files. There were packages for nearly all of the apps I use but some were missing so I added a few of them. The process is pretty straightforward.

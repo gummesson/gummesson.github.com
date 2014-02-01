@@ -3,7 +3,7 @@ title: "should.lua: bringing BDD-style assertions to Lua"
 tags: ["Code", "Lua"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 After having released three smaller libraries for Lua I embarked on a pretty ambitious journey: to create a BDD-style assertion library, which I then named [should.lua](https://github.com/gummesson/should.lua). [Busted](http://olivinelabs.com/busted/) has been my testing framework of choice and I'm a big fan of it, but I don't really like using `assert` when I use `describe` and `it` in my tests. Now I can write my tests like this:

@@ -3,7 +3,7 @@ title: "Getting started with gulp"
 tags: ["JavaScript", "Node.js", "gulp"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 During the last couple of weeks there's been a lot of buzz around [gulp](http://gulpjs.com/), which is a build system similar to [Grunt](http://gruntjs.com/) but with a different approach. gulp's main feature is that it's using [streams](http://nodejs.org/api/stream.html) for all of the processing. This generally means better flow control and thus no need for creating temporary files and folders when you're running different tasks.

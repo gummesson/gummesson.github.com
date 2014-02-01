@@ -3,7 +3,7 @@ title: "Using Stylus"
 tags: ["Code", "CSS", "Stylus"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 As I mentioned earlier I decided to go with [Stylus](http://learnboost.github.io/stylus/) instead of [Sass](http://sass-lang.com/) when I put together the "kind-of-but-not-really" redesign of this site. Stylus seemed to be pretty close to Sass and had many similar features, like placeholder selectors. From what I can tell there's only one thing that separates Sass and Stylus for me: no `@content` blocks for mixins.

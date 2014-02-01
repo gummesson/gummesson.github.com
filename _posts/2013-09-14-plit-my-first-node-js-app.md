@@ -3,7 +3,7 @@ title: "plit: my first Node.js app"
 tags: ["Code", "JavaScript", "Node.js"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 I've been thinking about really learning [Node.js](http://nodejs.org/) lately. JavaScript have quickly evolved to become possibly my favorite language, although [Ruby](http://www.ruby-lang.org/) will always have a special place in my heart. After a quick Google search and an itch I decided to create something small and mostly useless, as always[^20130914-1]. Internet, meet [plit](https://npmjs.org/package/plit)!

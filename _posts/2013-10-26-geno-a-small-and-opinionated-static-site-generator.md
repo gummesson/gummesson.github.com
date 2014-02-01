@@ -3,7 +3,7 @@ title: "Geno: a small and opinionated static site generator"
 tags: ["Code", "JavaScript", "Node.js"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 Another week, another project, and this time it's yet another static site generator.

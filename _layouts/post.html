@@ -4,9 +4,9 @@ layout: "default"
 
 {% assign day = page.date | date: "%e" %}
 <article class="post">
-  {% if page.external-url %}
+  {% if page.link %}
     <h1 class="cramp">
-      <a class="shh" href="{{ page.external-url }}">{{ page.title }} &rarr;</a>
+      <a class="shh" href="{{ page.link }}">{{ page.title }} &rarr;</a>
     </h1>
     <p class="fineprint">Posted on {{ page.date | date: "%B" }} {% case day %}{% when "1" or "21" or "31" %}{{ day }}st{% when "2" or "22" %}{{ day }}nd{% when "3" or "23" %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }} <a class="shh" href="{{ page.url }}">&infin;</a></p>
   {% else %}

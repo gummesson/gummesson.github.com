@@ -3,7 +3,7 @@ title: "A poor man's Notational Velocity/ResophNotes Vim alternative"
 tags: ["Code", "Vim"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 *Long time, no see. I haven't touched this blog in almost two months and the reason for that is that life got in the way. I've really missed writing so I'll defintively try to pick it up again, I swear!*

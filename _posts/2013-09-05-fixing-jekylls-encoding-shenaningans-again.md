@@ -3,7 +3,7 @@ title: "Fixing Jekyll's encoding shenaningans (again)"
 tags: ["Code", "Jekyll"]
 layout: "post"
 comments: true
-external-url: false
+link: false
 ---
 
 After a lot of of hesitation I finally upgraded [Jekyll](http://jekyllrb.com/) to `1.1.2` from using the `0.12.1` version. Quite a lot has changed and the team is doing a great job with it. However,  my old [`SET LANG` hack]({% post_url 2013-03-03-fixing-jekylls-encoding-shenaningans %}) didn't work. I tried using [another hack](http://joseoncode.com/2011/11/27/solving-utf-problem-with-jekyll-on-windows/) which involves using `chcp 65001` instead  but that didn't quite work either. Whenever I tried to launch the default server [WEBrick](http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html) it blew up. There were errors, errors everywhere. I wasn't going to give up so I came up with another solution.
