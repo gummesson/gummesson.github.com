@@ -2,7 +2,7 @@
 layout: "default"
 ---
 
-{% assign day = page.date | date: "%e" %}
+{% assign day = page.date | date: "%-d" %}
 <article class="post">
   {% if page.link %}
     <h1 class="cramp">

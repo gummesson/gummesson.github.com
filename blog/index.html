@@ -17,7 +17,7 @@ layout: "page"
   <li class="space">
     <a class="shh" href="{{ post.url }}">
       <p class="cramp">{{ post.title }}</p>
-      <span class="fineprint">{{ post.date | date: "%e %B %Y" }}</span>
+      <span class="fineprint">{{ post.date | date: "%-d %B %Y" }}</span>
     </a>
   </li>
 {% endfor %}
