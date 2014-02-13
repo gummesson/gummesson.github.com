@@ -1,10 +1,7 @@
-# Library
-require "rbconfig"
-
 # Source
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 # Gems
-gem "wdm", "~> 0.1.0" if RbConfig::CONFIG["target_os"] =~ /mswin|mingw/i
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "kramdown", "~> 1.3.1"
 gem "jekyll", "~> 1.4.2"
