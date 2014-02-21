@@ -14,7 +14,7 @@ I think the most valuable thing is to experiment with your setup. I'd suggest yo
 
 I'd also advise you to use a plugin manager. I used [Pathogen](https://github.com/tpope/vim-pathogen) and [Git submodules](http://git-scm.com/docs/git-submodule) for a long time[^1] and while it works it isn't optimal when you want to play around with new plugins. I recently switched to [Vundle](https://github.com/gmarik/Vundle.vim) which means that all I have to do is add `Bundle "<github-username/plugin-name>"` in my `.vimrc` and run `:BundleInstall`.
 
-## ":help" is your friend
+## `:help` is your friend
 
 Seriously. I love Vim's documentation. If you stumble upon some feature you haven't heard of or if you're unsure about how some setting works all you have to do is type `:help <anything>` and hit `Enter`. It's a seriously handy thing to have.
 
