@@ -1,0 +1,15 @@
+encoding: "utf-8"
+markdown: "kramdown"
+pygments: true
+name: "Ellen Gummesson"
+description: "Random ramblings and other musings"
+permalink: "blog/:year/:month/:day/:title"
+url: "http://ellengummesson.com"
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "package.json"
+  - "bower.json"
+  - "gulpfile.js"
+  - "node_modules"
+  - "bower_components"

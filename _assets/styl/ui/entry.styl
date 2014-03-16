@@ -1,0 +1,21 @@
+//
+// ### `entry`
+//
+
+.entry
+  margin-bottom: base.spacingUnit
+
+.entry__title
+  font-size: base.fontSize * 1.5
+  text-decoration: none
+  &,
+  &:hover,
+  &:visited
+    color: inherit
+
+.entry__title.is-truncated
+  @media palm
+    is-truncated()
+
+.entry__meta
+  color: color.light.fg
