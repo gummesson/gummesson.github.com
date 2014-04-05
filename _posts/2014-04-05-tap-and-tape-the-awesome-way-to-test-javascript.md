@@ -1,6 +1,6 @@
 ---
 title: "TAP & Tape, the awesome way to test JavaScript"
-tags: ["Code", "JavaScript"]
+tags: ["Code", "JavaScript", "TAP"]
 layout: "post"
 comments: true
 link: "http://www.macwright.org/2014/03/11/tape-is-cool.html"
