@@ -75,7 +75,7 @@ npm install gulp-jshint --save-dev
 npm install gulp-mocha --save-dev
 {% endhighlight %}
 
-Now let's create a file called `add.js` and save it in the a folder called `src`:
+Now let's create a file called `add.js` and save it in a folder called `src`:
 
 {% highlight javascript %}
 module.exports = function(x, y) {
