@@ -1,6 +1,6 @@
 ---
 title: "hpr1197 :: What I do with bash scripts"
-tags: ["Podcast", "Code", "Bash"]
+tags: ["Podcast", "Code", "Shell"]
 layout: "post"
 comments: true
 link: "http://hackerpublicradio.org/eps.php?id=1197"

@@ -1,6 +1,6 @@
 ---
 title: "A small scaffolding shell script"
-tags: ["Code", "Bash"]
+tags: ["Code", "Shell"]
 layout: "post"
 comments: true
 link: false
