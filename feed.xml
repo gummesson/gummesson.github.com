@@ -2,19 +2,24 @@
 layout: nil
 ---
 
-<?xml version="1.0" encoding="UTF-8"?>
-  <rss version="2.0">
-    <channel>
-      <title>{{ site.name }}</title>
-        <description>{{ site.description }}</description>
-          <link>{{ site.url }}</link>
-            {% for post in site.posts limit:5 %}
-              <item>
-                <title>{{ post.title }}</title>
-                <description>{{ post.content | xml_escape }}</description>
-                <published>{{ post.date | date: "%B %-d, %Y" }}</published>
-                <link>{{ site.url }}{{ post.url }}</link>
-              </item>
-            {% endfor %}
-    </channel>
-  </rss>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>{{ site.name }}</title>
+ <link href="{{ site.url }}/feed.xml" rel="self"/>
+ <link href="{{ site.url }}/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}</id>
+ <author>
+   <name>Ellen Gummesson</name>
+   <email>ellengummesson@gmail.com</email>
+ </author>
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ post.url }}</id>
+  <content type="html">{{ post.content }}</content>
+ </entry>
+ {% endfor %}
+</feed>
