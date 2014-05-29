@@ -15,15 +15,11 @@ layout: nil
  </author>
  {% for post in site.posts %}
  <entry>
-  <![CDATA[
-   <title>{{ post.title }}</title>
-  ]]>
+   <title>{{ post.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.url }}</id>
-  <![CDATA[
-    <content type="html">{{ post.content }}</content>
-  ]]>
+  <content type="html">{{ post.content }}</content>
  </entry>
  {% endfor %}
 </feed>
