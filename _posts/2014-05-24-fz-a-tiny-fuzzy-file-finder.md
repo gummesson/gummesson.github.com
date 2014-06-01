@@ -10,12 +10,12 @@ Fuzzy file finders are awesome. [CtrlP](https://github.com/kien/ctrlp.vim) is on
 
 `fz` will perform a recursive fuzzy search for all the files you're looking for. It's case-insensitive and ignores a couple of directories by default[^20140524-1]. As an example, If I run `fz .x` in my local dotfiles repository it'll print the following:
 
-~~~ text
+{% highlight text %}
 ./x/.xcolors
 ./x/.xbindkeysrc
 ./x/.xinitrc
 ./x/.Xresources
-~~~
+{% endhighlight %}
 
 `fz` is mainly meant to be used when you need to find a particular file or a set of files, although it can be used for other actions. For example, if I run it in conjunction with Vim, `vim $(fz .x)`[^20140524-2], I can open all files and populate the [argument list](http://vimdoc.sourceforge.net/htmldoc/editing.html#argument-list) in one fell swoop.
 
