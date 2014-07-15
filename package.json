@@ -3,11 +3,11 @@
   "private": true,
   "devDependencies": {
     "gulp": "~3.8.6",
-    "gulp-stylus": "1.0.4",
     "gulp-autoprefixer": "0.0.8",
-    "gulp-pixrem": "~0.1.1",
+    "gulp-exec": "~2.0.1",
     "gulp-minify-css": "^0.3.6",
+    "gulp-pixrem": "~0.1.1",
     "gulp-rename": "^1.2.0",
-    "gulp-exec": "~2.0.1"
+    "gulp-stylus": "^1.0.5"
   }
 }
