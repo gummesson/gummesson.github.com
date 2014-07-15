@@ -6,7 +6,14 @@ comments: true
 link: false
 ---
 
-After failing to keep a simple Markdown document with up-to-date information of all my Github repositories I decided to skip using that method in favor of something more efficient. I didn't have to look any further than using [jQuery](http://jquery.com/)'s `getJSON` function and the JavaScript implementation of the [Mustache templating engine](http://mustache.github.com/). The end result [looks pretty neat](/experiments/repos), although I think I'm going to tweak the UI a bit. I also created a repository for it [on Github](https://github.com/gummesson/repos.js).
+After failing to keep a simple Markdown document with up-to-date information of
+all my Github repositories I decided to skip using that method in favor of
+something more efficient. I didn't have to look any further than using
+[jQuery](http://jquery.com/)'s `getJSON` function and the JavaScript
+implementation of the [Mustache templating engine](http://mustache.github.com/).
+The end result [looks pretty neat](/experiments/repos), although I think I'm
+going to tweak the UI a bit. I also created a repository for it [on
+Github](https://github.com/gummesson/repos.js).
 
 ## The JavaScript
 
@@ -21,7 +28,8 @@ function getGithubRepositories(username) {
   repoList.append("<li>Loading...</li>");
 
   var githubUsername = function(username, callback) {
-    $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?", callback);
+    $.getJSON("https://api.github.com/users/" + username + "/repos?callback=?",
+    callback);
   };
 
   githubUsername(username, function(data) {
@@ -51,7 +59,10 @@ Just replace `gummesson` with your own username and you're good to go!
 
 ## The template
 
-**Pro-tip:** If you're planning to use [Mustache.js](https://github.com/janl/mustache.js) on a [Jekyll](http://jekyllrb.com/) site like I do, don't forget to wrap the `<script>` template in a `raw` block.
+**Pro-tip:** If you're planning to use
+[Mustache.js](https://github.com/janl/mustache.js) on
+a [Jekyll](http://jekyllrb.com/) site like I do, don't forget to wrap the
+`<script>` template in a `raw` block.
 
 {% highlight html %}
 {% raw %}
@@ -72,4 +83,6 @@ Just replace `gummesson` with your own username and you're good to go!
 {% endraw %}
 {% endhighlight %}
 
-I essentially only wanted to display the name, the URL and the language but you can of course add about a million other things like the description, how many forks the repo has and so forth.
+I essentially only wanted to display the name, the URL and the language but you
+can of course add about a million other things like the description, how many
+forks the repo has and so forth.

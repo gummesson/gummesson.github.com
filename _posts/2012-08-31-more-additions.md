@@ -6,7 +6,11 @@ comments: true
 link: false
 ---
 
-Being bored sometimes has it's own perks. I continued experimenting with the [Begrider](/projects/begrider/) project and ended up adding a couple of more things to it, mainly a new set of column-like classes called `.unit-`. A unit differ itself from a regular column by not having a gutter, and thus having more of a "proportional" percentage width. So, instead of just having these:
+Being bored sometimes has it's own perks. I continued experimenting with the
+[Begrider](/projects/begrider/) project and ended up adding a couple of more
+things to it, mainly a new set of column-like classes called `.unit-`. A unit
+differ itself from a regular column by not having a gutter, and thus having more
+of a "proportional" percentage width. So, instead of just having these:
 
 {% highlight css %}
 .row .column-twelve {
@@ -104,4 +108,8 @@ You can also use these:
 }
 {% endhighlight %}
 
-It's useful if you don't want to have any gutters and/or want to use paddings instead instead of margins. I don't know if anyone's ever going to use besides myself, but I quite like to work on it either way. Like I said, it keeps my boredom at bay. I don't really know if it actually needs anything more, but I'll be sure to try stuff out.
+It's useful if you don't want to have any gutters and/or want to use paddings
+instead instead of margins. I don't know if anyone's ever going to use besides
+myself, but I quite like to work on it either way. Like I said, it keeps my
+boredom at bay. I don't really know if it actually needs anything more, but I'll
+be sure to try stuff out.

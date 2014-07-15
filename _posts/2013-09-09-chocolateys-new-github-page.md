@@ -6,4 +6,7 @@ comments: true
 link: "http://chocolatey.github.io/"
 ---
 
-This is kind of an shameless promotion, but I recently decided to have a go at making a more comprehensive documentation website for [Chocolatey](http://chocolatey.org/) and it actually got merged! I'm a nowhere near being a designer but I think that it looks quite nice.
+This is kind of an shameless promotion, but I recently decided to have a go at
+making a more comprehensive documentation website for
+[Chocolatey](http://chocolatey.org/) and it actually got merged! I'm a nowhere
+near being a designer but I think that it looks quite nice.

@@ -6,13 +6,20 @@ comments: true
 link: false
 ---
 
-I recently "converted" all of my installed apps over to using Chocolatey. I won't dwelve too deeply into how much I love it, but let's just say it's a lot. It's such a relief not having to hunt for executable files. There were packages for nearly all of the apps I use but some were missing so I added a few of them. The process is pretty straightforward.
+I recently "converted" all of my installed apps over to using Chocolatey.
+I won't dwelve too deeply into how much I love it, but let's just say it's
+a lot. It's such a relief not having to hunt for executable files. There were
+packages for nearly all of the apps I use but some were missing so I added a few
+of them. The process is pretty straightforward.
 
-Let's say we have an app that's called `MyAwesomeApp`. First we need to create a directory called `myawesomeapp` and then create a `nuspec` file in it with the following content:
+Let's say we have an app that's called `MyAwesomeApp`. First we need to create
+a directory called `myawesomeapp` and then create a `nuspec` file in it with the
+following content:
 
 {% highlight xml %}
 <?xml version="1.0"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>myawesomeapp</id>
     <title>MyAwesomeApp</title>
@@ -20,7 +27,8 @@ Let's say we have an app that's called `MyAwesomeApp`. First we need to create a
     <authors>The creator's name</authors>
     <owners>Your name</owners>
     <summary>An awesome app</summary>
-    <description>An incredible awesome app that'll one day save the world!</description>
+    <description>An incredible awesome app that'll one day save the
+    world!</description>
     <projectUrl>http://example.com/</projectUrl>
     <tags>awesome awesome awesome</tags>
     <licenseUrl>http://example.com/license.html</licenseUrl>
@@ -34,10 +42,13 @@ Let's say we have an app that's called `MyAwesomeApp`. First we need to create a
 </package>
 {% endhighlight %}
 
-Then it's time to create a `chocolateyInstall.ps1` file and save it in another directory inside the `myawesomeapp` directory called `tools`. Now, we could technically do it as simple as this:
+Then it's time to create a `chocolateyInstall.ps1` file and save it in another
+directory inside the `myawesomeapp` directory called `tools`. Now, we could
+technically do it as simple as this:
 
 {% highlight powershell %}
-Install-ChocolateyPackage "MyAwesomeApp" "exe" "/quiet" "http://example.com/download/installer.exe"
+Install-ChocolateyPackage "MyAwesomeApp" "exe" "/quiet"
+"http://example.com/download/installer.exe"
 {% endhighlight %}
 
 But I like adding a bit more functionality so instead we'll use this:
@@ -60,4 +71,9 @@ Try {
 }
 {% endhighlight %}
 
-This feels a bit nicer and it's a hell of a lot easier to re-use, atleast for me. After this we need to run `cpack` in the root directory to create a `nupkg` file and then `cinst myawesomeapp -source %cd%` to test it. The last thing we need to do is to upload the generated `nupkg` file on the official [Chocolatey](http://chocolatey.org/) website. You could do this straight from the PowerShell, but I haven't done that yet.
+This feels a bit nicer and it's a hell of a lot easier to re-use, atleast for
+me. After this we need to run `cpack` in the root directory to create a `nupkg`
+file and then `cinst myawesomeapp -source %cd%` to test it. The last thing we
+need to do is to upload the generated `nupkg` file on the official
+[Chocolatey](http://chocolatey.org/) website. You could do this straight from
+the PowerShell, but I haven't done that yet.

@@ -6,11 +6,14 @@ comments: true
 link: false
 ---
 
-Today's smile is brought to me by [this](https://twitter.com/ttimsmith/status/370369398315315200):
+Today's smile is brought to me by
+[this](https://twitter.com/ttimsmith/status/370369398315315200):
 
-![Tim Smith sharing "Jekyll Rake Boilerplate" on Twitter](/images/2013/08/22/twitter.png)
+![Tim Smith sharing "Jekyll Rake Boilerplate" on
+Twitter](/images/2013/08/22/twitter.png)
 
-I must sound like a total ass[^20130822-1] but the truth is that I just get so happy when someone finds the stuff I make actually useful!
+I must sound like a total ass[^20130822-1] but the truth is that I just get so
+happy when someone finds the stuff I make actually useful!
 
 * * *
 

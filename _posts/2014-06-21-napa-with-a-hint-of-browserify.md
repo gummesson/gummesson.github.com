@@ -6,9 +6,17 @@ comments: true
 link: false
 ---
 
-Over the last couple of weeks I've been diving deep into the world of [Browserify](http://browserify.org/). It felt a little bit strange to use it in the beginning but now I've really fallen in love with the [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) way of handling dependencies. One thing that's kind of a bummer though is that far from everything is available on [npm](https://npmjs.org/)[^20140621-1]. Thankfully I discovered a nice little tool called [napa](https://github.com/shama/napa).
+Over the last couple of weeks I've been diving deep into the world of
+[Browserify](http://browserify.org/). It felt a little bit strange to use it in
+the beginning but now I've really fallen in love with the
+[CommonJS](http://wiki.commonjs.org/wiki/CommonJS) way of handling dependencies.
+One thing that's kind of a bummer though is that far from everything is
+available on [npm](https://npmjs.org/)[^20140621-1]. Thankfully I discovered
+a nice little tool called [napa](https://github.com/shama/napa).
 
-napa is a "helper for installing repos without a `package.json` with npm". It basically does a `git clone` on a repository[^20140621-2] directly into the `node_modules` folder. A basic setup in a `package.json` file looks like this:
+napa is a "helper for installing repos without a `package.json` with npm". It
+basically does a `git clone` on a repository[^20140621-2] directly into the
+`node_modules` folder. A basic setup in a `package.json` file looks like this:
 
 {%highlight json %}
 {
@@ -32,7 +40,8 @@ And if we want to clone more than just a single repository, we can do this:
 }
 {% endhighlight %}
 
-Using code from the master branch is not always a good idea but luckily we can also specify what tag, branch or commit we want to use:
+Using code from the master branch is not always a good idea but luckily we can
+also specify what tag, branch or commit we want to use:
 
 {%highlight json %}
 {
@@ -47,7 +56,10 @@ Using code from the master branch is not always a good idea but luckily we can a
 }
 {% endhighlight %}
 
-You might be thinking "this is neat, but can't I just use [Bower](http://bower.io/)"? Absolutely, but one thing that I like about this approach is that your dependencies stays in one place. There's also a lot of code out there that's not registered on either npm or in Bower's registry.
+You might be thinking "this is neat, but can't I just use
+[Bower](http://bower.io/)"? Absolutely, but one thing that I like about this
+approach is that your dependencies stays in one place. There's also a lot of
+code out there that's not registered on either npm or in Bower's registry.
 
 Also, instead of having to do something like this to require a dependency:
 
@@ -66,4 +78,5 @@ Much better!
 * * *
 
 [^20140621-1]: Or on any package manager for that matter.
+
 [^20140621-2]: It defaults to using repositories from [GitHub](https://github.com/).

@@ -6,4 +6,6 @@ comments: true
 link: "http://www.youtube.com/watch?v=vsTrAfJFLXI"
 ---
 
-A really nice talk from Mr. [CSS-Tricks](http://css-tricks.com/) himself, Chris Coyier. Bring some Coke and make some popcorn, because the video clocks in at 1 hour and 43 minutes. Impressive!
+A really nice talk from Mr. [CSS-Tricks](http://css-tricks.com/) himself, Chris
+Coyier. Bring some Coke and make some popcorn, because the video clocks in at
+1 hour and 43 minutes. Impressive!

@@ -6,9 +6,15 @@ comments: true
 link: false
 ---
 
-As I've mentioned earlier I'm on a [Browserify](http://browserify.org/) kick and thus exploring the available transform modules for it. One of them is [browserify-shim](https://github.com/thlorenz/browserify-shim), which let's you make [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) incompatible files "browserifyable".
+As I've mentioned earlier I'm on a [Browserify](http://browserify.org/) kick and
+thus exploring the available transform modules for it. One of them is
+[browserify-shim](https://github.com/thlorenz/browserify-shim), which let's you
+make [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) incompatible files
+"browserifyable".
 
-Let's say we have a library that's exposes itself as `window.Module`. The easiest way to use it with Browserify and browserify-shim is to add this to our `package.json` file:
+Let's say we have a library that's exposes itself as `window.Module`. The
+easiest way to use it with Browserify and browserify-shim is to add this to our
+`package.json` file:
 
 {% highlight json %}
 {
@@ -21,9 +27,14 @@ Let's say we have a library that's exposes itself as `window.Module`. The easies
 }
 {% endhighlight %}
 
-This will make browserify-shim replace `var module = require('module')` with `var module = (typeof window !== "undefined" ? window.Module : typeof global !== "undefined" ? global.Module : null)` in all the places that you've required it[^20140710-1].
+This will make browserify-shim replace `var module = require('module')` with
+`var module = (typeof window !== "undefined" ? window.Module : typeof global !==
+"undefined" ? global.Module : null)` in all the places that you've required
+it[^20140710-1].
 
-Integrating Browserify and browserify-shim with [gulp](http://gulpjs.com/) is pretty straightforward. Given that we've added the above configuration to our `package.json` file, all we need to add in our `gulpfile.js` file is this:
+Integrating Browserify and browserify-shim with [gulp](http://gulpjs.com/) is
+pretty straightforward. Given that we've added the above configuration to our
+`package.json` file, all we need to add in our `gulpfile.js` file is this:
 
 {% highlight javascript %}
 var gulp   = require('gulp');
@@ -39,9 +50,15 @@ gulp.task('browserify', function() {
 });
 {% endhighlight %}
 
-We have to use [vinyl-source-stream](https://github.com/hughsk/vinyl-source-stream) to make the stream from Browserify compatible with [vinyl](https://github.com/wearefractal/vinyl), the virtual file system that gulp uses.
+We have to use
+[vinyl-source-stream](https://github.com/hughsk/vinyl-source-stream) to make the
+stream from Browserify compatible with
+[vinyl](https://github.com/wearefractal/vinyl), the virtual file system that
+gulp uses.
 
-Now let's say that we want to minify our code. The easiest way to do this would be to add another transform module, [uglifyify](https://github.com/hughsk/uglifyify):
+Now let's say that we want to minify our code. The easiest way to do this would
+be to add another transform module,
+[uglifyify](https://github.com/hughsk/uglifyify):
 
 {% highlight json %}
 {
@@ -54,9 +71,11 @@ Now let's say that we want to minify our code. The easiest way to do this would 
 }
 {% endhighlight %}
 
-We could also integrate it directly in our `gulpfile.js` file, but that requires more modules and a bit more code.
+We could also integrate it directly in our `gulpfile.js` file, but that requires
+more modules and a bit more code.
 
-The above setup is probably the fastest way of getting up and running, which I find preferable when just I want to experiment with a couple of libraries.
+The above setup is probably the fastest way of getting up and running, which
+I find preferable when just I want to experiment with a couple of libraries.
 
 * * *
 

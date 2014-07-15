@@ -6,7 +6,12 @@ comments: true
 link: false
 ---
 
-One of the biggest advantages of using a dedicated tool for writing [Markdown](http://daringfireball.net/projects/markdown/) is that they often come with some way of previewing your text file. I kind of miss that kind of function when I'm using [Vim](http://www.vim.org/) I decided to throw together a simple vimscript that uses [Pandoc](http://johnmacfarlane.net/pandoc/) to convert a Markdown file to HTML. The basic gist of it looks like this:
+One of the biggest advantages of using a dedicated tool for writing
+[Markdown](http://daringfireball.net/projects/markdown/) is that they often come
+with some way of previewing your text file. I kind of miss that kind of function
+when I'm using [Vim](http://www.vim.org/) I decided to throw together a simple
+vimscript that uses [Pandoc](http://johnmacfarlane.net/pandoc/) to convert
+a Markdown file to HTML. The basic gist of it looks like this:
 
 {% highlight vim %}
 function! PandocMarkdownPreview()
@@ -16,7 +21,10 @@ function! PandocMarkdownPreview()
 endfunction
 {% endhighlight %}
 
-It sets the directory of the current open file as the root and then calls Pandoc to do the conversion. It's not that terribly complicated but it gets the job done well. I also expanded upon it a bit and added another part that'll open the `preview.html` directly in the browser:
+It sets the directory of the current open file as the root and then calls Pandoc
+to do the conversion. It's not that terribly complicated but it gets the job
+done well. I also expanded upon it a bit and added another part that'll open the
+`preview.html` directly in the browser:
 
 {% highlight vim %}
 if has('win32')
@@ -26,7 +34,8 @@ else
 endif
 {% endhighlight %}
 
-One thing that's worth being mentioned is that the `!xdg-open` part can be changed to `!open` and then you can also use it if you're on a Mac.
+One thing that's worth being mentioned is that the `!xdg-open` part can be
+changed to `!open` and then you can also use it if you're on a Mac.
 
 In the end the whole thing looks like this:
 
@@ -49,4 +58,6 @@ And the mapping looks like this:
 map <leader>pmd :call PandocMarkdownPreview()<cr>
 {% endhighlight %}
 
-I also threw together more refined version of the whole thing in a [gist on Github](https://gist.github.com/4649514). You'll obviously need to have Pandoc install on your machine in order to get it up and running.
+I also threw together more refined version of the whole thing in a [gist on
+Github](https://gist.github.com/4649514). You'll obviously need to have Pandoc
+install on your machine in order to get it up and running.
