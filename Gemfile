@@ -10,5 +10,4 @@ source "http://rubygems.org"
 
 gem "wdm", "~> 0.1.0" if RbConfig::CONFIG["target_os"] =~ /mswin|mingw/i
 gem "github-pages"
-gem "jekyll-watch"
 gem "jekyll-sitemap"
