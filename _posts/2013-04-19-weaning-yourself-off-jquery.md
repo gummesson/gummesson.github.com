@@ -1,5 +1,5 @@
 ---
-title: "Weaning yourself of jQuery"
+title: "Weaning yourself off jQuery"
 tags: ["Code", "jQuery", "JavaScript"]
 layout: "post"
 comments: true
