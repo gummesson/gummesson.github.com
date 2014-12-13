@@ -3,7 +3,10 @@ title: "About"
 layout: "page"
 ---
 
-My name is Ellen and I &hearts; HTML, CSS ([Sass](http://sass-lang.com/) or [Stylus](http://learnboost.github.io/stylus/)), JavaScript and [Node.js](http://nodejs.org/). I also really like [Ruby](http://www.ruby-lang.org/), keep an eye on [Go](http://golang.org/) and have a soft spot for [Lua](http://www.lua.org/).
+My name is Ellen and I &hearts; HTML, CSS, JavaScript and
+[Node.js](http://nodejs.org/). I also really like
+[Ruby](http://www.ruby-lang.org/), keep an eye on [Go](http://golang.org/) and
+have a soft spot for [Lua](http://www.lua.org/).
 
 ## Elsewhere
 
@@ -15,10 +18,23 @@ My name is Ellen and I &hearts; HTML, CSS ([Sass](http://sass-lang.com/) or [Sty
 
 ## Colophon
 
-This site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com/). It was built with plain HTML and [Stylus](http://learnboost.github.io/stylus/). The code was written by hand in [Vim](http://www.vim.org/).
+This site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub
+Pages](http://pages.github.com/). It was built with plain HTML and
+[Stylus](http://learnboost.github.io/stylus/). The code was written by hand in
+[Vim](http://www.vim.org/).
 
-It uses the typeface [Lato](http://www.google.com/webfonts/specimen/Lato) which is provided by [Google Fonts](http://www.google.com/fonts). The colors are mostly derived from [Colors](http://clrs.cc/).
+It uses the typeface [Anaheim](http://www.google.com/webfonts/specimen/Anaheim)
+which is provided by [Google Fonts](http://www.google.com/fonts). The colors are
+mostly derived from [Colors](http://clrs.cc/).
 
-The blog posts are written in [Markdown](http://daringfireball.net/projects/markdown/), scribbled down in [iA Writer](http://www.iawriter.com/) or [ResophNotes](http://resoph.com/ResophNotes/Welcome.html) before finally ending up and being finished in [Vim](http://www.vim.org/). [Shotty](http://shotty.devs-on.net/en/Overview.aspx) is used for taking the screenshots.
+The blog posts are written in
+[Markdown](http://daringfireball.net/projects/markdown/), scribbled down in [iA
+Writer](http://www.iawriter.com/) or
+[ResophNotes](http://resoph.com/ResophNotes/Welcome.html) before finally ending
+up and being finished in [Vim](http://www.vim.org/).
+[Shotty](http://shotty.devs-on.net/en/Overview.aspx) and
+[scrot](http://freecode.com/projects/scrot) is used for taking the screenshots.
 
-The site's content is licensed under [Creative Commons BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) while the source code is licensed under [the MIT license](http://opensource.org/licenses/MIT).
+The site's content is licensed under [Creative Commons BY-SA
+4.0](http://creativecommons.org/licenses/by-sa/4.0/) while the source code is
+licensed under [the MIT license](http://opensource.org/licenses/MIT).
