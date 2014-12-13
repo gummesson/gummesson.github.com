@@ -6,7 +6,6 @@ var prefixer = require('gulp-autoprefixer');
 var pixrem   = require('gulp-pixrem');
 var minify   = require('gulp-minify-css');
 var rename   = require('gulp-rename');
-var exec     = require('gulp-exec');
 
 /* Tasks */
 
@@ -29,25 +28,11 @@ gulp.task('img', function() {
     .pipe(gulp.dest('assets/img/'));
 });
 
-gulp.task('serve', function() {
-  gulp.src('./')
-    .pipe(exec(
-    'jekyll serve --watch', {
-      silent: false
-    }));
-});
-
-gulp.task('watch', function() {
+gulp.task('watch', ['css'], function() {
   gulp.watch('_assets/styl/**/*.styl', ['css']);
 });
 
-gulp.task('assets', [
+gulp.task('default', [
   'img',
   'css'
-]);
-
-gulp.task('default', [
-  'assets',
-  'serve',
-  'watch'
 ]);
