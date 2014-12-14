@@ -19,13 +19,13 @@ that being a disadvantage.
 My favorite feature of UltiSnips is being able to use placeholders. Let's take
 this snippet for example:
 
-~~~ text
+{% highlight text %}
 snippet test
 test('$1', function(${2:assert}) {
 	$0
 });
 endsnippet
-~~~
+{% endhighlight %}
 
 The cursor will first place itself on the `$1`. When you hit `C-j` it'll
 visually select the word `assert` which you can operate on if you need to. `$0`
