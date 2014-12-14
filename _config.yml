@@ -12,6 +12,7 @@ exclude:
   - "package.json"
   - "bower.json"
   - "gulpfile.js"
+  - "vendor"
   - "node_modules"
   - "bower_components"
 gems:
