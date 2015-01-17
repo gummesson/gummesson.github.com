@@ -1,5 +1,4 @@
 ---
-
 title: "Switching from Vundle to vim-plug"
 tags: ["Vim"]
 layout: "post"
