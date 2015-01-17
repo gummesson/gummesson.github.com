@@ -29,12 +29,12 @@ which is provided by [Google Fonts](http://www.google.com/fonts). The colors are
 mostly derived from [Colors](http://clrs.cc/).
 
 The blog posts are written in
-[Markdown](http://daringfireball.net/projects/markdown/), scribbled down in [iA
-Writer](http://www.iawriter.com/) or
+[Markdown](http://daringfireball.net/projects/markdown/), scribbled down in
+[JotterPad](http://2appstudio.com/jotterpadx/) or
 [ResophNotes](http://resoph.com/ResophNotes/Welcome.html) before finally ending
 up and being finished in [Vim](http://www.vim.org/).
 [scrot](http://freecode.com/projects/scrot) and
-[Shotty](http://shotty.devs-on.net/en/Overview.aspx) is used for taking the
+[Shotty](http://shotty.devs-on.net/en/Overview.aspx) are used for taking the
 screenshots.
 
 The content is licensed under [Creative Commons BY-SA
