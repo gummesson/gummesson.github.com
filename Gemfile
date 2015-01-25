@@ -1,12 +1,8 @@
-# -- Libraries --
-
-require "rbconfig"
-
 # -- Source --
 
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 # -- Gems --
 
-gem "wdm", "~> 0.1.0" if RbConfig::CONFIG["target_os"] =~ /mswin|mingw/i
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "github-pages"
