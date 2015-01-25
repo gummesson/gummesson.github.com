@@ -12,10 +12,10 @@ to [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager for
 Vundle I like the on-demand loading that vim-plug has to offer. That means
 that you can configure your plugins like this in you `.vimrc`:
 
-~~~ text
+{% highlight vim %}
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
-~~~
+{% endhighlight %}
 
 The `on` loads the plugin when you execute the command for the first time while
 the `for` loads it whenever you open a file with the `filetype` in question.
