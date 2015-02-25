@@ -21,12 +21,10 @@ have a soft spot for [Lua](http://www.lua.org/).
 The site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub
 Pages](http://pages.github.com/). It was built with plain HTML and
 [Stylus](http://learnboost.github.io/stylus/). The code was written by hand in
-[Vim](http://www.vim.org/).
-
-The site uses the typeface
-[Anaheim](http://www.google.com/webfonts/specimen/Anaheim)
-which is provided by [Google Fonts](http://www.google.com/fonts). The colors are
-mostly derived from [Colors](http://clrs.cc/).
+[Vim](http://www.vim.org/). The site uses the typeface
+[Anaheim](http://www.google.com/webfonts/specimen/Anaheim) which is provided by
+[Google Fonts](http://www.google.com/fonts). The colors are mostly derived from
+[Colors](http://clrs.cc/).
 
 The blog posts are written in
 [Markdown](http://daringfireball.net/projects/markdown/), scribbled down in
