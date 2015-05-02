@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "loom": "~2.1.0",
-    "normalize-css": "~3.0.2"
+    "normalize-css": "~3.0.3"
   }
 }

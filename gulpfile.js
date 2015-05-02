@@ -17,7 +17,10 @@ gulp.task('css', function() {
     }))
     .pipe(prefixer())
     .pipe(pixrem())
-    .pipe(minify())
+    .pipe(minify({
+      advanced: false,
+      aggressiveMerging: false
+    }))
     .pipe(rename('style.css'))
     .pipe(gulp.dest('assets/css/'));
 });
