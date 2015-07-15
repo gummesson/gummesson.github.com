@@ -1,0 +1,29 @@
+---
+layout: "default"
+---
+
+<article class="post">
+  <header class="post__head">
+  {% if page.link %}
+    <h1 class="post__title">
+      <a class="shh" href="{{ page.link }}">{{ page.title }} &rarr;</a>
+    </h1><!-- /.post__title -->
+    <p class="post__meta">
+      {% include meta.html date=page.date %} <a class="shh" href="{{ page.url }}">&infin;</a>
+    </p><!-- /.post__title -->
+  {% else %}
+    <h1 class="post__title">
+      {{ page.title }}
+    </h1><!-- /.post__meta -->
+    <p class="post__meta">
+      {% include meta.html date=page.date %}
+    </p><!-- /.post__meta -->
+  {% endif %}
+  </header><!-- /.post__head -->
+  <section class="post__body">
+    {{ content }}
+  </section><!-- /.post__body -->
+{% if page.comments %}
+  {% include comments.html %}
+{% endif %}
+</article><!-- /.post -->

@@ -1,0 +1,27 @@
+/**
+ * Type
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  color: $base-brand-color;
+}
+
+blockquote {
+  padding: 0 $base-spacing-size / 2;
+  font-size: $base-font-size * 0.875;
+}

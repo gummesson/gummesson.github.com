@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//a.disquscdn.com">
+  <title>{{ site.name }} &bullet; {{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/index.css">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.png">
+  <link rel="alternate" href="{{ site.baseurl }}/feed.xml" type="application/rss+xml">
+  <link rel="canonical" href="{{ site.url }}">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+</head>
+<body>
+  <header class="head" role="banner">
+    <div class="wrap">
+      <div class="box">
+        <h1 class="head__title">
+          <a class="shh" href="/">@gummesson</a>
+        </h1><!-- /.head__title -->
+      </div><!-- /.box -->
+    </div><!-- /.wrap -->
+  </header><!-- /.head -->
+  <main class="main" role="main">
+    <div class="wrap">
+      <div class="box">
+        {{ content }}
+      </div><!-- /.box -->
+    </div><!-- /.wrap -->
+  </main><!-- /.main -->
+  <footer class="foot" role="contentinfo">
+    <div class="wrap">
+      <div class="box">
+        <p class="foot__meta">
+          Coypright &copy; <a class="shh" href="{{ site.baseurl }}/about">Ellen Gummesson</a> 2015
+        </p><!-- /.foot__meta -->
+      </div><!-- /.box -->
+    </div><!-- /.wrap -->
+  </footer><!-- /.foot -->
+</body>
+</html>

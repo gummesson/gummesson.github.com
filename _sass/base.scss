@@ -1,0 +1,29 @@
+/**
+ * Base
+ */
+
+::selection {
+  background-color: $base-font-color;
+  color: $base-background-color;
+}
+
+html {
+  font: 400 1em/1.5 $base-font-family;
+  -webkit-font-smoothing: antialiased;
+}
+@media #{$media-md} {
+  html {
+    font-size: 1.125em;
+  }
+}
+@media #{$media-xl} {
+  html {
+    font-size: 1.25em;
+  }
+}
+
+body {
+  background-color: $base-background-color;
+  color: $base-font-color;
+}
+

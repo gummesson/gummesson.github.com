@@ -1,0 +1,16 @@
+/**
+ * Entry
+ */
+
+.entry {
+  margin-bottom: $base-spacing-size;
+}
+
+.entry__title {
+  display: block;
+  font-size: $base-font-size * 1.5;
+}
+
+.entry__meta {
+  color: $base-brand-color;
+}

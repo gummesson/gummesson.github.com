@@ -1,0 +1,26 @@
+/**
+ * Table
+ */
+
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+table,
+td {
+  border: 1px solid $base-brand-color;
+}
+
+th {
+  background-color: $code-background-color;
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: $base-spacing-size / 4;
+}

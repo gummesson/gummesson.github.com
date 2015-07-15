@@ -1,0 +1,12 @@
+/**
+ * Box
+ */
+
+.box {
+  display: block;
+  padding: $base-spacing-size;
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}

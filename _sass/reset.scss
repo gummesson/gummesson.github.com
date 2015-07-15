@@ -1,0 +1,53 @@
+/**
+ * Reset
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p,
+blockquote,
+figure,
+pre,
+ol,
+ul,
+dl,
+hr,
+address,
+form,
+fieldset,
+table {
+  margin: 0 0 $base-spacing-size;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin-left: $base-spacing-size;
+}
+
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+img,
+canvas,
+svg,
+iframe,
+video,
+select,
+textarea {
+  max-width: 100%;
+}
+
+hr {
+  border: 0;
+}

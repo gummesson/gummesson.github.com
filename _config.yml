@@ -1,0 +1,19 @@
+name: "Ellen Gummesson"
+description: "Random ramblings and other musings"
+url: "http://ellengummesson.com"
+permalink: "blog/:year/:month/:day/:title"
+author:
+  name: "Ellen Gummesson"
+  email: "ellengummesson@gmail.com"
+  uri: "http://ellengummesson.com/about"
+encoding: "utf-8"
+sass:
+    style: :compressed
+gems:
+  - "jekyll-sitemap"
+exclude:
+  - "vendor"
+  - "README.md"
+  - "LICENSE"
+  - "Gemfile"
+  - "tags"

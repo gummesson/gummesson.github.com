@@ -1,0 +1,19 @@
+/**
+ * Footnotes
+ */
+
+.footnote,
+.reversefootnote {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footnotes {
+  margin-top: $base-spacing-size * 1.5;
+  margin-bottom: $base-spacing-size * 2;
+  font-size: $base-font-size * 0.875;
+}
+
+.footnotes > ol > li > p {
+  margin-bottom: 0;
+}

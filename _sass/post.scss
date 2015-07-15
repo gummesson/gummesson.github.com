@@ -1,0 +1,22 @@
+/**
+ * Post
+ */
+
+.post {}
+
+.post__head {}
+
+.post__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.post__meta {
+  color: $base-brand-color;
+}
+
+.post__body {}
+
+.post__comments {
+  margin-top: $base-spacing-size * 2;
+}

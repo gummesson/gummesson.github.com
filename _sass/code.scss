@@ -1,0 +1,18 @@
+/**
+ * Code
+ */
+
+pre {
+  padding: $base-spacing-size / 2;
+  background-color: $code-background-color;
+  color: $code-font-color;
+}
+
+code {
+  font-family: $code-font-family;
+  font-size: $base-font-size * 0.875;
+}
+
+pre > code {
+  line-height: 1;
+}
