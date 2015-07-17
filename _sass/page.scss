@@ -6,8 +6,11 @@
 
 .page__head {}
 
-.page__title {
-  margin-top: 0;
+.page__year {
+  font-size: $base-font-size * 2;
 }
 
-.page__year {}
+.page__title,
+.page__year:first-child {
+  margin-top: 0;
+}
