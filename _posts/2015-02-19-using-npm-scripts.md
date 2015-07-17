@@ -23,7 +23,7 @@ file:
 
 {% highlight json %}
 {
-"scripts": {
+  "scripts": {
     "start": "npm install && npm run setup && npm run dist",
     "setup": "rm -rf dist && mkdir dist",
     "dist": "npm run js && npm run css && npm run html",
