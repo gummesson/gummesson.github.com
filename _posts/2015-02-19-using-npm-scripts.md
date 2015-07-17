@@ -17,7 +17,7 @@ dependencies in your project, is that the `node_modules/.bin` directory gets
 added to your [PATH](http://en.wikipedia.org/wiki/PATH_%28variable%29). This
 makes it easy to work with modules that you only use for development.
 
-Here's `scripts` field from the
+Here's the `scripts` field from the
 [`package.json`](https://github.com/gummesson/swedish-time/blob/master/package.json)
 file:
 
