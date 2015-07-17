@@ -1,7 +1,8 @@
 .bundle/
 .sass-cache/
-vendor/
+_drafts/
 _site/
+vendor/
 .jekyll-metadata
 Gemfile.lock
 tags
