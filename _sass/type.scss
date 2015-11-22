@@ -25,3 +25,13 @@ blockquote {
   padding: 0 $base-spacing-size / 2;
   font-size: $base-font-size * 0.875;
 }
+
+hr {
+  text-align: center;
+}
+
+hr:after {
+  font-size: $base-font-size * 0.875;
+  color: $base-brand-color;
+  content: "* * *";
+}
