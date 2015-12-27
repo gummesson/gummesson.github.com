@@ -3,35 +3,32 @@ title: "About"
 layout: "page"
 ---
 
-My name is Ellen and I &hearts; HTML, CSS, JavaScript and
-[Node.js](http://nodejs.org/). I also really like
-[Ruby](http://www.ruby-lang.org/), keep an eye on [Go](http://golang.org/) and
-have a soft spot for [Lua](http://www.lua.org/).
+My name is Ellen and I &hearts; open source, [Vim](http://www.vim.org/),
+JavaScript and [Node.js](http://nodejs.org/).
 
 ## Elsewhere
 
 - ellengummesson[at]gmail[dot]com
 - [GitHub](https://github.com/gummesson)
 - [Twitter](https://twitter.com/pratnarkoman)
-- [Google+](https://plus.google.com/108569513108478415869)
 
 ## Colophon
 
 The site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub
-Pages](http://pages.github.com/). The code was written in
-[Vim](http://www.vim.org/). The site uses the typefaces
-[Anaheim](http://www.google.com/webfonts/specimen/Anaheim) and
-[Inconsolata](http://www.google.com/webfonts/specimen/Inconsolata), provided by
-[Google Fonts](http://www.google.com/fonts). The colors are derived from
+Pages](http://pages.github.com/). The site uses
+[Anaheim](http://www.google.com/webfonts/specimen/Anaheim) and [Fira
+Mono](http://www.google.com/webfonts/specimen/Fira+Mono), provided by [Google
+Fonts](http://www.google.com/fonts). The colors are derived from
 [Colors](http://clrs.cc/) and
 [Pencil](https://github.com/reedes/vim-colors-pencil).
 
-The written content is licensed under [Creative Commons BY-SA
-4.0](http://creativecommons.org/licenses/by-sa/4.0/) while the source code is
-licensed under the [MIT license](http://opensource.org/licenses/MIT). Both are
-available on [GitHub](https://github.com/gummesson/gummesson.github.io).
+The content is licensed under [Creative Commons BY-SA
+4.0](http://creativecommons.org/licenses/by-sa/4.0/), while the source code is
+licensed under the [MIT](http://opensource.org/licenses/MIT) license. Both are
+available on [GitHub](https://github.com/gummesson/gummesson.github.com). Pull
+requests are welcomed.
 
-## Public key
+## Crypto
 
 ~~~
 -----BEGIN PGP PUBLIC KEY BLOCK-----
