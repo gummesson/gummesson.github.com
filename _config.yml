@@ -7,6 +7,10 @@ author:
   email: "ellengummesson@gmail.com"
   uri: "http://ellengummesson.com/about"
 encoding: "utf-8"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
 sass:
     style: :compressed
 gems:
