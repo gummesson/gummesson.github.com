@@ -1,7 +1,7 @@
 name: "Ellen Gummesson"
 description: "Random ramblings and other musings"
 url: "http://ellengummesson.com"
-permalink: "blog/:year/:month/:day/:title"
+permalink: "blog/:year/:month/:day/:title/"
 author:
   name: "Ellen Gummesson"
   email: "ellengummesson@gmail.com"
