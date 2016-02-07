@@ -16,10 +16,9 @@ JavaScript and [Node.js](http://nodejs.org/).
 
 The site is powered by [Jekyll](http://www.jekyllrb.com/) and hosted on [GitHub
 Pages](http://pages.github.com/). The site uses
-[Anaheim](http://www.google.com/webfonts/specimen/Anaheim) and [Fira
-Mono](http://www.google.com/webfonts/specimen/Fira+Mono), provided by [Google
-Fonts](http://www.google.com/fonts). The colors are derived from
-[Colors](http://clrs.cc/) and
+[Anaheim](http://www.google.com/webfonts/specimen/Anaheim) and [Fantasque Sans
+Mono](https://fontlibrary.org/en/font/fantasque-sans-mono). The colors are
+derived from [Colors](http://clrs.cc/) and
 [Pencil](https://github.com/reedes/vim-colors-pencil).
 
 The content is licensed under [Creative Commons BY-SA
