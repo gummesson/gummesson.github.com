@@ -26,7 +26,7 @@ The content is licensed under [Creative Commons BY-SA
 4.0](http://creativecommons.org/licenses/by-sa/4.0/), while the source code is
 licensed under the [MIT](http://opensource.org/licenses/MIT) license. Both are
 available on [GitHub](https://github.com/gummesson/gummesson.github.com). Pull
-requests are welcomed.
+requests are welcome.
 
 ## Crypto
 
