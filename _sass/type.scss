@@ -22,8 +22,13 @@ a:visited {
 }
 
 blockquote {
-  padding: 0 $base-spacing-size / 2;
+  padding: $base-spacing-size / 2;
   font-size: $base-font-size * 0.875;
+  background-color: $code-background-color;
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0;
 }
 
 hr {
