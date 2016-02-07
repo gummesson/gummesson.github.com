@@ -8,9 +8,9 @@ author:
   uri: "http://ellengummesson.com/about"
 encoding: "utf-8"
 kramdown:
-  input: GFM
+  input: "GFM"
   hard_wrap: false
-  syntax_highlighter: rouge
+  syntax_highlighter: "rouge"
 sass:
     style: :compressed
 gems:
