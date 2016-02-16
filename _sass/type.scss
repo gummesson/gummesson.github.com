@@ -36,7 +36,6 @@ hr {
 }
 
 hr:after {
-  font-size: $base-font-size * 0.875;
   color: $base-brand-color;
-  content: "* * *";
+  content: "\2022";
 }
